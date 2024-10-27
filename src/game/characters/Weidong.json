@@ -1,0 +1,13 @@
+[
+{
+	Name: "He Weidong",
+	ImageID: "Weidong",
+	
+	BornDay: 25,
+	BornMonth: 5,
+	BornYear: 1957,
+	
+	Attack: -1,
+	Defense: -1,
+}
+]

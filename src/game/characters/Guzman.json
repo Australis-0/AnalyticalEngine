@@ -1,0 +1,13 @@
+[
+{
+	Name: "Gaspar de Guzmán",
+	ImageID: GaspardeGuzman,
+		
+	BornDay: 6,
+	BornMonth: 91,
+	BornYear: 1587,
+		
+	Attack: -1,
+	Defense: -1,
+},
+]

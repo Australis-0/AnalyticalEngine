@@ -1,0 +1,13 @@
+[
+{
+	Name: "Karl Philipp",
+	ImageID: Karl_Philipp,
+	
+	BornDay: 18,
+	BornMonth: 4,
+	BornYear: 1771,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

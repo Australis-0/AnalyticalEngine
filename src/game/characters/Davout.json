@@ -1,0 +1,13 @@
+[
+{
+	Name: "Louis Nicolas Davout",
+	ImageID: Davout,
+	
+	BornDay: 10,
+	BornMonth: 5,
+	BornYear: 1770,
+	
+	Attack: 8,
+	Defense: 8,
+},
+]

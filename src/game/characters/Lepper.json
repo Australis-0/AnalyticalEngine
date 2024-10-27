@@ -1,0 +1,13 @@
+[
+{
+	Name: "Andrzej Lepper",
+	ImageID: Lepper,
+	
+	BornDay: 13,
+	BornMonth: 6,
+	BornYear: 1954,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

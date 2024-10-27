@@ -1,0 +1,13 @@
+[
+{
+	Name: "Jean Baptiste Bessieres",
+	ImageID: Bessieres,
+	
+	BornDay: 6,
+	BornMonth: 8,
+	BornYear: 1768,
+	
+	Attack: 6,
+	Defense: 6,
+},
+]

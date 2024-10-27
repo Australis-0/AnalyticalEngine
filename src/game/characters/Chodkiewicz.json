@@ -1,0 +1,13 @@
+[
+{
+	Name: "Jan Karol Chodkiewicz",
+	ImageID: Chodkiewicz,
+	
+	BornDay: 30,
+	BornMonth: 12,
+	BornYear: 1570,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

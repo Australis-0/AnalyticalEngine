@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Rodney Williams",
+			ImageID: 35,
+			
+			BornDay: 2,
+			BornMonth: 11,
+			BornYear: 1947,
+			
+			ReignYear: 2014,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

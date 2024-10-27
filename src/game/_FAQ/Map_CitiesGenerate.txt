@@ -1,0 +1,20 @@
+##########################
+##
+## This feature pre-generates data to reduce loading times
+##
+## After adding new cities, you need to generate to which province each city belongs to in-game.
+
+
+It can now be done automatically.
+However, if not, then:
+
+To do this, go to: map/MAPNAME/cities/build_cities.txt
+Open the file and write inside it only:
+
+true
+
+# Next, launch the game, and during the loading process, the game will automatically generate all the necessary data.
+
+Once the data is generated, don't forget to disable the data generation by setting the file map/MAPNAME/cities/build_cities.txt to:
+
+false

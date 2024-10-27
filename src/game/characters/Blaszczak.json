@@ -1,0 +1,13 @@
+[
+{
+	Name: "Mariusz Błaszczak",
+	ImageID: Blaszczak,
+	
+	BornDay: 19,
+	BornMonth: 9,
+	BornYear: 1969,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

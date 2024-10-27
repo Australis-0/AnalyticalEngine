@@ -1,0 +1,8 @@
+{
+	Name: "New Leaders for China and Japan",
+	Description: "This great mod two new Leaders for China and Japan",
+	
+	Tags: [ "Game", "Leaders" ],
+	
+	ChangeNote: "First release",
+}

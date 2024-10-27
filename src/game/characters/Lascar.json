@@ -1,0 +1,13 @@
+[
+{
+	Name: "Mihail Lascăr",
+	ImageID: Lascăr,
+	
+	BornDay: 8,
+	BornMonth: 11,
+	BornYear: 1889,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

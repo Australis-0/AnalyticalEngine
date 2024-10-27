@@ -1,0 +1,13 @@
+[
+{
+	Name: "Oleksii Reznikov",
+	ImageID: Reznikov,
+	
+	BornDay: 18,
+	BornMonth: 6,
+	BornYear: 1966,
+	
+	Attack: 3,
+	Defense: 6,
+},
+]

@@ -1,0 +1,26 @@
+{
+	Rulers: [
+		{
+			Name: "Federico Paez",
+			ImageID: 288,
+			
+			BornDay: 9,
+			BornMonth: 2,
+			BornYear: 1876,
+			
+			ReignYear: 1935,
+		},
+		{
+			Name: "Daniel Noboa",
+			ImageID: 79,
+			
+			BornDay: 30,
+			BornMonth: 11,
+			BornYear: 1987,
+			
+			ReignYear: 2022,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

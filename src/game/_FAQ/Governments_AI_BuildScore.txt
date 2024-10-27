@@ -1,0 +1,75 @@
+####################
+## AI_BUILD_SCORE
+
+0 == AI_BuildResearch
+1 == AI_BuildGold
+2 == AI_BuildLegacy
+3 == AI_BuildTaxEfficiency
+4 == AI_BuildProvinceMaintenance
+5 == AI_BuildManpower
+6 == AI_BuildDefensive
+7 == AI_BuildRecruitArmyCost
+8 == AI_BuildGrowthRate
+9 == AI_BuildEconomy
+10 == AI_BuildProductionEfficiency
+11 == AI_BuildConstructionCost
+12 == AI_BuildRest
+13 == AI_BuildCapitalBuilding
+14 == AI_BuildResource
+15 == AI_ColonizationTribal
+
+## Example use:
+
+AI_BUILD_SCORE: [ 70, 50, 40, 60, 40, 65, 60, 30, 40, 55, 50, 45, 30, 50, 40, 0],
+
+
+## DON'T USE IT THIS WAY
+AI_BUILD_SCORE: [ 70,  // AI_BuildResearch
+    50,  // AI_BuildGold
+    40,  // AI_BuildLegacy
+    60,  // AI_BuildTaxEfficiency
+    40,  // AI_BuildProvinceMaintenance
+    65,  // AI_BuildManpower
+    60,  // AI_BuildDefensive
+    30,  // AI_BuildRecruitArmyCost
+    40,  // AI_BuildGrowthRate
+    55,  // AI_BuildEconomy
+    50,  // AI_BuildProductionEfficiency
+    45,  // AI_BuildConstructionCost
+    30,  // AI_BuildRest
+    50,  // AI_BuildCapitalBuilding
+	40,  // AI_BuildResource
+	0    // AI_ColonizationTribal],
+	
+	
+##########################################################
+
+AI_BUILD_INVEST_IN_ECONOMY: 25,
+AI_BUILD_INCREASE_TAX_EFFICIENCY: 40,
+AI_BUILD_INCREASE_MANPOWER: 52,
+AI_BUILD_INCREASE_GROWTH_RATE: 62,
+AI_BUILD_DEVELOP_INFRASTRUCTURE: 68,
+AI_BUILD_BUILDING: 100,
+
+##########################################################
+
+int rand = randomInt(100);
+
+f(rand < AI_BUILD_INVEST_IN_ECONOMY) {
+    AI_InvestInEconomy.investInEconomy(civID, 100);
+}
+else if(rand < AI_BUILD_INCREASE_TAX_EFFICIENCY) {
+    AI_IncreaseTaxEfficiency.increaseTaxEfficiency(civID, 100);
+}
+else if(rand < AI_BUILD_INCREASE_MANPOWER) {
+    AI_IncreaseManpower.increaseManpower(civID, 100);
+}
+else if(rand < AI_BUILD_INCREASE_GROWTH_RATE) {
+    AI_GrowthRate.increaseGrowthRate(civID, 100);
+}
+else if(rand < AI_BUILD_DEVELOP_INFRASTRUCTURE) {
+    AI_DevelopInfrastructure.developInfrastructure(civID, 100);
+}
+else if(rand < AI_BUILD_BUILDING) {
+    AI_Build.build(civID);
+}

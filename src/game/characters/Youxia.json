@@ -1,0 +1,13 @@
+[
+{
+	Name: "Zhang Youxia",
+	ImageID: "Youxia",
+	
+	BornDay: 16,
+	BornMonth: 7,
+	BornYear: 1950,
+	
+	Attack: -1,
+	Defense: -1,
+}
+]

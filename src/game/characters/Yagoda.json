@@ -1,0 +1,13 @@
+[
+{
+	Name: "Genrikh Yagoda",
+	ImageID: Yagoda,
+	
+	BornDay: 7,
+	BornMonth: 11,
+	BornYear: 1891,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

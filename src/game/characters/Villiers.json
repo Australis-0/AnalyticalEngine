@@ -1,0 +1,13 @@
+[
+{
+	Name: "George Villiers",
+	ImageID: Villiers,
+		
+	BornDay: 28,
+	BornMonth: 8,
+	BornYear: 1592,
+		
+	Attack: -1,
+	Defense: -1,
+},
+]

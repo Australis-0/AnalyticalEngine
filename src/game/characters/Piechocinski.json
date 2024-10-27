@@ -1,0 +1,13 @@
+[
+{
+	Name: "Janusz Piechociński",
+	ImageID: Piechocinski,
+	
+	BornDay: 15,
+	BornMonth: 3,
+	BornYear: 1960,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

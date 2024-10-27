@@ -1,0 +1,13 @@
+[
+{
+	Name: "Sepp Dietrich",
+	ImageID: Dietrich,
+	
+	BornDay: 28,
+	BornMonth: 5,
+	BornYear: 1892,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

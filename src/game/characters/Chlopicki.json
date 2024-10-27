@@ -1,0 +1,13 @@
+[
+{
+	Name: "Józef Chłopicki",
+	ImageID: Chlopicki,
+	
+	BornDay: 14,
+	BornMonth: 3,
+	BornYear: 1771,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

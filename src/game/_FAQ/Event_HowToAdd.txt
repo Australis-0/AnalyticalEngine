@@ -1,0 +1,385 @@
+#######################################
+## Read: mods_steam_workshop.txt !
+## 
+## To create a new mod for submission to the Steam Workshop, first create a new folder for your mod within the 'mods' directory.
+## Then, copy or recreate all the modified files into that folder!
+##
+## For example, if a file was originally located in game/ExampleFile.json, 
+## it should be placed in mods/YourModName/game/ExampleFile.json in your mod's folder.
+##
+#####
+
+For your mod the path will be:
+mods/YOUR_MOD_NAME/game/events/common/
+mods/YOUR_MOD_NAME/game/events/global/
+mods/YOUR_MOD_NAME/game/events/siege/
+
+#####
+
+Events for scenario:
+
+mods/YOUR_MOD_NAME/map/THE_MAP/scenarios/THE_SCENARIO/events/common/
+mods/YOUR_MOD_NAME/map/THE_MAP/scenarios/THE_SCENARIO/events/global/
+mods/YOUR_MOD_NAME/map/THE_MAP/scenarios/THE_SCENARIO/events/siege/
+
+#####
+
+
+Example event:
+
+###############################
+######## EXAMPLE EVENT ########
+
+id=unique_id_of_my_event
+title=Here is the title of my event!
+desc=The description of my event. This event will give bonuses if the civilization has more than 10 regiments.
+
+image=49.png
+
+show_in_missions=false
+mission_image=2
+
+only_once=true
+
+trigger_and
+next_and
+civ_regiments_over=10
+next_and
+invested_in_economy_over=1
+trigger_and_end
+
+option_btn
+name=Thank you, I don't collect points.
+gold=10
+ai=2
+option_end
+
+option_btn
+name=Second button text
+ai=100
+province_manpower=1.2
+bonus_duration=20
+bonus_max_morale=5
+bonus_army_morale_recovery=15
+option_end
+
+###### EXAMPLE EVENT END ######
+###############################
+
+
+Let's go over the code:
+
+id=unique_id_of_my_event
+
+## The id must be unique
+## If the event can only be triggered once, the game will verify if the civilization already has this ID in the variables database.
+## It shouldn't be too long if it is available for all civilizations, as it will increase the save size when all civilizations have completed the event.
+## Example IDs:
+
+id=XeGU3aP
+id=Y_C_241
+
+title=Here is the title of my event!
+desc=The description of my event. This event will give bonuses if the civilization has more than 10 regiments.
+
+## The title and description of the event.
+
+## You can use the translation key.
+## Example of a translation key:
+title=exceptional_harvest.t
+desc=exceptional_harvest.d
+
+## The desc will also be used in the Mission Tree.
+
+mission_desc=advisors_research_breakthrough.m
+
+## Optionally, you can add mission_desc, which will be displayed(Button hover) in the Court -> Missions
+
+############
+
+image=49.png
+
+## Main image for the event that appears.
+## The list of all images at: game/events/images/H/
+## You can use any image file:
+
+image=city.png
+
+## Alternatively, you can use an image from your mod folder:
+mods/YOUR_MOD_NAME/game/events/images/H/
+
+image=event_image_from_mod.png
+
+## The path to your image will be:
+mods/YOUR_MOD_NAME/game/events/images/H/event_image_from_mod.png
+
+############
+
+show_in_missions=false
+show_in_missions=true
+
+## Enable or disable the display of the event in Court -> Missions.
+
+############
+
+mission_image=2
+
+## The button image overlay appears when the event is displayed on the right side, below the date.
+## A complete list of all images can be found at: game/events/imagesMissions/H/
+## Only integer numbers are allowed.
+
+############
+
+popUp=false
+popUp=true
+
+## The event will pop up immediately or not
+
+############
+
+only_once=true
+only_once=false
+
+## For each civilization. The event can be run only once or an unlimited number of times.
+
+############
+
+
+##################################
+############ TRIGGERS ############
+
+List of all triggers: game/_FAQ/Events_Triggers.txt
+List of all triggers 2: game/_FAQ/Events.txt
+
+############
+### CODE ###
+
+trigger_and
+next_and
+civ_regiments_over=10
+next_and
+invested_in_economy_over=1
+trigger_and_end
+
+### CODE ###
+############
+
+So, this code is a trigger for the event.
+'trigger_and' marks the beginning of the event trigger,
+while 'trigger_and_end' indicates the end of the event trigger.
+
+In between we put what needs to be true to run the event.
+
+###
+next_and
+civ_regiments_over=10
+###
+
+'next_and' indicates that the next condition inside the trigger will be an "AND" statement.
+'civ_regiments_over=10' means that the civilization must have more than 10 regiments.
+
+###
+next_and
+invested_in_economy_over=1
+###
+'next_and' indicates that the next condition inside the trigger will be an "AND" statement.
+'invested_in_economy_over=1' means that the civilization has invested in the economy more than once.
+
+If you used 'next_or' the trigger would work differently.
+
+
+############ TRIGGERS ############
+##################################
+
+
+#############################################
+############ MULTIPLE TRIGGERS 2 ############
+
+############
+### CODE ###
+
+trigger_and
+next_and
+invested_in_economy_over=1
+next_or
+civ_provinces_over=10
+trigger_and_end
+
+trigger_and
+next_and
+civ_gold_over=75
+trigger_and_end
+
+### CODE ###
+############
+
+In this example we have two separate triggers.
+The first trigger will be activated if the Civilization invests more than 1 in the economy or Civilization have more than 10 provinces. THIS TRIGGER IS AND(trigger_and)
+The second trigger will be activated if the Civilization has more than 75 gold in its budget. THIS TRIGGER IS AND(trigger_and)
+
+In this case the event will pop up if both triggers will be true.
+
+
+Let's create a trigger for the event
+
+# START OF THE TRIGGER 'AND'
+trigger_and
+
+# INSIDE TRIGGER CODE
+
+trigger_and_end
+# END OF THE TRIGGER 'AND'
+
+
+# You can use multiple triggers in one event
+## You can choose from:
+
+trigger_and
+trigger_and_end
+
+trigger_and_not
+trigger_and_not_end
+
+trigger_or
+trigger_or_end
+
+trigger_or_not
+trigger_or_not_end
+
+
+### INSIDE TRIGGER CODE
+
+# START OF THE INSIDE TRIGGER 'AND'
+
+next_and
+invested_in_economy_over=1
+
+# END OF THE INSIDE TRIGGER 'AND'
+
+next_and
+# The next line inside the trigger will be "and"
+invested_in_economy_over=1
+# In this example, A civilization must invest more than 1 economy point in its economy.
+
+You must always choose what type the next inside trigger will be, in this case we have used "next_and".
+## You can choose from:
+next_and
+next_and_not
+next_or
+next_or_not
+
+
+# You can use multiple inside triggers in one trigger
+
+############ MULTIPLE TRIGGERS 2 ############
+#############################################
+
+
+
+
+
+################################
+###### BUTTONS & OUTCOMES ######
+
+List of all outcomes: game/_FAQ/Events_Outcomes.txt
+List of all outcomes 2: game/_FAQ/Events.txt
+
+
+############
+### CODE ###
+
+option_btn
+name=Thank you, I don't collect points.
+gold=10
+ai=2
+option_end
+
+### CODE ###
+############
+
+The buttons are where you define the event outcomes.
+'option_btn' marks the beginning of the button code.
+'option_end' marks the end of the button code.
+Inside the button, you specify the name and outcomes for this option.
+
+name=Thank you, I don't collect points.
+## The text "Thank you, I don't collect points." will be displayed on the button
+
+ai=2
+## The variable ai=2 represents the AI's likelihood of choosing that option.
+## The game will sum up the AI values of all buttons and randomly determine which option to choose for AI based on the likelihood.
+
+So, the event outcomes should be placed between option_btn and option_end, in the middle.
+
+In this example, the button has one outcome:
+gold=10
+
+## This means the civilization that chooses this option will receive 10 gold.
+
+
+
+
+############
+### CODE ###
+
+option_btn
+name=Second button text
+ai=100
+province_manpower=1.2
+bonus_duration=20
+bonus_max_morale=5
+bonus_army_morale_recovery=15
+option_end
+
+### CODE ###
+############
+
+
+The second button to choose from is added after the first button is closed (option_end).
+It is the same as the first, starting with option_btn and ending with option_end.
+
+This time: ai=100
+## The AI will be more likely to choose that option, with a probability of 100/102.
+
+
+## When the button is chosen, it will result in the following outcomes:
+
+province_manpower=1.2
+bonus_duration=20
+bonus_max_morale=5
+bonus_army_morale_recovery=15
+
+## A random province from all the civilization's provinces will receive +1.2 local manpower.
+## An extra bonus for the civilization will be set for 20 years.
+## bonus_max_morale=5 for 20 years. (as set by bonus_duration)
+## bonus_army_morale_recovery=15 for 20 years. (as set by bonus_duration)
+
+
+###### BUTTONS & OUTCOMES ######
+################################
+
+
+And that’s all!
+
+#############################
+#### EVENTS FOR SCENARIO ####
+
+To add events for a scenario, repeat the steps, but the path for the event file should be placed in the scenario files within the map directory
+
+Path for Events for the scenario:
+
+mods/YOUR_MOD_NAME/map/THE_MAP/scenarios/THE_SCENARIO/events/common/
+mods/YOUR_MOD_NAME/map/THE_MAP/scenarios/THE_SCENARIO/events/global/
+mods/YOUR_MOD_NAME/map/THE_MAP/scenarios/THE_SCENARIO/events/siege/
+
+#### EVENTS FOR SCENARIO ####
+#############################
+
+
+
+####### MORE #######
+## You can also read:
+
+game/_FAQ/Events.txt
+game/_FAQ/Events_Triggers.txt
+game/_FAQ/Events_Outcomes.txt

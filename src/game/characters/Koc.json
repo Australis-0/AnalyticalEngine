@@ -1,0 +1,13 @@
+[
+{
+	Name: "Adam Koc",
+	ImageID: Koc,
+	
+	BornDay: 31,
+	BornMonth: 7,
+	BornYear: 1891,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

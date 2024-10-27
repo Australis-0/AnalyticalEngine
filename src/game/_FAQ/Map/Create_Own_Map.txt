@@ -1,0 +1,63 @@
+#######################################
+## Read: mods_steam_workshop.txt !
+## 
+## To create a new mod for submission to the Steam Workshop, first create a new folder for your mod within the 'mods' directory.
+## Then, copy or recreate all the modified files into that folder!
+##
+## For example, if a file was originally located in game/ExampleFile.json, 
+## it should be placed in mods/YourModName/game/ExampleFile.json in your mod's folder.
+##
+#####
+
+For your mod the path will be:
+mods/YOUR_MOD_NAME/map/YOUR_MAP/
+
+#####
+
+You can find an example mod for creating a new map at the following path:
+
+modsExamples/Map_NewMap/
+
+If you want to try it, move the Map_NewMap/ folder from modsExamples/ to mods/, and then run the game.
+
+You can use it as a working ground for your map.
+Don't forget to change the name of your mod folder (Map_NewMap) to a new unique one.
+
+#####
+
+If you create or edit a scenario in the game and save it, the game will save the scenario files in the main game directory, not in your mod path (mods/YOUR_MOD_NAME/map/YOUR_MAP/).
+The scenario files will be saved in the following location: map/YOUR_MAP/scenarios/.
+Therefore, you will need to move the folder with the scenario to your mod directory.
+
+#####
+
+
+If you are at the beginning of creating your map, to simplify your work, do not place your map in your mod folder.
+Instead, temporarily place your map folder in the main game files under map/
+
+You will also need to manually add your map to map/Maps.json for it to be found by the game.
+
+#####
+
+Map Editor:
+map/MapEditor_2.jar
+map/MapEditorSettings.txt
+
+#####
+
+You don't need to add your map to map/Maps.json if your map is in the mods folder or is from Steam Workshop.
+The game will automatically detect your map.
+
+Do not modify the map/Maps.json file! Do not place map/Maps.json in your mod folder!
+Do not modify the map/Maps.json file! Do not place map/Maps.json in your mod folder!
+Do not modify the map/Maps.json file! Do not place map/Maps.json in your mod folder!
+Do not modify the map/Maps.json file! Do not place map/Maps.json in your mod folder!
+
+You can use it only temporarily when creating the map.
+You can use it only temporarily when creating the map.
+
+Maps.json should not be added to your mod files!
+Maps.json should not be added to your mod files!
+
+The game will automatically detect your map.
+The game will automatically detect your map.

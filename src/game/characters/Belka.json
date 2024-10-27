@@ -1,0 +1,13 @@
+[
+{
+	Name: "Marek Belka",
+	ImageID: Belka,
+	
+	BornDay: 9,
+	BornMonth: 1,
+	BornYear: 1952,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

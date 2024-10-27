@@ -1,0 +1,126 @@
+{
+	"Rulers": [
+		{
+			"Name": "Ramon Berenguer IV",
+			"ImageID": -1,
+			
+			"BornDay": 11,
+			"BornMonth": 11,
+			"BornYear": 1131,
+			
+			"ReignYear": 1137
+		},
+		{
+			"Name": "Alfonso I",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1104,
+			
+			"ReignYear": 1134
+		},
+		{
+			"Name": "Peter II",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1178,
+			
+			"ReignYear": 1196
+		},
+		{
+			"Name": "James I",
+			"ImageID": -1,
+			
+			"BornDay": 2,
+			"BornMonth": 2,
+			"BornYear": 1208,
+			
+			"ReignYear": 1213
+		},
+		{
+			"Name": "James II",
+			"ImageID": -1,
+			
+			"BornDay": 10,
+			"BornMonth": 8,
+			"BornYear": 1267,
+			
+			"ReignYear": 1276
+		},
+		{
+			"Name": "Alfonso IV",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1299,
+			
+			"ReignYear": 1327
+		},
+		{
+			"Name": "Peter IV",
+			"ImageID": -1,
+			
+			"BornDay": 5,
+			"BornMonth": 9,
+			"BornYear": 1319,
+			
+			"ReignYear": 1336
+		},
+		{
+			"Name": "John I",
+			"ImageID": -1,
+			
+			"BornDay": 27,
+			"BornMonth": 12,
+			"BornYear": 1350,
+			
+			"ReignYear": 1387
+		},
+		{
+			"Name": "Martin I",
+			"ImageID": -1,
+			
+			"BornDay": 29,
+			"BornMonth": 10,
+			"BornYear": 1356,
+			
+			"ReignYear": 1396
+		},
+		{
+			"Name": "Ferdinand I",
+			"ImageID": -1,
+			
+			"BornDay": 27,
+			"BornMonth": 4,
+			"BornYear": 1380,
+			
+			"ReignYear": 1412
+		},
+		{
+			"Name": "Alfonso V",
+			"ImageID": 11,
+			
+			"BornDay": 29,
+			"BornMonth": 11,
+			"BornYear": 1396,
+			
+			"ReignYear": 1416
+		},
+		{
+			"Name": "Juan II",
+			"ImageID": -1,
+			
+			"BornDay": 29,
+			"BornMonth": 6,
+			"BornYear": 1398,
+			
+			"ReignYear": 1458
+		}
+	],
+	
+	"Age_of_History": "Rulers"
+}

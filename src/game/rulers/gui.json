@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Mamady Doumbouya",
+			ImageID: 99,
+			
+			BornDay: 4,
+			BornMonth: 3,
+			BornYear: 1980,
+			
+			ReignYear: 2021,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

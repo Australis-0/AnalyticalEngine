@@ -1,0 +1,26 @@
+{
+	Rulers: [
+		{
+			Name: "Borys III",
+			ImageID: 267,
+			
+			BornDay: 30,
+			BornMonth: 1,
+			BornYear: 1894,
+			
+			ReignYear: 1918,
+		},
+		{
+			Name: "Rumen Radev",
+			ImageID: 54,
+			
+			BornDay: 16,
+			BornMonth: 6,
+			BornYear: 1963,
+			
+			ReignYear: 2017,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Zbigniew Ziobro",
+	ImageID: Ziobro,
+	
+	BornDay: 18,
+	BornMonth: 8,
+	BornYear: 1970,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

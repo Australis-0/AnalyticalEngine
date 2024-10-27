@@ -1,0 +1,13 @@
+[
+{
+	Name: "José Joaquín de Herrera",
+	ImageID: Herrera,
+	
+	BornDay: 23,
+	BornMonth: 2,
+	BornYear: 1792,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

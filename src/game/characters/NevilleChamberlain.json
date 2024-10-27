@@ -1,0 +1,13 @@
+[
+{
+	"Name": "Neville Chamberlain",
+    "ImageID": "NevilleChamberlain",
+    
+    "BornDay": 18,
+    "BornMonth": 3,
+    "BornYear": 1869,
+	
+	Attack: -1,
+	Defense: -1,
+}
+]

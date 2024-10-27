@@ -1,0 +1,34 @@
+[
+	{
+		CivTAG: "rus",
+		Administrative: "Medvedev",
+		Economic: "Mishustin",
+		Innovation: "",
+		Military: "Shoigu",
+		Generals: [ "Mizintsev", ],
+	},
+	{
+		CivTAG: "ukr",
+		Administrative: "Shmyhal",
+		Economic: "",
+		Innovation: "",
+		Military: "Reznikov",
+		Generals: [ "Zaluzhnyi", "Syrskyi", "Shaptala", "Barhylevych" ],
+	},
+	{
+		CivTAG: "usa",
+		Administrative: "",
+		Economic: "",
+		Innovation: "",
+		Military: "",
+		Generals: [ "BrownJr", ],
+	},
+	{
+		CivTAG: "anta",
+		Administrative: "Kowalski",
+		Economic: "Skipper",
+		Innovation: "Private",
+		Military: "Rico",
+		Generals: [ "FrostyFred", "IcyPete", "ChillyCharlie" ],
+	},
+]

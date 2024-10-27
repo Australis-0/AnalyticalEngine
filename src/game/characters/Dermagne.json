@@ -1,0 +1,13 @@
+[
+{
+	Name: "Pierre-Yves Dermagne",
+	ImageID: Dermagne,
+	
+	BornDay: 30,
+	BornMonth: 12,
+	BornYear: 1980,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

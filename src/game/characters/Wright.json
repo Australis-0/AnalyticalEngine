@@ -1,0 +1,13 @@
+[
+{
+	Name: "Orville Wright",
+	ImageID: Wright,
+	
+	BornDay: 19,
+	BornMonth: 9,
+	BornYear: 1871,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

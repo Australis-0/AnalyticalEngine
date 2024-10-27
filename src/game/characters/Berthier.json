@@ -1,0 +1,13 @@
+[
+{
+	Name: "Louis Alexandre Berthier",
+	ImageID: Berthier,
+	
+	BornDay: 20,
+	BornMonth: 11,
+	BornYear: 1753,
+	
+	Attack: 8,
+	Defense: 8,
+},
+]

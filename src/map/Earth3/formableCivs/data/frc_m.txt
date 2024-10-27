@@ -1,0 +1,14 @@
+{
+FormableCivTag: "frc_m",
+ClaimantsTag: [
+	"nur",
+	"bamb",
+	"ffra",
+	"hene3",
+	"full3",
+	"wurz",
+	"beyr3"
+],
+Provinces: [ 709, 6916, 708, 731, 7284, 751, 741, 745, 749, 789, 6842, 790, 746, 788, 7444, 742, 744, 6511, 535, 743 ],
+CapitalProvinceID: 709
+}

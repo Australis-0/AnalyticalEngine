@@ -1,0 +1,26 @@
+{
+	Rulers: [
+		{
+			Name: "Michael Savage",
+			ImageID: 294,
+			
+			BornDay: 23,
+			BornMonth: 3,
+			BornYear: 1872,
+			
+			ReignYear: 1935,
+		},
+		{
+			Name: "Cindy Kiro",
+			ImageID: 152,
+			
+			BornDay: 12,
+			BornMonth: 10,
+			BornYear: 1958,
+			
+			ReignYear: 2021,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

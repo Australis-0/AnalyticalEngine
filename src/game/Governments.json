@@ -1,0 +1,755 @@
+{
+	Government: [
+		{
+			Name: "Democracy",
+			Extra_Tag: "",
+			GOV_GROUP_ID: 0,
+			
+			RulerTitle: President,
+			RulerRoman: false,
+			KingsImages: false,
+			
+			Color: [206, 181, 97],
+			
+			REQUIRED_TECHNOLOGY: 57,
+			
+			REVOLUTIONISTS: false,
+			TRIBAL: false,
+			MUST_BE_CHANGED: false,
+			STARTING_ARMY: 1.0,
+			
+			IncreaseManpowerCost: -5,
+			MaxNumberOfLoans: 3,
+			IncreaseTaxEfficiencyCost: -0.05,
+			
+			AI_EXTRA_AGGRESSIVENESS: -5,
+			
+			AI_PEACE_ORDER_CHANCE: 85,
+			AI_PEACE_ORDER_CHANCE2: 15,
+			
+			AI_PEACE_ORDER: [2, 4, 6, 0, 1, 5, 3, 7, 8],
+			AI_PEACE_ORDER2: [1, 2, 0, 4, 5, 6, 7, 8, 3],
+			
+			AI_BUILD_SCORE: [85, 65, 30, 60, 35, 65, 45, 25, 45, 65, 85, 40, 25, 50, 40, 0],
+			
+			AI_BUILD_INVEST_IN_ECONOMY: 25,
+			AI_BUILD_INCREASE_TAX_EFFICIENCY: 40,
+			AI_BUILD_INCREASE_MANPOWER: 52,
+			AI_BUILD_INCREASE_GROWTH_RATE: 62,
+			AI_BUILD_DEVELOP_INFRASTRUCTURE: 68,
+			AI_BUILD_BUILDING: 100,
+		},
+		{
+			Name: "Monarchy",
+			Extra_Tag: "m",
+			GOV_GROUP_ID: 0,
+			
+			RulerTitle: King,
+			RulerRoman: true,
+			KingsImages: true,
+			
+			Color: [255, 194, 36],
+			
+			REQUIRED_TECHNOLOGY: -1,
+			
+			REVOLUTIONISTS: false,
+			TRIBAL: false,
+			MUST_BE_CHANGED: false,
+			STARTING_ARMY: 1.0,
+			
+			AdvisorCost: -0.1,
+			MonthlyLegacy: 0.4,
+			MaxManpower: 2000,
+			
+			AI_EXTRA_AGGRESSIVENESS: 0,
+			
+			AI_PEACE_ORDER_CHANCE: 85,
+			AI_PEACE_ORDER_CHANCE2: 15,
+			
+			AI_PEACE_ORDER: [0, 1, 2, 3, 6, 5, 7, 8, 4],
+			AI_PEACE_ORDER2: [1, 0, 3, 2, 5, 4, 6, 7, 8],
+			
+			AI_BUILD_SCORE: [85, 65, 30, 60, 35, 65, 45, 25, 45, 65, 84, 40, 25, 50, 40, 0],
+			
+			AI_BUILD_INVEST_IN_ECONOMY: 25,
+			AI_BUILD_INCREASE_TAX_EFFICIENCY: 40,
+			AI_BUILD_INCREASE_MANPOWER: 52,
+			AI_BUILD_INCREASE_GROWTH_RATE: 62,
+			AI_BUILD_DEVELOP_INFRASTRUCTURE: 68,
+			AI_BUILD_BUILDING: 100,
+		},
+		{
+			Name: "ConstitutionalMonarchy",
+			Extra_Tag: "n",
+			GOV_GROUP_ID: 0,
+			
+			RulerTitle: King,
+			RulerRoman: true,
+			KingsImages: true,
+			
+			Color: [30, 65, 100],
+			
+			REQUIRED_TECHNOLOGY: 52,
+			
+			REVOLUTIONISTS: false,
+			TRIBAL: false,
+			MUST_BE_CHANGED: false,
+			STARTING_ARMY: 1.0,
+			
+			GeneralCost: -0.1,
+			MonthlyLegacy: 0.25,
+			IncreaseTaxEfficiencyCost: -0.05,
+			
+			AI_EXTRA_AGGRESSIVENESS: -1,
+			
+			AI_PEACE_ORDER_CHANCE: 85,
+			AI_PEACE_ORDER_CHANCE2: 15,
+			
+			AI_PEACE_ORDER: [0, 1, 2, 3, 5, 7, 8, 4, 6],
+			AI_PEACE_ORDER2: [1, 0, 3, 2, 5, 4, 6, 7, 8],
+			
+			AI_BUILD_SCORE: [80, 60, 55, 65, 25, 50, 45, 25, 55, 60, 76, 40, 25, 55, 40, 0],
+			
+			AI_BUILD_INVEST_IN_ECONOMY: 25,
+			AI_BUILD_INCREASE_TAX_EFFICIENCY: 38,
+			AI_BUILD_INCREASE_MANPOWER: 52,
+			AI_BUILD_INCREASE_GROWTH_RATE: 62,
+			AI_BUILD_DEVELOP_INFRASTRUCTURE: 69,
+			AI_BUILD_BUILDING: 100,
+		},
+		{
+			Name: "Communism",
+			Extra_Tag: "c",
+			GOV_GROUP_ID: 1,
+			
+			RulerTitle: GeneralSecretary,
+			RulerRoman: false,
+			KingsImages: false,
+			
+			Color: [204, 0, 0],
+			
+			REQUIRED_TECHNOLOGY: 63,
+			
+			REVOLUTIONISTS: false,
+			TRIBAL: false,
+			MUST_BE_CHANGED: false,
+			STARTING_ARMY: 1.0,
+			
+			MilitaryBuildingsCost: -0.075,
+			ConstructionTime: -0.15,
+			GeneralAttack: 2,
+			
+			AI_EXTRA_AGGRESSIVENESS: 0,
+			
+			AI_PEACE_ORDER_CHANCE: 85,
+			AI_PEACE_ORDER_CHANCE2: 15,
+			
+			AI_PEACE_ORDER: [1, 4, 2, 0, 5, 3, 7, 8],
+			AI_PEACE_ORDER2: [0, 1, 2, 3, 5, 7, 8, 4, 6],
+			
+			AI_BUILD_SCORE: [60, 50,  40, 50, 55,  80, 70, 60, 60, 55, 82, 55, 30, 40, 40, 0],
+			
+			AI_BUILD_INVEST_IN_ECONOMY: 24,
+			AI_BUILD_INCREASE_TAX_EFFICIENCY: 40,
+			AI_BUILD_INCREASE_MANPOWER: 56,
+			AI_BUILD_INCREASE_GROWTH_RATE: 62,
+			AI_BUILD_DEVELOP_INFRASTRUCTURE: 66,
+			AI_BUILD_BUILDING: 100,
+		},
+		{
+			Name: "Fascism",
+			Extra_Tag: "f",
+			GOV_GROUP_ID: 2,
+			
+			RulerTitle: SupremeLeader,
+			RulerRoman: false,
+			KingsImages: false,
+			
+			Color: [51, 108, 168],
+			
+			REQUIRED_TECHNOLOGY: 63,
+			
+			REVOLUTIONISTS: false,
+			TRIBAL: false,
+			MUST_BE_CHANGED: false,
+			STARTING_ARMY: 1.0,
+			
+			GeneralCost: -0.1,
+			MaxManpower: 3000,
+			MonthlyLegacy: 0.45,
+			
+			AI_EXTRA_AGGRESSIVENESS: 5,
+			
+			AI_PEACE_ORDER_CHANCE: 85,
+			AI_PEACE_ORDER_CHANCE2: 15,
+			
+			AI_PEACE_ORDER: [0, 2, 1, 4, 5, 7, 8, 3, 6],
+			AI_PEACE_ORDER2: [0, 1, 2, 3, 5, 7, 8, 4, 6],
+			
+			AI_BUILD_SCORE: [50, 50, 30, 60, 50, 85, 60, 35, 45, 65, 82, 55, 15, 50, 40, 0],
+			
+			AI_BUILD_INVEST_IN_ECONOMY: 21,
+			AI_BUILD_INCREASE_TAX_EFFICIENCY: 34,
+			AI_BUILD_INCREASE_MANPOWER: 52,
+			AI_BUILD_INCREASE_GROWTH_RATE: 58,
+			AI_BUILD_DEVELOP_INFRASTRUCTURE: 66,
+			AI_BUILD_BUILDING: 100,
+		},
+		{
+			Name: "Republic",
+			Extra_Tag: "r",
+			GOV_GROUP_ID: 0,
+			
+			RulerTitle: President,
+			RulerRoman: false,
+			KingsImages: false,
+			
+			Color: [0, 90, 166],
+			
+			REQUIRED_TECHNOLOGY: 57,
+			
+			REVOLUTIONISTS: false,
+			TRIBAL: false,
+			MUST_BE_CHANGED: false,
+			STARTING_ARMY: 1.0,
+			
+			AdministrationBuildingsCost: -0.05,
+			InvestInEconomyCost: -0.05,
+			RecruitmentTime: -10,
+			
+			AI_EXTRA_AGGRESSIVENESS: 3,
+			
+			AI_PEACE_ORDER_CHANCE: 85,
+			AI_PEACE_ORDER_CHANCE2: 15,
+			
+			AI_PEACE_ORDER: [0, 6, 1, 2, 5, 7, 8, 3, 4],
+			AI_PEACE_ORDER2: [0, 1, 2, 3, 5, 7, 8, 4, 6],
+			
+			AI_BUILD_SCORE: [75, 60, 45, 70, 40, 55, 50, 45, 65, 70, 88, 45, 25, 45, 40, 0],
+			
+			AI_BUILD_INVEST_IN_ECONOMY: 27,
+			AI_BUILD_INCREASE_TAX_EFFICIENCY: 41,
+			AI_BUILD_INCREASE_MANPOWER: 53,
+			AI_BUILD_INCREASE_GROWTH_RATE: 62,
+			AI_BUILD_DEVELOP_INFRASTRUCTURE: 67,
+			AI_BUILD_BUILDING: 100,
+		},
+		{
+			Name: "PresidentialRepublic",
+			Extra_Tag: "p",
+			GOV_GROUP_ID: 0,
+			
+			RulerTitle: President,
+			RulerRoman: false,
+			KingsImages: false,
+			
+			Color: [134, 44, 44],
+			
+			REQUIRED_TECHNOLOGY: 57,
+			
+			REVOLUTIONISTS: false,
+			TRIBAL: false,
+			MUST_BE_CHANGED: false,
+			STARTING_ARMY: 1.0,
+			
+			MilitaryBuildingsCost: -0.05,
+			DevelopInfrastructureCost: -0.05,
+			MonthlyLegacy: 0.25,
+			
+			AI_EXTRA_AGGRESSIVENESS: 0,
+			
+			AI_PEACE_ORDER_CHANCE: 85,
+			AI_PEACE_ORDER_CHANCE2: 15,
+			
+			AI_PEACE_ORDER: [0, 6, 1, 2, 5, 7, 8, 3, 4],
+			AI_PEACE_ORDER2: [0, 1, 2, 3, 5, 7, 8, 4, 6],
+			
+			AI_BUILD_SCORE: [75, 60, 45, 70, 40, 55, 50, 45, 65, 70, 80, 45, 25, 45, 40, 0],
+			
+			AI_BUILD_INVEST_IN_ECONOMY: 26,
+			AI_BUILD_INCREASE_TAX_EFFICIENCY: 42,
+			AI_BUILD_INCREASE_MANPOWER: 51,
+			AI_BUILD_INCREASE_GROWTH_RATE: 60,
+			AI_BUILD_DEVELOP_INFRASTRUCTURE: 70,
+			AI_BUILD_BUILDING: 100,
+		},
+		{
+			Name: "MerchantRepublic",
+			Extra_Tag: "g",
+			GOV_GROUP_ID: 0,
+			
+			RulerTitle: Leader,
+			RulerRoman: false,
+			KingsImages: true,
+			
+			Color: [130, 46, 46],
+			
+			REQUIRED_TECHNOLOGY: -1,
+			
+			REVOLUTIONISTS: false,
+			TRIBAL: false,
+			MUST_BE_CHANGED: false,
+			STARTING_ARMY: 1.0,
+			
+			ProductionEfficiency: 4.0,
+			EconomyBuildingsCost: -0.05,
+			RecruitmentTime: 10,
+			
+			AI_EXTRA_AGGRESSIVENESS: -1,
+			
+			AI_PEACE_ORDER_CHANCE: 85,
+			AI_PEACE_ORDER_CHANCE2: 15,
+			
+			AI_PEACE_ORDER: [2, 5, 1, 0, 7, 8, 3, 4, 6],
+			AI_PEACE_ORDER2: [0, 1, 2, 3, 5, 7, 8, 4, 6],
+			
+			AI_BUILD_SCORE: [65, 80, 40, 75, 50, 45, 50, 25, 70, 80, 100, 60, 15, 55, 40, 0],
+			
+			AI_BUILD_INVEST_IN_ECONOMY: 30,
+			AI_BUILD_INCREASE_TAX_EFFICIENCY: 42,
+			AI_BUILD_INCREASE_MANPOWER: 50,
+			AI_BUILD_INCREASE_GROWTH_RATE: 58,
+			AI_BUILD_DEVELOP_INFRASTRUCTURE: 68,
+			AI_BUILD_BUILDING: 100,
+		},
+		{
+			Name: "ParliamentaryRepublic",
+			Extra_Tag: "q",
+			GOV_GROUP_ID: 0,
+			
+			RulerTitle: President,
+			RulerRoman: false,
+			KingsImages: false,
+			
+			Color: [152, 134, 40],
+			
+			REQUIRED_TECHNOLOGY: 57,
+			
+			REVOLUTIONISTS: false,
+			TRIBAL: false,
+			MUST_BE_CHANGED: false,
+			STARTING_ARMY: 1.0,
+			
+			ProductionEfficiency: 2.5,
+			UnitsDefense: 2,
+			IncreaseTaxEfficiencyCost: -0.05,
+			
+			AI_EXTRA_AGGRESSIVENESS: 0,
+			
+			AI_PEACE_ORDER_CHANCE: 85,
+			AI_PEACE_ORDER_CHANCE2: 15,
+			
+			AI_PEACE_ORDER: [2, 4, 6, 0, 1, 5, 3, 7, 8],
+			AI_PEACE_ORDER2: [1, 2, 0, 4, 5, 6, 7, 8, 3],
+			
+			AI_BUILD_SCORE: [75, 60, 45, 70, 40, 55, 50, 45, 65, 70, 84, 45, 25, 45, 40, 0],
+			
+			AI_BUILD_INVEST_IN_ECONOMY: 24,
+			AI_BUILD_INCREASE_TAX_EFFICIENCY: 38,
+			AI_BUILD_INCREASE_MANPOWER: 46,
+			AI_BUILD_INCREASE_GROWTH_RATE: 54,
+			AI_BUILD_DEVELOP_INFRASTRUCTURE: 60,
+			AI_BUILD_BUILDING: 100,
+		},
+		{
+			Name: "Horde",
+			Extra_Tag: "h",
+			GOV_GROUP_ID: 2,
+			
+			RulerTitle: Khan,
+			RulerRoman: true,
+			KingsImages: true,
+			
+			Color: [28, 99, 75],
+			
+			REQUIRED_TECHNOLOGY: -1,
+			
+			REVOLUTIONISTS: false,
+			TRIBAL: false,
+			MUST_BE_CHANGED: false,
+			STARTING_ARMY: 1.0,
+			
+			UnitsAttack: 1,
+			RecruitArmyCost: -5,
+			MaxNumberOfLoans: -1,
+			
+			AI_EXTRA_AGGRESSIVENESS: 25,
+			
+			AI_PEACE_ORDER_CHANCE: 85,
+			AI_PEACE_ORDER_CHANCE2: 15,
+			
+			AI_PEACE_ORDER: [0, 1, 4, 3, 5, 7, 8],
+			AI_PEACE_ORDER2: [0, 2, 1, 4, 5, 6, 7, 8, 3],
+			
+			AI_BUILD_SCORE: [30, 45, 20, 40, 45, 95, 75, 60, 35, 40, 55, 50, 15, 45, 40, 0],
+			
+			AI_BUILD_INVEST_IN_ECONOMY: 18,
+			AI_BUILD_INCREASE_TAX_EFFICIENCY: 26,
+			AI_BUILD_INCREASE_MANPOWER: 56,
+			AI_BUILD_INCREASE_GROWTH_RATE: 62,
+			AI_BUILD_DEVELOP_INFRASTRUCTURE: 67,
+			AI_BUILD_BUILDING: 100,
+		},
+		{
+			Name: "Dictatorship",
+			Extra_Tag: "w",
+			GOV_GROUP_ID: 2,
+			
+			RulerTitle: Dictator,
+			RulerRoman: true,
+			KingsImages: true,
+			
+			Color: [130, 81, 60],
+			
+			REQUIRED_TECHNOLOGY: -1,
+			
+			REVOLUTIONISTS: false,
+			TRIBAL: false,
+			MUST_BE_CHANGED: false,
+			STARTING_ARMY: 1.0,
+			
+			UnitsAttack: 1,
+			CoreCost: -5,
+			MaxNumberOfLoans: -1,
+			
+			AI_EXTRA_AGGRESSIVENESS: 5,
+			
+			AI_PEACE_ORDER_CHANCE: 85,
+			AI_PEACE_ORDER_CHANCE2: 15,
+			
+			AI_PEACE_ORDER: [0, 2, 1, 4, 5, 7, 8, 3, 6],
+			AI_PEACE_ORDER2: [0, 1, 2, 3, 5, 7, 8, 4, 6],
+			
+			AI_BUILD_SCORE: [60, 50, 30, 40, 35, 75, 80, 65, 40, 55, 76, 50, 25, 70, 40, 0],
+			
+			AI_BUILD_INVEST_IN_ECONOMY: 25,
+			AI_BUILD_INCREASE_TAX_EFFICIENCY: 40,
+			AI_BUILD_INCREASE_MANPOWER: 50,
+			AI_BUILD_INCREASE_GROWTH_RATE: 60,
+			AI_BUILD_DEVELOP_INFRASTRUCTURE: 67,
+			AI_BUILD_BUILDING: 100,
+		},
+		{
+			Name: "CityState",
+			Extra_Tag: "s",
+			GOV_GROUP_ID: 0,
+			
+			RulerTitle: Governor,
+			RulerRoman: false,
+			KingsImages: true,
+
+			Color: [117, 28, 136],
+			
+			REQUIRED_TECHNOLOGY: -1,
+			
+			REVOLUTIONISTS: false,
+			TRIBAL: false,
+			MUST_BE_CHANGED: false,
+			STARTING_ARMY: 1.0,
+			
+			CITY_STATE: true,
+			
+			ProvinceMaintenance: 10,
+			UnitsDefense: 3,
+			BuildingSlot: 4,
+			
+			AI_EXTRA_AGGRESSIVENESS: 0,
+			
+			AI_PEACE_ORDER_CHANCE: 85,
+			AI_PEACE_ORDER_CHANCE2: 15,
+			
+			AI_PEACE_ORDER: [0, 1, 2, 4, 5, 7, 8, 3, 6],
+			AI_PEACE_ORDER2: [0, 1, 2, 3, 5, 7, 8, 4, 6],
+			
+			AI_BUILD_SCORE: [70, 80, 50, 90, 40, 30, 40, 50, 60, 85, 75, 50, 75, 45, 40, 0],
+			
+			AI_BUILD_INVEST_IN_ECONOMY: 20,
+			AI_BUILD_INCREASE_TAX_EFFICIENCY: 40,
+			AI_BUILD_INCREASE_MANPOWER: 50,
+			AI_BUILD_INCREASE_GROWTH_RATE: 60,
+			AI_BUILD_DEVELOP_INFRASTRUCTURE: 68,
+			AI_BUILD_BUILDING: 100,
+		},
+		{
+			Name: "Theocracy",
+			Extra_Tag: "o",
+			GOV_GROUP_ID: 0,
+			
+			RulerTitle: HighPriest,
+			RulerRoman: true,
+			KingsImages: true,
+			
+			Color: [254, 228, 116],
+			
+			REQUIRED_TECHNOLOGY: -1,
+			
+			REVOLUTIONISTS: false,
+			TRIBAL: false,
+			MUST_BE_CHANGED: false,
+			STARTING_ARMY: 1.0,
+			
+			MonthlyIncome: 1.25,
+			ReligionCost: -15,
+			MaxNumberOfLoans: 2,
+			
+			AI_EXTRA_AGGRESSIVENESS: -3,
+			
+			AI_PEACE_ORDER_CHANCE: 85,
+			AI_PEACE_ORDER_CHANCE2: 15,
+			
+			AI_PEACE_ORDER: [3, 1, 2, 0, 4, 5, 6, 7, 8],
+			AI_PEACE_ORDER2: [0, 1, 2, 3, 5, 7, 8, 4, 6],
+			
+			AI_BUILD_SCORE: [90, 50, 85, 75, 40, 70, 80, 30, 50, 60, 65, 45, 20, 55, 40, 0],
+			
+			AI_BUILD_INVEST_IN_ECONOMY: 24,
+			AI_BUILD_INCREASE_TAX_EFFICIENCY: 38,
+			AI_BUILD_INCREASE_MANPOWER: 48,
+			AI_BUILD_INCREASE_GROWTH_RATE: 56,
+			AI_BUILD_DEVELOP_INFRASTRUCTURE: 68,
+			AI_BUILD_BUILDING: 100,
+		},
+		{
+			Name: "Tribal",
+			Extra_Tag: "t",
+			GOV_GROUP_ID: 3,
+			
+			RulerTitle: Chieftain,
+			RulerRoman: false,
+			KingsImages: true,
+			
+			Color: [51, 153, 102],
+			
+			REQUIRED_TECHNOLOGY: -1,
+			
+			REVOLUTIONISTS: false,
+			TRIBAL: true,
+			MUST_BE_CHANGED: true,
+			STARTING_ARMY: 0.5,
+			
+			ConstructionCost: 0.25,
+			ConstructionTime: 0.15,
+			MaxManpower: -2500,
+			MaxNumberOfLoans: -1,
+			UnitsAttack: -2,
+			UnitsDefense: -2,
+			ProvinceMaintenance: -5,
+			
+			AI_EXTRA_AGGRESSIVENESS: 0,
+			
+			AI_PEACE_ORDER_CHANCE: 50,
+			AI_PEACE_ORDER_CHANCE2: 50,
+			
+			AI_PEACE_ORDER: [1, 0, 2, 3, 8, 5, 6, 7],
+			AI_PEACE_ORDER2: [0, 1, 2, 3, 5, 7, 8, 4, 6],
+			
+			AI_BUILD_SCORE: [40, 60, 30, 50, 35, 80, 85, 55, 40, 45, 50, 30, 25, 60, 40, 120],
+			
+			AI_BUILD_INVEST_IN_ECONOMY: 18,
+			AI_BUILD_INCREASE_TAX_EFFICIENCY: 36,
+			AI_BUILD_INCREASE_MANPOWER: 46,
+			AI_BUILD_INCREASE_GROWTH_RATE: 54,
+			AI_BUILD_DEVELOP_INFRASTRUCTURE: 60,
+			AI_BUILD_BUILDING: 100,
+		},
+		{
+			Name: "NationalSocialism",
+			Extra_Tag: "z",
+			GOV_GROUP_ID: 2,
+			
+			RulerTitle: Dictator,
+			RulerRoman: false,
+			KingsImages: false,
+			
+			Color: [176, 141, 127],
+			
+			REQUIRED_TECHNOLOGY: 63,
+			
+			REVOLUTIONISTS: false,
+			TRIBAL: false,
+			MUST_BE_CHANGED: false,
+			STARTING_ARMY: 1.0,
+			
+			ConstructionTime: -0.10,
+			MaxManpower: 2500,
+			UnitsAttack: 2,
+			
+			AI_EXTRA_AGGRESSIVENESS: 4,
+			
+			AI_PEACE_ORDER_CHANCE: 85,
+			AI_PEACE_ORDER_CHANCE2: 15,
+			
+			AI_PEACE_ORDER: [0, 2, 1, 4, 5, 7, 8, 3, 6],
+			AI_PEACE_ORDER2: [0, 1, 2, 3, 5, 7, 8, 4, 6],
+			
+			AI_BUILD_SCORE: [50, 50, 30, 60, 50, 85, 60, 35, 45, 65, 86, 55, 15, 50, 40, 0],
+			
+			AI_BUILD_INVEST_IN_ECONOMY: 32,
+			AI_BUILD_INCREASE_TAX_EFFICIENCY: 42,
+			AI_BUILD_INCREASE_MANPOWER: 60,
+			AI_BUILD_INCREASE_GROWTH_RATE: 64,
+			AI_BUILD_DEVELOP_INFRASTRUCTURE: 70,
+			AI_BUILD_BUILDING: 100,
+		},
+		{
+			Name: "Daimyo",
+			Extra_Tag: "d",
+			GOV_GROUP_ID: 2,
+			
+			RulerTitle: Shugo,
+			RulerRoman: false,
+			KingsImages: true,
+			
+			Color: [206, 178, 147],
+			
+			REQUIRED_TECHNOLOGY: 23,
+			
+			REVOLUTIONISTS: false,
+			TRIBAL: false,
+			MUST_BE_CHANGED: false,
+			STARTING_ARMY: 1.0,
+			
+			MonthlyLegacy: 0.2,
+			MaxManpower: 2500,
+			UnitsDefense: 1,
+			GeneralAttack: 1,
+			
+			AI_EXTRA_AGGRESSIVENESS: 0,
+			
+			AI_PEACE_ORDER_CHANCE: 85,
+			AI_PEACE_ORDER_CHANCE2: 15,
+			
+			AI_PEACE_ORDER: [0, 1, 2, 4, 5, 7, 8, 3, 6],
+			AI_PEACE_ORDER2: [0, 1, 2, 3, 5, 7, 8, 4, 6],
+			
+			AI_BUILD_SCORE: [55, 50, 70, 55, 40, 70, 85, 60, 35, 50, 72, 40, 30, 65, 40, 0],
+			
+			AI_BUILD_INVEST_IN_ECONOMY: 18,
+			AI_BUILD_INCREASE_TAX_EFFICIENCY: 30,
+			AI_BUILD_INCREASE_MANPOWER: 52,
+			AI_BUILD_INCREASE_GROWTH_RATE: 62,
+			AI_BUILD_DEVELOP_INFRASTRUCTURE: 68,
+			AI_BUILD_BUILDING: 100,
+		},
+		{
+			Name: "Monarchy",
+			Extra_Tag: "m2",
+			GOV_GROUP_ID: 0,
+			
+			RulerTitle: King,
+			RulerRoman: true,
+			KingsImages: true,
+			
+			Color: [255, 194, 36],
+			
+			REQUIRED_TECHNOLOGY: -1,
+			
+			REVOLUTIONISTS: false,
+			TRIBAL: false,
+			MUST_BE_CHANGED: false,
+			STARTING_ARMY: 1.0,
+			
+			AdvisorCost: -0.1,
+			MonthlyLegacy: 0.4,
+			MaxManpower: 2000,
+			
+			AI_EXTRA_AGGRESSIVENESS: 0,
+			
+			AI_PEACE_ORDER_CHANCE: 85,
+			AI_PEACE_ORDER_CHANCE2: 15,
+			
+			AI_PEACE_ORDER: [0, 1, 2, 3, 5, 7, 8, 4, 6],
+			AI_PEACE_ORDER2: [1, 0, 3, 2, 5, 4, 6, 7, 8],
+			
+			AI_BUILD_SCORE: [85, 65, 30, 60, 35, 65, 45, 25, 45, 65, 78, 40, 25, 50, 40, 0],
+			
+			AI_BUILD_INVEST_IN_ECONOMY: 25,
+			AI_BUILD_INCREASE_TAX_EFFICIENCY: 40,
+			AI_BUILD_INCREASE_MANPOWER: 50,
+			AI_BUILD_INCREASE_GROWTH_RATE: 60,
+			AI_BUILD_DEVELOP_INFRASTRUCTURE: 67,
+			AI_BUILD_BUILDING: 100,
+		},
+		{
+			Name: "Authoritarian",
+			Extra_Tag: "a",
+			GOV_GROUP_ID: 2,
+			
+			RulerTitle: Leader,
+			RulerRoman: true,
+			KingsImages: true,
+			
+			Color: [130, 81, 60],
+			
+			REQUIRED_TECHNOLOGY: -1,
+			
+			REVOLUTIONISTS: false,
+			TRIBAL: false,
+			MUST_BE_CHANGED: false,
+			STARTING_ARMY: 1.0,
+			
+			UnitsAttack: 1,
+			MaxManpower: 2500,
+			RecruitArmyCost: -5,
+			
+			AI_EXTRA_AGGRESSIVENESS: 0,
+			
+			AI_PEACE_ORDER_CHANCE: 85,
+			AI_PEACE_ORDER_CHANCE2: 15,
+			
+			AI_PEACE_ORDER: [0, 2, 1, 4, 5, 7, 8, 3, 6],
+			AI_PEACE_ORDER2: [0, 1, 2, 3, 5, 7, 8, 4, 6],
+			
+			AI_BUILD_SCORE: [60, 50, 30, 40, 35, 75, 80, 65, 40, 55, 72, 50, 25, 70, 40, 0],
+			
+			AI_BUILD_INVEST_IN_ECONOMY: 32,
+			AI_BUILD_INCREASE_TAX_EFFICIENCY: 42,
+			AI_BUILD_INCREASE_MANPOWER: 53,
+			AI_BUILD_INCREASE_GROWTH_RATE: 61,
+			AI_BUILD_DEVELOP_INFRASTRUCTURE: 68,
+			AI_BUILD_BUILDING: 100,
+		},
+		{
+			Name: "Rebels",
+			Extra_Tag: "u",
+			GOV_GROUP_ID: 4,
+			
+			RulerTitle: Leader,
+			RulerRoman: false,
+			KingsImages: true,
+			
+			Color: [92, 92, 92],
+			
+			REQUIRED_TECHNOLOGY: -1,
+			STARTING_ARMY: 1.0,
+			
+			ConstructionCost: 2.0,
+			UnitsAttack: -2,
+			UnitsDefense: -2,
+			
+			AI_EXTRA_AGGRESSIVENESS: 0,
+			
+			REVOLUTIONISTS: true,
+			TRIBAL: true,
+			MUST_BE_CHANGED: false,
+			STARTING_ARMY: 1.0,
+			
+			AI_PEACE_ORDER_CHANCE: 85,
+			AI_PEACE_ORDER_CHANCE2: 15,
+			
+			AI_PEACE_ORDER: [0],
+			AI_PEACE_ORDER2: [0],
+			
+			AI_BUILD_SCORE: [85, 65, 30, 60, 35, 65, 45, 25, 45, 65, 50, 40, 25, 50, 40, 0],
+			
+			AI_BUILD_INVEST_IN_ECONOMY: 25,
+			AI_BUILD_INCREASE_TAX_EFFICIENCY: 40,
+			AI_BUILD_INCREASE_MANPOWER: 50,
+			AI_BUILD_INCREASE_GROWTH_RATE: 60,
+			AI_BUILD_DEVELOP_INFRASTRUCTURE: 67,
+			AI_BUILD_BUILDING: 100,
+		},
+	],
+	
+	Age_of_History: Governments
+}

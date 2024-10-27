@@ -1,0 +1,13 @@
+[
+{
+	Name: "Tomasz Siemoniak",
+	ImageID: Siemoniak,
+	
+	BornDay: 2,
+	BornMonth: 7,
+	BornYear: 1967,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

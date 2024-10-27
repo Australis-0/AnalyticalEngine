@@ -1,0 +1,13 @@
+[
+{
+	Name: "Tomasz Wiktor Janiszewski",
+	ImageID: Janiszewski,
+	
+	BornDay: 21,
+	BornMonth: 5,
+	BornYear: 1867,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

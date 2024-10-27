@@ -1,0 +1,13 @@
+[
+{
+	Name: "Władysław Kosiniak-Kamysz",
+	ImageID: KosiniakKamysz,
+	
+	BornDay: 10,
+	BornMonth: 8,
+	BornYear: 1981,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

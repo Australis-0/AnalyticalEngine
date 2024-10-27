@@ -1,0 +1,94 @@
+## File: game/Governments.json
+
+List of available bonuses for Governments:
+
+
+MonthlyIncome: X,
+
+TaxEfficiency: X,
+ProvinceMaintenance: X,
+
+ProductionEfficiency: X,
+
+MonthlyLegacy: X,
+
+MaxManpower: X,
+
+ArmyMaintenance: X,
+RecruitmentTime: X,
+
+ConstructionCost: X,
+AdministrationBuildingsCost: X,
+MilitaryBuildingsCost: X,
+EconomyBuildingsCost: X,
+
+ConstructionTime: X,
+
+BuildingSlot: X,
+
+InvestInEconomyCost: X,
+IncreaseManpowerCost: X,
+IncreaseTaxEfficiencyCost: X,
+DevelopInfrastructureCost: X,
+
+RecruitArmyCost: X,
+
+GeneralAttack: X,
+GeneralDefense: X,
+
+UnitsAttack: X,
+UnitsDefense: X,
+
+AdvisorCost: X,
+GeneralCost: X,
+
+CoreCost: X,
+ReligionCost: X,
+
+MaxNumberOfLoans: X,
+
+#######################################
+
+float MonthlyIncome;
+
+float TaxEfficiency;
+float ProvinceMaintenance;
+
+float ProductionEfficiency;
+
+float MonthlyLegacy;
+
+float MaxManpower;
+
+float ArmyMaintenance;
+float RecruitmentTime;
+
+float ConstructionCost;
+float AdministrationBuildingsCost;
+float MilitaryBuildingsCost;
+float EconomyBuildingsCost;
+
+float ConstructionTime;
+
+int BuildingSlot;
+
+float InvestInEconomyCost;
+float IncreaseManpowerCost;
+float IncreaseTaxEfficiencyCost;
+float DevelopInfrastructureCost;
+
+float RecruitArmyCost;
+
+int GeneralAttack;
+int GeneralDefense;
+
+int UnitsAttack;
+int UnitsDefense;
+
+float AdvisorCost;
+float GeneralCost;
+
+float CoreCost;
+float ReligionCost;
+
+int MaxNumberOfLoans;

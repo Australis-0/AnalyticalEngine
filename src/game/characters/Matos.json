@@ -1,0 +1,13 @@
+[
+{
+	Name: "Jose Mariano Matos",
+	ImageID:Matos,
+	
+	BornDay: 6 ,
+	BornMonth: 2,
+	BornYear: 1866,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

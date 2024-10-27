@@ -1,0 +1,13 @@
+[
+{
+	Name: "George Washington",
+	ImageID: Washington,
+	
+	BornDay: 22,
+	BornMonth: 2,
+	BornYear: 1732,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

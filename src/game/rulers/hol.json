@@ -1,0 +1,126 @@
+{
+	"Rulers": [
+		{
+			"Name": "Florence IV",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1210,
+			
+			"ReignYear": 1234
+		},
+		{
+			"Name": "William II",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1228,
+			
+			"ReignYear": 1234
+		},
+		{
+			"Name": "Florence V",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1255,
+			
+			"ReignYear": 1256
+		},
+		{
+			"Name": "John I",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1300,
+			
+			"ReignYear": 1299
+		},
+		{
+			"Name": "William V",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1338,
+			
+			"ReignYear": 1345
+		},
+		{
+			"Name": "Margaret I",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1353,
+			
+			"ReignYear": 1389
+		},
+		{
+			"Name": "Philip the Good",
+			"ImageID": -1,
+			
+			"BornDay": 31,
+			"BornMonth": 7,
+			"BornYear": 1396,
+			
+			"ReignYear": 1419
+		},
+		{
+			"Name": "Charles the Bold",
+			"ImageID": -1,
+			
+			"BornDay": 10,
+			"BornMonth": 11,
+			"BornYear": 1433,
+			
+			"ReignYear": 1467
+		},
+		{
+			"Name": "Philip I",
+			"ImageID": -1,
+			
+			"BornDay": 22,
+			"BornMonth": 7,
+			"BornYear": 1478,
+			
+			"ReignYear": 1482
+		},
+		{
+			"Name": "Margaret",
+			"ImageID": -1,
+			
+			"BornDay": 10,
+			"BornMonth": 1,
+			"BornYear": 1480,
+			
+			"ReignYear": 1506
+		},
+		{
+			"Name": "Charles V",
+			"ImageID": -1,
+			
+			"BornDay": 24,
+			"BornMonth": 2,
+			"BornYear": 1500,
+			
+			"ReignYear": 1516
+		},
+		{
+			"Name": "Philip II",
+			"ImageID": -1,
+			
+			"BornDay": 21,
+			"BornMonth": 5,
+			"BornYear": 1527,
+			
+			"ReignYear": 1556
+		}
+	],
+	
+	"Age_of_History": "Rulers"
+}

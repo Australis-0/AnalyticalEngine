@@ -1,0 +1,19 @@
+{
+FormableCivTag: "swab_m",
+ClaimantsTag: [
+	"rott3",
+	"offe3",
+	"hohe3",
+	"bibe3",
+	"rav",
+	"mem",
+	"ulm",
+	"ans",
+	"wurt",
+	"bade",
+	"furs3",
+	"kons3"
+],
+Provinces: [ 7396, 766, 535, 769, 768, 7372, 763, 333, 329, 6565, 334, 543, 330, 311, 312, 3602, 6879, 331, 6508, 332, 8053, 7371, 764, 772, 7308, 7440, 6601, 539, 771, 714, 713 ],
+CapitalProvinceID: 7396
+}

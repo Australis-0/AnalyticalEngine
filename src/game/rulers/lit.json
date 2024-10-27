@@ -1,0 +1,126 @@
+{
+	"Rulers": [
+		{
+			"Name": "Mindaugas",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1203,
+			
+			"ReignYear": 1236
+		},
+		{
+			"Name": "Vytis the Great",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1290,
+			
+			"ReignYear": 1295
+		},
+		{
+			"Name": "Gediminas",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1275,
+			
+			"ReignYear": 1316
+		},
+		{
+			"Name": "Algirdas",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1296,
+			
+			"ReignYear": 1345
+		},
+		{
+			"Name": "Kestutis",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1297,
+			
+			"ReignYear": 1345
+		},
+		{
+			"Name": "Vytautas the Great",
+			"ImageID": -1,
+			
+			"BornDay": 27,
+			"BornMonth": 2,
+			"BornYear": 1350,
+			
+			"ReignYear": 1392
+		},
+		{
+			"Name": "Jogaila",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1351,
+			
+			"ReignYear": 1377
+		},
+		{
+			"Name": "Wladyslaw II Jagiello",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1362,
+			
+			"ReignYear": 1386
+		},
+		{
+			"Name": "Alexander Jagiellon",
+			"ImageID": -1,
+			
+			"BornDay": 5,
+			"BornMonth": 8,
+			"BornYear": 1461,
+			
+			"ReignYear": 1492
+		},
+		{
+			"Name": "Sigismund II Augustus",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1520,
+			
+			"ReignYear": 1548
+		},
+		{
+			Name: "Antanas Smetona",
+			ImageID: 270,
+			
+			BornDay: 10,
+			BornMonth: 8,
+			BornYear: 1874,
+			
+			ReignYear: 1926,
+		},
+		{
+			Name: "Gitanas Nauseda",
+			ImageID: 25,
+			
+			BornDay: 12,
+			BornMonth: 6,
+			BornYear: 1964,
+			
+			ReignYear: 2019,
+		},
+	],
+	
+	"Age_of_History": "Rulers"
+}

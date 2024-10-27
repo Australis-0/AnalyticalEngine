@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Ma Bufang",
+			ImageID: 302,
+			
+			BornDay: 4,
+			BornMonth: 11,
+			BornYear: 1903,
+			
+			ReignYear: 1928,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

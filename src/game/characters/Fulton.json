@@ -1,0 +1,13 @@
+[
+{
+	Name: "Robert Fulton",
+	ImageID: Fulton,
+	
+	BornDay: 14,
+	BornMonth: 10,
+	BornYear: 1765,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

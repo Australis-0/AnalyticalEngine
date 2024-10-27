@@ -1,0 +1,434 @@
+[
+{
+	CivTAG: "prus_m",
+	CivID: 1,
+	PCID: 1,
+	CPID: 592
+},
+{
+	CivTAG: "fra_p",
+	CivID: 2,
+	PCID: 2,
+	CPID: 260
+},
+{
+	CivTAG: "savo_m",
+	CivID: 3,
+	PCID: 3,
+	CPID: 148
+},
+{
+	CivTAG: "moc_m2",
+	CivID: 4,
+	PCID: 4,
+	CPID: 134
+},
+{
+	CivTAG: "and_m2",
+	CivID: 5,
+	PCID: 5,
+	CPID: 55
+},
+{
+	CivTAG: "por_m",
+	CivID: 6,
+	PCID: 6,
+	CPID: 11
+},
+{
+	CivTAG: "spa3_m",
+	CivID: 7,
+	PCID: 7,
+	CPID: 6561
+},
+{
+	CivTAG: "uni_n",
+	CivID: 8,
+	PCID: 8,
+	CPID: 825
+},
+{
+	CivTAG: "swi_m",
+	CivID: 9,
+	PCID: 9,
+	CPID: 311
+},
+{
+	CivTAG: "lic_n",
+	CivID: 10,
+	PCID: 10,
+	CPID: 307
+},
+{
+	CivTAG: "san_m",
+	CivID: 11,
+	PCID: 11,
+	CPID: 181
+},
+{
+	CivTAG: "luc_m",
+	CivID: 12,
+	PCID: 12,
+	CPID: 156
+},
+{
+	CivTAG: "ver_g",
+	CivID: 13,
+	PCID: 13,
+	CPID: 165
+},
+{
+	CivTAG: "papa_o",
+	CivID: 14,
+	PCID: 14,
+	CPID: 6881
+},
+{
+	CivTAG: "tusc_m",
+	CivID: 15,
+	PCID: 15,
+	CPID: 158
+},
+{
+	CivTAG: "pisa_m",
+	CivID: 16,
+	PCID: 16,
+	CPID: 155
+},
+{
+	CivTAG: "sard_m",
+	CivID: 17,
+	PCID: 17,
+	CPID: 2278
+},
+{
+	CivTAG: "geno_g",
+	CivID: 18,
+	PCID: 18,
+	CPID: 142
+},
+{
+	CivTAG: "mila_m",
+	CivID: 19,
+	PCID: 19,
+	CPID: 151
+},
+{
+	CivTAG: "parm_m",
+	CivID: 20,
+	PCID: 20,
+	CPID: 6907
+},
+{
+	CivTAG: "masx3_m",
+	CivID: 21,
+	PCID: 21,
+	CPID: 154
+},
+{
+	CivTAG: "atr_m",
+	CivID: 22,
+	PCID: 22,
+	CPID: 688
+},
+{
+	CivTAG: "salz_m",
+	CivID: 23,
+	PCID: 23,
+	CPID: 6917
+},
+{
+	CivTAG: "mek_m",
+	CivID: 24,
+	PCID: 24,
+	CPID: 576
+},
+{
+	CivTAG: "swe_m",
+	CivID: 25,
+	PCID: 25,
+	CPID: 1049
+},
+{
+	CivTAG: "nodm_m",
+	CivID: 26,
+	PCID: 26,
+	CPID: 965
+},
+{
+	CivTAG: "net_n",
+	CivID: 27,
+	PCID: 27,
+	CPID: 6502
+},
+{
+	CivTAG: "neta_m",
+	CivID: 28,
+	PCID: 22,
+	CPID: 803
+},
+{
+	CivTAG: "lie_m",
+	CivID: 29,
+	PCID: 29,
+	CPID: 385
+},
+{
+	CivTAG: "co_m",
+	CivID: 30,
+	PCID: 30,
+	CPID: 554
+},
+{
+	CivTAG: "trie_m",
+	CivID: 31,
+	PCID: 31,
+	CPID: 773
+},
+{
+	CivTAG: "nass_m",
+	CivID: 32,
+	PCID: 32,
+	CPID: 774
+},
+{
+	CivTAG: "mzz_m",
+	CivID: 33,
+	PCID: 33,
+	CPID: 747
+},
+{
+	CivTAG: "wurz_m",
+	CivID: 34,
+	PCID: 34,
+	CPID: 744
+},
+{
+	CivTAG: "sax_m",
+	CivID: 35,
+	PCID: 35,
+	CPID: 633
+},
+{
+	CivTAG: "anh_m",
+	CivID: 36,
+	PCID: 36,
+	CPID: 706
+},
+{
+	CivTAG: "ham_m",
+	CivID: 37,
+	PCID: 37,
+	CPID: 603
+},
+{
+	CivTAG: "hano_m",
+	CivID: 38,
+	PCID: 8,
+	CPID: 632
+},
+{
+	CivTAG: "olde_m",
+	CivID: 39,
+	PCID: 39,
+	CPID: 6862
+},
+{
+	CivTAG: "bre_m",
+	CivID: 40,
+	PCID: 40,
+	CPID: 531
+},
+{
+	CivTAG: "bava_m",
+	CivID: 41,
+	PCID: 41,
+	CPID: 716
+},
+{
+	CivTAG: "ulm_m",
+	CivID: 42,
+	PCID: 42,
+	CPID: 714
+},
+{
+	CivTAG: "aug_m",
+	CivID: 43,
+	PCID: 43,
+	CPID: 712
+},
+{
+	CivTAG: "rav_m",
+	CivID: 44,
+	PCID: 44,
+	CPID: 7308
+},
+{
+	CivTAG: "bre3_m",
+	CivID: 45,
+	PCID: 45,
+	CPID: 7373
+},
+{
+	CivTAG: "hess_m",
+	CivID: 46,
+	PCID: 46,
+	CPID: 733
+},
+{
+	CivTAG: "bade_m",
+	CivID: 47,
+	PCID: 47,
+	CPID: 763
+},
+{
+	CivTAG: "kons3_m",
+	CivID: 48,
+	PCID: 48,
+	CPID: 332
+},
+{
+	CivTAG: "wurt_m",
+	CivID: 49,
+	PCID: 49,
+	CPID: 768
+},
+{
+	CivTAG: "wad3_m",
+	CivID: 50,
+	PCID: 50,
+	CPID: 6601
+},
+{
+	CivTAG: "mem_m",
+	CivID: 51,
+	PCID: 51,
+	CPID: 771
+},
+{
+	CivTAG: "pol2_m",
+	CivID: 52,
+	PCID: 52,
+	CPID: 1276
+},
+{
+	CivTAG: "mo_m",
+	CivID: 53,
+	PCID: 53,
+	CPID: 6626
+},
+{
+	CivTAG: "wala_m",
+	CivID: 54,
+	PCID: 54,
+	CPID: 3190
+},
+{
+	CivTAG: "tur_m",
+	CivID: 55,
+	PCID: 55,
+	CPID: 1116
+},
+{
+	CivTAG: "cypk_m",
+	CivID: 56,
+	PCID: 55,
+	CPID: 1357
+},
+{
+	CivTAG: "mot_m",
+	CivID: 57,
+	PCID: 57,
+	CPID: 6886
+},
+{
+	CivTAG: "rag_m",
+	CivID: 58,
+	PCID: 58,
+	CPID: 3044
+},
+{
+	CivTAG: "kaz_m",
+	CivID: 59,
+	PCID: 59,
+	CPID: 10599
+},
+{
+	CivTAG: "khiv_m",
+	CivID: 60,
+	PCID: 60,
+	CPID: 10630
+},
+{
+	CivTAG: "ice_m",
+	CivID: 61,
+	PCID: 26,
+	CPID: 951
+},
+{
+	CivTAG: "rus2_m",
+	CivID: 62,
+	PCID: 62,
+	CPID: 3726
+},
+{
+	CivTAG: "cir_m",
+	CivID: 63,
+	PCID: 63,
+	CPID: 11518
+},
+{
+	CivTAG: "imer_m",
+	CivID: 64,
+	PCID: 64,
+	CPID: 4904
+},
+{
+	CivTAG: "geo_m",
+	CivID: 65,
+	PCID: 65,
+	CPID: 10431
+},
+{
+	CivTAG: "arm_m",
+	CivID: 66,
+	PCID: 66,
+	CPID: 10436
+},
+{
+	CivTAG: "khh_m",
+	CivID: 67,
+	PCID: 67,
+	CPID: 5342
+},
+{
+	CivTAG: "shir_m",
+	CivID: 68,
+	PCID: 68,
+	CPID: 1291
+},
+{
+	CivTAG: "avv_m",
+	CivID: 69,
+	PCID: 69,
+	CPID: 10451
+},
+{
+	CivTAG: "gazi_m",
+	CivID: 70,
+	PCID: 70,
+	CPID: 10450
+},
+{
+	CivTAG: "nap_m",
+	CivID: 71,
+	PCID: 71,
+	CPID: 196
+},
+{
+	CivTAG: "kn_m",
+	CivID: 72,
+	PCID: 72,
+	CPID: 270
+}
+]

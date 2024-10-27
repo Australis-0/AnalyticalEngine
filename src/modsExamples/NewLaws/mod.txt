@@ -1,0 +1,8 @@
+{
+	Name: "New Laws!",
+	Description: "This item will add new Laws.",
+	
+	Tags: [ "Game", "Laws" ],
+	
+	ChangeNote: "First release",
+}

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Jules Mazarin",
+	ImageID: Mazarin,
+		
+	BornDay: 14,
+	BornMonth: 7,
+	BornYear: 1602,
+		
+	Attack: -1,
+	Defense: -1,
+},
+]

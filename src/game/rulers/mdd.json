@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Mohamed Muizzu",
+			ImageID: 133,
+			
+			BornDay: 22,
+			BornMonth: 11,
+			BornYear: 1958,
+			
+			ReignYear: 2019,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

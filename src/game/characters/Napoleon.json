@@ -1,0 +1,13 @@
+[
+{
+	Name: "Napoleon Bonaparte",
+	ImageID: Napoleon,
+	
+	BornDay: 15,
+	BornMonth: 8,
+	BornYear: 1769,
+	
+	Attack: 10,
+	Defense: 10,
+},
+]

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Roman Bagration",
+	ImageID: Bagration_Roman,
+	
+	BornDay: 15,
+	BornMonth: 8,
+	BornYear: 1778,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

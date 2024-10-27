@@ -1,0 +1,13 @@
+[
+{
+	Name: "Mikołaj Potocki",
+	ImageID: Potocki_Mikolaj,
+	
+	BornDay: 11,
+	BornMonth: 9,
+	BornYear: 1593,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

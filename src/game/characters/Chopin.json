@@ -1,0 +1,13 @@
+[
+{
+	Name: "Fryderyk Chopin",
+	ImageID: Chopin,
+	
+	BornDay: 1,
+	BornMonth: 3,
+	BornYear: 1810,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

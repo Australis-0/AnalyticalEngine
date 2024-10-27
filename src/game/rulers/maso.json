@@ -1,0 +1,116 @@
+{
+	"Rulers": [
+		{
+			"Name": "Boleslaw I Chrobry",
+			"ImageID": -1,
+			
+			"BornDay": 20,
+			"BornMonth": 10,
+			"BornYear": 967,
+			
+			"ReignYear": 1025
+		},
+		{
+			"Name": "Siemowit",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1000,
+			
+			"ReignYear": 1047
+		},
+		{
+			"Name": "Kazimierz I",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1040,
+			
+			"ReignYear": 1079
+		},
+		{
+			"Name": "Boleslaw II",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1138,
+			
+			"ReignYear": 1173
+		},
+		{
+			"Name": "Konrad I",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1187,
+			
+			"ReignYear": 1194
+		},
+		{
+			"Name": "Leszek I Bialy",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1186,
+			
+			"ReignYear": 1206
+		},
+		{
+			"Name": "Boleslaw V Wstydliwy",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1220,
+			
+			"ReignYear": 1233
+		},
+		{
+			"Name": "Wladyslaw I Lokietek",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1260,
+			
+			"ReignYear": 1306
+		},
+		{
+			"Name": "Boleslaw IV Kedzierzawy",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1291,
+			
+			"ReignYear": 1340
+		},
+		{
+			"Name": "Zygmunt I Stary",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1467,
+			
+			"ReignYear": 1506
+		},
+		{
+			"Name": "Zygmunt II August",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1520,
+			
+			"ReignYear": 1548
+		}
+	],
+	
+	"Age_of_History": "Rulers"
+}

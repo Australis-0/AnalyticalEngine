@@ -1,0 +1,13 @@
+[
+{
+	Name: "Oichi",
+	ImageID: Oichi,
+	
+	BornDay: 17,
+	BornMonth: 5,
+	BornYear: 1547,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

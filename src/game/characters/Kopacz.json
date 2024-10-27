@@ -1,0 +1,13 @@
+[
+{
+	Name: "Ewa Kopacz",
+	ImageID: Kopacz,
+	
+	BornDay: 3,
+	BornMonth: 12,
+	BornYear: 1956,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

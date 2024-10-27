@@ -1,0 +1,13 @@
+[
+{
+	Name: "Karl Allmendinger",
+	ImageID: Allmendinger,
+	
+	BornDay: 3,
+	BornMonth: 2,
+	BornYear: 1891,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

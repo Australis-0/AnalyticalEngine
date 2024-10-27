@@ -1,0 +1,13 @@
+[
+{
+	Name: "George Hamilton-Gordon",
+	ImageID: Gordon,
+		
+	BornDay: 28,
+	BornMonth: 1,
+	BornYear: 1793,
+		
+	Attack: -1,
+	Defense: -1,
+},
+]

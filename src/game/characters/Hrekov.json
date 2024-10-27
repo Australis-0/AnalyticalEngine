@@ -1,0 +1,13 @@
+[
+{
+	Name: "Oleksander Hrekov",
+	ImageID: Hrekov,
+	
+	BornDay: 4,
+	BornMonth: 12,
+	BornYear: 1875,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

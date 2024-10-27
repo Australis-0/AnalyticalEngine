@@ -1,0 +1,13 @@
+[
+{
+	Name: "Andrzej Raczko",
+	ImageID: Raczko,
+	
+	BornDay: 22,
+	BornMonth: 2,
+	BornYear: 1953,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

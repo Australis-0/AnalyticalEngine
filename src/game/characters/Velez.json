@@ -1,0 +1,13 @@
+[
+{
+	Name: "Pedro Vélez",
+	ImageID: Velez,
+	
+	BornDay: 28,
+	BornMonth: 7,
+	BornYear: 1787,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Chang Hsueh-liang",
+	ImageID: Chang_Hsueh-liang,
+	
+	BornDay: 3,
+	BornMonth: 6,
+	BornYear: 1901,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Géza Lakatos",
+	ImageID: Lakatos,
+	
+	BornDay: 30,
+	BornMonth: 4,
+	BornYear: 1890,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

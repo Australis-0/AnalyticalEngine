@@ -1,0 +1,13 @@
+[
+{
+	Name: "Mark Wayne Clark",
+	ImageID: Clark,
+	
+	BornDay: 1,
+	BornMonth: 5,
+	BornYear: 1896,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

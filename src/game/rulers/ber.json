@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Alexander Lukashenko",
+			ImageID: 22,
+			
+			BornDay: 30,
+			BornMonth: 9,
+			BornYear: 1954,
+			
+			ReignYear: 1994,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

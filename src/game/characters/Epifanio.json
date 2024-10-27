@@ -1,0 +1,13 @@
+[
+{
+	Name: "Mariano Paredes y Arrillaga",
+	ImageID: Epifanio,
+	
+	BornDay: 7,
+	BornMonth: 1,
+	BornYear: 1797,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

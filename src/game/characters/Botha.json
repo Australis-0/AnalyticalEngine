@@ -1,0 +1,13 @@
+[
+{
+	Name: "Louis Botha",
+	ImageID: Botha,
+	
+	BornDay: 27,
+	BornMonth: 9,
+	BornYear: 1862,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

@@ -1,0 +1,226 @@
+{
+	Army: [
+		{
+			Name: "Hoplites",
+			ImageID: 26,
+			
+			UnitLevel: 0,
+			
+			Attack: 6,
+			Defense: 6,
+			MovementSpeed: 3.8,
+			
+			AttackRange: 1,
+			SiegeProgress: 0.2,
+			
+			RequiredTechID: 2,
+			
+			Cost: 12,
+			MaintenanceCost: 0.11,
+			
+			RecruitmentTime: 60,
+		},
+		{
+			Name: "Spearmen",
+			ImageID: 46,
+			
+			UnitLevel: 1,
+			
+			Attack: 7,
+			Defense: 8,
+			MovementSpeed: 4.0,
+			
+			AttackRange: 1,
+			SiegeProgress: 0.2,
+			
+			RequiredTechID: 6,
+			
+			Cost: 14,
+			MaintenanceCost: 0.12,
+			
+			RecruitmentTime: 60,
+		},
+		{
+			Name: "EliteSpearmen",
+			ImageID: 5,
+			
+			UnitLevel: 2,
+			
+			Attack: 10,
+			Defense: 14,
+			MovementSpeed: 4.1,
+			
+			AttackRange: 1,
+			SiegeProgress: 0.2,
+			
+			RequiredTechID: 10,
+			
+			Cost: 15,
+			MaintenanceCost: 0.14,
+			
+			RecruitmentTime: 60,
+		},
+		{
+			Name: "Pikeman",
+			ImageID: 25,
+			
+			UnitLevel: 3,
+			
+			Attack: 15,
+			Defense: 17,
+			MovementSpeed: 4.2,
+			
+			AttackRange: 1,
+			SiegeProgress: 0.2,
+			
+			RequiredTechID: 13,
+			
+			Cost: 18,
+			MaintenanceCost: 0.16,
+			
+			RecruitmentTime: 60,
+		},
+		{
+			Name: "ElitePikeman",
+			ImageID: 0,
+			
+			UnitLevel: 4,
+			
+			Attack: 23,
+			Defense: 25,
+			MovementSpeed: 4.3,
+			
+			AttackRange: 1,
+			SiegeProgress: 0.2,
+			
+			RequiredTechID: 21,
+			
+			Cost: 22,
+			MaintenanceCost: 0.2,
+			
+			RecruitmentTime: 60,
+		},
+		{
+			Name: "Musketeer",
+			ImageID: 27,
+			
+			UnitLevel: 5,
+			
+			Attack: 31,
+			Defense: 32,
+			MovementSpeed: 4.5,
+			
+			AttackRange: 1,
+			SiegeProgress: 0.2,
+			
+			RequiredTechID: 41,
+			
+			Cost: 24,
+			MaintenanceCost: 0.23,
+			
+			RecruitmentTime: 60,
+		},
+		{
+			Name: "Riflemen",
+			ImageID: 28,
+			
+			UnitLevel: 6,
+			
+			Attack: 38,
+			Defense: 32,
+			MovementSpeed: 5.2,
+			
+			AttackRange: 1,
+			SiegeProgress: 0.2,
+			
+			RequiredTechID: 50,
+			
+			Cost: 26,
+			MaintenanceCost: 0.26,
+			
+			RecruitmentTime: 60,
+		},
+		{
+			Name: "MachineGunner",
+			ImageID: 45,
+			
+			UnitLevel: 7,
+			
+			Attack: 50,
+			Defense: 40,
+			MovementSpeed: 4.8,
+			
+			AttackRange: 1,
+			SiegeProgress: 0.2,
+			
+			RequiredTechID: 66,
+			
+			Cost: 38,
+			MaintenanceCost: 0.3,
+			
+			RecruitmentTime: 60,
+		},
+		{
+			Name: "MechanizedInfantry",
+			ImageID: 15,
+			
+			UnitLevel: 8,
+			
+			Attack: 56,
+			Defense: 55,
+			MovementSpeed: 7.6,
+			
+			AttackRange: 1,
+			SiegeProgress: 0.2,
+			
+			RequiredTechID: 73,
+			
+			Cost: 44,
+			MaintenanceCost: 0.32,
+			
+			RecruitmentTime: 60,
+		},
+		{
+			Name: "ModernMechanizedInfantry",
+			ImageID: 14,
+			
+			UnitLevel: 9,
+			
+			Attack: 64,
+			Defense: 60,
+			MovementSpeed: 9.0,
+			
+			AttackRange: 1,
+			SiegeProgress: 0.2,
+			
+			RequiredTechID: 84,
+			
+			Cost: 46,
+			MaintenanceCost: 0.38,
+			
+			RecruitmentTime: 60,
+		},
+		{
+			Name: "FutureMechanizedInfantry",
+			ImageID: 51,
+			
+			UnitLevel: 10,
+			
+			Attack: 74,
+			Defense: 66,
+			MovementSpeed: 9.4,
+			
+			AttackRange: 1,
+			SiegeProgress: 0.2,
+			
+			RequiredTechID: 93,
+			
+			Cost: 50,
+			MaintenanceCost: 0.45,
+			
+			RecruitmentTime: 60,
+		},
+	],
+	
+	Age_of_History: Army
+}

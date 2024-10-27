@@ -1,0 +1,13 @@
+[
+{
+	Name: "Michaił Kalinin",
+	ImageID: Kalinin,
+	
+	BornDay: 19,
+	BornMonth: 11,
+	BornYear: 1875,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Stanisław Koniecpolski",
+	ImageID: Koniecpolski,
+	
+	BornDay: 12,
+	BornMonth: 2,
+	BornYear: 1591,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

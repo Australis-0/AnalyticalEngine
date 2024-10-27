@@ -1,0 +1,236 @@
+{
+	"Rulers": [
+		{
+			"Name": "Fernán González",
+			"ImageID": -1,
+			
+			"BornDay": 10,
+			"BornMonth": 6,
+			"BornYear": 910,
+			
+			"ReignYear": 931
+		},
+		{
+			"Name": "Sancho I",
+			"ImageID": -1,
+			
+			"BornDay": 15,
+			"BornMonth": 7,
+			"BornYear": 990,
+			
+			"ReignYear": 1017
+		},
+		{
+			"Name": "Fernando I",
+			"ImageID": -1,
+			
+			"BornDay": 10,
+			"BornMonth": 9,
+			"BornYear": 1016,
+			
+			"ReignYear": 1037
+		},
+		{
+			"Name": "Sancho II",
+			"ImageID": -1,
+			
+			"BornDay": 22,
+			"BornMonth": 6,
+			"BornYear": 1036,
+			
+			"ReignYear": 1065
+		},
+		{
+			"Name": "Alfonso VI",
+			"ImageID": -1,
+			
+			"BornDay": 11,
+			"BornMonth": 11,
+			"BornYear": 1040,
+			
+			"ReignYear": 1072
+		},
+		{
+			"Name": "Urraca",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 6,
+			"BornYear": 1081,
+			
+			"ReignYear": 1109
+		},
+		{
+			"Name": "Alfonso VII",
+			"ImageID": -1,
+			
+			"BornDay": 2,
+			"BornMonth": 3,
+			"BornYear": 1105,
+			
+			"ReignYear": 1126
+		},
+		{
+			"Name": "Sancho III",
+			"ImageID": -1,
+			
+			"BornDay": 19,
+			"BornMonth": 11,
+			"BornYear": 1134,
+			
+			"ReignYear": 1157
+		},
+		{
+			"Name": "Alfonso VIII",
+			"ImageID": -1,
+			
+			"BornDay": 11,
+			"BornMonth": 11,
+			"BornYear": 1155,
+			
+			"ReignYear": 1158
+		},
+		{
+			"Name": "Enrique I",
+			"ImageID": -1,
+			
+			"BornDay": 15,
+			"BornMonth": 4,
+			"BornYear": 1204,
+			
+			"ReignYear": 1214
+		},
+		{
+			"Name": "Fernando III",
+			"ImageID": -1,
+			
+			"BornDay": 5,
+			"BornMonth": 8,
+			"BornYear": 1199,
+			
+			"ReignYear": 1217
+		},
+		{
+			"Name": "Alfonso X el Sabio",
+			"ImageID": -1,
+			
+			"BornDay": 23,
+			"BornMonth": 11,
+			"BornYear": 1221,
+			
+			"ReignYear": 1252
+		},
+		{
+			"Name": "Sancho IV",
+			"ImageID": -1,
+			
+			"BornDay": 13,
+			"BornMonth": 5,
+			"BornYear": 1258,
+			
+			"ReignYear": 1284
+		},
+		{
+			"Name": "Fernando IV",
+			"ImageID": -1,
+			
+			"BornDay": 6,
+			"BornMonth": 12,
+			"BornYear": 1285,
+			
+			"ReignYear": 1295
+		},
+		{
+			"Name": "Alfonso XI",
+			"ImageID": -1,
+			
+			"BornDay": 13,
+			"BornMonth": 11,
+			"BornYear": 1311,
+			
+			"ReignYear": 1312
+		},
+		{
+			"Name": "Pedro I",
+			"ImageID": -1,
+			
+			"BornDay": 30,
+			"BornMonth": 8,
+			"BornYear": 1334,
+			
+			"ReignYear": 1350
+		},
+		{
+			"Name": "Enrique II",
+			"ImageID": -1,
+			
+			"BornDay": 27,
+			"BornMonth": 7,
+			"BornYear": 1334,
+			
+			"ReignYear": 1366
+		},
+		{
+			"Name": "Juan I",
+			"ImageID": -1,
+			
+			"BornDay": 24,
+			"BornMonth": 6,
+			"BornYear": 1358,
+			
+			"ReignYear": 1379
+		},
+		{
+			"Name": "Enrique III",
+			"ImageID": -1,
+			
+			"BornDay": 4,
+			"BornMonth": 10,
+			"BornYear": 1379,
+			
+			"ReignYear": 1390
+		},
+		{
+			"Name": "Juan II",
+			"ImageID": 7,
+			
+			"BornDay": 6,
+			"BornMonth": 6,
+			"BornYear": 1405,
+			
+			"ReignYear": 1406
+		},
+		{
+			"Name": "Enrique IV",
+			"ImageID": 8,
+			
+			"BornDay": 5,
+			"BornMonth": 1,
+			"BornYear": 1425,
+			
+			"ReignYear": 1454
+		},
+		{
+			"Name": "Isabel I",
+			"ImageID": -1,
+			
+			"BornDay": 22,
+			"BornMonth": 4,
+			"BornYear": 1451,
+			
+			"ReignYear": 1474
+		},
+		{
+			"Name": "Fernando II",
+			"ImageID": -1,
+			
+			"BornDay": 10,
+			"BornMonth": 3,
+			"BornYear": 1452,
+			
+			"ReignYear": 1474
+		}
+	],
+	
+	"Age_of_History": "Rulers"
+}

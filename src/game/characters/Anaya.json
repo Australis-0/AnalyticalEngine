@@ -1,0 +1,13 @@
+[
+{
+	Name: "Pedro María Anaya",
+	ImageID: Anaya,
+	
+	BornDay: 20,
+	BornMonth: 5,
+	BornYear: 1795,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

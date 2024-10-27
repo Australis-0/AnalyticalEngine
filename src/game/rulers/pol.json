@@ -1,0 +1,426 @@
+{
+	"Rulers": [
+		{
+			"Name": "Mieszko I",
+			"ImageID": -1,
+			
+			"BornDay": 10,
+			"BornMonth": 4,
+			"BornYear": 930,
+			
+			"ReignYear": 960
+		},
+		{
+			"Name": "Boleslaw I Chrobry",
+			"ImageID": -1,
+			
+			"BornDay": 12,
+			"BornMonth": 6,
+			"BornYear": 967,
+			
+			"ReignYear": 992
+		},
+		{
+			"Name": "Mieszko II Lambert",
+			"ImageID": -1,
+			
+			"BornDay": 25,
+			"BornMonth": 7,
+			"BornYear": 990,
+			
+			"ReignYear": 1025
+		},
+		{
+			"Name": "Kazimierz I Odnowiciel",
+			"ImageID": -1,
+			
+			"BornDay": 20,
+			"BornMonth": 8,
+			"BornYear": 1016,
+			
+			"ReignYear": 1034
+		},
+		{
+			"Name": "Boleslaw II Szczodry",
+			"ImageID": -1,
+			
+			"BornDay": 2,
+			"BornMonth": 4,
+			"BornYear": 1042,
+			
+			"ReignYear": 1058
+		},
+		{
+			"Name": "Wladyslaw I Herman",
+			"ImageID": -1,
+			
+			"BornDay": 26,
+			"BornMonth": 5,
+			"BornYear": 1044,
+			
+			"ReignYear": 1079
+		},
+		{
+			"Name": "Boleslaw III Krzywousty",
+			"ImageID": -1,
+			
+			"BornDay": 20,
+			"BornMonth": 8,
+			"BornYear": 1086,
+			
+			"ReignYear": 1107
+		},
+		{
+			"Name": "Wladyslaw II Wygnaniec",
+			"ImageID": -1,
+			
+			"BornDay": 28,
+			"BornMonth": 10,
+			"BornYear": 1105,
+			
+			"ReignYear": 1138
+		},
+		{
+			"Name": "Boleslaw IV Kedzierzawy",
+			"ImageID": -1,
+			
+			"BornDay": 3,
+			"BornMonth": 4,
+			"BornYear": 1125,
+			
+			"ReignYear": 1146
+		},
+		{
+			"Name": "Mieszko III Stary",
+			"ImageID": -1,
+			
+			"BornDay": 16,
+			"BornMonth": 8,
+			"BornYear": 1126,
+			
+			"ReignYear": 1173
+		},
+		{
+			"Name": "Kazimierz II Sprawiedliwy",
+			"ImageID": -1,
+			
+			"BornDay": 28,
+			"BornMonth": 10,
+			"BornYear": 1138,
+			
+			"ReignYear": 1177
+		},
+		{
+			"Name": "Leszek I Bialy",
+			"ImageID": -1,
+			
+			"BornDay": 6,
+			"BornMonth": 7,
+			"BornYear": 1186,
+			
+			"ReignYear": 1194
+		},
+		{
+			"Name": "Wladyslaw III Laskonogi",
+			"ImageID": -1,
+			
+			"BornDay": 5,
+			"BornMonth": 3,
+			"BornYear": 1161,
+			
+			"ReignYear": 1202
+		},
+		{
+			"Name": "Konrad I Mazowiecki",
+			"ImageID": -1,
+			
+			"BornDay": 21,
+			"BornMonth": 10,
+			"BornYear": 1187,
+			
+			"ReignYear": 1229
+		},
+		{
+			"Name": "Boleslaw V Wstydliwy",
+			"ImageID": -1,
+			
+			"BornDay": 21,
+			"BornMonth": 6,
+			"BornYear": 1226,
+			
+			"ReignYear": 1243
+		},
+		{
+			"Name": "Leszek II Czarny",
+			"ImageID": -1,
+			
+			"BornDay": 5,
+			"BornMonth": 9,
+			"BornYear": 1241,
+			
+			"ReignYear": 1279
+		},
+		{
+			"Name": "Henryk IV Probus",
+			"ImageID": -1,
+			
+			"BornDay": 14,
+			"BornMonth": 11,
+			"BornYear": 1258,
+			
+			"ReignYear": 1288
+		},
+		{
+			"Name": "Przemysl II",
+			"ImageID": -1,
+			
+			"BornDay": 14,
+			"BornMonth": 10,
+			"BornYear": 1257,
+			
+			"ReignYear": 1295
+		},
+		{
+			"Name": "Waclaw II",
+			"ImageID": -1,
+			
+			"BornDay": 17,
+			"BornMonth": 9,
+			"BornYear": 1271,
+			
+			"ReignYear": 1291
+		},
+		{
+			"Name": "Wladyslaw I Lokietek",
+			"ImageID": -1,
+			
+			"BornDay": 19,
+			"BornMonth": 1,
+			"BornYear": 1261,
+			
+			"ReignYear": 1306
+		},
+		{
+			"Name": "Kazimierz III Wielki",
+			"ImageID": -1,
+			
+			"BornDay": 30,
+			"BornMonth": 4,
+			"BornYear": 1310,
+			
+			"ReignYear": 1333
+		},
+		{
+			"Name": "Lukasz I Wegierski",
+			"ImageID": -1,
+			
+			"BornDay": 5,
+			"BornMonth": 3,
+			"BornYear": 1326,
+			
+			"ReignYear": 1370
+		},
+		{
+			"Name": "Jadwiga Andegawenska",
+			"ImageID": -1,
+			
+			"BornDay": 18,
+			"BornMonth": 2,
+			"BornYear": 1373,
+			
+			"ReignYear": 1384
+		},
+		{
+			"Name": "Wladyslaw II Jagiello",
+			"ImageID": 3,
+			
+			"BornDay": 31,
+			"BornMonth": 5,
+			"BornYear": 1352,
+			
+			"ReignYear": 1386
+		},
+		{
+			"Name": "Wladyslaw III Warnenczyk",
+			"ImageID": 2,
+			
+			"BornDay": 31,
+			"BornMonth": 10,
+			"BornYear": 1424,
+			
+			"ReignYear": 1434
+		},
+		{
+			"Name": "Kazimierz IV Jagiellonczyk",
+			"ImageID": -1,
+			
+			"BornDay": 30,
+			"BornMonth": 11,
+			"BornYear": 1427,
+			
+			"ReignYear": 1447
+		},
+		{
+			"Name": "Jan I Olbrachta",
+			"ImageID": -1,
+			
+			"BornDay": 27,
+			"BornMonth": 12,
+			"BornYear": 1459,
+			
+			"ReignYear": 1492
+		},
+		{
+			"Name": "Aleksander Jagiellonczyk",
+			"ImageID": -1,
+			
+			"BornDay": 5,
+			"BornMonth": 8,
+			"BornYear": 1461,
+			
+			"ReignYear": 1501
+		},
+		{
+			"Name": "Zygmunt I Stary",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1467,
+			
+			"ReignYear": 1506
+		},
+		{
+			"Name": "Zygmunt II August",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 8,
+			"BornYear": 1520,
+			
+			"ReignYear": 1548
+		},
+		{
+			"Name": "Henryk Walezy",
+			"ImageID": -1,
+			
+			"BornDay": 19,
+			"BornMonth": 9,
+			"BornYear": 1551,
+			
+			"ReignYear": 1573
+		},
+		{
+			"Name": "Stefan Batory",
+			"ImageID": -1,
+			
+			"BornDay": 27,
+			"BornMonth": 9,
+			"BornYear": 1533,
+			
+			"ReignYear": 1576
+		},
+		{
+			"Name": "Zygmunt III Waza",
+			"ImageID": -1,
+			
+			"BornDay": 20,
+			"BornMonth": 6,
+			"BornYear": 1566,
+			
+			"ReignYear": 1587
+		},
+		{
+			"Name": "Wladyslaw IV Waza",
+			"ImageID": -1,
+			
+			"BornDay": 9,
+			"BornMonth": 6,
+			"BornYear": 1595,
+			
+			"ReignYear": 1632
+		},
+		{
+			"Name": "Jan II Kazimierz Waza",
+			"ImageID": -1,
+			
+			"BornDay": 22,
+			"BornMonth": 3,
+			"BornYear": 1609,
+			
+			"ReignYear": 1648
+		},
+		{
+			"Name": "Michal Korybut Wisniowiecki",
+			"ImageID": -1,
+			
+			"BornDay": 31,
+			"BornMonth": 5,
+			"BornYear": 1640,
+			
+			"ReignYear": 1669
+		},
+		{
+			"Name": "Jan III Sobieski",
+			"ImageID": -1,
+			
+			"BornDay": 17,
+			"BornMonth": 8,
+			"BornYear": 1629,
+			
+			"ReignYear": 1674
+		},
+		{
+			"Name": "August II Mocny",
+			"ImageID": -1,
+			
+			"BornDay": 12,
+			"BornMonth": 5,
+			"BornYear": 1670,
+			
+			"ReignYear": 1697
+		},
+		{
+			"Name": "Stanislaw Leszczynski",
+			"ImageID": -1,
+			
+			"BornDay": 20,
+			"BornMonth": 10,
+			"BornYear": 1677,
+			
+			"ReignYear": 1704
+		},
+		{
+			"Name": "August III",
+			"ImageID": -1,
+			
+			"BornDay": 17,
+			"BornMonth": 10,
+			"BornYear": 1696,
+			
+			"ReignYear": 1733
+		},
+		{
+			"Name": "Stanislaw August Poniatowski",
+			"ImageID": -1,
+			
+			"BornDay": 17,
+			"BornMonth": 1,
+			"BornYear": 1732,
+			
+			"ReignYear": 1764
+		},
+		{
+			Name: "Andrzej Duda",
+			ImageID: 20,
+			
+			BornDay: 16,
+			BornMonth: 05,
+			BornYear: 1972,
+			
+			ReignYear: 2015,
+		},
+	],
+	
+	"Age_of_History": "Rulers"
+}

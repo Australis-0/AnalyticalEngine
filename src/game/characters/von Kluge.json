@@ -1,0 +1,13 @@
+[
+{
+	Name: "Günther von Kluge",
+	ImageID: von_Kluge,
+	
+	BornDay: 30,
+	BornMonth: 10,
+	BornYear: 1882,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

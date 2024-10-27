@@ -1,0 +1,13 @@
+[
+{
+	Name: "Fyodor Fyodorovich Berg",
+	ImageID: Berg,
+	
+	BornDay: 15,
+	BornMonth: 5,
+	BornYear: 1794,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

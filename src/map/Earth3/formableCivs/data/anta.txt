@@ -1,0 +1,9 @@
+{
+FormableCivTag: "anta",
+ClaimantsTag: [
+	"fal",
+	"ges"
+],
+Provinces: [ 13865 ],
+CapitalProvinceID: 13865
+}

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Yefim Chaplits",
+	ImageID: Chaplits,
+	
+	BornDay: 8,
+	BornMonth: 8,
+	BornYear: 1768,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

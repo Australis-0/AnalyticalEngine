@@ -1,0 +1,13 @@
+[
+{
+	Name: "Carl Gustaf Mannerheim",
+	ImageID: Mannerheim,
+	
+	BornDay: 4,
+	BornMonth: 7,
+	BornYear: 1867,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

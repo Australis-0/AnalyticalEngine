@@ -1,0 +1,13 @@
+[
+{
+	Name: "Georg von Küchler",
+	ImageID: von_Kuchler,
+	
+	BornDay: 30,
+	BornMonth: 5,
+	BornYear: 1881,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Rufino Eneas Galvao",
+	ImageID: Galvao,
+	
+	BornDay: 2,
+	BornMonth: 7,
+	BornYear: 1831,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

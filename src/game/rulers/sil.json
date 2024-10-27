@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Julius Maada Bio",
+			ImageID: 181,
+			
+			BornDay: 12,
+			BornMonth: 5,
+			BornYear: 1964,
+			
+			ReignYear: 2018,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

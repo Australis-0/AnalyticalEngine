@@ -1,0 +1,13 @@
+[
+{
+	Name: "Draža Mihailović",
+	ImageID: Mihailovic,
+	
+	BornDay: 27,
+	BornMonth: 4,
+	BornYear: 1893,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

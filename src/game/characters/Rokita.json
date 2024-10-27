@@ -1,0 +1,13 @@
+[
+{
+	Name: "Jan Rokita",
+	ImageID: Rokita,
+	
+	BornDay: 18,
+	BornMonth: 6,
+	BornYear: 1959,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

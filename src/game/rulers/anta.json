@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Penguin Phil",
+			ImageID: Peng,
+			
+			BornDay: 27,
+			BornMonth: 5,
+			BornYear: 2005,
+			
+			ReignYear: 2007,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

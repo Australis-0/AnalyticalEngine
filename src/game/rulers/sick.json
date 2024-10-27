@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Ferdinand II",
+			ImageID: 321,
+			
+			BornDay: 12,
+			BornMonth: 1,
+			BornYear: 1810,
+			
+			ReignYear: 1830,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

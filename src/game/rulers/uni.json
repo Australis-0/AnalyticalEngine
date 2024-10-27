@@ -1,0 +1,36 @@
+{
+	Rulers: [
+		{
+			Name: "Stanley Baldwin",
+			ImageID: 243,
+			
+			BornDay: 3,
+			BornMonth: 8,
+			BornYear: 1867,
+			
+			ReignYear: 1935,
+		},
+		{
+			Name: "Winston Churchill",
+			ImageID: 244,
+			
+			BornDay: 30,
+			BornMonth: 11,
+			BornYear: 1874,
+			
+			ReignYear: 1940,
+		},
+		{
+			Name: "Charles III",
+			ImageID: 220,
+			
+			BornDay: 14,
+			BornMonth: 11,
+			BornYear: 1948,
+			
+			ReignYear: 2022,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

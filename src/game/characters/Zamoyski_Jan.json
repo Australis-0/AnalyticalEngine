@@ -1,0 +1,13 @@
+[
+{
+	Name: "Jan Zamoyski",
+	ImageID: Zamoyski_Jan,
+	
+	BornDay: 19,
+	BornMonth: 3,
+	BornYear: 1542,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

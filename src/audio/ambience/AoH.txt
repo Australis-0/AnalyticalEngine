@@ -1,0 +1,1 @@
+plains;desert;forest;mountain;sea;swamp;

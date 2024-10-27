@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Joan Enric Vives i Sicilia",
+			ImageID: 34,
+			
+			BornDay: 24,
+			BornMonth: 7,
+			BornYear: 1949,
+			
+			ReignYear: 2003,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

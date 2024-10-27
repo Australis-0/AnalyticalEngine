@@ -1,0 +1,186 @@
+{
+	"Rulers": [
+		{
+			"Name": "Bořivoj I",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 852,
+			
+			"ReignYear": 870
+		},
+		{
+			"Name": "Spytihněv I",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 860,
+			
+			"ReignYear": 894
+		},
+		{
+			"Name": "Vratislav I",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 887,
+			
+			"ReignYear": 915
+		},
+		{
+			"Name": "Wenceslaus I",
+			"ImageID": -1,
+			
+			"BornDay": 28,
+			"BornMonth": 7,
+			"BornYear": 907,
+			
+			"ReignYear": 921
+		},
+		{
+			"Name": "Boleslaus I",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 920,
+			
+			"ReignYear": 935
+		},
+		{
+			"Name": "Boleslaus II",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 945,
+			
+			"ReignYear": 967
+		},
+		{
+			"Name": "Boleslaus III",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 999,
+			
+			"ReignYear": 999
+		},
+		{
+			"Name": "Vladislav I",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1025,
+			
+			"ReignYear": 1061
+		},
+		{
+			"Name": "Vladislav II",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1110,
+			
+			"ReignYear": 1158
+		},
+		{
+			"Name": "Otakar I",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1155,
+			
+			"ReignYear": 1198
+		},
+		{
+			"Name": "Wenceslaus II",
+			"ImageID": -1,
+			
+			"BornDay": 27,
+			"BornMonth": 9,
+			"BornYear": 1271,
+			
+			"ReignYear": 1297
+		},
+		{
+			"Name": "Wenceslaus III",
+			"ImageID": -1,
+			
+			"BornDay": 6,
+			"BornMonth": 10,
+			"BornYear": 1289,
+			
+			"ReignYear": 1305
+		},
+		{
+			"Name": "John the Blind",
+			"ImageID": -1,
+			
+			"BornDay": 10,
+			"BornMonth": 11,
+			"BornYear": 1296,
+			
+			"ReignYear": 1310
+		},
+		{
+			"Name": "Charles IV",
+			"ImageID": -1,
+			
+			"BornDay": 14,
+			"BornMonth": 5,
+			"BornYear": 1316,
+			
+			"ReignYear": 1346
+		},
+		{
+			"Name": "Wenceslaus IV",
+			"ImageID": -1,
+			
+			"BornDay": 26,
+			"BornMonth": 2,
+			"BornYear": 1361,
+			
+			"ReignYear": 1378
+		},
+		{
+			"Name": "Sigismund",
+			"ImageID": -1,
+			
+			"BornDay": 14,
+			"BornMonth": 2,
+			"BornYear": 1368,
+			
+			"ReignYear": 1419
+		},
+		{
+			"Name": "Albert the Magnanimous",
+			"ImageID": 12,
+			
+			"BornDay": 10,
+			"BornMonth": 8,
+			"BornYear": 1397,
+			
+			"ReignYear": 1437
+		},
+		{
+			"Name": "Ladislaus the Posthumous",
+			"ImageID": -1,
+			
+			"BornDay": 22,
+			"BornMonth": 2,
+			"BornYear": 1440,
+			
+			"ReignYear": 1453
+		}
+	],
+	
+	"Age_of_History": "Rulers"
+}

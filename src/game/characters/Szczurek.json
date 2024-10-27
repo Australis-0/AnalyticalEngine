@@ -1,0 +1,13 @@
+[
+{
+	Name: "Mateusz Szczurek",
+	ImageID: Szczurek,
+	
+	BornDay: 11,
+	BornMonth: 8,
+	BornYear: 1975,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

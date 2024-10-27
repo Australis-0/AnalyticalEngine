@@ -1,0 +1,13 @@
+[
+{
+	Name: "Jan Henryk Dabrowski",
+	ImageID: Dabrowski,
+	
+	BornDay: 2,
+	BornMonth: 8,
+	BornYear: 1755,
+	
+	Attack: 5,
+	Defense: 6,
+},
+]

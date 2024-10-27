@@ -1,0 +1,723 @@
+{
+	Advantage:
+	[
+		{
+			ImageID: [0, 1, 44]
+			GroupID: 0,
+			
+			RequiredTechID: 51,
+			
+			BuildingsMaintenanceCost: [-0.025, -0.025, -0.05],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [2, 3, 81],
+			GroupID: 2,
+			
+			RequiredTechID: 28,
+			
+			SiegeEffectiveness: [0.1, 0.15, 0.2],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [18, 19, 20],
+			GroupID: 1,
+			
+			RequiredTechID: 30,
+			
+			MonthlyIncome: [0.2, 0.25, 0.25],
+			
+			AI: 5,
+		},
+		
+		
+		{
+			ImageID: [7, 8, 9],
+			GroupID: 0,
+			
+			RequiredTechID: 4,
+			
+			MonthlyLegacy: [0.3, 0.35, 0.4],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [10, 11, 84],
+			GroupID: 1,
+			
+			RequiredTechID: 36,
+			
+			ConstructionCost: [-0.025, -0.025, -0.025],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [12, 13, 83],
+			GroupID: 1,
+			
+			RequiredTechID: 24,
+			
+			EconomyBuildingsCost: [-0.025, -0.025, -0.05],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [14, 15, 85],
+			GroupID: 2,
+			
+			RequiredTechID: 25,
+			
+			MilitaryBuildingsCost: [-0.025, -0.025, -0.05],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [16, 17, 86],
+			GroupID: 0,
+			
+			RequiredTechID: 6,
+			
+			AdministrationBuildingsCost: [-0.025, -0.025, -0.05],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [4, 5, 6],
+			GroupID: 1,
+			
+			RequiredTechID: 0,
+			
+			Gold: [150, 200, 300],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [21, 22, 82],
+			GroupID: 1,
+			
+			RequiredTechID: 2,
+			
+			WonderConstructionCost: [-0.05, -0.1, -0.1],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [23, 24, 25],
+			GroupID: 0,
+			
+			RequiredTechID: 58,
+			
+			TaxEfficiency: [1.25, 1.75, 2.5],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [26, 27, 28],
+			GroupID: 0,
+			
+			RequiredTechID: 64,
+			
+			ProvinceMaintenance: [-1.25, -1.75, -2.5],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [29, 30, 31],
+			GroupID: 2,
+			
+			RequiredTechID: 47,
+			
+			ArmyMaintenance: [-2.5, -2.5, -2.5],
+			
+			AI: 5,
+		},
+		
+		
+		{
+			ImageID: [32, 33, 34],
+			GroupID: 2,
+			
+			RequiredTechID: 50,
+			
+			ReinforcementSpeed: [0.05, 0.05, 0.1],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [35, 36, 37],
+			GroupID: 2,
+			
+			RequiredTechID: 25,
+			
+			MaxManpower: [1500, 2500, 4000],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [38, 39, 40],
+			GroupID: 2,
+			
+			RequiredTechID: 7,
+			
+			ManpowerRecoverySpeed: [0.025, 0.025, 0.05],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [41, 42, 43],
+			GroupID: 2,
+			
+			RequiredTechID: 7,
+			
+			ArmyMovementSpeed: [5.0, 5.0, 5.0],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [45, 46, 47],
+			GroupID: 0,
+			
+			RequiredTechID: 62,
+			
+			Research: [2.5, 2.5, 5.0],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [48, 49, 50],
+			GroupID: 0,
+			
+			RequiredTechID: 22,
+			
+			ResearchPoints: [2.5, 2.5, 5.0],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [51, 52, 53],
+			GroupID: 2,
+			
+			RequiredTechID: 13,
+			
+			MaxMorale: [0.05, 0.05, 0.1],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [54, 55, 56],
+			GroupID: 2,
+			
+			RequiredTechID: 21,
+			
+			ArmyMoraleRecovery: [0.05, 0.05, 0.1],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [57, 58, 59],
+			GroupID: 0,
+			
+			RequiredTechID: 33,
+			
+			WarScoreCost: [-0.05, -0.1, -0.15],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [60, 61, 62],
+			GroupID: 1,
+			
+			RequiredTechID: 11,
+			
+			BuildingSlot: [1, 1, 2],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [63, 64, 65],
+			GroupID: 0,
+			
+			RequiredTechID: 58,
+			
+			MaxInfrastructure: [1, 1, 2],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [66, 67, 68],
+			GroupID: 2,
+			
+			RequiredTechID: 72,
+			
+			Devastation: [0.1, 0.15, 0.25],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [69, 70, 71],
+			GroupID: 0,
+			
+			RequiredTechID: 66,
+			
+			GrowthRate: [1.5, 3, 4.0],
+			
+			AI: 5,
+		},
+
+		{
+			ImageID: [72, 73, 74],
+			GroupID: 1,
+			
+			RequiredTechID: 36,
+			
+			ProductionEfficiency: [2.5, 2.5, 5.0],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [75, 76, 77],
+			GroupID: 1,
+			
+			RequiredTechID: 77,
+			
+			IncomeProduction: [1.5, 1.5, 2.5],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [87, 88, 89],
+			GroupID: 2,
+			
+			RequiredTechID: 68,
+			
+			IncreaseManpowerCost: [-2.5, -2.5, -5],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [90, 91, 92],
+			GroupID: 1,
+			
+			RequiredTechID: 58,
+			
+			InvestInEconomyCost: [-0.025, -0.025, -0.05],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [93, 94, 95],
+			GroupID: 1,
+			
+			RequiredTechID: 58,
+			
+			DevelopInfrastructureCost: [-0.025, -0.025, -0.05],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [96, 97, 98],
+			GroupID: 0,
+			
+			RequiredTechID: 54,
+			
+			IncreaseTaxEfficiencyCost: [-0.025, -0.025, -0.05],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [99, 100, 101],
+			GroupID: 2,
+			
+			RequiredTechID: 46,
+			
+			GeneralAttack: [1, 1, 1],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [102, 103, 104],
+			GroupID: 2,
+			
+			RequiredTechID: 39,
+			
+			GeneralDefense: [1, 1, 1],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [105, 106, 107],
+			GroupID: 2,
+			
+			RequiredTechID: 27,
+			
+			UnitsAttack: [1, 1, 1],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [108, 109, 110],
+			GroupID: 2,
+			
+			RequiredTechID: 39,
+			
+			UnitsDefense: [1, 1, 1],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [111, 112, 113],
+			GroupID: 0,
+			
+			RequiredTechID: 15,
+			
+			IncomeFromVassals: [0.05, 0.05, 0.05],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [114, 115, 116],
+			GroupID: 0,
+			
+			RequiredTechID: 0,
+			
+			ImproveRelationsModifier: [5, 7.5, 10],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [117, 118, 119],
+			GroupID: 0,
+			
+			RequiredTechID: 16,
+			
+			DiplomacyPoints: [0.1, 0.2, 0.25],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [120, 121, 122],
+			GroupID: 1,
+			
+			RequiredTechID: 15,
+			
+			LoanInterest: [-7.5, -10, -15],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [123, 124, 125],
+			GroupID: 0,
+			
+			RequiredTechID: 31,
+			
+			CoreCost: [-2.5, -2.5, -5],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [126, 127, 128],
+			GroupID: 0,
+			
+			RequiredTechID: 38,
+			
+			ReligionCost: [-2.5, -2.5, -5],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [129, 130, 131],
+			GroupID: 2,
+			
+			RequiredTechID: 38,
+			
+			RecruitmentTime: [-5.0, -7.5, -12.5],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [132, 133, 134],
+			GroupID: 2,
+			
+			RequiredTechID: 81,
+			
+			RecruitArmyCost: [-2.5, -2.5, -5],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [135, 136, 137],
+			GroupID: 2,
+			
+			RequiredTechID: 50,
+			
+			RecruitArmyFirstLineCost: [-2.5, -2.5, -5],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [138, 139, 140],
+			GroupID: 2,
+			
+			RequiredTechID: 53,
+			
+			RecruitArmySecondLineCost: [-2.5, -2.5, -5],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [141, 142, 143],
+			GroupID: 0,
+			
+			RequiredTechID: 35,
+			
+			AdvisorMaxLevel: [1, 1, 1],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [144, 145],
+			GroupID: 0,
+			
+			RequiredTechID: 22,
+			
+			AdvisorPoolSize: [1, 1],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [146, 147, 148],
+			GroupID: 1,
+			
+			RequiredTechID: 26,
+			
+			MaxNumberOfLoans: [1, 1, 2],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [149, 150, 151],
+			GroupID: 2,
+			
+			RequiredTechID: 0,
+			
+			MaximumLevelOfTheMilitaryAcademyForGenerals: [1, 1, 1],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [152, 153, 154],
+			GroupID: 2,
+			
+			RequiredTechID: 0,
+			
+			MaximumLevelOfTheMilitaryAcademy: [1, 1, 1],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [155, 156, 157],
+			GroupID: 0,
+			
+			RequiredTechID: 43,
+			
+			MaximumLevelOfTheSupremeCourt: [1, 1, 1],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [158, 159, 160],
+			GroupID: 0,
+			
+			RequiredTechID: 35,
+			
+			MaximumLevelOfCapitalCity: [1, 1, 1],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [161, 162, 163],
+			GroupID: 2,
+			
+			RequiredTechID: 50,
+			
+			AggressiveExpansion: [-5, -7.5, -10],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [164, 165, 166],
+			GroupID: 0,
+			
+			RequiredTechID: 67,
+			
+			DiseaseDeathRate: [-0.1, -0.1, -0.15],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [167, 168, 169],
+			GroupID: 0,
+			
+			RequiredTechID: 34,
+			
+			AdvisorCost: [-0.05, -0.05, -0.05],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [170, 171, 172],
+			GroupID: 2,
+			
+			RequiredTechID: 29,
+			
+			GeneralCost: [-0.05, -0.05, -0.05],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [173, 174, 175],
+			GroupID: 2,
+			
+			RequiredTechID: 11,
+			
+			BattleWidth: [2, 4, 4],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [176, 177, 178],
+			GroupID: 2,
+			
+			RequiredTechID: 14,
+			
+			Discipline: [0.025, 0.025, 0.05],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [179, 180, 181],
+			GroupID: 2,
+			
+			RequiredTechID: 7,
+			
+			ManpowerRecoveryFromADisbandedArmy: [0.1, 0.15, 0.25],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [182, 183, 184],
+			GroupID: 1,
+			
+			RequiredTechID: 10,
+			
+			MaximumAmountOfGold_Percentage: [0.15, 0.25, 0.35],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [185, 186, 187],
+			GroupID: 2,
+			
+			RequiredTechID: 1,
+			
+			Loot: [0.05, 0.05, 0.1],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [188, 189, 190],
+			GroupID: 0,
+			
+			RequiredTechID: 41,
+			
+			AllCharactersLifeExpectancy: [4, 5, 6],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [191, 192, 193],
+			GroupID: 2,
+			
+			RequiredTechID: 12,
+			
+			RegimentsLimit: [8, 10, 12],
+			
+			AI: 5,
+		},
+		
+		{
+			ImageID: [194, 195, 196],
+			GroupID: 1,
+			
+			RequiredTechID: 0,
+			
+			IncreaseGrowthRateCost: [-0.025, -0.025, -0.05],
+			
+			AI: 5,
+		},
+		
+	],
+	Age_of_History: Advantage
+}

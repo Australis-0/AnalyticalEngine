@@ -1,0 +1,13 @@
+[
+{
+	Name: "Joaquim Delfino da Luz",
+	ImageID: Luz,
+	
+	BornDay: 25,
+	BornMonth: 12,
+	BornYear: 1824,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

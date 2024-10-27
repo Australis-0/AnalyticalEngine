@@ -1,0 +1,13 @@
+[
+{
+	Name: "Alexander De Croo",
+	ImageID: Croo,
+	
+	BornDay: 3,
+	BornMonth: 11,
+	BornYear: 1975,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

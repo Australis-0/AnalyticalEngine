@@ -1,0 +1,13 @@
+[
+{
+	Name: "Philippe Leclerc de Hauteclocque",
+	ImageID: Leclerc,
+	
+	BornDay: 22,
+	BornMonth: 11,
+	BornYear: 1902,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

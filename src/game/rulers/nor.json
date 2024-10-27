@@ -1,0 +1,26 @@
+{
+	Rulers: [
+		{
+			Name: "Johan Nygaardsvold",
+			ImageID: 275,
+			
+			BornDay: 6,
+			BornMonth: 9,
+			BornYear: 1879,
+			
+			ReignYear: 1935,
+		},
+		{
+			Name: "Harald V",
+			ImageID: 158,
+			
+			BornDay: 21,
+			BornMonth: 2,
+			BornYear: 1937,
+			
+			ReignYear: 1991,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

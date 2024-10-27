@@ -1,0 +1,13 @@
+[
+{
+	Name: "Henry Rawlinson",
+	ImageID: Rawlinson,
+	
+	BornDay: 20,
+	BornMonth: 2,
+	BornYear: 1864,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

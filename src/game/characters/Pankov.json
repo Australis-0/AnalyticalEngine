@@ -1,0 +1,13 @@
+[
+{
+	Name: "Nikolay Pankov",
+	ImageID: Pankov,
+	
+	BornDay: 2,
+	BornMonth: 12,
+	BornYear: 1954,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

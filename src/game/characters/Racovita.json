@@ -1,0 +1,13 @@
+[
+{
+	Name: "Ioan Mihail Racoviță",
+	ImageID: Racovita,
+	
+	BornDay: 7,
+	BornMonth: 3,
+	BornYear: 1889,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

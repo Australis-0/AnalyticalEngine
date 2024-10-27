@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Letsie III",
+			ImageID: 125,
+			
+			BornDay: 17,
+			BornMonth: 7,
+			BornYear: 1963,
+			
+			ReignYear: 1966,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

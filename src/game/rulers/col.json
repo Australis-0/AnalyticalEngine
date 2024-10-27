@@ -1,0 +1,26 @@
+{
+	Rulers: [
+		{
+			Name: "Alfonso Lopez Pumarejo",
+			ImageID: 289,
+			
+			BornDay: 31,
+			BornMonth: 1,
+			BornYear: 1886,
+			
+			ReignYear: 1934,
+		},
+		{
+			Name: "Gustavo Petro",
+			ImageID: 65,
+			
+			BornDay: 19,
+			BornMonth: 4,
+			BornYear: 1960,
+			
+			ReignYear: 2022,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

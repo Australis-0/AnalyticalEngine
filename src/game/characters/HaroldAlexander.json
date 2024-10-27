@@ -1,0 +1,13 @@
+[
+{
+	Name: "Harold Alexander",
+	ImageID: HaroldAlexander,
+	
+	BornDay: 10,
+	BornMonth: 12,
+	BornYear: 1891,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

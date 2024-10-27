@@ -1,0 +1,13 @@
+[
+{
+	Name: "Wojciech Jaruzelski",
+	ImageID: Jaruzelski,
+	
+	BornDay: 6,
+	BornMonth: 7,
+	BornYear: 1923,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

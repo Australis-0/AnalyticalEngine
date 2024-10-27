@@ -1,0 +1,13 @@
+[
+{
+	Name: "Wan Hu",
+	ImageID: Wan_Hu,
+	
+	BornDay: 10,
+	BornMonth: 12,
+	BornYear: 1478,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

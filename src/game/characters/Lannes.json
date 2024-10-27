@@ -1,0 +1,13 @@
+[
+{
+	Name: "Jean Lannes",
+	ImageID: Lannes,
+	
+	BornDay: 10,
+	BornMonth: 4,
+	BornYear: 1769,
+	
+	Attack: 8,
+	Defense: 8,
+},
+]

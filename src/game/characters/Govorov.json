@@ -1,0 +1,13 @@
+[
+{
+	Name: "Leonid Govorov",
+	ImageID: Govorov,
+	
+	BornDay: 22,
+	BornMonth: 2,
+	BornYear: 1897,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

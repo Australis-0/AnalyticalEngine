@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Jigme Khesar Namgyel Wangchuck",
+			ImageID: 48,
+			
+			BornDay: 21,
+			BornMonth: 2,
+			BornYear: 1980,
+			
+			ReignYear: 2006,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

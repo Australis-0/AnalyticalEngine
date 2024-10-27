@@ -1,0 +1,13 @@
+[
+{
+	Name: "Grzegorz Kołodko",
+	ImageID: Kolodko,
+	
+	BornDay: 28,
+	BornMonth: 1,
+	BornYear: 1949,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

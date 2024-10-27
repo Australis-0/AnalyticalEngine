@@ -1,0 +1,63 @@
+#######################################
+## Read: mods_steam_workshop.txt !
+## 
+## To create a new mod for submission to the Steam Workshop, first create a new folder for your mod within the 'mods' directory.
+## Then, copy or recreate all the modified files into that folder!
+##
+## For example, if a file was originally located in game/ExampleFile.json, 
+## it should be placed in mods/YourModName/game/ExampleFile.json in your mod's folder.
+##
+#####
+
+Go to:
+game/terrain/
+
+and Edit TerrainTypes.json file as txt file in notepad.
+
+Example of one Terrain Type:
+
+		{
+			Name: "Plains",
+			ImageFile: "plains.png",
+			Color: [32, 74, 11],
+			MovementSpeed: 1.0,
+			Defense: 0,
+			PopulationGrowth: 1,
+			BuildCost: 1.0,
+			BasePopulation: 0,
+			BaseEconomy: 0,
+			BattleOver: 0,
+		},
+
+
+ImageFile folder:
+
+game/terrain/terrainImages/H/
+game/terrain/terrainImages/XH/
+game/terrain/terrainImages/XXH/
+
+Color: R G B, 0 - 255
+
+MovementSpeed: 1.0,
+This is 100%, if you want units to move faster by 10% it should be:
+MovementSpeed: 1.1,
+
+
+BuildCost: 1.0,
+Default cost of buildings in province, 100%, you can increase od decrease cost:
+
++10% will be:
+BuildCost: 1.1,
+
+-20% will be:
+BuildCost: 0.8,
+
+PopulationGrowth: 1,
+Extra Growth Rate in province: +1
+
+Defense: 1,
+Defenders will get +1 Defense
+
+BattleOver: 0,
+Image ID in Battle view
+ui/interface/H/menus/battleOver0.png

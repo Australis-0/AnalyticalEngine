@@ -1,0 +1,13 @@
+[
+{
+	Name: "Mikhail Kutuzov",
+	ImageID: Kutuzov,
+	
+	BornDay: 16,
+	BornMonth: 8,
+	BornYear: 1745,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Tadeusz Kutrzeba",
+	ImageID: Kutrzeba,
+	
+	BornDay: 15,
+	BornMonth: 4,
+	BornYear: 1886,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

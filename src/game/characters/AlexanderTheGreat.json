@@ -1,0 +1,13 @@
+[
+{
+	Name: "Alexander the Great",
+	ImageID: AlexanderTheGreat,
+	
+	BornDay: 20,
+	BornMonth: 6,
+	BornYear: -356,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

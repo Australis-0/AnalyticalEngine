@@ -1,0 +1,236 @@
+{
+	"Rulers": [
+		{
+			Name: "Charles VIII",
+			ImageID: 16,
+			
+			BornDay: 12,
+			BornMonth: 4,
+			BornYear: 1408,
+			
+			ReignYear: 1448,
+		},
+		{
+			"Name": "Gustav Vasa",
+			"ImageID": -1,
+			
+			"BornDay": 12,
+			"BornMonth": 5,
+			"BornYear": 1496,
+			
+			"ReignYear": 1523
+		},
+		{
+			"Name": "Eric XIV",
+			"ImageID": -1,
+			
+			"BornDay": 13,
+			"BornMonth": 12,
+			"BornYear": 1533,
+			
+			"ReignYear": 1560
+		},
+		{
+			"Name": "John III",
+			"ImageID": -1,
+			
+			"BornDay": 20,
+			"BornMonth": 12,
+			"BornYear": 1537,
+			
+			"ReignYear": 1568
+		},
+		{
+			"Name": "Sigismund",
+			"ImageID": -1,
+			
+			"BornDay": 20,
+			"BornMonth": 6,
+			"BornYear": 1566,
+			
+			"ReignYear": 1592
+		},
+		{
+			"Name": "Gustavus Adolphus",
+			"ImageID": -1,
+			
+			"BornDay": 9,
+			"BornMonth": 12,
+			"BornYear": 1594,
+			
+			"ReignYear": 1611
+		},
+		{
+			"Name": "Christina",
+			"ImageID": -1,
+			
+			"BornDay": 18,
+			"BornMonth": 12,
+			"BornYear": 1626,
+			
+			"ReignYear": 1632
+		},
+		{
+			"Name": "Gustavus Adolphus (II)",
+			"ImageID": -1,
+			
+			"BornDay": 25,
+			"BornMonth": 4,
+			"BornYear": 1650,
+			
+			"ReignYear": 1654
+		},
+		{
+			"Name": "Charles XI",
+			"ImageID": -1,
+			
+			"BornDay": 24,
+			"BornMonth": 11,
+			"BornYear": 1655,
+			
+			"ReignYear": 1660
+		},
+		{
+			"Name": "Charles XII",
+			"ImageID": -1,
+			
+			"BornDay": 17,
+			"BornMonth": 6,
+			"BornYear": 1682,
+			
+			"ReignYear": 1697
+		},
+		{
+			"Name": "Frederick I",
+			"ImageID": -1,
+			
+			"BornDay": 14,
+			"BornMonth": 7,
+			"BornYear": 1676,
+			
+			"ReignYear": 1720
+		},
+		{
+			"Name": "Adolf Frederick",
+			"ImageID": -1,
+			
+			"BornDay": 14,
+			"BornMonth": 5,
+			"BornYear": 1710,
+			
+			"ReignYear": 1751
+		},
+		{
+			"Name": "Gustav III",
+			"ImageID": -1,
+			
+			"BornDay": 24,
+			"BornMonth": 1,
+			"BornYear": 1746,
+			
+			"ReignYear": 1771
+		},
+		{
+			"Name": "Gustav IV Adolf",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 11,
+			"BornYear": 1778,
+			
+			"ReignYear": 1792
+		},
+		{
+			"Name": "Charles XIII",
+			"ImageID": -1,
+			
+			"BornDay": 7,
+			"BornMonth": 10,
+			"BornYear": 1748,
+			
+			"ReignYear": 1809
+		},
+		{
+			"Name": "Charles XIV John",
+			"ImageID": 319,
+			
+			"BornDay": 26,
+			"BornMonth": 1,
+			"BornYear": 1763,
+			
+			"ReignYear": 1818
+		},
+		{
+			"Name": "Oscar I",
+			"ImageID": -1,
+			
+			"BornDay": 4,
+			"BornMonth": 7,
+			"BornYear": 1799,
+			
+			"ReignYear": 1844
+		},
+		{
+			"Name": "Charles XV",
+			"ImageID": -1,
+			
+			"BornDay": 3,
+			"BornMonth": 5,
+			"BornYear": 1826,
+			
+			"ReignYear": 1859
+		},
+		{
+			"Name": "Oscar II",
+			"ImageID": -1,
+			
+			"BornDay": 21,
+			"BornMonth": 1,
+			"BornYear": 1829,
+			
+			"ReignYear": 1872
+		},
+		{
+			"Name": "Gustav V",
+			"ImageID": -1,
+			
+			"BornDay": 16,
+			"BornMonth": 6,
+			"BornYear": 1858,
+			
+			"ReignYear": 1907
+		},
+		{
+			Name: "Per Albin Hansson",
+			ImageID: 274,
+			
+			BornDay: 28,
+			BornMonth: 10,
+			BornYear: 1885,
+			
+			ReignYear: 1935,
+		},
+		{
+			"Name": "Gustav VI Adolf",
+			"ImageID": -1,
+			
+			"BornDay": 11,
+			"BornMonth": 11,
+			"BornYear": 1882,
+			
+			"ReignYear": 1950
+		},
+		{
+			Name: "Carl XVI Gustaf",
+			ImageID: 194,
+			
+			BornDay: 30,
+			BornMonth: 4,
+			BornYear: 1946,
+			
+			ReignYear: 1973,
+		},
+	],
+	
+	"Age_of_History": "Rulers"
+}

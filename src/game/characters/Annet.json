@@ -1,0 +1,13 @@
+[
+{
+    Name: "Armand Léon Annet",
+    ImageID: Annet,
+    
+    BornDay: 5,
+    BornMonth: 6,
+    BornYear: 1973,
+    
+    Attack: -1,
+    Defense: -1,
+},
+]

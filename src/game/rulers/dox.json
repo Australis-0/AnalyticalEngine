@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Mackenzie King",
+			ImageID: 242,
+			
+			BornDay: 17,
+			BornMonth: 12,
+			BornYear: 1874,
+			
+			ReignYear: 1935,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

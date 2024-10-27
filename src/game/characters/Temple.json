@@ -1,0 +1,13 @@
+[
+{
+	Name: "Henry John Temple",
+	ImageID: Temple,
+	
+	BornDay: 20,
+	BornMonth: 10,
+	BornYear: 1784,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

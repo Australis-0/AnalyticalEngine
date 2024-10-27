@@ -1,0 +1,13 @@
+[
+{
+	Name: "Manuel Gómez Pedraza",
+	ImageID: ManuelGomez,
+	
+	BornDay: 22,
+	BornMonth: 4,
+	BornYear: 1789,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

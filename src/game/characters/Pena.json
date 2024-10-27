@@ -1,0 +1,13 @@
+[
+{
+	Name: "Manuel de la Peña y Peña",
+	ImageID: Pena,
+	
+	BornDay: 10,
+	BornMonth: 3,
+	BornYear: 1789,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Paweł Tanajno",
+	ImageID: Tanajno,
+	
+	BornDay: 17,
+	BornMonth: 12,
+	BornYear: 1975,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

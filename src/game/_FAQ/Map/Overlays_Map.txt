@@ -1,0 +1,95 @@
+#######################################
+## Read: mods_steam_workshop.txt !
+## 
+## To create a new mod for submission to the Steam Workshop, first create a new folder for your mod within the 'mods' directory.
+## Then, copy or recreate all the modified files into that folder!
+##
+## For example, if a file was originally located in game/ExampleFile.json, 
+## it should be placed in mods/YourModName/game/ExampleFile.json in your mod's folder.
+##
+#####
+
+For your mod the path will be:
+mods/YOUR_MOD_NAME/map/YOUR_MAP/
+
+#####
+
+The overlays are in the path:
+map/THE_MAP/background/overlays/
+
+There are two configuration files: one for land overlays and another for sea overlays.
+
+Overlays.json
+# This file is for land overlays.
+
+OverlaysSea.json
+# This file is for sea overlays.
+
+If you want to disable overlays, don't know how to create them, or need assistance with anything else, the configuration file should look like this:
+
+####################
+####### CODE #######
+
+{
+	Overlay: [
+		
+	],
+	
+	Age_of_History: Overlay
+}
+
+####### CODE #######
+####################
+
+
+The masks for overlays are placed in the following directory:
+map/THE_MAP/background/overlays/high/
+
+The low folder is used only when someone selects “Texture quality: low” in the settings:
+map/THE_MAP/background/overlays/low/
+
+To simplify, you can place the same mask images in the low folder as in the high folder.
+
+The high/ folder is the primary directory for the overlay masks.
+
+####
+
+The mask for your map should be a single image.
+It does not work like the main map background, which can be split into multiple images.
+
+The mask does not need to have the same dimensions as your main map background.
+It only needs to maintain the proportions (scaled down if necessary, for example, if the map background is over 5000 pixels width).
+
+You can use either the full dimensions for the mask or a proportionally scaled version.
+The game will automatically scale up the mask.
+
+####
+
+In the Overlays.json file, you specify which mask and overlay tile to draw.
+
+####### CODE #######
+
+		{
+			Tile: "plains_tile.png",
+			Mask: "plains_mask.png",
+			Scale: 0.02,
+			Alpha: 0.0,
+			AlphaScaleZoomOut: 0.025,
+			AlphaScale: 0.275,
+			ExtraColor: 1.65,
+		},
+
+####### CODE #######
+
+Scale: 0.02,
+This is the scale at which the tile will be drawn in the game. A scale of 1.0 represents 100%, while 0.02 corresponds to only 2%.
+This is designed this way because when you zoom in, the tile will also be zoomed in.
+
+Alpha: 0.0,
+# Minimum alpha value for the tile mask.
+
+AlphaScale: 0.275,
+# Determines how much the alpha of the tile increases when zoomed in.
+
+ExtraColor: 1.65,
+# Controls the blending of colors (tile + mask). This is why the masks are not just white, but are colored as the map.

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Catherine Dominique de Perignon",
+	ImageID: Perignon,
+	
+	BornDay: 31,
+	BornMonth: 5,
+	BornYear: 1754,
+	
+	Attack: 4,
+	Defense: 4,
+},
+]

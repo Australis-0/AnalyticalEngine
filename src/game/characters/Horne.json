@@ -1,0 +1,13 @@
+[
+{
+	Name: "Henry Horne",
+	ImageID: Horne,
+	
+	BornDay: 19,
+	BornMonth: 2,
+	BornYear: 1961,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

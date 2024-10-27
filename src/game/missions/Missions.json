@@ -1,0 +1,285 @@
+{
+	Mission:
+	[
+		{
+			ID: 0,
+			Name: "StrengthenTheBureaucracy.t",
+			ImageName: "administrative.png",
+			
+			MissionEvent: "administrative_buildings.txt",
+			
+			TreeColumn: 0,
+			TreeRow: 1,
+			
+			RequiredMission: -1,
+			RequiredMission2: -1,
+			
+			AI: 5,
+		},
+		{
+			ID: 1,
+			Name: "BoostTheEconomy.t",
+			ImageName: "economy.png",
+			
+			MissionEvent: "economy_buildings.txt",
+			
+			TreeColumn: 1,
+			TreeRow: 0,
+			
+			RequiredMission: 0,
+			RequiredMission2: -1,
+			
+			AI: 5,
+		},
+		{
+			ID: 2,
+			Name: "FortifyTheNation.t",
+			ImageName: "military_buildings.png",
+			
+			MissionEvent: "military_buildings.txt",
+			
+			TreeColumn: 2,
+			TreeRow: 1,
+			
+			RequiredMission: 0,
+			RequiredMission2: -1,
+			
+			AI: 5,
+		},
+		
+		{
+			ID: 3,
+			Name: "MaximizeMilitaryStrength.t",
+			ImageName: "maximize_military.png",
+			
+			MissionEvent: "maximize_military.txt",
+			
+			TreeColumn: 1,
+			TreeRow: 5,
+			
+			RequiredMission: -1,
+			RequiredMission2: -1,
+			
+			AI: 5,
+		},
+		{
+			ID: 4,
+			Name: "ExpandYourTerritory.t",
+			ImageName: "expand_territory.png",
+			
+			MissionEvent: "expand_territory.txt",
+			
+			TreeColumn: 2,
+			TreeRow: 4,
+			
+			RequiredMission: 3,
+			RequiredMission2: -1,
+			
+			AI: 5,
+		},
+		{
+			ID: 5,
+			Name: "DeclareWars.t",
+			ImageName: "declare_wars.png",
+			
+			MissionEvent: "declare_wars.txt",
+			
+			TreeColumn: 3,
+			TreeRow: 5,
+			
+			RequiredMission: 3,
+			RequiredMission2: -1,
+			
+			AI: 5,
+		},
+		
+		{
+			ID: 6,
+			Name: "BoostResearch.t",
+			ImageName: "research.png",
+			
+			MissionEvent: "boost_research.txt",
+			
+			TreeColumn: 0,
+			TreeRow: 4,
+			
+			RequiredMission: -1,
+			RequiredMission2: -1,
+			
+			AI: 5,
+		},
+		{
+			ID: 7,
+			Name: "UnlockCivilizationAdvantages.t",
+			ImageName: "unlock_civilization_advantages.png",
+			
+			MissionEvent: "unlock_civilization_advantages.txt",
+			
+			TreeColumn: 1,
+			TreeRow: 4,
+			
+			RequiredMission: 6,
+			RequiredMission2: -1,
+			
+			AI: 5,
+		},
+		
+		{
+			ID: 8,
+			Name: "BoostLegacyPoints.t",
+			ImageName: "boost_legacy_points.png",
+			
+			MissionEvent: "boost_legacy_points.txt",
+			
+			TreeColumn: 0,
+			TreeRow: 3,
+			
+			RequiredMission: -1,
+			RequiredMission2: -1,
+			
+			AI: 5,
+		},
+		
+		{
+			ID: 9,
+			Name: "LegacyUnlocked.t",
+			ImageName: "legacy_unlocked.png",
+			
+			MissionEvent: "legacy_unlocked.txt",
+			
+			TreeColumn: 3,
+			TreeRow: 3,
+			
+			RequiredMission: 8,
+			RequiredMission2: -1,
+			
+			AI: 5,
+		},
+		
+		{
+			ID: 10,
+			Name: "RecruitAllAdvisors.t",
+			ImageName: "recruit_all_advisors.png",
+			
+			MissionEvent: "recruit_all_advisors.txt",
+			
+			TreeColumn: 1,
+			TreeRow: 2,
+			
+			RequiredMission: 0,
+			RequiredMission2: 8,
+			
+			AI: 5,
+		},
+		
+		{
+			ID: 11,
+			Name: "ExpandYourTerritory.t",
+			ImageName: "expand_territory2.png",
+			
+			MissionEvent: "expand_territory2.txt",
+			
+			TreeColumn: 4,
+			TreeRow: 4,
+			
+			RequiredMission: 3,
+			RequiredMission2: -1,
+			
+			AI: 5,
+		},
+		
+		{
+			ID: 12,
+			Name: "EconomicBoost.t",
+			ImageName: "economy2.png",
+			
+			MissionEvent: "economic_boost.txt",
+			
+			TreeColumn: 4,
+			TreeRow: 0,
+			
+			RequiredMission: 15,
+			RequiredMission2: -1,
+			
+			AI: 5,
+		},
+		{
+			ID: 13,
+			Name: "TaxationTriumph.t",
+			ImageName: "taxation_triumph.png",
+			
+			MissionEvent: "taxation_triumph.txt",
+			
+			TreeColumn: 5,
+			TreeRow: 0,
+			
+			RequiredMission: 15,
+			RequiredMission2: -1,
+			
+			AI: 5,
+		},
+		{
+			ID: 14,
+			Name: "ManpowerMastery.t",
+			ImageName: "manpower_mastery.png",
+			
+			MissionEvent: "manpower_mastery.txt",
+			
+			TreeColumn: 3,
+			TreeRow: 4,
+			
+			RequiredMission: 3,
+			RequiredMission2: -1,
+			
+			AI: 5,
+		},
+		
+		{
+			ID: 15,
+			Name: "InfrastructureInitiative.t",
+			ImageName: "infrastructure_initiative.png",
+			
+			MissionEvent: "infrastructure_initiative.txt",
+			
+			TreeColumn: 3,
+			TreeRow: 1,
+			
+			RequiredMission: 1,
+			RequiredMission2: -1,
+			
+			AI: 5,
+		},
+		
+		{
+			ID: 16,
+			Name: "EnhanceAdvisorExpertise.t",
+			ImageName: "enhance_advisor_expertise.png",
+			
+			MissionEvent: "enhance_advisor_expertise.txt",
+			
+			TreeColumn: 5,
+			TreeRow: 2,
+			
+			RequiredMission: 10,
+			RequiredMission2: -1,
+			
+			AI: 5,
+		},
+		{
+			ID: 17,
+			Name: "ForgeAnAlliance.t",
+			ImageName: "forge_an_alliance.png",
+			
+			MissionEvent: "forge_an_alliance.txt",
+			
+			TreeColumn: 4,
+			TreeRow: 3,
+			
+			RequiredMission: 10,
+			RequiredMission2: -1,
+			
+			AI: 5,
+		},
+	],
+	Age_of_History: Mission
+}

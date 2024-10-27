@@ -1,0 +1,21 @@
+{
+Name: "Ottomans",
+Author: "Łukasz Jakowski",
+Civs: 36,
+Age: 3,
+Day: 3,
+Month: 3,
+Year: 1333,
+Campaign: true,
+CivDefault_Gold: 600,
+CivDefault_GoldRandom: 100,
+CivDefault_Legacy: 250,
+CivDefault_LegacyRandom: 50,
+CivDefault_ManpowerPercentage: 85,
+CivDefault_Technology: 16,
+ProvinceDefault_Population: 50000,
+ProvinceDefault_Economy: 20,
+ProvinceDefault_TaxEfficiency: 12,
+ProvinceDefault_Manpower: 6,
+HoursPerTurn: 24
+}

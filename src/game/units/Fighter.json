@@ -1,0 +1,86 @@
+{
+	Army: [
+		{
+			Name: "EarlyFighter",
+			ImageID: 16,
+			
+			UnitLevel: 0,
+			
+			Attack: 39,
+			Defense: 42,
+			MovementSpeed: 10.6,
+		
+			AttackRange: 3,
+			SiegeProgress: 0.25,
+			
+			RequiredTechID: 67,
+			
+			Cost: 42,
+			MaintenanceCost: 0.34,
+			
+			RecruitmentTime: 80,
+		},
+		{
+			Name: "Fighter",
+			ImageID: 17,
+			
+			UnitLevel: 1,
+			
+			Attack: 51,
+			Defense: 44,
+			MovementSpeed: 11.4,
+		
+			AttackRange: 3,
+			SiegeProgress: 0.25,
+			
+			RequiredTechID: 70,
+			
+			Cost: 52,
+			MaintenanceCost: 0.42,
+			
+			RecruitmentTime: 80,
+		},
+		{
+			Name: "ModernFighter",
+			ImageID: 18,
+			
+			UnitLevel: 2,
+			
+			Attack: 58,
+			Defense: 51,
+			MovementSpeed: 12.8,
+		
+			AttackRange: 3,
+			SiegeProgress: 0.25,
+			
+			RequiredTechID: 80,
+			
+			Cost: 54,
+			MaintenanceCost: 0.44,
+			
+			RecruitmentTime: 80,
+		},
+		{
+			Name: "FutureFighter",
+			ImageID: 53,
+			
+			UnitLevel: 3,
+			
+			Attack: 68,
+			Defense: 59,
+			MovementSpeed: 13.4,
+		
+			AttackRange: 3,
+			SiegeProgress: 0.25,
+			
+			RequiredTechID: 90,
+			
+			Cost: 56,
+			MaintenanceCost: 0.46,
+			
+			RecruitmentTime: 80,
+		},
+	],
+	
+	Age_of_History: Army
+}

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Nikolai Vatutin",
+	ImageID: Vatutin,
+	
+	BornDay: 16,
+	BornMonth: 12,
+	BornYear: 1901,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

@@ -1,0 +1,110 @@
+{
+	Law:
+	[
+		{
+			ImageID: [3, 4, 0, 5, 6],
+			Title: LandOwnershipLaws,
+			
+			Law: ["FeudalRights", "ManorialSystem", "PrivateLandOwnership", "LandReforms", "SustainableLandUse" ],
+			
+			RequiredTechID: [-1, 34, 52, 58, 80],
+			
+			GrowthRate: [0, 2, 4, 6, 8],
+			IncreaseGrowthRateCost: [0, -0.05, -0.075, -0.1, -0.125, -0.15],
+		},
+		
+		{
+			ImageID: [7, 1, 8, 9, 10],
+			Title: MonetaryPolicy,
+			
+			Law: ["CommodityMoney", "MintedCoins", "PaperCurrency", "CentralBankingSystem", "DigitalCurrency" ],
+			
+			RequiredTechID: [-1, 10, 51, 64, 86],
+			
+			IncomeProduction: [0, 3, 6, 9, 12],
+			ProductionEfficiency: [0, 4, 8, 12, 16],
+			InvestInEconomyCost: [0.0, -0.05, -0.075, -0.1, -0.15],
+			MaximumAmountOfGold_Percentage: [0, 0.1, 0.5, 1.0, 1.5],
+		},
+		
+		{
+			ImageID: [32, 33, 2, 26, 27],
+			Title: TaxationSystem,
+			
+			Law: ["TributeCollection", "LandAndPropertyTax", "IncomeBasedTaxation", "ProgressiveTaxation", "AutomatedTaxCollection" ],
+			
+			RequiredTechID: [-1, 44, 54, 61, 89],
+			
+			IncomeTaxation: [0, 0.03, 0.06, 0.09, 0.12],
+			IncreaseTaxEfficiencyCost: [0, -0.025, -0.05, -0.075, -0.1, -0.15],
+		},
+		
+		{
+			ImageID: [11, 12, 13, 14, 15],
+			Title: EducationPolicy,
+			
+			Law: ["ChurchSchools", "RoyalAndNoblePatronage", "PublicSchools", "UniversalEducation", "DigitalAndInclusiveEducation" ],
+			
+			RequiredTechID: [-1, 15, 43, 57, 86],
+			
+			Research: [0, 4, 10, 15, 20],
+			MaximumLevelOfCapitalCity: [0, 0, 1, 2, 2],
+			AdvisorMaxLevel: [0, 0, 0, 1, 1],
+		},
+		
+		{
+			ImageID: [22, 18, 23, 24, 25],
+			Title: ConscriptionLaws,
+			
+			Law: ["FeudalLevies", "DraftSystem", "SelectiveService", "ProfessionalVolunteerArmy", "ProfessionalStandingArmy" ],
+			
+			RequiredTechID: [-1, 31, 37, 45, 59],
+			
+			MaxManpower_Percentage: [0, 0.1, 0.15, 0.2, 0.25],
+			Discipline: [0, 0.05, 0.1, 0.15, 0.25],
+			MaximumLevelOfTheMilitaryAcademy: [0, 1, 2, 3, 4],
+			RecruitmentTime: [0, -3, -6, -9, -12],
+			RegimentsLimit: [0, 2, 4, 6, 8],
+		},
+		
+		{
+			ImageID: [16, 17, 19, 20, 21],
+			Title: JudicialSystem,
+			
+			Law: ["TrialByCombat", "FeudalCourts", "CentralizedCourts", "JudiciarySystem", "InternationalLawCompliance" ],
+			
+			RequiredTechID: [-1, 26, 52, 65, 77],
+			
+			MonthlyLegacy: [0, 0.1, 0.2, 0.35, 0.5],
+			MonthlyLegacy_Percentage: [0, 0.1, 0.15, 0.2, 0.25],
+			MaxNumberOfLoans: [0, 0, 1, 2, 3],
+			DiplomacyPoints: [0, 0.12, 0.24, 0.36, 0.5],
+			MaximumLevelOfTheSupremeCourt: [0, 0, 1, 2, 2],
+		},
+		
+		{
+			ImageID: [34, 35],
+			Title: ColonialAct,
+			
+			Law: ["NoColonization", "ColonialExpansionDecree" ],
+			
+			RequiredTechID: [-1, 27],
+			
+			UnlocksColonization: [false, true],
+		},
+		
+		{
+			ImageID: [31, 29, 28, 30],
+			Title: WomensRights,
+			
+			Law: ["MaleGuardians", "PropertyRights", "VotingRights", "EqualEmploymentLaws" ],
+			
+			RequiredTechID: [-1, 51, 62, 65],
+			
+			IncomeEconomy: [0, 0.02, 0.04, 0.08],
+			GrowthRate: [0, -2, -3, -5],
+		},
+		
+	],
+	Age_of_History: Law
+}

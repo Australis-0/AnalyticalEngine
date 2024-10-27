@@ -1,0 +1,13 @@
+[
+{
+	Name: "Edmund Herring",
+	ImageID: Herring,
+	
+	BornDay: 2,
+	BornMonth: 9,
+	BornYear: 1892,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

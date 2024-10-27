@@ -1,0 +1,13 @@
+[
+{
+	Name: "Magdalena Ogórek",
+	ImageID: Ogorek,
+	
+	BornDay: 23,
+	BornMonth: 2,
+	BornYear: 1979,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

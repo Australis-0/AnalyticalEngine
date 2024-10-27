@@ -1,0 +1,13 @@
+[
+{
+	Name: "Frederick II",
+	ImageID: Frederick2,
+	
+	BornDay: 24,
+	BornMonth: 1,
+	BornYear: 1712,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

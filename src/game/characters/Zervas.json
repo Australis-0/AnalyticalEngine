@@ -1,0 +1,13 @@
+[
+{
+	Name: "Napoleon Zervas",
+	ImageID: Zervas,
+	
+	BornDay: 17,
+	BornMonth: 5,
+	BornYear: 1891,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

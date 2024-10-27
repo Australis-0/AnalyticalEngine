@@ -1,0 +1,13 @@
+[
+{
+	Name: "Mikhail Tukhachevsky",
+	ImageID: Tukhachevsky,
+	
+	BornDay: 16,
+	BornMonth: 2,
+	BornYear: 1893,
+	
+	Attack: 5,
+	Defense: 2,
+},
+]

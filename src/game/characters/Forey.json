@@ -1,0 +1,13 @@
+[
+{
+	Name: "Élie Frédéric Forey",
+	ImageID: Forey,
+		
+	BornDay: 10,
+	BornMonth: 1,
+	BornYear: 1804,
+		
+	Attack: -1,
+	Defense: -1,
+},
+]

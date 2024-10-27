@@ -1,0 +1,13 @@
+[
+{
+	Name: "Maciej Rataj",
+	ImageID: Rataj,
+	
+	BornDay: 19,
+	BornMonth: 2,
+	BornYear: 1884,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Leszek Moczulski",
+	ImageID: Moczulski,
+	
+	BornDay: 7,
+	BornMonth: 6,
+	BornYear: 1930,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

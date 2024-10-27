@@ -1,0 +1,21 @@
+{
+Name: "NapoleonicWars",
+Author: "Łukasz Jakowski",
+Civs: 72,
+Age: 5,
+Day: 1,
+Month: 4,
+Year: 1792,
+Campaign: true,
+CivDefault_Gold: 750,
+CivDefault_GoldRandom: 500,
+CivDefault_Legacy: 175,
+CivDefault_LegacyRandom: 75,
+CivDefault_ManpowerPercentage: 80,
+CivDefault_Technology: 55,
+ProvinceDefault_Population: 300000,
+ProvinceDefault_Economy: 28,
+ProvinceDefault_TaxEfficiency: 28,
+ProvinceDefault_Manpower: 20,
+HoursPerTurn: 24
+}

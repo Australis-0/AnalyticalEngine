@@ -1,0 +1,26 @@
+{
+	Rulers: [
+		{
+			Name: "Pehr Evind Svinhufvud",
+			ImageID: 273,
+			
+			BornDay: 5,
+			BornMonth: 12,
+			BornYear: 1861,
+			
+			ReignYear: 1931,
+		},
+		{
+			Name: "Alexander Stubb",
+			ImageID: 89,
+			
+			BornDay: 1,
+			BornMonth: 4,
+			BornYear: 1968,
+			
+			ReignYear: 2022,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

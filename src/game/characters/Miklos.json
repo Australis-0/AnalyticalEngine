@@ -1,0 +1,13 @@
+[
+{
+	Name: "Béla Miklós",
+	ImageID: Miklos,
+	
+	BornDay: 11,
+	BornMonth: 6,
+	BornYear: 1890,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

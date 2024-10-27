@@ -1,0 +1,13 @@
+[
+{
+	Name: "Maciej Płażyński",
+	ImageID: Plazynski,
+	
+	BornDay: 10,
+	BornMonth: 2,
+	BornYear: 1958,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

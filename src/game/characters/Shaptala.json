@@ -1,0 +1,13 @@
+[
+{
+	Name: "Serhiy  Shaptala",
+	ImageID: Shaptala,
+	
+	BornDay: 5,
+	BornMonth: 2,
+	BornYear: 1973,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

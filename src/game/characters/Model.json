@@ -1,0 +1,13 @@
+[
+{
+	Name: "Walter Model",
+	ImageID: Model,
+	
+	BornDay: 24,
+	BornMonth: 1,
+	BornYear: 1891,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Kazimierz Świtalski",
+	ImageID: Switalski,
+	
+	BornDay: 4,
+	BornMonth: 3,
+	BornYear: 1886,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

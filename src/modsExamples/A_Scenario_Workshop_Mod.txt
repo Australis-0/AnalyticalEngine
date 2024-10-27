@@ -1,0 +1,55 @@
+#######################################
+## Read: mods_steam_workshop.txt !
+## 
+## To create a new mod for submission to the Steam Workshop, first create a new folder for your mod within the 'mods' directory.
+## Then, copy or recreate all the modified files into that folder!
+##
+## For example, if a file was originally located in game/ExampleFile.json, 
+## it should be placed in mods/YourModName/game/ExampleFile.json in your mod's folder.
+##
+#####
+
+For your mod the path will be:
+mods/YOUR_MOD_NAME/map/MAP_NAME/scenarios/
+
+#####
+## How to Share Your Scenario as a Mod on the Steam Workshop
+#####
+
+By default, scenarios created in the scenario editor will be saved in:
+
+map/MAP_NAME/scenarios/
+map/Earth3/scenarios/
+
+The folder name of the scenario will correspond to the tag of the scenario!
+
+#####
+
+Creating a mod folder:
+You can copy the folder named '_EmptyFoldersScenario' from modsExamples/ to the mods/ folder.
+After copying, rename '_EmptyFoldersScenario' to a unique name for your mod.
+For example: U_MyName_1037_Scenario
+
+Now you can set the mod name and description in the mod.txt file, and change logo.png to your mod’s logo
+
+#####
+
+To create a mod that shares this scenario, copy the folder with the scenario tag to the path:
+
+mods/YOUR_MOD_NAME/map/MAP_NAME/scenarios/
+Example:
+mods/U_MyName_1037_Scenario/map/Earth3/scenarios/
+
+Keep in mind that the game will always prioritize reading scenarios from the mods folder.
+If you need to edit the scenario, it's recommended to temporarily move it from mods/YOUR_MOD_NAME/map/MAP_NAME/scenarios/ to the map/MAP_NAME/scenarios/
+
+All data for the scenario will be read from the mods/ folder if the scenario exists.
+The game will save any changes made to the scenario in the game files at map/MAP_NAME/scenarios/ not your mod folder!
+
+#####
+
+Once it's ready, you can share your scenario by opening the game, then going to Editor -> Steam Workshop, and selecting your unique mod folder name!
+
+You can put multiple scenarios in your mod, as many as you want!
+
+To update a mod in the Steam Workshop, simply do the same thing as when you published the mod

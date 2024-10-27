@@ -1,0 +1,13 @@
+[
+{
+	Name: "Stanley Maude",
+	ImageID: Maude,
+	
+	BornDay: 24,
+	BornMonth: 6,
+	BornYear: 1864,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

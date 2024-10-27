@@ -1,0 +1,13 @@
+[
+{
+	Name: "Władysław Studnicki",
+	ImageID: Studnicki,
+	
+	BornDay: 15,
+	BornMonth: 11,
+	BornYear: 1867,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

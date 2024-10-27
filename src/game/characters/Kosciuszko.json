@@ -1,0 +1,13 @@
+[
+{
+	Name: "Tadeusz Kościuszko",
+	ImageID: Kosciuszko,
+	
+	BornDay: 4,
+	BornMonth: 2,
+	BornYear: 1746,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

@@ -1,0 +1,26 @@
+{
+	Rulers: [
+		{
+			Name: "Reza Shah Pahlavi",
+			ImageID: 277,
+			
+			BornDay: 15,
+			BornMonth: 3,
+			BornYear: 1878,
+			
+			ReignYear: 1925,
+		},
+		{
+			Name: "Ali Khamenei",
+			ImageID: 108,
+			
+			BornDay: 19,
+			BornMonth: 4,
+			BornYear: 1939,
+			
+			ReignYear: 1989,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

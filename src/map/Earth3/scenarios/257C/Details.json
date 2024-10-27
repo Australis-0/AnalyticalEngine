@@ -1,0 +1,21 @@
+{
+Name: "257 BC",
+Author: "Łukasz Jakowski",
+Civs: 34,
+Age: 1,
+Day: 23,
+Month: 10,
+Year: -257,
+Campaign: true,
+CivDefault_Gold: 100,
+CivDefault_GoldRandom: 50,
+CivDefault_Legacy: 100,
+CivDefault_LegacyRandom: 50,
+CivDefault_ManpowerPercentage: 75,
+CivDefault_Technology: 11,
+ProvinceDefault_Population: 100000,
+ProvinceDefault_Economy: 10,
+ProvinceDefault_TaxEfficiency: 8,
+ProvinceDefault_Manpower: 16,
+HoursPerTurn: 24
+}

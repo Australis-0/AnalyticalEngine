@@ -1,0 +1,13 @@
+[
+{
+	Name: "Kazimierz Marcinkiewicz",
+	ImageID: Marcinkiewicz,
+	
+	BornDay: 20,
+	BornMonth: 12,
+	BornYear: 1959,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

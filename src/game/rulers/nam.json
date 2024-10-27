@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Nangolo Mbumba",
+			ImageID: 148,
+			
+			BornDay: 15,
+			BornMonth: 7,
+			BornYear: 1941,
+			
+			ReignYear: 2022,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

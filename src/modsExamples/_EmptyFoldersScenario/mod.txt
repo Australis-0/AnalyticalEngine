@@ -1,0 +1,8 @@
+{
+	Name: "New Scenario",
+	Description: "This item will add a new Scenario.",
+	
+	Tags: [ "Scenario", "Earth3" ],
+	
+	ChangeNote: "First release",
+}

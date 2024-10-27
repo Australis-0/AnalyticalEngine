@@ -1,0 +1,13 @@
+[
+{
+	Name: "Krzysztof Ibisz",
+	ImageID: Ibisz,
+	
+	BornDay: 25,
+	BornMonth: 2,
+	BornYear: 1965,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

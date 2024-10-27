@@ -1,0 +1,4 @@
+Istanbul=Constantinople
+Silivri=Selymbria
+Çatalca=Metrae
+Gebze=Libyssa

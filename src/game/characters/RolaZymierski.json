@@ -1,0 +1,13 @@
+[
+{
+	Name: "Michał Rola-Żymierski",
+	ImageID: RolaZymierski,
+	
+	BornDay: 4,
+	BornMonth: 9,
+	BornYear: 1890,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

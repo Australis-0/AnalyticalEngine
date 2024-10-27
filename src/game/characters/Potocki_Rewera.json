@@ -1,0 +1,13 @@
+[
+{
+	Name: "Stanisław Potocki",
+	ImageID: Potocki_Rewera,
+	
+	BornDay: 15,
+	BornMonth: 4,
+	BornYear: 1589,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

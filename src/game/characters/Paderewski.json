@@ -1,0 +1,13 @@
+[
+{
+	Name: "Ignacy Jan Paderewski",
+	ImageID: Paderewski,
+	
+	BornDay: 18,
+	BornMonth: 11,
+	BornYear: 1860,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

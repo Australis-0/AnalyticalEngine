@@ -1,0 +1,13 @@
+[
+{
+	Name: "Jacek Kuroń",
+	ImageID: Kuron,
+	
+	BornDay: 3,
+	BornMonth: 3,
+	BornYear: 1934,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

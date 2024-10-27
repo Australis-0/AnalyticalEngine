@@ -1,0 +1,13 @@
+[
+{
+	Name: "Ignacy Łukasiewicz",
+	ImageID: Lukasiewicz,
+		
+	BornDay: 1,
+	BornMonth: 3,
+	BornYear: 1822,
+		
+	Attack: -1,
+	Defense: -1,
+},
+]

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Gallus Anonymus",
+	ImageID: Anonymus,
+	
+	BornDay: 20,
+	BornMonth: 5,
+	BornYear: 1091,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

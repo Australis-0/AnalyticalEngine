@@ -1,0 +1,13 @@
+[
+{
+	Name: "Karol Karski",
+	ImageID: Karski,
+	
+	BornDay: 13,
+	BornMonth: 5,
+	BornYear: 1966,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Kim Jong Un",
+			ImageID: 156,
+			
+			BornDay: 8,
+			BornMonth: 1,
+			BornYear: 1984,
+			
+			ReignYear: 2011,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

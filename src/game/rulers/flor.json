@@ -1,0 +1,106 @@
+{
+	"Rulers": [
+		{
+			"Name": "Giovanni di Bicci de' Medici",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1360,
+			
+			"ReignYear": 1397
+		},
+		{
+			"Name": "Cosimo de' Medici",
+			"ImageID": -1,
+			
+			"BornDay": 27,
+			"BornMonth": 9,
+			"BornYear": 1389,
+			
+			"ReignYear": 1434
+		},
+		{
+			"Name": "Lorenzo de' Medici",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1449,
+			
+			"ReignYear": 1469
+		},
+		{
+			"Name": "Giuliano de' Medici",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1453,
+			
+			"ReignYear": 1478
+		},
+		{
+			"Name": "Pope Leo X",
+			"ImageID": -1,
+			
+			"BornDay": 11,
+			"BornMonth": 12,
+			"BornYear": 1475,
+			
+			"ReignYear": 1513
+		},
+		{
+			"Name": "Clement VII",
+			"ImageID": -1,
+			
+			"BornDay": 26,
+			"BornMonth": 5,
+			"BornYear": 1478,
+			
+			"ReignYear": 1523
+		},
+		{
+			"Name": "Duke Cosimo I",
+			"ImageID": -1,
+			
+			"BornDay": 12,
+			"BornMonth": 6,
+			"BornYear": 1519,
+			
+			"ReignYear": 1537
+		},
+		{
+			"Name": "Ferdinand I",
+			"ImageID": -1,
+			
+			"BornDay": 14,
+			"BornMonth": 7,
+			"BornYear": 1549,
+			
+			"ReignYear": 1587
+		},
+		{
+			"Name": "Cosimo II",
+			"ImageID": -1,
+			
+			"BornDay": 12,
+			"BornMonth": 8,
+			"BornYear": 1590,
+			
+			"ReignYear": 1609
+		},
+		{
+			"Name": "Ferdinand II",
+			"ImageID": -1,
+			
+			"BornDay": 14,
+			"BornMonth": 7,
+			"BornYear": 1610,
+			
+			"ReignYear": 1621
+		}
+	],
+	
+	"Age_of_History": "Rulers"
+}

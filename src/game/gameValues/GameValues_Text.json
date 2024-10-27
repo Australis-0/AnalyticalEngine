@@ -1,0 +1,11 @@
+{
+	VERSION: "1.01",
+	MAIN_MENU_LOGO_HOVER_TEXT: ["Thank you for buying the game.", "Time to make History! Let the conquest begin!"],
+	
+	MAIN_MENU_BG_ENABLE_AUTO_BG_CHANGE: true,
+	MAIN_MENU_BG_ENABLE_AUTO_BG_CHANGE_MOBILE: false,
+	
+	MAIN_MENU_BG_CHANGE_BG_EVERY_X_MS: 25000,
+	
+	MAIN_MENU_BG_ANIMATION_TIME: 750,
+}

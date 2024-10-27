@@ -1,0 +1,13 @@
+[
+{
+	Name: "Joachim Murat",
+	ImageID: Murat,
+	
+	BornDay: 25,
+	BornMonth: 3,
+	BornYear: 1767,
+	
+	Attack: 8,
+	Defense: 5,
+},
+]

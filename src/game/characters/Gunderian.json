@@ -1,0 +1,13 @@
+[
+{
+	Name: "Heinz Guderian",
+	ImageID: Guderian,
+	
+	BornDay: 17,
+	BornMonth: 7,
+	BornYear: 1888,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Jean Moreau",
+	ImageID: Moreau,
+	
+	BornDay: 14,
+	BornMonth: 2,
+	BornYear: 1763,
+	
+	Attack: 8,
+	Defense: 5,
+},
+]

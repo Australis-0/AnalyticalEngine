@@ -1,0 +1,13 @@
+[
+{
+	Name: "Ján Golian",
+	ImageID: Golian,
+	
+	BornDay: 26,
+	BornMonth: 1,
+	BornYear: 1906,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

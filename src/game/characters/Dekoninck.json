@@ -1,0 +1,13 @@
+[
+{
+	Name: "Jean-Paul Dekoninck",
+	ImageID: Dekoninck,
+	
+	BornDay: 17,
+	BornMonth: 5,
+	BornYear: 1959,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

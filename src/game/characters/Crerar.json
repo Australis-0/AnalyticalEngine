@@ -1,0 +1,13 @@
+[
+{
+	Name: "Harry Crerar",
+	ImageID: Crerar,
+	
+	BornDay: 28,
+	BornMonth: 4,
+	BornYear: 1888,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

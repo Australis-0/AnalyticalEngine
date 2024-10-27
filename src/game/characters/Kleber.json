@@ -1,0 +1,13 @@
+[
+{
+	Name: "Jean Baptiste Kleber",
+	ImageID: Kleber,
+	
+	BornDay: 9,
+	BornMonth: 3,
+	BornYear: 1753,
+	
+	Attack: 6,
+	Defense: 6,
+},
+]

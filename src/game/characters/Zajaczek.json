@@ -1,0 +1,13 @@
+[
+{
+	Name: "Jozef Zajaczek",
+	ImageID: Zajaczek,
+	
+	BornDay: 10,
+	BornMonth: 3,
+	BornYear: 1752,
+	
+	Attack: 6,
+	Defense: 3,
+},
+]

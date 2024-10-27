@@ -1,0 +1,13 @@
+[
+{
+	Name: "Evered Poole",
+	ImageID: Poole,
+	
+	BornDay: 8,
+	BornMonth: 10,
+	BornYear: 1902,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

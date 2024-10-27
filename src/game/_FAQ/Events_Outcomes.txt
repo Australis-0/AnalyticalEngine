@@ -1,0 +1,469 @@
+play_music=KOL_DC_01
+# Play music file from audio/music/
+# or mods/YourMod/audio/music/
+# Don't put the extension of the file. The file format must be .ogg
+
+gold=125
+gold_monthly_income=2.0
+
+legacy=75
+# Civ will receive 75 legacy points
+legacy_monthly=4.5
+# Civ will get 4.5 monthly legacy
+
+player_set_civ=fra
+# Player will now play as France
+
+research=35
+# Civ will get 35 research points
+advantage_points=3
+# Civ will get 3 advantage points
+
+manpower=7500
+# +7500 manpower
+
+inflation=8.2
+# +8.2 inflation
+
+ai_aggression=100
+# AI Aggression: +100 out of 1000
+
+ai_aggression=-1000
+# AI Aggression: -1000 out of 1000
+
+ae_set=24.0
+# Set civ's Aggressive Expansion to 24
+
+move_capital=75
+# Move Civ's capital to province ID: 75
+
+declare_war=fra
+# Civ will decalre war on France
+
+declare_war2=ger=pol
+# Germany will declare war on Poland
+
+add_alliance=ger=hun
+# Civ with tag 'ger'(Germany) will make an alliance with civ with tag 'hun'(Hungary)
+
+add_non_aggression=fra=spa
+# Civ with tag 'fra'(France) will sign Non Aggression Pact with civ with tag 'spa'(Spain)
+
+add_military_access=rus=swe
+# Civ with tag 'rus'(Russia) will get Military Access to civ with tag 'swe'(Sweden)
+
+add_guarantee=fra=pol
+# Civ with tag 'fra'(France) will Guarantee Indpendence of civ with tag 'pol'(Poland)
+
+add_defensive_pact=ita=ger
+# Civ with tag 'ita'(Italy) will sign Defensive Pact with civ with tag 'ger'(Germany)
+
+add_truce=ita=ger
+# Civ with tag 'ita'(Italy) will sign a Truce with civ with tag 'ger'(Germany)
+
+change_ideology=4
+# Civ will change ideology to id: 4
+
+change_ideology_civ=2=fra
+# Civ 'fra' will change ideology to id: 2
+
+change_religion=3
+# Civ will change religion to id: 3
+
+change_religion_civ=3=fra
+# Civ 'fra' will change religion to id: 3
+
+# Annexation of provinces ID: 0, 1, 2, 3, 4:
+annex=0;1;2;3;4;
+
+# Annexation of provinces ID: 0, 1, 2, 3, 4, if are controled by "fra", fra is an example and it is the Civ TAG:
+annex_from_civ=fra=0;1;2;3;4;
+
+# ger(Germany) will annex provinces: 646, 652, 647 if are controled by "czsl" (Czechoslovakia)
+annex_by_civ_from_civ=ger=czsl=646;652;647;
+
+annex_by_civ_from_civ=CIVTAG=CIVTAG2=646;652;647;
+
+# Annexation of Civilization, fra is an example and it is the Civ TAG:
+annex_civ=fra
+
+# Civilization will be annexed by ger. ger is Civ TAG for Germany.
+annexed_by_civ=ger
+
+
+# A civilization with the tag "atr" will become a vassal/puppet of the civilization with the tag "ger".
+make_puppet=ger=atr
+
+
+set_civ_tag=pol
+# Set Civilization Tag to pol -> Poland
+# This will change the Civilization to Poland
+
+set_civ_tag=spa_n
+# Set Civilization Tag to spa_n -> Spain, Constitutional Monarchy
+# This will change the Civilization to Spain
+
+set_civ_tag=fra_r
+# Set Civilization Tag to fra_n -> France, Republic
+# This will change the Civilization to France
+
+
+set_civ_tag2=czsl=slo_z
+## The civilization with the TAG 'czsl' (Czechoslovakia) will change to 'slo_z' (Slovakia).
+
+set_civ_tag2=fra=fra_f
+## The civilization with the TAG 'fra' (France) will change to 'fra_f' (Vichy France).
+
+####
+## RUN EVENT
+
+run_event=the_austrian_question
+# The event with ID 'the_austrian_question' will run the next day.
+
+
+# Civilization will get a Random General
+add_general=true
+
+# Civilization will get a General:  Zhukov from the game/characters/Zhukov.json if exists!
+add_general2=Zhukov
+
+# Civilization will get a General:  Galileo from the game/characters/Galileo.json if exists! With 6 Attack, 4 Defense!
+add_general3=Galileo=6=4
+
+# Civilization will get a General:  Galileo from the game/characters/Galileo.json if exists! With random Attack(-1), 3 Defense! -1 to set random value
+add_general3=Galileo=-1=3
+
+# Civilization will get Economic Advisor(1):  Franklin from the game/characters/Franklin.json if exists!
+add_advisor2=1=Franklin
+# Civilization will get Military Advisor(3):  Zhukov from the game/characters/Zhukov.json if exists!
+add_advisor2=3=Zhukov
+
+# 0 = Administrative Advisor
+# 1 = Economic Advisor
+# 2 = Innovation Advisor
+# 3 = Military Advisor
+
+Civilization will get Random Economic Advisor
+add_advisor=1
+
+
+add_ruler=Lukasz=Jakowski=223=23=06=1992
+
+# Civilization will get new Ruler: 
+# Name: Lukasz, Surname: Jakowski
+# Image ID: 223, Will be loaded from: game/rulers/rulersImages/H/223.png for mod it will be: mods/YOUR_MOD_NAME/game/rulers/rulersImages/H/223.png
+# You can use text instead of an integer for the ruler image. For example, 'Zedong' -> it will load Zedong.png
+# Born Day: 23, Born Month: 6, Born Year: 1992
+
+add_ruler=TheName=TheSurname=Zedong=23=06=1992
+
+######
+# province_economy=15.4 ### A random Civilization province will receive 15.4 economy points.
+# province_economy_capital=15.4 ### A capital province will receive 15.4 economy points.
+# province_economy_capital_all=15.4 ### All provinces of Civilization will receive 15.4 economy points.
+# province_economy_id=332=15.4 ### Province with id 332 will receive 15.4 economy points.
+
+province_economy=15.4
+province_economy_capital=27.2
+province_economy_all=3.5
+province_economy_id=11245=4.8
+province_tax_efficiency=3.2
+province_tax_efficiency_capital=4.7
+province_tax_efficiency_all=2.5
+province_tax_efficiency_id=725=3.0
+province_manpower=1.2
+province_manpower_capital=1.7
+province_manpower_all=3.5
+province_manpower_id=332=4.0
+province_growth_rate=8.2
+province_growth_rate_capital=6.2
+province_growth_rate_all=7.25
+province_growth_rate_id=725=3.0
+province_population=5000
+province_population_capital=12500
+province_population_all=2500
+province_religion=3
+province_religion_capital=2
+province_religion_all=3
+province_religion_id=1000=4
+province_devastation=27.5
+province_devastation_capital=45.5
+province_devastation_all=15
+province_devastation_id=35=25.0
+province_unrest=15.5
+province_unrest_capital=35.5
+province_unrest_all=25.0
+province_unrest_id=2541=-25.0
+province_infrastructure=2
+province_infrastructure_capital=1
+province_infrastructure_all=1
+province_infrastructure_id=332=1
+
+province_add_core_civ=332=pol # STOPPED HERE
+# Province id 332 add core for Poland
+province_remove_core_civ=332=pol
+
+province_remove_core_civ=460=pol
+province_add_core_civ=672=pol
+
+add_new_army=0=1=3=2
+# Add new army in capital province,
+# Unit ID: 0, Army ID: 1
+# Unit ID: 3, Army ID: 2
+
+add_new_army=1=6=1=6=1=6=1=6=1=6=1=6=1=6=1=6=1=6=1=6=1=6=1=6=1=6=1=6=1=6=1=6=1=6=1=6=1=6=1=6=1=6=1=6=0=0=0=0=0=0
+# UnitID=ArmyID
+# =UnitID=ArmyID=UnitID=ArmyID=UnitID=ArmyID=UnitID=ArmyID=UnitID=ArmyID=UnitID=ArmyID=UnitID=ArmyID=UnitID=ArmyID
+
+## NOTE SPECIAL
+# A civilization will get this variable, it can be used to create a chain of events.
+
+add_variable=capital_city_economic_development
+# You can use add_variable=XYz, for example, with an option button to track that this option was selected.
+# Every time a Civilization runs an event (makes a decision), the 'id' of the event is stored by default in the Civilization's database of variables.
+
+# The Civilization with the tag 'ger' (Germany) will receive this variable.
+add_variable2=ger=sudetenland_accepted
+
+
+###########################################
+######### CIV BONUSES FOR X YEARS #########
+
+## We can also set temporary bonuses for X years:
+bonus_duration=2
+bonus_monthly_income=24.4
+
+# Civilization will have +24.4 monthly income for 2 years.
+
+# List of all available, with simple examples:
+
+bonus_monthly_income=12.2
+bonus_monthly_legacy=2.4
+bonus_monthly_legacy_percentage=10.2
+bonus_maximum_amount_of_gold=500
+
+bonus_tax_efficiency=10.5
+bonus_growth_rate=15
+bonus_province_maintenance=-25
+bonus_buildings_maintenance_cost=-10
+bonus_maintenance_cost=2.2
+bonus_production_efficiency=25
+bonus_income_production=10
+
+bonus_income_taxation=7.5
+bonus_income_economy=10.5
+bonus_corruption=10.0
+bonus_inflation=5.0
+
+bonus_research=10
+bonus_research_points=4.5
+
+bonus_max_manpower=10000
+bonus_max_manpower_percentage=10.25
+bonus_manpower_recovery_speed=25
+bonus_reinforcement_speed=15
+bonus_army_morale_recovery=25
+bonus_army_maintenance=-25
+
+bonus_recruitment_time=-15
+bonus_recruit_army_cost=-20
+bonus_recruit_army_first_line_cost=-15
+bonus_recruit_army_second_line_cost=-25
+
+bonus_generals_attack=2
+bonus_generals_defense=1
+
+bonus_units_attack=4
+bonus_units_defense=3
+
+bonus_regiments_limit=6
+bonus_battle_width=4
+bonus_discipline=7.5
+bonus_siege_effectiveness=25.5
+bonus_max_morale=20
+bonus_army_movement_speed=30.4
+
+bonus_manpower_recovery_from_disbanded_army=25
+
+bonus_war_score_cost=-25
+
+bonus_construction_cost=-10
+bonus_administration_buildings_cost=-15
+bonus_military_buildings_cost=-20
+bonus_economy_buildings_cost=-25
+bonus_construction_time=-25
+
+bonus_invest_in_economy_cost=-13.75
+bonus_increase_manpower_cost=-7.25
+bonus_increase_tax_efficiency_cost=-15.4
+bonus_develop_infrastructure_cost=-12.5
+bonus_increase_growth_rate_cost=-7.25
+
+bonus_diplomacy_points=25
+bonus_improve_relations_modifier=15
+bonus_income_from_vassals=25
+bonus_aggressive_expansion=-25
+
+bonus_core_cost=-25
+bonus_religion_cost=-15
+bonus_revolutionary_risk=25
+
+bonus_loan_interest=-25
+bonus_loans_limit=1
+## +1 Max loans
+bonus_all_characters_life_expectancy=5
+bonus_advisor_cost=-20
+bonus_advisors_max_level=2
+bonus_general_cost=-15
+
+bonus_disease_death_rate=75
+
+####### CIV BONUSES FOR X YEARS END #######
+###########################################
+
+join_alliance_special_id_first_tier=0
+# Join Special Alliance with ID: 0, an alliance like the Holy Roman Empire (HRE).
+
+join_alliance_special_id_second_tier=1
+# Join Special Alliance with ID: 0, an alliance like the Holy Roman Empire (HRE).
+
+leave_alliance_special_id=0
+# Leave Special Alliance with ID: 0, an alliance like the Holy Roman Empire (HRE).
+
+##########
+
+
+kill_ruler=true
+kill_ruler_chance=35
+
+kill_advisor=1
+# 0 = Administrative Advisor
+# 1 = Economic Advisor
+# 2 = Innovation Advisor
+# 3 = Military Advisor
+
+promote_advisor=2
+# Promote advisor ID: 2 -> Innovation Advisor
+
+military_academy=1
+# Change level of Military Academy: +1
+
+military_academy=-2
+# Change level of Military Academy: -2
+
+military_academy_generals=3
+# Change level of Military Academy for Generals: +3
+
+capital_city_level=1
+# Change level of Capital City Level: +1
+
+supreme_court=2
+# Change level of Supreme Court: +2
+
+nuclear_reactor=1
+# Change level of Nuclear Reactor: +1
+
+############
+
+explode=ming
+# Ming will split into multiple civilizations based on the number of civilizations present within Ming's provinces that have cores and no provinces
+
+
+############
+## Change price of resource random Resource
+
+
+price_change_random=15=16=12=36
+
+### Change price of random Resource, by:
+# 15% min + Random(16)%, price will be randomly decreased or increased
+# For 12 months + Random(36) Months
+
+--------------------
+
+price_change_random=5=35=24=36
+
+## Change price of random Resource, by:
+# 5% min + Random(35)%, price will be randomly decreased or increased
+# For 24 months + Random(36) Months
+
+--------------------
+
+price_change_random_up=6=24=21=0
+
+## Change price of random Resource, by:
+# 6% min + Random(24)%, price will be Increased!
+# For 21 months + Random(0) Months
+
+--------------------
+
+price_change_random_down=40=25=12=4
+
+## Change price of random Resource, by:
+# 40% min + Random(25)%, price will be Decreased!
+# For 12 months + Random(4) Months
+
+############
+## Change price of resource Resource ID
+
+price_change=0=10=15=12=24
+
+## Change price of ResourceID: 0 -> Grain, by:
+# 10% min + Random(15)%, price will be randomly decreased or increased
+# For 12 months + Random(24) Months
+## ResourceID can be find in: game/resources/Resources.json
+## ID: 0 will be Grain
+
+--------------------
+
+price_change=9=20=12=96=12
+
+## Change price of ResourceID: 9 -> Cocoa, by:
+# 20% min + Random(12)%, price will be randomly decreased or increased
+# For 96 months + Random(12) Months
+## ResourceID can be find in: game/resources/Resources.json
+## ID: 9 will be Cocoa
+
+--------------------
+
+price_change_up=0=20=40=18=24
+
+## Change price of ResourceID: 0 -> Grain, by:
+# 20% min + Random(40)%, price will be Increased!
+# For 18 months + Random(24) Months
+## ResourceID can be find in: game/resources/Resources.json
+## ID: 0 will be Grain
+
+--------------------
+
+price_change_down=0=20=40=18=24
+
+## Change price of ResourceID: 0 -> Grain, by:
+# 20% min + Random(40)%, price will be Decreased!
+# For 18 months + Random(24) Months
+## ResourceID can be find in: game/resources/Resources.json
+## ID: 0 will be Grain
+
+--------------------
+
+price_change_group=0=15=5=24=12
+
+## Change price of Resources with GroupID: 0 -> Food:
+# 15% min + Random(5)%, price will be randomly decreased or increased
+# For 24 months + Random(12) Months
+## GroupID can be find in: game/resources/Resources.json
+
+price_change_group_up=3=15=5=24=12
+## Change price of Resources with GroupID: 3 -> Luxury:
+# 15% min + Random(5)%, price will be Increased!
+
+price_change_group_down=4=15=5=24=12
+## Change price of Resources with GroupID: 4 -> Production Resources:1
+# 15% min + Random(5)%, price will be Decreased!
+
+Group ID:
+0 -> Food
+1 -> Commodities
+2 -> Luxury Commodities
+3 -> Luxury
+4 -> Production Resources

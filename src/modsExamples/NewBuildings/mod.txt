@@ -1,0 +1,8 @@
+{
+	Name: "New Buildings, at the end of the file always!",
+	Description: "This item will add new Buildings.",
+	
+	Tags: [ "Game", "Buildings" ],
+	
+	ChangeNote: "First release",
+}

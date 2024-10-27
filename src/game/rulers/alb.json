@@ -1,0 +1,26 @@
+{
+	Rulers: [
+		{
+			Name: "Zog I",
+			ImageID: 268,
+			
+			BornDay: 8,
+			BornMonth: 10,
+			BornYear: 1895,
+			
+			ReignYear: 1928,
+		},
+		{
+			Name: "Bajram Begaj",
+			ImageID: 31,
+			
+			BornDay: 20,
+			BornMonth: 3,
+			BornYear: 1967,
+			
+			ReignYear: 2022,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

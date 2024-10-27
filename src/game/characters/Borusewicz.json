@@ -1,0 +1,13 @@
+[
+{
+	Name: "Bogdan Borusewicz",
+	ImageID: Borusewicz,
+	
+	BornDay: 11,
+	BornMonth: 1,
+	BornYear: 1949,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

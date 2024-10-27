@@ -1,0 +1,13 @@
+[
+{
+	Name: "Bernard Montgomery",
+	ImageID: Montgomery,
+	
+	BornDay: 17,
+	BornMonth: 11,
+	BornYear: 1887,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

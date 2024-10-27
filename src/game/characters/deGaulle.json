@@ -1,0 +1,13 @@
+[
+{
+	Name: "Charles de Gaulle",
+	ImageID: deGaulle,
+	
+	BornDay: 22,
+	BornMonth: 11,
+	BornYear: 1890,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

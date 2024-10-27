@@ -1,0 +1,13 @@
+[
+{
+	Name: "Szymon Hołownia",
+	ImageID: Holownia,
+	
+	BornDay: 3,
+	BornMonth: 9,
+	BornYear: 1976,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Alexander Haig",
+	ImageID: Haig,
+	
+	BornDay: 2,
+	BornMonth: 12,
+	BornYear: 1924,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

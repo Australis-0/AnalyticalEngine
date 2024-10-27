@@ -1,0 +1,8 @@
+{
+	Name: "New Civilizations!",
+	Description: "This item will add new Civilizations.",
+	
+	Tags: [ "Map", "Civilizations" ],
+	
+	ChangeNote: "First release",
+}

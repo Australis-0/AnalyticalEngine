@@ -1,0 +1,13 @@
+[
+{
+	Name: "Jarosław Szymczyk",
+	ImageID: Szymczyk,
+	
+	BornDay: 21,
+	BornMonth: 3,
+	BornYear: 1970,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

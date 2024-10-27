@@ -1,0 +1,13 @@
+[
+{
+	Name: "William Robertson",
+	ImageID: Robertson,
+	
+	BornDay: 29,
+	BornMonth: 1,
+	BornYear: 1860,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

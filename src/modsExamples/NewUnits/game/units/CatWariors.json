@@ -1,0 +1,66 @@
+{
+	Army: [
+		{
+			Name: "Shark Cat",
+			ImageID: 66,
+			
+			UnitLevel: 0,
+			
+			Attack: 24,
+			Defense: 32,
+			MovementSpeed: 3.6,
+			
+			AttackRange: 1,
+			SiegeProgress: 0.1,
+			
+			RequiredTechID: -1,
+			
+			Cost: 10,
+			MaintenanceCost: 0.1,
+			
+			RecruitmentTime: 30,
+		},
+		{
+			Name: "Home Cat",
+			ImageID: 67,
+			
+			UnitLevel: 1,
+			
+			Attack: 26,
+			Defense: 40,
+			MovementSpeed: 3.9,
+			
+			AttackRange: 1,
+			SiegeProgress: 0.1,
+			
+			RequiredTechID: 7,
+			
+			Cost: 10,
+			MaintenanceCost: 0.1,
+			
+			RecruitmentTime: 30,
+		},
+		{
+			Name: "Dad Cat",
+			ImageID: 68,
+			
+			UnitLevel: 2,
+			
+			Attack: 666,
+			Defense: 666,
+			MovementSpeed: 6.9,
+			
+			AttackRange: 2,
+			SiegeProgress: 1.25,
+			
+			RequiredTechID: 10,
+			
+			Cost: 10,
+			MaintenanceCost: 0.1,
+			
+			RecruitmentTime: 30,
+		},
+	],
+	
+	Age_of_History: Army
+}

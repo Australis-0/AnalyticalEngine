@@ -1,0 +1,13 @@
+[
+{
+	Name: "Maxime Weygand",
+	ImageID: Weygand,
+	
+	BornDay: 21,
+	BornMonth: 1,
+	BornYear: 1867,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

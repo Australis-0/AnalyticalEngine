@@ -1,0 +1,13 @@
+[
+{
+	Name: "Han Zheng",
+	ImageID: "Zheng",
+	
+	BornDay: 22,
+	BornMonth: 4,
+	BornYear: 1984,
+	
+	Attack: -1,
+	Defense: -1,
+}
+]

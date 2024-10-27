@@ -1,0 +1,36 @@
+{
+	Rulers: [
+		{
+			Name: "Otto",
+			ImageID: 326,
+			
+			BornDay: 1,
+			BornMonth: 6,
+			BornYear: 1815,
+			
+			ReignYear: 1832,
+		},
+		{
+			Name: "Ioannis Metaxas",
+			ImageID: 269,
+			
+			BornDay: 12,
+			BornMonth: 4,
+			BornYear: 1871,
+			
+			ReignYear: 1935,
+		},
+		{
+			Name: "Katerina Sakellaropoulou",
+			ImageID: 96,
+			
+			BornDay: 30,
+			BornMonth: 5,
+			BornYear: 1956,
+			
+			ReignYear: 2020,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

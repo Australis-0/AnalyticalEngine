@@ -1,0 +1,26 @@
+{
+	Rulers: [
+		{
+			Name: "Lazaro Cardenas",
+			ImageID: 291,
+			
+			BornDay: 21,
+			BornMonth: 5,
+			BornYear: 1895,
+			
+			ReignYear: 1934,
+		},
+		{
+			Name: "Andrés Manuel Lopez Obrador",
+			ImageID: 139,
+			
+			BornDay: 13,
+			BornMonth: 11,
+			BornYear: 1953,
+			
+			ReignYear: 2018,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

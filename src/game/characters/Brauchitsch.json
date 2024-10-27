@@ -1,0 +1,13 @@
+[
+{
+	Name: "Walther von Brauchitsch",
+	ImageID: von_Brauchitsch,
+	
+	BornDay: 4,
+	BornMonth: 10,
+	BornYear: 1881,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

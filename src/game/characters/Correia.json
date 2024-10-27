@@ -1,0 +1,13 @@
+[
+{
+	Name: "Jose Antonio Correia",
+	ImageID: Correia,
+	
+	BornDay: 17,
+	BornMonth: 2,
+	BornYear: 1824,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

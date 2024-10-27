@@ -1,0 +1,13 @@
+[
+{
+	Name: "Józef Oleksy",
+	ImageID: Oleksy,
+	
+	BornDay: 22,
+	BornMonth: 6,
+	BornYear: 1946,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

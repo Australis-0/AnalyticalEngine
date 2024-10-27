@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "King William IV",
+			ImageID: 308,
+			
+			BornDay: 21,
+			BornMonth: 8,
+			BornYear: 1765,
+			
+			ReignYear: 1830,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

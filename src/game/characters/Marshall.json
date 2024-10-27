@@ -1,0 +1,13 @@
+[
+{
+	Name: "George Marshall",
+	ImageID: Marshall,
+	
+	BornDay: 31,
+	BornMonth: 12,
+	BornYear: 1880,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

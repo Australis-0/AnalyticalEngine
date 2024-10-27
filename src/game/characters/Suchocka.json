@@ -1,0 +1,13 @@
+[
+{
+	Name: "Hanna Suchocka",
+	ImageID: Suchocka,
+	
+	BornDay: 3,
+	BornMonth: 4,
+	BornYear: 1946,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

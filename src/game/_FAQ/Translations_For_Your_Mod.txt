@@ -1,0 +1,85 @@
+#######################################
+## Read: mods_steam_workshop.txt !
+## 
+## To create a new mod for submission to the Steam Workshop, first create a new folder for your mod within the 'mods' directory.
+## Then, copy or recreate all the modified files into that folder!
+##
+## For example, if a file was originally located in game/ExampleFile.json, 
+## it should be placed in mods/YourModName/game/ExampleFile.json in your mod's folder.
+##
+#####
+
+You can add anything that needs to be translated to the translation files: events, buildings, 
+technologies, units, legacies, laws, Civilization names, and more!
+
+####
+
+How to Add Translations for Different Languages to Your Mod
+
+Go to Your Mod Folder:
+mods/YourMod/
+## Instead 'YourMod' use unique name for YourMod!!
+
+Create a Languages Folder: Inside your mod folder, create a new folder called:
+languages
+
+The path for your translations will now be:
+mods/YourMod/languages/
+
+#####
+Create the Default English Translation File: Inside the languages folder, create a file named:
+Bundle.properties
+
+So the full path will look like this:
+mods/YourMod/languages/Bundle.properties
+
+This file will serve as your default English translation.
+Inside the file, add your translatable text as key-value pairs. Here’s an example for unit names:
+
+###########################
+
+SharkCat = Shark Cat
+HomeCat = Home Cat
+DadCat = Dad Cat
+
+###########################
+
+The text on the left side (before the =) is the key.
+The text on the right side (after the =) is the translation.
+
+
+####
+Add Translations for Other Languages, Example: Polish
+To add translations for another language, such as Polish, you’ll need to create a new file in the same languages folder.
+
+All the game’s translation formats can be found in:
+
+game/languages/
+From this, you’ll find that Polish translations use '_pl' in the file name.
+So, create a new file for Polish:
+
+mods/YourMod/languages/Bundle_pl.properties
+
+Inside this file, provide the Polish translations like this:
+
+###########################
+
+SharkCat = Kot Rekin
+HomeCat = Domowy Kot
+DadCat = Kot Tata
+
+###########################
+
+You're Done! Now your mod has both English and Polish translations.
+
+For a complete example, check out:
+
+modsExamples/NewUnits_PlusTranslations/
+
+###########################
+
+Do not add translations to the main game translation files!
+game/languages/
+
+Use mod-specific translations instead!
+mods/YourMod/languages/

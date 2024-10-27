@@ -1,0 +1,13 @@
+[
+{
+	Name: "Lech Wałęsa",
+	ImageID: Walesa,
+	
+	BornDay: 29,
+	BornMonth: 9,
+	BornYear: 1943,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Grigory Kulik",
+	ImageID: Kulik,
+	
+	BornDay: 9,
+	BornMonth: 11,
+	BornYear: 1890,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

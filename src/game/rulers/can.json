@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Justin Trudeau",
+			ImageID: 59,
+			
+			BornDay: 25,
+			BornMonth: 12,
+			BornYear: 1971,
+			
+			ReignYear: 2015,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

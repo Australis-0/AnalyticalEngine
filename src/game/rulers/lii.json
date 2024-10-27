@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Joseph Boakai",
+			ImageID: 126,
+			
+			BornDay: 30,
+			BornMonth: 11,
+			BornYear: 1944,
+			
+			ReignYear: 2022,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

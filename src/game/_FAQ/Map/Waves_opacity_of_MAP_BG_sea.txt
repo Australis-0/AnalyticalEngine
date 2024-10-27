@@ -1,0 +1,5 @@
+## Waves effect
+
+To get the effect of waves in the sea/ocean, the transparency of the ocean on the map background images should be 50% - 65%.
+
+Land opacity: 100%

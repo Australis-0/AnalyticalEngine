@@ -1,0 +1,14 @@
+[
+{
+	Name: "Claude Auchinleck",
+	ImageID: Auchinleck,
+	
+	BornDay: 21,
+	BornMonth: 6,
+	BornYear: 1884,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]
+

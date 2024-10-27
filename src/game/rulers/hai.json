@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Edgard Leblanc Fils",
+			ImageID: 102,
+			
+			BornDay: 18,
+			BornMonth: 6,
+			BornYear: 1955,
+			
+			ReignYear: 2022,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

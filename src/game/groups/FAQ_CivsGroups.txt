@@ -1,0 +1,86 @@
+
+---- EXAMPLE Group name: Polish; ----
+
+Edit file:
+game/groups/civsGroups.txt
+at the end(important!) of the file add:
+Polish;
+
+Or instead Polish use OwnGroupName;
+OwnGroupName;
+
+
+After adding a new group, you must create new files and folders:
+
+---- EXAMPLE Group name: Polish; ----
+
+# 1
+Folder with images of Generals:
+game/generals/H/NUM
+game/generals/XH/NUM
+game/generals/XXH/NUM
+
+---- Where 'NUM' is the next number of last folder
+-------------------------------------------------------------------
+
+game/generals2/H/NUM
+game/generals2/XH/NUM
+game/generals2/XXH/NUM
+
+game/generals3/H/NUM
+game/generals3/XH/NUM
+game/generals3/XXH/NUM
+
+in generals2/ and generals3/ use the same number of Generals as in generals/
+-------------------------------------------------------------------
+
+# 2
+Folder with images of Rulers:
+game/rulersRandom/rulersImages/H/NUM
+game/rulersRandom/rulersImages/XH/NUM
+game/rulersRandom/rulersImages/XXH/NUM
+
+---- Where 'NUM' is the next number of last folder, the same number as for the generals.
+-------------------------------------------------------------------
+
+# 3
+Create new file Polish.txt in folder:
+game/rulersRandom/
+
+---- This is where you put the names of the Rulers for this Group
+-------------------------------------------------------------------
+
+# 4
+Create new file Polish.txt in folder:
+game/generalsRandom/surnames
+
+---- This is where you put the surnames of the Generals for this Group
+-------------------------------------------------------------------
+
+# 5
+Folder with images of Advisors:
+game/advisors/H/NUM
+game/advisors/XH/NUM
+game/advisors/XXH/NUM
+
+---- Where 'NUM' is the next number of last folder
+-------------------------------------------------------------------
+
+
+# 6 Optional, Special Cities names for Group
+Create new file Polish.txt in folder:
+game/cities/
+
+
+
+
+
+
+
+
+# -- OUTDATED!
+Create new file Polish.txt in folder:
+game/generalsRandom/names
+
+---- This is where you put the names of the Generals for this Group
+-------------------------------------------------------------------

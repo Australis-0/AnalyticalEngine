@@ -1,0 +1,13 @@
+[
+{
+	Name: "Ramzan Kadyrov",
+	ImageID: Kadyrov,
+	
+	BornDay: 5,
+	BornMonth: 10,
+	BornYear: 1976,
+	
+	Attack: 3,
+	Defense: 3,
+},
+]

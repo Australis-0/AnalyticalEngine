@@ -1,0 +1,13 @@
+[
+{
+	Name: "Konstantin Rokossovsky",
+	ImageID: Rokossovsky,
+	
+	BornDay: 1,
+	BornMonth: 12,
+	BornYear: 1896,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

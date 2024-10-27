@@ -1,0 +1,13 @@
+[
+{
+	Name: "Jean Castex",
+	ImageID: Castex,
+	
+	BornDay: 17,
+	BornMonth: 6,
+	BornYear: 1965,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

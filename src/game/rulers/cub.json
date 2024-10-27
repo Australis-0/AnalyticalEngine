@@ -1,0 +1,26 @@
+{
+	Rulers: [
+		{
+			Name: "Jose Agripino Barnet",
+			ImageID: 292,
+			
+			BornDay: 23,
+			BornMonth: 6,
+			BornYear: 1864,
+			
+			ReignYear: 1935,
+		},
+		{
+			Name: "Miguel Díaz Canel",
+			ImageID: 71,
+			
+			BornDay: 20,
+			BornMonth: 4,
+			BornYear: 1966,
+			
+			ReignYear: 2021,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

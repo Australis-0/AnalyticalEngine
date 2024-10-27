@@ -1,0 +1,13 @@
+[
+{
+	Name: "Dymitr Wiśniowiecki",
+	ImageID: Wisniowiecki_Dymitr,
+	
+	BornDay: 19,
+	BornMonth: 12,
+	BornYear: 1631,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

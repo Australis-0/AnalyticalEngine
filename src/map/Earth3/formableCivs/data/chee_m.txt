@@ -1,0 +1,11 @@
+{
+FormableCivTag: "chee_m",
+ClaimantsTag: [
+	"vvn",
+	"koch",
+	"call3",
+	"kola3"
+],
+Provinces: [ 2959, 2967, 2968, 2969, 2963, 2960, 2964, 2962, 2961, 1474, 1473, 1472 ],
+CapitalProvinceID: 2959
+}

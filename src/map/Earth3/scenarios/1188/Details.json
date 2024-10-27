@@ -1,0 +1,21 @@
+{
+Name: "1188",
+Author: "Łukasz Jakowski",
+Civs: 188,
+Age: 3,
+Day: 10,
+Month: 7,
+Year: 1188,
+Campaign: true,
+CivDefault_Gold: 250,
+CivDefault_GoldRandom: 125,
+CivDefault_Legacy: 150,
+CivDefault_LegacyRandom: 75,
+CivDefault_ManpowerPercentage: 60,
+CivDefault_Technology: -1,
+ProvinceDefault_Population: 200000,
+ProvinceDefault_Economy: 28,
+ProvinceDefault_TaxEfficiency: 32,
+ProvinceDefault_Manpower: 30,
+HoursPerTurn: 24
+}

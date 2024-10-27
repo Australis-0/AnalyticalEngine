@@ -1,0 +1,13 @@
+[
+{
+	Name: "Andre Massena",
+	ImageID: Massena,
+	
+	BornDay: 6,
+	BornMonth: 5,
+	BornYear: 1758,
+	
+	Attack: 8,
+	Defense: 4,
+},
+]

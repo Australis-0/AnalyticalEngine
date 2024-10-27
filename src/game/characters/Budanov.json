@@ -1,0 +1,13 @@
+[
+{
+	Name: "Kirill Budanov",
+	ImageID: Budanov,
+	
+	BornDay: 4,
+	BornMonth: 1,
+	BornYear: 1986,
+	
+	Attack: 4,
+	Defense: 4,
+},
+]

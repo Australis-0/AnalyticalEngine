@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Yan Xishan",
+			ImageID: 299,
+			
+			BornDay: 8,
+			BornMonth: 10,
+			BornYear: 1883,
+			
+			ReignYear: 1911,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

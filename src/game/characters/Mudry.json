@@ -1,0 +1,13 @@
+[
+{
+	Name: "Vasyl Mudry",
+	ImageID: Mudry,
+	
+	BornDay: 19,
+	BornMonth: 3,
+	BornYear: 1893,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

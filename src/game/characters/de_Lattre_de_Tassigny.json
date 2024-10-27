@@ -1,0 +1,13 @@
+[
+{
+	Name: "Jean de Lattre de Tassigny",
+	ImageID: de_Lattre_de_Tassigny,
+	
+	BornDay: 2,
+	BornMonth: 2,
+	BornYear: 1889,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

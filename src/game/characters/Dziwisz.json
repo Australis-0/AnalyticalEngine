@@ -1,0 +1,13 @@
+[
+{
+	Name: "Stanisław Dziwisz",
+	ImageID: Dziwisz,
+	
+	BornDay: 27,
+	BornMonth: 4,
+	BornYear: 1939,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

@@ -1,0 +1,106 @@
+{
+	"Rulers": [
+		{
+			"Name": "Idris I",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 745,
+			
+			"ReignYear": 788
+		},
+		{
+			"Name": "Idris II",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 791,
+			
+			"ReignYear": 803
+		},
+		{
+			"Name": "Al-Mansur",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1276,
+			
+			"ReignYear": 1286
+		},
+		{
+			"Name": "Yusuf I",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1286,
+			
+			"ReignYear": 1331
+		},
+		{
+			"Name": "Abu Inan Faris",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1309,
+			
+			"ReignYear": 1348
+		},
+		{
+			"Name": "Ahmad al-Mansur",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1549,
+			
+			"ReignYear": 1578
+		},
+		{
+			"Name": "Sidi Mohammed ben Abdallah",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1711,
+			
+			"ReignYear": 1757
+		},
+		{
+			"Name": "Sidi Mohammed V",
+			"ImageID": -1,
+			
+			"BornDay": 10,
+			"BornMonth": 8,
+			"BornYear": 1909,
+			
+			"ReignYear": 1927
+		},
+		{
+			"Name": "Hassan II",
+			"ImageID": -1,
+			
+			"BornDay": 9,
+			"BornMonth": 7,
+			"BornYear": 1929,
+			
+			"ReignYear": 1961
+		},
+		{
+			"Name": "Mohammed VI",
+			"ImageID": -1,
+			
+			"BornDay": 21,
+			"BornMonth": 8,
+			"BornYear": 1963,
+			
+			"ReignYear": 1999
+		}
+	],
+	
+	"Age_of_History": "Rulers"
+}

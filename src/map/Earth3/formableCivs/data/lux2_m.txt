@@ -1,0 +1,8 @@
+{
+FormableCivTag: "lux2_m",
+ClaimantsTag: [
+	"lux"
+],
+Provinces: [ 379, 381, 343, 382, 383, 380, 560 ],
+CapitalProvinceID: 379
+}

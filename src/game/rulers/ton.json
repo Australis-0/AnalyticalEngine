@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Tupou VI",
+			ImageID: 201,
+			
+			BornDay: 12,
+			BornMonth: 7,
+			BornYear: 1959,
+			
+			ReignYear: 2012,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

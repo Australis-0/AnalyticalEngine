@@ -1,0 +1,40 @@
+#######################################
+## Read: mods_steam_workshop.txt !
+## 
+## To create a new mod for submission to the Steam Workshop, first create a new folder for your mod within the 'mods' directory.
+## Then, copy or recreate all the modified files into that folder!
+##
+## For example, if a file was originally located in game/ExampleFile.json, 
+## it should be placed in mods/YourModName/game/ExampleFile.json in your mod's folder.
+##
+#####
+
+Open the game and navigate to: New Game → Play → Play
+While in the game, click the Civilization Flag (located in the top left corner).
+Select More → Console
+
+In the console, type a message:
+debug
+
+Now, when you hover over a province, the hovered province ID will be displayed.
+
+######
+
+Now that you know the province ID, you can assign a special image to this province.
+
+Image dimensions: 600 px width 192 px height
+
+Name the image after the province ID.
+For example, if the province ID is 124, the image should be named 124.png
+
+
+Add the image to the following directory:
+map/Earth3/provinces/
+
+or
+
+mods/YourModName/map/Earth3/provinces/
+
+or
+
+mods/YourModName/map/YouMapName/provinces/

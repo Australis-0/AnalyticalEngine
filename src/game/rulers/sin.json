@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Tharman Shanmugaratnam",
+			ImageID: 182,
+			
+			BornDay: 25,
+			BornMonth: 2,
+			BornYear: 1957,
+			
+			ReignYear: 2023,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

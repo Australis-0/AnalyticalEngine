@@ -1,0 +1,106 @@
+{
+	"Rulers": [
+		{
+			"Name": "Simone Boccanegra",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1290,
+			
+			"ReignYear": 1339
+		},
+		{
+			"Name": "Francesco Fieschi",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1330,
+			
+			"ReignYear": 1363
+		},
+		{
+			"Name": "Lodovico Fieschi",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1352,
+			
+			"ReignYear": 1382
+		},
+		{
+			"Name": "Giovanni di Campofregoso",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1430,
+			
+			"ReignYear": 1451
+		},
+		{
+			"Name": "Lorenzo de' Medici",
+			"ImageID": -1,
+			
+			"BornDay": 27,
+			"BornMonth": 9,
+			"BornYear": 1449,
+			
+			"ReignYear": 1469
+		},
+		{
+			"Name": "Francesco Maria Grimaldi",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1491,
+			
+			"ReignYear": 1528
+		},
+		{
+			"Name": "Giovanni Battista Doria",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1530,
+			
+			"ReignYear": 1550
+		},
+		{
+			"Name": "Giovanni Andrea Doria",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1539,
+			
+			"ReignYear": 1559
+		},
+		{
+			"Name": "Francesco IV",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1627,
+			
+			"ReignYear": 1637
+		},
+		{
+			"Name": "Giovanni Battista Montaldo",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1725,
+			
+			"ReignYear": 1757
+		}
+	],
+	
+	"Age_of_History": "Rulers"
+}

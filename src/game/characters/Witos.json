@@ -1,0 +1,13 @@
+[
+{
+	Name: "Wincenty Witos",
+	ImageID: Witos,
+	
+	BornDay: 21,
+	BornMonth: 1,
+	BornYear: 1874,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

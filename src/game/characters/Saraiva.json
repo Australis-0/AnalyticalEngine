@@ -1,0 +1,13 @@
+[
+{
+	Name: "Jose Antonio Saraiva",
+	ImageID: Saraiva,
+	
+	BornDay: 1,
+	BornMonth: 5,
+	BornYear: 1821,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

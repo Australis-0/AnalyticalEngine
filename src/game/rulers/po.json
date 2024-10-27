@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Alfonso V",
+			ImageID: 11,
+			
+			BornDay: 5,
+			BornMonth: 9,
+			BornYear: 1396,
+			
+			ReignYear: 1416,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Włodzimierz Czarzasty",
+	ImageID: Czarzasty,
+	
+	BornDay: 3,
+	BornMonth: 5,
+	BornYear: 1960,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

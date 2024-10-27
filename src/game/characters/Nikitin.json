@@ -1,0 +1,13 @@
+[
+{
+	Name: "Denis Nikitin",
+	ImageID: Nikitin,
+	
+	BornDay: 6,
+	BornMonth: 3,
+	BornYear: 1984,
+	
+	Attack: 5,
+	Defense: 3,
+},
+]

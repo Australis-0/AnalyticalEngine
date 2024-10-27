@@ -1,0 +1,13 @@
+[
+{
+	Name: "Erich Abraham",
+	ImageID: Abraham,
+	
+	BornDay: 27,
+	BornMonth: 3,
+	BornYear: 1895,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

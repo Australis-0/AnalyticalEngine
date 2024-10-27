@@ -1,0 +1,13 @@
+[
+{
+	Name: "Janusz Palikot",
+	ImageID: Palikot,
+	
+	BornDay: 26,
+	BornMonth: 10,
+	BornYear: 1964,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

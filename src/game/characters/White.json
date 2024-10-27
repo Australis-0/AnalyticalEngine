@@ -1,0 +1,13 @@
+[
+{
+	Name: "Brudenell White",
+	ImageID: White,
+	
+	BornDay: 23,
+	BornMonth: 9,
+	BornYear: 1876,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

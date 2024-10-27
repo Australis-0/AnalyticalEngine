@@ -1,0 +1,13 @@
+[
+{
+	Name: "William Birdwood",
+	ImageID: Birdwood,
+	
+	BornDay: 13,
+	BornMonth: 9,
+	BornYear: 1865,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

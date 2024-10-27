@@ -1,0 +1,13 @@
+[
+{
+	Name: "Laurent de Gouvion Saint Cyr",
+	ImageID: Saint Cyr,
+	
+	BornDay: 13,
+	BornMonth: 4,
+	BornYear: 1764,
+	
+	Attack: 5,
+	Defense: 8,
+},
+]

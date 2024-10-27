@@ -1,0 +1,13 @@
+[
+{
+	Name: "Grzegorz Schetyna",
+	ImageID: Schetyna,
+	
+	BornDay: 18,
+	BornMonth: 2,
+	BornYear: 1963,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

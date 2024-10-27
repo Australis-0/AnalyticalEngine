@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Xiomara Castro",
+			ImageID: 103,
+			
+			BornDay: 30,
+			BornMonth: 10,
+			BornYear: 1959,
+			
+			ReignYear: 2022,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Tamim bin Hamad Al Thani",
+			ImageID: 168,
+			
+			BornDay: 3,
+			BornMonth: 6,
+			BornYear: 1980,
+			
+			ReignYear: 2013,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

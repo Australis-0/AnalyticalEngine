@@ -1,0 +1,13 @@
+[
+{
+	Name: "Adam Glapiński",
+	ImageID: Glapinski,
+	
+	BornDay: 9,
+	BornMonth: 4,
+	BornYear: 1950,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

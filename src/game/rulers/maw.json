@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Lazarus Chakwera",
+			ImageID: 131,
+			
+			BornDay: 5,
+			BornMonth: 4,
+			BornYear: 1955,
+			
+			ReignYear: 2020,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

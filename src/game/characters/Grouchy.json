@@ -1,0 +1,13 @@
+[
+{
+	Name: "Emmanuel de Grouchy",
+	ImageID: Grouchy,
+	
+	BornDay: 23,
+	BornMonth: 10,
+	BornYear: 1766,
+	
+	Attack: 6,
+	Defense: 6,
+},
+]

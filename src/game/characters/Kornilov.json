@@ -1,0 +1,13 @@
+[
+{
+	Name: "Lavr Kornilov",
+	ImageID: Kornilov,
+	
+	BornDay: 30,
+	BornMonth: 8,
+	BornYear: 1870,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

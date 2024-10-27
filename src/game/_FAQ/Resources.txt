@@ -1,0 +1,125 @@
+#######################################
+## Read: mods_steam_workshop.txt !
+## 
+## To create a new mod for submission to the Steam Workshop, first create a new folder for your mod within the 'mods' directory.
+## Then, copy or recreate all the modified files into that folder!
+##
+## For example, if a file was originally located in game/ExampleFile.json, 
+## it should be placed in mods/YourModName/game/ExampleFile.json in your mod's folder.
+##
+#####
+
+For your mod the path will be:
+mods/YOUR_MOD_NAME/game/resources/
+
+#####
+
+
+Go to:
+game/resources/
+
+And open as text file in notepad: Resources.json
+
+### EXAMPLE RESOURCE
+
+		{
+			Name: Rice,
+			ID: 1,
+			ImageID: 1,
+			GroupID: 0,
+			
+			Color: [225, 205, 156],
+			
+			ArmyMaintenance: -5,
+			
+			Price: 0.42,
+			AVAILABLE_SINCE_AGE_ID: 0,
+		},
+		
+### EXAMPLE RESOURCE
+
+### Available bonuses:
+
+MonthlyIncome: X,
+
+IncomeProduction: X,
+ProductionEfficiency: X,
+
+TaxEfficiency: X,
+ProvinceMaintenance: X,
+GrowthRate: X,
+
+MonthlyLegacy: X,
+
+MaxManpower: X,
+ManpowerRecoverySpeed: X,
+
+ArmyMaintenance: X,
+
+RecruitmentTime: X,
+
+RecruitArmyCost: X,
+RecruitArmyFirstLineCost: X,
+RecruitArmySecondLineCost: X,
+
+ResearchPoints: X,
+TechnologyCost: X,
+
+ConstructionCost: X,
+AdministrationBuildingsCost: X,
+MilitaryBuildingsCost: X,
+EconomyBuildingsCost: X,
+
+ConstructionTime: X,
+
+InvestInEconomyCost: X,
+IncreaseManpowerCost: X,
+
+GeneralAttack: X,
+GeneralDefense: X,
+
+UnitsAttack: X,
+UnitsDefense: X,
+
+MaxMorale: X,
+ArmyMovementSpeed: X,
+
+SiegeEffectiveness: X,
+
+ImproveRelationsModifier: X,
+IncomeFromVassals: X,
+LoanInterest: X,
+
+AggressiveExpansion: X,
+
+RevolutionaryRisk: X,
+
+CoreCost: X,
+
+BattleWidth: X,
+RegimentsLimit: X,
+
+
+
+AVAILABLE_SINCE_AGE_ID: 0,
+0 means it is available always.
+Ages file with IDs you can find: game/Ages.json
+
+## Group
+GroupID: 0,
+
+0 = Food
+1 = Commodities
+2 = Luxury Commodities
+3 = Luxury
+## Group
+
+Adding new images: Example: 47.png (It must be the next number of the last image)
+Add new image in folders:
+
+game/resources/resourcesImages/H/
+game/resources/resourcesImages/XH/
+game/resources/resourcesImages/XXH/
+
+Don't forget to increase the total number of images in the file:
+game/resources/resourcesImages/numOfImages.txt

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Aleksander Wielopolski",
+	ImageID: Wielopolski,
+	
+	BornDay: 13,
+	BornMonth: 3,
+	BornYear: 1803,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

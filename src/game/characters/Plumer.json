@@ -1,0 +1,13 @@
+[
+{
+	Name: "Herbert Plumer",
+	ImageID: Plumer,
+	
+	BornDay: 13,
+	BornMonth: 3,
+	BornYear: 1857,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

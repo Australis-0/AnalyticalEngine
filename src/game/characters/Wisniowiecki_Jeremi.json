@@ -1,0 +1,13 @@
+[
+{
+	Name: "Jeremi Wiśniowiecki",
+	ImageID: Wisniowiecki_Jeremi,
+	
+	BornDay: 17,
+	BornMonth: 9,
+	BornYear: 1612,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

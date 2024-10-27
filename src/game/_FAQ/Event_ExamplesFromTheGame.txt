@@ -1,0 +1,14 @@
+################
+
+You can find many event examples in the game files:
+
+game/events/common/
+game/events/global/
+game/events/siege/
+
+# Mission Tree events. These work the same as normal events.
+
+game/missions/missionsEvents/
+
+Each file contains a single event!
+Each event requires its own file!

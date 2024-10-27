@@ -1,0 +1,13 @@
+[
+{
+	Name: "Alan Brooke",
+	ImageID: Brooke,
+	
+	BornDay: 23,
+	BornMonth: 7,
+	BornYear: 1883,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Heinrich Luitlpold Himmler",
+	ImageID: Himmler,
+	
+	BornDay: 7,
+	BornMonth: 10,
+	BornYear: 1900,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

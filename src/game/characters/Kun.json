@@ -1,0 +1,13 @@
+[
+{
+	Name: "Liu Kun",
+	ImageID: "Kun",
+	
+	BornDay: 5,
+	BornMonth: 12,
+	BornYear: 1956,
+	
+	Attack: -1,
+	Defense: -1,
+}
+]

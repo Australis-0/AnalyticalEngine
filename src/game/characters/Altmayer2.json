@@ -1,0 +1,13 @@
+[
+{
+    Name: "Marie-Robert Altmayer",
+    ImageID: Altmayer2,
+    
+    BornDay: 30,
+    BornMonth: 7,
+    BornYear: 1875,
+    
+    Attack: -1,
+    Defense: -1,
+},
+]

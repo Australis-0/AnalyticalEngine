@@ -1,0 +1,13 @@
+[
+{
+	Name: "Boris Shaposhnikov",
+	ImageID: Shaposhnikov,
+	
+	BornDay: 2,
+	BornMonth: 10,
+	BornYear: 1882,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

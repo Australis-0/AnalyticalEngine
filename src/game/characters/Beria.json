@@ -1,0 +1,13 @@
+[
+{
+	Name: "Lavrentiy Beria",
+	ImageID: Beria,
+	
+	BornDay: 23,
+	BornMonth: 3,
+	BornYear: 1899,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

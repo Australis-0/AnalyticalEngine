@@ -1,0 +1,13 @@
+[
+{
+	Name: "Jean Baptiste Bernadotte",
+	ImageID: Bernadotte,
+	
+	BornDay: 26,
+	BornMonth: 1,
+	BornYear: 1763,
+	
+	Attack: 6,
+	Defense: 6,
+},
+]

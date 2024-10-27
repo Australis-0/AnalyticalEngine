@@ -1,0 +1,13 @@
+[
+{
+	Name: "Władysław Bartoszewski",
+	ImageID: Bartoszewski,
+	
+	BornDay: 19,
+	BornMonth: 2,
+	BornYear: 1922,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Florence Parly",
+	ImageID: Parly,
+	
+	BornDay: 8,
+	BornMonth: 5,
+	BornYear: 1963,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

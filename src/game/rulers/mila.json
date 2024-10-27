@@ -1,0 +1,96 @@
+{
+	"Rulers": [
+		{
+			"Name": "Otto Visconti",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1295,
+			
+			"ReignYear": 1315
+		},
+		{
+			"Name": "Galeazzo I Visconti",
+			"ImageID": -1,
+			
+			"BornDay": 20,
+			"BornMonth": 11,
+			"BornYear": 1320,
+			
+			"ReignYear": 1354
+		},
+		{
+			"Name": "Gian Galeazzo Visconti",
+			"ImageID": -1,
+			
+			"BornDay": 5,
+			"BornMonth": 10,
+			"BornYear": 1351,
+			
+			"ReignYear": 1385
+		},
+		{
+			"Name": "Filippo Maria Visconti",
+			"ImageID": -1,
+			
+			"BornDay": 23,
+			"BornMonth": 9,
+			"BornYear": 1392,
+			
+			"ReignYear": 1447
+		},
+		{
+			"Name": "Francesco II Sforza",
+			"ImageID": -1,
+			
+			"BornDay": 23,
+			"BornMonth": 7,
+			"BornYear": 1491,
+			
+			"ReignYear": 1535
+		},
+		{
+			"Name": "Charles V",
+			"ImageID": -1,
+			
+			"BornDay": 24,
+			"BornMonth": 2,
+			"BornYear": 1500,
+			
+			"ReignYear": 1535
+		},
+		{
+			"Name": "Ferdinand I",
+			"ImageID": -1,
+			
+			"BornDay": 19,
+			"BornMonth": 3,
+			"BornYear": 1503,
+			
+			"ReignYear": 1556
+		},
+		{
+			"Name": "Maximilian II",
+			"ImageID": -1,
+			
+			"BornDay": 31,
+			"BornMonth": 7,
+			"BornYear": 1527,
+			
+			"ReignYear": 1556
+		},
+		{
+			"Name": "Philip II",
+			"ImageID": -1,
+			
+			"BornDay": 21,
+			"BornMonth": 5,
+			"BornYear": 1527,
+			
+			"ReignYear": 1556
+		}
+	],
+	
+	"Age_of_History": "Rulers"
+}

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Mateusz Morawiecki",
+	ImageID: Morawiecki,
+	
+	BornDay: 20,
+	BornMonth: 6,
+	BornYear: 1968,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

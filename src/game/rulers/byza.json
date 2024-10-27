@@ -1,0 +1,536 @@
+{
+	"Rulers": [
+		{
+			"Name": "Constantine I",
+			"ImageID": -1,
+			
+			"BornDay": 27,
+			"BornMonth": 2,
+			"BornYear": 272,
+			
+			"ReignYear": 306
+		},
+		{
+			"Name": "Constantius II",
+			"ImageID": -1,
+			
+			"BornDay": 7,
+			"BornMonth": 8,
+			"BornYear": 317,
+			
+			"ReignYear": 337
+		},
+		{
+			"Name": "Julian",
+			"ImageID": -1,
+			
+			"BornDay": 6,
+			"BornMonth": 11,
+			"BornYear": 331,
+			
+			"ReignYear": 361
+		},
+		{
+			"Name": "Valens",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 328,
+			
+			"ReignYear": 364
+		},
+		{
+			"Name": "Theodosius I",
+			"ImageID": -1,
+			
+			"BornDay": 11,
+			"BornMonth": 1,
+			"BornYear": 347,
+			
+			"ReignYear": 379
+		},
+		{
+			"Name": "Arcadius",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 377,
+			
+			"ReignYear": 395
+		},
+		{
+			"Name": "Theodosius II",
+			"ImageID": -1,
+			
+			"BornDay": 10,
+			"BornMonth": 4,
+			"BornYear": 401,
+			
+			"ReignYear": 408
+		},
+		{
+			"Name": "Marcian",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 396,
+			
+			"ReignYear": 450
+		},
+		{
+			"Name": "Leo I",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 401,
+			
+			"ReignYear": 457
+		},
+		{
+			"Name": "Zeno",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 425,
+			
+			"ReignYear": 474
+		},
+		{
+			"Name": "Anastasius I",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 5,
+			"BornYear": 430,
+			
+			"ReignYear": 491
+		},
+		{
+			"Name": "Justin I",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 450,
+			
+			"ReignYear": 518
+		},
+		{
+			"Name": "Justinian I",
+			"ImageID": -1,
+			
+			"BornDay": 11,
+			"BornMonth": 5,
+			"BornYear": 482,
+			
+			"ReignYear": 527
+		},
+		{
+			"Name": "Justin II",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 520,
+			
+			"ReignYear": 565
+		},
+		{
+			"Name": "Tiberius II",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 540,
+			
+			"ReignYear": 578
+		},
+		{
+			"Name": "Maurice",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 539,
+			
+			"ReignYear": 582
+		},
+		{
+			"Name": "Phocas",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 547,
+			
+			"ReignYear": 602
+		},
+		{
+			"Name": "Heraclius",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 575,
+			
+			"ReignYear": 610
+		},
+		{
+			"Name": "Constantine III",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 610,
+			
+			"ReignYear": 641
+		},
+		{
+			"Name": "Constans II",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 630,
+			
+			"ReignYear": 641
+		},
+		{
+			"Name": "Constantine IV",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 650,
+			
+			"ReignYear": 668
+		},
+		{
+			"Name": "Leo III",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 675,
+			
+			"ReignYear": 717
+		},
+		{
+			"Name": "Constantine V",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 718,
+			
+			"ReignYear": 741
+		},
+		{
+			"Name": "Leo IV",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 750,
+			
+			"ReignYear": 775
+		},
+		{
+			"Name": "Constantine VI",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 771,
+			
+			"ReignYear": 780
+		},
+		{
+			"Name": "Irene",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 752,
+			
+			"ReignYear": 797
+		},
+		{
+			"Name": "Nicephorus I",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 758,
+			
+			"ReignYear": 802
+		},
+		{
+			"Name": "Michael I",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 770,
+			
+			"ReignYear": 811
+		},
+		{
+			"Name": "Theophilus",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 813,
+			
+			"ReignYear": 829
+		},
+		{
+			"Name": "Michael II",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 770,
+			
+			"ReignYear": 820
+		},
+		{
+			"Name": "Leo V",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 775,
+			
+			"ReignYear": 813
+		},
+		{
+			"Name": "Basil I",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 811,
+			
+			"ReignYear": 867
+		},
+		{
+			"Name": "Leo VI",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 866,
+			
+			"ReignYear": 886
+		},
+		{
+			"Name": "Alexander",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 870,
+			
+			"ReignYear": 912
+		},
+		{
+			"Name": "Constantine VII",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 905,
+			
+			"ReignYear": 913
+		},
+		{
+			"Name": "Romanos II",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 938,
+			
+			"ReignYear": 959
+		},
+		{
+			"Name": "Basil II",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 958,
+			
+			"ReignYear": 976
+		},
+		{
+			"Name": "Constantine VIII",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 960,
+			
+			"ReignYear": 1025
+		},
+		{
+			"Name": "Romanos III",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 968,
+			
+			"ReignYear": 1028
+		},
+		{
+			"Name": "Michael IV",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1010,
+			
+			"ReignYear": 1034
+		},
+		{
+			"Name": "Michael V",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1015,
+			
+			"ReignYear": 1041
+		},
+		{
+			"Name": "Constantine IX",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1000,
+			
+			"ReignYear": 1042
+		},
+		{
+			"Name": "Eustathius",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1015,
+			
+			"ReignYear": 1059
+		},
+		{
+			"Name": "Alexios I",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1048,
+			
+			"ReignYear": 1081
+		},
+		{
+			"Name": "John II",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1087,
+			
+			"ReignYear": 1118
+		},
+		{
+			"Name": "Manuel I",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1118,
+			
+			"ReignYear": 1143
+		},
+		{
+			"Name": "Alexios II",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1169,
+			
+			"ReignYear": 1180
+		},
+		{
+			"Name": "Andronikos I",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1118,
+			
+			"ReignYear": 1183
+		},
+		{
+			"Name": "Isaac II",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1156,
+			
+			"ReignYear": 1185
+		},
+		{
+			"Name": "Alexios III",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1169,
+			
+			"ReignYear": 1195
+		},
+		{
+			"Name": "Alexios IV",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1182,
+			
+			"ReignYear": 1203
+		},
+		{
+			"Name": "Alexios V",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1175,
+			
+			"ReignYear": 1204
+		},
+		{
+			"Name": "Constantine XI",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1405,
+			
+			"ReignYear": 1449
+		}
+	],
+	
+	"Age_of_History": "Rulers"
+}

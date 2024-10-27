@@ -1,0 +1,26 @@
+{
+	Rulers: [
+		{
+			Name: "Arturo Alessandri",
+			ImageID: 284,
+			
+			BornDay: 20,
+			BornMonth: 12,
+			BornYear: 1868,
+			
+			ReignYear: 1920,
+		},
+		{
+			Name: "Gabriel Boric",
+			ImageID: 63,
+			
+			BornDay: 11,
+			BornMonth: 2,
+			BornYear: 1986,
+			
+			ReignYear: 2022,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

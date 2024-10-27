@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Volodymyr Zelenskyy",
+			ImageID: 208,
+			
+			BornDay: 25,
+			BornMonth: 1,
+			BornYear: 1978,
+			
+			ReignYear: 2019,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

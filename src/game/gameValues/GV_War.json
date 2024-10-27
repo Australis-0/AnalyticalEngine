@@ -1,0 +1,27 @@
+{
+	WAR_NAMES: [ "WarOfExpansion", "ConflictOfInterests", "TerritorialDisputeWar", "WarOfOpportunity", "RegionalConflict", "PowerStruggleWar", "BorderDisputeWar", "ConquestWar", "SupremacyWar", "WarOfAmbition", "CampaignOfConquest", "WarOfAggression", "WarForDominance", "SovereigntyDispute", "StruggleForSupremacy", "TerritorialAmbitionWar", "WarOfInfluence", "ConflictForResources", "WarOfRivalries", "CivilizationWar" ],
+	
+	RELATIONS_TO_DECLARE_WAR: -30,
+	WAR_SCORE_ALLIES: 0.1,
+	
+	TICKING_WAR_SCORE_EACH_MONTH: 0.01,
+	TICKING_WAR_SCORE_LIMIT: 100,
+	
+	TICKING_WAR_SCORE_IF_ALL_PROVINCES_OCCUPIED: 30.0,
+	
+	GAME_UPDATE_WAR_AUTO_WHITE_PEACE: 268,
+	GAME_UPDATE_WAR_AI_PEACE: 21,
+	
+	WAR_AUTO_WHITE_PEACE_IF_NOTHING_HAPPENS_IN_WAR_DAYS: 2190,
+	WAR_AUTO_WHITE_PEACE_IF_WARSCORE_BELOW: 28.0,
+	
+	WAR_AUTO_WHITE_PEACE_AFTER_X_DAYS_OF_WAR: 9125,
+	WAR_AUTO_WHITE_PEACE_AFTER_X_DAYS_OF_WAR_IF_WARSCORE_BELOW: 60.0,
+	
+	WAR_WAR_WEARINESS_OCCUPIED_PROVINCE: 0.125,
+	WAR_WAR_WEARINESS_BATTLE: 0.15,
+	
+	AI_AT_WAR_MIN_MILITARY_LEVEL: 1,
+	AI_AT_WAR_MAX_MILITARY_LEVEL: 2,
+	AI_MAX_MILITARY_LEVEL_IF_REGIMENTS_RATIO_OVER: 0.67,
+}

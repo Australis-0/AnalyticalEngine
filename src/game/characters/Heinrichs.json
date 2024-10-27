@@ -1,0 +1,13 @@
+[
+{
+	Name: "Erik Heinrichs",
+	ImageID: Heinrichs,
+	
+	BornDay: 21,
+	BornMonth: 7,
+	BornYear: 1890,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

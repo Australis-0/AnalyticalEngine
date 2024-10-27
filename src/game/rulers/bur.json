@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Ibrahim Traore",
+			ImageID: 55,
+			
+			BornDay: 14,
+			BornMonth: 3,
+			BornYear: 1988,
+			
+			ReignYear: 2022,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Marek Pol",
+	ImageID: MPol,
+	
+	BornDay: 8,
+	BornMonth: 12,
+	BornYear: 1953,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

@@ -1,0 +1,166 @@
+{
+	"Rulers": [
+		{
+			"Name": "Saint Peter",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1,
+			
+			"ReignYear": 30
+		},
+		{
+			"Name": "Leo I",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 400,
+			
+			"ReignYear": 440
+		},
+		{
+			"Name": "Gregory I",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 540,
+			
+			"ReignYear": 590
+		},
+		{
+			"Name": "Urban II",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1042,
+			
+			"ReignYear": 1088
+		},
+		{
+			"Name": "Innocent III",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1160,
+			
+			"ReignYear": 1198
+		},
+		{
+			"Name": "Boniface VIII",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1235,
+			
+			"ReignYear": 1294
+		},
+		{
+			"Name": "Clement VI",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1291,
+			
+			"ReignYear": 1342
+		},
+		{
+			"Name": "Urban VI",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1318,
+			
+			"ReignYear": 1378
+		},
+		{
+			"Name": "Pius II",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1405,
+			
+			"ReignYear": 1458
+		},
+		{
+			"Name": "Sixtus IV",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1414,
+			
+			"ReignYear": 1471
+		},
+		{
+			"Name": "Leo X",
+			"ImageID": -1,
+			
+			"BornDay": 11,
+			"BornMonth": 12,
+			"BornYear": 1475,
+			
+			"ReignYear": 1513
+		},
+		{
+			"Name": "Clement VII",
+			"ImageID": -1,
+			
+			"BornDay": 26,
+			"BornMonth": 5,
+			"BornYear": 1478,
+			
+			"ReignYear": 1523
+		},
+		{
+			"Name": "Paul III",
+			"ImageID": -1,
+			
+			"BornDay": 29,
+			"BornMonth": 2,
+			"BornYear": 1468,
+			
+			"ReignYear": 1534
+		},
+		{
+			"Name": "Gregory XVI",
+			"ImageID": 322,
+			
+			"BornDay": 18,
+			"BornMonth": 9,
+			"BornYear": 1765,
+			
+			"ReignYear": 1831
+		},
+		{
+			"Name": "Pius IX",
+			"ImageID": -1,
+			
+			"BornDay": 13,
+			"BornMonth": 5,
+			"BornYear": 1792,
+			
+			"ReignYear": 1846
+		},
+		{
+			"Name": "John XXIII",
+			"ImageID": -1,
+			
+			"BornDay": 25,
+			"BornMonth": 11,
+			"BornYear": 1881,
+			
+			"ReignYear": 1958
+		}
+	],
+	
+	"Age_of_History": "Rulers"
+}

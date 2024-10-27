@@ -1,0 +1,13 @@
+[
+{
+	Name: "Ignacy Daszyński",
+	ImageID: Daszynski,
+	
+	BornDay: 26,
+	BornMonth: 10,
+	BornYear: 1866,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

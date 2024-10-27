@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Evariste Ndayishimiye",
+			ImageID: 56,
+			
+			BornDay: 17,
+			BornMonth: 6,
+			BornYear: 1968,
+			
+			ReignYear: 2020,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

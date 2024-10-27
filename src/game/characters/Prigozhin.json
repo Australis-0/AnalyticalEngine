@@ -1,0 +1,13 @@
+[
+{
+	Name: "Yevgeny Prigozhin",
+	ImageID: Prigozhin,
+	
+	BornDay: 1,
+	BornMonth: 6,
+	BornYear: 1961,
+	
+	Attack: 6,
+	Defense: 6,
+},
+]

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Tadeusz Rozwadowski",
+	ImageID: Rozwadowski,
+	
+	BornDay: 20,
+	BornMonth: 5,
+	BornYear: 1866,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

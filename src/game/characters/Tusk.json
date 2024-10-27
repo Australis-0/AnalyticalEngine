@@ -1,0 +1,13 @@
+[
+{
+	Name: "Donald Tusk",
+	ImageID: Tusk,
+	
+	BornDay: 22,
+	BornMonth: 4,
+	BornYear: 1957,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

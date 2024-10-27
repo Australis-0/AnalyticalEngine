@@ -1,0 +1,13 @@
+[
+{
+	Name: "Franklin Americo de Doria",
+	ImageID: Doria,
+	
+	BornDay: 12,
+	BornMonth: 7,
+	BornYear: 1836,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

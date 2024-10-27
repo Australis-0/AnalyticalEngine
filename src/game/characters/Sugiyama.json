@@ -1,0 +1,13 @@
+[
+{
+	Name: "Hajime Sugiyama",
+	ImageID: Sugiyama,
+	
+	BornDay: 1,
+	BornMonth: 1,
+	BornYear: 1880,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

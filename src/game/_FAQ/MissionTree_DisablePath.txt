@@ -1,0 +1,41 @@
+If you would like to create two different mission paths and exclude one of them if the other is chosen, then:
+
+Example:
+
+##############################
+
+First Mission Tree Path:
+In this path, Germany declares war on Poland, followed by additional missions specified for that decision.
+The ID of the event in this mission will be:
+id=GerDeclaresWarOnPol
+
+Second Mission Tree Path:
+In this path, Germany forms an alliance with Poland, followed by additional missions specified for that decision.
+The ID of the event in this mission will be:
+id=GerMakesAllianceWithPol
+
+##############################
+
+In the event's trigger, you should use:
+has_variable_not=some_variable
+
+##############################
+
+For the first mission event:
+has_variable_not=GerMakesAllianceWithPol
+
+## Adding this will disable the possibility of taking this path if the player has chosen the second path. (Germany forms an alliance with Poland)
+
+
+For the second mission event:
+has_variable_not=GerDeclaresWarOnPol
+
+## Adding this will disable the possibility of taking this path if the player has chosen the second path. (Germany declares war on Poland)
+
+
+####
+## This way, the event(Mission) won't run if the player has already completed a different event(Mission).
+
+##############################
+
+Every time a civilization runs an event and makes a decision, the ID of the event is added to the list of all variables for that civilization.

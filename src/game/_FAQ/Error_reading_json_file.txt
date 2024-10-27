@@ -1,0 +1,42 @@
+Error reading file, instead of using ->tab<- there are used spaces!(Before  Name: etc.)
+
+Wrong:
+
+[
+{
+    Name: "Tadeusz Kościuszko",
+    ImageID: Kosciuszko,
+	
+    BornDay: 4,
+    BornMonth: 2,
+    BornYear: 1746,
+    
+    Attack: -1,
+    Defense: -1,
+},
+]
+
+Instead of spaces you should use TAB
+
+[
+{
+	Name: "Tadeusz Kościuszko",
+	ImageID: Kosciuszko,
+	
+	BornDay: 4,
+	BornMonth: 2,
+	BornYear: 1746,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]
+
+
+Used space in between ->	<-:
+->    <-Name: "Tadeusz Kościuszko",
+
+TAB
+->	<-Name: "Tadeusz Kościuszko",
+
+It MAY cause an error reading a file.

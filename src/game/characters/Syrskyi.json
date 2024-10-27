@@ -1,0 +1,13 @@
+[
+{
+	Name: "Oleksandr Syrskyi",
+	ImageID: Syrskyi,
+	
+	BornDay: 26,
+	BornMonth: 06,
+	BornYear: 1965,
+	
+	Attack: 3,
+	Defense: 7,
+},
+]

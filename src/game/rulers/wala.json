@@ -1,0 +1,106 @@
+{
+	"Rulers": [
+		{
+			"Name": "Basarab I",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1310,
+			
+			"ReignYear": 1310
+		},
+		{
+			"Name": "Mircea the Elder",
+			"ImageID": -1,
+			
+			"BornDay": 28,
+			"BornMonth": 2,
+			"BornYear": 1355,
+			
+			"ReignYear": 1386
+		},
+		{
+			"Name": "Vlad the Impaler",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1431,
+			
+			"ReignYear": 1448
+		},
+		{
+			"Name": "Radu the Great",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1435,
+			
+			"ReignYear": 1462
+		},
+		{
+			"Name": "Vlad the Monk",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1438,
+			
+			"ReignYear": 1482
+		},
+		{
+			"Name": "Michael the Brave",
+			"ImageID": -1,
+			
+			"BornDay": 3,
+			"BornMonth": 8,
+			"BornYear": 1558,
+			
+			"ReignYear": 1593
+		},
+		{
+			"Name": "Radu Șerban",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1585,
+			
+			"ReignYear": 1601
+		},
+		{
+			"Name": "Gheorghe Ștefan",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1620,
+			
+			"ReignYear": 1658
+		},
+		{
+			"Name": "Constantin Brâncoveanu",
+			"ImageID": -1,
+			
+			"BornDay": 14,
+			"BornMonth": 8,
+			"BornYear": 1654,
+			
+			"ReignYear": 1688
+		},
+		{
+			"Name": "Alexander Ypsilanti",
+			"ImageID": -1,
+			
+			"BornDay": 12,
+			"BornMonth": 1,
+			"BornYear": 1792,
+			
+			"ReignYear": 1821
+		}
+	],
+	
+	"Age_of_History": "Rulers"
+}

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Michał Kołodziejczak",
+	ImageID: Kolodziejczak,
+	
+	BornDay: 14,
+	BornMonth: 9,
+	BornYear: 1988,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

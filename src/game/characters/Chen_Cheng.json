@@ -1,0 +1,13 @@
+[
+{
+	Name: "Chen Cheng",
+	ImageID: Chen_Cheng,
+	
+	BornDay: 4,
+	BornMonth: 1,
+	BornYear: 1898,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

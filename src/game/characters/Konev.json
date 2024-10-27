@@ -1,0 +1,13 @@
+[
+{
+	Name: "Ivan Konev",
+	ImageID: Konev,
+	
+	BornDay: 28,
+	BornMonth: 12,
+	BornYear: 1897,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

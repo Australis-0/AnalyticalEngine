@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Natasa Pirc Musar",
+			ImageID: 222,
+			
+			BornDay: 9,
+			BornMonth: 5,
+			BornYear: 1968,
+			
+			ReignYear: 2022,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

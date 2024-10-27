@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Denis Becirovic",
+			ImageID: 51,
+			
+			BornDay: 28,
+			BornMonth: 11,
+			BornYear: 1975,
+			
+			ReignYear: 2022,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

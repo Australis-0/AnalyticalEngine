@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Mohamed al-Menfi",
+			ImageID: 127,
+			
+			BornDay: 3,
+			BornMonth: 3,
+			BornYear: 1976,
+			
+			ReignYear: 2021,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

@@ -1,0 +1,1100 @@
+{
+	Wonders:
+	[
+		{
+			Name: PyramidsOfGiza,
+			ImageID: 0,
+			
+			ProvinceID: 2669,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MonthlyLegacy: 2.6,
+			DevelopInfrastructureCost: -0.05,
+			Legacy: 200,
+			
+			AI: 5,
+			Wiki: "Giza_pyramid_complex",
+		},
+		{
+			Name: TajMahal,
+			ImageID: 1,
+			
+			ProvinceID: 5517,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			CoreCost: -5,
+			AdvisorPoolSize: 1,
+			LocalTaxEfficiency: 10,
+			MaxMorale: 0.05,
+			Legacy: 150,
+			
+			AI: 5,
+			Wiki: "Taj_Mahal",
+		},
+		{
+			Name: TempleOfConfucius,
+			ImageID: 2,
+			
+			ProvinceID: 5957,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			AdvisorPoolSize: 2,
+			MaxInfrastructure: 1,
+			BuildingSlot: 1,
+			RecruitmentTime: -5,
+			Legacy: 100,
+			
+			AI: 5,
+			Wiki: "Temple_of_Confucius",
+		},
+		{
+			Name: Tenochtitlan,
+			ImageID: 3,
+			
+			ProvinceID: 2376,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MaxManpower: 1000,
+			MonthlyLegacy: 1.6,
+			IncomeFromVassals: 0.1,
+			Discipline: 0.05,
+			Legacy: 100,
+			
+			AI: 5,
+			Wiki: "Tenochtitlan",
+		},
+		{
+			Name: ForbiddenCity,
+			ImageID: 5,
+			
+			ProvinceID: 3475,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			AllCharactersLifeExpectancy: 10,
+			Discipline: 0.05,
+			AdvisorMaxLevel: 1,
+			LoanInterest: -5,
+			Legacy: 100,
+			
+			AI: 5,
+			Wiki: "Forbidden_City",
+		},
+		{
+			Name: Tikal,
+			ImageID: 4,
+			
+			ProvinceID: 1855,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			IncreaseGrowthRateCost: -0.05,
+			BuildingSlot: 2,
+			ManpowerRecoverySpeed: 0.05,
+			Legacy: 100,
+			
+			AI: 5,
+			Wiki: "Tikal",
+		},
+		{
+			Name: WinterPalace,
+			ImageID: 6,
+			
+			ProvinceID: 3738,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MaxManpower: 1000,
+			GeneralAttack: 1,
+			ManpowerRecoveryFromADisbandedArmy: 0.1,
+			MonthlyLegacy: 1.6,
+			
+			Legacy: 100,
+			
+			AI: 5,
+			Wiki: "Winter_Palace",
+		},
+		{
+			Name: CologneCathedral,
+			ImageID: 10,
+			
+			ProvinceID: 554,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MaxManpower: 500,
+			CoreCost: -10,
+			AggressiveExpansion: -5,
+			DiplomacyPoints: 0.1,
+			Legacy: 100,
+			
+			AI: 5,
+			Wiki: "Cologne_Cathedral",
+		},
+		{
+			Name: MilanCathedral,
+			ImageID: 7,
+			
+			ProvinceID: 151,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MaxManpower: 500,
+			ImproveRelationsModifier: 10,
+			DiplomacyPoints: 0.1,
+			MaximumAmountOfGold: 0.25,
+			Legacy: 100,
+			
+			AI: 5,
+			Wiki: "Milan_Cathedral",
+		},
+		{
+			Name: MalborkCastle,
+			ImageID: 8,
+			
+			ProvinceID: 6656,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MaxManpower: 2500,
+			FortLevel: 2,
+			FortDefense: 100,
+			RegimentsLimit: 10,
+			Legacy: 100,
+			
+			AI: 5,
+			Wiki: "Malbork_Castle",
+		},
+		{
+			Name: ChichenItza,
+			ImageID: 9,
+			
+			ProvinceID: 8251,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MaxManpower: 500,
+			Economy: 6.4,
+			RegimentsLimit: 6,
+			MaxMorale: 0.05,
+			Legacy: 100,
+			
+			AI: 5,
+			Wiki: "Chichen_Itza",
+		},
+		{
+			Name: PalaceOfVersailles,
+			ImageID: 46,
+			
+			ProvinceID: 293,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MaxManpower: 500,
+			MonthlyIncome: 2.2,
+			RecruitArmyCost: -5,
+			Legacy: 100,
+			
+			AI: 5,
+			Wiki: "Palace_of_Versailles",
+		},
+		{
+			Name: WhiteHouse,
+			ImageID: 45,
+			
+			ProvinceID: 8714,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MaxManpower: 1000,
+			AdministrationBuildingsCost: -0.05,
+			BuildingSlot: 1,
+			UnitsAttack: 2,
+			DiplomacyPoints: 0.1,
+			Legacy: 100,
+			
+			AI: 5,
+			Wiki: "White_House",
+		},
+		{
+			Name: AngkorWat,
+			ImageID: 11,
+			
+			ProvinceID: 1663,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MaxManpower: 500,
+			RecruitArmySecondLineCost: -10,
+			TaxEfficiency: 5,
+			GrowthRate: 2,
+			Legacy: 100,
+			
+			AI: 5,
+			Wiki: "Angkor_Wat",
+		},
+		{
+			Name: HimejiCastle,
+			ImageID: 12,
+			
+			ProvinceID: 1733,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MaxManpower: 1500,
+			TechnologyCost: -1,
+			FortLevel: 1,
+			FortDefense: 100,
+			RegimentsLimit: 8,
+			Legacy: 100,
+			
+			AI: 5,
+			Wiki: "Himeji_Castle",
+		},
+		{
+			Name: GreatLivingCholaTemples,
+			ImageID: 13,
+			
+			ProvinceID: 2990,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MaxManpower: 1000,
+			IncreaseGrowthRateCost: -0.1,
+			UnitsDefense: 1,
+			RevolutionaryRisk: -5,
+			Legacy: 100,
+			
+			AI: 5,
+			Wiki: "Great_Living_Chola_Temples",
+		},
+		{
+			Name: ElEscorial,
+			ImageID: 14,
+			
+			ProvinceID: 6561,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MaxManpower: 500,
+			ArmyMaintenance: -5,
+			AdministrationBuildingsCost: -0.05,
+			Legacy: 250,
+			
+			AI: 5,
+			Wiki: "El_Escorial",
+		},
+		{
+			Name: Borobudur,
+			ImageID: 16,
+			
+			ProvinceID: 1564,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MaxManpower: 250,
+			EconomyBuildingsCost: -0.05,
+			BuildingSlot: 1,
+			SiegeEffectiveness: 0.1,
+			Legacy: 250,
+			
+			AI: 5,
+			Wiki: "Borobudur",
+		},
+		{
+			Name: Kronborg,
+			ImageID: 15,
+			
+			ProvinceID: 965,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MaxManpower: 2500,
+			FortLevel: 2,
+			FortDefense: 200,
+			RegimentsLimit: 8,
+			Legacy: 150,
+			
+			AI: 5,
+			Wiki: "Kronborg",
+		},
+		{
+			Name: Moai,
+			ImageID: 17,
+			
+			ProvinceID: 11981,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MaxManpower: 250,
+			MonthlyLegacy: 2.8,
+			DevelopInfrastructureCost: -0.05,
+			Legacy: 300,
+			
+			AI: 5,
+			Wiki: "Moai",
+		},
+		{
+			Name: ArgeBam,
+			ImageID: 18,
+			
+			ProvinceID: 10533,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MaxManpower: 2500,
+			FortLevel: 2,
+			FortDefense: 100,
+			ArmyMaintenance: -5,
+			Legacy: 100,
+			
+			AI: 5,
+			Wiki: "Arg-e_Bam",
+		},
+		{
+			Name: Kremlin,
+			ImageID: 20,
+			
+			ProvinceID: 3726,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MaxManpower: 1000,
+			BuildingSlot: 2,
+			BattleWidth: 6,
+			FortLevel: 2,
+			FortDefense: 100,
+			DefenseBonus: 2,
+			Legacy: 100,
+			
+			AI: 5,
+			Wiki: "Kremlin",
+		},
+		{
+			Name: Parthenon,
+			ImageID: 19,
+			
+			ProvinceID: 2202,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MaxManpower: 500,
+			ResearchPoints: 1.6,
+			MonthlyLegacy: 1.25,
+			IncreaseTaxEfficiencyCost: -0.05,
+			Legacy: 200,
+			
+			AI: 5,
+			Wiki: "Parthenon",
+		},
+		{
+			Name: VenetianArsenal,
+			ImageID: 21,
+			
+			ProvinceID: 165,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MaxManpower: 3000,
+			MilitaryBuildingsCost: -0.05,
+			MaxMorale: 0.1,
+			IncreaseManpowerCost: -5,
+			DefenseBonus: 1,
+			Legacy: 250,
+			
+			AI: 5,
+			Wiki: "Venetian_Arsenal",
+		},
+		{
+			Name: Colosseum,
+			ImageID: 22,
+			
+			ProvinceID: 6881,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MaxManpower: 500,
+			MonthlyLegacy: 2.4,
+			DevelopInfrastructureCost: -0.05,
+			UnitsAttack: 2,
+			Legacy: 300,
+			
+			AI: 5,
+			Wiki: "Colosseum",
+		},
+		{
+			Name: ShwedagonPagoda,
+			ImageID: 23,
+			
+			ProvinceID: 5678,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			GrowthRate: 2,
+			MaxNumberOfLoans: 2,
+			MonthlyIncome: 1.2,
+			MaxManpower: 500,
+			Legacy: 250,
+			
+			AI: 5,
+			Wiki: "Shwedagon_Pagoda",
+		},
+		{
+			Name: Bagan,
+			ImageID: 24,
+			
+			ProvinceID: 5695,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MaxManpower: 500,
+			IncreaseGrowthRateCost: -0.05,
+			GeneralDefense: 1,
+			AllCharactersLifeExpectancy: 5,
+			LocalTaxEfficiency: 6.4,
+			Legacy: 250,
+			
+			AI: 5,
+			Wiki: "Bagan",
+		},
+		{
+			Name: Jokhang,
+			ImageID: 25,
+			
+			ProvinceID: 11207,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MaxManpower: 500,
+			LocalTaxEfficiency: 3.2,
+			Discipline: 0.1,
+			DiplomacyPoints: 0.1,
+			Legacy: 150,
+			
+			AI: 5,
+			Wiki: "Jokhang",
+		},
+		{
+			Name: Petra,
+			ImageID: 26,
+			
+			ProvinceID: 6131,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MaxManpower: 1000,
+			IncreaseTaxEfficiencyCost: -0.05,
+			ConstructionTimeBonus: -0.1,
+			Legacy: 300,
+			
+			AI: 5,
+			Wiki: "Petra",
+		},
+		{
+			Name: HagiaSophia,
+			ImageID: 27,
+			
+			ProvinceID: 1116,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MaxManpower: 500,
+			CoreCost: -5,
+			ArmyMovementSpeed: 5,
+			RecruitmentTime: -5,
+			Legacy: 250,
+			
+			AI: 5,
+			Wiki: "Hagia_Sophia",
+		},
+		{
+			Name: FortificationsOfMalta,
+			ImageID: 28,
+			
+			ProvinceID: 270,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MaxManpower: 2500,
+			FortLevel: 4,
+			FortDefense: 150,
+			RegimentsLimit: 4,
+			DefenseBonus: 1,
+			Legacy: 150,
+			
+			AI: 5,
+			Wiki: "Fortifications_of_Malta",
+		},
+		{
+			Name: NaqsheJahanSquare,
+			ImageID: 29,
+			
+			ProvinceID: 2597,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MaxManpower: 1000,
+			Economy: 4.6,
+			LocalTaxEfficiency: 5.2,
+			MonthlyLegacy: 0.4,
+			Legacy: 150,
+			
+			AI: 5,
+			Wiki: "Naqsh-e_Jahan_Square",
+		},
+		{
+			Name: Alhambra,
+			ImageID: 30,
+			
+			ProvinceID: 84,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			DefenseBonus: 1,
+			MaxManpower: 1000,
+			ManpowerRecoverySpeed: 0.05,
+			RecruitmentTime: -5,
+			Legacy: 150,
+			
+			AI: 5,
+			Wiki: "Alhambra",
+		},
+		{
+			Name: UniversityOfOxford,
+			ImageID: 31,
+			
+			ProvinceID: 6460,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MaxManpower: 100,
+			Research: 3,
+			ResearchPoints: 1.8,
+			Legacy: 150,
+			
+			AI: 5,
+			Wiki: "University_of_Oxford",
+		},
+		{
+			Name: MachuPicchu,
+			ImageID: 32,
+			
+			ProvinceID: 7921,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			DiseaseDeathRate: -0.05,
+			Discipline: 0.1,
+			MaxManpower: 500,
+			Legacy: 300,
+			
+			AI: 5,
+			Wiki: "Machu_Picchu",
+		},
+		{
+			Name: RoyalPalaceOfCaserta,
+			ImageID: 33,
+			
+			ProvinceID: 6894,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MaxManpower: 500,
+			TaxEfficiency: 1,
+			MonthlyLegacy: 1.4,
+			MilitaryBuildingsCost: -0.05,
+			Legacy: 150,
+			
+			AI: 5,
+			Wiki: "Royal_Palace_of_Caserta",
+		},
+		{
+			Name: GreatMosqueOfDjenne,
+			ImageID: 34,
+			
+			ProvinceID: 4542,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MilitaryBuildingsCost: -0.05,
+			AdministrationBuildingsCost: -0.05,
+			
+			MaxManpower: 500,
+			Legacy: 300,
+			
+			AI: 5,
+			Wiki: "Great_Mosque_of_Djenné",
+		},
+		{
+			Name: SankoreMadrasah,
+			ImageID: 35,
+			
+			ProvinceID: 4724,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			Research: 3,
+			ResearchPoints: 0.4,
+			MaxManpower: 500,
+			Legacy: 100,
+			
+			AI: 5,
+			Wiki: "Sankore_Madrasah",
+		},
+		{
+			Name: EdinburghCastle,
+			ImageID: 36,
+			
+			ProvinceID: 891,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MaxManpower: 2500,
+			FortLevel: 2,
+			FortDefense: 150,
+			RegimentsLimit: 8,
+			DefenseBonus: 1,
+			Legacy: 100,
+			
+			AI: 5,
+			Wiki: "Edinburgh_Castle",
+		},
+		{
+			Name: MountRushmore,
+			ImageID: 37,
+			
+			ProvinceID: 9606,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MaxManpower: 1000,
+			TaxEfficiency: 2,
+			BuildingsMaintenanceCost: -0.05,
+			Legacy: 250,
+			
+			AI: 5,
+			Wiki: "Mount_Rushmore",
+		},
+		{
+			Name: Hampi,
+			ImageID: 38,
+			
+			ProvinceID: 5606,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MaxManpower: 1000,
+			GrowthRate: 4,
+			MonthlyIncome: 2.4,
+			Legacy: 150,
+			
+			AI: 5,
+			Wiki: "Hampi",
+		},
+		{
+			Name: Prambanan,
+			ImageID: 39,
+			
+			ProvinceID: 1565,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MaxManpower: 1000,
+			UnitsAttack: 1,
+			UnitsDefense: 1,
+			Legacy: 250,
+			
+			AI: 5,
+			Wiki: "Prambanan",
+		},
+		{
+			Name: LibraryOfAlexandria,
+			ImageID: 40,
+			
+			ProvinceID: 2662,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			TechnologyCost: -2,
+			Research: 1,
+			ResearchPoints: 1.6,
+			Legacy: 200,
+			
+			AI: 5,
+			Wiki: "Library_of_Alexandria",
+		},
+		{
+			Name: HangingGardensOfBabylon,
+			ImageID: 41,
+			
+			ProvinceID: 2638,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MaxManpower: 500,
+			GrowthRate: 4,
+			MonthlyLegacy: 2.4,
+			ImproveRelationsModifier: 5,
+			Legacy: 250,
+			
+			AI: 5,
+			Wiki: "Hanging_Gardens_of_Babylon",
+		},
+		{
+			Name: GreatWallOfChina,
+			ImageID: 42,
+			
+			ProvinceID: 11091,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MaxManpower: 3000,
+			GeneralDefense: 1,
+			UnitsDefense: 1,
+			Legacy: 300,
+			
+			AI: 5,
+			Wiki: "Great_Wall_of_China",
+		},
+		{
+			Name: ChristTheRedeemer,
+			ImageID: 43,
+			
+			ProvinceID: 1970,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MaxManpower: 250,
+			
+			MaxMorale: 0.1,
+			LoanInterest: -5,
+			ProductionEfficiency: 2,
+			Legacy: 200,
+			
+			AI: 5,
+			Wiki: "Christ_the_Redeemer_(statue)",
+		},
+		{
+			Name: TerracottaArmy,
+			ImageID: 44,
+			
+			ProvinceID: 6372,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MaxManpower: 3000,
+			RecruitmentTime: -5,
+			ArmyMaintenance: -2,
+			RecruitArmyFirstLineCost: -4,
+			Legacy: 100,
+			
+			AI: 5,
+			Wiki: "Terracotta_Army",
+		},
+		{
+			Name: StatueOfLiberty,
+			ImageID: 47,
+			
+			ProvinceID: 8721,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MaxManpower: 500,
+			GrowthRate: 4,
+			Discipline: 0.1,
+			MaxNumberOfLoans: 1,
+			Legacy: 300,
+			
+			AI: 5,
+			Wiki: "Statue_of_Liberty",
+		},
+		{
+			Name: WallsOfRagusa,
+			ImageID: 48,
+			
+			ProvinceID: 3044,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MaxManpower: 2500,
+			FortLevel: 2,
+			FortDefense: 150,
+			RegimentsLimit: 6,
+			DefenseBonus: 2,
+			Legacy: 75,
+			
+			AI: 5,
+			Wiki: "Walls_of_Dubrovnik",
+		},
+		{
+			Name: PalaceOfWestminster,
+			ImageID: 49,
+			
+			ProvinceID: 825,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MaxManpower: 1000,
+			TaxEfficiency: 2,
+			ProvinceMaintenance: -5,
+			Legacy: 150,
+			
+			AI: 5,
+			Wiki: "Palace_of_Westminster",
+		},
+		{
+			Name: Narikala,
+			ImageID: 50,
+			
+			ProvinceID: 10431,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MaxManpower: 2000,
+			MilitaryBuildingsCost: -0.05,
+			FortLevel: 2,
+			DefenseBonus: 1,
+			Legacy: 100,
+			
+			AI: 5,
+			Wiki: "Narikala",
+		},
+		{
+			Name: BasilicaDiSanNicola,
+			ImageID: 51,
+			
+			ProvinceID: 219,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MaxManpower: 500,
+			BuildingsMaintenanceCost: -0.05,
+			AdvisorPoolSize: 1,
+			Legacy: 100,
+			
+			AI: 5,
+			Wiki: "Basilica_di_San_Nicola",
+		},
+		{
+			Name: MontSaintMichel,
+			ImageID: 52,
+			
+			ProvinceID: 253,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MaxManpower: 1000,
+			BuildingsMaintenanceCost: -0.05,
+			IncomeFromVassals: 0.05,
+			Legacy: 200,
+			
+			AI: 5,
+			Wiki: "Mont-Saint-Michel",
+		},
+		{
+			Name: RoyalPalaceOfTurin,
+			ImageID: 53,
+			
+			ProvinceID: 148,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MaxManpower: 1000,
+			IncomeFromVassals: 0.05,
+			MonthlyLegacy: 1.2,
+			Legacy: 150,
+			
+			AI: 5,
+			Wiki: "Royal_Palace_of_Turin",
+		},
+		{
+			Name: GyeongbokgungPalace,
+			ImageID: 54,
+			
+			ProvinceID: 3437,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MaxManpower: 2000,
+			AdministrationBuildingsCost: -0.05,
+			IncreaseTaxEfficiencyCost: -0.05,
+			UnitsAttack: 1,
+			Legacy: 100,
+			
+			AI: 5,
+			Wiki: "Gyeongbokgung",
+		},
+		{
+			Name: DeHaarCastle,
+			ImageID: 55,
+			
+			ProvinceID: 799,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MaxManpower: 1500,
+			FortLevel: 2,
+			FortDefense: 150,
+			RegimentsLimit: 6,
+			DefenseBonus: 1,
+			Legacy: 150,
+			
+			AI: 5,
+			Wiki: "De_Haar_Castle",
+		},
+		{
+			Name: Reichstag,
+			ImageID: 56,
+			
+			ProvinceID: 592,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MaxManpower: 500,
+			LocalTaxEfficiency: 6.2,
+			BattleWidth: 6,
+			MaximumAmountOfGold: 0.25,
+			Legacy: 150,
+			
+			AI: 5,
+			Wiki: "Reichstag_building",
+		},
+		{
+			Name: StVitusCathedral,
+			ImageID: 57,
+			
+			ProvinceID: 656,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MaxManpower: 500,
+			MaxMorale: 0.05,
+			BuildingSlot: 1,
+			Economy: 3.6,
+			Legacy: 100,
+			
+			AI: 5,
+			Wiki: "St._Vitus_Cathedral",
+		},
+		{
+			Name: PalazzoPitti,
+			ImageID: 58,
+			
+			ProvinceID: 158,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MaxManpower: 1500,
+			MaximumAmountOfGold: 0.25,
+			EconomyBuildingsCost: -0.05,
+			Legacy: 150,
+			
+			AI: 5,
+			Wiki: "Palazzo_Pitti",
+		},
+		{
+			Name: ChateaudeChambord,
+			ImageID: 59,
+			
+			ProvinceID: 3588,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MaxManpower: 500,
+			MonthlyLegacy: 1.2,
+			RecruitmentTime: -5,
+			LocalTaxEfficiency: 6.2,
+			Legacy: 150,
+			
+			AI: 5,
+			Wiki: "Château_de_Chambord",
+		},
+		{
+			Name: RockOfGibraltar,
+			ImageID: 60,
+			
+			ProvinceID: 85,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MaxManpower: 100,
+			FortLevel: 3,
+			FortDefense: 250,
+			RegimentsLimit: 2,
+			DefenseBonus: 2,
+			Legacy: 150,
+			
+			AI: 5,
+			Wiki: "Rock_of_Gibraltar",
+		},
+		{
+			Name: BazaarOfTabriz,
+			ImageID: 61,
+			
+			ProvinceID: 2574,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			Economy: 4.6,
+			ProductionEfficiency: 3,
+			MonthlyIncome: 1.2,
+			Legacy: 100,
+			
+			AI: 5,
+			Wiki: "Bazaar_of_Tabriz",
+		},
+		{
+			Name: WawelCastle,
+			ImageID: 62,
+			
+			ProvinceID: 464,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MaxManpower: 2500,
+			FortLevel: 2,
+			FortDefense: 150,
+			RegimentsLimit: 8,
+			BattleWidth: 2,
+			Legacy: 100,
+			
+			AI: 5,
+			Wiki: "Wawel_Castle",
+		},
+		{
+			Name: ColossusOfRhodes,
+			ImageID: 63,
+			
+			ProvinceID: 3010,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MaxNumberOfLoans: 1,
+			MonthlyIncome: 2.6,
+			Legacy: 250,
+			
+			AI: 5,
+			Wiki: "Colossus_of_Rhodes",
+		},
+		{
+			Name: GreatMosqueOfMecca,
+			ImageID: 64,
+			
+			ProvinceID: 6075,
+			CostGold: 300,
+			ConstructionTime: 730,
+			
+			MaxManpower: 2500,
+			MonthlyLegacy: 2.4,
+			Legacy: 300,
+			
+			AI: 5,
+			Wiki: "Masjid_al-Haram",
+		},
+	],
+	Age_of_History: Wonders
+}

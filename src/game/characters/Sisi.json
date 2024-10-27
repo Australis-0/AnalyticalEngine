@@ -1,0 +1,13 @@
+[
+{
+	Name: "Elisabeth Sisi of Austria",
+	ImageID: Sisi,
+		
+	BornDay: 24,
+	BornMonth: 12,
+	BornYear: 1837,
+		
+	Attack: -1,
+	Defense: -1,
+},
+]

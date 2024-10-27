@@ -1,0 +1,26 @@
+{
+	Rulers: [
+		{
+			Name: "Oscar Benavides",
+			ImageID: 287,
+			
+			BornDay: 15,
+			BornMonth: 3,
+			BornYear: 1876,
+			
+			ReignYear: 1933,
+		},
+		{
+			Name: "Dina Boluarte",
+			ImageID: 166,
+			
+			BornDay: 31,
+			BornMonth: 5,
+			BornYear: 1962,
+			
+			ReignYear: 2022,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

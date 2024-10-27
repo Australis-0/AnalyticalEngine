@@ -1,0 +1,13 @@
+[
+{
+	Name: "Walery Sławek",
+	ImageID: Slawek,
+	
+	BornDay: 2,
+	BornMonth: 11,
+	BornYear: 1879,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

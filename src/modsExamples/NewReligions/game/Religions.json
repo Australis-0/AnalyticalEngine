@@ -1,0 +1,311 @@
+{
+	Age_of_History: Data,
+		Data: [
+		{
+			Name: Pagan,
+			Icon: "pagan.png",
+			ReligionGroupID: 0,
+			Color: [236, 39, 44],
+			Tribal: false,
+		},
+		{
+			Name: Catholic,
+			Icon: "catholic.png",
+			ReligionGroupID: 1,
+			Color: [194, 194, 40],
+			Tribal: false,
+			
+			IncreaseTaxEfficiencyCost: -0.025,
+		},
+		{
+			Name: Orthodox,
+			Icon: "orthodox.png",
+			ReligionGroupID: 1,
+			Color: [154, 114, 25],
+			Tribal: false,
+			
+			IncreaseTaxEfficiencyCost: -0.025,
+		},
+		{
+			Name: Protestant,
+			Icon: "protestant.png",
+			ReligionGroupID: 1,
+			Color: [10, 0, 160],
+			Tribal: false,
+			
+			DevelopInfrastructureCost: -0.025,
+		},
+		{
+			Name: Jewish,
+			Icon: "jewish.png",
+			ReligionGroupID: 2,
+			Color: [68, 140, 220],
+			Tribal: false,
+			
+			InvestInEconomyCost: -0.025,
+		},
+		{
+			Name: Sunni,
+			Icon: "sunni.png",
+			ReligionGroupID: 3,
+			Color: [63, 135, 23],
+			Tribal: false,
+			
+			GeneralCost: -0.025,
+		},
+		{
+			Name: Shia,
+			Icon: "shia.png",
+			ReligionGroupID: 3,
+			Color: [88, 190, 35],
+			Tribal: false,
+			
+			GeneralCost: -0.025,
+		},
+		{
+			Name: Gelugpa,
+			Icon: "gelugpa.png",
+			ReligionGroupID: 4,
+			Color: [22, 24, 85],
+			Tribal: false,
+			
+			ProvinceMaintenance: -2.5,
+		},
+		{
+			Name: Theravada,
+			Icon: "theravada.png",
+			ReligionGroupID: 4,
+			Color: [170, 70, 20],
+			Tribal: false,
+			
+			AdvisorCost: -0.025,
+		},
+		{
+			Name: Sikh,
+			Icon: "sikh.png",
+			ReligionGroupID: 4,
+			Color: [64, 135, 137],
+			Tribal: false,
+			
+			ProvinceMaintenance: -2.5,
+		},
+		{
+			Name: Mahayana,
+			Icon: "mahayana.png",
+			ReligionGroupID: 4,
+			Color: [170, 70, 110],
+			Tribal: false,
+			
+			IncreaseTaxEfficiencyCost: -0.025,
+		},
+		{
+			Name: Shinto,
+			Icon: "shinto.png",
+			ReligionGroupID: 4,
+			Color: [199, 25, 25],
+			Tribal: false,
+			
+			GeneralCost: -0.025,
+		},
+		{
+			Name: Hindu,
+			Icon: "hindu.png",
+			ReligionGroupID: 4,
+			Color: [199, 150, 199],
+			Tribal: false,
+			
+			IncreaseTaxEfficiencyCost: -0.025,
+		},
+		{
+			Name: Tengri,
+			Icon: "tengri.png",
+			ReligionGroupID: 4,
+			Color: [40, 60, 200],
+			Tribal: false,
+			
+			RecruitmentTime: -2.5,
+		},
+		{
+			Name: Confucian,
+			Icon: "confucian.png",
+			ReligionGroupID: 4,
+			Color: [210, 224, 130],
+			Tribal: false,
+			
+			IncreaseTaxEfficiencyCost: -0.025,
+		},
+		{
+			Name: Coptic,
+			Icon: "coptic.png",
+			ReligionGroupID: 1,
+			Color: [140, 40, 65],
+			Tribal: false,
+			
+			IncreaseTaxEfficiencyCost: -0.025,
+		},
+		{
+			Name: Buddhism,
+			Icon: "buddhism.png",
+			ReligionGroupID: 4,
+			Color: [90, 193, 148],
+			Tribal: false,
+			
+			IncreaseTaxEfficiencyCost: -0.025,
+		},
+		{
+			Name: Animism,
+			Icon: "animism.png",
+			ReligionGroupID: 0,
+			Color: [140, 30, 20],
+			Tribal: true,
+			
+			IncreaseManpowerCost: -2.5,
+		},
+		{
+			Name: Fetishism,
+			Icon: "fetishism.png",
+			ReligionGroupID: 0,
+			Color: [105, 65, 65],
+			Tribal: true,
+			
+			IncreaseManpowerCost: -2.5,
+		},
+		{
+			Name: Totemist,
+			Icon: "totemist.png",
+			ReligionGroupID: 0,
+			Color: [110, 100, 100],
+			Tribal: true,
+			
+			ConstructionTime: -0.025,
+		},
+		{
+			Name: Inti,
+			Icon: "inti.png",
+			ReligionGroupID: 0,
+			Color: [236, 168, 26],
+			Tribal: true,
+			
+			ConstructionCost: -0.025,
+		},
+		{
+			Name: Ibadi,
+			Icon: "ibadi.png",
+			ReligionGroupID: 3,
+			Color: [40, 86, 13],
+			Tribal: false,
+			
+			IncreaseTaxEfficiencyCost: -0.025,
+		},
+		{
+			Name: Mayan,
+			Icon: "mayan.png",
+			ReligionGroupID: 0,
+			Color: [100, 26, 160],
+			Tribal: true,
+			
+			IncreaseTaxEfficiencyCost: -0.025,
+		},
+		{
+			Name: Vajrayana,
+			Icon: "vajrayana.png",
+			ReligionGroupID: 4,
+			Color: [170, 70, 65],
+			Tribal: false,
+			
+			IncreaseTaxEfficiencyCost: -0.025,
+		},
+		{
+			Name: Zoroastrian,
+			Icon: "zoroastrian.png",
+			ReligionGroupID: 4,
+			Color: [125, 165, 55],
+			Tribal: false,
+			
+			IncreaseTaxEfficiencyCost: -0.025,
+		},
+		{
+			Name: Polytheism,
+			Icon: "polytheism.png",
+			ReligionGroupID: 0,
+			Color: [170, 120, 45],
+			Tribal: false,
+			
+			IncreaseTaxEfficiencyCost: -0.025,
+		},
+		{
+			Name: Jainism,
+			Icon: "jainism.png",
+			ReligionGroupID: 4,
+			Color: [223, 163, 130],
+			Tribal: false,
+			
+			IncreaseTaxEfficiencyCost: -0.025,
+		},
+		{
+			Name: Taoism,
+			Icon: "taoism.png",
+			ReligionGroupID: 4,
+			Color: [230, 230, 100],
+			Tribal: false,
+			
+			IncreaseTaxEfficiencyCost: -0.025,
+		},
+		{
+			Name: Atheism,
+			Icon: "atheism.png",
+			ReligionGroupID: 5,
+			Color: [185, 185, 185],
+			Tribal: false,
+			
+			ConstructionTime: -0.025,
+		},
+		{
+			Name: Hussite,
+			Icon: "hussite.png",
+			ReligionGroupID: 1,
+			Color: [110, 10, 5],
+			Tribal: false,
+			
+			IncreaseManpowerCost: -2.5,
+		},
+		{
+			Name: Norse,
+			Icon: "norse.png",
+			ReligionGroupID: 0,
+			Color: [140, 30, 20],
+			Tribal: false,
+			
+			IncreaseManpowerCost: -2.5,
+		},
+		{
+			Name: Hellenic,
+			Icon: "hellenic.png",
+			ReligionGroupID: 0,
+			Color: [140, 30, 20],
+			Tribal: false,
+			
+			IncreaseManpowerCost: -2.5,
+		},
+		
+		
+		{
+			Name: MyReligion1,
+			Icon: "myreligion.png",
+			ReligionGroupID: 1,
+			Color: [150, 75, 75],
+			Tribal: false,
+			
+			GeneralCost: -0.025,
+		},
+		{
+			Name: Second New Religion,
+			Icon: "second.png",
+			ReligionGroupID: 3,
+			Color: [75, 75, 255],
+			Tribal: false,
+			
+			IncreaseManpowerCost: -2.5,
+		},
+	]
+}

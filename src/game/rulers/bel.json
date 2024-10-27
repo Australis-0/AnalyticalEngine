@@ -1,0 +1,46 @@
+{
+	Rulers: [
+		{
+			Name: "Hubert Pierlot",
+			ImageID: 316,
+			
+			BornDay: 16,
+			BornMonth: 12,
+			BornYear: 1790,
+			
+			ReignYear: 1831,
+		},
+		{
+			Name: "Albert I",
+			ImageID: 317,
+			
+			BornDay: 8,
+			BornMonth: 4,
+			BornYear: 1875,
+			
+			ReignYear: 1909,
+		},
+		{
+			Name: "Hubert Pierlot",
+			ImageID: Pierlot,
+			
+			BornDay: 22,
+			BornMonth: 2,
+			BornYear: 1883,
+			
+			ReignYear: 1934,
+		},
+		{
+			Name: "Philippe of Belgium",
+			ImageID: 45,
+			
+			BornDay: 15,
+			BornMonth: 4,
+			BornYear: 1960,
+			
+			ReignYear: 2013,
+		},
+	],
+
+	Age_of_History: Rulers
+}

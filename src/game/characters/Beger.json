@@ -1,0 +1,13 @@
+[
+{
+	Name: "Renata Beger",
+	ImageID: Beger,
+	
+	BornDay: 18,
+	BornMonth: 7,
+	BornYear: 1958,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

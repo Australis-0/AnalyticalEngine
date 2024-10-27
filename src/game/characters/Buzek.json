@@ -1,0 +1,13 @@
+[
+{
+	Name: "Jerzy Buzek",
+	ImageID: Buzek,
+	
+	BornDay: 3,
+	BornMonth: 7,
+	BornYear: 1940,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

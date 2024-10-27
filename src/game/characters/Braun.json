@@ -1,0 +1,13 @@
+[
+{
+	Name: "Grzegorz Braun",
+	ImageID: Braun,
+	
+	BornDay: 11,
+	BornMonth: 3,
+	BornYear: 1967,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

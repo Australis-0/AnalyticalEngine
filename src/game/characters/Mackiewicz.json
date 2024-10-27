@@ -1,0 +1,13 @@
+[
+{
+	Name: "Stanisław Mackiewicz",
+	ImageID: Mackiewicz,
+	
+	BornDay: 18,
+	BornMonth: 12,
+	BornYear: 1896,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

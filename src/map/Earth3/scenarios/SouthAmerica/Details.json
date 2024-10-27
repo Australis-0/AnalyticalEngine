@@ -1,0 +1,21 @@
+{
+Name: "SouthAmerica",
+Author: "Łukasz Jakowski",
+Civs: 223,
+Age: 11,
+Day: 10,
+Month: 0,
+Year: 2077,
+Campaign: true,
+CivDefault_Gold: 350,
+CivDefault_GoldRandom: 100,
+CivDefault_Legacy: 125,
+CivDefault_LegacyRandom: 50,
+CivDefault_ManpowerPercentage: 80,
+CivDefault_Technology: 85,
+ProvinceDefault_Population: 600000,
+ProvinceDefault_Economy: 72,
+ProvinceDefault_TaxEfficiency: 60,
+ProvinceDefault_Manpower: 64,
+HoursPerTurn: 24
+}

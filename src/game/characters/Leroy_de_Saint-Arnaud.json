@@ -1,0 +1,13 @@
+[
+{
+	Name: "Jacques Leroy de Saint-Arnaud",
+	ImageID: Leroy_de_Saint-Arnaud,
+	
+	BornDay: 20,
+	BornMonth: 9,
+	BornYear: 1798,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

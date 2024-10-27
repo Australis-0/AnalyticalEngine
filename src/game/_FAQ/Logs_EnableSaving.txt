@@ -1,0 +1,18 @@
+Open the file:
+
+game/gameValues/GV_Logs.json
+
+###################
+
+And change to true to enable saving logs to the file:
+SAVE_LOGS_TO_FILE: true,
+
+###################
+
+Set to false to disable saving logs to the file:
+SAVE_LOGS_TO_FILE: false,
+
+###################
+
+## The logs will be saved in the logs.txt file
+## It can be useful if something doesn't load or work properly.

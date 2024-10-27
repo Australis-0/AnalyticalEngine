@@ -1,0 +1,13 @@
+[
+{
+	Name: "Cai Lun",
+	ImageID: Cai_Lun,
+	
+	BornDay: 30,
+	BornMonth: 6,
+	BornYear: 50,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

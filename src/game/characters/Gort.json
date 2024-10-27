@@ -1,0 +1,13 @@
+[
+{
+	Name: "Viscount Gort",
+	ImageID: Gort,
+	
+	BornDay: 10,
+	BornMonth: 6,
+	BornYear: 1886,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

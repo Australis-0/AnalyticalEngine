@@ -1,0 +1,13 @@
+[
+{
+	Name: "Ryszard Petru",
+	ImageID: Petru,
+	
+	BornDay: 6,
+	BornMonth: 7,
+	BornYear: 1972,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

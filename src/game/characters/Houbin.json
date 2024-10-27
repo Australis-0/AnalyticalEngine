@@ -1,0 +1,13 @@
+[
+{
+	Name: "Wang Houbin",
+	ImageID: "Houbin.png",
+	
+	BornDay: 5,
+	BornMonth: 3,
+	BornYear: 1961,
+	
+	Attack: 4
+	Defense: 4
+}
+]

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Marian Krzaklewski",
+	ImageID: Krzaklewski,
+	
+	BornDay: 23,
+	BornMonth: 8,
+	BornYear: 1950,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

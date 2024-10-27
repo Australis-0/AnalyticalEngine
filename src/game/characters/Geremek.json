@@ -1,0 +1,13 @@
+[
+{
+	Name: "Bronisław Geremek",
+	ImageID: Geremek,
+	
+	BornDay: 6,
+	BornMonth: 3,
+	BornYear: 1932,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

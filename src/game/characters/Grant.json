@@ -1,0 +1,13 @@
+[
+{
+	Name: "Ulysses S. Grant",
+	ImageID: Grant,
+		
+	BornDay: 27,
+	BornMonth: 4,
+	BornYear: 1822,
+		
+	Attack: -1,
+	Defense: -1,
+},
+]

@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Mohammed VI",
+			ImageID: 145,
+			
+			BornDay: 21,
+			BornMonth: 8,
+			BornYear: 1963,
+			
+			ReignYear: 1999,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

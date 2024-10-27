@@ -1,0 +1,191 @@
+[
+{
+	CivTAG: "amap_p",
+	CivID: 1,
+	PCID: 1,
+	CPID: 7544,
+	Population: 733759
+},
+{
+	CivTAG: "para_p",
+	CivID: 2,
+	PCID: 2,
+	CPID: 7533,
+	Population: 8639532
+},
+{
+	CivTAG: "rora_p",
+	CivID: 3,
+	PCID: 3,
+	CPID: 5293,
+	Population: 708352
+},
+{
+	CivTAG: "amzz_p",
+	CivID: 4,
+	PCID: 4,
+	CPID: 7666,
+	Population: 3941613
+},
+{
+	CivTAG: "acre_p",
+	CivID: 5,
+	PCID: 5,
+	CPID: 2134,
+	Population: 830018
+},
+{
+	CivTAG: "rond_p",
+	CivID: 6,
+	PCID: 6,
+	CPID: 8609,
+	Population: 1837905
+},
+{
+	CivTAG: "mtgo_p",
+	CivID: 7,
+	PCID: 7,
+	CPID: 8576,
+	Population: 3658649
+},
+{
+	CivTAG: "matt_p",
+	CivID: 8,
+	PCID: 8,
+	CPID: 8453,
+	Population: 2880308
+},
+{
+	CivTAG: "saup_p",
+	CivID: 9,
+	PCID: 9,
+	CPID: 1974,
+	Population: 44411238
+},
+{
+	CivTAG: "parn_p",
+	CivID: 10,
+	PCID: 10,
+	CPID: 5098,
+	Population: 4175326
+},
+{
+	CivTAG: "saac_p",
+	CivID: 11,
+	PCID: 11,
+	CPID: 1990,
+	Population: 7218704
+},
+{
+	CivTAG: "riod_p",
+	CivID: 12,
+	PCID: 12,
+	CPID: 1970,
+	Population: 16055174
+},
+{
+	CivTAG: "espi_p",
+	CivID: 13,
+	PCID: 13,
+	CPID: 3027,
+	Population: 3833712
+},
+{
+	CivTAG: "mnnn_p",
+	CivID: 14,
+	PCID: 14,
+	CPID: 2033,
+	Population: 21279353
+},
+{
+	CivTAG: "bra_p",
+	CivID: 15,
+	PCID: 15,
+	CPID: 2020,
+	Population: 2817381
+},
+{
+	CivTAG: "goia_p",
+	CivID: 16,
+	PCID: 16,
+	CPID: 7672,
+	Population: 7056495
+},
+{
+	CivTAG: "toca_p",
+	CivID: 17,
+	PCID: 17,
+	CPID: 8442,
+	Population: 1692452
+},
+{
+	CivTAG: "bahh_p",
+	CivID: 18,
+	PCID: 18,
+	CPID: 1952,
+	Population: 14141626
+},
+{
+	CivTAG: "serg_p",
+	CivID: 19,
+	PCID: 19,
+	CPID: 1940,
+	Population: 2403563
+},
+{
+	CivTAG: "alag_p",
+	CivID: 20,
+	PCID: 20,
+	CPID: 1929,
+	Population: 3127683
+},
+{
+	CivTAG: "perr_p",
+	CivID: 21,
+	PCID: 21,
+	CPID: 1924,
+	Population: 9645321
+},
+{
+	CivTAG: "pari_p",
+	CivID: 22,
+	PCID: 22,
+	CPID: 1923,
+	Population: 4175326
+},
+{
+	CivTAG: "riog_p",
+	CivID: 23,
+	PCID: 23,
+	CPID: 1926,
+	Population: 3619619
+},
+{
+	CivTAG: "ceaa_p",
+	CivID: 24,
+	PCID: 24,
+	CPID: 1945,
+	Population: 8794957
+},
+{
+	CivTAG: "piaa_p",
+	CivID: 25,
+	PCID: 25,
+	CPID: 1995,
+	Population: 3341352
+},
+{
+	CivTAG: "marr_p",
+	CivID: 26,
+	PCID: 26,
+	CPID: 5092,
+	Population: 6776699
+},
+{
+	CivTAG: "rios_p",
+	CivID: 27,
+	PCID: 27,
+	CPID: 1982,
+	Population: 10882965
+}
+]

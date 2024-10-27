@@ -1,0 +1,13 @@
+[
+{
+	Name: "Emanoil Bârzotescu",
+	ImageID: Barzotescu,
+	
+	BornDay: 20,
+	BornMonth: 10,
+	BornYear: 1888,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

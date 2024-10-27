@@ -1,0 +1,13 @@
+[
+{
+	Name: "Maximiliano I de México",
+	ImageID: Maximilianom,
+	
+	BornDay: 6,
+	BornMonth: 7,
+	BornYear: 1832,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

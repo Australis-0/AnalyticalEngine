@@ -1,0 +1,13 @@
+[
+{
+	Name: "Thierry Burkhard",
+	ImageID: Burkhard,
+	
+	BornDay: 30,
+	BornMonth: 7,
+	BornYear: 1964,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

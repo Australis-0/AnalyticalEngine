@@ -1,0 +1,13 @@
+[
+{
+	Name: "Shunroku Hata",
+	ImageID: Hata,
+	
+	BornDay: 26,
+	BornMonth: 7,
+	BornYear: 1879,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

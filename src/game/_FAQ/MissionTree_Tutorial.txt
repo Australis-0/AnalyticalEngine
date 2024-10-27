@@ -1,0 +1,285 @@
+#######################################
+## Read: mods_steam_workshop.txt !
+## 
+## To create a new mod for submission to the Steam Workshop, first create a new folder for your mod within the 'mods' directory.
+## Then, copy or recreate all the modified files into that folder!
+##
+## For example, if a file was originally located in game/ExampleFile.json, 
+## it should be placed in mods/YourModName/game/ExampleFile.json in your mod's folder.
+##
+#####
+
+Missions for the scenario for the specified Civilization:
+mods/YOUR_MOD_NAME/map/THE_MAP/scenarios/THE_SCENARIO/missions/
+
+Default Missions for all Civilizaitons:
+mods/YOUR_MOD_NAME/map/THE_MAP/scenarios/THE_SCENARIO/missions/
+
+#############################
+
+To create a mission tree, you need to know how to add an event to the game, as the mission depends on events.
+game/_FAQ/Event_HowToAdd.txt
+
+An example of a mission tree mod for scenario 1440 for Brandenburg and Hungary can be found at the following path:
+modsExamples/MissionTree_ForCivsInScenario/
+
+If you want to see how the mod works in the game:
+Move the MissionTree_ForCivsInScenario folder from modsExamples/ to mods/.
+Run the game in scenario 1440 and start as Brandenburg or Hungary, and you will see the mission tree for these civilizations from this mod.
+
+#############################
+######## PATH FOR YOUR MOD 
+
+The path for all of your mod missions will be:
+mods/YOUR_MOD_NAME/map/THE_MAP/scenarios/THE_SCENARIO/missions/
+
+mods/YOUR_MOD_NAME/map/Earth3/scenarios/1440/missions/
+## For Modern World scenario it would be:
+mods/YOUR_MOD_NAME/map/Earth3/scenarios/ModernWorld/missions/
+## For Your own map it would be:
+mods/YOUR_MOD_NAME/map/YOUR_MAP/scenarios/THE_SCENARIO/missions/
+
+######## PATH FOR YOUR MOD END
+#############################
+
+So, let’s begin the explanation of how all of it works.
+
+The name of the file containing missions for the specified civilization is based on the CivilizationTag:
+CivilizationTag.json
+
+## In this example, I have created missions for Brandenburg, so I named the file:
+baa.json
+modsExamples/MissionTree_ForCivsInScenario/map/Earth3/scenarios/1440/missions/baa.json
+
+## You can also specify that the civilization needs to be a monarchy by naming the file:
+baa_m.json
+
+Let’s examine the code in baa.json, which contains missions for Brandenburg:
+
+##############################
+############ CODE ############
+
+{
+	Mission:
+	[
+		{
+			ID: 0,
+			Name: "ChallengePoland.t",
+			ImageName: "declare_wars_2.png",
+			
+			MissionEvent: "challenge_poland.txt",
+			
+			TreeColumn: 0,
+			TreeRow: 1,
+			
+			RequiredMission: -1,
+			RequiredMission2: -1,
+			
+			AI: 5,
+		},
+		
+		{
+			ID: 1,
+			Name: "OpportunisticStrike.t",
+			ImageName: "declare_wars_2.png",
+			
+			MissionEvent: "opportunistic_strike.txt",
+			
+			TreeColumn: 1,
+			TreeRow: 5,
+			
+			RequiredMission: -1,
+			RequiredMission2: -1,
+			
+			AI: 5,
+		},
+		
+		{
+			ID: 2,
+			Name: "InfrastructureInitiative.t",
+			ImageName: "infrastructure_initiative.png",
+			
+			MissionEvent: "infrastructure_initiative_2.txt",
+			
+			TreeColumn: 2,
+			TreeRow: 2,
+			
+			RequiredMission: 0,
+			RequiredMission2: 1,
+			
+			AI: 5,
+		},
+		
+	],
+	Age_of_History: Mission
+}
+
+########## CODE END ##########
+##############################
+
+This is the code for one mission:
+
+############ CODE ############
+
+		{
+			ID: 0,
+			Name: "ChallengePoland.t",
+			ImageName: "declare_wars_2.png",
+			
+			MissionEvent: "challenge_poland.txt",
+			
+			TreeColumn: 0,
+			TreeRow: 1,
+			
+			RequiredMission: -1,
+			RequiredMission2: -1,
+			
+			AI: 5,
+		},
+		
+########## CODE END ##########
+
+## New missions must always be added at the end of the mission code!
+
+ID: 0,
+## This ID must be an integer and needs to be incremental, using the next number after the last mission ID
+## The ID is used for RequiredMission and RequiredMission2.
+
+Name: "ChallengePoland.t",
+
+## This is the name of the mission, which will be displayed in the Mission Tree. (How to add translations for mod: game/_FAQ/Translations_For_Your_Mod.txt)
+## In this example, I have used the translation key, but you can also just put the text. For example:
+Name: "Challenge Poland",
+
+#############################
+####### MISSION IMAGE #######
+
+ImageName: "declare_wars_2.png",
+## This defines the mission image that will be displayed in the mission tree.
+
+The image dimensions should be 154 pixels in width and 100 pixels in height for all UI scales. (use only the H/ folder)
+The images are placed in the scenario dictionary at the following path:
+mods/YOUR_MOD_NAME/map/Earth3/scenarios/1440/missions/missionsImages/H/
+
+#############################
+
+You can also use missionImages from the main missions folder in the game:
+game/missions/missionsImages/
+
+For example:
+ImageName: "expand_territory.png",
+
+The game will load this mission image from:
+game/missions/missionsImages/expand_territory.png
+
+####### MISSION IMAGE #######
+
+#############################
+####### MISSION EVENT #######
+
+MissionEvent: "challenge_poland.txt",
+## This is the most important part of the mission; in this line, you define which event to run for this mission.
+## I have specified that for this mission, the game will load the "challenge_poland.txt" mission event.
+## The path where your mission's events should be placed is:
+mods/YOUR_MOD_NAME/map/THE_MAP/scenarios/THE_SCENARIO/missions/missionsEvents/
+
+In the modsExamples/MissionTree_ForCivsInScenario/, you can find this event to check it out at the following path:
+modsExamples/MissionTree_ForCivsInScenario/map/Earth3/scenarios/1440/missions/missionsEvents/challenge_poland.txt
+
+
+Inside the challenge_poland.txt file, you will find that it contains the same event code as the normal event.
+
+desc=ChallengePoland.d
+## desc=ChallengePoland.d is the description that will be shown when the mission is hovered over.
+## It should inform the player about what they need to do to run this event and possibly the expected outcome.
+##
+## I have used the translation key, but if you won't be making any translations, you can simply provide the description.
+## For example:
+desc=As Brandenburg, declare war on Poland to expand your influence and assert dominance in the region.
+
+#! This description is in the event mission file (challenge_poland.txt).
+
+#############################
+
+You can also use missionEvents from the main missions folder in the game:
+game/missions/missionsEvents/
+
+For example:
+MissionEvent: "expand_territory.txt"
+
+The game will load this mission from:
+game/missions/missionsEvents/expand_territory.txt
+
+####### MISSION EVENT #######
+#############################
+
+
+TreeColumn: 0,
+## TreeColumn represents the X position in the Mission Tree.
+## In this example, the position is 0. The range starts at 0 with no upper limit.
+
+TreeRow: 1,
+## TreeRow represents the Y position in the Mission Tree, with a range of 0 to 5(or more).
+
+RequiredMission: -1,
+## The ID of the first required mission to enable this mission; use -1 if none is required.
+
+RequiredMission2: -1,
+## The ID of the second required mission to enable this mission; use -1 if none is required.
+
+AI: 5,
+## It does nothing for now, but do not remove it.
+
+So that's all!
+Study the modsExamples/MissionTree_ForCivsInScenario/ mod to master mission creation.
+Once you understand it, making missions becomes very easy!
+
+
+#############################
+#### HOW TO FIND CIV TAG ####
+## Civilization TAGs:
+
+## Locate Civilization tags for your scenario:
+To find the list of civilization tags in a specific scenario, go to:
+map/THE_MAP/scenarios/THE_SCENARIO/Data.json
+
+## Find all Civilization tags and their names:
+Look in the file: game/languages/civilizations/Bundle.properties
+Find the entry for Belgium. Its tag will be: bel
+Find the entry for Brandenburg. Its tag will be: baa
+Find the entry for Hungary. Its tag will be: hun
+
+#### HOW TO FIND CIV TAG ####
+#############################
+
+############ CODE ############
+
+		{
+			ID: 2,
+			Name: "InfrastructureInitiative.t",
+			ImageName: "infrastructure_initiative.png",
+			
+			MissionEvent: "infrastructure_initiative_2.txt",
+			
+			TreeColumn: 2,
+			TreeRow: 2,
+			
+			RequiredMission: 0,
+			RequiredMission2: 1,
+			
+			AI: 5,
+		},
+
+########## CODE END ##########
+
+In this mission, you can see that to unlock this mission, the missions with ID: 0 and ID: 1 must be unlocked first!
+
+##############################
+
+The main difference between an event and a mission in the mission tree is that the mission must be clicked manually,
+and all previous missions must be completed if they are required.
+
+##############################
+
+If you would like to create two different mission paths and exclude one of them if the other is chosen, then:
+READ: game/_FAQ/MissionTree_DisablePath.txt

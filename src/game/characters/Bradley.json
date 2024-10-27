@@ -1,0 +1,13 @@
+[
+{
+	Name: "Omar Bradley",
+	ImageID: Bradley,
+	
+	BornDay: 12,
+	BornMonth: 2,
+	BornYear: 1893,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

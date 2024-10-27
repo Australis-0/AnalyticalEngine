@@ -1,0 +1,13 @@
+[
+{
+	Name: "Li Qiang",
+	ImageID: "Qiang",
+	
+	BornDay: 23,
+	BornMonth: 7,
+	BornYear: 1959,
+	
+	Attack: -1,
+	Defense: -1,
+}
+]

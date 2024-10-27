@@ -1,0 +1,13 @@
+[
+{
+	Name: "Jacek Czaputowicz",
+	ImageID: Czaputowicz,
+	
+	BornDay: 30,
+	BornMonth: 5,
+	BornYear: 1956,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

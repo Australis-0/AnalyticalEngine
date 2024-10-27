@@ -1,0 +1,13 @@
+[
+{
+	Name: "Alexander Kolchak",
+	ImageID: Kolchak,
+	
+	BornDay: 16,
+	BornMonth: 11,
+	BornYear: 1874,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

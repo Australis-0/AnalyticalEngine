@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Impostor",
+			ImageID: 230,
+			
+			BornDay: 1,
+			BornMonth: 1,
+			BornYear: 1911,
+			
+			ReignYear: 1912,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

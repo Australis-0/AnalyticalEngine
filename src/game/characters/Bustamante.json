@@ -1,0 +1,13 @@
+[
+{
+	Name: "Anastasio Bustamante",
+	ImageID: Bustamante,
+	
+	BornDay: 27,
+	BornMonth: 7,
+	BornYear: 1780,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

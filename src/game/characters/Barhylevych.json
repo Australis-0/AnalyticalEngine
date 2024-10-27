@@ -1,0 +1,13 @@
+[
+{
+	Name: "Anatoliy Barhylevych",
+	ImageID: Barhylevych,
+	
+	BornDay: 8,
+	BornMonth: 4,
+	BornYear: 1969,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

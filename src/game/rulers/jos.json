@@ -1,0 +1,116 @@
+{
+	"Rulers": [
+		{
+			"Name": "Wang Geon",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 877,
+			
+			"ReignYear": 918
+		},
+		{
+			"Name": "Hyejong",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 918,
+			
+			"ReignYear": 943
+		},
+		{
+			"Name": "Seongjong",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 961,
+			
+			"ReignYear": 981
+		},
+		{
+			"Name": "Gojong",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1009,
+			
+			"ReignYear": 1033
+		},
+		{
+			"Name": "Wang So",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1045,
+			
+			"ReignYear": 1076
+		},
+		{
+			"Name": "Gongmin",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1330,
+			
+			"ReignYear": 1351
+		},
+		{
+			"Name": "Taejo",
+			"ImageID": -1,
+			
+			"BornDay": 27,
+			"BornMonth": 6,
+			"BornYear": 1335,
+			
+			"ReignYear": 1392
+		},
+		{
+			"Name": "Sejong the Great",
+			"ImageID": -1,
+			
+			"BornDay": 15,
+			"BornMonth": 5,
+			"BornYear": 1397,
+			
+			"ReignYear": 1418
+		},
+		{
+			"Name": "Injo",
+			"ImageID": -1,
+			
+			"BornDay": 16,
+			"BornMonth": 12,
+			"BornYear": 1595,
+			
+			"ReignYear": 1623
+		},
+		{
+			"Name": "Gojong",
+			"ImageID": -1,
+			
+			"BornDay": 8,
+			"BornMonth": 9,
+			"BornYear": 1852,
+			
+			"ReignYear": 1863
+		},
+		{
+			"Name": "Sunjong",
+			"ImageID": -1,
+			
+			"BornDay": 25,
+			"BornMonth": 3,
+			"BornYear": 1874,
+			
+			"ReignYear": 1907
+		}
+	],
+	
+	"Age_of_History": "Rulers"
+}

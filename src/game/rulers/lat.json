@@ -1,0 +1,26 @@
+{
+	Rulers: [
+		{
+			Name: "Karlis Ulmanis",
+			ImageID: 271,
+			
+			BornDay: 4,
+			BornMonth: 9,
+			BornYear: 1877,
+			
+			ReignYear: 1935,
+		},
+		{
+			Name: "Edgars Rinkēvičs",
+			ImageID: 123,
+			
+			BornDay: 21,
+			BornMonth: 9,
+			BornYear: 1973,
+			
+			ReignYear: 2022,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

@@ -1,0 +1,35 @@
+Settings of province border can be changed, go to:
+
+game/settings/
+
+ProvinceBorder_Low.json
+ProvinceBorder_Medium.json
+ProvinceBorder_High.json
+ProvinceBorder_VeryHigh.json
+
+
+DRAW_BORDERS: 0.125,
+# At what scale turn off provicne border drawing
+
+
+SCALE_NONE_NONE: 0.475,
+SCALE_NONE_POINTY: 0.65,
+SCALE_POINTY_POINTY: 0.75,
+SCALE_POINTY_SMOOTH: 0.9,
+
+# On what scale should the province borders be changed to a lower quality one
+
+From worst to best province border quality:
+SCALE_NONE_NONE -> SCALE_NONE_POINTY -> SCALE_POINTY_POINTY -> SCALE_POINTY_SMOOTH(Best)
+
+
+ENABLE_DOUBLE_BORDER: true,
+
+true or false
+
+
+MIN_BORDER_WIDTH: 4.0,
+MAX_BORDER_WIDTH: 10.0,
+BORDER_WIDTH_DIVIDE: 2.0,
+
+Float values

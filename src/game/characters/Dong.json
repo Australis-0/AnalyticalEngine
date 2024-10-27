@@ -1,0 +1,13 @@
+[
+{
+	Name: "Dong Jun",
+	ImageID: "Dong.png",
+	
+	BornDay: 16,
+	BornMonth: 7,
+	BornYear: 1961,
+	
+	Attack: -1
+	Defense: -1
+}
+]

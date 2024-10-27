@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Abdourahamane Tchiani",
+			ImageID: 154,
+			
+			BornDay: 21,
+			BornMonth: 4,
+			BornYear: 1964,
+			
+			ReignYear: 2022,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

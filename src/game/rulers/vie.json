@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Nguyễn Phú Trọng",
+			ImageID: 216,
+			
+			BornDay: 14,
+			BornMonth: 4,
+			BornYear: 1944,
+			
+			ReignYear: 2018,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

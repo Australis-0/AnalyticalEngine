@@ -1,0 +1,13 @@
+[
+{
+	Name: "Edmund Allenby",
+	ImageID: Allenby,
+	
+	BornDay: 23,
+	BornMonth: 4,
+	BornYear: 1861,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

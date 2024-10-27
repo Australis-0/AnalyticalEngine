@@ -1,0 +1,30 @@
+id=test_event_1
+title=Here is my title of the event 1!
+desc=And The description of the Event 1
+
+image=economy.png
+
+show_in_missions=true
+mission_image=2
+
+only_once=true
+
+trigger_and
+next_and
+invested_in_economy_over=1
+next_and
+random_chance=77.5
+trigger_and_end
+
+option_btn
+name=AcceptTheInevitable
+ai=10
+province_devastation_capital=20
+option_end
+
+option_btn
+name=SpendGold
+ai=45
+gold=-30
+province_devastation_capital=4
+option_end

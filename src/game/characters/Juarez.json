@@ -1,0 +1,13 @@
+[
+{
+	Name: "Benito Juárez",
+	ImageID: Juarez,
+	
+	BornDay: 21,
+	BornMonth: 3,
+	BornYear: 1806,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

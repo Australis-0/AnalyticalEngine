@@ -1,0 +1,13 @@
+[
+{
+	Name: "George Smith Patton Jr",
+	ImageID: Patton,
+	
+	BornDay: 11,
+	BornMonth: 11,
+	BornYear: 1885,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Agustín de Iturbide",
+	ImageID: Iturbide,
+	
+	BornDay: 27,
+	BornMonth: 9,
+	BornYear: 1783,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Bassirou Diomaye Faye",
+			ImageID: 178,
+			
+			BornDay: 25,
+			BornMonth: 4,
+			BornYear: 1980,
+			
+			ReignYear: 2022,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

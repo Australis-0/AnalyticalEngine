@@ -1,0 +1,18 @@
+{
+sCivTag: "uni_m",
+iTurnID: 48605,
+iDay: 21,
+iMonth: 8,
+iYear: 1573,
+scenarioTAG: "1440",
+SCENARIO_EVENTS: true,
+AOC_MODE: false,
+HOURS_PER_TURN: 24,
+DIFFICULTY: 2,
+FOG_OF_WAR: true,
+SPECTATOR_MODE: false,
+SANDBOX: false,
+ENABLE_CALL_VASSALS: false,
+AI_AGGRESSIVENESS: 0,
+time: 1729701820493
+}

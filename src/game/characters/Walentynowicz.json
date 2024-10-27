@@ -1,0 +1,13 @@
+[
+{
+	Name: "Anna Walentynowicz",
+	ImageID: Walentynowicz,
+	
+	BornDay: 15,
+	BornMonth: 8,
+	BornYear: 1929,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

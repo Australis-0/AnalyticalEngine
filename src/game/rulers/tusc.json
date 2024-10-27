@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Leopold II",
+			ImageID: 327,
+			
+			BornDay: 3,
+			BornMonth: 10,
+			BornYear: 1797,
+			
+			ReignYear: 1824,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

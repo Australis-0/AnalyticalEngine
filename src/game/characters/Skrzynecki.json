@@ -1,0 +1,13 @@
+[
+{
+	Name: "Jan Skrzynecki",
+	ImageID: Skrzynecki,
+	
+	BornDay: 8,
+	BornMonth: 2,
+	BornYear: 1787,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

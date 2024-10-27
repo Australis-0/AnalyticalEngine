@@ -1,0 +1,13 @@
+[
+{
+	Name: "Sergey Kamenev",
+	ImageID: Kamenev,
+	
+	BornDay: 16,
+	BornMonth: 4,
+	BornYear: 1881,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

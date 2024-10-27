@@ -1,0 +1,13 @@
+[
+{
+	Name: "Georgy Malenkov",
+	ImageID: Malenkov,
+	
+	BornDay: 8,
+	BornMonth: 1,
+	BornYear: 1902,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

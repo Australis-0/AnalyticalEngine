@@ -1,0 +1,13 @@
+[
+{
+	Name: "Xu Yongchang",
+	ImageID: Xu_Yongchang,
+	
+	BornDay: 15,
+	BornMonth: 12,
+	BornYear: 1885,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

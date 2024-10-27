@@ -1,0 +1,13 @@
+[
+{
+	Name: "Zbigniew Rau",
+	ImageID: Rau,
+	
+	BornDay: 3,
+	BornMonth: 2,
+	BornYear: 1955,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

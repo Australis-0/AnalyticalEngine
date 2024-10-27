@@ -1,0 +1,8 @@
+{
+	Name: "New three Resources, at the end of the file always!",
+	Description: "This item will add new thee Resources.",
+	
+	Tags: [ "Resources", "Goods" ],
+	
+	ChangeNote: "First release",
+}

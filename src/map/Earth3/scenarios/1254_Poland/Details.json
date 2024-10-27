@@ -1,0 +1,21 @@
+{
+Name: "1254",
+Author: "Łukasz Jakowski",
+Civs: 15,
+Age: 3,
+Day: 4,
+Month: 9,
+Year: 1254,
+Campaign: true,
+CivDefault_Gold: 250,
+CivDefault_GoldRandom: 100,
+CivDefault_Legacy: 200,
+CivDefault_LegacyRandom: 50,
+CivDefault_ManpowerPercentage: 60,
+CivDefault_Technology: -1,
+ProvinceDefault_Population: 65000,
+ProvinceDefault_Economy: 10,
+ProvinceDefault_TaxEfficiency: 10,
+ProvinceDefault_Manpower: 3,
+HoursPerTurn: 24
+}

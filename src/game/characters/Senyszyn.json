@@ -1,0 +1,13 @@
+[
+{
+	Name: "Joanna Senyszyn",
+	ImageID: Senyszyn,
+	
+	BornDay: 1,
+	BornMonth: 2,
+	BornYear: 1949,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

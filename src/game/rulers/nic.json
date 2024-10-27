@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Daniel Ortega",
+			ImageID: 153,
+			
+			BornDay: 11,
+			BornMonth: 11,
+			BornYear: 1945,
+			
+			ReignYear: 2007,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

@@ -1,0 +1,26 @@
+{
+	Rulers: [
+		{
+			Name: "Gabriel Terra",
+			ImageID: 283,
+			
+			BornDay: 1,
+			BornMonth: 8,
+			BornYear: 1873,
+			
+			ReignYear: 1931,
+		},
+		{
+			Name: "Luis Lacalle Pou",
+			ImageID: 211,
+			
+			BornDay: 11,
+			BornMonth: 8,
+			BornYear: 1973,
+			
+			ReignYear: 2020,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

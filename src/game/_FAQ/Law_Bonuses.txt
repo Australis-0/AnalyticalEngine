@@ -1,0 +1,224 @@
+List of available bonuses for Law:
+
+MonthlyIncome: [X],
+MonthlyLegacy: [X],
+MonthlyLegacy_Percentage: [X],
+
+Gold: [X],
+
+ConstructionCost: [X],
+AdministrationBuildingsCost: [X],
+MilitaryBuildingsCost: [X],
+EconomyBuildingsCost: [X],
+
+ConstructionTime: [X],
+
+WonderConstructionCost: [X],
+
+TaxEfficiency: [X],
+ProvinceMaintenance: [X],
+BuildingsMaintenanceCost: [X],
+
+ArmyMaintenance: [X],
+MaxManpower: [X],
+MaxManpower_Percentage: [X],
+
+ManpowerRecoverySpeed: [X],
+ReinforcementSpeed: [X],
+
+ArmyMovementSpeed: [X],
+
+Research: [X],
+ResearchPoints: [X],
+
+MaxMorale: [X],
+ArmyMoraleRecovery: [X],
+
+WarScoreCost: [X],
+
+BuildingSlot: [X],
+MaxInfrastructure: [X],
+
+Devastation: [X],
+GrowthRate: [X],
+
+IncomeProduction: [X],
+ProductionEfficiency: [X],
+
+IncomeTaxation: [X],
+IncomeEconomy: [X],
+
+InvestInEconomyCost: [X],
+IncreaseManpowerCost: [X],
+IncreaseTaxEfficiencyCost: [X],
+IncreaseGrowthRateCost: [X],
+DevelopInfrastructureCost: [X],
+
+GeneralAttack: [X],
+GeneralDefense: [X],
+
+UnitsAttack: [X],
+UnitsDefense: [X],
+
+SiegeEffectiveness: [X],
+
+ImproveRelationsModifier: [X],
+IncomeFromVassals: [X],
+LoanInterest: [X],
+DiplomacyPoints: [X],
+
+CoreCost: [X],
+ReligionCost: [X],
+
+RecruitmentTime: [X],
+
+RecruitArmyCost: [X],
+RecruitArmyFirstLineCost: [X],
+RecruitArmySecondLineCost: [X],
+
+MaxNumOfAlliances: [X],
+AdvisorMaxLevel: [X],
+AdvisorPoolSize: [X],
+
+MaxNumberOfLoans: [X],
+MaximumLevelOfTheMilitaryAcademyForGenerals: [X],
+MaximumLevelOfTheMilitaryAcademy: [X],
+MaximumLevelOfTheSupremeCourt: [X],
+MaximumLevelOfCapitalCity: [X],
+
+AggressiveExpansion: [X],
+DiseaseDeathRate: [X],
+
+AdvisorCost: [X],
+GeneralCost: [X],
+
+BattleWidth: [X],
+Discipline: [X],
+
+ManpowerRecoveryFromADisbandedArmy: [X],
+MaximumAmountOfGold: [X],
+MaximumAmountOfGold_Percentage: [X],
+
+Loot: [X],
+
+AllCharactersLifeExpectancy: [X],
+RegimentsLimit: [X],
+
+UnlocksColonization: [X],
+
+#######################################
+
+public int ImageID[];
+String Title;
+
+String Law[];
+String LawDesc[];
+
+int RequiredTechID[];
+int RequiredGovernmentID[];
+
+float MonthlyIncome[];
+float MonthlyLegacy[];
+float MonthlyLegacy_Percentage[];
+
+float Gold[];
+
+float ConstructionCost[];
+float AdministrationBuildingsCost[];
+float MilitaryBuildingsCost[];
+float EconomyBuildingsCost[];
+
+float ConstructionTime[];
+
+float WonderConstructionCost[];
+
+float TaxEfficiency[];
+float ProvinceMaintenance[];
+float BuildingsMaintenanceCost[];
+
+float ArmyMaintenance[];
+int MaxManpower[];
+float MaxManpower_Percentage[];
+
+float ManpowerRecoverySpeed[];
+float ReinforcementSpeed[];
+
+float ArmyMovementSpeed[];
+
+float Research[];
+float ResearchPoints[];
+
+float MaxMorale[];
+float ArmyMoraleRecovery[];
+
+float WarScoreCost[];
+
+int BuildingSlot[];
+int MaxInfrastructure[];
+
+float Devastation[];
+float GrowthRate[];
+
+float IncomeProduction[];
+float ProductionEfficiency[];
+
+float IncomeTaxation[];
+float IncomeEconomy[];
+
+float InvestInEconomyCost[];
+float IncreaseManpowerCost[];
+float IncreaseTaxEfficiencyCost[];
+float IncreaseGrowthRateCost[];
+float DevelopInfrastructureCost[];
+
+int GeneralAttack[];
+int GeneralDefense[];
+
+int UnitsAttack[];
+int UnitsDefense[];
+
+float SiegeEffectiveness[];
+
+float ImproveRelationsModifier[];
+float IncomeFromVassals[];
+float LoanInterest[];
+float DiplomacyPoints[];
+
+float CoreCost[];
+float ReligionCost[];
+
+float RecruitmentTime[];
+
+float RecruitArmyCost[];
+float RecruitArmyFirstLineCost[];
+float RecruitArmySecondLineCost[];
+
+int MaxNumOfAlliances[];
+int AdvisorMaxLevel[];
+int AdvisorPoolSize[];
+
+int MaxNumberOfLoans[];
+int MaximumLevelOfTheMilitaryAcademyForGenerals[];
+int MaximumLevelOfTheMilitaryAcademy[];
+int MaximumLevelOfTheSupremeCourt[];
+int MaximumLevelOfCapitalCity[];
+
+float AggressiveExpansion[];
+float DiseaseDeathRate[];
+
+float AdvisorCost[];
+float GeneralCost[];
+
+int BattleWidth[];
+float Discipline[];
+
+float ManpowerRecoveryFromADisbandedArmy[];
+float MaximumAmountOfGold[];
+float MaximumAmountOfGold_Percentage[];
+
+float Loot[];
+
+int AllCharactersLifeExpectancy[];
+int RegimentsLimit[];
+
+boolean UnlocksColonization[];

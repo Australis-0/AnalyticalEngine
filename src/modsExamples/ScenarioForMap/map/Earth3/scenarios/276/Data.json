@@ -1,0 +1,26 @@
+[
+{
+	CivTAG: "por2_m",
+	CivID: 1,
+	PCID: 1,
+	CPID: 11
+},
+{
+	CivTAG: "gali_m",
+	CivID: 2,
+	PCID: 2,
+	CPID: 28
+},
+{
+	CivTAG: "arag_m",
+	CivID: 3,
+	PCID: 3,
+	CPID: 52
+},
+{
+	CivTAG: "cast_m",
+	CivID: 4,
+	PCID: 4,
+	CPID: 6561
+}
+]

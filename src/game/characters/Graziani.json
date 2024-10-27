@@ -1,0 +1,13 @@
+[
+{
+	Name: "Rodolfo Graziani",
+	ImageID: Graziani,
+	
+	BornDay: 11,
+	BornMonth: 8,
+	BornYear: 1882,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

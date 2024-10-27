@@ -1,0 +1,21 @@
+{
+FormableCivTag: "wife",
+ClaimantsTag: [
+	"try",
+	"grn",
+	"sai",
+	"bab",
+	"sal",
+	"mqu",
+	"ddo",
+	"jam",
+	"guu",
+	"moo",
+	"aib",
+	"skn",
+	"all",
+	"vir"
+],
+Provinces: [ 2347, 2345, 2346, 2342, 2340, 2341, 2339, 2344, 2343, 2352, 2351, 5071, 5073, 5072, 2350, 2349, 2348, 2338, 2337, 1694, 1695, 1693 ],
+CapitalProvinceID: 2347
+}

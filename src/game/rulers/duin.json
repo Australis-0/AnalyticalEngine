@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Alidius Tjarda van Starkenborgh Stachouwer",
+			ImageID: 278,
+			
+			BornDay: 7,
+			BornMonth: 3,
+			BornYear: 1888,
+			
+			ReignYear: 1935,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

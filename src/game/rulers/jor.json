@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Abdullah II of Jordan",
+			ImageID: 116,
+			
+			BornDay: 30,
+			BornMonth: 1,
+			BornYear: 1962,
+			
+			ReignYear: 1999,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

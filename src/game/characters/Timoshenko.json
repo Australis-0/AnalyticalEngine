@@ -1,0 +1,13 @@
+[
+{
+	Name: "Semyon Timoshenko",
+	ImageID: Timoshenko,
+	
+	BornDay: 18,
+	BornMonth: 2,
+	BornYear: 1895,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

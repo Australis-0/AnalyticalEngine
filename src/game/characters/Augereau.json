@@ -1,0 +1,13 @@
+[
+{
+	Name: "Charles Pierre Augereau",
+	ImageID: Augereau,
+	
+	BornDay: 21,
+	BornMonth: 10,
+	BornYear: 1757,
+	
+	Attack: 6,
+	Defense: 6,
+},
+]

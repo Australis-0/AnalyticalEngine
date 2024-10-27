@@ -1,0 +1,13 @@
+[
+{
+	Name: "Zygmunt Berling",
+	ImageID: Berling,
+	
+	BornDay: 27,
+	BornMonth: 4,
+	BornYear: 1896,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

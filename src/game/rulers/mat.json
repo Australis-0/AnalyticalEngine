@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Myriam Spiteri Debono",
+			ImageID: 135,
+			
+			BornDay: 25,
+			BornMonth: 11,
+			BornYear: 1952,
+			
+			ReignYear: 2022,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

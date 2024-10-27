@@ -1,0 +1,13 @@
+[
+{
+	Name: "Henry Lukin",
+	ImageID: Lukin,
+	
+	BornDay: 24,
+	BornMonth: 5,
+	BornYear: 1860,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

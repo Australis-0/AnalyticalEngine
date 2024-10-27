@@ -1,0 +1,13 @@
+[
+{
+	Name: "Louis Gabriel Suchet",
+	ImageID: Suchet,
+	
+	BornDay: 2,
+	BornMonth: 3,
+	BornYear: 1770,
+	
+	Attack: 7,
+	Defense: 8,
+},
+]

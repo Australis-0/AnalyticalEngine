@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Salome Zourabichvili",
+			ImageID: 93,
+			
+			BornDay: 18,
+			BornMonth: 3,
+			BornYear: 1952,
+			
+			ReignYear: 2018,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

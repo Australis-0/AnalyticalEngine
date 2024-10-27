@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Christine Kangaloo",
+			ImageID: 202,
+			
+			BornDay: 1,
+			BornMonth: 12,
+			BornYear: 1961,
+			
+			ReignYear: 2022,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

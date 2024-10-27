@@ -1,0 +1,13 @@
+[
+{
+	Name: "Adam Jerzy Czartoryski",
+	ImageID: Czartoryski_Adam_Jerzy,
+	
+	BornDay: 14,
+	BornMonth: 1,
+	BornYear: 1870,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

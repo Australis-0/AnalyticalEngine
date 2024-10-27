@@ -1,0 +1,10 @@
+map/MapEditorSettings.txt
+
+CONVERT_AOH2_MAP_PROVINCES_DATA_TO_AOH3=false
+or
+CONVERT_AOH2_MAP_PROVINCES_DATA_TO_AOH3=true
+
+
+YouTube Tutorial:
+
+https://www.youtube.com/watch?v=NmyliyJB4ng

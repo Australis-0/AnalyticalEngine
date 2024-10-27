@@ -1,0 +1,648 @@
+{
+	Resources:
+	[
+		{
+			Name: Grain,
+			ID: 0,
+			ImageID: 0,
+			GroupID: 0,
+			
+			Color: [210, 152, 60],
+			
+			ArmyMaintenance: -5,
+			
+			Price: 0.84,
+			RequiredTechID: -1,
+		},
+		{
+			Name: Rice,
+			ID: 1,
+			ImageID: 1,
+			GroupID: 0,
+			
+			Color: [225, 205, 156],
+			
+			ArmyMaintenance: -5,
+			
+			Price: 0.84,
+			RequiredTechID: -1,
+		},
+		{
+			Name: Fish,
+			ID: 2,
+			ImageID: 2,
+			GroupID: 0,
+			
+			Color: [113, 100, 95],
+			
+			ProvinceMaintenance: -2.5,
+			
+			Price: 0.78,
+			RequiredTechID: -1,
+		},
+		{
+			Name: Cattle,
+			ID: 3,
+			ImageID: 3,
+			GroupID: 0,
+			
+			Color: [154, 71, 34],
+			
+			RecruitArmyFirstLineCost: -2.5,
+			
+			Price: 0.8,
+			RequiredTechID: -1,
+		},
+		{
+			Name: Fruit,
+			ID: 4,
+			ImageID: 4,
+			GroupID: 0,
+			
+			Color: [221, 74, 45],
+			
+			MaxManpower: 5000,
+			
+			Price: 0.8,
+			RequiredTechID: -1,
+		},
+		{
+			Name: Spices,
+			ID: 5,
+			ImageID: 5,
+			GroupID: 2,
+			
+			Color: [248, 182, 7],
+			
+			TaxEfficiency: 2.5,
+			
+			Price: 1.84,
+			RequiredTechID: -1,
+		},
+		{
+			Name: Fur,
+			ID: 6,
+			ImageID: 6,
+			GroupID: 3,
+			
+			Color: [251, 226, 187],
+			
+			MonthlyLegacy: 1.25,
+			
+			Price: 1.22,
+			RequiredTechID: -1,
+		},
+		{
+			Name: Wine,
+			ID: 7,
+			ImageID: 7,
+			GroupID: 2,
+			
+			Color: [71, 27, 73],
+			
+			GeneralDefense: 2,
+			
+			Price: 1.26,
+			RequiredTechID: -1,
+		},
+		
+		{
+			Name: Coffee,
+			ID: 8,
+			ImageID: 8,
+			GroupID: 2,
+			
+			Color: [119, 70, 54],
+			
+			ResearchPoints: 2.5,
+			
+			Price: 1.36,
+			RequiredTechID: -1,
+		},
+		{
+			Name: Cocoa,
+			ID: 9,
+			ImageID: 9,
+			GroupID: 2,
+			
+			Color: [88, 36, 28],
+			
+			MaxMorale: 0.1,
+			
+			Price: 1.62,
+			RequiredTechID: -1,
+		},
+		{
+			Name: Tea,
+			ID: 10,
+			ImageID: 10,
+			GroupID: 2,
+			
+			Color: [190, 115, 66],
+			
+			GeneralAttack: 2,
+			
+			Price: 1.32,
+			RequiredTechID: -1,
+		},
+		{
+			Name: Sugar,
+			ID: 11,
+			ImageID: 11,
+			GroupID: 1,
+			
+			Color: [213, 216, 220],
+			
+			MaxMorale: 0.05,
+			
+			Price: 1.66,
+			RequiredTechID: -1,
+		},
+		{
+			Name: Salt,
+			ID: 12,
+			ImageID: 12,
+			GroupID: 1,
+			
+			Color: [190, 187, 189],
+			
+			GrowthRate: 2.5,
+			
+			Price: 1.31,
+			RequiredTechID: -1,
+		},
+		{
+			Name: Tobacco,
+			ID: 13,
+			ImageID: 13,
+			GroupID: 2,
+			
+			Color: [147, 79, 41],
+			
+			RevolutionaryRisk: -10,
+			
+			Price: 1.59,
+			RequiredTechID: -1,
+		},
+		{
+			Name: Wool,
+			ID: 14,
+			ImageID: 14,
+			GroupID: 1,
+			
+			Color: [241, 221, 193],
+			
+			IncreaseManpowerCost: -5,
+			
+			Price: 0.9,
+			RequiredTechID: -1,
+		},
+		{
+			Name: Cotton,
+			ID: 15,
+			ImageID: 15,
+			GroupID: 1,
+			
+			Color: [236, 231, 229],
+			
+			IncreaseManpowerCost: -5,
+			
+			Price: 1.42,
+			RequiredTechID: -1,
+		},
+		{
+			Name: Dye,
+			ID: 16,
+			ImageID: 16,
+			GroupID: 3,
+			
+			Color: [53, 88, 140],
+			
+			ImproveRelationsModifier: 10,
+			
+			Price: 1.82,
+			RequiredTechID: -1,
+		},
+		{
+			Name: Silk,
+			ID: 17,
+			ImageID: 17,
+			GroupID: 3,
+			
+			Color: [242, 220, 169],
+			
+			MonthlyLegacy: 0.85,
+			
+			Price: 1.56,
+			RequiredTechID: -1,
+		},
+		
+		
+		{
+			Name: Wood,
+			ID: 18,
+			ImageID: 18,
+			GroupID: 4,
+			
+			Color: [142, 81, 48],
+			
+			EconomyBuildingsCost: -0.1,
+			
+			Price: 0.87,
+			RequiredTechID: -1,
+		},
+		{
+			Name: Bronze,
+			ID: 19,
+			ImageID: 19,
+			GroupID: 4,
+			
+			Color: [180, 76, 19],
+			
+			RecruitmentTime: -10,
+			
+			Price: 0.84,
+			RequiredTechID: -1,
+		},
+		{
+			Name: Iron,
+			ID: 20,
+			ImageID: 20,
+			GroupID: 4,
+			
+			Color: [170, 188, 196],
+			
+			RecruitArmySecondLineCost: -8,
+			
+			Price: 1.07,
+			RequiredTechID: -1,
+		},
+		{
+			Name: Silver,
+			ID: 21,
+			ImageID: 21,
+			GroupID: 4,
+			
+			Color: [121, 138, 145],
+			
+			TaxEfficiency: 2.0,
+			
+			Price: 1.54,
+			RequiredTechID: -1,
+		},
+		{
+			Name: Gold,
+			ID: 22,
+			ImageID: 22,
+			GroupID: 3,
+			
+			Color: [235, 197, 76],
+			
+			MonthlyIncome: 2.5,
+			
+			Price: 2.04,
+			RequiredTechID: -1,
+		},
+		{
+			Name: Ivory,
+			ID: 23,
+			ImageID: 23,
+			GroupID: 3,
+			
+			Color: [235, 220, 195],
+			
+			IncomeFromVassals: 0.1,
+			
+			Price: 1.81,
+			RequiredTechID: -1,
+		},
+		{
+			Name: Diamonds,
+			ID: 24,
+			ImageID: 24,
+			GroupID: 3,
+			
+			Color: [0, 156, 203],
+			
+			MonthlyIncome: 2.25,
+			
+			Price: 2.34,
+			RequiredTechID: -1,
+		},
+		
+		
+		{
+			Name: Coal,
+			ID: 25,
+			ImageID: 25,
+			GroupID: 4,
+			
+			Color: [45, 44, 48],
+			
+			InvestInEconomyCost: -0.1,
+			
+			Price: 1.68,
+			RequiredTechID: 75,
+		},
+		{
+			Name: Oil,
+			ID: 26,
+			ImageID: 26,
+			GroupID: 4,
+			
+			Color: [32, 26, 32],
+			
+			ArmyMovementSpeed: 15,
+			
+			Price: 1.93,
+			RequiredTechID: 60,
+		},
+		{
+			Name: Uranium,
+			ID: 27,
+			ImageID: 27,
+			GroupID: 4,
+			
+			Color: [173, 205, 41],
+			
+			AggressiveExpansion: -10,
+			
+			Price: 1.86,
+			RequiredTechID: 75,
+		},
+		{
+			Name: Marble,
+			ID: 28,
+			ImageID: 28,
+			GroupID: 3,
+			
+			Color: [207, 200, 193],
+			
+			MonthlyLegacy: 0.65,
+			
+			Price: 1.73,
+			RequiredTechID: -1,
+		},
+		{
+			Name: Porcelain,
+			ID: 29,
+			ImageID: 29,
+			GroupID: 3,
+			
+			Color: [249, 251, 229],
+			
+			InvestInEconomyCost: -0.05,
+			
+			Price: 1.33,
+			RequiredTechID: -1,
+		},
+		{
+			Name: Opium,
+			ID: 30,
+			ImageID: 30,
+			GroupID: 1,
+			
+			Color: [152, 37, 75],
+			
+			IncomeFromVassals: 0.075,
+			
+			Price: 0.97,
+			RequiredTechID: -1,
+		},
+		{
+			Name: Furniture,
+			ID: 31,
+			ImageID: 31,
+			GroupID: 1,
+			
+			Color: [145, 78, 48],
+			
+			ManpowerRecoverySpeed: 0.8,
+			
+			Price: 1.27,
+			RequiredTechID: -1,
+		},
+		{
+			Name: TropicalWood,
+			ID: 32,
+			ImageID: 32,
+			GroupID: 3,
+			
+			Color: [179, 129, 89],
+			
+			AdministrationBuildingsCost: -0.05,
+			
+			Price: 1.14,
+			RequiredTechID: -1,
+		},
+		{
+			Name: Paper,
+			ID: 33,
+			ImageID: 33,
+			GroupID: 1,
+			
+			Color: [225, 234, 248],
+			
+			TechnologyCost: -5,
+			
+			Price: 1.72,
+			RequiredTechID: -1,
+		},
+		{
+			Name: Clothes,
+			ID: 34,
+			ImageID: 34,
+			GroupID: 1,
+			
+			Color: [251, 242, 231],
+			
+			LoanInterest: -10,
+			
+			Price: 1.36,
+			RequiredTechID: -1,
+		},
+		{
+			Name: Aluminum,
+			ID: 35,
+			ImageID: 35,
+			GroupID: 4,
+			
+			Color: [209, 237, 247],
+			
+			EconomyBuildingsCost: -0.1,
+			
+			Price: 1.28,
+			RequiredTechID: 60,
+		},
+		{
+			Name: Steel,
+			ID: 36,
+			ImageID: 36,
+			GroupID: 4,
+			
+			Color: [100, 114, 134],
+			
+			ConstructionCost: -0.05,
+			
+			Price: 1.72,
+			RequiredTechID: 60,
+		},
+		{
+			Name: Vanilla,
+			ID: 37,
+			ImageID: 37,
+			GroupID: 2,
+			
+			Color: [234, 204, 153],
+			
+			GrowthRate: 2.0,
+			
+			Price: 1.36,
+			RequiredTechID: -1,
+		},
+		{
+			Name: Cinnamon,
+			ID: 38,
+			ImageID: 38,
+			GroupID: 2,
+			
+			Color: [236, 143, 81],
+			
+			GrowthRate: 2.0,
+			
+			Price: 1.23,
+			RequiredTechID: -1,
+		},
+		{
+			Name: Saffron,
+			ID: 39,
+			ImageID: 39,
+			GroupID: 3,
+			
+			Color: [209, 150, 235],
+			
+			MonthlyIncome: 1.5,
+			
+			Price: 1.74,
+			RequiredTechID: -1,
+		},
+		{
+			Name: Tomato,
+			ID: 40,
+			ImageID: 40,
+			GroupID: 0,
+			
+			Color: [254, 64, 29],
+			
+			SiegeEffectiveness: 0.1,
+			
+			Price: 0.77,
+			RequiredTechID: -1,
+		},
+		{
+			Name: Banana,
+			ID: 41,
+			ImageID: 41,
+			GroupID: 0,
+			
+			Color: [255, 231, 84],
+			
+			ProvinceMaintenance: -3,
+			
+			Price: 0.76,
+			RequiredTechID: -1,
+		},
+		{
+			Name: Glass,
+			ID: 42,
+			ImageID: 42,
+			GroupID: 1,
+			
+			Color: [192, 212, 222],
+			
+			TechnologyCost: -5,
+			
+			Price: 1.44,
+			RequiredTechID: -1,
+		},
+		{
+			Name: Hop,
+			ID: 43,
+			ImageID: 43,
+			GroupID: 1,
+			
+			Color: [114, 148, 8],
+			
+			ConstructionTime: -0.1,
+			
+			Price: 0.88,
+			RequiredTechID: -1,
+		},
+		{
+			Name: Beer,
+			ID: 44,
+			ImageID: 44,
+			GroupID: 1,
+			
+			Color: [226, 116, 25],
+			
+			MaxMorale: 0.075,
+			
+			Price: 1.22,
+			RequiredTechID: -1,
+		},
+		{
+			Name: Cheese,
+			ID: 45,
+			ImageID: 45,
+			GroupID: 2,
+			
+			Color: [253, 178, 23],
+			
+			ManpowerRecoverySpeed: 0.1,
+			
+			Price: 1.14,
+			RequiredTechID: -1,
+		},
+		{
+			Name: Lemon,
+			ID: 46,
+			ImageID: 46,
+			GroupID: 1,
+			
+			Color: [254, 228, 47],
+			
+			CoreCost: -5,
+			
+			Price: 0.76,
+			RequiredTechID: -1,
+		},
+		{
+			Name: Olive,
+			ID: 47,
+			ImageID: 47,
+			GroupID: 1,
+			
+			Color: [172, 147, 46],
+			
+			CoreCost: -5,
+			
+			Price: 0.87,
+			RequiredTechID: -1,
+		},
+		{
+			Name: Dates,
+			ID: 48,
+			ImageID: 48,
+			GroupID: 1,
+			
+			Color: [117, 65, 68],
+			
+			ManpowerRecoverySpeed: 0.1,
+			
+			Price: 0.76,
+			RequiredTechID: -1,
+		},
+	],
+	Age_of_History: Resources
+}

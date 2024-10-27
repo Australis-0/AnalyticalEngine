@@ -1,0 +1,13 @@
+[
+{
+	Name: "Felix Dzerzhinsky",
+	ImageID: Dzerzhinsky,
+	
+	BornDay: 11,
+	BornMonth: 9,
+	BornYear: 1877,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

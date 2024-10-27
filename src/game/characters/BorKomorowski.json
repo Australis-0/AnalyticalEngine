@@ -1,0 +1,13 @@
+[
+{
+	Name: "Tadeusz Bór-Komorowski",
+	ImageID: BorKomorowski,
+	
+	BornDay: 1,
+	BornMonth: 6,
+	BornYear: 1895,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

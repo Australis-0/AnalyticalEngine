@@ -1,0 +1,13 @@
+[
+{
+	Name: "Jerzy Jazłowiecki",
+	ImageID: Jazlowiecki,
+	
+	BornDay: 18,
+	BornMonth: 11,
+	BornYear: 1508,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

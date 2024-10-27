@@ -1,0 +1,13 @@
+[
+{
+	Name: "Paul Ludwig Ewald von Kleist",
+	ImageID: von_Kleist,
+	
+	BornDay: 8,
+	BornMonth: 8,
+	BornYear: 1881,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

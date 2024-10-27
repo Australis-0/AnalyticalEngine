@@ -1,0 +1,13 @@
+[
+{
+	Name: "Jan Olszewski",
+	ImageID: Olszewski,
+	
+	BornDay: 20,
+	BornMonth: 8,
+	BornYear: 1930,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

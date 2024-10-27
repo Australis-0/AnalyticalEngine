@@ -1,0 +1,13 @@
+[
+{
+	Name: "Ignacy Prądzyński",
+	ImageID: Pradzynski,
+	
+	BornDay: 20,
+	BornMonth: 7,
+	BornYear: 1792,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

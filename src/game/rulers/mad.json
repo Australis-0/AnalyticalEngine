@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Andry Rajoelina",
+			ImageID: 130,
+			
+			BornDay: 30,
+			BornMonth: 5,
+			BornYear: 1974,
+			
+			ReignYear: 2019,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

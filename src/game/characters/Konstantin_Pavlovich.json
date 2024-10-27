@@ -1,0 +1,13 @@
+[
+{
+	Name: "Konstantin Pavlovich",
+	ImageID: Konstantin_Pavlovich,
+	
+	BornDay: 27,
+	BornMonth: 4,
+	BornYear: 1779,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

@@ -1,0 +1,20 @@
+{
+Name: "FallOfTheHanDynasty",
+Author: "Łukasz Jakowski",
+Civs: 15,
+Age: 1,
+Day: 21,
+Month: 4,
+Year: 195,
+Campaign: true,
+CivDefault_Gold: 500,
+CivDefault_GoldRandom: 75,
+CivDefault_Legacy: 150,
+CivDefault_LegacyRandom: 50,
+CivDefault_ManpowerPercentage: 80,
+CivDefault_Technology: 7,
+ProvinceDefault_Population: 60000,
+ProvinceDefault_Economy: 20,
+ProvinceDefault_TaxEfficiency: 18,
+ProvinceDefault_Manpower: 6
+}

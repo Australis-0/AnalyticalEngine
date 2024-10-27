@@ -1,0 +1,8 @@
+{
+FormableCivTag: "ani_o",
+ClaimantsTag: [
+	"papa"
+],
+Provinces: [ 3012, 1328, 2613, 5051, 5053, 8072, 1177, 5052, 8071, 1178, 6088, 12508, 2612 ],
+CapitalProvinceID: 3012
+}

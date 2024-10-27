@@ -1,0 +1,146 @@
+{
+	"Rulers": [
+		{
+			"Name": "Tomislav",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 910,
+			
+			"ReignYear": 925
+		},
+		{
+			"Name": "Stjepan I",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 970,
+			
+			"ReignYear": 997
+		},
+		{
+			"Name": "Petar Krešimir IV",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1050,
+			
+			"ReignYear": 1058
+		},
+		{
+			"Name": "Dmitar Zvonimir",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1000,
+			
+			"ReignYear": 1076
+		},
+		{
+			"Name": "Koloman",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1070,
+			
+			"ReignYear": 1093
+		},
+		{
+			"Name": "Andrija II",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1190,
+			
+			"ReignYear": 1204
+		},
+		{
+			"Name": "Bela IV",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1206,
+			
+			"ReignYear": 1235
+		},
+		{
+			"Name": "Ladislaus",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1262,
+			
+			"ReignYear": 1272
+		},
+		{
+			"Name": "Sigismund",
+			"ImageID": -1,
+			
+			"BornDay": 14,
+			"BornMonth": 2,
+			"BornYear": 1368,
+			
+			"ReignYear": 1387
+		},
+		{
+			"Name": "Matija Korvin",
+			"ImageID": -1,
+			
+			"BornDay": 23,
+			"BornMonth": 2,
+			"BornYear": 1443,
+			
+			"ReignYear": 1458
+		},
+		{
+			"Name": "Ivan I",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1493,
+			
+			"ReignYear": 1516
+		},
+		{
+			"Name": "Ferdinand I",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1503,
+			
+			"ReignYear": 1527
+		},
+		{
+			"Name": "Lajos II",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1506,
+			
+			"ReignYear": 1516
+		},
+		{
+			Name: "Zoran Milanovic",
+			ImageID: 70,
+			
+			BornDay: 30,
+			BornMonth: 10,
+			BornYear: 1966,
+			
+			ReignYear: 2020,
+		},
+	],
+	
+	"Age_of_History": "Rulers"
+}

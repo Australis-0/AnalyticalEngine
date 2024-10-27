@@ -1,0 +1,13 @@
+[
+{
+	Name: "Kurt Agricola",
+	ImageID: Agricola,
+	
+	BornDay: 15,
+	BornMonth: 8,
+	BornYear: 1889,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

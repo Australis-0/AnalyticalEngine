@@ -1,0 +1,13 @@
+[
+{
+	Name: "Thomas Blamey",
+	ImageID: Blamey,
+	
+	BornDay: 24,
+	BornMonth: 1,
+	BornYear: 1884,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

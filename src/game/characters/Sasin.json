@@ -1,0 +1,13 @@
+[
+{
+	Name: "Jacek Sasin",
+	ImageID: Sasin,
+	
+	BornDay: 6,
+	BornMonth: 11,
+	BornYear: 1969,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

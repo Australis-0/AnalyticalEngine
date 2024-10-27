@@ -1,0 +1,13 @@
+[
+{
+	Name: "Mikhail Mishustin",
+	ImageID: Mishustin,
+	
+	BornDay: 3,
+	BornMonth: 3,
+	BornYear: 1966,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

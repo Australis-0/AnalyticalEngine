@@ -1,0 +1,13 @@
+[
+{
+	Name: "Wojciech Korfanty",
+	ImageID: Korfanty,
+	
+	BornDay: 20,
+	BornMonth: 4,
+	BornYear: 1873,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

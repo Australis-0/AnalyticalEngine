@@ -1,0 +1,13 @@
+[
+{
+	Name: "Emilia Plater",
+	ImageID: Plater,
+	
+	BornDay: 13,
+	BornMonth: 11,
+	BornYear: 1806,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

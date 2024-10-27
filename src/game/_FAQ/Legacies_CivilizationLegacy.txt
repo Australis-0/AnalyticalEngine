@@ -1,0 +1,190 @@
+#######################################
+## Read: mods_steam_workshop.txt !
+## 
+## To create a new mod for submission to the Steam Workshop, first create a new folder for your mod within the 'mods' directory.
+## Then, copy or recreate all the modified files into that folder!
+##
+## For example, if a file was originally located in game/ExampleFile.json, 
+## it should be placed in mods/YourModName/game/ExampleFile.json in your mod's folder.
+##
+#####
+
+For your mod the path will be:
+mods/YOUR_MOD_NAME/game/legacies/
+
+#####
+
+
+Go to:
+game/legacies/
+
+Adding new Group:
+LegaciesGroups.txt edit in notepad:
+
+### EXAMPLE
+AdministrativeLegacies;EconomicLegacies;MilitaryLegacies;DiplomaticLegacies;NEW_GROUP_NAME;
+### EXAMPLE END
+
+And open as text file in notepad: Legacies.json
+
+
+### EXAMPLE GROUP
+		{
+			Name: VeteranGenerals,
+			ImageID: 8,
+			GroupID: 2,
+			
+			CostLegacy: [100, 150, 200],
+			
+			GeneralAttack: [1, 1, 2],
+			GeneralDefense: [0, 1, 2],
+			MaximumLevelOfTheMilitaryAcademyForGenerals: [1, 2, 3],
+			AllCharactersLifeExpectancy: [2, 4, 6],
+			
+			AI: [5, 10, 10],
+		},
+		{
+			Name: ArmyTradition,
+			ImageID: 9,
+			GroupID: 2,
+			
+			CostLegacy: [100, 150, 200],
+			
+			MaxMorale: [0.05, 0.1, 0.15],
+			UnitsDefense: [1, 2, 4],
+			MaximumLevelOfTheMilitaryAcademy: [1, 2, 3],
+			
+			AI: [5, 10, 10],
+		},
+		{
+			Name: MilitaryDominance,
+			ImageID: 10,
+			GroupID: 2,
+			
+			CostLegacy: [100, 150, 200],
+			
+			UnitsAttack: [2, 4, 6],
+			Discipline: [0.05, 0.1, 0.15],
+			Devastation: [0.1, 0.15, 0.25],
+			
+			AI: [5, 10, 10],
+		},
+		{
+			Name: SiegeExpertise,
+			ImageID: 11,
+			GroupID: 2,
+			
+			CostLegacy: [100, 150, 200],
+			
+			RegimentsLimit: [3, 6, 10],
+			SiegeEffectiveness: [0.1, 0.2, 0.3],
+			RecruitmentTime: [-5, -10, -20],
+			ArmyMovementSpeed: [5, 10, 20],
+			
+			
+			AI: [5, 10, 10],
+		},
+### EXAMPLE GROUP END
+
+GroupID: 2,
+from LegaciesGroups.txt file it will be: MilitaryLegacies
+
+If you want to add new group then it will be:
+GroupID: 4,
+
+Bonuses:
+
+AllCharactersLifeExpectancy: [2, 4, 6],
+At level 1 All Characters Life Expectancy will be +2
+At level 2 All Characters Life Expectancy will be +4
+At level 3 All Characters Life Expectancy will be +6
+
+
+
+### Available bonuses:
+
+ConstructionCost: [X],
+AdministrationBuildingsCost: [X],
+MilitaryBuildingsCost: [X],
+EconomyBuildingsCost: [X],
+WonderConstructionCost: [X],
+
+ConstructionTime: [X],
+
+TaxEfficiency: [X],
+ProvinceMaintenance: [X],
+BuildingsMaintenanceCost: [X],
+
+ManpowerRecoverySpeed: [X],
+MaxManpower: [X],
+Research: [X],
+ResearchPoints: [X],
+
+BuildingSlot: [X],
+MaxInfrastructure: [X],
+
+Devastation: [X],
+GrowthRate: [X],
+IncomeProduction: [X],
+ProductionEfficiency: [X],
+
+InvestInEconomyCost: [X],
+IncreaseTaxEfficiencyCost: [X],
+IncreaseGrowthRateCost: [X],
+DevelopInfrastructureCost: [X],
+
+GeneralAttack: [X],
+GeneralDefense: [X],
+
+UnitsAttack: [X],
+UnitsDefense: [X],
+
+MaxMorale: [X],
+ArmyMovementSpeed: [X],
+
+SiegeEffectiveness: [X],
+
+ImproveRelationsModifier: [X],
+IncomeFromVassals: [X],
+LoanInterest: [X],
+DiplomacyPoints: [X],
+
+RecruitmentTime: [X],
+
+MaxNumOfAlliances: [X],
+AdvisorMaxLevel: [X],
+AdvisorPoolSize: [X],
+
+MaxNumberOfLoans: [X],
+MaximumLevelOfTheMilitaryAcademyForGenerals: [X],
+MaximumLevelOfTheMilitaryAcademy: [X],
+MaximumLevelOfTheSupremeCourt: [X],
+MaximumLevelOfCapitalCity: [X],
+
+AggressiveExpansion: [X],
+DiseaseDeathRate: [X],
+
+AdvisorCost: [X],
+GeneralCost: [X],
+
+BattleWidth: [X],
+Discipline: [X],
+ManpowerRecoveryFromADisbandedArmy: [X],
+MaximumAmountOfGold: [X],
+
+Loot: [X],
+AllCharactersLifeExpectancy: [X],
+
+RegimentsLimit: [X],
+
+
+
+Adding new images of legacy GROUP: Example: 12.png 13.png 14.png 15.png (It must be the next number of the last image)
+Add new image in folders:
+
+game/legacies/legaciesImages/H/
+game/legacies/legaciesImages/XH/
+game/legacies/legaciesImages/XXH/
+
+Don't forget to increase the total number of images in the file:
+game/legacies/legaciesImages/numOfImages.txt

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Łukasz Jakowski",
+	ImageID: Jakowski,
+	
+	BornDay: 15,
+	BornMonth: 5,
+	BornYear: 1992,
+	
+	Attack: 7,
+	Defense: 11,
+},
+]

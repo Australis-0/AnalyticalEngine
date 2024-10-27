@@ -1,0 +1,13 @@
+[
+{
+	Name: "Constantin Nicolescu",
+	ImageID: Nicolescu,
+	
+	BornDay: 5,
+	BornMonth: 11,
+	BornYear: 1887,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

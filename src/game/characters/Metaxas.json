@@ -1,0 +1,13 @@
+[
+    {
+        "Name": "Ioannis Metaxas",
+        "ImageID": "Metaxas",
+        
+        "BornDay": 12,
+        "BornMonth": 4,
+        "BornYear": 1871,
+        
+        "Attack": 5,
+        "Defense": -1,
+    }
+]

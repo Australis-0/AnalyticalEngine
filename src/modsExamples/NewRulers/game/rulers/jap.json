@@ -1,0 +1,26 @@
+{
+	Rulers: [
+		{
+			Name: "Hirohito",
+			ImageID: Hirohito,
+			
+			BornDay: 29,
+			BornMonth: 4,
+			BornYear: 1901,
+			
+			ReignYear: 1921,
+		},
+		{
+			Name: "Naruhito",
+			ImageID: 115,
+			
+			BornDay: 23,
+			BornMonth: 2,
+			BornYear: 1960,
+			
+			ReignYear: 2019,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

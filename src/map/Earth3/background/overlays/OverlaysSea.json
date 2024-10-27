@@ -1,0 +1,24 @@
+{
+	Overlay: [
+		{
+			Tile: "sea_tile_1.png",
+			Mask: "sea_mask_1.png",
+			Scale: 0.025,
+			Alpha: 0.00,
+			AlphaScaleZoomOut: 0.1,
+			AlphaScale: 0.15,
+			ExtraColor: 1.0,
+		},
+		{
+			Tile: "sea_tile_2.png",
+			Mask: "sea_mask_2.png",
+			Scale: 0.025,
+			Alpha: 0.00,
+			AlphaScaleZoomOut: 0.1,
+			AlphaScale: 0.15,
+			ExtraColor: 1.0,
+		},
+	],
+	
+	Age_of_History: Overlay
+}

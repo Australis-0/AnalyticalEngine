@@ -1,0 +1,13 @@
+[
+{
+	Name: "Leslie Morshead",
+	ImageID: Morshead,
+	
+	BornDay: 18,
+	BornMonth: 9,
+	BornYear: 1889,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

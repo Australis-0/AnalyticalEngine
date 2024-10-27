@@ -1,0 +1,13 @@
+[
+{
+	Name: "Alfonso Ferrero La Marmora",
+	ImageID: La_Marmora,
+	
+	BornDay: 18,
+	BornMonth: 11,
+	BornYear: 1804,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

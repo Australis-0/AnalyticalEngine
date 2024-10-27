@@ -1,0 +1,21 @@
+{
+Name: "Brasilia",
+Author: "Łukasz Jakowski",
+Civs: 27,
+Age: 10,
+Day: 23,
+Month: 10,
+Year: 2024,
+Campaign: true,
+CivDefault_Gold: 350,
+CivDefault_GoldRandom: 75,
+CivDefault_Legacy: 125,
+CivDefault_LegacyRandom: 50,
+CivDefault_ManpowerPercentage: 75,
+CivDefault_Technology: 82,
+ProvinceDefault_Population: 200000,
+ProvinceDefault_Economy: 24,
+ProvinceDefault_TaxEfficiency: 30,
+ProvinceDefault_Manpower: 18,
+HoursPerTurn: 24
+}

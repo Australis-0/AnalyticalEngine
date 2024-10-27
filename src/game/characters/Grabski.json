@@ -1,0 +1,13 @@
+[
+{
+	Name: "Władysław Grabski",
+	ImageID: Grabski,
+	
+	BornDay: 7,
+	BornMonth: 7,
+	BornYear: 1874,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

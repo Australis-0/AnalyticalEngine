@@ -1,0 +1,13 @@
+[
+{
+	Name: "Rafał Trzaskowski",
+	ImageID: Trzaskowski,
+	
+	BornDay: 17,
+	BornMonth: 1,
+	BornYear: 1972,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

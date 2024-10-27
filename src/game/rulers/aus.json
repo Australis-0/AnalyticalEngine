@@ -1,0 +1,26 @@
+{
+	Rulers: [
+		{
+			Name: "John Curtin",
+			ImageID: 293,
+			
+			BornDay: 8,
+			BornMonth: 1,
+			BornYear: 1885,
+			
+			ReignYear: 1935,
+		},
+		{
+			Name: "Anthony Albanese",
+			ImageID: 38,
+			
+			BornDay: 2,
+			BornMonth: 3,
+			BornYear: 1963,
+			
+			ReignYear: 2022,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

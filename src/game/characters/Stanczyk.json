@@ -1,0 +1,13 @@
+[
+{
+	Name: "Stańczyk",
+	ImageID: Stanczyk,
+	
+	BornDay: 3,
+	BornMonth: 6,
+	BornYear: 1480,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

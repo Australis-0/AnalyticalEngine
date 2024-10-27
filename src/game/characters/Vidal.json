@@ -1,0 +1,13 @@
+[
+{
+	Name: "Frédérique Vidal",
+	ImageID: Vidal,
+	
+	BornDay: 9,
+	BornMonth: 5,
+	BornYear: 1964,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

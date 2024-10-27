@@ -1,0 +1,58 @@
+#######################################
+## Read: mods_steam_workshop.txt !
+## 
+## To create a new mod for submission to the Steam Workshop, first create a new folder for your mod within the 'mods' directory.
+## Then, copy or recreate all the modified files into that folder!
+##
+## For example, if a file was originally located in game/ExampleFile.json, 
+## it should be placed in mods/YourModName/game/ExampleFile.json in your mod's folder.
+##
+#####
+
+File containing all religions in the game:
+game/Religions.json
+
+For your mod the path will be:
+mods/YOUR_MOD_NAME/game/Religions.json
+
+
+Example code for a single Religion:
+
+###########################################
+
+		{
+			Name: Taoism,
+			Icon: "taoism.png",
+			ReligionGroupID: 4,
+			Color: [230, 230, 100],
+			Tribal: false,
+			
+			IncreaseTaxEfficiencyCost: -0.025,
+		},
+
+###########################################
+
+
+Name represents the name of the religion.
+
+Icon refers to the religion's in-game icon.
+Images with the corresponding name must be placed in the following folders:
+
+gfx/religion/H/
+gfx/religion/XH/
+gfx/religion/XXH/
+
+All size scales are required!
+
+
+ReligionGroupID indicates which other religions have close ties.
+For example, Catholic, Orthodox, and Protestant are in the same group.
+The group plays an important role in gameplay, as it determines whether civilizations will have positive relations with each other.
+
+Color: RGB 0-255
+
+Tribal: true or false,
+If true, non-tribal civilizations will attempt to conquer tribal civilizations.
+
+Each religion can have unique bonuses, ranging from none to multiple.
+A list of available bonuses for religions can be found here: game/_FAQ/Religion_Bonuses.txt

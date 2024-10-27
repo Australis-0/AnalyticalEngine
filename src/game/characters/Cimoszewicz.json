@@ -1,0 +1,13 @@
+[
+{
+	Name: "Włodzimierz Cimoszewicz",
+	ImageID: Cimoszewicz,
+	
+	BornDay: 13,
+	BornMonth: 9,
+	BornYear: 1950,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

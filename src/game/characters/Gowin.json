@@ -1,0 +1,13 @@
+[
+{
+	Name: "Jarosław Gowin",
+	ImageID: Gowin,
+	
+	BornDay: 4,
+	BornMonth: 12,
+	BornYear: 1961,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Petre Dumitrescu",
+	ImageID: Dumitrescu,
+	
+	BornDay: 18,
+	BornMonth: 2,
+	BornYear: 1882,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

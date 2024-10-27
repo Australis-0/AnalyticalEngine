@@ -1,0 +1,13 @@
+[
+{
+	Name: "Ivan Paskevich",
+	ImageID: Paskevich,
+	
+	BornDay: 19,
+	BornMonth: 5,
+	BornYear: 1782,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

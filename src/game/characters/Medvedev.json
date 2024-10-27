@@ -1,0 +1,13 @@
+[
+{
+	Name: "Dmitry Medvedev",
+	ImageID: Medvedev,
+	
+	BornDay: 14,
+	BornMonth: 9,
+	BornYear: 1965,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

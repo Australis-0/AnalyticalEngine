@@ -1,0 +1,276 @@
+{
+	"Rulers": [
+		{
+			"Name": "Gorm the Old",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 900,
+			
+			"ReignYear": 936
+		},
+		{
+			"Name": "Harald Bluetooth",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 910,
+			
+			"ReignYear": 958
+		},
+		{
+			"Name": "Svend Forkbeard",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 960,
+			
+			"ReignYear": 986
+		},
+		{
+			"Name": "Cnut the Great",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 995,
+			
+			"ReignYear": 1028
+		},
+		{
+			"Name": "Harthacanute",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1018,
+			
+			"ReignYear": 1028
+		},
+		{
+			"Name": "Valdemar I (the Great)",
+			"ImageID": -1,
+			
+			"BornDay": 14,
+			"BornMonth": 1,
+			"BornYear": 1131,
+			
+			"ReignYear": 1154
+		},
+		{
+			"Name": "Valdemar II (the Victorious)",
+			"ImageID": -1,
+			
+			"BornDay": 9,
+			"BornMonth": 6,
+			"BornYear": 1170,
+			
+			"ReignYear": 1202
+		},
+		{
+			"Name": "Erik Menved",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1274,
+			
+			"ReignYear": 1286
+		},
+		{
+			"Name": "Christopher III",
+			"ImageID": 17,
+			
+			"BornDay": 26,
+			"BornMonth": 2,
+			"BornYear": 1416,
+			
+			"ReignYear": 1440
+		},
+		{
+			"Name": "Frederick I",
+			"ImageID": -1,
+			
+			"BornDay": 7,
+			"BornMonth": 10,
+			"BornYear": 1471,
+			
+			"ReignYear": 1523
+		},
+		{
+			"Name": "Christian IV",
+			"ImageID": 265,
+			
+			"BornDay": 12,
+			"BornMonth": 4,
+			"BornYear": 1577,
+			
+			"ReignYear": 1588
+		},
+		{
+			"Name": "Frederick III",
+			"ImageID": -1,
+			
+			"BornDay": 18,
+			"BornMonth": 3,
+			"BornYear": 1609,
+			
+			"ReignYear": 1648
+		},
+		{
+			"Name": "Christian V",
+			"ImageID": -1,
+			
+			"BornDay": 15,
+			"BornMonth": 4,
+			"BornYear": 1646,
+			
+			"ReignYear": 1670
+		},
+		{
+			"Name": "Frederick IV",
+			"ImageID": -1,
+			
+			"BornDay": 11,
+			"BornMonth": 10,
+			"BornYear": 1671,
+			
+			"ReignYear": 1699
+		},
+		{
+			"Name": "Christian VI",
+			"ImageID": -1,
+			
+			"BornDay": 30,
+			"BornMonth": 11,
+			"BornYear": 1699,
+			
+			"ReignYear": 1730
+		},
+		{
+			"Name": "Frederick V",
+			"ImageID": -1,
+			
+			"BornDay": 31,
+			"BornMonth": 3,
+			"BornYear": 1723,
+			
+			"ReignYear": 1746
+		},
+		{
+			"Name": "Christian VII",
+			"ImageID": -1,
+			
+			"BornDay": 29,
+			"BornMonth": 1,
+			"BornYear": 1749,
+			
+			"ReignYear": 1766
+		},
+		{
+			"Name": "Frederick VI",
+			"ImageID": 264,
+			
+			"BornDay": 28,
+			"BornMonth": 1,
+			"BornYear": 1768,
+			
+			"ReignYear": 1808
+		},
+		{
+			"Name": "Christian VIII",
+			"ImageID": -1,
+			
+			"BornDay": 18,
+			"BornMonth": 9,
+			"BornYear": 1786,
+			
+			"ReignYear": 1839
+		},
+		{
+			"Name": "Frederick VII",
+			"ImageID": -1,
+			
+			"BornDay": 6,
+			"BornMonth": 10,
+			"BornYear": 1808,
+			
+			"ReignYear": 1839
+		},
+		{
+			"Name": "Christian IX",
+			"ImageID": -1,
+			
+			"BornDay": 8,
+			"BornMonth": 4,
+			"BornYear": 1818,
+			
+			"ReignYear": 1863
+		},
+		{
+			"Name": "Frederick VIII",
+			"ImageID": -1,
+			
+			"BornDay": 3,
+			"BornMonth": 6,
+			"BornYear": 1843,
+			
+			"ReignYear": 1906
+		},
+		{
+			"Name": "Christian X",
+			"ImageID": -1,
+			
+			"BornDay": 26,
+			"BornMonth": 9,
+			"BornYear": 1870,
+			
+			"ReignYear": 1912
+		},
+		{
+			"Name": "Thorvald Stauning",
+			"ImageID": 262,
+			
+			"BornDay": 26,
+			"BornMonth": 10,
+			"BornYear": 1873,
+			
+			"ReignYear": 1929
+		},
+		{
+			"Name": "Frederick IX",
+			"ImageID": -1,
+			
+			"BornDay": 11,
+			"BornMonth": 3,
+			"BornYear": 1899,
+			
+			"ReignYear": 1947
+		},
+		{
+			"Name": "Margrethe II",
+			"ImageID": -1,
+			
+			"BornDay": 16,
+			"BornMonth": 4,
+			"BornYear": 1940,
+			
+			"ReignYear": 1972
+		},
+		{
+			Name: "Frederik X",
+			ImageID: 27,
+			
+			BornDay: 14,
+			BornMonth: 5,
+			BornYear: 1968,
+			
+			ReignYear: 2022,
+		},
+	],
+	
+	"Age_of_History": "Rulers"
+}

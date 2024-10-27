@@ -1,0 +1,13 @@
+[
+{
+	Name: "Henri de Turenne",
+	ImageID: Turenne,
+		
+	BornDay: 11,
+	BornMonth: 9,
+	BornYear: 1611,
+		
+	Attack: -1,
+	Defense: -1,
+},
+]

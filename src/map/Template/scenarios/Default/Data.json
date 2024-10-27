@@ -1,0 +1,15 @@
+[
+{
+	CivTAG: "por_m",
+	CivID: 1,
+	PCID: 1,
+	CPID: 0,
+	Population: 10467366
+},
+{
+	CivTAG: "fra_m",
+	CivID: 2,
+	PCID: 2,
+	CPID: 1
+}
+]

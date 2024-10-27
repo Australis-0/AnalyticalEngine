@@ -1,0 +1,13 @@
+[
+{
+	Name: "Georges-Eugène Haussmann",
+	ImageID: Haussmann,
+		
+	BornDay: 27,
+	BornMonth: 3,
+	BornYear: 1809,
+		
+	Attack: -1,
+	Defense: -1,
+},
+]

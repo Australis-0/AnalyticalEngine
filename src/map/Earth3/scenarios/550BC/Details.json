@@ -1,0 +1,21 @@
+{
+Name: "550 BC",
+Author: "Łukasz Jakowski",
+Civs: 131,
+Age: 0,
+Day: 23,
+Month: 6,
+Year: -550,
+Campaign: true,
+CivDefault_Gold: 250,
+CivDefault_GoldRandom: 75,
+CivDefault_Legacy: 125,
+CivDefault_LegacyRandom: 50,
+CivDefault_ManpowerPercentage: 75,
+CivDefault_Technology: 4,
+ProvinceDefault_Population: 200000,
+ProvinceDefault_Economy: 24,
+ProvinceDefault_TaxEfficiency: 24,
+ProvinceDefault_Manpower: 18,
+HoursPerTurn: 24
+}

@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Filipe Nyusi",
+			ImageID: 146,
+			
+			BornDay: 9,
+			BornMonth: 2,
+			BornYear: 1959,
+			
+			ReignYear: 2015,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

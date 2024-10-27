@@ -1,0 +1,13 @@
+[
+{
+	Name: "Hans von Ahlfen",
+	ImageID: vonAhlfen,
+	
+	BornDay: 20,
+	BornMonth: 2,
+	BornYear: 1897,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

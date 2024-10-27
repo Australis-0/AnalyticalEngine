@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Hun Sen",
+			ImageID: 57,
+			
+			BornDay: 14,
+			BornMonth: 5,
+			BornYear: 1953,
+			
+			ReignYear: 2004,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

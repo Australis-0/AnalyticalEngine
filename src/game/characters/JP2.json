@@ -1,0 +1,13 @@
+[
+{
+	Name: "John Paul II",
+	ImageID: JP2,
+	
+	BornDay: 18,
+	BornMonth: 5,
+	BornYear: 1920,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

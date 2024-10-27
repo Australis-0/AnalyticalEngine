@@ -1,0 +1,20 @@
+{
+Name: "USStates",
+Author: "Łukasz Jakowski",
+Civs: 51,
+Age: 10,
+Day: 11,
+Month: 6,
+Year: 2024,
+Campaign: true,
+CivDefault_Gold: 500,
+CivDefault_GoldRandom: 250,
+CivDefault_Legacy: 200,
+CivDefault_LegacyRandom: 50,
+CivDefault_ManpowerPercentage: 60,
+CivDefault_Technology: 85,
+ProvinceDefault_Population: 200000,
+ProvinceDefault_Economy: 10,
+ProvinceDefault_TaxEfficiency: 10,
+ProvinceDefault_Manpower: 3
+}

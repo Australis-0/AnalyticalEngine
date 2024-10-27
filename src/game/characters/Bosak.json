@@ -1,0 +1,13 @@
+[
+{
+	Name: "Krzysztof Bosak",
+	ImageID: Bosak,
+	
+	BornDay: 13,
+	BornMonth: 6,
+	BornYear: 1982,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

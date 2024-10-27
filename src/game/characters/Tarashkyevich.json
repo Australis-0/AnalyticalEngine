@@ -1,0 +1,13 @@
+[
+{
+	Name: "Branislaw Tarashkyevich",
+	ImageID: Tarashkyevich,
+	
+	BornDay: 20,
+	BornMonth: 1,
+	BornYear: 1892,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

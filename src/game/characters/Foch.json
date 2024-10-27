@@ -1,0 +1,13 @@
+[
+{
+	Name: "Ferdinand Foch",
+	ImageID: Foch,
+	
+	BornDay: 2,
+	BornMonth: 10,
+	BornYear: 1851,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

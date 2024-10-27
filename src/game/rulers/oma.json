@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Haitham bin Tariq",
+			ImageID: 159,
+			
+			BornDay: 11,
+			BornMonth: 11,
+			BornYear: 1955,
+			
+			ReignYear: 2020,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Melchor Múzquiz",
+	ImageID: Muzquiz,
+	
+	BornDay: 5,
+	BornMonth: 1,
+	BornYear: 1790,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

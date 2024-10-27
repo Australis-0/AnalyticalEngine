@@ -1,0 +1,13 @@
+[
+{
+	Name: "Nicolás Bravo",
+	ImageID: Bravo,
+	
+	BornDay: 10,
+	BornMonth: 9,
+	BornYear: 1786,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

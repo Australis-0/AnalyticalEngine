@@ -1,0 +1,13 @@
+[
+{
+	Name: "Joao de Junqueira",
+	ImageID: Junqueira,
+	
+	BornDay: 27,
+	BornMonth: 4,
+	BornYear: 1827,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

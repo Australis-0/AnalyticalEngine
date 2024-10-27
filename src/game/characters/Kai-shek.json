@@ -1,0 +1,13 @@
+[
+{
+	Name: "Chiang Kai-shek",
+	ImageID: Kai-shek,
+	
+	BornDay: 31,
+	BornMonth: 10,
+	BornYear: 1887,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

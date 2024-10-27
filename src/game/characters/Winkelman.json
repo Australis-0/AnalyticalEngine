@@ -1,0 +1,13 @@
+[
+{
+	Name: "Henri Winkelman",
+	ImageID: Winkelman,
+	
+	BornDay: 17,
+	BornMonth: 8,
+	BornYear: 1876,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

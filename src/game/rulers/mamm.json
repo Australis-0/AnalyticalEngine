@@ -1,0 +1,106 @@
+{
+	"Rulers": [
+		{
+			"Name": "Qutuz",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1201,
+			
+			"ReignYear": 1259
+		},
+		{
+			"Name": "Baybars",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1223,
+			
+			"ReignYear": 1260
+		},
+		{
+			"Name": "Qalawun",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1228,
+			
+			"ReignYear": 1279
+		},
+		{
+			"Name": "Khalil",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1261,
+			
+			"ReignYear": 1290
+		},
+		{
+			"Name": "Al-Nasir Muhammad",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1285,
+			
+			"ReignYear": 1293
+		},
+		{
+			"Name": "Sultan Al-Mu'ayyad",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1340,
+			
+			"ReignYear": 1412
+		},
+		{
+			"Name": "Sultan Al-Ashraf",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1355,
+			
+			"ReignYear": 1412
+		},
+		{
+			"Name": "Sultan Al-Mu'ayyad",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1360,
+			
+			"ReignYear": 1422
+		},
+		{
+			"Name": "Sultan Al-Zahir",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1390,
+			
+			"ReignYear": 1438
+		},
+		{
+			"Name": "Sultan Al-Mansur",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1442,
+			
+			"ReignYear": 1466
+		}
+	],
+	
+	"Age_of_History": "Rulers"
+}

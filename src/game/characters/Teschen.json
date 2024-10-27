@@ -1,0 +1,13 @@
+[
+{
+	Name: "Albrecht von Teschen",
+	ImageID: Teschen,
+		
+	BornDay: 3,
+	BornMonth: 8,
+	BornYear: 1817,
+		
+	Attack: -1,
+	Defense: -1,
+},
+]

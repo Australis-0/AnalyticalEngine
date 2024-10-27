@@ -1,0 +1,32 @@
+id=my_event_2
+title=The title of My event!
+desc=Description of the event, hello!
+mission_desc=Description in the missions view! Hi!
+
+image=my_event_image.png
+
+show_in_missions=true
+mission_image=2
+
+only_once=true
+
+trigger_and
+next_and
+civ_regiments_over_regiments_limit=false
+trigger_and_end
+
+option_btn
+name=Excellent
+ai=25
+province_manpower=2.4
+bonus_duration=10
+bonus_max_manpower_percentage=5
+option_end
+
+option_btn
+name=Great
+ai=25
+province_manpower=3.6
+bonus_duration=10
+bonus_army_maintenance=-10
+option_end

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Janusz Korwin-Mikke",
+	ImageID: KorwinMikke,
+	
+	BornDay: 27,
+	BornMonth: 10,
+	BornYear: 1942,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

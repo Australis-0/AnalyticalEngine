@@ -1,0 +1,13 @@
+[
+{
+	Name: "Henrique Pedro Carlos",
+	ImageID: Carlos,
+	
+	BornDay: 12,
+	BornMonth: 5,
+	BornYear: 1812,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

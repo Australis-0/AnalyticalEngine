@@ -1,0 +1,216 @@
+{
+	"Rulers": [
+		{
+			"Name": "Rudolf I",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 5,
+			"BornYear": 1218,
+			
+			"ReignYear": 1273
+		},
+		{
+			"Name": "Albert I",
+			"ImageID": -1,
+			
+			"BornDay": 5,
+			"BornMonth": 8,
+			"BornYear": 1255,
+			
+			"ReignYear": 1298
+		},
+		{
+			Name: "Ladislaus V",
+			ImageID: 13,
+			
+			BornDay: 22,
+			BornMonth: 2,
+			BornYear: 1440,
+			
+			ReignYear: 1440,
+		},
+		{
+			"Name": "Maximilian I",
+			"ImageID": -1,
+			
+			"BornDay": 22,
+			"BornMonth": 3,
+			"BornYear": 1459,
+			
+			"ReignYear": 1493
+		},
+		{
+			"Name": "Charles V",
+			"ImageID": -1,
+			
+			"BornDay": 24,
+			"BornMonth": 2,
+			"BornYear": 1500,
+			
+			"ReignYear": 1519
+		},
+		{
+			"Name": "Ferdinand I",
+			"ImageID": -1,
+			
+			"BornDay": 10,
+			"BornMonth": 3,
+			"BornYear": 1503,
+			
+			"ReignYear": 1556
+		},
+		{
+			"Name": "Maximilian II",
+			"ImageID": -1,
+			
+			"BornDay": 31,
+			"BornMonth": 7,
+			"BornYear": 1527,
+			
+			"ReignYear": 1564
+		},
+		{
+			"Name": "Rudolf II",
+			"ImageID": -1,
+			
+			"BornDay": 18,
+			"BornMonth": 7,
+			"BornYear": 1552,
+			
+			"ReignYear": 1576
+		},
+		{
+			"Name": "Matthias",
+			"ImageID": 259,
+			
+			"BornDay": 24,
+			"BornMonth": 2,
+			"BornYear": 1557,
+			
+			"ReignYear": 1612
+		},
+		{
+			"Name": "Ferdinand II",
+			"ImageID": -1,
+			
+			"BornDay": 9,
+			"BornMonth": 7,
+			"BornYear": 1578,
+			
+			"ReignYear": 1619
+		},
+		{
+			"Name": "Ferdinand III",
+			"ImageID": -1,
+			
+			"BornDay": 13,
+			"BornMonth": 7,
+			"BornYear": 1608,
+			
+			"ReignYear": 1637
+		},
+		{
+			"Name": "Leopold I",
+			"ImageID": -1,
+			
+			"BornDay": 9,
+			"BornMonth": 6,
+			"BornYear": 1640,
+			
+			"ReignYear": 1658
+		},
+		{
+			"Name": "Joseph I",
+			"ImageID": -1,
+			
+			"BornDay": 26,
+			"BornMonth": 7,
+			"BornYear": 1678,
+			
+			"ReignYear": 1705
+		},
+		{
+			"Name": "Charles VI",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 10,
+			"BornYear": 1685,
+			
+			"ReignYear": 1711
+		},
+		{
+			"Name": "Maria Theresa",
+			"ImageID": -1,
+			
+			"BornDay": 13,
+			"BornMonth": 5,
+			"BornYear": 1717,
+			
+			"ReignYear": 1740
+		},
+		{
+			"Name": "Joseph II",
+			"ImageID": -1,
+			
+			"BornDay": 13,
+			"BornMonth": 3,
+			"BornYear": 1741,
+			
+			"ReignYear": 1780
+		},
+		{
+			"Name": "Leopold II",
+			"ImageID": -1,
+			
+			"BornDay": 5,
+			"BornMonth": 5,
+			"BornYear": 1747,
+			
+			"ReignYear": 1790
+		},
+		{
+			"Name": "Francis II",
+			"ImageID": 258,
+			
+			"BornDay": 12,
+			"BornMonth": 2,
+			"BornYear": 1768,
+			
+			"ReignYear": 1792
+		},
+		{
+			"Name": "Ferdinand I",
+			"ImageID": 310,
+			
+			"BornDay": 2,
+			"BornMonth": 3,
+			"BornYear": 1793,
+			
+			"ReignYear": 1835
+		},
+		{
+			Name: "Kurt Schuschnigg",
+			ImageID: 257,
+			
+			BornDay: 14,
+			BornMonth: 12,
+			BornYear: 1897,
+			
+			ReignYear: 1934,
+		},
+		{
+			Name: "Alexander Van der Bellen",
+			ImageID: 39,
+			
+			BornDay: 18,
+			BornMonth: 1,
+			BornYear: 1944,
+			
+			ReignYear: 2017,
+		},
+	],
+	
+	"Age_of_History": "Rulers"
+}

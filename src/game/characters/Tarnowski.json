@@ -1,0 +1,13 @@
+[
+{
+	Name: "Jan Tarnowski",
+	ImageID: Tarnowski,
+	
+	BornDay: 12,
+	BornMonth: 6,
+	BornYear: 1488,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

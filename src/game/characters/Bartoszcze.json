@@ -1,0 +1,13 @@
+[
+{
+	Name: "Roman Bartoszcze",
+	ImageID: Bartoszcze,
+	
+	BornDay: 9,
+	BornMonth: 12,
+	BornYear: 1946,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

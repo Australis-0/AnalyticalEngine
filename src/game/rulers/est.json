@@ -1,0 +1,26 @@
+{
+	Rulers: [
+		{
+			Name: "Konstantin Pats",
+			ImageID: 272,
+			
+			BornDay: 23,
+			BornMonth: 2,
+			BornYear: 1874,
+			
+			ReignYear: 1935,
+		},
+		{
+			Name: "Alar Karis",
+			ImageID: 23,
+			
+			BornDay: 26,
+			BornMonth: 3,
+			BornYear: 1958,
+			
+			ReignYear: 2021,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

@@ -1,0 +1,8 @@
+{
+	Name: "New Legacies",
+	Description: "This is decsription for steam page! This item will add new Legacies.",
+	
+	Tags: [ "Game", "Legacies" ],
+	
+	ChangeNote: "First release",
+}

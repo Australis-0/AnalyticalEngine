@@ -1,0 +1,13 @@
+[
+{
+	Name: "Antonio López de Santa Anna",
+	ImageID: Lopez,
+	
+	BornDay: 21,
+	BornMonth: 2,
+	BornYear: 1794,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

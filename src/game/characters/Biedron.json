@@ -1,0 +1,13 @@
+[
+{
+	Name: "Robert Biedroń",
+	ImageID: Biedron,
+	
+	BornDay: 13,
+	BornMonth: 4,
+	BornYear: 1976,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Walery Antoni Wróblewski",
+	ImageID: Wroblewski,
+	
+	BornDay: 27,
+	BornMonth: 11,
+	BornYear: 1836,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

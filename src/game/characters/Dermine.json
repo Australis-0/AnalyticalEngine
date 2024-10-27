@@ -1,0 +1,13 @@
+[
+{
+	Name: "Thomas Dermine",
+	ImageID: Dermine,
+	
+	BornDay: 1,
+	BornMonth: 5,
+	BornYear: 1986,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

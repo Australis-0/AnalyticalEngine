@@ -1,0 +1,13 @@
+[
+    {
+        "Name": "Milan Rastislav Štefánik",
+        "ImageID": "Stefanik",
+        
+        "BornDay": 21,
+        "BornMonth": 7,
+        "BornYear": 1880,
+        
+        "Attack": -1,
+        "Defense": -1,
+    }
+]

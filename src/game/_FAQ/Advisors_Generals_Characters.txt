@@ -1,0 +1,171 @@
+#######################################
+## Read: mods_steam_workshop.txt !
+## 
+## To create a new mod for submission to the Steam Workshop, first create a new folder for your mod within the 'mods' directory.
+## Then, copy or recreate all the modified files into that folder!
+##
+## For example, if a file was originally located in game/ExampleFile.json, 
+## it should be placed in mods/YourModName/game/ExampleFile.json in your mod's folder.
+##
+#####
+
+For your mod the path will be:
+mods/YOUR_MOD_NAME/game/characters/
+
+#####
+
+game/characters/
+
+How to create new Character:
+
+Each character has its own unique JSON file (Example: Franklin.json)
+
+##########################
+
+[
+{
+	Name: "Benjamin Franklin",
+	ImageID: Franklin,
+	
+	BornDay: 17,
+	BornMonth: 1,
+	BornYear: 1706,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]
+
+##########################
+
+## Steps to Create a New Character:
+Copy and Rename the File:
+
+Copy an existing file (e.g., Franklin.json) and rename it with a unique filename, like Surname.json
+Replace "Surname" with the real last name of the character you are creating.
+
+
+## Set the Character's Name:
+The name that will appear in the game is defined in the "Name" field.
+
+Example:
+Name: "Benjamin Franklin"
+
+
+## Attack and Defense Values:
+If the values for Attack or Defense are set to -1, the game will assign random values.
+
+
+## Image Specifications:
+
+The ImageID in the JSON file corresponds to the name of the image file:
+ImageID: "Franklin"
+So, the image file should be named Franklin.png
+
+## The image dimensions should be 125x125 px
+Store the image in this path:
+
+game/characters/H/
+
+
+Ensure Unique Names:
+Both the JSON file and the image file must have unique names to avoid conflicts in the game.
+
+These characters can be used in events or scenarios as special advisors or generals for civilizations within the game.
+
+#######################
+
+Using Characters in Scenarios
+
+Locate the Example: Navigate to:
+map/Earth3/scenarios/ModernWorld/Characters.json
+
+Here, you will find an example of how characters are used in scenarios.
+
+## Assigning Characters to Your Scenario:
+To add characters to your own scenario, copy the Characters.json file to:
+map/THE_MAP/scenarios/YOUR_SCENARIO/
+
+
+## Example of Characters.json
+
+This example includes three civilizations: Russia, Ukraine, and the United States.
+
+###########################################
+
+[
+	{
+		CivTAG: "rus",
+		Administrative: "Medvedev",
+		Economic: "Mishustin",
+		Innovation: "",
+		Military: "Shoigu",
+		Generals: [ "Mizintsev", ],
+	},
+	{
+		CivTAG: "ukr",
+		Administrative: "Shmyhal",
+		Economic: "",
+		Innovation: "",
+		Military: "Reznikov",
+		Generals: [ "Zaluzhnyi", "Syrskyi", "Shaptala", "Barhylevych" ],
+	},
+	{
+		CivTAG: "usa",
+		Administrative: "",
+		Economic: "",
+		Innovation: "",
+		Military: "",
+		Generals: [ "BrownJr", ],
+	},
+]
+
+###########################################
+
+Breakdown of the Russia Entry
+
+	{
+		CivTAG: "rus",
+		Administrative: "Medvedev",
+		Economic: "Mishustin",
+		Innovation: "",
+		Military: "Shoigu",
+		Generals: [ "Mizintsev", ],
+	},
+
+
+CivTAG: Indicates which civilization will receive these characters (in this case, Russia)
+
+Administrative Advisor: Medvedev
+Path: game/characters/Medvedev.json
+
+Economic Advisor: Mishustin
+Path: game/characters/Mishustin.json
+
+Innovation Advisor: Left empty.
+
+Military Advisor: Shoigu
+Path: game/characters/Shoigu.json
+
+## Generals for Russia
+General: Mizintsev
+Path: game/characters/Mizintsev.json
+
+If you want to add more starting generals, you can do so like this:
+Generals: [ "Zaluzhnyi", "Syrskyi", "Shaptala", "Barhylevych" ],
+
+If you prefer not to add any generals, it will look like this:
+Generals: null,
+
+This setup allows you to customize the characters for your scenario effectively.
+
+######################################################
+## Civilization TAGs:
+
+## Locate Civilization tags for your scenario:
+To find the list of civilization tags in a specific scenario, go to:
+map/THE_MAP/scenarios/THE_SCENARIO/Data.json
+
+## Find all Civilization tags and their names:
+Look in the file: game/languages/civilizations/Bundle.properties
+Find the entry for Belgium. Its tag will be: bel

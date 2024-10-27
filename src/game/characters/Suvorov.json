@@ -1,0 +1,13 @@
+[
+{
+	Name: "Alexander Suvorov",
+	ImageID: Suvorov,
+	
+	BornDay: 24,
+	BornMonth: 11,
+	BornYear: 1730,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

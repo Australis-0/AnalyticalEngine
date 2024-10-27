@@ -1,0 +1,13 @@
+[
+{
+	Name: "Grzegorz Napieralski",
+	ImageID: Napieralski,
+	
+	BornDay: 18,
+	BornMonth: 3,
+	BornYear: 1974,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

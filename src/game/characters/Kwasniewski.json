@@ -1,0 +1,13 @@
+[
+{
+	Name: "Aleksander Kwaśniewski",
+	ImageID: Kwasniewski,
+	
+	BornDay: 15,
+	BornMonth: 11,
+	BornYear: 1954,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

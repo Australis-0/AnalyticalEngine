@@ -1,0 +1,13 @@
+[
+{
+	Name: "Leszek Balcerowicz",
+	ImageID: Balcerowicz,
+	
+	BornDay: 19,
+	BornMonth: 1,
+	BornYear: 1947,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

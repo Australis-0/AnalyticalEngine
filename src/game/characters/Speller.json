@@ -1,0 +1,13 @@
+[
+{
+	Name: "Émile Speller",
+	ImageID: Speller,
+	
+	BornDay: 7,
+	BornMonth: 10,
+	BornYear: 1875,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

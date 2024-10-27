@@ -1,0 +1,6 @@
+The map background for the map editor can be found at:
+map/THE_MAP/background/mapEditor/
+
+This background is used only in the map editor located at map/MapEditor_2.jar
+
+X = Enable/Disable backgroundMapEditor

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Beata Szydło",
+	ImageID: Szydlo,
+	
+	BornDay: 15,
+	BornMonth: 4,
+	BornYear: 1963,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

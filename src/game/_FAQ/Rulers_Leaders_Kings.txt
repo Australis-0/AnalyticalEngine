@@ -1,0 +1,134 @@
+#######################################
+## Read: mods_steam_workshop.txt !
+## 
+## To create a new mod for submission to the Steam Workshop, first create a new folder for your mod within the 'mods' directory.
+## Then, copy or recreate all the modified files into that folder!
+##
+## For example, if a file was originally located in game/ExampleFile.json, 
+## it should be placed in mods/YourModName/game/ExampleFile.json in your mod's folder.
+##
+#####
+
+## This guide explains how to add a ruler to the game
+
+Go to:
+game/rulers/
+
+Inside this folder, you will find multiple .json files, each representing rulers for a specific civilization.
+
+For example:
+game/rulers/afg.json contains rulers for Afghanistan.
+game/rulers/atr.json contains rulers for Austria.
+game/rulers/rus.json contains rulers for Russia.
+
+## Locate Civilization tags for your scenario:
+To find the list of civilization tags in a specific scenario, go to:
+map/THE_MAP/scenarios/THE_SCENARIO/Data.json
+
+## Find all Civilization tags and their names:
+Look in the file: game/languages/civilizations/Bundle.properties
+Find the entry for Belgium. Its tag will be: bel
+
+#######################################################
+
+Example, Adding a Ruler for Belgium in World War II
+
+From Bundle.properties, we know the Civilization tag for Belgium is: bel
+
+If the file bel.json does not exist, create it, or copy any existing file from the game/rulers/ directory and rename it.
+If the file does exist, open it for editing.
+
+#######################################################
+
+Example Structure of Ruler File
+For a Single Ruler:
+
+{
+	Rulers: [
+		{
+			Name: "Philippe of Belgium",
+			ImageID: 45,
+			
+			BornDay: 15,
+			BornMonth: 4,
+			BornYear: 1960,
+			
+			ReignYear: 2013,
+		},
+	],
+
+	Age_of_History: Rulers
+}
+
+#######################################################
+
+Example, For Multiple Rulers:
+
+{
+	Rulers: [
+		{
+			Name: "Hubert Pierlot",
+			ImageID: Pierlot,
+			
+			BornDay: 22,
+			BornMonth: 2,
+			BornYear: 1883,
+			
+			ReignYear: 1934,
+		},
+		{
+			Name: "Philippe of Belgium",
+			ImageID: 45,
+			
+			BornDay: 15,
+			BornMonth: 4,
+			BornYear: 1960,
+			
+			ReignYear: 2013,
+		},
+	],
+
+	Age_of_History: Rulers
+}
+
+#######################################################
+
+Important Guidelines
+
+Order by ReignYear:
+Rulers must be listed in ascending order of ReignYear, starting from the earliest year to the latest.
+
+
+## Key Attributes:
+
+BornYear: 1883,
+ReignYear: 2013,
+
+ImageID: Pierlot,
+
+####################
+
+## The year of birth must be set accurately, or the ruler will not appear in the game (they cannot be too old or rule before their birth).
+
+## The ReignYear represents the year at which the ruler takes control of the Civilization.
+
+## Unique ImageID:
+If the ImageID is Pierlot, the corresponding image file should be named Pierlot.png
+Each ruler must have a unique ImageID.
+
+
+
+## Ruler Image Specifications:
+
+The ruler's image should be 150x150 pixels.
+
+Save the image in:
+game/rulers/rulersImages/H/
+
+
+Optionally, larger images can be stored in:
+game/rulers/rulersImages/XH/
+game/rulers/rulersImages/XXH/
+
+
+This process will ensure that Belgium has a ruler in the game for the World War II scenario, and the rulers are correctly formatted and sorted.

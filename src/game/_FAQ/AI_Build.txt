@@ -1,0 +1,22 @@
+	BUILD_LIMIT: [6,  // AI_BuildResearch
+            5,  // AI_BuildGold
+            2,  // AI_BuildLegacy
+            4,  // AI_BuildTaxEfficiency
+            2,  // AI_BuildProvinceMaintenance
+            3,  // AI_BuildManpower
+            1,  // AI_BuildDefensive
+            1,  // AI_BuildRecruitArmyCost
+            3,  // AI_BuildGrowthRate
+            6,  // AI_BuildEconomy
+            4,  // AI_BuildProductionEfficiency
+            2,  // AI_BuildConstructionCost
+            1,  // AI_BuildRest
+            2,  // AI_BuildCapitalBuilding
+            4   // AI_BuildResource
+    ],
+
+	BUILD_SCORE_CAPITAL: [125,  // Capital City
+            100,  // Military Academy
+            75,  // Military Academy for Generals
+            25,  // Supreme Court
+    ],

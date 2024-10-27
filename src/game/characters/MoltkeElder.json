@@ -1,0 +1,13 @@
+[
+{
+	Name: "Helmuth von Moltke",
+	ImageID: MoltkeElder,
+		
+	BornDay: 26,
+	BornMonth: 10,
+	BornYear: 1800,
+		
+	Attack: -1,
+	Defense: -1,
+},
+]

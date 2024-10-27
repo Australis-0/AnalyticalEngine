@@ -1,0 +1,13 @@
+[
+{
+	Name: "Stanisław Maczek",
+	ImageID: Maczek,
+	
+	BornDay: 31,
+	BornMonth: 3,
+	BornYear: 1892,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

@@ -1,0 +1,26 @@
+{
+	Rulers: [
+		{
+			Name: "Eleazar Lopez Contreras",
+			ImageID: 290,
+			
+			BornDay: 5,
+			BornMonth: 5,
+			BornYear: 1883,
+			
+			ReignYear: 1935,
+		},
+		{
+			Name: "Nicolas Maduro",
+			ImageID: 215,
+			
+			BornDay: 23,
+			BornMonth: 11,
+			BornYear: 1962,
+			
+			ReignYear: 2013,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

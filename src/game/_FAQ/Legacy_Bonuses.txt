@@ -1,0 +1,159 @@
+List of available bonuses for Civilization Legacy:
+
+
+ConstructionCost: [X],
+AdministrationBuildingsCost: [X],
+MilitaryBuildingsCost: [X],
+EconomyBuildingsCost: [X],
+WonderConstructionCost: [X],
+
+ConstructionTime: [X],
+
+TaxEfficiency: [X],
+ProvinceMaintenance: [X],
+BuildingsMaintenanceCost: [X],
+
+ManpowerRecoverySpeed: [X],
+MaxManpower: [X],
+Research: [X],
+ResearchPoints: [X],
+
+BuildingSlot: [X],
+MaxInfrastructure: [X],
+
+Devastation: [X],
+GrowthRate: [X],
+IncomeProduction: [X],
+ProductionEfficiency: [X],
+
+InvestInEconomyCost: [X],
+IncreaseTaxEfficiencyCost: [X],
+IncreaseGrowthRateCost: [X],
+DevelopInfrastructureCost: [X],
+
+GeneralAttack: [X],
+GeneralDefense: [X],
+
+UnitsAttack: [X],
+UnitsDefense: [X],
+
+MaxMorale: [X],
+ArmyMovementSpeed: [X],
+
+SiegeEffectiveness: [X],
+
+ImproveRelationsModifier: [X],
+IncomeFromVassals: [X],
+LoanInterest: [X],
+DiplomacyPoints: [X],
+
+RecruitmentTime: [X],
+
+MaxNumOfAlliances: [X],
+AdvisorMaxLevel: [X],
+AdvisorPoolSize: [X],
+
+MaxNumberOfLoans: [X],
+MaximumLevelOfTheMilitaryAcademyForGenerals: [X],
+MaximumLevelOfTheMilitaryAcademy: [X],
+MaximumLevelOfTheSupremeCourt: [X],
+MaximumLevelOfCapitalCity: [X],
+
+AggressiveExpansion: [X],
+DiseaseDeathRate: [X],
+
+AdvisorCost: [X],
+GeneralCost: [X],
+
+BattleWidth: [X],
+Discipline: [X],
+ManpowerRecoveryFromADisbandedArmy: [X],
+MaximumAmountOfGold: [X],
+
+Loot: [X],
+AllCharactersLifeExpectancy: [X],
+
+RegimentsLimit: [X],
+
+#######################################
+
+int ImageID;
+int GroupID;
+
+int CostLegacy[];
+
+int AI[];
+
+float ConstructionCost[];
+float AdministrationBuildingsCost[];
+float MilitaryBuildingsCost[];
+float EconomyBuildingsCost[];
+float WonderConstructionCost[];
+
+float ConstructionTime[];
+
+float TaxEfficiency[];
+float ProvinceMaintenance[];
+float BuildingsMaintenanceCost[];
+
+float ManpowerRecoverySpeed[];
+int MaxManpower[];
+float Research[];
+float ResearchPoints[];
+
+int BuildingSlot[];
+int MaxInfrastructure[];
+
+float Devastation[];
+float GrowthRate[];
+float IncomeProduction[];
+float ProductionEfficiency[];
+
+float InvestInEconomyCost[];
+float IncreaseTaxEfficiencyCost[];
+float IncreaseGrowthRateCost[];
+float DevelopInfrastructureCost[];
+
+int GeneralAttack[];
+int GeneralDefense[];
+
+int UnitsAttack[];
+int UnitsDefense[];
+
+float MaxMorale[];
+float ArmyMovementSpeed[];
+
+float SiegeEffectiveness[];
+
+float ImproveRelationsModifier[];
+float IncomeFromVassals[];
+float LoanInterest[];
+float DiplomacyPoints[];
+
+float RecruitmentTime[];
+
+int MaxNumOfAlliances[];
+int AdvisorMaxLevel[];
+int AdvisorPoolSize[];
+
+int MaxNumberOfLoans[];
+int MaximumLevelOfTheMilitaryAcademyForGenerals[];
+int MaximumLevelOfTheMilitaryAcademy[];
+int MaximumLevelOfTheSupremeCourt[];
+int MaximumLevelOfCapitalCity[];
+
+float AggressiveExpansion[];
+float DiseaseDeathRate[];
+
+float AdvisorCost[];
+float GeneralCost[];
+
+int BattleWidth[];
+float Discipline[];
+float ManpowerRecoveryFromADisbandedArmy[];
+float MaximumAmountOfGold[];
+
+float Loot[];
+int AllCharactersLifeExpectancy[];
+
+int RegimentsLimit[];

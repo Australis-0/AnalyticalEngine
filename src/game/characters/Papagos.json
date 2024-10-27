@@ -1,0 +1,13 @@
+[
+{
+	Name: "Alexander Papagos",
+	ImageID: Papagos,
+	
+	BornDay: 9,
+	BornMonth: 12,
+	BornYear: 1883,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

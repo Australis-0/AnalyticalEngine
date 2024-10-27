@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Felix Tshisekedi",
+			ImageID: 67,
+			
+			BornDay: 13,
+			BornMonth: 6,
+			BornYear: 1963,
+			
+			ReignYear: 2019,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Corneliu Teodorini",
+	ImageID: Teodorini,
+	
+	BornDay: 18,
+	BornMonth: 9,
+	BornYear: 1893,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

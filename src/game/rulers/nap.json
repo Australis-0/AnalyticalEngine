@@ -1,0 +1,126 @@
+{
+	"Rulers": [
+		{
+			"Name": "Roger II",
+			"ImageID": -1,
+			
+			"BornDay": 22,
+			"BornMonth": 12,
+			"BornYear": 1095,
+			
+			"ReignYear": 1130
+		},
+		{
+			"Name": "William I",
+			"ImageID": -1,
+			
+			"BornDay": 1131,
+			"BornMonth": 1,
+			"BornYear": 1131,
+			
+			"ReignYear": 1166
+		},
+		{
+			"Name": "William II",
+			"ImageID": -1,
+			
+			"BornDay": 1153,
+			"BornMonth": 1,
+			"BornYear": 1153,
+			
+			"ReignYear": 1166
+		},
+		{
+			"Name": "Charles I",
+			"ImageID": -1,
+			
+			"BornDay": 21,
+			"BornMonth": 3,
+			"BornYear": 1226,
+			
+			"ReignYear": 1266
+		},
+		{
+			"Name": "Robert the Wise",
+			"ImageID": -1,
+			
+			"BornDay": 1277,
+			"BornMonth": 9,
+			"BornYear": 1277,
+			
+			"ReignYear": 1309
+		},
+		{
+			"Name": "Joanna I",
+			"ImageID": -1,
+			
+			"BornDay": 1326,
+			"BornMonth": 1,
+			"BornYear": 1326,
+			
+			"ReignYear": 1343
+		},
+		{
+			"Name": "Louis I",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1330,
+			
+			"ReignYear": 1389
+		},
+		{
+			"Name": "Ferdinand I",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1380,
+			
+			"ReignYear": 1458
+		},
+		{
+			"Name": "Alfonso II",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1448,
+			
+			"ReignYear": 1494
+		},
+		{
+			"Name": "Ferdinand II",
+			"ImageID": -1,
+			
+			"BornDay": 14,
+			"BornMonth": 1,
+			"BornYear": 1469,
+			
+			"ReignYear": 1496
+		},
+		{
+			"Name": "Charles V",
+			"ImageID": -1,
+			
+			"BornDay": 24,
+			"BornMonth": 2,
+			"BornYear": 1500,
+			
+			"ReignYear": 1516
+		},
+		{
+			"Name": "Philip II",
+			"ImageID": -1,
+			
+			"BornDay": 21,
+			"BornMonth": 5,
+			"BornYear": 1527,
+			
+			"ReignYear": 1556
+		}
+	],
+	
+	"Age_of_History": "Rulers"
+}

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Antoni Roman",
+	ImageID: Roman,
+	
+	BornDay: 10,
+	BornMonth: 9,
+	BornYear: 1892,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

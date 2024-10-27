@@ -1,0 +1,13 @@
+[
+{
+	Name: "Peter Devogelaere",
+	ImageID: Devogelaere,
+	
+	BornDay: 15,
+	BornMonth: 2,
+	BornYear: 1962,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

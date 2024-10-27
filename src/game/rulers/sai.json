@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Susan Dougan",
+			ImageID: 173,
+			
+			BornDay: 3,
+			BornMonth: 3,
+			BornYear: 1955,
+			
+			ReignYear: 2019,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

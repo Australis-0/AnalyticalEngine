@@ -1,0 +1,13 @@
+[
+{
+	Name: "Kazimierz Badeni",
+	ImageID: Badeni,
+		
+	BornDay: 14,
+	BornMonth: 10,
+	BornYear: 1846,
+		
+	Attack: -1,
+	Defense: -1,
+},
+]

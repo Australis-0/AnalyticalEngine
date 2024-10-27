@@ -1,0 +1,17 @@
+#############################
+#### HOW TO FIND CIV TAG ####
+#############################
+
+
+Civilization TAGs:
+
+## Locate Civilization tags for your scenario:
+To find the list of civilization tags in a specific scenario, go to:
+map/THE_MAP/scenarios/THE_SCENARIO/Data.json
+
+
+## Find all Civilization tags and their names:
+Look in the file: game/languages/civilizations/Bundle.properties
+Find the entry for Belgium. Its tag will be: bel
+Find the entry for Brandenburg. Its tag will be: baa
+Find the entry for Hungary. Its tag will be: hun

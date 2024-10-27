@@ -1,0 +1,13 @@
+[
+{
+	Name: "Władysław Teofil Bartoszewski",
+	ImageID: TBartoszewski,
+	
+	BornDay: 22,
+	BornMonth: 10,
+	BornYear: 1955,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

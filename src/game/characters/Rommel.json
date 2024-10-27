@@ -1,0 +1,13 @@
+[
+{
+	Name: "Erwin Rommel",
+	ImageID: Rommel,
+	
+	BornDay: 15,
+	BornMonth: 11,
+	BornYear: 1891,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

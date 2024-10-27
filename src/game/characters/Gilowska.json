@@ -1,0 +1,13 @@
+[
+{
+	Name: "Zyta Gilowska",
+	ImageID: Gilowska,
+	
+	BornDay: 7,
+	BornMonth: 7,
+	BornYear: 1949,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

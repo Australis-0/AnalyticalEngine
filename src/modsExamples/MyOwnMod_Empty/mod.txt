@@ -1,0 +1,8 @@
+{
+	Name: "The title in steam workshop",
+	Description: "This will be your description!",
+	
+	Tags: [ "TagName1", "TagName2" ],
+	
+	ChangeNote: "First release",
+}

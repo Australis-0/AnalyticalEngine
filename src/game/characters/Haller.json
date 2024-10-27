@@ -1,0 +1,13 @@
+[
+{
+	Name: "Józef Haller",
+	ImageID: Haller,
+	
+	BornDay: 13,
+	BornMonth: 7,
+	BornYear: 1873,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

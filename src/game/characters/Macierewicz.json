@@ -1,0 +1,13 @@
+[
+{
+	Name: "Antoni Macierewicz",
+	ImageID: Macierewicz,
+	
+	BornDay: 3,
+	BornMonth: 8,
+	BornYear: 1948,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

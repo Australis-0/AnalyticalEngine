@@ -1,0 +1,13 @@
+[
+{
+	Name: "Wacław Makowski",
+	ImageID: Makowski,
+	
+	BornDay: 2,
+	BornMonth: 11,
+	BornYear: 1880,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

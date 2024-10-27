@@ -1,0 +1,26 @@
+{
+	Rulers: [
+		{
+			Name: "Mao Zedong",
+			ImageID: Zedong,
+			
+			BornDay: 26,
+			BornMonth: 12,
+			BornYear: 1893,
+			
+			ReignYear: 1931,
+		},
+		{
+			Name: "Xi Jinping",
+			ImageID: 64,
+			
+			BornDay: 15,
+			BornMonth: 6,
+			BornYear: 1953,
+			
+			ReignYear: 2013,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

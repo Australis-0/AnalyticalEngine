@@ -1,0 +1,13 @@
+[
+{
+	Name: "Mario Roatta",
+	ImageID: Roatta,
+	
+	BornDay: 2,
+	BornMonth: 2,
+	BornYear: 1887,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

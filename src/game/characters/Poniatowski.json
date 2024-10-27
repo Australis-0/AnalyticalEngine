@@ -1,0 +1,13 @@
+[
+{
+	Name: "Jozef Antoni Poniatowski",
+	ImageID: Poniatowski,
+	
+	BornDay: 7,
+	BornMonth: 5,
+	BornYear: 1763,
+	
+	Attack: 6,
+	Defense: 7,
+},
+]

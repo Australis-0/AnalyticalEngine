@@ -1,0 +1,13 @@
+[
+{
+	Name: "Omar Pasha",
+	ImageID: Pasha,
+		
+	BornDay: 24,
+	BornMonth: 9,
+	BornYear: 1806,
+		
+	Attack: -1,
+	Defense: -1,
+},
+]

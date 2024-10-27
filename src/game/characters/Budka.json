@@ -1,0 +1,13 @@
+[
+{
+	Name: "Borys Budka",
+	ImageID: Budka,
+	
+	BornDay: 11,
+	BornMonth: 3,
+	BornYear: 1978,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

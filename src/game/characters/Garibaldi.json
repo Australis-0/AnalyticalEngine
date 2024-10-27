@@ -1,0 +1,13 @@
+[
+{
+	Name: "Giuseppe Garibaldi",
+	ImageID: Garibaldi,
+	
+	BornDay: 4,
+	BornMonth: 7,
+	BornYear: 1807,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Alfred Jodl",
+	ImageID: Jodl,
+	
+	BornDay: 10,
+	BornMonth: 5,
+	BornYear: 1890,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

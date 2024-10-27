@@ -1,0 +1,106 @@
+{
+	"Rulers": [
+		{
+			"Name": "Amedeo VIII",
+			"ImageID": -1,
+			
+			"BornDay": 4,
+			"BornMonth": 9,
+			"BornYear": 1383,
+			
+			"ReignYear": 1391
+		},
+		{
+			"Name": "Filippo II",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1438,
+			
+			"ReignYear": 1496
+		},
+		{
+			"Name": "Emmanuel Philibert",
+			"ImageID": -1,
+			
+			"BornDay": 8,
+			"BornMonth": 7,
+			"BornYear": 1528,
+			
+			"ReignYear": 1553
+		},
+		{
+			"Name": "Charles Emmanuel I",
+			"ImageID": -1,
+			
+			"BornDay": 12,
+			"BornMonth": 1,
+			"BornYear": 1562,
+			
+			"ReignYear": 1580
+		},
+		{
+			"Name": "Victor Amadeus II",
+			"ImageID": -1,
+			
+			"BornDay": 14,
+			"BornMonth": 5,
+			"BornYear": 1666,
+			
+			"ReignYear": 1675
+		},
+		{
+			"Name": "Charles Emmanuel III",
+			"ImageID": -1,
+			
+			"BornDay": 27,
+			"BornMonth": 4,
+			"BornYear": 1701,
+			
+			"ReignYear": 1730
+		},
+		{
+			"Name": "Victor Emmanuel I",
+			"ImageID": -1,
+			
+			"BornDay": 24,
+			"BornMonth": 7,
+			"BornYear": 1759,
+			
+			"ReignYear": 1802
+		},
+		{
+			"Name": "Charles Felix",
+			"ImageID": -1,
+			
+			"BornDay": 6,
+			"BornMonth": 8,
+			"BornYear": 1765,
+			
+			"ReignYear": 1821
+		},
+		{
+			"Name": "Victor Emmanuel II",
+			"ImageID": -1,
+			
+			"BornDay": 14,
+			"BornMonth": 3,
+			"BornYear": 1820,
+			
+			"ReignYear": 1849
+		},
+		{
+			"Name": "Umberto I",
+			"ImageID": -1,
+			
+			"BornDay": 14,
+			"BornMonth": 3,
+			"BornYear": 1844,
+			
+			"ReignYear": 1878
+		}
+	],
+	
+	"Age_of_History": "Rulers"
+}

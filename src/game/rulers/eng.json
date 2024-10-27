@@ -1,0 +1,446 @@
+{
+	"Rulers": [
+		{
+			"Name": "Aethelstan",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 894,
+			
+			"ReignYear": 924
+		},
+		{
+			"Name": "Edmund I",
+			"ImageID": -1,
+			
+			"BornDay": 23,
+			"BornMonth": 1,
+			"BornYear": 921,
+			
+			"ReignYear": 939
+		},
+		{
+			"Name": "Edgar the Peaceful",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 943,
+			
+			"ReignYear": 959
+		},
+		{
+			"Name": "Edward the Confessor",
+			"ImageID": -1,
+			
+			"BornDay": 1003,
+			"BornMonth": 10,
+			"BornYear": 1003,
+			
+			"ReignYear": 1042
+		},
+		{
+			"Name": "Harold II",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1022,
+			
+			"ReignYear": 1066
+		},
+		{
+			"Name": "William I",
+			"ImageID": -1,
+			
+			"BornDay": 14,
+			"BornMonth": 10,
+			"BornYear": 1028,
+			
+			"ReignYear": 1066
+		},
+		{
+			"Name": "Henry I",
+			"ImageID": -1,
+			
+			"BornDay": 5,
+			"BornMonth": 8,
+			"BornYear": 1068,
+			
+			"ReignYear": 1100
+		},
+		{
+			"Name": "Stephen",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1096,
+			
+			"ReignYear": 1135
+		},
+		{
+			"Name": "Henry II",
+			"ImageID": -1,
+			
+			"BornDay": 5,
+			"BornMonth": 3,
+			"BornYear": 1133,
+			
+			"ReignYear": 1154
+		},
+		{
+			"Name": "Richard I",
+			"ImageID": -1,
+			
+			"BornDay": 8,
+			"BornMonth": 9,
+			"BornYear": 1157,
+			
+			"ReignYear": 1189
+		},
+		{
+			"Name": "John",
+			"ImageID": -1,
+			
+			"BornDay": 24,
+			"BornMonth": 12,
+			"BornYear": 1166,
+			
+			"ReignYear": 1199
+		},
+		{
+			"Name": "Henry III",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 10,
+			"BornYear": 1207,
+			
+			"ReignYear": 1216
+		},
+		{
+			"Name": "Edward I",
+			"ImageID": -1,
+			
+			"BornDay": 17,
+			"BornMonth": 6,
+			"BornYear": 1239,
+			
+			"ReignYear": 1272
+		},
+		{
+			"Name": "Edward II",
+			"ImageID": -1,
+			
+			"BornDay": 25,
+			"BornMonth": 4,
+			"BornYear": 1284,
+			
+			"ReignYear": 1307
+		},
+		{
+			"Name": "Edward III",
+			"ImageID": -1,
+			
+			"BornDay": 13,
+			"BornMonth": 11,
+			"BornYear": 1312,
+			
+			"ReignYear": 1327
+		},
+		{
+			"Name": "Richard II",
+			"ImageID": 0,
+			
+			"BornDay": 6,
+			"BornMonth": 1,
+			"BornYear": 1367,
+			
+			"ReignYear": 1377
+		},
+		{
+			"Name": "Henry IV",
+			"ImageID": -1,
+			
+			"BornDay": 3,
+			"BornMonth": 4,
+			"BornYear": 1367,
+			
+			"ReignYear": 1399
+		},
+		{
+			"Name": "Henry V",
+			"ImageID": -1,
+			
+			"BornDay": 9,
+			"BornMonth": 8,
+			"BornYear": 1386,
+			
+			"ReignYear": 1413
+		},
+		{
+			"Name": "Henry VI",
+			"ImageID": 1,
+			
+			"BornDay": 6,
+			"BornMonth": 12,
+			"BornYear": 1421,
+			
+			"ReignYear": 1422
+		},
+		{
+			"Name": "Edward IV",
+			"ImageID": -1,
+			
+			"BornDay": 28,
+			"BornMonth": 4,
+			"BornYear": 1442,
+			
+			"ReignYear": 1461
+		},
+		{
+			"Name": "Richard III",
+			"ImageID": -1,
+			
+			"BornDay": 2,
+			"BornMonth": 10,
+			"BornYear": 1452,
+			
+			"ReignYear": 1483
+		},
+		{
+			"Name": "Henry VII",
+			"ImageID": -1,
+			
+			"BornDay": 28,
+			"BornMonth": 1,
+			"BornYear": 1457,
+			
+			"ReignYear": 1485
+		},
+		{
+			"Name": "Henry VIII",
+			"ImageID": -1,
+			
+			"BornDay": 28,
+			"BornMonth": 6,
+			"BornYear": 1491,
+			
+			"ReignYear": 1509
+		},
+		{
+			"Name": "Edward VI",
+			"ImageID": -1,
+			
+			"BornDay": 12,
+			"BornMonth": 10,
+			"BornYear": 1537,
+			
+			"ReignYear": 1547
+		},
+		{
+			"Name": "Mary I",
+			"ImageID": -1,
+			
+			"BornDay": 18,
+			"BornMonth": 2,
+			"BornYear": 1516,
+			
+			"ReignYear": 1553
+		},
+		{
+			"Name": "Elizabeth I",
+			"ImageID": -1,
+			
+			"BornDay": 7,
+			"BornMonth": 9,
+			"BornYear": 1533,
+			
+			"ReignYear": 1558
+		},
+		{
+			"Name": "James I",
+			"ImageID": -1,
+			
+			"BornDay": 19,
+			"BornMonth": 6,
+			"BornYear": 1566,
+			
+			"ReignYear": 1603
+		},
+		{
+			"Name": "Charles I",
+			"ImageID": -1,
+			
+			"BornDay": 19,
+			"BornMonth": 11,
+			"BornYear": 1600,
+			
+			"ReignYear": 1625
+		},
+		{
+			"Name": "Charles II",
+			"ImageID": -1,
+			
+			"BornDay": 29,
+			"BornMonth": 5,
+			"BornYear": 1630,
+			
+			"ReignYear": 1660
+		},
+		{
+			"Name": "James II",
+			"ImageID": -1,
+			
+			"BornDay": 14,
+			"BornMonth": 10,
+			"BornYear": 1633,
+			
+			"ReignYear": 1685
+		},
+		{
+			"Name": "William III",
+			"ImageID": -1,
+			
+			"BornDay": 4,
+			"BornMonth": 11,
+			"BornYear": 1650,
+			
+			"ReignYear": 1689
+		},
+		{
+			"Name": "Anne",
+			"ImageID": -1,
+			
+			"BornDay": 6,
+			"BornMonth": 2,
+			"BornYear": 1665,
+			
+			"ReignYear": 1702
+		},
+		{
+			"Name": "George I",
+			"ImageID": -1,
+			
+			"BornDay": 28,
+			"BornMonth": 5,
+			"BornYear": 1660,
+			
+			"ReignYear": 1714
+		},
+		{
+			"Name": "George II",
+			"ImageID": -1,
+			
+			"BornDay": 30,
+			"BornMonth": 10,
+			"BornYear": 1683,
+			
+			"ReignYear": 1727
+		},
+		{
+			"Name": "George III",
+			"ImageID": -1,
+			
+			"BornDay": 4,
+			"BornMonth": 6,
+			"BornYear": 1738,
+			
+			"ReignYear": 1760
+		},
+		{
+			"Name": "George IV",
+			"ImageID": -1,
+			
+			"BornDay": 12,
+			"BornMonth": 8,
+			"BornYear": 1762,
+			
+			"ReignYear": 1820
+		},
+		{
+			"Name": "William IV",
+			"ImageID": -1,
+			
+			"BornDay": 21,
+			"BornMonth": 8,
+			"BornYear": 1765,
+			
+			"ReignYear": 1830
+		},
+		{
+			"Name": "Victoria",
+			"ImageID": -1,
+			
+			"BornDay": 24,
+			"BornMonth": 5,
+			"BornYear": 1819,
+			
+			"ReignYear": 1837
+		},
+		{
+			"Name": "Edward VII",
+			"ImageID": -1,
+			
+			"BornDay": 9,
+			"BornMonth": 11,
+			"BornYear": 1841,
+			
+			"ReignYear": 1901
+		},
+		{
+			"Name": "George V",
+			"ImageID": -1,
+			
+			"BornDay": 3,
+			"BornMonth": 6,
+			"BornYear": 1865,
+			
+			"ReignYear": 1910
+		},
+		{
+			"Name": "Edward VIII",
+			"ImageID": -1,
+			
+			"BornDay": 23,
+			"BornMonth": 6,
+			"BornYear": 1894,
+			
+			"ReignYear": 1936
+		},
+		{
+			"Name": "George VI",
+			"ImageID": -1,
+			
+			"BornDay": 14,
+			"BornMonth": 12,
+			"BornYear": 1895,
+			
+			"ReignYear": 1936
+		},
+		{
+			"Name": "Elizabeth II",
+			"ImageID": -1,
+			
+			"BornDay": 21,
+			"BornMonth": 4,
+			"BornYear": 1926,
+			
+			"ReignYear": 1952
+		},
+		{
+			"Name": "Charles III",
+			"ImageID": -1,
+			
+			"BornDay": 14,
+			"BornMonth": 11,
+			"BornYear": 1948,
+			
+			"ReignYear": 2022
+		}
+	],
+	
+	"Age_of_History": "Rulers"
+}

@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Mohamed Ould Ghazouani",
+			ImageID: 137,
+			
+			BornDay: 31,
+			BornMonth: 12,
+			BornYear: 1956,
+			
+			ReignYear: 2019,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

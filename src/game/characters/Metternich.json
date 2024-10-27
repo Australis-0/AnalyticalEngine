@@ -1,0 +1,13 @@
+[
+{
+	Name: "Klemens von Metternich",
+	ImageID: Metternich,
+		
+	BornDay: 15,
+	BornMonth: 5,
+	BornYear: 1773,
+		
+	Attack: -1,
+	Defense: -1,
+},
+]

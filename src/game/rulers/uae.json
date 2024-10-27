@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Mohamed bin Zayed Al Nahyan",
+			ImageID: 209,
+			
+			BornDay: 11,
+			BornMonth: 3,
+			BornYear: 1961,
+			
+			ReignYear: 2022,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

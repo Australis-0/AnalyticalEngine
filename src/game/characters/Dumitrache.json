@@ -1,0 +1,13 @@
+[
+{
+	Name: "Ioan Dumitrache",
+	ImageID: Dumitrache,
+	
+	BornDay: 25,
+	BornMonth: 8,
+	BornYear: 1889,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

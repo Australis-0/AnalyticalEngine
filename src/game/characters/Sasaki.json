@@ -1,0 +1,13 @@
+[
+{
+	Name: "Kojirō Sasaki",
+	ImageID: Sasaki,
+	
+	BornDay: 20,
+	BornMonth: 4,
+	BornYear: 1575,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

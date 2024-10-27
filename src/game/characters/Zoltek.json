@@ -1,0 +1,13 @@
+[
+{
+	Name: "Stanisław Żółtek",
+	ImageID: Zoltek,
+	
+	BornDay: 7,
+	BornMonth: 5,
+	BornYear: 1956,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Jarosław Kaczyński",
+	ImageID: KaczynskiJ,
+	
+	BornDay: 18,
+	BornMonth: 6,
+	BornYear: 1949,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

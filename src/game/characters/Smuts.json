@@ -1,0 +1,13 @@
+[
+{
+	Name: "Jan Smuts",
+	ImageID: Smuts,
+	
+	BornDay: 24,
+	BornMonth: 5,
+	BornYear: 1870,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

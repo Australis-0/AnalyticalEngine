@@ -1,0 +1,13 @@
+[
+{
+	Name: "Miguel Barragán",
+	ImageID: Barragan,
+	
+	BornDay: 8,
+	BornMonth: 3,
+	BornYear: 1789,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

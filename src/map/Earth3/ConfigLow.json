@@ -1,0 +1,47 @@
+{
+	Name: "Earth",
+	Author: "Łukasz Jakowski",
+	
+	NumOfProvinces: 13890,
+	DefaultMapScale: 1,
+	ExtraMapScale: 4.0,
+	WorldMap: true,
+	
+	ResearchCost: 1.5,
+	UnitsRecruitCost: 1.0,
+	UnitsMaintenanceCost: 1.1,
+	BuildingsCost: 1.0,
+	BuildingsMaintenanceCost: 1.0,
+	BuildingsConstructionTime: 1.0,
+	
+	BackgroundSize_X: 8,
+	BackgroundSize_Y: 4,
+	BackgroundScale: 1.0,
+	
+	BackgroundZoomOut_Enable: false,
+	BackgroundZoomOut_Size_X: 4,
+	BackgroundZoomOut_Size_Y: 2,
+	BackgroundZoomOut_Scale: 0.13,
+	
+	BackgroundZoomOut_AnimationDuration: 600,
+	
+	BackgroundColor: [18, 42, 66],
+	BackgroundColor_ZoomIn: [45, 80, 100],
+	BackgroundColor_ZoomOut: [28, 36, 41],
+	
+	SeaOverAlpha: 0.75,
+	
+	DistanceKm: 1.95,
+	
+	WastelandColor: [200, 165, 130],
+	
+	DRAW_CITIES_MIN_SCALE: 1.3,
+	DRAW_CIV_NAMES_START_DRAWING_MAP_SCALE: 0.6,
+	DRAW_INNER_BORDERS: 0.6,
+	DRAW_OCCUPIED_PROVINCES_MIN_SCALE: 0.15,
+	DRAW_ARMY_MIN_SCALE: 0.5,
+	DRAW_OCCUPIED_SCALE: 8.0,
+	
+	DefaultScenario: "1440",
+	Wiki: "Earth",
+}

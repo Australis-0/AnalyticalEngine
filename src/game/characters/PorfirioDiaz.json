@@ -1,0 +1,13 @@
+[
+{
+	Name: "Porfirio Díaz",
+	ImageID: PorfirioDiaz,
+	
+	BornDay: 15,
+	BornMonth: 9,
+	BornYear: 1830,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

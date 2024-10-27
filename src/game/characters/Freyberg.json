@@ -1,0 +1,13 @@
+[
+{
+	Name: "Bernard Freyberg",
+	ImageID: Freyberg,
+	
+	BornDay: 21,
+	BornMonth: 3,
+	BornYear: 1889,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

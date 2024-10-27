@@ -1,0 +1,13 @@
+[
+{
+	Name: "Jan Stapiński",
+	ImageID: Stapinski,
+	
+	BornDay: 21,
+	BornMonth: 12,
+	BornYear: 1867,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

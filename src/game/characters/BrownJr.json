@@ -1,0 +1,13 @@
+[
+{
+	Name: "Charles Q. Brown Jr.",
+	ImageID: BrownJr,
+	
+	BornDay: 17,
+	BornMonth: 5,
+	BornYear: 1962,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

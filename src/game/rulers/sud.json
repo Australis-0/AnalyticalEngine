@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Abdel Fattah al-Burhan",
+			ImageID: 192,
+			
+			BornDay: 8,
+			BornMonth: 12,
+			BornYear: 1960,
+			
+			ReignYear: 2021,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

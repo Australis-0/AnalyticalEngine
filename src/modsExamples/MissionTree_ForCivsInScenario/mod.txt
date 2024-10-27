@@ -1,0 +1,8 @@
+{
+	Name: "Missions for Brandenburg and Hungary 1440 - Mod Example",
+	Description: "Special missions for Brandenburg and Hungary in the 1440 scenario.",
+	
+	Tags: [ "Missions", "Scenario" ],
+	
+	ChangeNote: "First release",
+}

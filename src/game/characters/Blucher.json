@@ -1,0 +1,13 @@
+[
+{
+	Name: "Gebhard Leberecht von Blücher",
+	ImageID: Blucher,
+	
+	BornDay: 21,
+	BornMonth: 12,
+	BornYear: 1742,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

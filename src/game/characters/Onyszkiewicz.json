@@ -1,0 +1,13 @@
+[
+{
+	Name: "Janusz Onyszkiewicz",
+	ImageID: Onyszkiewicz,
+	
+	BornDay: 18,
+	BornMonth: 12,
+	BornYear: 1937,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

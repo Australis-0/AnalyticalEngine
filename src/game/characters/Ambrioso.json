@@ -1,0 +1,13 @@
+[
+{
+	Name: "Vittorio Ambrosio",
+	ImageID: Ambrosio,
+	
+	BornDay: 28,
+	BornMonth: 7,
+	BornYear: 1879,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

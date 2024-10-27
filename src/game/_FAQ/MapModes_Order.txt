@@ -1,0 +1,37 @@
+#######################################
+## Read: mods_steam_workshop.txt !
+## 
+## To create a new mod for submission to the Steam Workshop, first create a new folder for your mod within the 'mods' directory.
+## Then, copy or recreate all the modified files into that folder!
+##
+## For example, if a file was originally located in game/ExampleFile.json, 
+## it should be placed in mods/YourModName/game/ExampleFile.json in your mod's folder.
+##
+#####
+
+Go to:
+game/gameValues/GV_MapModes.json
+
+
+MAP_MODES_ORDER: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
+
+
+0 == DEFAULT
+1 == TERRAIN
+2 == GOODS
+3 == WONDERS
+4 == POPULATION
+5 == ECONOMY
+6 == TAX
+7 == GOVERNMENT
+8 == RELIGION
+9 == UNREST
+10 == INFRASTRUCTURE
+11 == DEFENSE LEVEL
+12 == DISEASE
+13 == LOOT
+14 == DEVASTATION
+15 == CURRENT WARS
+16 == ALLIANCES
+17 == DEFENSIVE PACTS
+18 == NON AGGRESSION PACTS

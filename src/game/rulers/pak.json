@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Asif Ali Zardari",
+			ImageID: 160,
+			
+			BornDay: 26,
+			BornMonth: 7,
+			BornYear: 1955,
+			
+			ReignYear: 2022,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

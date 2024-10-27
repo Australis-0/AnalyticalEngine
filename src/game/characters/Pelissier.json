@@ -1,0 +1,13 @@
+[
+{
+	Name: "Aimable Pélissier",
+	ImageID: Pelissier,
+		
+	BornDay: 6,
+	BornMonth: 11,
+	BornYear: 1794,
+		
+	Attack: -1,
+	Defense: -1,
+},
+]

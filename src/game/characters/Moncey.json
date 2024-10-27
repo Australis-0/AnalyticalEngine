@@ -1,0 +1,13 @@
+[
+{
+	Name: "Bon Adrien Jeannot de Moncey",
+	ImageID: Moncey,
+	
+	BornDay: 31,
+	BornMonth: 7,
+	BornYear: 1754,
+	
+	Attack: 5,
+	Defense: 5,
+},
+]

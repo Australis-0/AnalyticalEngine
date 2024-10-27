@@ -1,0 +1,28 @@
+#######################################
+## Read: mods_steam_workshop.txt !
+## 
+## To create a new mod for submission to the Steam Workshop, first create a new folder for your mod within the 'mods' directory.
+## Then, copy or recreate all the modified files into that folder!
+##
+## For example, if a file was originally located in game/ExampleFile.json, 
+## it should be placed in mods/YourModName/game/ExampleFile.json in your mod's folder.
+##
+#####
+
+Go to:
+game/gameValues/
+
+If you want to modify any value in a file,
+you must copy the entire file to your mod folder and then make your changes in the copied version.
+
+mods/YourModName/game/gameValues/GameValues.json
+
+or
+
+mods/YourModName/game/gameValues/GV_Battle.json
+
+#########
+
+Mod example:
+
+modsExamples/GameValuesMod/

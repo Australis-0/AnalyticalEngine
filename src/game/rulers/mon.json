@@ -1,0 +1,26 @@
+{
+	Rulers: [
+		{
+			Name: "Anandyn Amar",
+			ImageID: 300,
+			
+			BornDay: 4,
+			BornMonth: 5,
+			BornYear: 1886,
+			
+			ReignYear: 1931,
+		},
+		{
+			Name: "Ukhnaagiin Khürelsükh",
+			ImageID: 143,
+			
+			BornDay: 14,
+			BornMonth: 6,
+			BornYear: 1968,
+			
+			ReignYear: 2021,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

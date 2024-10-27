@@ -1,0 +1,13 @@
+[
+{
+	Name: "Vyacheslav Molotov",
+	ImageID: Molotov,
+	
+	BornDay: 9,
+	BornMonth: 3,
+	BornYear: 1890,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

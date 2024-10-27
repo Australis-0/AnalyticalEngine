@@ -1,0 +1,10 @@
+{
+FormableCivTag: "tusc_m",
+ClaimantsTag: [
+	"sien",
+	"piom3",
+	"flor"
+],
+Provinces: [ 6557, 2294, 186, 7456, 6830, 187, 184, 7248, 158, 185, 7218, 7398, 355, 155, 156 ],
+CapitalProvinceID: 158
+}

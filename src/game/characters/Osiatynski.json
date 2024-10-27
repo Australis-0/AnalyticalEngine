@@ -1,0 +1,13 @@
+[
+{
+	Name: "Jerzy Osiatyński",
+	ImageID: Osiatynski,
+	
+	BornDay: 2,
+	BornMonth: 11,
+	BornYear: 1941,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

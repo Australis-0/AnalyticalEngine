@@ -1,0 +1,13 @@
+[
+{
+	Name: "Aleksandr Lapin",
+	ImageID: Lapin,
+	
+	BornDay: 1,
+	BornMonth: 1,
+	BornYear: 1964,
+	
+	Attack: 2,
+	Defense: 4,
+},
+]

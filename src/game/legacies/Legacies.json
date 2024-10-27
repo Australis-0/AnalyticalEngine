@@ -1,0 +1,222 @@
+{
+	Legacy:
+	[
+		{
+			Name: EfficientInfrastructure,
+			ImageID: 0,
+			GroupID: 0,
+			
+			CostLegacy: [400, 600, 1000],
+			
+			ConstructionCost: [-0.025, -0.05, -0.075],
+			ConstructionTime: [-0.05, -0.1, -0.15],
+			
+			AI: [5, 10, 15],
+		},
+		{
+			Name: EfficientTaxation,
+			ImageID: 1,
+			GroupID: 0,
+			
+			CostLegacy: [400, 600, 1000],
+			
+			TaxEfficiency: [1.8, 3.6, 5.8],
+			IncreaseTaxEfficiencyCost: [-0.025, -0.05, -0.075],
+			
+			AI: [5, 10, 15],
+		},
+		{
+			Name: UnifiedAdministration,
+			ImageID: 2,
+			GroupID: 0,
+			
+			CostLegacy: [400, 600, 1000],
+			
+			MaxInfrastructure: [1, 2, 2],
+			ProvinceMaintenance: [-3, -6, -10],
+			MaximumLevelOfTheSupremeCourt: [0, 1, 2],
+			DevelopInfrastructureCost: [-0.025, -0.05, -0.075],
+			
+			AI: [5, 10, 15],
+		},
+		{
+			Name: CentralizedCommand,
+			ImageID: 3,
+			GroupID: 0,
+			
+			CostLegacy: [400, 600, 1000],
+			
+			MaxManpower: [5000, 10000, 15000],
+			ManpowerRecoverySpeed: [0.025, 0.05, 0.075],
+			BattleWidth: [4, 6, 8],
+			
+			AI: [5, 10, 15],
+		},
+		
+		
+		{
+			Name: InnovationHubs,
+			ImageID: 4,
+			GroupID: 1,
+			
+			CostLegacy: [400, 600, 1000],
+			
+			Research: [3, 6, 10],
+			ResearchPoints: [4, 8, 12],
+			
+			AI: [5, 10, 15],
+		},
+		{
+			Name: AgriculturalRevolution,
+			ImageID: 5,
+			GroupID: 1,
+			
+			CostLegacy: [400, 600, 1000],
+			
+			GrowthRate: [3, 6, 10],
+			BuildingSlot: [1, 2, 3],
+			IncreaseGrowthRateCost: [-0.025, -0.05, -0.075],
+			
+			AI: [5, 10, 15],
+		},
+		{
+			Name: MerchantCouncil,
+			ImageID: 6,
+			GroupID: 1,
+			
+			CostLegacy: [400, 600, 1000],
+			
+			ProductionEfficiency: [3, 6, 10],
+			IncomeProduction: [2, 4, 6],
+			
+			AI: [5, 10, 15],
+		},
+		{
+			Name: EconomicBoom,
+			ImageID: 7,
+			GroupID: 1,
+			
+			CostLegacy: [400, 600, 1000],
+			
+			MaximumAmountOfGold: [0.1, 0.2, 0.35],
+			InvestInEconomyCost: [-0.025, -0.05, -0.075],
+			AdvisorCost: [-0.1, -0.2, -0.3],
+			
+			AI: [5, 10, 15],
+		},
+		
+		
+		{
+			Name: VeteranGenerals,
+			ImageID: 8,
+			GroupID: 2,
+			
+			CostLegacy: [400, 600, 1000],
+			
+			GeneralAttack: [1, 1, 2],
+			GeneralDefense: [0, 1, 2],
+			MaximumLevelOfTheMilitaryAcademyForGenerals: [1, 2, 3],
+			AllCharactersLifeExpectancy: [3, 6, 10],
+			
+			AI: [5, 10, 15],
+		},
+		{
+			Name: ArmyTradition,
+			ImageID: 9,
+			GroupID: 2,
+			
+			CostLegacy: [400, 600, 1000],
+			
+			MaxMorale: [0.05, 0.1, 0.15],
+			UnitsDefense: [1, 2, 4],
+			MaximumLevelOfTheMilitaryAcademy: [1, 2, 3],
+			
+			AI: [5, 10, 15],
+		},
+		{
+			Name: MilitaryDominance,
+			ImageID: 10,
+			GroupID: 2,
+			
+			CostLegacy: [400, 600, 1000],
+			
+			UnitsAttack: [1, 3, 5],
+			Discipline: [0.05, 0.1, 0.15],
+			Devastation: [0.1, 0.15, 0.25],
+			
+			AI: [5, 10, 15],
+		},
+		{
+			Name: SiegeExpertise,
+			ImageID: 11,
+			GroupID: 2,
+			
+			CostLegacy: [400, 600, 1000],
+			
+			RegimentsLimit: [10, 20, 40],
+			SiegeEffectiveness: [0.1, 0.2, 0.3],
+			RecruitmentTime: [-5, -10, -15],
+			ArmyMovementSpeed: [5, 10, 20],
+			
+			
+			AI: [5, 10, 15],
+		},
+		
+		
+		{
+			Name: DiplomaticFinesse,
+			ImageID: 12,
+			GroupID: 3,
+			
+			CostLegacy: [400, 600, 1000],
+			
+			MaximumLevelOfCapitalCity: [1, 2, 3],
+			ImproveRelationsModifier: [10, 20, 30],
+			LoanInterest: [-5, -10, -20],
+			MaxNumberOfLoans: [1, 2, 3],
+			DiplomacyPoints: [0.15, 0.35, 0.5],
+			
+			AI: [5, 10, 15],
+		},
+		{
+			Name: TributeSystem,
+			ImageID: 13,
+			GroupID: 3,
+			
+			CostLegacy: [400, 600, 1000],
+			
+			IncomeFromVassals: [0.05, 0.1, 0.15],
+			GeneralCost: [-0.05, -0.15, -0.25],
+			Loot: [0.1, 0.2, 0.3],
+			
+			AI: [5, 10, 15],
+		},
+		{
+			Name: AllianceExpertise,
+			ImageID: 14,
+			GroupID: 3,
+			
+			CostLegacy: [400, 600, 1000],
+			
+			MaxNumOfAlliances: [0, 0, 1],
+			AdvisorMaxLevel: [1, 1, 2],
+			AdvisorPoolSize: [1, 2, 2],
+			
+			AI: [5, 10, 15],
+		},
+		{
+			Name: CrisisResolution,
+			ImageID: 15,
+			GroupID: 3,
+			
+			CostLegacy: [400, 600, 1000],
+			
+			AggressiveExpansion: [-5, -10, -15],
+			DiseaseDeathRate: [-0.1, -0.2, -0.3],
+			ManpowerRecoveryFromADisbandedArmy: [0.25, 0.5, 0.75],
+			
+			AI: [5, 10, 15],
+		},
+	],
+	Age_of_History: Legacy
+}

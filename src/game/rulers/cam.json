@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Paul Biya",
+			ImageID: 58,
+			
+			BornDay: 13,
+			BornMonth: 2,
+			BornYear: 1933,
+			
+			ReignYear: 1982,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Adam Jarubas",
+	ImageID: Jarubas,
+	
+	BornDay: 17,
+	BornMonth: 12,
+	BornYear: 1974,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

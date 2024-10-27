@@ -1,0 +1,13 @@
+[
+{
+	Name: "José Justo Corro",
+	ImageID: Justo,
+	
+	BornDay: 19,
+	BornMonth: 7,
+	BornYear: 1794,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

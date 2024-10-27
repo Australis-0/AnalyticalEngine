@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Alessandro Rossi",
+			ImageID: 175,
+			
+			BornDay: 10,
+			BornMonth: 8,
+			BornYear: 1967,
+			
+			ReignYear: 2024,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

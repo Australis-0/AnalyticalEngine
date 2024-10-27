@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Hans-Adam II",
+			ImageID: 128,
+			
+			BornDay: 14,
+			BornMonth: 2,
+			BornYear: 1945,
+			
+			ReignYear: 1989,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

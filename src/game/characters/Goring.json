@@ -1,0 +1,15 @@
+[
+{
+	Name: "Hermann Wilhem Göring",
+	ImageID: Goring,
+	
+	BornDay: 12,
+	BornMonth: 1,
+	BornYear: 1893,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]
+
+

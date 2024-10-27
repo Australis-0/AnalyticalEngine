@@ -1,0 +1,13 @@
+[
+{
+	Name: "Waldemar Witkowski",
+	ImageID: Witkowski,
+	
+	BornDay: 29,
+	BornMonth: 10,
+	BornYear: 1953,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

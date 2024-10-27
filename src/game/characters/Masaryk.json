@@ -1,0 +1,13 @@
+[
+    {
+        "Name": "Tomáš Garrigue Masaryk",
+        "ImageID": "Masaryk",
+        
+        "BornDay": 7,
+        "BornMonth": 3,
+        "BornYear": 1850,
+        
+        "Attack": -1,
+        "Defense": -1
+    }
+]

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Stanisław Żółkiewski",
+	ImageID: Zolkiewski,
+	
+	BornDay: 6,
+	BornMonth: 5,
+	BornYear: 1547,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

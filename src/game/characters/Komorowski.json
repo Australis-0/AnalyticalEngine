@@ -1,0 +1,13 @@
+[
+{
+	Name: "Bronisław Komorowski",
+	ImageID: Komorowski,
+	
+	BornDay: 4,
+	BornMonth: 6,
+	BornYear: 1952,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

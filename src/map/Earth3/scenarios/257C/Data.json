@@ -1,0 +1,206 @@
+[
+{
+	CivTAG: "dan2_m",
+	CivID: 1,
+	PCID: 1,
+	CPID: 1061
+},
+{
+	CivTAG: "burg2_m",
+	CivID: 2,
+	PCID: 2,
+	CPID: 1001
+},
+{
+	CivTAG: "guth2_m",
+	CivID: 3,
+	PCID: 3,
+	CPID: 7476
+},
+{
+	CivTAG: "sui2_m",
+	CivID: 4,
+	PCID: 4,
+	CPID: 1060
+},
+{
+	CivTAG: "leu2_m",
+	CivID: 5,
+	PCID: 5,
+	CPID: 1000
+},
+{
+	CivTAG: "rau2",
+	CivID: 6,
+	PCID: 6,
+	CPID: 1006
+},
+{
+	CivTAG: "gra2_m",
+	CivID: 7,
+	PCID: 7,
+	CPID: 1003
+},
+{
+	CivTAG: "aete2_m",
+	CivID: 8,
+	PCID: 8,
+	CPID: 1007
+},
+{
+	CivTAG: "heru2_m",
+	CivID: 9,
+	PCID: 9,
+	CPID: 2249
+},
+{
+	CivTAG: "cimb2_m",
+	CivID: 10,
+	PCID: 10,
+	CPID: 2251
+},
+{
+	CivTAG: "teut2_m",
+	CivID: 11,
+	PCID: 11,
+	CPID: 6456
+},
+{
+	CivTAG: "eudo2_m",
+	CivID: 12,
+	PCID: 12,
+	CPID: 2254
+},
+{
+	CivTAG: "avio2_m",
+	CivID: 13,
+	PCID: 13,
+	CPID: 2248
+},
+{
+	CivTAG: "angl2_m",
+	CivID: 14,
+	PCID: 14,
+	CPID: 6516
+},
+{
+	CivTAG: "chau2_m",
+	CivID: 15,
+	PCID: 15,
+	CPID: 620
+},
+{
+	CivTAG: "reud2_m",
+	CivID: 16,
+	PCID: 16,
+	CPID: 607
+},
+{
+	CivTAG: "fris_m",
+	CivID: 17,
+	PCID: 17,
+	CPID: 529
+},
+{
+	CivTAG: "cher2_m",
+	CivID: 18,
+	PCID: 18,
+	CPID: 748
+},
+{
+	CivTAG: "angr2_m",
+	CivID: 19,
+	PCID: 19,
+	CPID: 6500
+},
+{
+	CivTAG: "fosi2_m",
+	CivID: 20,
+	PCID: 20,
+	CPID: 629
+},
+{
+	CivTAG: "lang2_m",
+	CivID: 21,
+	PCID: 21,
+	CPID: 630
+},
+{
+	CivTAG: "marc2_m",
+	CivID: 22,
+	PCID: 22,
+	CPID: 753
+},
+{
+	CivTAG: "vari2_m",
+	CivID: 23,
+	PCID: 23,
+	CPID: 7400
+},
+{
+	CivTAG: "rugi2_m",
+	CivID: 24,
+	PCID: 24,
+	CPID: 586
+},
+{
+	CivTAG: "salo2_m",
+	CivID: 25,
+	PCID: 25,
+	CPID: 1287
+},
+{
+	CivTAG: "gal2_m",
+	CivID: 26,
+	PCID: 26,
+	CPID: 3621
+},
+{
+	CivTAG: "vene2_m",
+	CivID: 27,
+	PCID: 27,
+	CPID: 392
+},
+{
+	CivTAG: "sudi2_m",
+	CivID: 28,
+	PCID: 28,
+	CPID: 6653
+},
+{
+	CivTAG: "goth2",
+	CivID: 29,
+	PCID: 29,
+	CPID: 408
+},
+{
+	CivTAG: "lemo2_m",
+	CivID: 30,
+	PCID: 30,
+	CPID: 7434
+},
+{
+	CivTAG: "scir2",
+	CivID: 31,
+	PCID: 31,
+	CPID: 487
+},
+{
+	CivTAG: "bast2_m",
+	CivID: 32,
+	PCID: 32,
+	CPID: 457
+},
+{
+	CivTAG: "lugi2_m",
+	CivID: 33,
+	PCID: 33,
+	CPID: 567
+},
+{
+	CivTAG: "semn2_m",
+	CivID: 34,
+	PCID: 34,
+	CPID: 591
+}
+]

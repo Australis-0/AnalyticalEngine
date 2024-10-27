@@ -1,0 +1,112 @@
+#######################################
+## Read: mods_steam_workshop.txt !
+## 
+## To create a new mod for submission to the Steam Workshop, first create a new folder for your mod within the 'mods' directory.
+## Then, copy or recreate all the modified files into that folder!
+##
+## For example, if a file was originally located in game/ExampleFile.json, 
+## it should be placed in mods/YourModName/game/ExampleFile.json in your mod's folder.
+##
+#####
+
+
+Go to:
+game/units/
+
+## Main file with all unit types: Units.json
+Here you add new unit type.
+
+Example: 
+
+		{
+			File: "Warior.json",
+			ID: 0,
+
+			Line: 0,
+		},
+
+
+Line: 0 - The army will be positioned in the center of the front line of battle.
+Line: 1 - The army will be positioned on the flanks of the front line of battle.
+Line: 2 - The army will be positioned in the second line of battle.
+
+
+## Create a new file to define the unit types, along with their respective units and upgrades:
+
+Example file:
+Warior.json
+
+This file contains the details of a single unit type and its upgrades.
+
+
+### EXAMPLE FILE
+
+{
+	Army: [
+		{
+			Name: "Warrior",
+			ImageID: 6,
+			
+			UnitLevel: 0,
+			
+			Attack: 5,
+			Defense: 3,
+			MovementSpeed: 3.6,
+			
+			AttackRange: 1,
+			SiegeProgress: 0.25,
+			
+			RequiredTechID: -1,
+			
+			Cost: 10,
+			MaintenanceCost: 0.1,
+			
+			RecruitmentTime: 30,
+		},
+		{
+			Name: "LightFootmen",
+			ImageID: 21,
+			
+			UnitLevel: 1,
+			
+			Attack: 8,
+			Defense: 6,
+			MovementSpeed: 3.9,
+			
+			AttackRange: 1,
+			SiegeProgress: 0.25,
+			
+			RequiredTechID: 7,
+			
+			Cost: 10,
+			MaintenanceCost: 0.1,
+			
+			RecruitmentTime: 30,
+		},
+	],
+	
+	Age_of_History: Army
+}
+
+### EXAMPLE FILE END
+
+RequiredTechID: -1,
+If -1, this unit does not require any technology and will be unlocked at the beginning of the game.
+
+RequiredTechID: 2,
+This means that to unlock this unit, you need to unlock Technology ID 2
+
+Technology file with IDs:
+game/technologies/Technologies.json
+
+
+
+Adding new image of unit: Example: 65.png (It must be the next number of the last image)
+Add new image in folders:
+
+game/units/unitsImages/H/
+game/units/unitsImages/XH/
+game/units/unitsImages/XXH/
+
+Don't forget to increase the total number of images in the file:
+game/units/unitsImages/numOfImages.txt

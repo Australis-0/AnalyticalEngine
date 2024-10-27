@@ -1,0 +1,36 @@
+{
+	Rulers: [
+		{
+			Name: "Isabella II",
+			ImageID: 312,
+			
+			BornDay: 10,
+			BornMonth: 10,
+			BornYear: 1830,
+			
+			ReignYear: 1833,
+		},
+		{
+			Name: "Niceto Alcalá-Zamora",
+			ImageID: 233,
+			
+			BornDay: 6,
+			BornMonth: 7,
+			BornYear: 1877,
+			
+			ReignYear: 1931,
+		},
+		{
+			Name: "Felipe VI",
+			ImageID: 190,
+			
+			BornDay: 30,
+			BornMonth: 1,
+			BornYear: 1968,
+			
+			ReignYear: 2014,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

@@ -1,0 +1,8 @@
+{
+	Name: "Cats Warrios!",
+	Description: "This great mod will add new untis to the game.",
+	
+	Tags: [ "Game", "Units" ],
+	
+	ChangeNote: "First release",
+}

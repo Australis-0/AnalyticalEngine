@@ -1,0 +1,13 @@
+[
+{
+	Name: "Leszek Miller",
+	ImageID: Miller,
+	
+	BornDay: 3,
+	BornMonth: 7,
+	BornYear: 1946,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

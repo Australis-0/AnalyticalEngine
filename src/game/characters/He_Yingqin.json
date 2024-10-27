@@ -1,0 +1,13 @@
+[
+{
+	Name: "He Yingqin",
+	ImageID: He_Yingqin,
+	
+	BornDay: 2,
+	BornMonth: 3,
+	BornYear: 1890,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

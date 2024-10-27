@@ -1,0 +1,13 @@
+[
+{
+	Name: "Magdalena Biejat",
+	ImageID: Biejat,
+	
+	BornDay: 11,
+	BornMonth: 1,
+	BornYear: 1982,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

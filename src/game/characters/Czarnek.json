@@ -1,0 +1,13 @@
+[
+{
+	Name: "Przemysław Czarnek",
+	ImageID: Czarnek,
+	
+	BornDay: 11,
+	BornMonth: 6,
+	BornYear: 1977,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

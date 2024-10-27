@@ -1,0 +1,13 @@
+[
+{
+	Name: "Mikhails Mizintsev",
+	ImageID: Mizintsev,
+	
+	BornDay: 10,
+	BornMonth: 9,
+	BornYear: 1962,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

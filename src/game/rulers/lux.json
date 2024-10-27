@@ -1,0 +1,26 @@
+{
+	Rulers: [
+		{
+			Name: "Joseph Bech",
+			ImageID: 263,
+			
+			BornDay: 17,
+			BornMonth: 2,
+			BornYear: 1887,
+			
+			ReignYear: 1926,
+		},
+		{
+			Name: "Henri",
+			ImageID: 129,
+			
+			BornDay: 19,
+			BornMonth: 4,
+			BornYear: 1955,
+			
+			ReignYear: 2000,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

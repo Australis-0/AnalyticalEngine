@@ -1,0 +1,21 @@
+{
+Name: "FallOfTheEternalCity",
+Author: "Łukasz Jakowski",
+Civs: 92,
+Age: 1,
+Day: 2,
+Month: 4,
+Year: 476,
+Campaign: false,
+CivDefault_Gold: 350,
+CivDefault_GoldRandom: 350,
+CivDefault_Legacy: 250,
+CivDefault_LegacyRandom: 100,
+CivDefault_ManpowerPercentage: 80,
+CivDefault_Technology: 9,
+ProvinceDefault_Population: 125000,
+ProvinceDefault_Economy: 8,
+ProvinceDefault_TaxEfficiency: 7,
+ProvinceDefault_Manpower: 4,
+HoursPerTurn: 24
+}

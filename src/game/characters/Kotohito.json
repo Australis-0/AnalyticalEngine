@@ -1,0 +1,13 @@
+[
+{
+	Name: "Kan'in Kotohito",
+	ImageID: Kotohito,
+	
+	BornDay: 10,
+	BornMonth: 10,
+	BornYear: 1865,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Ugo Cavallero",
+	ImageID: Cavallero,
+	
+	BornDay: 20,
+	BornMonth: 9,
+	BornYear: 1880,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

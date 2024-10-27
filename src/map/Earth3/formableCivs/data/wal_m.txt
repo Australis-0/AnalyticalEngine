@@ -1,0 +1,12 @@
+{
+FormableCivTag: "wal_m",
+ClaimantsTag: [
+	"gwyn",
+	"dyfe",
+	"pow",
+	"dehe",
+	"glam3"
+],
+Provinces: [ 872, 868, 867, 870, 876, 871, 875, 12143, 866, 869, 880, 873, 822, 7449, 874 ],
+CapitalProvinceID: 868
+}

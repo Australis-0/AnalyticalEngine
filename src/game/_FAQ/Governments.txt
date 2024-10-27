@@ -1,0 +1,124 @@
+#######################################
+## Read: mods_steam_workshop.txt !
+## 
+## To create a new mod for submission to the Steam Workshop, first create a new folder for your mod within the 'mods' directory.
+## Then, copy or recreate all the modified files into that folder!
+##
+## For example, if a file was originally located in game/ExampleFile.json, 
+## it should be placed in mods/YourModName/game/ExampleFile.json in your mod's folder.
+##
+#####
+
+File containing all Governments in the game:
+game/Governments.json
+
+For your mod the path will be:
+mods/YOUR_MOD_NAME/game/Governments.json
+
+Example code for a single Government:
+Use the code from Governments.json as it may be outdated.
+
+
+###########################################
+
+		{
+			Name: "Monarchy",
+			Extra_Tag: "m",
+			GOV_GROUP_ID: 0,
+			
+			RulerTitle: King,
+			RulerRoman: true,
+			KingsImages: true,
+			
+			Color: [255, 194, 36],
+			
+			REQUIRED_TECHNOLOGY: -1,
+			
+			REVOLUTIONISTS: false,
+			TRIBAL: false,
+			STARTING_ARMY: 1.0,
+			
+			AdvisorCost: -0.1,
+			MonthlyLegacy: 0.4,
+			MaxManpower: 2000,
+			
+			AI_EXTRA_AGGRESSIVENESS: 0,
+			
+			AI_PEACE_ORDER_CHANCE: 85,
+			AI_PEACE_ORDER_CHANCE2: 15,
+			
+			AI_PEACE_ORDER: [0, 1, 2, 3, 6, 5, 7, 8, 4],
+			AI_PEACE_ORDER2: [1, 0, 3, 2, 5, 4, 6, 7, 8],
+			
+			AI_BUILD_SCORE: [85, 65, 30, 60, 35, 65, 45, 25, 45, 65, 84, 40, 25, 50, 40, 0],
+			
+			AI_BUILD_INVEST_IN_ECONOMY: 25,
+			AI_BUILD_INCREASE_TAX_EFFICIENCY: 40,
+			AI_BUILD_INCREASE_MANPOWER: 52,
+			AI_BUILD_INCREASE_GROWTH_RATE: 62,
+			AI_BUILD_DEVELOP_INFRASTRUCTURE: 68,
+			AI_BUILD_BUILDING: 100,
+		},
+
+###########################################
+
+Name represents the name of the government.
+
+Extra_Tag must be unique within this file! It can consist of one letter, but should not include digits.
+
+GOV_GROUP_ID indicates which other governments have close ties.
+For example, Monarchy and Constitutional Monarchy are in the same group.
+The group plays an important role in gameplay, as it determines whether civilizations will have positive relations with each other.
+
+
+RulerTitle is the title of the ruler used in the game and can be seen, for example, in the court.
+
+RulerRoman: true or false,
+
+KingsImages: If set to false, the game will load non-king images.
+
+Color: RGB 0-255
+
+REQUIRED_TECHNOLOGY: -1,
+If set to -1, this type of government doesn't require any technology and will be unlocked at the start of the game.
+
+REQUIRED_TECHNOLOGY: 2,
+This means you need to unlock Technology ID 2 to access this type of government.
+
+REVOLUTIONISTS: false,
+TRIBAL: false,
+
+These values are designated for the AI. true or false.
+
+######################
+
+The icon of the government should be named according to the format: gov_'Extra_Tag'.png
+
+For example, if:
+Extra_Tag: m,
+
+Then the image for the government will be named: gov_m.png
+
+Images with the corresponding name must be placed in the following folders:
+
+gfx/government/H/
+gfx/government/XH/
+gfx/government/XXH/
+
+All size scales are required!
+
+######################
+
+Next are the bonuses. Each government can have between 0 and multiple bonuses.
+List of all available bonuses: game/_FAQ/Governments_Bonuses.txt
+
+AdvisorCost: -0.1,
+MonthlyLegacy: 0.4,
+MaxManpower: 2000,
+
+######################
+
+Read:
+
+game/_FAQ/Governments_AI_BuildScore.txt
+game/_FAQ/Governments_Peace_Order.txt

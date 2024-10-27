@@ -1,0 +1,13 @@
+[
+{
+	Name: "Vicente Ramón Guerrero Saldaña",
+	ImageID: Guerrero,
+	
+	BornDay: 10,
+	BornMonth: 8,
+	BornYear: 1782,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

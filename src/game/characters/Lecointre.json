@@ -1,0 +1,13 @@
+[
+{
+	Name: "François Lecointre",
+	ImageID: Lecointre,
+	
+	BornDay: 6,
+	BornMonth: 2,
+	BornYear: 1962,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

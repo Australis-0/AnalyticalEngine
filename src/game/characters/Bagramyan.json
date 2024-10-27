@@ -1,0 +1,13 @@
+[
+{
+	Name: "Ivan Bagramyan",
+	ImageID: Bagramyan,
+	
+	BornDay: 2,
+	BornMonth: 12,
+	BornYear: 1897,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

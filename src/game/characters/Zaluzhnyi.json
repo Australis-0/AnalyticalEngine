@@ -1,0 +1,13 @@
+[
+{
+	Name: "Valerii Zaluzhnyi",
+	ImageID: Zaluzhnyi,
+	
+	BornDay: 27,
+	BornMonth: 7,
+	BornYear: 1973,
+	
+	Attack: 4,
+	Defense: 6,
+},
+]

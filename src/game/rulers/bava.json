@@ -1,0 +1,166 @@
+{
+	"Rulers": [
+		{
+			"Name": "Otto I",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 980,
+			
+			"ReignYear": 955
+		},
+		{
+			"Name": "Henry IX",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1074,
+			
+			"ReignYear": 1126
+		},
+		{
+			"Name": "Louis IV",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1173,
+			
+			"ReignYear": 1180
+		},
+		{
+			"Name": "Otto II",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1206,
+			
+			"ReignYear": 1231
+		},
+		{
+			"Name": "Louis V",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1282,
+			
+			"ReignYear": 1294
+		},
+		{
+			"Name": "William IV",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1493,
+			
+			"ReignYear": 1508
+		},
+		{
+			"Name": "Albert V",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1528,
+			
+			"ReignYear": 1550
+		},
+		{
+			"Name": "Maximilian I",
+			"ImageID": -1,
+			
+			"BornDay": 28,
+			"BornMonth": 6,
+			"BornYear": 1573,
+			
+			"ReignYear": 1597
+		},
+		{
+			"Name": "Ferdinand Maria",
+			"ImageID": -1,
+			
+			"BornDay": 31,
+			"BornMonth": 7,
+			"BornYear": 1636,
+			
+			"ReignYear": 1651
+		},
+		{
+			"Name": "Maximilian II Emanuel",
+			"ImageID": -1,
+			
+			"BornDay": 11,
+			"BornMonth": 7,
+			"BornYear": 1662,
+			
+			"ReignYear": 1679
+		},
+		{
+			"Name": "Charles Albert",
+			"ImageID": -1,
+			
+			"BornDay": 6,
+			"BornMonth": 8,
+			"BornYear": 1697,
+			
+			"ReignYear": 1726
+		},
+		{
+			"Name": "Maximilian III Joseph",
+			"ImageID": -1,
+			
+			"BornDay": 28,
+			"BornMonth": 1,
+			"BornYear": 1727,
+			
+			"ReignYear": 1745
+		},
+		{
+			"Name": "Louis I",
+			"ImageID": 323,
+			
+			"BornDay": 25,
+			"BornMonth": 8,
+			"BornYear": 1786,
+			
+			"ReignYear": 1825
+		},
+		{
+			"Name": "Maximilian II",
+			"ImageID": -1,
+			
+			"BornDay": 28,
+			"BornMonth": 9,
+			"BornYear": 1811,
+			
+			"ReignYear": 1848
+		},
+		{
+			"Name": "Ludwig II",
+			"ImageID": -1,
+			
+			"BornDay": 25,
+			"BornMonth": 8,
+			"BornYear": 1845,
+			
+			"ReignYear": 1864
+		},
+		{
+			"Name": "Otto",
+			"ImageID": -1,
+			
+			"BornDay": 27,
+			"BornMonth": 4,
+			"BornYear": 1848,
+			
+			"ReignYear": 1866
+		}
+	],
+	
+	"Age_of_History": "Rulers"
+}

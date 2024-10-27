@@ -1,0 +1,13 @@
+[
+{
+	Name: "Grigorij Rosen",
+	ImageID: Rosen,
+	
+	BornDay: 11,
+	BornMonth: 10,
+	BornYear: 1782,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

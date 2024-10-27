@@ -1,0 +1,13 @@
+[
+{
+	Name: "Józef Potocki",
+	ImageID: Potocki_Jozef,
+	
+	BornDay: 10,
+	BornMonth: 10,
+	BornYear: 1673,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

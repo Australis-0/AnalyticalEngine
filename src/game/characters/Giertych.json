@@ -1,0 +1,13 @@
+[
+{
+	Name: "Roman Giertych",
+	ImageID: Giertych,
+	
+	BornDay: 27,
+	BornMonth: 2,
+	BornYear: 1971,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

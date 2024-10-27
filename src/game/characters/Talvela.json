@@ -1,0 +1,13 @@
+[
+{
+	Name: "Paavo Talvela",
+	ImageID: Talvela,
+	
+	BornDay: 19,
+	BornMonth: 2,
+	BornYear: 1897,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

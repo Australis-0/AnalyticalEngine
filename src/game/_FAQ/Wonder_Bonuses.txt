@@ -1,0 +1,187 @@
+List of available bonuses for Wonders:
+
+MonthlyIncome: X,
+TaxEfficiency: X,
+ProvinceMaintenance: X,
+BuildingsMaintenanceCost: X,
+GrowthRate: X,
+
+ProductionEfficiency: X,
+
+MonthlyLegacy: X,
+
+MaxManpower: X,
+ManpowerRecoverySpeed: X,
+
+ArmyMaintenance: X,
+RecruitmentTime: X,
+
+RecruitArmyCost: X,
+RecruitArmyFirstLineCost: X,
+RecruitArmySecondLineCost: X,
+
+Research: X,
+ResearchPoints: X,
+TechnologyCost: X,
+
+ConstructionCost: X,
+AdministrationBuildingsCost: X,
+MilitaryBuildingsCost: X,
+EconomyBuildingsCost: X,
+
+ConstructionTimeBonus: X,
+
+BuildingSlot: X,
+
+InvestInEconomyCost: X,
+IncreaseTaxEfficiencyCost: X,
+IncreaseGrowthRateCost: X,
+IncreaseManpowerCost: X,
+DevelopInfrastructureCost: X,
+
+GeneralAttack: X,
+GeneralDefense: X,
+
+UnitsAttack: X,
+UnitsDefense: X,
+
+MaxInfrastructure: X,
+AdvisorMaxLevel: X,
+AdvisorPoolSize: X,
+
+MaxMorale: X,
+ArmyMovementSpeed: X,
+
+SiegeEffectiveness: X,
+
+ImproveRelationsModifier: X,
+IncomeFromVassals: X,
+DiplomacyPoints: X,
+LoanInterest: X,
+MaxNumberOfLoans: X,
+
+AggressiveExpansion: X,
+
+RevolutionaryRisk: X,
+
+CoreCost: X,
+DiseaseDeathRate: X,
+
+AllCharactersLifeExpectancy: X,
+RegimentsLimit: X,
+
+BattleWidth: X,
+Discipline: X,
+ManpowerRecoveryFromADisbandedArmy: X,
+
+MaximumAmountOfGold: X,
+
+// -- LOCAL
+
+LocalTaxEfficiency: X,
+Economy: X,
+
+DefenseBonus: X,
+FortLevel: X,
+FortDefense: X,
+
+#######################################
+
+String Name;
+int ImageID;
+
+int ProvinceID;
+
+int CostGold;
+float MaintenanceCost;
+int ConstructionTime;
+float Legacy;
+
+int AI;
+String Wiki;
+
+
+float MonthlyIncome;
+float TaxEfficiency;
+float ProvinceMaintenance;
+float BuildingsMaintenanceCost;
+float GrowthRate;
+
+float ProductionEfficiency;
+
+float MonthlyLegacy;
+
+float MaxManpower;
+float ManpowerRecoverySpeed;
+
+float ArmyMaintenance;
+float RecruitmentTime;
+
+float RecruitArmyCost;
+float RecruitArmyFirstLineCost;
+float RecruitArmySecondLineCost;
+
+float Research;
+float ResearchPoints;
+float TechnologyCost;
+
+float ConstructionCost;
+float AdministrationBuildingsCost;
+float MilitaryBuildingsCost;
+float EconomyBuildingsCost;
+
+float ConstructionTimeBonus;
+
+int BuildingSlot;
+
+float InvestInEconomyCost;
+float IncreaseTaxEfficiencyCost;
+float IncreaseGrowthRateCost;
+float IncreaseManpowerCost;
+float DevelopInfrastructureCost;
+
+int GeneralAttack;
+int GeneralDefense;
+
+int UnitsAttack;
+int UnitsDefense;
+
+int MaxInfrastructure;
+int AdvisorMaxLevel;
+int AdvisorPoolSize;
+
+float MaxMorale;
+float ArmyMovementSpeed;
+
+float SiegeEffectiveness;
+
+float ImproveRelationsModifier;
+float IncomeFromVassals;
+float DiplomacyPoints;
+float LoanInterest;
+int MaxNumberOfLoans;
+
+float AggressiveExpansion;
+
+float RevolutionaryRisk;
+
+float CoreCost;
+float DiseaseDeathRate;
+
+int AllCharactersLifeExpectancy;
+int RegimentsLimit;
+
+int BattleWidth;
+float Discipline;
+float ManpowerRecoveryFromADisbandedArmy;
+
+float MaximumAmountOfGold;
+
+// -- LOCAL
+
+float LocalTaxEfficiency;
+float Economy;
+
+int DefenseBonus;
+int FortLevel;
+int FortDefense;

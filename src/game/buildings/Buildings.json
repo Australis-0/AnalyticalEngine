@@ -1,0 +1,590 @@
+{
+	Buildings:
+	[
+		{
+			Name: ["TaxOfficeHeadquarters"],
+			ImageID: [79],
+			GroupID: 3,
+			
+			CostGold: [400],
+			MaintenanceCost: [0.2],
+			ConstructionTime: [730],
+			
+			TaxEfficiency: [2.5],
+			
+			UniqueCapitalBuilding: true,
+			
+			RequiredTechID: [42],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		{
+			Name: ["RoyalPalace"],
+			ImageID: [19],
+			GroupID: 3,
+			
+			CostGold: [400],
+			MaintenanceCost: [0.1],
+			ConstructionTime: [730],
+			
+			MonthlyLegacy: [1.8],
+			
+			UniqueCapitalBuilding: true,
+			
+			RequiredTechID: [23],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		{
+			Name: ["WarAcademy"],
+			ImageID: [12],
+			GroupID: 3,
+			
+			CostGold: [400],
+			MaintenanceCost: [0.1],
+			ConstructionTime: [730],
+			
+			RecruitArmyCostInProvince: [-2.5],
+			MaximumManpower: [5000],
+			
+			UniqueCapitalBuilding: true,
+			
+			RequiredTechID: [40],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		{
+			Name: ["GrandLibrary"],
+			ImageID: [17],
+			GroupID: 3,
+			
+			CostGold: [400],
+			MaintenanceCost: [0.2],
+			ConstructionTime: [730],
+			
+			ResearchPoints: [8.0],
+			
+			UniqueCapitalBuilding: true,
+			
+			RequiredTechID: [43],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		{
+			Name: ["NationalMuseum"],
+			ImageID: [20],
+			GroupID: 3,
+			
+			CostGold: [400],
+			MaintenanceCost: [0.2],
+			ConstructionTime: [730],
+			
+			MonthlyLegacy: [2.3],
+			
+			UniqueCapitalBuilding: true,
+			
+			RequiredTechID: [58],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		{
+			Name: ["MerchantQuarter"],
+			ImageID: [15],
+			GroupID: 3,
+			
+			CostGold: [400],
+			MaintenanceCost: [0.2],
+			ConstructionTime: [730],
+			
+			TaxEfficiency: [2.4],
+			
+			UniqueCapitalBuilding: true,
+			
+			RequiredTechID: [28],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		{
+			Name: ["StockExchange"],
+			ImageID: [18],
+			GroupID: 3,
+			
+			CostGold: [400],
+			MaintenanceCost: [0.2],
+			ConstructionTime: [730],
+			
+			MonthlyIncome: [1.4],
+			
+			UniqueCapitalBuilding: true,
+			
+			RequiredTechID: [54],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		
+		{
+			Name: ["Temple"],
+			ImageID: [64],
+			GroupID: 0,
+			
+			CostGold: [75],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [500],
+			
+			MonthlyIncome: [0.15],
+			
+			RequiredTechID: [1],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		{
+			Name: ["Monument", "Amphitheater"],
+			ImageID: [73, 74],
+			GroupID: 0,
+			
+			CostGold: [60, 80],
+			MaintenanceCost: [0.05, 0.1],
+			ConstructionTime: [365, 500],
+			
+			MonthlyLegacy: [0.25, 0.35],
+			
+			RequiredTechID: [4, 11],
+			
+			SeaAccessRequired: false,
+			AI: [5, 5],
+		},
+		{
+			Name: ["Museum"],
+			ImageID: [89],
+			GroupID: 0,
+			
+			CostGold: [100],
+			MaintenanceCost: [0.15],
+			ConstructionTime: [730],
+			
+			MonthlyLegacy: [0.3],
+			
+			RequiredTechID: [54],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		{
+			Name: ["Llibrary", "School", "University", "Academy"],
+			ImageID: [8, 83, 9, 67],
+			GroupID: 0,
+			
+			CostGold: [50, 75, 100, 150],
+			MaintenanceCost: [0.0, 0.0, 0.0, 0.0],
+			ConstructionTime: [210, 270, 300, 325],
+			
+			ResearchPoints: [5.0, 7.5, 10.0, 15.0],
+			
+			RequiredTechID: [0, 22, 38, 52],
+			
+			SeaAccessRequired: false,
+			AI: [10, 10, 10, 10],
+		},
+		{
+			Name: ["Courthouse", "TownHall"],
+			ImageID: [10, 11],
+			GroupID: 0,
+			
+			CostGold: [50, 100],
+			MaintenanceCost: [0.0, 0.0],
+			ConstructionTime: [365, 500],
+			
+			ProvinceMaintenance: [-7.5, -12.5],
+			BuildingSlots: [3, 4],
+			
+			RequiredTechID: [26, 23],
+			
+			SeaAccessRequired: false,
+			AI: [5, 10],
+		},
+		{
+			Name: ["TaxCollector", "TaxOffice"],
+			ImageID: [78, 13],
+			GroupID: 0,
+			
+			CostGold: [50, 100],
+			MaintenanceCost: [0.05, 0.05],
+			ConstructionTime: [365, 500],
+			
+			LocalTaxEfficiency: [3.5, 5.0],
+			IncreaseTaxEfficiencyCost: [-0.1, -0.15],
+			
+			RequiredTechID: [10, 30],
+			
+			SeaAccessRequired: false,
+			AI: [5, 10],
+		},
+		{
+			Name: ["Hospital"],
+			ImageID: [70],
+			GroupID: 0,
+			
+			CostGold: [100],
+			MaintenanceCost: [0.05],
+			ConstructionTime: [730],
+			
+			LocalGrowthRate: [6],
+			DiseaseDeathRate: [-0.65],
+			
+			RequiredTechID: [65],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		{
+			Name: ["BombShelter"],
+			ImageID: [80],
+			GroupID: 0,
+			
+			CostGold: [50],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [365],
+			
+			CasualtiesNuclearAttacks: [-0.75],
+			
+			RequiredTechID: [76],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		
+		{
+			Name: ["Palisade", "Walls", "Castle"],
+			ImageID: [72, 0, 1],
+			GroupID: 1,
+			
+			CostGold: [75, 125, 200],
+			MaintenanceCost: [0.1, 0.1, 0.2],
+			ConstructionTime: [500, 730, 730],
+			
+			DefenseBonus: [1, 1, 1],
+			MaximumManpower: [50, 100, 150],
+			FortLevel: [1, 2, 3],
+			
+			RequiredTechID: [8, 21, 35],
+			
+
+			SeaAccessRequired: false,
+			AI: [5, 5, 10],
+		},
+		{
+			Name: ["Barracks", "TrainingGrounds", "ConscriptionCenter"],
+			ImageID: [2, 65, 66],
+			GroupID: 1,
+			
+			CostGold: [75, 150, 300],
+			MaintenanceCost: [0.05, 0.1, 0.2],
+			ConstructionTime: [365, 500, 730],
+			
+			MaximumManpower: [100, 200, 300],
+			LocalManpower: [0.1, 0.15, 0.25],
+			
+			RequiredTechID: [13, 46, 59],
+			
+			SeaAccessRequired: false,
+			AI: [5, 5, 5],
+		},
+		{
+			Name: ["Armory", "ArmoryWorkshop"],
+			ImageID: [76, 21],
+			GroupID: 1,
+			
+			CostGold: [60, 100],
+			MaintenanceCost: [0.0, 0.0],
+			ConstructionTime: [365, 500],
+			
+			RecruitArmyCostInProvince: [-5.0, -7.5],
+			IncreaseManpowerCost: [-0.05, -0.1],
+			Economy: [1.7, 2.8],
+			
+			RequiredTechID: [16, 33],
+			
+
+			SeaAccessRequired: false,
+			AI: [5, 5],
+		},
+		{
+			Name: ["ArmsFactory"],
+			ImageID: [87],
+			GroupID: 1,
+			
+			CostGold: [100],
+			MaintenanceCost: [0.1],
+			ConstructionTime: [500],
+			
+			IncreaseManpowerCost: [-0.05],
+			MaximumManpower: [100],
+			FortDefense: [150],
+			Economy: [2.4],
+			
+			RequiredTechID: [55],
+			
+			SeaAccessRequired: true,
+			AI: [5],
+		},
+		{
+			Name: ["MilitaryBase"],
+			ImageID: [88],
+			GroupID: 1,
+			
+			CostGold: [100],
+			MaintenanceCost: [0.3],
+			ConstructionTime: [500],
+			
+			MaximumManpower: [500],
+			FortDefense: [200],
+			
+			RequiredTechID: [76],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		
+		{
+			Name: ["Harbor"],
+			ImageID: [7],
+			GroupID: 2,
+			
+			CostGold: [60],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [730],
+			
+			ProductionEfficiency: [5.0],
+			IncomeProduction: [4.0],
+			InvestInEconomyCost: [-0.025],
+			
+			RequiredTechID: [18],
+			
+			SeaAccessRequired: true,
+			AI: [5],
+		},
+		{
+			Name: ["Granary"],
+			ImageID: [68],
+			GroupID: 2,
+			
+			CostGold: [40],
+			MaintenanceCost: [0.05],
+			ConstructionTime: [365],
+			
+			LocalGrowthRate: [4],
+			IncreaseGrowthRateCost: [-0.1],
+			FortDefense: [50],
+			
+			RequiredTechID: [6],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		{
+			Name: ["Farm", "Windmills"],
+			ImageID: [4, 5],
+			GroupID: 2,
+			
+			CostGold: [60, 100],
+			MaintenanceCost: [0.05, 0.05],
+			ConstructionTime: [365, 500],
+			
+			LocalGrowthRate: [8, 8],
+			Economy: [1.6, 2.8],
+			
+			RequiredTechID: [0, 24],
+			
+			SeaAccessRequired: false,
+			AI: [10, 10],
+		},
+		{
+			Name: ["Irrigation"],
+			ImageID: [3],
+			GroupID: 2,
+			
+			CostGold: [30],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [280],
+			
+			LocalGrowthRate: [5],
+			Economy: [0.2],
+			
+			RequiredTechID: [3],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		{
+			Name: ["MechanizedFarm"],
+			ImageID: [84],
+			GroupID: 2,
+			
+			CostGold: [150],
+			MaintenanceCost: [0.05],
+			ConstructionTime: [500],
+			
+			LocalGrowthRate: [10],
+			Economy: [3.2],
+			
+			RequiredTechID: [68],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		{
+			Name: ["FoodMarket", "Market"],
+			ImageID: [71, 14],
+			GroupID: 2,
+			
+			CostGold: [75, 100],
+			MaintenanceCost: [0.0, 0.0],
+			ConstructionTime: [365, 500],
+			
+			MonthlyIncome: [0.04, 0.06],
+			LocalGrowthRate: [5, 8],
+			Economy: [1.5, 2.3],
+			
+			RequiredTechID: [14, 20],
+			
+			SeaAccessRequired: false,
+			AI: [5, 10],
+		},
+		{
+			Name: ["Workshop", "Manufactory", "Factory", "AutomatedFactory" ],
+			ImageID: [16, 69, 77, 91],
+			GroupID: 2,
+			
+			CostGold: [75, 125, 175, 250],
+			MaintenanceCost: [0.0, 0.0, 0.0, 0.0],
+			ConstructionTime: [365, 500, 730, 730],
+			
+			Economy: [3.4, 4.2, 5.0, 5.8],
+			ProductionEfficiency: [7.5, 10.0, 12.5, 20.0],
+			MonthlyIncome: [0.0, 0, 0, 0],
+			
+			RequiredTechID: [18, 36, 61, 87],
+			
+			SeaAccessRequired: false,
+			AI: [5, 8, 8, 8],
+		},
+		{
+			Name: ["TradeCenter"],
+			ImageID: [82],
+			GroupID: 2,
+			
+			CostGold: [100],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [500],
+			
+			ProductionEfficiency: [3.5],
+			IncomeProduction: [6],
+			
+			RequiredTechID: [32],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		{
+			Name: ["Bank"],
+			ImageID: [75],
+			GroupID: 2,
+			
+			CostGold: [200],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [730],
+			
+			MonthlyIncome: [0.35],
+			Economy: [2.6],
+			
+			RequiredTechID: [51],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		
+		{
+			Name: ["ConstructionGuild"],
+			ImageID: [81],
+			GroupID: 2,
+			
+			CostGold: [100],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [280],
+			
+			ConstructionCost: [-0.1],
+			InvestInEconomyCost: [-0.05],
+			DevelopInfrastructureCost: [-0.05],
+			IncreaseGrowthRateCost: [-0.075],
+			
+			RequiredTechID: [34],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		{
+			Name: ["Railways"],
+			ImageID: [85],
+			GroupID: 2,
+			
+			CostGold: [200],
+			MaintenanceCost: [0.1],
+			ConstructionTime: [500],
+			
+			LocalTaxEfficiency: [3.5],
+			ProductionEfficiency: [3.0],
+			MaxInfrastructure: [2],
+			Economy: [5.4],
+			ArmyMovementSpeed: [0.3],
+			
+			RequiredTechID: [60],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		{
+			Name: ["PowerPlant"],
+			ImageID: [86],
+			GroupID: 2,
+			
+			CostGold: [200],
+			MaintenanceCost: [0.1],
+			ConstructionTime: [730],
+			
+			IncomeProduction: [5],
+			ProductionEfficiency: [7.5],
+			Economy: [4.6],
+			
+			RequiredTechID: [75],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		{
+			Name: ["SolarFarm"],
+			ImageID: [90],
+			GroupID: 2,
+			
+			CostGold: [200],
+			MaintenanceCost: [0.1],
+			ConstructionTime: [730],
+			
+			Economy: [4.8],
+			MonthlyLegacy: [0.4],
+			
+			RequiredTechID: [80],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+	],
+	Age_of_History: Buildings
+}

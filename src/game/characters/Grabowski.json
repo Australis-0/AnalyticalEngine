@@ -1,0 +1,13 @@
+[
+{
+	Name: "Witold Grabowski",
+	ImageID: Grabowski,
+	
+	BornDay: 19,
+	BornMonth: 3,
+	BornYear: 1898,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

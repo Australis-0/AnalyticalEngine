@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Albert II",
+			ImageID: 142,
+			
+			BornDay: 14,
+			BornMonth: 3,
+			BornYear: 1958,
+			
+			ReignYear: 2005,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

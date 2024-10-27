@@ -1,0 +1,13 @@
+[
+{
+	Name: "Victor Hugo",
+	ImageID: Hugo,
+		
+	BornDay: 26,
+	BornMonth: 2,
+	BornYear: 1802,
+		
+	Attack: -1,
+	Defense: -1,
+},
+]

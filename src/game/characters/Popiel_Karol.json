@@ -1,0 +1,13 @@
+[
+{
+	Name: "Karol Popiel",
+	ImageID: Popiel,
+	
+	BornDay: 28,
+	BornMonth: 10,
+	BornYear: 1887,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

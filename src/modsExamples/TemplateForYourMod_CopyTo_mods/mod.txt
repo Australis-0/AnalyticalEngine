@@ -1,0 +1,8 @@
+{
+	Name: "The Title in the Steam Workshop",
+	Description: "The Description in the Steam Workshop",
+	
+	Tags: [ "Game", "Mod" ],
+	
+	ChangeNote: "First release",
+}

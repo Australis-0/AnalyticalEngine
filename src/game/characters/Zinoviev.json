@@ -1,0 +1,13 @@
+[
+{
+	Name: "Grigory Zinoviev",
+	ImageID: Zinoviev,
+	
+	BornDay: 23,
+	BornMonth: 9,
+	BornYear: 1883,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

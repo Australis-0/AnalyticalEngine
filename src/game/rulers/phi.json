@@ -1,0 +1,26 @@
+{
+	Rulers: [
+		{
+			Name: "Manuel Luis Quezon",
+			ImageID: 296,
+			
+			BornDay: 19,
+			BornMonth: 8,
+			BornYear: 1878,
+			
+			ReignYear: 1935,
+		},
+		{
+			Name: "Bongbong Marcos",
+			ImageID: 167,
+			
+			BornDay: 13,
+			BornMonth: 9,
+			BornYear: 1957,
+			
+			ReignYear: 2022,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

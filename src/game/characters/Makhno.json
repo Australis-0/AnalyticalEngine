@@ -1,0 +1,13 @@
+[
+{
+	Name: "Nestor Makhno",
+	ImageID: Makhno,
+	
+	BornDay: 7,
+	BornMonth: 11,
+	BornYear: 1888,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

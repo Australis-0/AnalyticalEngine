@@ -1,0 +1,13 @@
+[
+{
+	Name: "Aleksander Prystor",
+	ImageID: Prystor,
+	
+	BornDay: 2,
+	BornMonth: 1,
+	BornYear: 1874,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

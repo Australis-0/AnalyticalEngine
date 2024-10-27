@@ -1,0 +1,13 @@
+[
+{
+	Name: "Stefan Starzyński",
+	ImageID: Starzynski,
+	
+	BornDay: 19,
+	BornMonth: 8,
+	BornYear: 1893,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Stefan Meller",
+	ImageID: Meller,
+	
+	BornDay: 4,
+	BornMonth: 7,
+	BornYear: 1942,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

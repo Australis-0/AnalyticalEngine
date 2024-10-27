@@ -1,0 +1,13 @@
+[
+{
+	Name: "Li Qioaming",
+	ImageID: "Qioaming",
+	
+	BornDay: 20,
+	BornMonth: 4,
+	BornYear: 1961,
+	
+	Attack: -1,
+	Defense: -1,
+}
+]

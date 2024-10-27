@@ -1,0 +1,8 @@
+{
+	Name: "More Diseases",
+	Description: "This item will add new Diseases.",
+	
+	Tags: [ "Diseases" ],
+	
+	ChangeNote: "First release",
+}

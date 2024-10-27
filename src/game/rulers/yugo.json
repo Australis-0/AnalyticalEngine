@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Prince Paul",
+			ImageID: 266,
+			
+			BornDay: 27,
+			BornMonth: 4,
+			BornYear: 1893,
+			
+			ReignYear: 1934,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

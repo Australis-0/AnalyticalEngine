@@ -1,0 +1,13 @@
+[
+{
+	Name: "Gerd von Rundstedt",
+	ImageID: von_Rundstedt,
+	
+	BornDay: 12,
+	BornMonth: 12,
+	BornYear: 1875,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Moctezuma II",
+			ImageID: 18,
+			
+			BornDay: 7,
+			BornMonth: 3,
+			BornYear: 1466,
+			
+			ReignYear: 1502,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

@@ -1,0 +1,26 @@
+{
+	Rulers: [
+		{
+			Name: "Rafael Franco",
+			ImageID: 285,
+			
+			BornDay: 22,
+			BornMonth: 10,
+			BornYear: 1896,
+			
+			ReignYear: 1935,
+		},
+		{
+			Name: "Santiago Peña",
+			ImageID: 165,
+			
+			BornDay: 16,
+			BornMonth: 11,
+			BornYear: 1978,
+			
+			ReignYear: 2022,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

@@ -1,0 +1,26 @@
+{
+	Rulers: [
+		{
+			Name: "José Luis Tejada Sorzano",
+			ImageID: 286,
+			
+			BornDay: 12,
+			BornMonth: 1,
+			BornYear: 1882,
+			
+			ReignYear: 1934,
+		},
+		{
+			Name: "Luis Arce",
+			ImageID: 49,
+			
+			BornDay: 28,
+			BornMonth: 9,
+			BornYear: 1963,
+			
+			ReignYear: 2020,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

@@ -1,0 +1,13 @@
+[
+{
+	"Name": "Max Aitken",
+	"ImageID": "MaxAitken",
+	
+	"BornDay": 25,
+	"BornMonth": 5,
+	"BornYear": 1879,
+	
+	Attack: -1,
+	Defense: -1,
+}
+]

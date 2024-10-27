@@ -1,0 +1,13 @@
+[
+{
+	Name: "Claude Victor Perrin",
+	ImageID: Victor,
+	
+	BornDay: 7,
+	BornMonth: 12,
+	BornYear: 1764,
+	
+	Attack: 7,
+	Defense: 5,
+},
+]

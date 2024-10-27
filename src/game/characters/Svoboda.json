@@ -1,0 +1,13 @@
+[
+{
+	Name: "Ludvík Svoboda",
+	ImageID: Svoboda,
+	
+	BornDay: 25,
+	BornMonth: 10,
+	BornYear: 1895,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Philippe Pétain",
+	ImageID: Petain,
+	
+	BornDay: 24,
+	BornMonth: 4,
+	BornYear: 1856,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

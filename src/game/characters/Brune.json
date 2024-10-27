@@ -1,0 +1,13 @@
+[
+{
+	Name: "Guillaume Brune",
+	ImageID: Brune,
+	
+	BornDay: 13,
+	BornMonth: 3,
+	BornYear: 1764,
+	
+	Attack: 5,
+	Defense: 4,
+},
+]

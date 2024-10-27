@@ -1,0 +1,21 @@
+{
+Name: "WorldWarII",
+Author: "Lukasz Jakowski",
+Civs: 182,
+Age: 8,
+Day: 2,
+Month: 1,
+Year: 1936,
+Campaign: false,
+CivDefault_Gold: 1000,
+CivDefault_GoldRandom: 500,
+CivDefault_Legacy: 250,
+CivDefault_LegacyRandom: 125,
+CivDefault_ManpowerPercentage: 95,
+CivDefault_Technology: 72,
+ProvinceDefault_Population: 900000,
+ProvinceDefault_Economy: 36,
+ProvinceDefault_TaxEfficiency: 32,
+ProvinceDefault_Manpower: 80,
+HoursPerTurn: 8
+}

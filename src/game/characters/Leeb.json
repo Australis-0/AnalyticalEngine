@@ -1,0 +1,13 @@
+[
+{
+	Name: "Wilhelm Ritter von Leeb",
+	ImageID: von_Leeb,
+	
+	BornDay: 5,
+	BornMonth: 9,
+	BornYear: 1876,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

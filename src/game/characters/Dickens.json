@@ -1,0 +1,13 @@
+[
+{
+	Name: "Charles Dickens",
+	ImageID: Dickens,
+		
+	BornDay: 7,
+	BornMonth: 2,
+	BornYear: 1812,
+		
+	Attack: -1,
+	Defense: -1,
+},
+]

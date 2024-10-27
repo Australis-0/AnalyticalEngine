@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Vjosa Osmani",
+			ImageID: 221,
+			
+			BornDay: 17,
+			BornMonth: 5,
+			BornYear: 1982,
+			
+			ReignYear: 2021,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

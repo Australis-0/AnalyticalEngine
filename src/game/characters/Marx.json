@@ -1,0 +1,13 @@
+[
+{
+	Name: "Karl Marx",
+	ImageID: Marx,
+		
+	BornDay: 5,
+	BornMonth: 5,
+	BornYear: 1818,
+		
+	Attack: -1,
+	Defense: -1,
+},
+]

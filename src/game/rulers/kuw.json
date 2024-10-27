@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Mishal Al-Ahmad Al-Jaber Al-Sabah",
+			ImageID: 119,
+			
+			BornDay: 27,
+			BornMonth: 9,
+			BornYear: 1940,
+			
+			ReignYear: 2022,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

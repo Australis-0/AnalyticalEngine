@@ -1,0 +1,13 @@
+[
+{
+	Name: "Vyacheslav Gladkov",
+	ImageID: Gladkov,
+	
+	BornDay: 15,
+	BornMonth: 1,
+	BornYear: 1969,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

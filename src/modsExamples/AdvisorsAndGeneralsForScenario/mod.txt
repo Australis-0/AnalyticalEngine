@@ -1,0 +1,8 @@
+{
+	Name: "Generals and Advisors for Modern World scenario for Russia and Ukraine",
+	Description: "This item will add new generals and advisors for Modern World scenario.",
+	
+	Tags: [ "Map", "Scenario", "Generals", "Advisors" ],
+	
+	ChangeNote: "First release",
+}

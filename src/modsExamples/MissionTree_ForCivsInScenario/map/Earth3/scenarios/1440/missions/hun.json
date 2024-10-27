@@ -1,0 +1,85 @@
+{
+	Mission:
+	[
+		{
+			ID: 0,
+			Name: "ChallengePoland.t",
+			ImageName: "declare_wars_2.png",
+			
+			MissionEvent: "challenge_poland.txt",
+			
+			TreeColumn: 0,
+			TreeRow: 2,
+			
+			RequiredMission: -1,
+			RequiredMission2: -1,
+			
+			AI: 5,
+		},
+		
+		{
+			ID: 1,
+			Name: "OpportunisticStrike.t",
+			ImageName: "declare_wars_2.png",
+			
+			MissionEvent: "opportunistic_strike.txt",
+			
+			TreeColumn: 1,
+			TreeRow: 5,
+			
+			RequiredMission: -1,
+			RequiredMission2: -1,
+			
+			AI: 5,
+		},
+		
+		{
+			ID: 2,
+			Name: "InfrastructureInitiative.t",
+			ImageName: "infrastructure_initiative.png",
+			
+			MissionEvent: "infrastructure_initiative_2.txt",
+			
+			TreeColumn: 4,
+			TreeRow: 0,
+			
+			RequiredMission: 0,
+			RequiredMission2: 1,
+			
+			AI: 5,
+		},
+		
+		{
+			ID: 3,
+			Name: "StrengthenTheBureaucracy.t",
+			ImageName: "administrative.png",
+			
+			MissionEvent: "administrative_buildings.txt",
+			
+			TreeColumn: 5,
+			TreeRow: 1,
+			
+			RequiredMission: -1,
+			RequiredMission2: -1,
+			
+			AI: 5,
+		},
+		{
+			ID: 4,
+			Name: "BoostTheEconomy.t",
+			ImageName: "economy.png",
+			
+			MissionEvent: "economy_buildings.txt",
+			
+			TreeColumn: 6,
+			TreeRow: 0,
+			
+			RequiredMission: 3,
+			RequiredMission2: -1,
+			
+			AI: 5,
+		},
+		
+	],
+	Age_of_History: Mission
+}

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Maria Skłodowska-Curie",
+	ImageID: Curie,
+		
+	BornDay: 7,
+	BornMonth: 11,
+	BornYear: 1867,
+		
+	Attack: -1,
+	Defense: -1,
+},
+]

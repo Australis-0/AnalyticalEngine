@@ -1,0 +1,13 @@
+[
+{
+	Name: "Krzysztof Gawkowski",
+	ImageID: Gawkowski,
+	
+	BornDay: 11,
+	BornMonth: 4,
+	BornYear: 1980,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

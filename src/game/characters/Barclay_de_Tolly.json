@@ -1,0 +1,13 @@
+[
+{
+	Name: "Michael Barclay de Tolly",
+	ImageID: Barclay de Tolly,
+	
+	BornDay: 6,
+	BornMonth: 12,
+	BornYear: 1761,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

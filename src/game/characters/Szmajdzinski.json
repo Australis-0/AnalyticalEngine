@@ -1,0 +1,13 @@
+[
+{
+	Name: "Jerzy Szmajdziński",
+	ImageID: Szmajdzinski,
+	
+	BornDay: 9,
+	BornMonth: 4,
+	BornYear: 1952,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

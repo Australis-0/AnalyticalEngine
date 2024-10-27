@@ -1,0 +1,13 @@
+[
+{
+	Name: "Sergei Shoigu",
+	ImageID: Shoigu,
+	
+	BornDay: 21,
+	BornMonth: 5,
+	BornYear: 1955,
+	
+	Attack: 2,
+	Defense: 4,
+},
+]

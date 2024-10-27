@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Joko Widodo",
+			ImageID: 107,
+			
+			BornDay: 21,
+			BornMonth: 6,
+			BornYear: 1961,
+			
+			ReignYear: 2014,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

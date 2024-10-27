@@ -1,0 +1,41 @@
+#######################################
+## Read: mods_steam_workshop.txt !
+## 
+## To create a new mod for submission to the Steam Workshop, first create a new folder for your mod within the 'mods' directory.
+## Then, copy or recreate all the modified files into that folder!
+##
+## For example, if a file was originally located in game/ExampleFile.json, 
+## it should be placed in mods/YourModName/game/ExampleFile.json in your mod's folder.
+##
+#####
+
+Events for scenario:
+
+mods/YOUR_MOD_NAME/map/THE_MAP/scenarios/THE_SCENARIO/events/common/
+mods/YOUR_MOD_NAME/map/THE_MAP/scenarios/THE_SCENARIO/events/global/
+mods/YOUR_MOD_NAME/map/THE_MAP/scenarios/THE_SCENARIO/events/siege/
+
+Read:
+game/_FAQ/Event_HowToAdd.txt
+
+#############################
+#### EVENTS FOR SCENARIO ####
+
+To add events for a scenario, repeat the steps, but the path for the event file should be placed in the scenario files within the map directory
+
+Path for Events for the scenario:
+
+mods/YOUR_MOD_NAME/map/THE_MAP/scenarios/THE_SCENARIO/events/common/
+mods/YOUR_MOD_NAME/map/THE_MAP/scenarios/THE_SCENARIO/events/global/
+mods/YOUR_MOD_NAME/map/THE_MAP/scenarios/THE_SCENARIO/events/siege/
+
+#### EVENTS FOR SCENARIO ####
+#############################
+
+
+
+More:
+
+game/_FAQ/Events.txt
+game/_FAQ/Events_Triggers.txt
+game/_FAQ/Events_Outcomes.txt

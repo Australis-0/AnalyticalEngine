@@ -1,0 +1,13 @@
+[
+{
+	Name: "Louis Desaix",
+	ImageID: Desaix,
+	
+	BornDay: 17,
+	BornMonth: 8,
+	BornYear: 1768,
+	
+	Attack: 7,
+	Defense: 7,
+},
+]

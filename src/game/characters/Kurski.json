@@ -1,0 +1,13 @@
+[
+{
+	Name: "Jacek Kurski",
+	ImageID: Kurski,
+	
+	BornDay: 22,
+	BornMonth: 2,
+	BornYear: 1966,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

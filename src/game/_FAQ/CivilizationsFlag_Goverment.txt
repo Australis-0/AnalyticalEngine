@@ -1,0 +1,46 @@
+#####
+
+For your mod the path will be:
+mods/YOUR_MOD_NAME/game/civilizations/
+mods/YOUR_MOD_NAME/gfx/flagsXH/
+
+#####
+
+## EXAMPLE: How to add Theocracy and Horde flag for Ukraine.
+
+From the game/languages/Bundle.properties file, find the tag:
+
+ukr = Ukraine
+This means: ukr
+
+From the game/Governments.json file, find the ideology.
+
+Theocracy
+Extra_Tag: "o",
+So, the flag file for Ukraine with Theocracy will be called:
+
+ukr_o.png
+
+
+
+For another example, with Horde:
+
+From the game/Governments.json file, find the ideology.
+Horde
+Extra_Tag: "h",
+
+The file will be:
+
+ukr_h.png
+
+Image dimensions must be 154 pixels wide and 100 pixels high (154 x 100).
+
+The image extension must be .png
+
+
+
+Add flags to the folder:
+mods/YourModName/gfx/flagsXH/
+
+Replace YourModName with the unique name of your mod.
+If the folders do not exist, create them!

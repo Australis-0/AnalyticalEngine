@@ -1,0 +1,13 @@
+[
+{
+	Name: "Andrew McNaughton",
+	ImageID: McNaughton,
+	
+	BornDay: 25,
+	BornMonth: 2,
+	BornYear: 1887,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

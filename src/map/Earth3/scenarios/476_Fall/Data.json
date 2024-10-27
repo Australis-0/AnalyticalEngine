@@ -1,0 +1,554 @@
+[
+{
+	CivTAG: "vedi_m",
+	CivID: 1,
+	PCID: 1,
+	CPID: 1279
+},
+{
+	CivTAG: "olpr_m",
+	CivID: 2,
+	PCID: 2,
+	CPID: 3616
+},
+{
+	CivTAG: "aes_m",
+	CivID: 3,
+	PCID: 3,
+	CPID: 11660
+},
+{
+	CivTAG: "sito_m",
+	CivID: 4,
+	PCID: 4,
+	CPID: 523
+},
+{
+	CivTAG: "yotv_m",
+	CivID: 5,
+	PCID: 5,
+	CPID: 3628
+},
+{
+	CivTAG: "pome_m",
+	CivID: 6,
+	PCID: 6,
+	CPID: 575
+},
+{
+	CivTAG: "gaul_m",
+	CivID: 7,
+	PCID: 7,
+	CPID: 246
+},
+{
+	CivTAG: "soi2_m",
+	CivID: 8,
+	PCID: 8,
+	CPID: 6568
+},
+{
+	CivTAG: "visi_m",
+	CivID: 9,
+	PCID: 9,
+	CPID: 110
+},
+{
+	CivTAG: "bisc2_m",
+	CivID: 10,
+	PCID: 10,
+	CPID: 48
+},
+{
+	CivTAG: "seu_m",
+	CivID: 11,
+	PCID: 11,
+	CPID: 21
+},
+{
+	CivTAG: "angl_m",
+	CivID: 12,
+	PCID: 12,
+	CPID: 2246
+},
+{
+	CivTAG: "jell2_m",
+	CivID: 13,
+	PCID: 13,
+	CPID: 2254
+},
+{
+	CivTAG: "rosk2_m",
+	CivID: 14,
+	PCID: 14,
+	CPID: 1031
+},
+{
+	CivTAG: "jut_m",
+	CivID: 15,
+	PCID: 15,
+	CPID: 6459
+},
+{
+	CivTAG: "rybe2_m",
+	CivID: 16,
+	PCID: 16,
+	CPID: 2252
+},
+{
+	CivTAG: "sca2_m",
+	CivID: 17,
+	PCID: 17,
+	CPID: 997
+},
+{
+	CivTAG: "sax2_m",
+	CivID: 18,
+	PCID: 18,
+	CPID: 635
+},
+{
+	CivTAG: "gewe_m",
+	CivID: 19,
+	PCID: 19,
+	CPID: 1063
+},
+{
+	CivTAG: "oste2_m",
+	CivID: 20,
+	PCID: 20,
+	CPID: 1068
+},
+{
+	CivTAG: "swq_m",
+	CivID: 21,
+	PCID: 21,
+	CPID: 1049
+},
+{
+	CivTAG: "got_m2",
+	CivID: 22,
+	PCID: 22,
+	CPID: 1051
+},
+{
+	CivTAG: "cheu_m",
+	CivID: 23,
+	PCID: 23,
+	CPID: 789
+},
+{
+	CivTAG: "thur_m",
+	CivID: 24,
+	PCID: 24,
+	CPID: 759
+},
+{
+	CivTAG: "lobb_m2",
+	CivID: 25,
+	PCID: 25,
+	CPID: 645
+},
+{
+	CivTAG: "rip2_m",
+	CivID: 26,
+	PCID: 26,
+	CPID: 557
+},
+{
+	CivTAG: "fri_m",
+	CivID: 27,
+	PCID: 27,
+	CPID: 793
+},
+{
+	CivTAG: "sal2_m",
+	CivID: 28,
+	PCID: 28,
+	CPID: 816
+},
+{
+	CivTAG: "neko_m",
+	CivID: 29,
+	PCID: 29,
+	CPID: 2913
+},
+{
+	CivTAG: "east2_m",
+	CivID: 30,
+	PCID: 30,
+	CPID: 1116
+},
+{
+	CivTAG: "dalm2_m",
+	CivID: 31,
+	PCID: 31,
+	CPID: 3076
+},
+{
+	CivTAG: "ostr_m",
+	CivID: 32,
+	PCID: 32,
+	CPID: 686
+},
+{
+	CivTAG: "gep_m",
+	CivID: 33,
+	PCID: 33,
+	CPID: 3189
+},
+{
+	CivTAG: "antt_m",
+	CivID: 34,
+	PCID: 34,
+	CPID: 1266
+},
+{
+	CivTAG: "gho_m",
+	CivID: 35,
+	PCID: 35,
+	CPID: 6825
+},
+{
+	CivTAG: "mai2_m",
+	CivID: 36,
+	PCID: 36,
+	CPID: 10811
+},
+{
+	CivTAG: "siq_m",
+	CivID: 37,
+	PCID: 37,
+	CPID: 10815
+},
+{
+	CivTAG: "alan2_m",
+	CivID: 38,
+	PCID: 38,
+	CPID: 11305
+},
+{
+	CivTAG: "sasa_m",
+	CivID: 39,
+	PCID: 39,
+	CPID: 2607
+},
+{
+	CivTAG: "albc_m",
+	CivID: 40,
+	PCID: 40,
+	CPID: 10440
+},
+{
+	CivTAG: "lega2_m",
+	CivID: 41,
+	PCID: 41,
+	CPID: 11542
+},
+{
+	CivTAG: "pibe_m",
+	CivID: 42,
+	PCID: 42,
+	CPID: 10447
+},
+{
+	CivTAG: "luzi_m",
+	CivID: 43,
+	PCID: 43,
+	CPID: 1163
+},
+{
+	CivTAG: "her_m",
+	CivID: 44,
+	PCID: 44,
+	CPID: 7265
+},
+{
+	CivTAG: "odac2_m",
+	CivID: 45,
+	PCID: 45,
+	CPID: 182
+},
+{
+	CivTAG: "ruii_m",
+	CivID: 46,
+	PCID: 46,
+	CPID: 534
+},
+{
+	CivTAG: "alem_m",
+	CivID: 47,
+	PCID: 47,
+	CPID: 6565
+},
+{
+	CivTAG: "brq_m",
+	CivID: 48,
+	PCID: 48,
+	CPID: 139
+},
+{
+	CivTAG: "vand_m",
+	CivID: 49,
+	PCID: 49,
+	CPID: 2242
+},
+{
+	CivTAG: "gara_m",
+	CivID: 50,
+	PCID: 50,
+	CPID: 1368
+},
+{
+	CivTAG: "mzab_m",
+	CivID: 51,
+	PCID: 51,
+	CPID: 4349
+},
+{
+	CivTAG: "getu2_m",
+	CivID: 52,
+	PCID: 52,
+	CPID: 1396
+},
+{
+	CivTAG: "mui_m",
+	CivID: 53,
+	PCID: 53,
+	CPID: 4731
+},
+{
+	CivTAG: "berb2_m",
+	CivID: 54,
+	PCID: 54,
+	CPID: 4777
+},
+{
+	CivTAG: "wess_m",
+	CivID: 55,
+	PCID: 55,
+	CPID: 835
+},
+{
+	CivTAG: "suss_m",
+	CivID: 56,
+	PCID: 56,
+	CPID: 6462
+},
+{
+	CivTAG: "kett_m",
+	CivID: 57,
+	PCID: 57,
+	CPID: 838
+},
+{
+	CivTAG: "eang3_m",
+	CivID: 58,
+	PCID: 58,
+	CPID: 12145
+},
+{
+	CivTAG: "bri2_m",
+	CivID: 59,
+	PCID: 59,
+	CPID: 825
+},
+{
+	CivTAG: "isl_m",
+	CivID: 60,
+	PCID: 60,
+	CPID: 882
+},
+{
+	CivTAG: "ord_m",
+	CivID: 61,
+	PCID: 61,
+	CPID: 7449
+},
+{
+	CivTAG: "sq_m",
+	CivID: 62,
+	PCID: 62,
+	CPID: 12143
+},
+{
+	CivTAG: "vnn_m",
+	CivID: 63,
+	PCID: 63,
+	CPID: 856
+},
+{
+	CivTAG: "nvt_m",
+	CivID: 64,
+	PCID: 64,
+	CPID: 894
+},
+{
+	CivTAG: "dalr2_m",
+	CivID: 65,
+	PCID: 65,
+	CPID: 3679
+},
+{
+	CivTAG: "pic_m",
+	CivID: 66,
+	PCID: 66,
+	CPID: 905
+},
+{
+	CivTAG: "tyr_m",
+	CivID: 67,
+	PCID: 67,
+	CPID: 6670
+},
+{
+	CivTAG: "bear2_m",
+	CivID: 68,
+	PCID: 68,
+	CPID: 6485
+},
+{
+	CivTAG: "des_m",
+	CivID: 69,
+	PCID: 69,
+	CPID: 929
+},
+{
+	CivTAG: "mun_m",
+	CivID: 70,
+	PCID: 70,
+	CPID: 924
+},
+{
+	CivTAG: "cork2_m",
+	CivID: 71,
+	PCID: 71,
+	CPID: 824
+},
+{
+	CivTAG: "wex3_m",
+	CivID: 72,
+	PCID: 72,
+	CPID: 918
+},
+{
+	CivTAG: "dub2_m",
+	CivID: 73,
+	PCID: 73,
+	CPID: 920
+},
+{
+	CivTAG: "lein_m",
+	CivID: 74,
+	PCID: 74,
+	CPID: 6476
+},
+{
+	CivTAG: "kild_m",
+	CivID: 75,
+	PCID: 75,
+	CPID: 921
+},
+{
+	CivTAG: "antr2_m",
+	CivID: 76,
+	PCID: 76,
+	CPID: 883
+},
+{
+	CivTAG: "haro2_m",
+	CivID: 77,
+	PCID: 77,
+	CPID: 6671
+},
+{
+	CivTAG: "arma2_m",
+	CivID: 78,
+	PCID: 78,
+	CPID: 3680
+},
+{
+	CivTAG: "orie2_m",
+	CivID: 79,
+	PCID: 79,
+	CPID: 942
+},
+{
+	CivTAG: "tyrc_m",
+	CivID: 80,
+	PCID: 80,
+	CPID: 6605
+},
+{
+	CivTAG: "slig_m",
+	CivID: 81,
+	PCID: 81,
+	CPID: 943
+},
+{
+	CivTAG: "mayo3_m",
+	CivID: 82,
+	PCID: 82,
+	CPID: 927
+},
+{
+	CivTAG: "conn_m",
+	CivID: 83,
+	PCID: 83,
+	CPID: 6487
+},
+{
+	CivTAG: "offa3_m",
+	CivID: 84,
+	PCID: 84,
+	CPID: 947
+},
+{
+	CivTAG: "thom_m",
+	CivID: 85,
+	PCID: 85,
+	CPID: 6484
+},
+{
+	CivTAG: "ormo3_m",
+	CivID: 86,
+	PCID: 86,
+	CPID: 923
+},
+{
+	CivTAG: "eli2_m",
+	CivID: 87,
+	PCID: 87,
+	CPID: 930
+},
+{
+	CivTAG: "osq_m",
+	CivID: 88,
+	PCID: 88,
+	CPID: 6483
+},
+{
+	CivTAG: "wate2_m",
+	CivID: 89,
+	PCID: 89,
+	CPID: 922
+},
+{
+	CivTAG: "kerr2_m",
+	CivID: 90,
+	PCID: 90,
+	CPID: 6478
+},
+{
+	CivTAG: "galw2_m",
+	CivID: 91,
+	PCID: 91,
+	CPID: 934
+},
+{
+	CivTAG: "ebu2_m",
+	CivID: 92,
+	PCID: 92,
+	CPID: 341
+}
+]

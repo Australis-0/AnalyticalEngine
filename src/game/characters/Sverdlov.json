@@ -1,0 +1,13 @@
+[
+{
+	Name: "Yakov Sverdlov",
+	ImageID: Sverdlov,
+	
+	BornDay: 3,
+	BornMonth: 7,
+	BornYear: 1885,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

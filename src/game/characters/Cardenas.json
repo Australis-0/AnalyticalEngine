@@ -1,0 +1,13 @@
+[
+{
+	Name: "Lázaro Cárdenas",
+	ImageID: Cardenas,
+	
+	BornDay: 21,
+	BornMonth: 5,
+	BornYear: 1895,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Franciszek Kleeberg",
+	ImageID: Kleeberg,
+	
+	BornDay: 1,
+	BornMonth: 2,
+	BornYear: 1888,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Jakov Milatovic",
+			ImageID: 144,
+			
+			BornDay: 7,
+			BornMonth: 12,
+			BornYear: 1986,
+			
+			ReignYear: 2022,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

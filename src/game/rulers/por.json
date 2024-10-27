@@ -1,0 +1,316 @@
+{
+	"Rulers": [
+		{
+			"Name": "Afonso I",
+			"ImageID": -1,
+			
+			"BornDay": 25,
+			"BornMonth": 7,
+			"BornYear": 1109,
+			
+			"ReignYear": 1139
+		},
+		{
+			"Name": "Sancho I",
+			"ImageID": -1,
+			
+			"BornDay": 11,
+			"BornMonth": 11,
+			"BornYear": 1154,
+			
+			"ReignYear": 1185
+		},
+		{
+			"Name": "Afonso II",
+			"ImageID": -1,
+			
+			"BornDay": 23,
+			"BornMonth": 4,
+			"BornYear": 1185,
+			
+			"ReignYear": 1211
+		},
+		{
+			"Name": "Sancho II",
+			"ImageID": -1,
+			
+			"BornDay": 8,
+			"BornMonth": 5,
+			"BornYear": 1209,
+			
+			"ReignYear": 1223
+		},
+		{
+			"Name": "Afonso III",
+			"ImageID": -1,
+			
+			"BornDay": 5,
+			"BornMonth": 5,
+			"BornYear": 1210,
+			
+			"ReignYear": 1248
+		},
+		{
+			"Name": "Dinis I",
+			"ImageID": -1,
+			
+			"BornDay": 9,
+			"BornMonth": 10,
+			"BornYear": 1261,
+			
+			"ReignYear": 1279
+		},
+		{
+			"Name": "Afonso IV",
+			"ImageID": -1,
+			
+			"BornDay": 15,
+			"BornMonth": 2,
+			"BornYear": 1291,
+			
+			"ReignYear": 1325
+		},
+		{
+			"Name": "Pedro I",
+			"ImageID": -1,
+			
+			"BornDay": 9,
+			"BornMonth": 4,
+			"BornYear": 1320,
+			
+			"ReignYear": 1357
+		},
+		{
+			"Name": "Fernando I",
+			"ImageID": -1,
+			
+			"BornDay": 31,
+			"BornMonth": 10,
+			"BornYear": 1345,
+			
+			"ReignYear": 1367
+		},
+		{
+			"Name": "João I",
+			"ImageID": -1,
+			
+			"BornDay": 11,
+			"BornMonth": 4,
+			"BornYear": 1357,
+			
+			"ReignYear": 1385
+		},
+		{
+			"Name": "Duarte I",
+			"ImageID": -1,
+			
+			"BornDay": 31,
+			"BornMonth": 10,
+			"BornYear": 1391,
+			
+			"ReignYear": 1433
+		},
+		{
+			"Name": "Afonso V",
+			"ImageID": 4,
+			
+			"BornDay": 15,
+			"BornMonth": 1,
+			"BornYear": 1432,
+			
+			"ReignYear": 1438
+		},
+		{
+			"Name": "João II",
+			"ImageID": 5,
+			
+			"BornDay": 3,
+			"BornMonth": 2,
+			"BornYear": 1455,
+			
+			"ReignYear": 1481
+		},
+		{
+			"Name": "Manuel I",
+			"ImageID": -1,
+			
+			"BornDay": 31,
+			"BornMonth": 5,
+			"BornYear": 1469,
+			
+			"ReignYear": 1495
+		},
+		{
+			"Name": "João III",
+			"ImageID": -1,
+			
+			"BornDay": 7,
+			"BornMonth": 6,
+			"BornYear": 1502,
+			
+			"ReignYear": 1521
+		},
+		{
+			"Name": "Sebastião I",
+			"ImageID": -1,
+			
+			"BornDay": 20,
+			"BornMonth": 1,
+			"BornYear": 1554,
+			
+			"ReignYear": 1557
+		},
+		{
+			"Name": "Henrique I",
+			"ImageID": -1,
+			
+			"BornDay": 31,
+			"BornMonth": 1,
+			"BornYear": 1512,
+			
+			"ReignYear": 1578
+		},
+		{
+			"Name": "Filipe I",
+			"ImageID": -1,
+			
+			"BornDay": 13,
+			"BornMonth": 10,
+			"BornYear": 1556,
+			
+			"ReignYear": 1580
+		},
+		{
+			"Name": "João IV",
+			"ImageID": -1,
+			
+			"BornDay": 7,
+			"BornMonth": 10,
+			"BornYear": 1604,
+			
+			"ReignYear": 1640
+		},
+		{
+			"Name": "Pedro II",
+			"ImageID": -1,
+			
+			"BornDay": 26,
+			"BornMonth": 10,
+			"BornYear": 1648,
+			
+			"ReignYear": 1683
+		},
+		{
+			"Name": "João V",
+			"ImageID": -1,
+			
+			"BornDay": 22,
+			"BornMonth": 10,
+			"BornYear": 1689,
+			
+			"ReignYear": 1706
+		},
+		{
+			"Name": "José I",
+			"ImageID": -1,
+			
+			"BornDay": 6,
+			"BornMonth": 6,
+			"BornYear": 1714,
+			
+			"ReignYear": 1750
+		},
+		{
+			"Name": "Maria I",
+			"ImageID": 313,
+			
+			"BornDay": 17,
+			"BornMonth": 12,
+			"BornYear": 1734,
+			
+			"ReignYear": 1777
+		},
+		{
+			"Name": "João VI",
+			"ImageID": -1,
+			
+			"BornDay": 13,
+			"BornMonth": 5,
+			"BornYear": 1767,
+			
+			"ReignYear": 1816
+		},
+		{
+			"Name": "Maria II",
+			"ImageID": 314,
+			
+			"BornDay": 4,
+			"BornMonth": 4,
+			"BornYear": 1819,
+			
+			"ReignYear": 1826
+		},
+		{
+			"Name": "Pedro V",
+			"ImageID": -1,
+			
+			"BornDay": 16,
+			"BornMonth": 9,
+			"BornYear": 1837,
+			
+			"ReignYear": 1853
+		},
+		{
+			"Name": "Luís I",
+			"ImageID": -1,
+			
+			"BornDay": 31,
+			"BornMonth": 10,
+			"BornYear": 1838,
+			
+			"ReignYear": 1861
+		},
+		{
+			"Name": "Carlos I",
+			"ImageID": -1,
+			
+			"BornDay": 28,
+			"BornMonth": 9,
+			"BornYear": 1863,
+			
+			"ReignYear": 1889
+		},
+		{
+			"Name": "Manuel II",
+			"ImageID": 315,
+			
+			"BornDay": 15,
+			"BornMonth": 11,
+			"BornYear": 1889,
+			
+			"ReignYear": 1908
+		},
+		{
+			"Name": "Antonio de Oliveira Salazar",
+			"ImageID": 232,
+			
+			"BornDay": 28,
+			"BornMonth": 4,
+			"BornYear": 1889,
+			
+			"ReignYear": 1932
+		},
+		{
+			Name: "Marcelo Rebelo de Sousa",
+			ImageID: 29,
+			
+			BornDay: 12,
+			BornMonth: 12,
+			BornYear: 1948,
+			
+			ReignYear: 2016,
+		},
+	],
+	
+	"Age_of_History": "Rulers"
+}

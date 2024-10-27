@@ -1,0 +1,13 @@
+[
+{
+	Name: "Tomoyuki Yamashita",
+	ImageID: Yamashita,
+	
+	BornDay: 8,
+	BornMonth: 11,
+	BornYear: 1885,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

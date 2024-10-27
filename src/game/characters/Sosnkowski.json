@@ -1,0 +1,13 @@
+[
+{
+	Name: "Kazimierz Sosnkowski",
+	ImageID: Sosnkowski,
+	
+	BornDay: 19,
+	BornMonth: 11,
+	BornYear: 1885,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

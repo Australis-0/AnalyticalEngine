@@ -1,0 +1,13 @@
+[
+{
+	Name: "Władysław Anders",
+	ImageID: Anders,
+	
+	BornDay: 11,
+	BornMonth: 8,
+	BornYear: 1892,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

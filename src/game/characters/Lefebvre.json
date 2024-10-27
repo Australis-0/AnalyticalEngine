@@ -1,0 +1,13 @@
+[
+{
+	Name: "Francois Joseph Lefebvre",
+	ImageID: Lefebvre,
+	
+	BornDay: 25,
+	BornMonth: 10,
+	BornYear: 1755,
+	
+	Attack: 5,
+	Defense: 6,
+},
+]

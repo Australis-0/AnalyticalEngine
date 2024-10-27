@@ -1,0 +1,13 @@
+[
+{
+	Name: "Pyotr Bagration",
+	ImageID: Bagration_Pyotr,
+	
+	BornDay: 10,
+	BornMonth: 7,
+	BornYear: 1765,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

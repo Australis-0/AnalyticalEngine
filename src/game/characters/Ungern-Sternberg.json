@@ -1,0 +1,13 @@
+[
+{
+	Name: "Roman von Ungern-Sternberg",
+	ImageID: Ungern-Sternberg,
+	
+	BornDay: 10,
+	BornMonth: 1,
+	BornYear: 1886,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

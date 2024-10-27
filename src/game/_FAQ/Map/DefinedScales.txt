@@ -1,0 +1,52 @@
+# ID of scale 1.0, counting from 0
+definedScale_Default = 15
+
+	definedScales: [10,
+                9,
+                8,
+                7,
+                6,
+                5,
+                4,
+                3.52,
+                3,
+                2.52,
+                2,
+                1.76,
+                1.52,
+                1.24,
+                1,
+                0.92,
+                0.8,
+                0.68,
+                0.6,
+                0.52,
+                0.44,
+                0.4,
+                0.32,
+                0.24,
+                0.16,
+                0.08,
+                0.08,],
+
+
+
+Go to Map -> Config.json and locate the following setting:
+ExtraMapScale: X.X,
+
+ExtraMapScale: 1.75,
+In this example, the scale value is 1.75.
+
+Guidelines for Defining Scales:
+Example:
+
+A scale of 0.9 should not be used because:
+
+1.75 * 0.9 = 1.575
+This results in a value with more than two decimal places, which can cause the provinces to appear distorted.
+However, using a scale of 0.92 is acceptable:
+
+1.75 * 0.92 = 1.61
+This results in a value with two decimal places, ensuring the provinces look correct.
+Summary:
+Always ensure the final value after scaling has a maximum of two decimal places, like 1.61.

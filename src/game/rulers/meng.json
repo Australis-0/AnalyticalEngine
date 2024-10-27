@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Demchugdongrub",
+			ImageID: 298,
+			
+			BornDay: 23,
+			BornMonth: 2,
+			BornYear: 1902,
+			
+			ReignYear: 1934,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

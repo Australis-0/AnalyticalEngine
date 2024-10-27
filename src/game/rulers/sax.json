@@ -1,0 +1,116 @@
+{
+	"Rulers": [
+		{
+			"Name": "Henry I the Fowler",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 876,
+			
+			"ReignYear": 919
+		},
+		{
+			"Name": "Otto I the Great",
+			"ImageID": -1,
+			
+			"BornDay": 23,
+			"BornMonth": 11,
+			"BornYear": 912,
+			
+			"ReignYear": 936
+		},
+		{
+			"Name": "Otto II",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 955,
+			
+			"ReignYear": 973
+		},
+		{
+			"Name": "Otto III",
+			"ImageID": -1,
+			
+			"BornDay": 980,
+			"BornMonth": 6,
+			"BornYear": 980,
+			
+			"ReignYear": 996
+		},
+		{
+			"Name": "Henry II",
+			"ImageID": -1,
+			
+			"BornDay": 6,
+			"BornMonth": 5,
+			"BornYear": 972,
+			
+			"ReignYear": 1014
+		},
+		{
+			"Name": "Conrad I",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1015,
+			
+			"ReignYear": 1024
+		},
+		{
+			"Name": "Frederick I Barbarossa",
+			"ImageID": -1,
+			
+			"BornDay": 1122,
+			"BornMonth": 1,
+			"BornYear": 1122,
+			
+			"ReignYear": 1155
+		},
+		{
+			"Name": "Frederick II",
+			"ImageID": -1,
+			
+			"BornDay": 26,
+			"BornMonth": 12,
+			"BornYear": 1194,
+			
+			"ReignYear": 1220
+		},
+		{
+			"Name": "Augustus the Strong",
+			"ImageID": -1,
+			
+			"BornDay": 12,
+			"BornMonth": 8,
+			"BornYear": 1670,
+			
+			"ReignYear": 1694
+		},
+		{
+			"Name": "Frederick Augustus II",
+			"ImageID": -1,
+			
+			"BornDay": 23,
+			"BornMonth": 8,
+			"BornYear": 1696,
+			
+			"ReignYear": 1733
+		},
+		{
+			"Name": "Friedrich August III",
+			"ImageID": -1,
+			
+			"BornDay": 23,
+			"BornMonth": 8,
+			"BornYear": 1750,
+			
+			"ReignYear": 1763
+		}
+	],
+	
+	"Age_of_History": "Rulers"
+}

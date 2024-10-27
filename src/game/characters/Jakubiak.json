@@ -1,0 +1,13 @@
+[
+{
+	Name: "Marek Jakubiak",
+	ImageID: Jakubiak,
+	
+	BornDay: 30,
+	BornMonth: 4,
+	BornYear: 1959,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Ferenc Szombathelyi",
+	ImageID: Szombathelyi,
+	
+	BornDay: 17,
+	BornMonth: 5,
+	BornYear: 1887,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

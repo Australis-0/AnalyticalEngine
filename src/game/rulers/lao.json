@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Thongloun Sisoulith",
+			ImageID: 122,
+			
+			BornDay: 10,
+			BornMonth: 11,
+			BornYear: 1945,
+			
+			ReignYear: 2021,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Ludwig von Benedek",
+	ImageID: Benedek,
+		
+	BornDay: 14,
+	BornMonth: 7,
+	BornYear: 1804,
+		
+	Attack: -1,
+	Defense: -1,
+},
+]

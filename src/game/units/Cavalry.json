@@ -1,0 +1,306 @@
+{
+	Army: [
+		{
+			Name: "Horseman",
+			ImageID: 24,
+			
+			UnitLevel: 0,
+			
+			Attack: 7,
+			Defense: 5,
+			MovementSpeed: 4.6,
+			
+			AttackRange: 2,
+			SiegeProgress: 0.1,
+			
+			RequiredTechID: 5,
+			
+			Cost: 15,
+			MaintenanceCost: 0.13,
+			
+			RecruitmentTime: 80,
+		},
+		{
+			Name: "EliteHorseman",
+			ImageID: 20,
+			
+			UnitLevel: 1,
+			
+			Attack: 13,
+			Defense: 11,
+			MovementSpeed: 4.7,
+			
+			AttackRange: 2,
+			SiegeProgress: 0.1,
+			
+			RequiredTechID: 12,
+			
+			Cost: 20,
+			MaintenanceCost: 0.15,
+			
+			RecruitmentTime: 80,
+		},
+		{
+			Name: "Knight",
+			ImageID: 43,
+			
+			UnitLevel: 2,
+			
+			Attack: 17,
+			Defense: 17,
+			MovementSpeed: 4.8,
+			
+			AttackRange: 2,
+			SiegeProgress: 0.1,
+			
+			RequiredTechID: 14,
+			
+			Cost: 25,
+			MaintenanceCost: 0.2,
+			
+			RecruitmentTime: 80,
+		},
+		{
+			Name: "EliteKnight",
+			ImageID: 44,
+			
+			UnitLevel: 3,
+			
+			Attack: 26,
+			Defense: 21,
+			MovementSpeed: 5.1,
+			
+			AttackRange: 2,
+			SiegeProgress: 0.1,
+			
+			RequiredTechID: 20,
+			
+			Cost: 30,
+			MaintenanceCost: 0.23,
+			
+			RecruitmentTime: 80,
+		},
+		{
+			Name: "EarlyCavalry",
+			ImageID: 59,
+			
+			UnitLevel: 4,
+			
+			Attack: 29,
+			Defense: 24,
+			MovementSpeed: 5.5,
+			
+			AttackRange: 2,
+			SiegeProgress: 0.1,
+			
+			RequiredTechID: 29,
+			
+			Cost: 33,
+			MaintenanceCost: 0.26,
+			
+			RecruitmentTime: 80,
+		},
+		{
+			Name: "Cavalry",
+			ImageID: 4,
+			
+			UnitLevel: 5,
+			
+			Attack: 35,
+			Defense: 30,
+			MovementSpeed: 5.9,
+			
+			AttackRange: 2,
+			SiegeProgress: 0.1,
+			
+			RequiredTechID: 38,
+			
+			Cost: 35,
+			MaintenanceCost: 0.28,
+			
+			RecruitmentTime: 80,
+		},
+		{
+			Name: "EliteCavalry",
+			ImageID: 35,
+			
+			UnitLevel: 6,
+			
+			Attack: 38,
+			Defense: 31,
+			MovementSpeed: 6.3,
+			
+			AttackRange: 2,
+			SiegeProgress: 0.15,
+			
+			RequiredTechID: 49,
+			
+			Cost: 37,
+			MaintenanceCost: 0.3,
+			
+			RecruitmentTime: 80,
+		},
+		{
+			Name: "HeavyCavalry",
+			ImageID: 47,
+			
+			UnitLevel: 7,
+			
+			Attack: 39,
+			Defense: 37,
+			MovementSpeed: 6.4,
+			
+			AttackRange: 2,
+			SiegeProgress: 0.15,
+			
+			RequiredTechID: 56,
+			
+			Cost: 40,
+			MaintenanceCost: 0.33,
+			
+			RecruitmentTime: 80,
+		},
+		{
+			Name: "EarlyTank",
+			ImageID: 37,
+			
+			UnitLevel: 8,
+			
+			Attack: 41,
+			Defense: 48,
+			MovementSpeed: 5.2,
+			
+			AttackRange: 2,
+			SiegeProgress: 0.2,
+			
+			RequiredTechID: 68,
+			
+			Cost: 45,
+			MaintenanceCost: 0.35,
+			
+			RecruitmentTime: 80,
+		},
+		{
+			Name: "Tank",
+			ImageID: 11,
+			
+			UnitLevel: 9,
+			
+			Attack: 54,
+			Defense: 52,
+			MovementSpeed: 6.4,
+			
+			AttackRange: 2,
+			SiegeProgress: 0.2,
+			
+			RequiredTechID: 72,
+			
+			Cost: 50,
+			MaintenanceCost: 0.4,
+			
+			RecruitmentTime: 80,
+		},
+		{
+			Name: "MediumTank",
+			ImageID: 38,
+			
+			UnitLevel: 10,
+			
+			Attack: 57,
+			Defense: 56,
+			MovementSpeed: 6.8,
+			
+			AttackRange: 2,
+			SiegeProgress: 0.2,
+			
+			RequiredTechID: 74,
+			
+			Cost: 50,
+			MaintenanceCost: 0.43,
+			
+			RecruitmentTime: 80,
+		},
+		{
+			Name: "HeavyTank",
+			ImageID: 39,
+			
+			UnitLevel: 11,
+			
+			Attack: 61,
+			Defense: 58,
+			MovementSpeed: 8.0,
+			
+			AttackRange: 2,
+			SiegeProgress: 0.25,
+			
+			RequiredTechID: 82,
+			
+			Cost: 50,
+			MaintenanceCost: 0.46,
+			
+			RecruitmentTime: 80,
+		},
+		{
+			Name: "ModernTank",
+			ImageID: 12,
+			
+			UnitLevel: 12,
+			SiegeProgress: 0.25,
+			
+			Attack: 68,
+			Defense: 64,
+			MovementSpeed: 8.6,
+			
+			AttackRange: 3,
+			
+			RequiredTechID: 85,
+			
+			Cost: 56,
+			MaintenanceCost: 0.48,
+			
+			RecruitmentTime: 80,
+		},
+		{
+			Name: "MainBattleTank",
+			ImageID: 48,
+			
+			UnitLevel: 13,
+			SiegeProgress: 0.3,
+			
+			Attack: 70,
+			Defense: 66,
+			MovementSpeed: 8.8,
+			
+			AttackRange: 3,
+			
+			RequiredTechID: 87,
+			
+			Cost: 60,
+			MaintenanceCost: 0.5,
+			
+			RecruitmentTime: 80,
+		},
+		{
+			Name: "FutureTank",
+			ImageID: 49,
+			
+			UnitLevel: 14,
+			SiegeProgress: 0.35,
+			
+			Attack: 78,
+			Defense: 72,
+			MovementSpeed: 9.0,
+			
+			AttackRange: 3,
+			
+			RequiredTechID: 94,
+			
+			Cost: 65,
+			MaintenanceCost: 0.55,
+			
+			RecruitmentTime: 80,
+		},
+	],
+	
+	Age_of_History: Army
+}

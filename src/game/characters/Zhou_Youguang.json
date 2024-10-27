@@ -1,0 +1,13 @@
+[
+{
+	Name: "Zhou Youguang",
+	ImageID: Zhou_Youguang,
+	
+	BornDay: 13,
+	BornMonth: 1,
+	BornYear: 1906,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

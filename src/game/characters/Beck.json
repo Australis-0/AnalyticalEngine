@@ -1,0 +1,13 @@
+[
+{
+	Name: "Józef Beck",
+	ImageID: Beck,
+	
+	BornDay: 4,
+	BornMonth: 10,
+	BornYear: 1894,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

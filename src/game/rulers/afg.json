@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Hibatullah Achundzada",
+			ImageID: 30,
+			
+			BornDay: 19,
+			BornMonth: 10,
+			BornYear: 1961,
+			
+			ReignYear: 2021,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

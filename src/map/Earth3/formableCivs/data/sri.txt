@@ -1,0 +1,10 @@
+{
+FormableCivTag: "sri",
+ClaimantsTag: [
+	"kott",
+	"kand",
+	"jaff"
+],
+Provinces: [ 2991, 5546, 5545, 5544, 5543, 5538, 5542, 2970, 5537, 5539, 5540, 5541 ],
+CapitalProvinceID: 2991
+}

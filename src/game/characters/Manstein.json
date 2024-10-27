@@ -1,0 +1,13 @@
+[
+{
+	Name: "Erich von Manstein",
+	ImageID: von_Manstein,
+	
+	BornDay: 24,
+	BornMonth: 11,
+	BornYear: 1887,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

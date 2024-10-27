@@ -1,0 +1,91 @@
+#######################################
+## Read: mods_steam_workshop.txt !
+## 
+## To create a new mod for submission to the Steam Workshop, first create a new folder for your mod within the 'mods' directory.
+## Then, copy or recreate all the modified files into that folder!
+##
+## For example, if a file was originally located in game/ExampleFile.json, 
+## it should be placed in mods/YourModName/game/ExampleFile.json in your mod's folder.
+##
+#####
+
+
+
+Go to:
+game/technologies/
+
+Edit Technologies.json file as txt file in notepad
+
+Here is an example code of one Technology:
+
+		{
+			ID: 96,
+			Name: "WarTactics",
+			ImageID: 0,
+			
+			TreeColumn: 14,
+			TreeRow: 4,
+			
+			RequiredTech: 33,
+			RequiredTech2: -1,
+			
+			BattleWidth: 4,
+			
+			ResearchCost: 100,
+			
+			Repeatable: false,
+			AI: 5,
+		},
+
+
+New technology should always be added at the end of the file!!!
+## New technology should always be added at the end of the file!!!
+
+ID: 96,
+The ID must always be an iteration of the last ID technology. Last ID + 1
+## The ID must always be an iteration of the last ID technology. Last ID + 1
+
+ImageID: 0,
+You can choose background image for technology button from folder game/technologies/technologiesImages/
+
+TreeColumn: 14,
+TreeColumn represents the X position in the Technology Tree. In this example, the position is 14. The range starts at 0 with no upper limit.
+
+TreeRow: 2,
+TreeRow represents the Y position in the Technology Tree, with a range of 0 to 5(or more).
+
+The ID of first required technolgy, -1 if none
+RequiredTech: 33,
+
+The ID of second required technolgy, -1 if none
+RequiredTech2: -1,
+
+
+To assign a unit that will be unlocked by technology, you need to change this in the file where the unit is located
+The same thing is with buildings and laws etc.
+Use technology ID.
+
+RequiredTechID: 96,
+
+
+## You can add in next line after ImageID: X,
+
+MaintainTechnologyName: true,
+If you want to maintain the name of the Technology
+If it is false, it will be the name of a Law, Building or Unit.
+
+
+## Additional technology bonuses:
+
+UnlocksNukes: true,
+UnlocksAccessToTheSea: true,
+BattleWidth: 3,
+
+UnitsAttack: 1,
+UnitsDefense: 1,
+
+GeneralAttack: 1,
+GeneralDefense: 1,
+
+MaxMorale: 12,
+Discipline: 10,

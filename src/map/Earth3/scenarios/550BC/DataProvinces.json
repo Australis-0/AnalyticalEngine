@@ -1,0 +1,395 @@
+[
+{
+	Provinces: [ 1128, 1160, 1197, 3164, 12481 ]
+},
+{
+	Provinces: [ 1345, 6593, 12574 ]
+},
+{
+	Provinces: [ 1329, 1353, 2193, 6870, 6871 ]
+},
+{
+	Provinces: [ 2203, 6592, 8060 ]
+},
+{
+	Provinces: [ 2194, 6869 ]
+},
+{
+	Provinces: [ 2199, 6868 ]
+},
+{
+	Provinces: [ 2198 ]
+},
+{
+	Provinces: [ 6867 ]
+},
+{
+	Provinces: [ 2197 ]
+},
+{
+	Provinces: [ 2195 ]
+},
+{
+	Provinces: [ 8058 ]
+},
+{
+	Provinces: [ 2200 ]
+},
+{
+	Provinces: [ 2201 ]
+},
+{
+	Provinces: [ 1435, 6866 ]
+},
+{
+	Provinces: [ 2213, 6865 ]
+},
+{
+	Provinces: [ 6905 ]
+},
+{
+	Provinces: [ 1436, 3063 ]
+},
+{
+	Provinces: [ 2204, 2212 ]
+},
+{
+	Provinces: [ 2202, 6873, 12573 ]
+},
+{
+	Provinces: [ 3199 ]
+},
+{
+	Provinces: [ 2218 ]
+},
+{
+	Provinces: [ 8059 ]
+},
+{
+	Provinces: [ 6591 ]
+},
+{
+	Provinces: [ 2214 ]
+},
+{
+	Provinces: [ 3060, 7352 ]
+},
+{
+	Provinces: [ 7353 ]
+},
+{
+	Provinces: [ 2217 ]
+},
+{
+	Provinces: [ 7430 ]
+},
+{
+	Provinces: [ 7429 ]
+},
+{
+	Provinces: [ 2219, 2222 ]
+},
+{
+	Provinces: [ 3058, 3059, 3071, 7351 ]
+},
+{
+	Provinces: [ 2228 ]
+},
+{
+	Provinces: [ 2220 ]
+},
+{
+	Provinces: [ 2205 ]
+},
+{
+	Provinces: [ 3072 ]
+},
+{
+	Provinces: [ 3008, 7255, 7257 ]
+},
+{
+	Provinces: [ 2233, 3066 ]
+},
+{
+	Provinces: [ 2231, 6638 ]
+},
+{
+	Provinces: [ 2230, 3050, 3068, 6639, 7427 ]
+},
+{
+	Provinces: [ 3061, 6590, 6924, 7256, 12480 ]
+},
+{
+	Provinces: [ 12504 ]
+},
+{
+	Provinces: [ 1359 ]
+},
+{
+	Provinces: [ 2268 ]
+},
+{
+	Provinces: [ 3009 ]
+},
+{
+	Provinces: [ 6840 ]
+},
+{
+	Provinces: [ 2267 ]
+},
+{
+	Provinces: [ 12503 ]
+},
+{
+	Provinces: [ 12116 ]
+},
+{
+	Provinces: [ 12511, 12577 ]
+},
+{
+	Provinces: [ 12509 ]
+},
+{
+	Provinces: [ 3010 ]
+},
+{
+	Provinces: [ 12572 ]
+},
+{
+	Provinces: [ 12127, 12571 ]
+},
+{
+	Provinces: [ 1141 ]
+},
+{
+	Provinces: [ 12570 ]
+},
+{
+	Provinces: [ 3218 ]
+},
+{
+	Provinces: [ 3216 ]
+},
+{
+	Provinces: [ 3220 ]
+},
+{
+	Provinces: [ 2215 ]
+},
+{
+	Provinces: [ 2216 ]
+},
+{
+	Provinces: [ 2226, 2264, 12478 ]
+},
+{
+	Provinces: [ 3151, 12308 ]
+},
+{
+	Provinces: [ 3197, 3198 ]
+},
+{
+	Provinces: [ 2232 ]
+},
+{
+	Provinces: [ 2227, 3062, 7258 ]
+},
+{
+	Provinces: [ 2223 ]
+},
+{
+	Provinces: [ 3065, 7334 ]
+},
+{
+	Provinces: [ 3070, 3165, 7335 ]
+},
+{
+	Provinces: [ 2225, 7283, 7349, 12479 ]
+},
+{
+	Provinces: [ 2224, 3152, 3153 ]
+},
+{
+	Provinces: [ 3160 ]
+},
+{
+	Provinces: [ 6827 ]
+},
+{
+	Provinces: [ 1114, 1116 ]
+},
+{
+	Provinces: [ 1127 ]
+},
+{
+	Provinces: [ 1157, 6546 ]
+},
+{
+	Provinces: [ 1102 ]
+},
+{
+	Provinces: [ 4902 ]
+},
+{
+	Provinces: [ 4901 ]
+},
+{
+	Provinces: [ 1099, 1100, 1106 ]
+},
+{
+	Provinces: [ 1101, 1103, 1104, 1107, 1108, 1129, 1158, 1159, 7324, 11543 ]
+},
+{
+	Provinces: [ 1123, 1149, 1150, 1151, 1172, 1263, 1331, 1332, 1344, 2207, 2208, 2209, 2210, 2211, 3161 ]
+},
+{
+	Provinces: [ 1098, 1122, 1124, 1130, 1133, 1136, 1137, 1139, 1140, 1143, 1144, 1145, 1146, 1147, 1171, 1334, 1336, 1338, 1339, 1342, 6545, 12172 ]
+},
+{
+	Provinces: [ 1109, 1330 ]
+},
+{
+	Provinces: [ 1135 ]
+},
+{
+	Provinces: [ 1335 ]
+},
+{
+	Provinces: [ 1138 ]
+},
+{
+	Provinces: [ 6874 ]
+},
+{
+	Provinces: [ 12575 ]
+},
+{
+	Provinces: [ 1134 ]
+},
+{
+	Provinces: [ 1125 ]
+},
+{
+	Provinces: [ 1085 ]
+},
+{
+	Provinces: [ 6906 ]
+},
+{
+	Provinces: [ 1156 ]
+},
+{
+	Provinces: [ 1154 ]
+},
+{
+	Provinces: [ 1341 ]
+},
+{
+	Provinces: [ 1142 ]
+},
+{
+	Provinces: [ 1126 ]
+},
+{
+	Provinces: [ 12155 ]
+},
+{
+	Provinces: [ 7291 ]
+},
+{
+	Provinces: [ 1153 ]
+},
+{
+	Provinces: [ 1155 ]
+},
+{
+	Provinces: [ 3219 ]
+},
+{
+	Provinces: [ 3217 ]
+},
+{
+	Provinces: [ 12576 ]
+},
+{
+	Provinces: [ 1119 ]
+},
+{
+	Provinces: [ 2206 ]
+},
+{
+	Provinces: [ 1118 ]
+},
+{
+	Provinces: [ 7260 ]
+},
+{
+	Provinces: [ 7222 ]
+},
+{
+	Provinces: [ 2221 ]
+},
+{
+	Provinces: [ 1340 ]
+},
+{
+	Provinces: [ 1337 ]
+},
+{
+	Provinces: [ 2229 ]
+},
+{
+	Provinces: [ 7342 ]
+},
+{
+	Provinces: [ 3064 ]
+},
+{
+	Provinces: [ 3040, 3051, 6672 ]
+},
+{
+	Provinces: [ 6886 ]
+},
+{
+	Provinces: [ 3041 ]
+},
+{
+	Provinces: [ 3044 ]
+},
+{
+	Provinces: [ 3042, 3045 ]
+},
+{
+	Provinces: [ 3046, 6506, 6885 ]
+},
+{
+	Provinces: [ 3074 ]
+},
+{
+	Provinces: [ 3078, 6826 ]
+},
+{
+	Provinces: [ 3076, 3077, 7325 ]
+},
+{
+	Provinces: [ 3079, 3086, 6889, 7374 ]
+},
+{
+	Provinces: [ 6903 ]
+},
+{
+	Provinces: [ 3091, 3092, 3093, 3094 ]
+},
+{
+	Provinces: [ 3075 ]
+},
+{
+	Provinces: [ 6904 ]
+},
+{
+	Provinces: [ 6872 ]
+},
+{
+	Provinces: [ 1343 ]
+}
+]

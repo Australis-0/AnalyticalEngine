@@ -1,0 +1,13 @@
+[
+{
+	Name: "Marian Banaś",
+	ImageID: Banas,
+	
+	BornDay: 13,
+	BornMonth: 7,
+	BornYear: 1955,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

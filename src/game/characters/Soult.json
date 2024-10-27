@@ -1,0 +1,13 @@
+[
+{
+	Name: "Jean-de-Dieu Soult",
+	ImageID: Soult,
+		
+	BornDay: 29,
+	BornMonth: 3,
+	BornYear: 1769,
+		
+	Attack: -1,
+	Defense: -1,
+},
+]

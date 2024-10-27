@@ -1,0 +1,13 @@
+[
+{
+	Name: "Alexander Yegorov",
+	ImageID: Yegorov,
+	
+	BornDay: 13,
+	BornMonth: 10,
+	BornYear: 1883,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

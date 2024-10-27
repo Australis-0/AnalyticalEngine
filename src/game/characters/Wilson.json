@@ -1,0 +1,13 @@
+[
+{
+	Name: "Henry Wilson",
+	ImageID: Wilson,
+	
+	BornDay: 5,
+	BornMonth: 5,
+	BornYear: 1864,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

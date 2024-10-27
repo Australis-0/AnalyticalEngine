@@ -1,0 +1,13 @@
+[
+{
+	Name: "Emilio de Bono",
+	ImageID: de_Bono,
+	
+	BornDay: 19,
+	BornMonth: 4,
+	BornYear: 1866,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

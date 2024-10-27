@@ -1,0 +1,13 @@
+[
+{
+	Name: "Zhao Leji",
+	ImageID: "Leji",
+	
+	BornDay: 8,
+	BornMonth: 3,
+	BornYear: 1957,
+	
+	Attack: -1,
+	Defense: -1,
+}
+]

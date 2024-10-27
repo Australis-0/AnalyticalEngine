@@ -1,0 +1,12 @@
+{
+FormableCivTag: "nep",
+ClaimantsTag: [
+	"dang3",
+	"liq",
+	"kaq",
+	"juml3",
+	"doti3"
+],
+Provinces: [ 10658, 10659, 10655, 5829, 10656, 5826, 5828, 10657, 5498, 5500, 5827, 5497, 5495, 5496, 5499 ],
+CapitalProvinceID: 5498
+}

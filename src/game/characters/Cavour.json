@@ -1,0 +1,13 @@
+[
+{
+	Name: "Camillo Cavour",
+	ImageID: Cavour,
+		
+	BornDay: 10,
+	BornMonth: 8,
+	BornYear: 1810,
+		
+	Attack: -1,
+	Defense: -1,
+},
+]

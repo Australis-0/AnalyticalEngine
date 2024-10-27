@@ -1,0 +1,23 @@
+{
+	NAME: ["VeryEasy", "Easy", "Normal", "Hard", "VeryHard", "Legendary"],
+	NORMAL_ID: 2,
+	
+	BONUS_DURATION: 9999999,
+	
+	MONTHLY_INCOME: [10.0, 1.8, 0, -0.4, -0.8, -1.1],
+	INCOME_PRODUCTION: [100, 10, 0, -10, -25, -50],
+	
+	MANPOWER: [3.5, 0.25, 0, -0.20, -0.30, -0.50],
+	LEGACY: [2.5, 0.25, 0, -0.1, -0.25, -0.5],
+	CONSTRUCTION_COST: [-0.75, -0.25, 0, 0.15, 0.25, 0.5],
+	
+	RECRUIT_ARMY_COST: [-75, -25, 0, 15, 50, 100],
+	RECRUIT_ARMY_TIME: [-75, -50, 0, 25, 50, 100],
+	
+	CORE_COST: [-75, -25, 0, 10, 25, 50],
+	RELIGION_COST: [-75, -25, 0, 10, 25, 50],
+	
+	REGIMENTS_LIMIT: [50, 16, 0, -4, -8, -12],
+	
+	CAN_VASSAL_PROCLAIM_INDEPENDENCE_AGAINST_PLAYER: [false, false, false, true, true, true],
+}

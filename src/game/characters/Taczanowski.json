@@ -1,0 +1,13 @@
+[
+{
+	Name: "Edmund Taczanowski",
+	ImageID: Taczanowski,
+	
+	BornDay: 23,
+	BornMonth: 11,
+	BornYear: 1822,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

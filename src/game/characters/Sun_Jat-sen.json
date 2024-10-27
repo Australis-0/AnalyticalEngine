@@ -1,0 +1,13 @@
+[
+{
+	Name: "Sun Jat-sen",
+	ImageID: Sun_Jat-sen,
+	
+	BornDay: 12,
+	BornMonth: 11,
+	BornYear: 1866,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

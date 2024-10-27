@@ -1,0 +1,13 @@
+[
+{
+	Name: "George Milne",
+	ImageID: Milne,
+	
+	BornDay: 5,
+	BornMonth: 11,
+	BornYear: 1866,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

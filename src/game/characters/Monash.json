@@ -1,0 +1,13 @@
+[
+{
+	Name: "John Monash",
+	ImageID: Monash,
+	
+	BornDay: 27,
+	BornMonth: 6,
+	BornYear: 1865,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

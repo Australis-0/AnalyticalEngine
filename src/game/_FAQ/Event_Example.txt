@@ -1,0 +1,29 @@
+id=unique_id_of_my_event
+title=Here is the title of my event!
+desc=The description of my event. This event will give bonuses if the civilization has more than 10 regiments.
+
+image=49.png
+
+show_in_missions=false
+mission_image=2
+
+only_once=true
+
+trigger_and
+next_and
+civ_regiments_over=10
+trigger_and_end
+
+option_btn
+name=First button text
+ai=100
+province_manpower=1.2
+bonus_duration=20
+bonus_max_morale=5
+bonus_army_morale_recovery=15
+option_end
+
+option_btn
+name=Thank you, I don't collect points.
+ai=2
+option_end

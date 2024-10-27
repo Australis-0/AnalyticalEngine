@@ -1,0 +1,13 @@
+[
+{
+	Name: "Dumitru Dămăceanu",
+	ImageID: Damaceanu,
+	
+	BornDay: 17,
+	BornMonth: 6,
+	BornYear: 1896,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Guy Simonds",
+	ImageID: Simonds,
+	
+	BornDay: 23,
+	BornMonth: 4,
+	BornYear: 1903,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

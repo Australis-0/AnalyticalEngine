@@ -1,0 +1,13 @@
+[
+{
+	Name: "Tadeusz Mazowiecki",
+	ImageID: Mazowiecki,
+	
+	BornDay: 18,
+	BornMonth: 4,
+	BornYear: 1927,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

@@ -1,0 +1,13 @@
+[
+{
+	Name: "William Adams",
+	ImageID: WilliamAdams,
+	
+	BornDay: 24,
+	BornMonth: 9,
+	BornYear: 1564,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

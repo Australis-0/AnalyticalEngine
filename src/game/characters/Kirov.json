@@ -1,0 +1,13 @@
+[
+{
+	Name: "Sergei Kirov",
+	ImageID: Kirov,
+	
+	BornDay: 27,
+	BornMonth: 3,
+	BornYear: 1886,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

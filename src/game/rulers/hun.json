@@ -1,0 +1,166 @@
+{
+	"Rulers": [
+		{
+			"Name": "István I",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 975,
+			
+			"ReignYear": 1000
+		},
+		{
+			"Name": "Kálmán",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1048,
+			
+			"ReignYear": 1095
+		},
+		{
+			"Name": "Lászlo I",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1046,
+			
+			"ReignYear": 1077
+		},
+		{
+			"Name": "Könyves Kálmán",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1074,
+			
+			"ReignYear": 1095
+		},
+		{
+			"Name": "Béla III",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1148,
+			
+			"ReignYear": 1172
+		},
+		{
+			"Name": "Lászlo IV",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1262,
+			
+			"ReignYear": 1272
+		},
+		{
+			"Name": "Károly Robert",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1288,
+			
+			"ReignYear": 1308
+		},
+		{
+			"Name": "Lajos I",
+			"ImageID": 253,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1326,
+			
+			"ReignYear": 1342
+		},
+		{
+			"Name": "Zsigmond",
+			"ImageID": -1,
+			
+			"BornDay": 14,
+			"BornMonth": 2,
+			"BornYear": 1368,
+			
+			"ReignYear": 1387
+		},
+		{
+			"Name": "Mátyás",
+			"ImageID": -1,
+			
+			"BornDay": 23,
+			"BornMonth": 2,
+			"BornYear": 1443,
+			
+			"ReignYear": 1458
+		},
+		{
+			"Name": "János Zápolya",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1487,
+			
+			"ReignYear": 1526
+		},
+		{
+			"Name": "Ferdinánd I",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1503,
+			
+			"ReignYear": 1526
+		},
+		{
+			"Name": "Mária Terézia",
+			"ImageID": -1,
+			
+			"BornDay": 13,
+			"BornMonth": 5,
+			"BornYear": 1717,
+			
+			"ReignYear": 1740
+		},
+		{
+			"Name": "Ferenc Jozsef I",
+			"ImageID": -1,
+			
+			"BornDay": 18,
+			"BornMonth": 8,
+			"BornYear": 1830,
+			
+			"ReignYear": 1848
+		},
+		{
+			"Name": "Miklos Horthy",
+			"ImageID": 252,
+			
+			"BornDay": 18,
+			"BornMonth": 6,
+			"BornYear": 1868,
+			
+			"ReignYear": 1920
+		},
+		{
+			Name: "Tamas Sulyok",
+			ImageID: 104,
+			
+			BornDay: 24,
+			BornMonth: 3,
+			BornYear: 1956,
+			
+			ReignYear: 2022,
+		},
+	],
+	
+	"Age_of_History": "Rulers"
+}

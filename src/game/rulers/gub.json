@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Umaro Sissoco Embalo",
+			ImageID: 100,
+			
+			BornDay: 23,
+			BornMonth: 9,
+			BornYear: 1972,
+			
+			ReignYear: 2020,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Jarosław Kalinowski",
+	ImageID: Kalinowski,
+	
+	BornDay: 12,
+	BornMonth: 4,
+	BornYear: 1962,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

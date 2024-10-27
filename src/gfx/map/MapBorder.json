@@ -1,0 +1,5 @@
+{
+	ShadowY: 5
+	OutsideTheMapMaxY_Over: 8192,
+	OutsideTheMapMaxY_Below: 8192,
+}

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Levin August von Bennigsen",
+	ImageID: Bennigsen,
+	
+	BornDay: 10,
+	BornMonth: 2,
+	BornYear: 1745,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Mirosław Gronicki",
+	ImageID: Gronicki,
+	
+	BornDay: 26,
+	BornMonth: 12,
+	BornYear: 1950,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

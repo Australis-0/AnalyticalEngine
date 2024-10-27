@@ -1,0 +1,26 @@
+{
+	Rulers: [
+		{
+			Name: "Wilhelm II",
+			ImageID: 307,
+			
+			BornDay: 27,
+			BornMonth: 1,
+			BornYear: 1859,
+			
+			ReignYear: 1888,
+		},
+		{
+			Name: "Frank-Walter Steinmeier",
+			ImageID: 26,
+			
+			BornDay: 5,
+			BornMonth: 1,
+			BornYear: 1956,
+			
+			ReignYear: 2017,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

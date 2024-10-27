@@ -1,0 +1,8 @@
+{
+	Name: "Two new Governments",
+	Description: "This item will add two new Governments, and two flags.",
+	
+	Tags: [ "Map", "Government" ],
+	
+	ChangeNote: "First release",
+}

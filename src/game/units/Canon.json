@@ -1,0 +1,204 @@
+{
+	Army: [
+		{
+			Name: "Catapult",
+			ImageID: 30,
+			
+			UnitLevel: 0,
+			
+			Attack: 5,
+			Defense: 1,
+			MovementSpeed: 3.7,
+		
+			AttackRange: 1,
+			SiegeProgress: 1.25,
+			
+			RequiredTechID: 8,
+			
+			Cost: 15,
+			MaintenanceCost: 0.3,
+			
+			SiegeUnit: true,
+			
+			RecruitmentTime: 60,
+		},
+		{
+			Name: "Trebuchet",
+			ImageID: 31,
+			
+			UnitLevel: 1,
+			
+			Attack: 8,
+			Defense: 1,
+			MovementSpeed: 3.6,
+		
+			AttackRange: 1,
+			SiegeProgress: 1.5,
+			
+			RequiredTechID: 18,
+			
+			Cost: 25,
+			MaintenanceCost: 0.35,
+			
+			SiegeUnit: true,
+			
+			RecruitmentTime: 60,
+		},
+		{
+			Name: "Canon",
+			ImageID: 23,
+			
+			UnitLevel: 2,
+			
+			Attack: 26,
+			Defense: 10,
+			MovementSpeed: 4.2,
+		
+			AttackRange: 1,
+			SiegeProgress: 2.0,
+			
+			RequiredTechID: 28,
+			
+			Cost: 30,
+			MaintenanceCost: 0.35,
+			
+			SiegeUnit: true,
+			
+			RecruitmentTime: 60,
+		},
+		{
+			Name: "FieldCannon",
+			ImageID: 1,
+			
+			UnitLevel: 3,
+			
+			Attack: 33,
+			Defense: 15,
+			MovementSpeed: 4.4,
+		
+			AttackRange: 2,
+			SiegeProgress: 3.0,
+			
+			RequiredTechID: 46,
+			
+			Cost: 35,
+			MaintenanceCost: 0.35,
+			
+			SiegeUnit: true,
+			
+			RecruitmentTime: 60,
+		},
+		{
+			Name: "Artillery",
+			ImageID: 22,
+			
+			UnitLevel: 4,
+			
+			Attack: 41,
+			Defense: 20,
+			MovementSpeed: 4.6,
+		
+			AttackRange: 2,
+			SiegeProgress: 5.0,
+			
+			RequiredTechID: 60,
+			
+			Cost: 40,
+			MaintenanceCost: 0.35,
+			
+			SiegeUnit: true,
+			
+			RecruitmentTime: 60,
+		},
+		{
+			Name: "Howitzer",
+			ImageID: 19,
+			
+			UnitLevel: 5,
+			
+			Attack: 46,
+			Defense: 23,
+			MovementSpeed: 4.8,
+		
+			AttackRange: 2,
+			SiegeProgress: 6.0,
+			
+			RequiredTechID: 98,
+			
+			Cost: 44,
+			MaintenanceCost: 0.4,
+			
+			SiegeUnit: true,
+			
+			RecruitmentTime: 60,
+		},
+		{
+			Name: "ModernHowitzer",
+			ImageID: 62,
+			
+			UnitLevel: 5,
+			
+			Attack: 52,
+			Defense: 30,
+			MovementSpeed: 5.5,
+		
+			AttackRange: 2,
+			SiegeProgress: 7.5,
+			
+			RequiredTechID: 78,
+			
+			Cost: 48,
+			MaintenanceCost: 0.45,
+			
+			SiegeUnit: true,
+			
+			RecruitmentTime: 60,
+		},
+		{
+			Name: "MultipleLaunchRocketSystem",
+			ImageID: 63,
+			
+			UnitLevel: 6,
+			
+			Attack: 58,
+			Defense: 35,
+			MovementSpeed: 8.4,
+		
+			AttackRange: 2,
+			SiegeProgress: 8.0,
+			
+			RequiredTechID: 83,
+			
+			Cost: 50,
+			MaintenanceCost: 0.55,
+			
+			SiegeUnit: true,
+			
+			RecruitmentTime: 60,
+		},
+		{
+			Name: "FutureArtillery",
+			ImageID: 52,
+			
+			UnitLevel: 7,
+			
+			Attack: 65,
+			Defense: 40,
+			MovementSpeed: 8.5,
+		
+			AttackRange: 2,
+			SiegeProgress: 10.0,
+			
+			RequiredTechID: 91,
+			
+			Cost: 52,
+			MaintenanceCost: 0.6,
+			
+			SiegeUnit: true,
+			
+			RecruitmentTime: 60,
+		},
+	],
+	
+	Age_of_History: Army
+}

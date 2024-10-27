@@ -1,0 +1,13 @@
+[
+{
+	Name: "Tadeusz Rydzyk",
+	ImageID: Rydzyk,
+	
+	BornDay: 3,
+	BornMonth: 5,
+	BornYear: 1945,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

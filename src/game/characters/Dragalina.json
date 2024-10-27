@@ -1,0 +1,13 @@
+[
+{
+	Name: "Corneliu Dragalina",
+	ImageID: Dragalina,
+	
+	BornDay: 5,
+	BornMonth: 2,
+	BornYear: 1887,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

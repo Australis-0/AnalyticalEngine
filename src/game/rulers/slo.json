@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Zuzana Čaputová",
+			ImageID: 183,
+			
+			BornDay: 21,
+			BornMonth: 6,
+			BornYear: 1973,
+			
+			ReignYear: 2019,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Robert E. Lee",
+	ImageID: Lee,
+		
+	BornDay: 19,
+	BornMonth: 1,
+	BornYear: 1807,
+		
+	Attack: -1,
+	Defense: -1,
+},
+]

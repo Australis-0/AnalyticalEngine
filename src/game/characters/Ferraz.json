@@ -1,0 +1,13 @@
+[
+{
+	Name: "Angelo Moniz de Ferraz",
+	ImageID: Ferraz,
+	
+	BornDay: 3,
+	BornMonth: 12,
+	BornYear: 1812,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

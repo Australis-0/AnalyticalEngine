@@ -1,0 +1,13 @@
+[
+{
+	Name: "Julian Byng",
+	ImageID: Byng,
+	
+	BornDay: 11,
+	BornMonth: 9,
+	BornYear: 1862,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

@@ -1,0 +1,11 @@
+{
+	Age_of_History: Data,
+		Data: [
+		{
+			imageFileName: "gameLogo.png",
+			fPosX_Percentage: 0.50,
+			fPosY_Percentage: 0.5,
+			fScale: 1.5,
+		},
+	]
+}

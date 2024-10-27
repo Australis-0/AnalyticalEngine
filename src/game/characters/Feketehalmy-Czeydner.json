@@ -1,0 +1,13 @@
+[
+{
+	Name: "Ferenc Feketehalmy-Czeydner",
+	ImageID: Feketehalmy-Czeydner,
+	
+	BornDay: 22,
+	BornMonth: 11,
+	BornYear: 1890,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

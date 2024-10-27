@@ -1,0 +1,14 @@
+{
+	numOfCloudImages: 7,
+	maxNumOfCloudsInTheGame: 125,
+	spawnCloudChance: 0.125,
+	spawnAnimationTime: 500,
+	moveSpeedX: 0.65,
+	moveSpeedY: 0.5,
+	shadowX: -45,
+	shadowY: 125,
+	minAlpha: 0.0175,
+	randomAlpha: 0.0325,
+	drawCloudsMinScale: 0.35,
+	drawCloudsMaxScale: 1.1,
+}

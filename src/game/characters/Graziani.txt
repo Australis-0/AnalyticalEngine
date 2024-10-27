@@ -1,0 +1,13 @@
+[
+{
+Name: "Jean César Graziani",
+ImageID: Graziani,
+
+BornDay: 15,
+BornMonth: 11,
+BornYear: 1859,
+
+Attack: -1,
+Defense: -1,
+},
+]

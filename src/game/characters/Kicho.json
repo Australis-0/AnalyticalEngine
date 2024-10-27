@@ -1,0 +1,13 @@
+[
+{
+	Name: "Kichō",
+	ImageID: Kicho,
+	
+	BornDay: 29,
+	BornMonth: 7,
+	BornYear: 1535,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

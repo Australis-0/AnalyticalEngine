@@ -1,0 +1,13 @@
+[
+{
+	Name: "Norbert Barlicki",
+	ImageID: Barlicki,
+	
+	BornDay: 6,
+	BornMonth: 6,
+	BornYear: 1880,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

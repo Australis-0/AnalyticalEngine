@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Ignacy Moscicki",
+			ImageID: 245,
+			
+			BornDay: 1,
+			BornMonth: 12,
+			BornYear: 1867,
+			
+			ReignYear: 1926,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

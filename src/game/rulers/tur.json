@@ -1,0 +1,376 @@
+{
+	"Rulers": [
+		{
+			"Name": "Osman I",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1258,
+			
+			"ReignYear": 1299
+		},
+		{
+			"Name": "Orhan",
+			"ImageID": -1,
+			
+			"BornDay": 15,
+			"BornMonth": 1,
+			"BornYear": 1281,
+			
+			"ReignYear": 1326
+		},
+		{
+			"Name": "Murad I",
+			"ImageID": -1,
+			
+			"BornDay": 24,
+			"BornMonth": 6,
+			"BornYear": 1326,
+			
+			"ReignYear": 1362
+		},
+		{
+			"Name": "Bayezid I",
+			"ImageID": -1,
+			
+			"BornDay": 3,
+			"BornMonth": 12,
+			"BornYear": 1360,
+			
+			"ReignYear": 1389
+		},
+		{
+			"Name": "Mehmed I",
+			"ImageID": -1,
+			
+			"BornDay": 27,
+			"BornMonth": 12,
+			"BornYear": 1389,
+			
+			"ReignYear": 1413
+		},
+		{
+			"Name": "Murad II",
+			"ImageID": 226,
+			
+			"BornDay": 15,
+			"BornMonth": 7,
+			"BornYear": 1404,
+			
+			"ReignYear": 1421
+		},
+		{
+			"Name": "Mehmed II",
+			"ImageID": -1,
+			
+			"BornDay": 30,
+			"BornMonth": 3,
+			"BornYear": 1432,
+			
+			"ReignYear": 1444
+		},
+		{
+			"Name": "Bayezid II",
+			"ImageID": -1,
+			
+			"BornDay": 3,
+			"BornMonth": 12,
+			"BornYear": 1447,
+			
+			"ReignYear": 1481
+		},
+		{
+			"Name": "Selim I",
+			"ImageID": -1,
+			
+			"BornDay": 10,
+			"BornMonth": 10,
+			"BornYear": 1470,
+			
+			"ReignYear": 1512
+		},
+		{
+			"Name": "Suleiman the Magnificent",
+			"ImageID": -1,
+			
+			"BornDay": 6,
+			"BornMonth": 11,
+			"BornYear": 1494,
+			
+			"ReignYear": 1520
+		},
+		{
+			"Name": "Selim II",
+			"ImageID": -1,
+			
+			"BornDay": 28,
+			"BornMonth": 5,
+			"BornYear": 1524,
+			
+			"ReignYear": 1566
+		},
+		{
+			"Name": "Murad III",
+			"ImageID": -1,
+			
+			"BornDay": 4,
+			"BornMonth": 7,
+			"BornYear": 1546,
+			
+			"ReignYear": 1574
+		},
+		{
+			"Name": "Mehmed III",
+			"ImageID": -1,
+			
+			"BornDay": 26,
+			"BornMonth": 5,
+			"BornYear": 1566,
+			
+			"ReignYear": 1595
+		},
+		{
+			"Name": "Ahmed I",
+			"ImageID": -1,
+			
+			"BornDay": 18,
+			"BornMonth": 4,
+			"BornYear": 1590,
+			
+			"ReignYear": 1603
+		},
+		{
+			"Name": "Mustafa I",
+			"ImageID": -1,
+			
+			"BornDay": 27,
+			"BornMonth": 6,
+			"BornYear": 1591,
+			
+			"ReignYear": 1617
+		},
+		{
+			Name: "Osman II",
+			ImageID: 227,
+			
+			BornDay: 3,
+			BornMonth: 11,
+			BornYear: 1622,
+			
+			ReignYear: 1618,
+		},
+		{
+			"Name": "Murad IV",
+			"ImageID": -1,
+			
+			"BornDay": 26,
+			"BornMonth": 7,
+			"BornYear": 1612,
+			
+			"ReignYear": 1623
+		},
+		{
+			"Name": "Ibrahim",
+			"ImageID": -1,
+			
+			"BornDay": 5,
+			"BornMonth": 11,
+			"BornYear": 1615,
+			
+			"ReignYear": 1640
+		},
+		{
+			"Name": "Mehmed IV",
+			"ImageID": -1,
+			
+			"BornDay": 2,
+			"BornMonth": 1,
+			"BornYear": 1642,
+			
+			"ReignYear": 1648
+		},
+		{
+			"Name": "Suleiman II",
+			"ImageID": -1,
+			
+			"BornDay": 15,
+			"BornMonth": 11,
+			"BornYear": 1642,
+			
+			"ReignYear": 1687
+		},
+		{
+			"Name": "Ahmed II",
+			"ImageID": -1,
+			
+			"BornDay": 25,
+			"BornMonth": 2,
+			"BornYear": 1643,
+			
+			"ReignYear": 1691
+		},
+		{
+			"Name": "Mustafa II",
+			"ImageID": -1,
+			
+			"BornDay": 6,
+			"BornMonth": 2,
+			"BornYear": 1664,
+			
+			"ReignYear": 1695
+		},
+		{
+			"Name": "Ahmed III",
+			"ImageID": -1,
+			
+			"BornDay": 10,
+			"BornMonth": 12,
+			"BornYear": 1673,
+			
+			"ReignYear": 1703
+		},
+		{
+			"Name": "Mahmud I",
+			"ImageID": -1,
+			
+			"BornDay": 2,
+			"BornMonth": 8,
+			"BornYear": 1696,
+			
+			"ReignYear": 1730
+		},
+		{
+			"Name": "Osman III",
+			"ImageID": -1,
+			
+			"BornDay": 2,
+			"BornMonth": 1,
+			"BornYear": 1699,
+			
+			"ReignYear": 1754
+		},
+		{
+			"Name": "Mustafa III",
+			"ImageID": -1,
+			
+			"BornDay": 28,
+			"BornMonth": 1,
+			"BornYear": 1717,
+			
+			"ReignYear": 1757
+		},
+		{
+			"Name": "Abdulhamid I",
+			"ImageID": -1,
+			
+			"BornDay": 20,
+			"BornMonth": 3,
+			"BornYear": 1725,
+			
+			"ReignYear": 1774
+		},
+		{
+			"Name": "Selim III",
+			"ImageID": -1,
+			
+			"BornDay": 24,
+			"BornMonth": 12,
+			"BornYear": 1761,
+			
+			"ReignYear": 1789
+		},
+		{
+			"Name": "Mahmud II",
+			"ImageID": 228,
+			
+			"BornDay": 20,
+			"BornMonth": 7,
+			"BornYear": 1785,
+			
+			"ReignYear": 1808
+		},
+		{
+			"Name": "Abdulmejid I",
+			"ImageID": -1,
+			
+			"BornDay": 23,
+			"BornMonth": 4,
+			"BornYear": 1823,
+			
+			"ReignYear": 1839
+		},
+		{
+			"Name": "Abdulaziz",
+			"ImageID": -1,
+			
+			"BornDay": 9,
+			"BornMonth": 2,
+			"BornYear": 1830,
+			
+			"ReignYear": 1861
+		},
+		{
+			"Name": "Murad V",
+			"ImageID": -1,
+			
+			"BornDay": 21,
+			"BornMonth": 9,
+			"BornYear": 1840,
+			
+			"ReignYear": 1876
+		},
+		{
+			"Name": "Abdulhamid II",
+			"ImageID": -1,
+			
+			"BornDay": 21,
+			"BornMonth": 9,
+			"BornYear": 1842,
+			
+			"ReignYear": 1876
+		},
+		{
+			"Name": "Mehmed V",
+			"ImageID": 255,
+			
+			"BornDay": 2,
+			"BornMonth": 11,
+			"BornYear": 1844,
+			
+			"ReignYear": 1909
+		},
+		{
+			"Name": "Mehmed VI",
+			"ImageID": -1,
+			
+			"BornDay": 14,
+			"BornMonth": 1,
+			"BornYear": 1861,
+			
+			"ReignYear": 1918
+		},
+		{
+			Name: "Ismet Inönü",
+			ImageID: 254,
+			
+			BornDay: 24,
+			BornMonth: 9,
+			BornYear: 1884,
+			
+			ReignYear: 1925,
+		},
+		{
+			Name: "Recep Tayyip Erdogan",
+			ImageID: 204,
+			
+			BornDay: 26,
+			BornMonth: 2,
+			BornYear: 1954,
+			
+			ReignYear: 2014,
+		},
+	],
+	
+	"Age_of_History": "Rulers"
+}

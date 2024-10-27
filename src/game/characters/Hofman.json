@@ -1,0 +1,13 @@
+[
+{
+	Name: "Michel Hofman",
+	ImageID: Hofman,
+	
+	BornDay: 28,
+	BornMonth: 4,
+	BornYear: 1961,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

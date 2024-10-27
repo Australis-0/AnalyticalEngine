@@ -1,0 +1,13 @@
+[
+{
+	Name: "Jan Leon Kozietulski",
+	ImageID: Kozietulski,
+	
+	BornDay: 4,
+	BornMonth: 7,
+	BornYear: 1781,
+	
+	Attack: 6,
+	Defense: 2,
+},
+]

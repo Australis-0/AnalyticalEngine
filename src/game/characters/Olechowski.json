@@ -1,0 +1,13 @@
+[
+{
+	Name: "Andrzej Olechowski",
+	ImageID: Olechowski,
+	
+	BornDay: 9,
+	BornMonth: 9,
+	BornYear: 1947,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

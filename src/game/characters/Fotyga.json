@@ -1,0 +1,13 @@
+[
+{
+	Name: "Anna Fotyga",
+	ImageID: Fotyga,
+	
+	BornDay: 12,
+	BornMonth: 1,
+	BornYear: 1957,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

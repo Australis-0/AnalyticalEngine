@@ -1,0 +1,13 @@
+[
+{
+	Name: "Piotr Dunin",
+	ImageID: Dunin,
+	
+	BornDay: 27,
+	BornMonth: 2,
+	BornYear: 1415,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

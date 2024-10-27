@@ -1,0 +1,13 @@
+[
+{
+	Name: "Adalbert of Prague",
+	ImageID: Adalbert,
+	
+	BornDay: 31,
+	BornMonth: 7,
+	BornYear: 956,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

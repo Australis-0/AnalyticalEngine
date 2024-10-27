@@ -1,0 +1,21 @@
+Go to:
+game/rulersRandom/link/
+
+Create a text file named with the Civilization tag.(civTag.txt)
+For example, use the actual civilization tag from the game: 'pol.txt' for Poland and 'fra.txt' for France
+
+In the file, specify which civilization this civ is linking to by listing the source and target civs
+
+
+Example use:
+
+anju = Anjou
+links to:
+fra = France
+
+
+Create file anju.txt, inside this file write:
+fra
+
+That's all!
+Now the game for Anjou will read French names and surnames for advisors and generals

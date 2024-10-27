@@ -1,0 +1,13 @@
+[
+{
+	Name: "Arthur Wellesley",
+	ImageID: Wellesley,
+	
+	BornDay: 1,
+	BornMonth: 5,
+	BornYear: 1769,
+	
+	Attack: 8,
+	Defense: 9,
+},
+]

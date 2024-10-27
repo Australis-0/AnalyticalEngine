@@ -1,0 +1,32 @@
+#######################################
+## Read: mods_steam_workshop.txt !
+## 
+## To create a new mod for submission to the Steam Workshop, first create a new folder for your mod within the 'mods' directory.
+## Then, copy or recreate all the modified files into that folder!
+##
+## For example, if a file was originally located in game/ExampleFile.json, 
+## it should be placed in mods/YourModName/game/ExampleFile.json in your mod's folder.
+##
+#####
+
+Go to:
+game/rulersRandom/link/
+
+Create a text file named with the Civilization tag.(civTag.txt)
+For example, use the actual civilization tag from the game: 'pol.txt' for Poland and 'fra.txt' for France
+
+In the file, specify which civilization this civ is linking to by listing the source and target civs
+
+
+Example use:
+
+anju = Anjou
+links to:
+fra = France
+
+
+Create file anju.txt, inside this file write:
+fra
+
+That's all!
+Now the game for Anjou will read French names and surnames for advisors and generals

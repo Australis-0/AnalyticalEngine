@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Adama Barrow",
+			ImageID: 92,
+			
+			BornDay: 5,
+			BornMonth: 2,
+			BornYear: 1965,
+			
+			ReignYear: 2017,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

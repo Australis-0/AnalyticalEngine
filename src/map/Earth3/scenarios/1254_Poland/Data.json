@@ -1,0 +1,92 @@
+[
+{
+	CivTAG: "crac_m2",
+	CivID: 1,
+	PCID: 1,
+	CPID: 464
+},
+{
+	CivTAG: "maso_m2",
+	CivID: 2,
+	PCID: 2,
+	CPID: 488
+},
+{
+	CivTAG: "malo3_m",
+	CivID: 3,
+	PCID: 3,
+	CPID: 3709
+},
+{
+	CivTAG: "wro3_m",
+	CivID: 4,
+	PCID: 4,
+	CPID: 669
+},
+{
+	CivTAG: "wiel3_m",
+	CivID: 5,
+	PCID: 5,
+	CPID: 3006
+},
+{
+	CivTAG: "kali3_m",
+	CivID: 6,
+	PCID: 6,
+	CPID: 477
+},
+{
+	CivTAG: "kuj3_m",
+	CivID: 7,
+	PCID: 7,
+	CPID: 3004
+},
+{
+	CivTAG: "opol3_m",
+	CivID: 8,
+	PCID: 8,
+	CPID: 673
+},
+{
+	CivTAG: "pome3_m",
+	CivID: 9,
+	PCID: 9,
+	CPID: 400
+},
+{
+	CivTAG: "teut_m",
+	CivID: 10,
+	PCID: 10,
+	CPID: 6656
+},
+{
+	CivTAG: "volh3_m",
+	CivID: 11,
+	PCID: 11,
+	CPID: 452
+},
+{
+	CivTAG: "pgal3_m",
+	CivID: 12,
+	PCID: 12,
+	CPID: 1243
+},
+{
+	CivTAG: "belz_m",
+	CivID: 13,
+	PCID: 13,
+	CPID: 1241
+},
+{
+	CivTAG: "prze3_m",
+	CivID: 14,
+	PCID: 14,
+	CPID: 7416
+},
+{
+	CivTAG: "chel3_m",
+	CivID: 15,
+	PCID: 15,
+	CPID: 485
+}
+]

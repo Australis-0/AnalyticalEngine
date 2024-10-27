@@ -1,0 +1,13 @@
+[
+{
+	Name: "Waldemar Pawlak",
+	ImageID: Pawlak,
+	
+	BornDay: 5,
+	BornMonth: 9,
+	BornYear: 1959,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

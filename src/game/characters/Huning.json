@@ -1,0 +1,13 @@
+[
+{
+	Name: "Wang Huning",
+	ImageID: "Huning",
+	
+	BornDay: 10,
+	BornMonth: 7,
+	BornYear: 1955,
+	
+	Attack: -1,
+	Defense: -1,
+}
+]

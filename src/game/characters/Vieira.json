@@ -1,0 +1,13 @@
+[
+{
+	Name: "Joao Lins Vieira",
+	ImageID: Vieira,
+	
+	BornDay: 20,
+	BornMonth: 11,
+	BornYear: 1810,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

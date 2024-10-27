@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Brice Oligui Nguema",
+			ImageID: 91,
+			
+			BornDay: 3,
+			BornMonth: 3,
+			BornYear: 1975,
+			
+			ReignYear: 2022,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

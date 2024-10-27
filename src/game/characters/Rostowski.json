@@ -1,0 +1,13 @@
+[
+{
+	Name: "Jacek Rostowski",
+	ImageID: Rostowski,
+	
+	BornDay: 30,
+	BornMonth: 4,
+	BornYear: 1951,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Ettore Bastico",
+	ImageID: Bastico,
+	
+	BornDay: 9,
+	BornMonth: 4,
+	BornYear: 1876,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

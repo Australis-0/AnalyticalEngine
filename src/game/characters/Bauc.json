@@ -1,0 +1,13 @@
+[
+{
+	Name: "Jarosław Bauc",
+	ImageID: Bauc,
+	
+	BornDay: 1,
+	BornMonth: 12,
+	BornYear: 1957,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

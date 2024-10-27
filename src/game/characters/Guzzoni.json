@@ -1,0 +1,13 @@
+[
+{
+	Name: "Alfredo Guzzoni",
+	ImageID: Guzzoni,
+   
+	BornDay: 12,
+	BornMonth: 4,
+	BornYear: 1877,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

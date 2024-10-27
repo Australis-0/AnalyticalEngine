@@ -1,0 +1,13 @@
+[
+{
+	Name: "Ion Antonescu",
+	ImageID: Antonescu,
+	
+	BornDay: 14,
+	BornMonth: 6,
+	BornYear: 1882,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

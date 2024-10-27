@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Irfaan Ali",
+			ImageID: 101,
+			
+			BornDay: 5,
+			BornMonth: 4,
+			BornYear: 1980,
+			
+			ReignYear: 2020,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Thomaz Jose de Almeida",
+	ImageID: Almeida,
+	
+	BornDay: 25,
+	BornMonth: 12,
+	BornYear: 1838,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

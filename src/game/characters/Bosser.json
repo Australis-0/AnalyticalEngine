@@ -1,0 +1,13 @@
+[
+{
+	Name: "Jean-Pierre Bosser",
+	ImageID: Bosser,
+	
+	BornDay: 14,
+	BornMonth: 11,
+	BornYear: 1959,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

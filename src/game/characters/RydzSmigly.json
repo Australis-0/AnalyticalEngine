@@ -1,0 +1,13 @@
+[
+{
+	Name: "Edward Rydz-Śmigły",
+	ImageID: RydzSmigly,
+	
+	BornDay: 11,
+	BornMonth: 3,
+	BornYear: 1886,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

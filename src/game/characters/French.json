@@ -1,0 +1,13 @@
+[
+{
+	Name: "John French",
+	ImageID: French,
+	
+	BornDay: 28,
+	BornMonth: 9,
+	BornYear: 1852,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

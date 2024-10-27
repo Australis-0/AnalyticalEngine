@@ -1,0 +1,13 @@
+[
+{
+	Name: "Manuel Jose Vieira Tosta",
+	ImageID: Tosta,
+	
+	BornDay: 12,
+	BornMonth: 7,
+	BornYear: 1807,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

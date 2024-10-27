@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Sylvanie Burton",
+			ImageID: 76,
+			
+			BornDay: 16,
+			BornMonth: 10,
+			BornYear: 1956,
+			
+			ReignYear: 2023,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

@@ -1,0 +1,138 @@
+{
+	Law:
+	[
+		{
+			ImageID: [3, 4, 0, 5, 6],
+			Title: LandOwnershipLaws,
+			
+			Law: ["FeudalRights", "ManorialSystem", "PrivateLandOwnership", "LandReforms", "SustainableLandUse" ],
+			
+			RequiredTechID: [-1, 34, 52, 58, 80],
+			
+			GrowthRate: [0, 2, 4, 6, 8],
+			IncreaseGrowthRateCost: [0, -0.05, -0.075, -0.1, -0.125, -0.15],
+		},
+		
+		{
+			ImageID: [7, 1, 8, 9, 10],
+			Title: MonetaryPolicy,
+			
+			Law: ["CommodityMoney", "MintedCoins", "PaperCurrency", "CentralBankingSystem", "DigitalCurrency" ],
+			
+			RequiredTechID: [-1, 10, 51, 64, 86],
+			
+			IncomeProduction: [0, 4, 8, 12, 25],
+			ProductionEfficiency: [0, 3, 6, 10, 15],
+			InvestInEconomyCost: [0.0, -0.05, -0.075, -0.1, -0.15],
+			MaximumAmountOfGold_Percentage: [0, 0.1, 0.5, 1.0, 1.5],
+		},
+		
+		{
+			ImageID: [32, 33, 2, 26, 27],
+			Title: TaxationSystem,
+			
+			Law: ["TributeCollection", "LandAndPropertyTax", "IncomeBasedTaxation", "ProgressiveTaxation", "AutomatedTaxCollection" ],
+			
+			RequiredTechID: [-1, 42, 54, 61, 89],
+			
+			IncomeTaxation: [0, 0.05, 0.1, 0.15, 0.25],
+			IncreaseTaxEfficiencyCost: [0, -0.025, -0.05, -0.075, -0.1, -0.15],
+		},
+		
+		{
+			ImageID: [11, 12, 13, 14, 15],
+			Title: EducationPolicy,
+			
+			Law: ["ChurchSchools", "RoyalAndNoblePatronage", "PublicSchools", "UniversalEducation", "DigitalAndInclusiveEducation" ],
+			
+			RequiredTechID: [-1, 15, 43, 57, 86],
+			
+			Research: [0, 3, 10, 15, 20],
+			MaximumLevelOfCapitalCity: [0, 0, 1, 2, 2],
+			AdvisorMaxLevel: [0, 0, 0, 1, 1],
+		},
+		
+		{
+			ImageID: [22, 18, 23, 24, 25],
+			Title: ConscriptionLaws,
+			
+			Law: ["FeudalLevies", "DraftSystem", "SelectiveService", "ProfessionalVolunteerArmy", "ProfessionalStandingArmy" ],
+			
+			RequiredTechID: [-1, 27, 37, 45, 59],
+			
+			MaxManpower_Percentage: [0, 0.1, 0.25, 0.50, 1.0],
+			Discipline: [0, 0.1, 0.2, 0.3, 0.5],
+			MaximumLevelOfTheMilitaryAcademy: [0, 1, 2, 3, 4],
+			RecruitmentTime: [0, -5, -10, -15, -20],
+		},
+		
+		{
+			ImageID: [16, 17, 19, 20, 21],
+			Title: JudicialSystem,
+			
+			Law: ["TrialByCombat", "FeudalCourts", "CentralizedCourts", "JudiciarySystem", "InternationalLawCompliance" ],
+			
+			RequiredTechID: [-1, 26, 52, 65, 77],
+			
+			MonthlyLegacy: [0, 0.1, 0.2, 0.35, 0.5],
+			MonthlyLegacy_Percentage: [0, 0.15, 0.25, 0.5, 0.75],
+			MaxNumberOfLoans: [0, 0, 1, 2, 3],
+			DiplomacyPoints: [0, 0.1, 0.2, 0.3, 0.5],
+			MaximumLevelOfTheSupremeCourt: [0, 0, 1, 2, 2],
+		},
+		
+		{
+			ImageID: [34, 35],
+			Title: ColonialAct,
+			
+			Law: ["NoColonization", "ColonialExpansionDecree" ],
+			
+			RequiredTechID: [-1, 44],
+			
+			UnlocksColonization: [false, true],
+		},
+		
+		{
+			ImageID: [31, 29, 28, 30],
+			Title: WomensRights,
+			
+			Law: ["MaleGuardians", "PropertyRights", "VotingRights", "EqualEmploymentLaws" ],
+			
+			RequiredTechID: [-1, 51, 62, 65],
+			
+			IncomeEconomy: [0, 0.05, 0.1, 0.15],
+			GrowthRate: [0, -2, -3, -5],
+		},
+		
+		{
+			ImageID: [36, 37, 38, 39],
+			Title: "My new Law title",
+			
+			Law: ["My First Law Name", "Second Name", "Third Law Name", "Hehe and last one" ],
+			LawDesc: ["AA Description for first law in the game", "The Description for first law in the game", "quia dolor sit, amet, consectetur, adipisci velit", "Hehe and last one" ],
+			
+			RequiredTechID: [-1, 2, 8, 24],
+			
+			IncomeTaxation: [0, 0.05, 0.1, 0.15],
+			MonthlyLegacy_Percentage: [0, 0.15, 0.25, 0.5],
+			GrowthRate: [0, 5, 10, 25],
+		},
+		
+		{
+			ImageID: [38, 36, 37],
+			Title: "One More new Law, Only Three in",
+			
+			Law: ["King law 1", "Queeen law 2", "King LAW 3"],
+			LawDesc: ["Description for first law in the game", "The Description for first law in the game", "quia dolor sit, amet, consectetur, adipisci velit" ],
+			
+			RequiredTechID: [-1, 3, 9],
+			
+			MaximumLevelOfTheMilitaryAcademy: [0, 1, 2],
+			IncomeProduction: [0, 4, 8],
+		},
+		
+		
+		
+	],
+	Age_of_History: Law
+}

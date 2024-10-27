@@ -1,0 +1,2 @@
+Istanbul=Constantinople
+Rome=Vatican

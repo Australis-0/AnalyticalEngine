@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Maia Sandu",
+			ImageID: 141,
+			
+			BornDay: 24,
+			BornMonth: 5,
+			BornYear: 1972,
+			
+			ReignYear: 2020,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

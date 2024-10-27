@@ -1,0 +1,13 @@
+[
+{
+	Name: "Giovanni Messe",
+	ImageID: Messe,
+	
+	BornDay: 10,
+	BornMonth: 12,
+	BornYear: 1883,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Pope Francis",
+			ImageID: 214,
+			
+			BornDay: 17,
+			BornMonth: 12,
+			BornYear: 1936,
+			
+			ReignYear: 2013,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

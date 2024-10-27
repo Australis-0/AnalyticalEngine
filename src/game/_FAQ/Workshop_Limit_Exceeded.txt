@@ -1,0 +1,4 @@
+## Limit exceeded
+Error While Publishing a Mod to the Steam Workshop
+
+The logo.png file is too large. Reduce the image quality to decrease its size.

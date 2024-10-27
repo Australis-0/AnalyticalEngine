@@ -1,0 +1,13 @@
+[
+{
+	Name: "Jan Krzysztof Bielecki",
+	ImageID: Bielecki,
+	
+	BornDay: 3,
+	BornMonth: 5,
+	BornYear: 1951,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

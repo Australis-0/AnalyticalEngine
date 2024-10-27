@@ -1,0 +1,106 @@
+{
+	"Rulers": [
+		{
+			"Name": "Paolo Lucio Anafesto",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 700,
+			
+			"ReignYear": 697
+		},
+		{
+			"Name": "Orso I Participazio",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 740,
+			
+			"ReignYear": 717
+		},
+		{
+			"Name": "Enrico Dandolo",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1107,
+			
+			"ReignYear": 1192
+		},
+		{
+			"Name": "Francesco Dandolo",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1229,
+			
+			"ReignYear": 1328
+		},
+		{
+			"Name": "Antonio Venier",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1335,
+			
+			"ReignYear": 1382
+		},
+		{
+			"Name": "Leonardo Loredan",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1436,
+			
+			"ReignYear": 1501
+		},
+		{
+			"Name": "Andrea Gritti",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1455,
+			
+			"ReignYear": 1523
+		},
+		{
+			"Name": "Paolo Renier",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1725,
+			
+			"ReignYear": 1779
+		},
+		{
+			"Name": "Lorenzo Giustinian",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1752,
+			
+			"ReignYear": 1789
+		},
+		{
+			"Name": "Sebastiano Ceni",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1775,
+			
+			"ReignYear": 1797
+		}
+	],
+	
+	"Age_of_History": "Rulers"
+}

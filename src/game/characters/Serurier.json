@@ -1,0 +1,13 @@
+[
+{
+	Name: "Jean-Mathieu-Philibert Sérurier",
+	ImageID: Sérurier,
+	
+	BornDay: 8,
+	BornMonth: 12,
+	BornYear: 1742,
+	
+	Attack: 5,
+	Defense: 5,
+},
+]

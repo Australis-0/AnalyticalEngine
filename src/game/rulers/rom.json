@@ -1,0 +1,26 @@
+{
+	Rulers: [
+		{
+			Name: "Gheorghe Tattarescu",
+			ImageID: 256,
+			
+			BornDay: 3,
+			BornMonth: 4,
+			BornYear: 1886,
+			
+			ReignYear: 1934,
+		},
+		{
+			Name: "Klaus Iohannis",
+			ImageID: 169,
+			
+			BornDay: 13,
+			BornMonth: 6,
+			BornYear: 1959,
+			
+			ReignYear: 2014,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

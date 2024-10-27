@@ -1,0 +1,5 @@
+{
+	PROSPERITY_INCOME: 0.05,
+	PROSPERITY_LEVELS: [ "Struggling", "Modest", "Comfortable", "Thriving", "Wealthy", "Utopian" ],
+	PROSPERITY_LEVELS_VALUE: [ 10, 20, 30, 40, 76 ],
+}

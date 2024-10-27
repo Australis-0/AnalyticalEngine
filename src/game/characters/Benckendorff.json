@@ -1,0 +1,13 @@
+[
+{
+	Name: "Alexander von Benckendorff",
+	ImageID: Benckendorff,
+	
+	BornDay: 4,
+	BornMonth: 7,
+	BornYear: 1781,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Dwight D. Eisenhower",
+	ImageID: Eisenhower,
+	
+	BornDay: 14,
+	BornMonth: 10,
+	BornYear: 1890,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

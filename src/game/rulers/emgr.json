@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Muhammad IX",
+			ImageID: 6,
+			
+			BornDay: 7,
+			BornMonth: 4,
+			BornYear: 1396,
+			
+			ReignYear: 1419,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

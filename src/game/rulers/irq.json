@@ -1,0 +1,26 @@
+{
+	Rulers: [
+		{
+			Name: "Ghazi I",
+			ImageID: 276,
+			
+			BornDay: 21,
+			BornMonth: 3,
+			BornYear: 1912,
+			
+			ReignYear: 1933,
+		},
+		{
+			Name: "Abdul Latif Rashid",
+			ImageID: 109,
+			
+			BornDay: 8,
+			BornMonth: 10,
+			BornYear: 1944,
+			
+			ReignYear: 2022,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

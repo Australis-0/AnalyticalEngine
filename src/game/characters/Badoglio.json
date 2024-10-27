@@ -1,0 +1,13 @@
+[
+{
+	Name: "Pietro Badoglio",
+	ImageID: Badoglio,
+	
+	BornDay: 28,
+	BornMonth: 9,
+	BornYear: 1871,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

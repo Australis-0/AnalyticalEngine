@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Tofiga Vaevalu Falani",
+			ImageID: 206,
+			
+			BornDay: 12,
+			BornMonth: 5,
+			BornYear: 1984,
+			
+			ReignYear: 2021,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

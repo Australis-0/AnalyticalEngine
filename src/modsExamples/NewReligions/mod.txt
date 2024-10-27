@@ -1,0 +1,8 @@
+{
+	Name: "More religions",
+	Description: "This great mod will add more Religions to the game.",
+	
+	Tags: [ "Game", "Religions" ],
+	
+	ChangeNote: "First release",
+}

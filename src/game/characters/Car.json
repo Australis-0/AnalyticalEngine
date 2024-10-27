@@ -1,0 +1,13 @@
+[
+{
+	Name: "Stanisław Car",
+	ImageID: Car,
+	
+	BornDay: 26,
+	BornMonth: 4,
+	BornYear: 1882,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

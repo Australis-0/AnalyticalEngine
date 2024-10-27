@@ -1,0 +1,28 @@
+{
+	Army: [
+		{
+			Name: "Settler",
+			ImageID: 65,
+			
+			UnitLevel: 0,
+			
+			Attack: 1,
+			Defense: 1,
+			MovementSpeed: 4.8,
+			
+			AttackRange: 1,
+			SiegeProgress: 0.0,
+			
+			isSettler: true,
+			
+			RequiredTechID: -1,
+			
+			Cost: 10,
+			MaintenanceCost: 0.02,
+			
+			RecruitmentTime: 60,
+		},
+	],
+	
+	Age_of_History: Army
+}

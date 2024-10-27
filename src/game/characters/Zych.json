@@ -1,0 +1,13 @@
+[
+{
+	Name: "Józef Zych",
+	ImageID: Zych,
+	
+	BornDay: 23,
+	BornMonth: 3,
+	BornYear: 1938,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

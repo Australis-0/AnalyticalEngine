@@ -1,0 +1,13 @@
+[
+{
+	Name: "Michał Radziwiłł",
+	ImageID: Radziwill_Michal,
+	
+	BornDay: 24,
+	BornMonth: 9,
+	BornYear: 1778,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

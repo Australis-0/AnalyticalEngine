@@ -1,0 +1,13 @@
+[
+{
+	Name: "Jean Baptiste Jourdan",
+	ImageID: Jourdan,
+	
+	BornDay: 29,
+	BornMonth: 4,
+	BornYear: 1762,
+	
+	Attack: 7,
+	Defense: 6,
+},
+]

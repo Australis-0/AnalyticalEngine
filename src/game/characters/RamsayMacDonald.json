@@ -1,0 +1,13 @@
+[
+{
+	"Name": "Ramsay MacDonald",
+	"ImageID": "RamsayMacDonald",
+	
+	"BornDay": 12,
+	"BornMonth": 10,
+	"BornYear": 1866,
+	
+	Attack: -1,
+	Defense: -1,
+}
+]

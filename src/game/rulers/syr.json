@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Bashar al-Assad",
+			ImageID: 195,
+			
+			BornDay: 11,
+			BornMonth: 9,
+			BornYear: 1965,
+			
+			ReignYear: 2020,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

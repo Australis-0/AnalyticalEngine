@@ -1,0 +1,139 @@
+{
+	Legacy:
+	[
+		{
+			Name: Mylagcies Name 1:1,
+			ImageID: 0,
+			GroupID: 0,
+			
+			CostLegacy: [100, 150, 200],
+			
+			ConstructionCost: [-0.05, -0.1, -0.15],
+			ConstructionTime: [-0.05, -0.1, -0.20],
+			GeneralAttack: [1, 1, 2],
+			GeneralDefense: [0, 1, 2],
+			MaximumLevelOfTheMilitaryAcademyForGenerals: [1, 2, 3],
+			AllCharactersLifeExpectancy: [2, 4, 6],
+			
+			AI: [5, 10, 10],
+		},
+		{
+			Name: Mylagcies Name 1:2,
+			ImageID: 1,
+			GroupID: 0,
+			
+			CostLegacy: [100, 150, 200],
+			
+			TaxEfficiency: [2, 4, 6],
+			IncreaseTaxEfficiencyCost: [-0.05, -0.1, -0.15],
+			MaxMorale: [0.05, 0.1, 0.15],
+			UnitsDefense: [1, 2, 4],
+			MaximumLevelOfTheMilitaryAcademy: [1, 2, 3],
+			
+			AI: [5, 10, 10],
+		},
+		{
+			Name: THE TITLE OF LEGACY,
+			ImageID: 2,
+			GroupID: 0,
+			
+			CostLegacy: [100, 150, 200],
+			
+			MaxInfrastructure: [1, 2, 3],
+			ProvinceMaintenance: [-3, -6, -10],
+			MaximumLevelOfTheSupremeCourt: [0, 1, 1],
+			DevelopInfrastructureCost: [-0.05, -0.1, -0.15],
+			UnitsAttack: [2, 4, 6],
+			Discipline: [0.05, 0.1, 0.15],
+			Devastation: [0.1, 0.15, 0.25],
+			
+			AI: [5, 10, 10],
+		},
+		{
+			Name: NAME OF LEGACY,
+			ImageID: 3,
+			GroupID: 0,
+			
+			CostLegacy: [100, 150, 200],
+			
+			MaxManpower: [1500, 3000, 5000],
+			ManpowerRecoverySpeed: [0.05, 0.01, 0.015],
+			BattleWidth: [2, 4, 6],
+			RegimentsLimit: [3, 6, 10],
+			SiegeEffectiveness: [0.1, 0.2, 0.3],
+			RecruitmentTime: [-5, -10, -20],
+			ArmyMovementSpeed: [5, 10, 20],
+			
+			AI: [5, 10, 10],
+		},
+		
+		
+		{
+			Name: First legacy in second Group,
+			ImageID: 4,
+			GroupID: 1,
+			
+			CostLegacy: [100, 150, 200],
+			
+			Research: [3, 6, 10],
+			ResearchPoints: [5, 10, 20],
+			MaximumLevelOfCapitalCity: [1, 2, 3],
+			ImproveRelationsModifier: [10, 20, 30],
+			LoanInterest: [-5, -10, -20],
+			MaxNumberOfLoans: [1, 2, 3],
+			DiplomacyPoints: [0.1, 0.15, 0.25],
+			
+			AI: [5, 10, 10],
+		},
+		{
+			Name: BBBBBBB2222,
+			ImageID: 5,
+			GroupID: 1,
+			
+			CostLegacy: [100, 150, 200],
+			
+			GrowthRate: [2, 4, 6],
+			BuildingSlot: [1, 2, 3],
+			IncreaseGrowthRateCost: [-0.05, -0.1, -0.15],
+			IncomeFromVassals: [0.05, 0.1, 0.2],
+			GeneralCost: [-0.05, -0.15, -0.25],
+			Loot: [0.1, 0.2, 0.3],
+			
+			AI: [5, 10, 10],
+		},
+		{
+			Name: CCC333,
+			ImageID: 6,
+			GroupID: 1,
+			
+			CostLegacy: [100, 150, 200],
+			
+			ProductionEfficiency: [3, 6, 10],
+			IncomeProduction: [2, 4, 6],
+			MaxNumOfAlliances: [1, 2, 2],
+			AdvisorMaxLevel: [0, 1, 2],
+			AdvisorPoolSize: [1, 2, 2],
+			
+			AI: [5, 10, 10],
+		},
+		{
+			Name: DDD_Four_Four_NAME,
+			ImageID: 7,
+			GroupID: 1,
+			
+			CostLegacy: [100, 150, 200],
+			
+			MaximumAmountOfGold: [0.1, 0.2, 0.35],
+			InvestInEconomyCost: [-0.05, -0.1, -0.15],
+			AdvisorCost: [-0.1, -0.2, -0.3],
+			AggressiveExpansion: [-5, -10, -15],
+			DiseaseDeathRate: [-0.05, -0.1, -0.15],
+			ManpowerRecoveryFromADisbandedArmy: [0.5, 0.15, 0.25],
+			
+			AI: [5, 10, 10],
+		},
+		
+		
+	],
+	Age_of_History: Legacy
+}

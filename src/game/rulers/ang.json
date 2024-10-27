@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Joao Lourenço",
+			ImageID: 33,
+			
+			BornDay: 5,
+			BornMonth: 5,
+			BornYear: 1954,
+			
+			ReignYear: 2017,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

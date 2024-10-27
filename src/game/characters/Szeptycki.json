@@ -1,0 +1,13 @@
+[
+{
+	Name: "Stanisław Szeptycki",
+	ImageID: Szeptycki,
+	
+	BornDay: 3,
+	BornMonth: 11,
+	BornYear: 1867,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

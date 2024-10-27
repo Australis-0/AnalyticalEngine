@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Petr Pavel",
+			ImageID: 73,
+			
+			BornDay: 1,
+			BornMonth: 11,
+			BornYear: 1961,
+			
+			ReignYear: 2021,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

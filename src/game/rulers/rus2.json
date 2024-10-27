@@ -1,0 +1,256 @@
+{
+	"Rulers": [
+		{
+			"Name": "Ivan IV",
+			"ImageID": -1,
+			
+			"BornDay": 25,
+			"BornMonth": 8,
+			"BornYear": 1530,
+			
+			"ReignYear": 1547
+		},
+		{
+			"Name": "Feodor I",
+			"ImageID": -1,
+			
+			"BornDay": 31,
+			"BornMonth": 5,
+			"BornYear": 1557,
+			
+			"ReignYear": 1584
+		},
+		{
+			"Name": "Boris Godunov",
+			"ImageID": -1,
+			
+			"BornDay": 30,
+			"BornMonth": 12,
+			"BornYear": 1551,
+			
+			"ReignYear": 1598
+		},
+		{
+			"Name": "False Dmitry I",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1582,
+			
+			"ReignYear": 1605
+		},
+		{
+			"Name": "Vasily IV",
+			"ImageID": -1,
+			
+			"BornDay": 19,
+			"BornMonth": 8,
+			"BornYear": 1552,
+			
+			"ReignYear": 1606
+		},
+		{
+			"Name": "Mikhail I",
+			"ImageID": 250,
+			
+			"BornDay": 22,
+			"BornMonth": 7,
+			"BornYear": 1596,
+			
+			"ReignYear": 1613
+		},
+		{
+			"Name": "Alexis I",
+			"ImageID": -1,
+			
+			"BornDay": 9,
+			"BornMonth": 3,
+			"BornYear": 1629,
+			
+			"ReignYear": 1645
+		},
+		{
+			"Name": "Feodor III",
+			"ImageID": -1,
+			
+			"BornDay": 9,
+			"BornMonth": 5,
+			"BornYear": 1661,
+			
+			"ReignYear": 1676
+		},
+		{
+			"Name": "Ivan V",
+			"ImageID": -1,
+			
+			"BornDay": 6,
+			"BornMonth": 9,
+			"BornYear": 1666,
+			
+			"ReignYear": 1682
+		},
+		{
+			"Name": "Peter I",
+			"ImageID": -1,
+			
+			"BornDay": 9,
+			"BornMonth": 6,
+			"BornYear": 1672,
+			
+			"ReignYear": 1682
+		},
+		{
+			"Name": "Catherine I",
+			"ImageID": -1,
+			
+			"BornDay": 15,
+			"BornMonth": 4,
+			"BornYear": 1684,
+			
+			"ReignYear": 1725
+		},
+		{
+			"Name": "Peter II",
+			"ImageID": -1,
+			
+			"BornDay": 23,
+			"BornMonth": 10,
+			"BornYear": 1715,
+			
+			"ReignYear": 1727
+		},
+		{
+			"Name": "Anna Ivanovna",
+			"ImageID": -1,
+			
+			"BornDay": 7,
+			"BornMonth": 2,
+			"BornYear": 1693,
+			
+			"ReignYear": 1730
+		},
+		{
+			"Name": "Elizabeth",
+			"ImageID": -1,
+			
+			"BornDay": 18,
+			"BornMonth": 12,
+			"BornYear": 1709,
+			
+			"ReignYear": 1741
+		},
+		{
+			"Name": "Peter III",
+			"ImageID": -1,
+			
+			"BornDay": 21,
+			"BornMonth": 2,
+			"BornYear": 1728,
+			
+			"ReignYear": 1762
+		},
+		{
+			"Name": "Catherine II",
+			"ImageID": -1,
+			
+			"BornDay": 2,
+			"BornMonth": 5,
+			"BornYear": 1729,
+			
+			"ReignYear": 1762
+		},
+		{
+			"Name": "Paul I",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 10,
+			"BornYear": 1754,
+			
+			"ReignYear": 1796
+		},
+		{
+			"Name": "Alexander I",
+			"ImageID": -1,
+			
+			"BornDay": 23,
+			"BornMonth": 12,
+			"BornYear": 1777,
+			
+			"ReignYear": 1801
+		},
+		{
+			"Name": "Nicholas I",
+			"ImageID": 249,
+			
+			"BornDay": 6,
+			"BornMonth": 7,
+			"BornYear": 1796,
+			
+			"ReignYear": 1825
+		},
+		{
+			"Name": "Alexander II",
+			"ImageID": -1,
+			
+			"BornDay": 29,
+			"BornMonth": 4,
+			"BornYear": 1818,
+			
+			"ReignYear": 1855
+		},
+		{
+			"Name": "Alexander III",
+			"ImageID": -1,
+			
+			"BornDay": 10,
+			"BornMonth": 3,
+			"BornYear": 1845,
+			
+			"ReignYear": 1881
+		},
+		{
+			"Name": "Nicholas II",
+			"ImageID": 247,
+			
+			"BornDay": 18,
+			"BornMonth": 5,
+			"BornYear": 1868,
+			
+			"ReignYear": 1894
+		},
+		{
+			"Name": "Vladimir Lenin",
+			"ImageID": -1,
+			
+			"BornDay": 22,
+			"BornMonth": 4,
+			"BornYear": 1870,
+			
+			"ReignYear": 1917
+		},
+		{
+			"Name": "Joseph Stalin",
+			"ImageID": 246,
+			
+			"BornDay": 18,
+			"BornMonth": 12,
+			"BornYear": 1878,
+			
+			"ReignYear": 1924
+		},
+		{
+			Name: "Vladimir Putin",
+			ImageID: 21,
+			
+			BornDay: 7,
+			BornMonth: 10,
+			BornYear: 1952,
+			
+			ReignYear: 2000,
+		},
+	],
+	
+	"Age_of_History": "Rulers"
+}

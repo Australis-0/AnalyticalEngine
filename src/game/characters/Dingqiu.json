@@ -1,0 +1,13 @@
+[
+{
+	Name: "Chang Dingqiu",
+	ImageID: "Dingqiu",
+	
+	BornDay: 16,
+	BornMonth: 1,
+	BornYear: 1967,
+	
+	Attack: -1,
+	Defense: -1,
+}
+]

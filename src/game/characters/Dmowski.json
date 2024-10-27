@@ -1,0 +1,13 @@
+[
+{
+	Name: "Roman Dmowski",
+	ImageID: Dmowski,
+	
+	BornDay: 9,
+	BornMonth: 8,
+	BornYear: 1864,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

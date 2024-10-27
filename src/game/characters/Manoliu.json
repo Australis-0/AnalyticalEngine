@@ -1,0 +1,13 @@
+[
+{
+	Name: "Gheorghe Manoliu",
+	ImageID: Manoliu,
+	
+	BornDay: 21,
+	BornMonth: 5,
+	BornYear: 1888,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

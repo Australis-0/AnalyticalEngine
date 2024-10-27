@@ -1,0 +1,13 @@
+[
+{
+	Name: "Sieciech",
+	ImageID: Sieciech,
+	
+	BornDay: 12,
+	BornMonth: 12,
+	BornYear: 1054,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

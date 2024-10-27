@@ -1,0 +1,496 @@
+{
+	"Rulers": [
+		{
+			"Name": "Clovis I",
+			"ImageID": -1,
+			
+			"BornDay": 15,
+			"BornMonth": 9,
+			"BornYear": 466,
+			
+			"ReignYear": 481
+		},
+		{
+			"Name": "Chlothar I",
+			"ImageID": -1,
+			
+			"BornDay": 22,
+			"BornMonth": 6,
+			"BornYear": 497,
+			
+			"ReignYear": 511
+		},
+		{
+			"Name": "Chlothar II",
+			"ImageID": -1,
+			
+			"BornDay": 11,
+			"BornMonth": 3,
+			"BornYear": 584,
+			
+			"ReignYear": 613
+		},
+		{
+			"Name": "Dagobert I",
+			"ImageID": -1,
+			
+			"BornDay": 29,
+			"BornMonth": 7,
+			"BornYear": 603,
+			
+			"ReignYear": 629
+		},
+		{
+			"Name": "Pepin the Short",
+			"ImageID": -1,
+			
+			"BornDay": 2,
+			"BornMonth": 5,
+			"BornYear": 714,
+			
+			"ReignYear": 751
+		},
+		{
+			"Name": "Charlemagne",
+			"ImageID": -1,
+			
+			"BornDay": 2,
+			"BornMonth": 4,
+			"BornYear": 747,
+			
+			"ReignYear": 768
+		},
+		{
+			"Name": "Louis the Pious",
+			"ImageID": -1,
+			
+			"BornDay": 16,
+			"BornMonth": 4,
+			"BornYear": 778,
+			
+			"ReignYear": 814
+		},
+		{
+			"Name": "Charles the Bald",
+			"ImageID": -1,
+			
+			"BornDay": 13,
+			"BornMonth": 6,
+			"BornYear": 823,
+			
+			"ReignYear": 843
+		},
+		{
+			"Name": "Louis the Stammerer",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 11,
+			"BornYear": 846,
+			
+			"ReignYear": 877
+		},
+		{
+			"Name": "Charles the Simple",
+			"ImageID": -1,
+			
+			"BornDay": 17,
+			"BornMonth": 5,
+			"BornYear": 879,
+			
+			"ReignYear": 893
+		},
+		{
+			"Name": "Louis IV",
+			"ImageID": -1,
+			
+			"BornDay": 10,
+			"BornMonth": 9,
+			"BornYear": 920,
+			
+			"ReignYear": 936
+		},
+		{
+			"Name": "Hugh Capet",
+			"ImageID": -1,
+			
+			"BornDay": 20,
+			"BornMonth": 8,
+			"BornYear": 939,
+			
+			"ReignYear": 987
+		},
+		{
+			"Name": "Robert II",
+			"ImageID": -1,
+			
+			"BornDay": 27,
+			"BornMonth": 9,
+			"BornYear": 972,
+			
+			"ReignYear": 996
+		},
+		{
+			"Name": "Henry I",
+			"ImageID": -1,
+			
+			"BornDay": 4,
+			"BornMonth": 5,
+			"BornYear": 1008,
+			
+			"ReignYear": 1031
+		},
+		{
+			"Name": "Philip I",
+			"ImageID": -1,
+			
+			"BornDay": 11,
+			"BornMonth": 4,
+			"BornYear": 1052,
+			
+			"ReignYear": 1060
+		},
+		{
+			"Name": "Louis VI",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 12,
+			"BornYear": 1081,
+			
+			"ReignYear": 1108
+		},
+		{
+			"Name": "Louis VII",
+			"ImageID": -1,
+			
+			"BornDay": 10,
+			"BornMonth": 3,
+			"BornYear": 1120,
+			
+			"ReignYear": 1137
+		},
+		{
+			"Name": "Philip II",
+			"ImageID": -1,
+			
+			"BornDay": 21,
+			"BornMonth": 8,
+			"BornYear": 1165,
+			
+			"ReignYear": 1180
+		},
+		{
+			"Name": "Louis VIII",
+			"ImageID": -1,
+			
+			"BornDay": 5,
+			"BornMonth": 9,
+			"BornYear": 1187,
+			
+			"ReignYear": 1223
+		},
+		{
+			"Name": "Louis IX",
+			"ImageID": -1,
+			
+			"BornDay": 25,
+			"BornMonth": 4,
+			"BornYear": 1214,
+			
+			"ReignYear": 1226
+		},
+		{
+			"Name": "Philip III",
+			"ImageID": -1,
+			
+			"BornDay": 30,
+			"BornMonth": 7,
+			"BornYear": 1245,
+			
+			"ReignYear": 1270
+		},
+		{
+			"Name": "Philip IV",
+			"ImageID": -1,
+			
+			"BornDay": 8,
+			"BornMonth": 6,
+			"BornYear": 1268,
+			
+			"ReignYear": 1285
+		},
+		{
+			"Name": "Louis X",
+			"ImageID": -1,
+			
+			"BornDay": 4,
+			"BornMonth": 10,
+			"BornYear": 1289,
+			
+			"ReignYear": 1314
+		},
+		{
+			"Name": "Philip V",
+			"ImageID": -1,
+			
+			"BornDay": 17,
+			"BornMonth": 4,
+			"BornYear": 1293,
+			
+			"ReignYear": 1316
+		},
+		{
+			"Name": "Charles IV",
+			"ImageID": -1,
+			
+			"BornDay": 18,
+			"BornMonth": 6,
+			"BornYear": 1294,
+			
+			"ReignYear": 1322
+		},
+		{
+			"Name": "Philip VI",
+			"ImageID": -1,
+			
+			"BornDay": 5,
+			"BornMonth": 4,
+			"BornYear": 1293,
+			
+			"ReignYear": 1328
+		},
+		{
+			"Name": "John II",
+			"ImageID": -1,
+			
+			"BornDay": 26,
+			"BornMonth": 4,
+			"BornYear": 1319,
+			
+			"ReignYear": 1350
+		},
+		{
+			"Name": "Charles V",
+			"ImageID": -1,
+			
+			"BornDay": 21,
+			"BornMonth": 1,
+			"BornYear": 1338,
+			
+			"ReignYear": 1364
+		},
+		{
+			"Name": "Charles VI",
+			"ImageID": -1,
+			
+			"BornDay": 3,
+			"BornMonth": 12,
+			"BornYear": 1368,
+			
+			"ReignYear": 1380
+		},
+		{
+			"Name": "Charles VII",
+			"ImageID": 9,
+			
+			"BornDay": 22,
+			"BornMonth": 2,
+			"BornYear": 1403,
+			
+			"ReignYear": 1422
+		},
+		{
+			"Name": "Louis XI",
+			"ImageID": -1,
+			
+			"BornDay": 3,
+			"BornMonth": 7,
+			"BornYear": 1423,
+			
+			"ReignYear": 1461
+		},
+		{
+			"Name": "Charles VIII",
+			"ImageID": -1,
+			
+			"BornDay": 30,
+			"BornMonth": 6,
+			"BornYear": 1470,
+			
+			"ReignYear": 1483
+		},
+		{
+			"Name": "Louis XII",
+			"ImageID": -1,
+			
+			"BornDay": 27,
+			"BornMonth": 6,
+			"BornYear": 1462,
+			
+			"ReignYear": 1498
+		},
+		{
+			"Name": "Francis I",
+			"ImageID": -1,
+			
+			"BornDay": 12,
+			"BornMonth": 9,
+			"BornYear": 1494,
+			
+			"ReignYear": 1515
+		},
+		{
+			"Name": "Henry II",
+			"ImageID": -1,
+			
+			"BornDay": 31,
+			"BornMonth": 3,
+			"BornYear": 1519,
+			
+			"ReignYear": 1547
+		},
+		{
+			"Name": "Francis II",
+			"ImageID": -1,
+			
+			"BornDay": 19,
+			"BornMonth": 1,
+			"BornYear": 1544,
+			
+			"ReignYear": 1559
+		},
+		{
+			"Name": "Charles IX",
+			"ImageID": -1,
+			
+			"BornDay": 27,
+			"BornMonth": 6,
+			"BornYear": 1550,
+			
+			"ReignYear": 1560
+		},
+		{
+			"Name": "Henry III",
+			"ImageID": -1,
+			
+			"BornDay": 19,
+			"BornMonth": 9,
+			"BornYear": 1551,
+			
+			"ReignYear": 1574
+		},
+		{
+			"Name": "Henry IV",
+			"ImageID": -1,
+			
+			"BornDay": 13,
+			"BornMonth": 12,
+			"BornYear": 1553,
+			
+			"ReignYear": 1589
+		},
+		{
+			"Name": "Louis XIII",
+			"ImageID": -1,
+			
+			"BornDay": 27,
+			"BornMonth": 9,
+			"BornYear": 1601,
+			
+			"ReignYear": 1610
+		},
+		{
+			"Name": "Louis XIV",
+			"ImageID": -1,
+			
+			"BornDay": 5,
+			"BornMonth": 9,
+			"BornYear": 1638,
+			
+			"ReignYear": 1643
+		},
+		{
+			"Name": "Louis XV",
+			"ImageID": -1,
+			
+			"BornDay": 15,
+			"BornMonth": 2,
+			"BornYear": 1710,
+			
+			"ReignYear": 1715
+		},
+		{
+			"Name": "Louis XVI",
+			"ImageID": -1,
+			
+			"BornDay": 23,
+			"BornMonth": 8,
+			"BornYear": 1754,
+			
+			"ReignYear": 1774
+		},
+		{
+			"Name": "Napoleon Bonaparte",
+			"ImageID": 229,
+			
+			"BornDay": 15,
+			"BornMonth": 8,
+			"BornYear": 1769,
+			
+			"ReignYear": 1791
+		},
+		{
+			"Name": "Louis XVIII",
+			"ImageID": -1,
+			
+			"BornDay": 17,
+			"BornMonth": 11,
+			"BornYear": 1755,
+			
+			"ReignYear": 1814
+		},
+		{
+			"Name": "Charles X",
+			"ImageID": -1,
+			
+			"BornDay": 9,
+			"BornMonth": 10,
+			"BornYear": 1757,
+			
+			"ReignYear": 1824
+		},
+		{
+			"Name": "Louis Philippe I",
+			"ImageID": 309,
+			
+			"BornDay": 6,
+			"BornMonth": 10,
+			"BornYear": 1773,
+			
+			"ReignYear": 1830
+		},
+		{
+			"Name": "Pierre Laval",
+			"ImageID": 234,
+			
+			"BornDay": 28,
+			"BornMonth": 6,
+			"BornYear": 1883,
+			
+			"ReignYear": 1935
+		},
+		{
+			Name: "Emmanuel Macron",
+			ImageID: 90,
+			
+			BornDay: 21,
+			BornMonth: 12,
+			BornYear: 1977,
+			
+			ReignYear: 2017,
+		},
+	],
+	
+	"Age_of_History": "Rulers"
+}

@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Errol Charles",
+			ImageID: 172,
+			
+			BornDay: 10,
+			BornMonth: 12,
+			BornYear: 1942,
+			
+			ReignYear: 2021,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

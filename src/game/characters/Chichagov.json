@@ -1,0 +1,13 @@
+[
+{
+	Name: "Pavel Chichagov",
+	ImageID: Chichagov,
+	
+	BornDay: 8,
+	BornMonth: 7,
+	BornYear: 1767,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

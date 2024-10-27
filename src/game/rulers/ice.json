@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Guoni Th. Johannesson",
+			ImageID: 105,
+			
+			BornDay: 26,
+			BornMonth: 6,
+			BornYear: 1968,
+			
+			ReignYear: 2016,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

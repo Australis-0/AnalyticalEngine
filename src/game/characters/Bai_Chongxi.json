@@ -1,0 +1,13 @@
+[
+{
+	Name: "Bai Chongxi",
+	ImageID: Bai_Chongxi,
+	
+	BornDay: 31,
+	BornMonth: 3,
+	BornYear: 1882,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

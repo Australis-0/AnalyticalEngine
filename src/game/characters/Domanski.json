@@ -1,0 +1,13 @@
+[
+{
+	Name: "Andrzej Domański",
+	ImageID: Domanski,
+	
+	BornDay: 27,
+	BornMonth: 8,
+	BornYear: 1981,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

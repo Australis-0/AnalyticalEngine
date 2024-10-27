@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Kassym Jomart Tokayev",
+			ImageID: 117,
+			
+			BornDay: 17,
+			BornMonth: 5,
+			BornYear: 1953,
+			
+			ReignYear: 2019,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

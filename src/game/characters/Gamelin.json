@@ -1,0 +1,13 @@
+[
+{
+	Name: "Maurice Gamelin",
+	ImageID: Gamelin,
+	
+	BornDay: 20,
+	BornMonth: 9,
+	BornYear: 1872,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

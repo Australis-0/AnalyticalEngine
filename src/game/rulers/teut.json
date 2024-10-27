@@ -1,0 +1,126 @@
+{
+	"Rulers": [
+		{
+			"Name": "Hermann von Salza",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1160,
+			
+			"ReignYear": 1210
+		},
+		{
+			"Name": "Frederick von Hohenlohe",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1180,
+			
+			"ReignYear": 1239
+		},
+		{
+			"Name": "Konrad von Feuchtwangen",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1200,
+			
+			"ReignYear": 1244
+		},
+		{
+			"Name": "Gerhard von Malberg",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1210,
+			
+			"ReignYear": 1260
+		},
+		{
+			"Name": "Eberhard von Barby",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1230,
+			
+			"ReignYear": 1273
+		},
+		{
+			"Name": "Waldemar von Altenburg",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1250,
+			
+			"ReignYear": 1296
+		},
+		{
+			"Name": "Ulrich von Jungingen",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1360,
+			
+			"ReignYear": 1407
+		},
+		{
+			"Name": "Heinrich von Plauen",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1360,
+			
+			"ReignYear": 1410
+		},
+		{
+			"Name": "Paul von Rusdorf",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1390,
+			
+			"ReignYear": 1422
+		},
+		{
+			"Name": "Hermann von der Recke",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1420,
+			
+			"ReignYear": 1467
+		},
+		{
+			"Name": "Lorenz von der Sassen",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1460,
+			
+			"ReignYear": 1477
+		},
+		{
+			"Name": "Albrecht von Brandenburg",
+			"ImageID": -1,
+			
+			"BornDay": 28,
+			"BornMonth": 11,
+			"BornYear": 1490,
+			
+			"ReignYear": 1511
+		}
+	],
+	
+	"Age_of_History": "Rulers"
+}

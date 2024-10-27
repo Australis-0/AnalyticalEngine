@@ -1,0 +1,13 @@
+[
+{
+	Name: "Thomas Edison",
+	ImageID: Edison,
+	
+	BornDay: 11,
+	BornMonth: 2,
+	BornYear: 1847,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

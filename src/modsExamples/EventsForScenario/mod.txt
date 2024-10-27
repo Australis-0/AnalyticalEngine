@@ -1,0 +1,8 @@
+{
+	Name: "This mod add new events for Scenario!",
+	Description: "This mod add new events for Scenario!",
+	
+	Tags: [ "Map", "Scenario", "1440" ],
+	
+	ChangeNote: "First release",
+}

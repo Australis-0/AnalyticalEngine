@@ -1,0 +1,13 @@
+[
+{
+	Name: "Hisaichi Terauchi",
+	ImageID: Terauchi,
+	
+	BornDay: 8,
+	BornMonth: 8,
+	BornYear: 1879,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

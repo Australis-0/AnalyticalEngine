@@ -1,0 +1,122 @@
+#######################################
+## Read: mods_steam_workshop.txt !
+## 
+## To create a new mod for submission to the Steam Workshop, first create a new folder for your mod within the 'mods' directory.
+## Then, copy or recreate all the modified files into that folder!
+##
+## For example, if a file was originally located in game/ExampleFile.json, 
+## it should be placed in mods/YourModName/game/ExampleFile.json in your mod's folder.
+##
+#####
+
+For your mod the path will be:
+mods/YOUR_MOD_NAME/game/civilizations/
+mods/YOUR_MOD_NAME/gfx/flagsXH/
+
+#####
+
+
+########## HOW TO ADD CIVILIZATION ##########
+
+########## -- STEP 1
+## Open game and go to:
+Editor -> Game Civilizations -> Add Civilization
+
+In this menu you set up:
+Civilization TAG: It must be unique! Use at least 5-6 characters and you will be fine.
+Civilization TAG -> This is the most important thing, later you will use your unique CIV_TAG to set up flag and name of Civilization in the game.
+
+Name: Name of the Civilization
+
+Cilization Color:
+Religion: 
+Group: This will impact the image of leaders, generals, names, and more
+Wiki: Link to wikipedia(optional)
+
+
+########## -- STEP 2
+## Flag:
+Go to:
+mods/YourMod/gfx/flagsXH/
+
+Add new Flag with created TAG of Civilization
+CIV_TAG.png
+
+Example: 
+por.png
+
+Flag image dimensions: 154 px width x 100 px height
+
+
+##
+## And that's it!
+##
+########## END
+
+
+
+If you want to add newly created civs to another mod, simply move all files from the GameCivs/ folder to YourMod/ folder in mods/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### OR OR OR ####
+#### SENCOND OPTION! ####
+#### SENCOND OPTION! ####
+#### OR OR OR ####
+
+Go to:
+game/civilizations/
+and create new unique text file. Example: civtag.json
+The file name will be CivTag.
+
+Example Code:
+
+{
+"Tag": "aca",
+"iR": 128,
+"iG": 136,
+"iB": 157,
+"ReligionID": 0,
+"Wiki": "Acadia"
+}
+
+And add CivTag to the file with all Civilziations in the game:
+game/Civilizations.txt
+at the end file file add:
+civtag;
+
+#### OR END ####
+
+
+########## -- STEP 2
+## How to set up name of your Civilization(Translations!):
+Go to:
+game/languages/civilizations/Bundle.properties
+
+And edit file as txt file in notepad:
+Bundle.properties
+
+Create new line and add:
+CIV_TAG = Name of your Civilization
+
+Example:
+por = Portugal

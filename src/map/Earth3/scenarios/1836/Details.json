@@ -1,0 +1,21 @@
+{
+Name: "VictorianEra",
+Author: "?ukasz Jakowski",
+Civs: 333,
+Age: 6,
+Day: 17,
+Month: 9,
+Year: 1836,
+Campaign: false,
+CivDefault_Gold: 250,
+CivDefault_GoldRandom: 100,
+CivDefault_Legacy: 150,
+CivDefault_LegacyRandom: 50,
+CivDefault_ManpowerPercentage: 75,
+CivDefault_Technology: -1,
+ProvinceDefault_Population: 400000,
+ProvinceDefault_Economy: 8,
+ProvinceDefault_TaxEfficiency: 9,
+ProvinceDefault_Manpower: 16,
+HoursPerTurn: 24
+}

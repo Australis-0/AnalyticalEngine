@@ -1,0 +1,13 @@
+[
+{
+	Name: "Vernon Sturdee",
+	ImageID: Sturdee,
+	
+	BornDay: 16,
+	BornMonth: 4,
+	BornYear: 1890,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

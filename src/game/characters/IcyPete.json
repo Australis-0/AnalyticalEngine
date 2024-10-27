@@ -1,0 +1,13 @@
+[
+{
+	Name: "Icy Pete",
+	ImageID: "IcyPete",
+	
+	BornDay: 16,
+	BornMonth: 7,
+	BornYear: 2003,
+	
+	Attack: -1,
+	Defense: -1,
+}
+]

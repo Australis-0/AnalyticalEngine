@@ -1,0 +1,13 @@
+[
+{
+	Name: "Aleksey Arakcheyev",
+	ImageID: Arakcheyev,
+	
+	BornDay: 4,
+	BornMonth: 10,
+	BornYear: 1769,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

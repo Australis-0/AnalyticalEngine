@@ -1,0 +1,86 @@
+{
+	"Rulers": [
+		{
+			"Name": "Timur",
+			"ImageID": -1,
+			
+			"BornDay": 8,
+			"BornMonth": 4,
+			"BornYear": 1336,
+			
+			"ReignYear": 1370
+		},
+		{
+			"Name": "Shah Rukh",
+			"ImageID": -1,
+			
+			"BornDay": 20,
+			"BornMonth": 3,
+			"BornYear": 1377,
+			
+			"ReignYear": 1405
+		},
+		{
+			"Name": "Ulugh Beg",
+			"ImageID": -1,
+			
+			"BornDay": 22,
+			"BornMonth": 3,
+			"BornYear": 1394,
+			
+			"ReignYear": 1447
+		},
+		{
+			"Name": "Abu Sa'id",
+			"ImageID": -1,
+			
+			"BornDay": 22,
+			"BornMonth": 7,
+			"BornYear": 1424,
+			
+			"ReignYear": 1447
+		},
+		{
+			"Name": "Ibrahim Sultan",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1435,
+			
+			"ReignYear": 1449
+		},
+		{
+			"Name": "Muhammad Sultan",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1456,
+			
+			"ReignYear": 1469
+		},
+		{
+			"Name": "Sultan Ahmad Mirza",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1449,
+			
+			"ReignYear": 1469
+		},
+		{
+			"Name": "Babur",
+			"ImageID": -1,
+			
+			"BornDay": 14,
+			"BornMonth": 2,
+			"BornYear": 1483,
+			
+			"ReignYear": 1504
+		}
+	],
+	
+	"Age_of_History": "Rulers"
+}

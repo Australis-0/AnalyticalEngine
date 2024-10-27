@@ -1,0 +1,13 @@
+[
+{
+	Name: "Semyon Budyonny",
+	ImageID: Budyonny,
+	
+	BornDay: 25,
+	BornMonth: 4,
+	BornYear: 1883,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

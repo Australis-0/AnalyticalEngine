@@ -1,0 +1,13 @@
+[
+{
+	Name: "Hendrik Klopper",
+	ImageID: Klopper,
+	
+	BornDay: 25,
+	BornMonth: 9,
+	BornYear: 1903,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

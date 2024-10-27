@@ -1,0 +1,13 @@
+[
+{
+	Name: "Stanisław Sosabowski",
+	ImageID: Sosabowski,
+	
+	BornDay: 8,
+	BornMonth: 5,
+	BornYear: 1892,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

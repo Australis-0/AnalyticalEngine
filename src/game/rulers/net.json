@@ -1,0 +1,36 @@
+{
+	Rulers: [
+		{
+			Name: "William I",
+			ImageID: 318,
+			
+			BornDay: 24,
+			BornMonth: 8,
+			BornYear: 1772,
+			
+			ReignYear: 1815,
+		},
+		{
+			Name: "Hendrikus Colijn",
+			ImageID: 260,
+			
+			BornDay: 22,
+			BornMonth: 6,
+			BornYear: 1869,
+			
+			ReignYear: 1933,
+		},
+		{
+			Name: "Willem Alexander",
+			ImageID: 151,
+			
+			BornDay: 27,
+			BornMonth: 4,
+			BornYear: 1967,
+			
+			ReignYear: 2013,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

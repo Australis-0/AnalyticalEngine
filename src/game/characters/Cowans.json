@@ -1,0 +1,13 @@
+[
+{
+	Name: "John Cowans",
+	ImageID: Cowans,
+	
+	BornDay: 11,
+	BornMonth: 3,
+	BornYear: 1862,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

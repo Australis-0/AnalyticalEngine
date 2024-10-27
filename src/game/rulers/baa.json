@@ -1,0 +1,116 @@
+{
+	"Rulers": [
+		{
+			"Name": "Albert the Bear",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1100,
+			
+			"ReignYear": 1157
+		},
+		{
+			"Name": "Ottokar I",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1175,
+			
+			"ReignYear": 1184
+		},
+		{
+			"Name": "John I",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1256,
+			
+			"ReignYear": 1266
+		},
+		{
+			"Name": "Waldemar",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1280,
+			
+			"ReignYear": 1308
+		},
+		{
+			"Name": "Charles IV",
+			"ImageID": -1,
+			
+			"BornDay": 21,
+			"BornMonth": 2,
+			"BornYear": 1316,
+			
+			"ReignYear": 1347
+		},
+		{
+			"Name": "Frederick I",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1371,
+			
+			"ReignYear": 1415
+		},
+		{
+			"Name": "Frederick II",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1413,
+			
+			"ReignYear": 1440
+		},
+		{
+			"Name": "Albrecht Achilles",
+			"ImageID": -1,
+			
+			"BornDay": 24,
+			"BornMonth": 11,
+			"BornYear": 1414,
+			
+			"ReignYear": 1449
+		},
+		{
+			"Name": "John Sigismund",
+			"ImageID": -1,
+			
+			"BornDay": 15,
+			"BornMonth": 11,
+			"BornYear": 1572,
+			
+			"ReignYear": 1608
+		},
+		{
+			"Name": "Frederick William",
+			"ImageID": -1,
+			
+			"BornDay": 16,
+			"BornMonth": 2,
+			"BornYear": 1620,
+			
+			"ReignYear": 1640
+		},
+		{
+			"Name": "Frederick I of Prussia",
+			"ImageID": -1,
+			
+			"BornDay": 11,
+			"BornMonth": 7,
+			"BornYear": 1657,
+			
+			"ReignYear": 1701
+		}
+	],
+	
+	"Age_of_History": "Rulers"
+}

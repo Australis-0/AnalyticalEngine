@@ -1,0 +1,47 @@
+#######################################
+## Read: mods_steam_workshop.txt !
+## 
+## To create a new mod for submission to the Steam Workshop, first create a new folder for your mod within the 'mods' directory.
+## Then, copy or recreate all the modified files into that folder!
+##
+## For example, if a file was originally located in game/ExampleFile.json, 
+## it should be placed in mods/YourModName/game/ExampleFile.json in your mod's folder.
+##
+#####
+
+For your mod the path will be:
+mods/YourModName/game/cities/
+
+#####
+
+Go to:
+game/cities/
+
+The files in this folder are named after Civilization tags.
+
+For example: fra.txt
+
+fra corresponds to France.
+
+In this file, you list cities that will have their names changed when France controls provinces with those names.
+
+Example:
+Lisbon=Lisbonne
+Zaragoza=Saragosse
+
+## If France controls Lisbon, the province name will change to: Lisbonne.
+
+##########################################
+## List of all cities:
+map/Earth3/cities/cities.json
+
+## Civilization TAGs:
+
+## Find all Civilization tags and their names:
+Look in the file: game/languages/civilizations/Bundle.properties
+Find the entry for Belgium. Its tag will be: bel
+
+##########################################
+
+If more than one CivTag uses the same list of cities, then read:
+game/_FAQ/How_To_Link_civA_to_civB.txt

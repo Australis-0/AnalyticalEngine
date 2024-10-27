@@ -1,0 +1,20 @@
+{
+Name: "Heptarchy",
+Author: "Łukasz Jakowski",
+Civs: 55,
+Age: 2,
+Day: 16,
+Month: 4,
+Year: 546,
+Campaign: true,
+CivDefault_Gold: 350,
+CivDefault_GoldRandom: 75,
+CivDefault_Legacy: 100,
+CivDefault_LegacyRandom: 50,
+CivDefault_ManpowerPercentage: 60,
+CivDefault_Technology: 9,
+ProvinceDefault_Population: 40000,
+ProvinceDefault_Economy: 21,
+ProvinceDefault_TaxEfficiency: 25,
+ProvinceDefault_Manpower: 6
+}

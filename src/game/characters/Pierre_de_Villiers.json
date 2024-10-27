@@ -1,0 +1,13 @@
+[
+{
+	Name: "Isaac Pierre de Villiers",
+	ImageID: Pierre_de_Villiers,
+	
+	BornDay: 20,
+	BornMonth: 8,
+	BornYear: 1891,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Plaek Phibunsongkhram",
+	ImageID: Phibunsongkhram,
+	
+	BornDay: 14,
+	BornMonth: 7,
+	BornYear: 1897,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

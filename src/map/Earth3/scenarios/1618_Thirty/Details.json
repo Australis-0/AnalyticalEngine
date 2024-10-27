@@ -1,0 +1,21 @@
+{
+Name: "ThirtyYearsWar",
+Author: "Łukasz Jakowski",
+Civs: 576,
+Age: 4,
+Day: 10,
+Month: 1,
+Year: 1618,
+Campaign: false,
+CivDefault_Gold: 150,
+CivDefault_GoldRandom: 75,
+CivDefault_Legacy: 100,
+CivDefault_LegacyRandom: 75,
+CivDefault_ManpowerPercentage: 75,
+CivDefault_Technology: 49,
+ProvinceDefault_Population: 80000,
+ProvinceDefault_Economy: 32,
+ProvinceDefault_TaxEfficiency: 28,
+ProvinceDefault_Manpower: 24,
+HoursPerTurn: 24
+}

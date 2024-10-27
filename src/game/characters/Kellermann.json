@@ -1,0 +1,13 @@
+[
+{
+	Name: "Francois Christophe Kellermann",
+	ImageID: Kellermann,
+	
+	BornDay: 28,
+	BornMonth: 5,
+	BornYear: 1735,
+	
+	Attack: 4,
+	Defense: 6,
+},
+]

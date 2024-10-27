@@ -1,0 +1,13 @@
+[
+{
+	Name: "Hein ter Poorten",
+	ImageID: ter_Poorten,
+	
+	BornDay: 17,
+	BornMonth: 1,
+	BornYear: 1706,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

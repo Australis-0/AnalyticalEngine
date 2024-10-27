@@ -1,0 +1,208 @@
+#######################################
+## Read: mods_steam_workshop.txt !
+## 
+## To create a new mod for submission to the Steam Workshop, first create a new folder for your mod within the 'mods' directory.
+## Then, copy or recreate all the modified files into that folder!
+##
+## For example, if a file was originally located in game/ExampleFile.json, 
+## it should be placed in mods/YourModName/game/ExampleFile.json in your mod's folder.
+##
+#####
+
+For your mod the path will be:
+mods/YOUR_MOD_NAME/game/laws/
+
+#####
+
+Go to:
+game/laws/
+
+And open as text file in notepad: Laws.json
+
+
+### EXAMPLE LAW
+
+		{
+			ImageID: [22, 18, 23, 24, 25],
+			Title: ConscriptionLaws,
+			
+			Law: ["FeudalLevies", "DraftSystem", "SelectiveService", "ProfessionalVolunteerArmy", "ProfessionalStandingArmy" ],
+			LawDesc: ["Description for FeudalLevies", "Desc for DraftSystem", "Desc for SelectiveService", "Desc for ProfessionalVolunteerArmy", "Desc for ProfessionalStandingArmy" ],
+			
+			RequiredTechID: [-1, 27, 37, 45, 59],
+			RequiredGovernmentID: null,
+			
+			MaxManpower_Percentage: [0, 0.10, 0.25, 0.50, 1.0],
+			Discipline: [0, 0.1, 0.2, 0.3, 0.5],
+			MaximumLevelOfTheMilitaryAcademy: [0, 1, 2, 3, 4],
+			RecruitmentTime: [0, -5, -10, -15, -20],
+		},
+
+### EXAMPLE LAW END
+
+Main title:
+Title: ConscriptionLaws,
+
+
+Law: ["FeudalLevies", "DraftSystem", "SelectiveService", "ProfessionalVolunteerArmy", "ProfessionalStandingArmy" ],
+
+The name of the default law will be: FeudalLevies and so on.
+
+LawDesc: ["Description for FeudalLevies", "Desc for DraftSystem", "Desc for SelectiveService", "Desc for ProfessionalVolunteerArmy", "Desc for ProfessionalStandingArmy" ],
+Ths description for all Laws.
+
+#########
+RequiredTechID: [-1, 27, 37, 45, 59],
+
+RequiredTechID: -1,
+If -1, this Law does not require any technology and will be unlocked at the beginning of the game.
+
+RequiredTechID: 2,
+This means that to unlock this Law, you need to unlock Technology ID 2
+
+Technology file with IDs:
+game/technologies/Technologies.json
+
+#########
+RequiredGovernmentID: null
+If null, this Law does not require any special Government Type.
+
+If you want to make a Law available only for specific types of government, use the following format:
+RequiredGovernmentID: [-1, 2, -1, 3, -1],
+
+Where:
+- Communism ID: 3
+- Constitutional Monarchy ID: 2
+
+Explanation:
+1. First Law will be for all types of government. # It must be -1, because it will be default Law!!
+2. Second Law will be available only for Civs with the government type ID: 2 (Constitutional Monarchy).
+3. Third Law will be for all types of government.
+4. Fourth Law will be available only for Civs with the government type ID: 3 (Communism).
+5. Fifth Law will be for all types of government.
+
+The number of IDs must match the number of Laws.
+
+Governemtns file with IDs:
+game/Governments.json
+
+### Available bonuses:
+
+MonthlyIncome: [X,X,X,X,X],
+MonthlyLegacy: [X,X,X,X,X],
+MonthlyLegacy_Percentage: [X,X,X,X,X],
+
+Gold: [X,X,X,X,X],
+
+ConstructionCost: [X,X,X,X,X],
+AdministrationBuildingsCost: [X,X,X,X,X],
+MilitaryBuildingsCost: [X,X,X,X,X],
+EconomyBuildingsCost: [X,X,X,X,X],
+
+ConstructionTime: [X,X,X,X,X],
+
+WonderConstructionCost: [X,X,X,X,X],
+
+TaxEfficiency: [X,X,X,X,X],
+ProvinceMaintenance: [X,X,X,X,X],
+BuildingsMaintenanceCost: [X,X,X,X,X],
+
+ArmyMaintenance: [X,X,X,X,X],
+MaxManpower: [X,X,X,X,X],
+MaxManpower_Percentage: [X,X,X,X,X],
+
+ManpowerRecoverySpeed: [X,X,X,X,X],
+ReinforcementSpeed: [X,X,X,X,X],
+
+ArmyMovementSpeed: [X,X,X,X,X],
+
+Research: [X,X,X,X,X],
+ResearchPoints: [X,X,X,X,X],
+
+MaxMorale: [X,X,X,X,X],
+ArmyMoraleRecovery: [X,X,X,X,X],
+
+WarScoreCost: [X,X,X,X,X],
+
+BuildingSlot: [X,X,X,X,X],
+MaxInfrastructure: [X,X,X,X,X],
+
+Devastation: [X,X,X,X,X],
+GrowthRate: [X,X,X,X,X],
+
+IncomeProduction: [X,X,X,X,X],
+ProductionEfficiency: [X,X,X,X,X],
+
+IncomeTaxation: [X,X,X,X,X],
+IncomeEconomy: [X,X,X,X,X],
+
+InvestInEconomyCost: [X,X,X,X,X],
+IncreaseManpowerCost: [X,X,X,X,X],
+IncreaseTaxEfficiencyCost: [X,X,X,X,X],
+IncreaseGrowthRateCost: [X,X,X,X,X],
+DevelopInfrastructureCost: [X,X,X,X,X],
+
+GeneralAttack: [X,X,X,X,X],
+GeneralDefense: [X,X,X,X,X],
+
+UnitsAttack: [X,X,X,X,X],
+UnitsDefense: [X,X,X,X,X],
+
+SiegeEffectiveness: [X,X,X,X,X],
+
+ImproveRelationsModifier: [X,X,X,X,X],
+IncomeFromVassals: [X,X,X,X,X],
+LoanInterest: [X,X,X,X,X],
+DiplomacyPoints: [X,X,X,X,X],
+
+CoreCost: [X,X,X,X,X],
+ReligionCost: [X,X,X,X,X],
+
+RecruitmentTime: [X,X,X,X,X],
+
+RecruitArmyCost: [X,X,X,X,X],
+RecruitArmyFirstLineCost: [X,X,X,X,X],
+RecruitArmySecondLineCost: [X,X,X,X,X],
+
+MaxNumOfAlliances: [X,X,X,X,X],
+AdvisorMaxLevel: [X,X,X,X,X],
+AdvisorPoolSize: [X,X,X,X,X],
+
+MaxNumberOfLoans: [X,X,X,X,X],
+MaximumLevelOfTheMilitaryAcademyForGenerals: [X,X,X,X,X],
+MaximumLevelOfTheMilitaryAcademy: [X,X,X,X,X],
+MaximumLevelOfTheSupremeCourt: [X,X,X,X,X],
+MaximumLevelOfCapitalCity: [X,X,X,X,X],
+
+AggressiveExpansion: [X,X,X,X,X],
+DiseaseDeathRate: [X,X,X,X,X],
+
+AdvisorCost: [X,X,X,X,X],
+GeneralCost: [X,X,X,X,X],
+
+BattleWidth: [X,X,X,X,X],
+Discipline: [X,X,X,X,X],
+
+ManpowerRecoveryFromADisbandedArmy: [X,X,X,X,X],
+MaximumAmountOfGold: [X,X,X,X,X],
+MaximumAmountOfGold_Percentage: [X,X,X,X,X],
+
+Loot: [X,X,X,X,X],
+
+AllCharactersLifeExpectancy: [X,X,X,X,X],
+RegimentsLimit: [X,X,X,X,X],
+
+UnlocksColonization: [X,X,X,X,X],
+
+
+
+
+Adding new images of legacy GROUP: Example: 36.png (It must be the next number of the last image)
+Add new image in folders:
+
+game/laws/lawsImages/H/
+game/laws/lawsImages/XH/
+game/laws/lawsImages/XXH/
+
+Don't forget to increase the total number of images in the file:
+game/laws/lawsImages/numOfImages.txt

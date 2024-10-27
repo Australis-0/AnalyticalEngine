@@ -1,0 +1,13 @@
+[
+{
+	Name: "Vilho Nenonen",
+	ImageID: Nenonen,
+	
+	BornDay: 6,
+	BornMonth: 3,
+	BornYear: 1883,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

@@ -1,0 +1,456 @@
+{
+	"Rulers": [
+		{
+			"Name": "George Washington",
+			"ImageID": 10,
+			
+			"BornDay": 22,
+			"BornMonth": 2,
+			"BornYear": 1732,
+			
+			"ReignYear": 1789
+		},
+		{
+			"Name": "John Adams",
+			"ImageID": -1,
+			
+			"BornDay": 30,
+			"BornMonth": 10,
+			"BornYear": 1735,
+			
+			"ReignYear": 1797
+		},
+		{
+			"Name": "Thomas Jefferson",
+			"ImageID": -1,
+			
+			"BornDay": 13,
+			"BornMonth": 4,
+			"BornYear": 1743,
+			
+			"ReignYear": 1801
+		},
+		{
+			"Name": "James Madison",
+			"ImageID": -1,
+			
+			"BornDay": 16,
+			"BornMonth": 3,
+			"BornYear": 1751,
+			
+			"ReignYear": 1809
+		},
+		{
+			"Name": "James Monroe",
+			"ImageID": -1,
+			
+			"BornDay": 28,
+			"BornMonth": 4,
+			"BornYear": 1758,
+			
+			"ReignYear": 1817
+		},
+		{
+			"Name": "John Quincy Adams",
+			"ImageID": -1,
+			
+			"BornDay": 11,
+			"BornMonth": 7,
+			"BornYear": 1767,
+			
+			"ReignYear": 1825
+		},
+		{
+			"Name": "Andrew Jackson",
+			"ImageID": 240,
+			
+			"BornDay": 15,
+			"BornMonth": 3,
+			"BornYear": 1767,
+			
+			"ReignYear": 1829
+		},
+		{
+			"Name": "Martin Van Buren",
+			"ImageID": 241,
+			
+			"BornDay": 5,
+			"BornMonth": 12,
+			"BornYear": 1782,
+			
+			"ReignYear": 1837
+		},
+		{
+			"Name": "William Henry Harrison",
+			"ImageID": -1,
+			
+			"BornDay": 9,
+			"BornMonth": 2,
+			"BornYear": 1773,
+			
+			"ReignYear": 1841
+		},
+		{
+			"Name": "John Tyler",
+			"ImageID": -1,
+			
+			"BornDay": 29,
+			"BornMonth": 3,
+			"BornYear": 1790,
+			
+			"ReignYear": 1841
+		},
+		{
+			"Name": "James K. Polk",
+			"ImageID": -1,
+			
+			"BornDay": 2,
+			"BornMonth": 11,
+			"BornYear": 1795,
+			
+			"ReignYear": 1845
+		},
+		{
+			"Name": "Zachary Taylor",
+			"ImageID": -1,
+			
+			"BornDay": 24,
+			"BornMonth": 11,
+			"BornYear": 1784,
+			
+			"ReignYear": 1849
+		},
+		{
+			"Name": "Millard Fillmore",
+			"ImageID": -1,
+			
+			"BornDay": 7,
+			"BornMonth": 1,
+			"BornYear": 1800,
+			
+			"ReignYear": 1850
+		},
+		{
+			"Name": "Franklin Pierce",
+			"ImageID": -1,
+			
+			"BornDay": 23,
+			"BornMonth": 11,
+			"BornYear": 1804,
+			
+			"ReignYear": 1853
+		},
+		{
+			"Name": "James Buchanan",
+			"ImageID": -1,
+			
+			"BornDay": 23,
+			"BornMonth": 4,
+			"BornYear": 1791,
+			
+			"ReignYear": 1857
+		},
+		{
+			"Name": "Abraham Lincoln",
+			"ImageID": -1,
+			
+			"BornDay": 12,
+			"BornMonth": 2,
+			"BornYear": 1809,
+			
+			"ReignYear": 1861
+		},
+		{
+			"Name": "Andrew Johnson",
+			"ImageID": -1,
+			
+			"BornDay": 29,
+			"BornMonth": 12,
+			"BornYear": 1808,
+			
+			"ReignYear": 1865
+		},
+		{
+			"Name": "Ulysses S. Grant",
+			"ImageID": -1,
+			
+			"BornDay": 27,
+			"BornMonth": 4,
+			"BornYear": 1822,
+			
+			"ReignYear": 1869
+		},
+		{
+			"Name": "Rutherford B. Hayes",
+			"ImageID": -1,
+			
+			"BornDay": 4,
+			"BornMonth": 10,
+			"BornYear": 1822,
+			
+			"ReignYear": 1877
+		},
+		{
+			"Name": "James A. Garfield",
+			"ImageID": 239,
+			
+			"BornDay": 19,
+			"BornMonth": 11,
+			"BornYear": 1831,
+			
+			"ReignYear": 1881
+		},
+		{
+			"Name": "Chester A. Arthur",
+			"ImageID": -1,
+			
+			"BornDay": 5,
+			"BornMonth": 10,
+			"BornYear": 1829,
+			
+			"ReignYear": 1881
+		},
+		{
+			"Name": "Grover Cleveland",
+			"ImageID": -1,
+			
+			"BornDay": 18,
+			"BornMonth": 3,
+			"BornYear": 1837,
+			
+			"ReignYear": 1885
+		},
+		{
+			"Name": "Benjamin Harrison",
+			"ImageID": -1,
+			
+			"BornDay": 20,
+			"BornMonth": 8,
+			"BornYear": 1833,
+			
+			"ReignYear": 1889
+		},
+		{
+			"Name": "William McKinley",
+			"ImageID": -1,
+			
+			"BornDay": 29,
+			"BornMonth": 1,
+			"BornYear": 1843,
+			
+			"ReignYear": 1897
+		},
+		{
+			"Name": "Theodore Roosevelt",
+			"ImageID": 238,
+			
+			"BornDay": 27,
+			"BornMonth": 10,
+			"BornYear": 1858,
+			
+			"ReignYear": 1901
+		},
+		{
+			"Name": "William Howard Taft",
+			"ImageID": -1,
+			
+			"BornDay": 15,
+			"BornMonth": 9,
+			"BornYear": 1857,
+			
+			"ReignYear": 1909
+		},
+		{
+			"Name": "Woodrow Wilson",
+			"ImageID": 237,
+			
+			"BornDay": 28,
+			"BornMonth": 12,
+			"BornYear": 1856,
+			
+			"ReignYear": 1913
+		},
+		{
+			"Name": "Warren G. Harding",
+			"ImageID": -1,
+			
+			"BornDay": 2,
+			"BornMonth": 11,
+			"BornYear": 1865,
+			
+			"ReignYear": 1921
+		},
+		{
+			"Name": "Calvin Coolidge",
+			"ImageID": -1,
+			
+			"BornDay": 4,
+			"BornMonth": 7,
+			"BornYear": 1872,
+			
+			"ReignYear": 1923
+		},
+		{
+			"Name": "Herbert Hoover",
+			"ImageID": -1,
+			
+			"BornDay": 10,
+			"BornMonth": 8,
+			"BornYear": 1874,
+			
+			"ReignYear": 1929
+		},
+		{
+			"Name": "Franklin Delano Roosevelt",
+			"ImageID": 235,
+			
+			"BornDay": 30,
+			"BornMonth": 1,
+			"BornYear": 1882,
+			
+			"ReignYear": 1933
+		},
+		{
+			"Name": "Harry S. Truman",
+			"ImageID": 236,
+			
+			"BornDay": 8,
+			"BornMonth": 5,
+			"BornYear": 1884,
+			
+			"ReignYear": 1945
+		},
+		{
+			"Name": "Dwight D. Eisenhower",
+			"ImageID": -1,
+			
+			"BornDay": 14,
+			"BornMonth": 10,
+			"BornYear": 1890,
+			
+			"ReignYear": 1953
+		},
+		{
+			"Name": "John F. Kennedy",
+			"ImageID": -1,
+			
+			"BornDay": 29,
+			"BornMonth": 5,
+			"BornYear": 1917,
+			
+			"ReignYear": 1961
+		},
+		{
+			"Name": "Lyndon B. Johnson",
+			"ImageID": -1,
+			
+			"BornDay": 27,
+			"BornMonth": 8,
+			"BornYear": 1908,
+			
+			"ReignYear": 1963
+		},
+		{
+			"Name": "Richard Nixon",
+			"ImageID": -1,
+			
+			"BornDay": 9,
+			"BornMonth": 1,
+			"BornYear": 1913,
+			
+			"ReignYear": 1969
+		},
+		{
+			"Name": "Gerald Ford",
+			"ImageID": -1,
+			
+			"BornDay": 14,
+			"BornMonth": 7,
+			"BornYear": 1913,
+			
+			"ReignYear": 1974
+		},
+		{
+			"Name": "Jimmy Carter",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 10,
+			"BornYear": 1924,
+			
+			"ReignYear": 1977
+		},
+		{
+			"Name": "Ronald Reagan",
+			"ImageID": -1,
+			
+			"BornDay": 6,
+			"BornMonth": 2,
+			"BornYear": 1911,
+			
+			"ReignYear": 1981
+		},
+		{
+			"Name": "George H. W. Bush",
+			"ImageID": -1,
+			
+			"BornDay": 12,
+			"BornMonth": 6,
+			"BornYear": 1924,
+			
+			"ReignYear": 1989
+		},
+		{
+			"Name": "Bill Clinton",
+			"ImageID": -1,
+			
+			"BornDay": 19,
+			"BornMonth": 8,
+			"BornYear": 1946,
+			
+			"ReignYear": 1993
+		},
+		{
+			"Name": "George W. Bush",
+			"ImageID": -1,
+			
+			"BornDay": 6,
+			"BornMonth": 7,
+			"BornYear": 1946,
+			
+			"ReignYear": 2001
+		},
+		{
+			"Name": "Barack Obama",
+			"ImageID": -1,
+			
+			"BornDay": 4,
+			"BornMonth": 8,
+			"BornYear": 1961,
+			
+			"ReignYear": 2009
+		},
+		{
+			"Name": "Donald Trump",
+			"ImageID": -1,
+			
+			"BornDay": 14,
+			"BornMonth": 6,
+			"BornYear": 1946,
+			
+			"ReignYear": 2017
+		},
+		{
+			"Name": "Joe Biden",
+			"ImageID": 210,
+			
+			"BornDay": 20,
+			"BornMonth": 11,
+			"BornYear": 1942,
+			
+			"ReignYear": 2021
+		}
+	],
+	
+	"Age_of_History": "Rulers"
+}

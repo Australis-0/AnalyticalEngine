@@ -1,0 +1,13 @@
+[
+{
+	Name: "Romuald Traugutt",
+	ImageID: Traugutt,
+	
+	BornDay: 16,
+	BornMonth: 1,
+	BornYear: 1826,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

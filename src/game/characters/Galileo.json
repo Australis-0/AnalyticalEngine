@@ -1,0 +1,13 @@
+[
+{
+	Name: "Galileo Galilei",
+	ImageID: Galileo,
+	
+	BornDay: 15,
+	BornMonth: 2,
+	BornYear: 1564,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

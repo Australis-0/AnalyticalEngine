@@ -1,0 +1,13 @@
+[
+{
+	Name: "Etienne Macdonald",
+	ImageID: Macdonald,
+	
+	BornDay: 17,
+	BornMonth: 11,
+	BornYear: 1765,
+	
+	Attack: 6,
+	Defense: 6,
+},
+]

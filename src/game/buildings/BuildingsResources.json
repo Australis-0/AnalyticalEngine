@@ -1,0 +1,1097 @@
+{
+	Buildings:
+	[	
+		{
+			Name: ["GrainFarm"],
+			ImageID: [26],
+			GroupID: 2,
+			
+			CostGold: [75],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [365],
+			ProductionEfficiency: [50],
+			IncomeProduction: [10],
+			
+			LocalGrowthRate: [6],
+			IncreaseGrowthRateCost: [-0.05],
+			Economy: [2.2],
+			
+			RequiredResource: 0,
+			
+			RequiredTechID: [4],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		{
+			Name: ["RiceFarm"],
+			ImageID: [27],
+			GroupID: 2,
+			
+			CostGold: [75],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [365],
+			ProductionEfficiency: [50],
+			IncomeProduction: [10],
+			
+			LocalGrowthRate: [6],
+			IncreaseGrowthRateCost: [-0.05],
+			Economy: [2.2],
+			
+			RequiredResource: 1,
+			
+			RequiredTechID: [4],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		
+		{
+			Name: ["Fishery"],
+			ImageID: [6],
+			GroupID: 2,
+			
+			CostGold: [75],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [365],
+			ProductionEfficiency: [50],
+			IncomeProduction: [10],
+			
+			LocalGrowthRate: [4],
+			Economy: [3.6],
+			IncreaseGrowthRateCost: [-0.05],
+			
+			RequiredResource: 2,
+			
+			RequiredTechID: [3],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		{
+			Name: ["Ranch"],
+			ImageID: [25],
+			GroupID: 2,
+			
+			CostGold: [75],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [365],
+			ProductionEfficiency: [50],
+			IncomeProduction: [10],
+			
+			LocalGrowthRate: [3],
+			MaximumManpower: [50],
+			IncreaseGrowthRateCost: [-0.05],
+			Economy: [2.6],
+			
+			RequiredResource: 3,
+			
+			RequiredTechID: [12],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		{
+			Name: ["CropFarm"],
+			ImageID: [28],
+			GroupID: 2,
+			
+			CostGold: [75],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [365],
+			ProductionEfficiency: [50],
+			IncomeProduction: [10],
+			
+			LocalGrowthRate: [4],
+			Economy: [2.3],
+			IncreaseGrowthRateCost: [-0.05],
+			
+			RequiredResource: 4,
+			
+			RequiredTechID: [4],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		
+		{
+			Name: ["SpicePlantation"],
+			ImageID: [29],
+			GroupID: 2,
+			
+			CostGold: [75],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [365],
+			ProductionEfficiency: [50],
+			IncomeProduction: [10],
+			
+			LocalGrowthRate: [2],
+			MonthlyLegacy: [0.1],
+			IncreaseGrowthRateCost: [-0.05],
+			Economy: [3.1],
+			
+			RequiredResource: 5,
+			
+			RequiredTechID: [30],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		
+		{
+			Name: ["HuntingGround"],
+			ImageID: [30],
+			GroupID: 2,
+			
+			CostGold: [75],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [365],
+			ProductionEfficiency: [50],
+			IncomeProduction: [10],
+			
+			LocalGrowthRate: [2],
+			Economy: [3.5],
+			
+			RequiredResource: 6,
+			
+			RequiredTechID: [5],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		{
+			Name: ["Vineyard"],
+			ImageID: [31],
+			GroupID: 2,
+			
+			CostGold: [75],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [365],
+			ProductionEfficiency: [50],
+			IncomeProduction: [10],
+			
+			LocalGrowthRate: [3],
+			MonthlyLegacy: [0.05],
+			IncreaseTaxEfficiencyCost: [-0.05],
+			Economy: [2.8],
+			
+			RequiredResource: 7,
+			
+			RequiredTechID: [14],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		{
+			Name: ["CoffeePlantation"],
+			ImageID: [32],
+			GroupID: 2,
+			
+			CostGold: [75],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [365],
+			ProductionEfficiency: [50],
+			IncomeProduction: [10],
+			
+			LocalGrowthRate: [3],
+			LocalTaxEfficiency: [6.0],
+			Economy: [3.1],
+			
+			RequiredResource: 8,
+			
+			RequiredTechID: [30],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		{
+			Name: ["CocoaPlantation"],
+			ImageID: [33],
+			GroupID: 2,
+			
+			CostGold: [75],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [365],
+			ProductionEfficiency: [50],
+			IncomeProduction: [10],
+			
+			LocalGrowthRate: [3],
+			ResearchPoints: [0.1],
+			Economy: [3.1],
+			
+			RequiredResource: 9,
+			
+			RequiredTechID: [41],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		{
+			Name: ["TeaPlantation"],
+			ImageID: [34],
+			GroupID: 2,
+			
+			CostGold: [75],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [365],
+			ProductionEfficiency: [50],
+			IncomeProduction: [10],
+			
+			LocalGrowthRate: [3],
+			InvestInEconomyCost: [-0.04],
+			Economy: [2.8],
+			
+			RequiredResource: 10,
+			
+			RequiredTechID: [30],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		{
+			Name: ["SugarPlantation"],
+			ImageID: [35],
+			GroupID: 2,
+			
+			CostGold: [75],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [365],
+			ProductionEfficiency: [50],
+			IncomeProduction: [10],
+			
+			LocalGrowthRate: [2],
+			Economy: [3.9],
+			InvestInEconomyCost: [-0.05],
+			
+			RequiredResource: 11,
+			
+			RequiredTechID: [28],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		{
+			Name: ["SaltMine"],
+			ImageID: [37],
+			GroupID: 2,
+			
+			CostGold: [75],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [365],
+			ProductionEfficiency: [50],
+			IncomeProduction: [10],
+			
+			LocalGrowthRate: [2],
+			Economy: [4.2],
+			InvestInEconomyCost: [-0.05],
+			
+			RequiredResource: 12,
+			
+			RequiredTechID: [19],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		{
+			Name: ["TobaccoPlantation"],
+			ImageID: [38],
+			GroupID: 2,
+			
+			CostGold: [75],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [365],
+			ProductionEfficiency: [50],
+			IncomeProduction: [10],
+			
+			Economy: [3.2],
+			LocalGrowthRate: [2],
+			IncreaseManpowerCost: [-0.05],
+			
+			RequiredResource: 13,
+			
+			RequiredTechID: [31],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		{
+			Name: ["SheepFarm"],
+			ImageID: [39],
+			GroupID: 2,
+			
+			CostGold: [75],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [365],
+			ProductionEfficiency: [50],
+			IncomeProduction: [10],
+			
+			IncreaseGrowthRateCost: [-0.04],
+			LocalGrowthRate: [4],
+			IncreaseManpowerCost: [-0.05],
+			Economy: [2.8],
+			
+			RequiredResource: 14,
+			
+			RequiredTechID: [7],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		{
+			Name: ["CottonPlantation"],
+			ImageID: [40],
+			GroupID: 2,
+			
+			CostGold: [75],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [365],
+			ProductionEfficiency: [50],
+			IncomeProduction: [10],
+			
+			Economy: [3.6],
+			LocalGrowthRate: [2],
+			IncreaseManpowerCost: [-0.05],
+			
+			RequiredResource: 15,
+			
+			RequiredTechID: [37],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		{
+			Name: ["DyePlantation"],
+			ImageID: [41],
+			GroupID: 2,
+			
+			CostGold: [75],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [365],
+			ProductionEfficiency: [50],
+			IncomeProduction: [10],
+			
+			Economy: [3.8],
+			LocalGrowthRate: [3],
+			IncreaseGrowthRateCost: [-0.05],
+			
+			RequiredResource: 16,
+			
+			RequiredTechID: [36],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		{
+			Name: ["SilkPlantation"],
+			ImageID: [42],
+			GroupID: 2,
+			
+			CostGold: [75],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [365],
+			ProductionEfficiency: [50],
+			IncomeProduction: [10],
+			
+			Economy: [3.8],
+			LocalGrowthRate: [3],
+			IncreaseGrowthRateCost: [-0.05],
+			
+			RequiredResource: 17,
+			
+			RequiredTechID: [32],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		
+		{
+			Name: ["LoggingCamp"],
+			ImageID: [22],
+			GroupID: 2,
+			
+			CostGold: [75],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [365],
+			ProductionEfficiency: [50],
+			IncomeProduction: [10],
+			
+			ConstructionCost: [-0.1],
+			InvestInEconomyCost: [-0.05],
+			Economy: [3.8],
+			
+			RequiredResource: 18,
+			
+			RequiredTechID: [9],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		
+		
+		{
+			Name: ["Mine"],
+			ImageID: [36],
+			GroupID: 2,
+			
+			CostGold: [75],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [365],
+			ProductionEfficiency: [50],
+			IncomeProduction: [10],
+			
+			RequiredResource: 19,
+			
+			Economy: [4.3],
+			InvestInEconomyCost: [-0.05],
+			
+			RequiredTechID: [19],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		{
+			Name: ["Mine"],
+			ImageID: [36],
+			GroupID: 2,
+			
+			CostGold: [75],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [365],
+			ProductionEfficiency: [50],
+			IncomeProduction: [10],
+			
+			RequiredResource: 20,
+			
+			Economy: [4.4],
+			InvestInEconomyCost: [-0.05],
+			
+			RequiredTechID: [19],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		{
+			Name: ["SilverMine"],
+			ImageID: [24],
+			GroupID: 2,
+			
+			CostGold: [75],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [365],
+			ProductionEfficiency: [50],
+			IncomeProduction: [10],
+			
+			RequiredResource: 21,
+			
+			MonthlyIncome: [0.2],
+			Economy: [4.6],
+			
+			RequiredTechID: [19],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		{
+			Name: ["GoldMine"],
+			ImageID: [23],
+			GroupID: 2,
+			
+			CostGold: [75],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [365],
+			ProductionEfficiency: [50],
+			IncomeProduction: [10],
+			
+			RequiredResource: 22,
+			
+			MonthlyIncome: [0.35],
+			Economy: [4.8],
+			
+			RequiredTechID: [19],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		
+		
+		{
+			Name: ["Ivory"],
+			ImageID: [43],
+			GroupID: 2,
+			
+			CostGold: [75],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [365],
+			ProductionEfficiency: [50],
+			IncomeProduction: [10],
+			
+			RequiredResource: 23,
+			
+			Economy: [3.6],
+			MonthlyLegacy: [0.15],
+			IncreaseGrowthRateCost: [-0.05],
+			
+			RequiredTechID: [24],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		
+		{
+			Name: ["DiamondMine"],
+			ImageID: [44],
+			GroupID: 2,
+			
+			CostGold: [75],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [365],
+			ProductionEfficiency: [50],
+			IncomeProduction: [10],
+			
+			RequiredResource: 24,
+			
+			MonthlyIncome: [0.2],
+			Economy: [3.9],
+			MonthlyLegacy: [0.1],
+			
+			RequiredTechID: [42],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		{
+			Name: ["Mine"],
+			ImageID: [36],
+			GroupID: 2,
+			
+			CostGold: [75],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [365],
+			ProductionEfficiency: [50],
+			IncomeProduction: [10],
+			
+			RequiredResource: 25,
+			
+			Economy: [4.1],
+			InvestInEconomyCost: [-0.05],
+			
+			RequiredTechID: [75],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		{
+			Name: ["OilRig"],
+			ImageID: [45],
+			GroupID: 2,
+			
+			CostGold: [75],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [365],
+			ProductionEfficiency: [50],
+			IncomeProduction: [10],
+			
+			RequiredResource: 26,
+			
+			MonthlyIncome: [0.2],
+			Economy: [6.4],
+			
+			RequiredTechID: [60],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		{
+			Name: ["Mine"],
+			ImageID: [44],
+			GroupID: 2,
+			
+			CostGold: [75],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [365],
+			ProductionEfficiency: [50],
+			IncomeProduction: [10],
+			
+			RequiredResource: 27,
+			
+			Economy: [4.4],
+			InvestInEconomyCost: [-0.05],
+			
+			RequiredTechID: [75],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		
+		{
+			Name: ["MarbleQuarry"],
+			ImageID: [46],
+			GroupID: 2,
+			
+			CostGold: [75],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [365],
+			ProductionEfficiency: [50],
+			IncomeProduction: [10],
+			
+			RequiredResource: 28,
+			
+			MonthlyIncome: [0.1],
+			MonthlyLegacy: [0.15],
+			Economy: [4.6],
+			
+			RequiredTechID: [24],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		
+		{
+			Name: ["PorcelainWorkshop"],
+			ImageID: [47],
+			GroupID: 2,
+			
+			CostGold: [75],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [365],
+			ProductionEfficiency: [50],
+			IncomeProduction: [10],
+			
+			RequiredResource: 29,
+			
+			MonthlyIncome: [0.1],
+			Economy: [3.8],
+			IncreaseTaxEfficiencyCost: [-0.05],
+			
+			RequiredTechID: [18],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		
+		{
+			Name: ["OpiumPlantation"],
+			ImageID: [48],
+			GroupID: 2,
+			
+			CostGold: [75],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [365],
+			ProductionEfficiency: [50],
+			IncomeProduction: [10],
+			
+			LocalGrowthRate: [1],
+			Economy: [3.7],
+			IncreaseManpowerCost: [-0.05],
+			
+			RequiredResource: 30,
+			
+			RequiredTechID: [42],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		{
+			Name: ["FurnitureWorkshop"],
+			ImageID: [49],
+			GroupID: 2,
+			
+			CostGold: [75],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [365],
+			ProductionEfficiency: [50],
+			IncomeProduction: [10],
+			
+			RequiredResource: 31,
+			
+			MonthlyIncome: [0.1],
+			Economy: [4.5],
+			MaxInfrastructure: [2],
+			InvestInEconomyCost: [-0.05],
+			
+			RequiredTechID: [36],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		
+		{
+			Name: ["LoggingCamp"],
+			ImageID: [50],
+			GroupID: 2,
+			
+			CostGold: [75],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [365],
+			ProductionEfficiency: [50],
+			IncomeProduction: [10],
+			
+			RequiredResource: 32,
+			
+			ConstructionCost: [-0.1],
+			MonthlyIncome: [0.1],
+			Economy: [4.3],
+			
+			RequiredTechID: [9],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		{
+			Name: ["PaperMill"],
+			ImageID: [51],
+			GroupID: 2,
+			
+			CostGold: [75],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [365],
+			ProductionEfficiency: [50],
+			IncomeProduction: [10],
+			
+			RequiredResource: 33,
+			
+			MonthlyIncome: [0.1],
+			Economy: [4.4],
+			MonthlyLegacy: [0.1],
+			DevelopInfrastructureCost: [-0.05],
+			IncreaseTaxEfficiencyCost: [-0.05],
+			
+			RequiredTechID: [22],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		{
+			Name: ["TextileMill"],
+			ImageID: [52],
+			GroupID: 2,
+			
+			CostGold: [75],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [365],
+			ProductionEfficiency: [50],
+			IncomeProduction: [10],
+			
+			RequiredResource: 34,
+			
+			MonthlyIncome: [0.1],
+			Economy: [4.9],
+			IncreaseGrowthRateCost: [-0.05],
+			
+			RequiredTechID: [32],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		{
+			Name: ["Mine"],
+			ImageID: [44],
+			GroupID: 2,
+			
+			CostGold: [75],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [365],
+			ProductionEfficiency: [50],
+			IncomeProduction: [10],
+			
+			RequiredResource: 35,
+			
+			Economy: [4.3],
+			InvestInEconomyCost: [-0.05],
+			
+			RequiredTechID: [60],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		{
+			Name: ["SteelMill"],
+			ImageID: [53],
+			GroupID: 2,
+			
+			CostGold: [75],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [365],
+			ProductionEfficiency: [50],
+			IncomeProduction: [10],
+			
+			RequiredResource: 36,
+			
+			MonthlyIncome: [0.1],
+			Economy: [5.9],
+			InvestInEconomyCost: [-0.075],
+			
+			RequiredTechID: [60],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		
+		
+		{
+			Name: ["VanillaPlantation"],
+			ImageID: [54],
+			GroupID: 2,
+			
+			CostGold: [75],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [365],
+			ProductionEfficiency: [50],
+			IncomeProduction: [10],
+			
+			Economy: [3.8],
+			LocalGrowthRate: [3],
+			IncreaseTaxEfficiencyCost: [-0.05],
+			
+			RequiredResource: 37,
+			
+			RequiredTechID: [42],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		{
+			Name: ["CinnamonPlantation"],
+			ImageID: [55],
+			GroupID: 2,
+			
+			CostGold: [75],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [365],
+			ProductionEfficiency: [50],
+			IncomeProduction: [10],
+			
+			Economy: [3.6],
+			LocalGrowthRate: [2],
+			IncreaseTaxEfficiencyCost: [-0.05],
+			
+			RequiredResource: 38,
+			
+			RequiredTechID: [42],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		{
+			Name: ["SaffronFarm"],
+			ImageID: [56],
+			GroupID: 2,
+			
+			CostGold: [75],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [365],
+			ProductionEfficiency: [50],
+			IncomeProduction: [10],
+			
+			
+			MonthlyIncome: [0.3],
+			LocalGrowthRate: [2],
+			Economy: [3.4],
+			DiseaseDeathRate: [-0.1],
+			
+			RequiredResource: 39,
+			
+			RequiredTechID: [45],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		{
+			Name: ["TomatoPlantation"],
+			ImageID: [57],
+			GroupID: 2,
+			
+			CostGold: [75],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [365],
+			ProductionEfficiency: [50],
+			IncomeProduction: [10],
+			
+			Economy: [3.2],
+			LocalGrowthRate: [4],
+			
+			RequiredResource: 40,
+			
+			RequiredTechID: [44],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		{
+			Name: ["BananaPlantation"],
+			ImageID: [58],
+			GroupID: 2,
+			
+			CostGold: [75],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [365],
+			ProductionEfficiency: [50],
+			IncomeProduction: [10],
+			
+			Economy: [3.5],
+			LocalGrowthRate: [3],
+			
+			RequiredResource: 41,
+			
+			RequiredTechID: [44],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		
+		{
+			Name: ["Glassworks"],
+			ImageID: [59],
+			GroupID: 2,
+			
+			CostGold: [75],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [365],
+			ProductionEfficiency: [50],
+			IncomeProduction: [10],
+			
+			Economy: [4.8],
+			MonthlyIncome: [0.15],
+			LocalTaxEfficiency: [2.2],
+			
+			RequiredResource: 42,
+			
+			RequiredTechID: [23],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		{
+			Name: ["HopPlantation"],
+			ImageID: [60],
+			GroupID: 2,
+			
+			CostGold: [75],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [365],
+			ProductionEfficiency: [50],
+			IncomeProduction: [10],
+			
+			Economy: [3.6],
+			LocalGrowthRate: [3],
+			
+			RequiredResource: 43,
+			
+			RequiredTechID: [29],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		{
+			Name: ["Brewery"],
+			ImageID: [61],
+			GroupID: 2,
+			
+			CostGold: [75],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [365],
+			ProductionEfficiency: [50],
+			IncomeProduction: [10],
+			
+			Economy: [4.1],
+			MaximumManpower: [100],
+			IncreaseManpowerCost: [-0.05],
+			
+			RequiredResource: 44,
+			
+			RequiredTechID: [29],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		{
+			Name: ["Creamery"],
+			ImageID: [62],
+			GroupID: 2,
+			
+			CostGold: [75],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [365],
+			ProductionEfficiency: [50],
+			IncomeProduction: [10],
+			
+			Economy: [3.4],
+			MonthlyIncome: [0.1],
+			
+			RequiredResource: 45,
+			
+			RequiredTechID: [36],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		{
+			Name: ["LimeFarm"],
+			ImageID: [63],
+			GroupID: 2,
+			
+			CostGold: [75],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [365],
+			ProductionEfficiency: [50],
+			IncomeProduction: [10],
+			
+			Economy: [3.2],
+			LocalGrowthRate: [3],
+			
+			RequiredResource: 46,
+			
+			RequiredTechID: [45],
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		{
+			Name: ["OliveFarm"],
+			ImageID: [92],
+			GroupID: 2,
+			
+			CostGold: [75],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [365],
+			ProductionEfficiency: [50],
+			IncomeProduction: [10],
+			
+			Economy: [3.4],
+			LocalGrowthRate: [3],
+			MonthlyLegacy: [0.05],
+			
+			RequiredResource: 47,
+			
+			RequiredTechID: [4],
+			
+
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+		{
+			Name: ["Dates"],
+			ImageID: [93],
+			GroupID: 2,
+			
+			CostGold: [75],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [365],
+			ProductionEfficiency: [50],
+			IncomeProduction: [10],
+			
+			Economy: [3.4],
+			LocalGrowthRate: [4],
+			IncreaseTaxEfficiencyCost: [-0.05],
+			
+			RequiredResource: 48,
+			
+			RequiredTechID: [45],
+			
+
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+	],
+	Age_of_History: Buildings
+}

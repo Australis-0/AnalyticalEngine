@@ -1,0 +1,72 @@
+#######################################
+## Read: mods_steam_workshop.txt !
+## 
+## To create a new mod for submission to the Steam Workshop, first create a new folder for your mod within the 'mods' directory.
+## Then, copy or recreate all the modified files into that folder!
+##
+## For example, if a file was originally located in game/ExampleFile.json, 
+## it should be placed in mods/YourModName/game/ExampleFile.json in your mod's folder.
+##
+#####
+
+For your mod the path will be:
+mods/YOUR_MOD_NAME/map/YOUR_MAP/
+
+#####
+
+An additional map background can be displayed in the game when the map is zoomed out.
+
+Mod example:
+https://steamcommunity.com/sharedfiles/filedetails/?id=3350400564
+https://www.youtube.com/watch?v=jgLgAXY1Wzo
+
+
+How to add it:
+Go to config file of your map
+
+map/THE_MAP/Config.json
+mods/YOUR_MOD_NAME/map/YOUR_MAP/Config.json
+
+
+Inside the file, you can find:
+
+#############
+
+	BackgroundZoomOut_Enable: false,
+	BackgroundZoomOut_Size_X: 4,
+	BackgroundZoomOut_Size_Y: 2,
+	BackgroundZoomOut_Scale: 0.13,
+
+#############
+
+
+BackgroundZoomOut_Enable: true,
+## Set BackgroundZoomOut_Enable: true to enable the zoom-out background.
+
+BackgroundZoomOut_Scale: 0.13,
+## This defines the scale at which the game switches from the main map background to the zoomed-out background.
+## The value should range from 0.99 to as low as 0.1 (depending on the map!).
+
+BackgroundZoomOut_Size_X: 4,
+BackgroundZoomOut_Size_Y: 2,
+
+It works the same as the main map bakcgroudn.
+
+For the main map background in the config file I have used:
+
+BackgroundSize_X: 8,
+BackgroundSize_Y: 4,
+
+The numbers may differ, but you can use the same X and Y values as those used for the main map background.
+
+In this case, I used 4 and 2 instead of 8 and 4, like in the main map background, to reduce loading data.
+The game automatically scales the zoomed-out background to match the scale of the main background.
+
+## Important!
+I recommend using the same X and Y values, as well as the same image sizes for the background, to make it easier for you!
+
+##########
+
+The zoom-out background images are placed in the following path:
+map/THE_MAP/background/zoomOut/
+mods/YOUR_MOD_NAME/map/YOUR_MAP/background/zoomOut/

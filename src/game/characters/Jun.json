@@ -1,0 +1,13 @@
+[
+{
+	Name: "Zhang Jun",
+	ImageID: "Jun",
+	
+	BornDay: 10,
+	BornMonth: 5,
+	BornYear: 1956,
+	
+	Attack: -1,
+	Defense: -1,
+}
+]

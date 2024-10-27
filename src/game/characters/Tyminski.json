@@ -1,0 +1,13 @@
+[
+{
+	Name: "Stanisław Tymiński",
+	ImageID: Tyminski,
+	
+	BornDay: 27,
+	BornMonth: 1,
+	BornYear: 1948,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

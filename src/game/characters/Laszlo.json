@@ -1,0 +1,13 @@
+[
+{
+	Name: "Dezső László",
+	ImageID: Laszlo,
+	
+	BornDay: 23,
+	BornMonth: 7,
+	BornYear: 1894,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

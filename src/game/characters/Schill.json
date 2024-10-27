@@ -1,0 +1,13 @@
+[
+{
+	Name: "Pierre Schill",
+	ImageID: Schill,
+	
+	BornDay: 10,
+	BornMonth: 9,
+	BornYear: 1967,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

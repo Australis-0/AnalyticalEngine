@@ -1,0 +1,13 @@
+[
+{
+	Name: "Denys Shmyhal",
+	ImageID: Shmyhal,
+	
+	BornDay: 15,
+	BornMonth: 10,
+	BornYear: 1975,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

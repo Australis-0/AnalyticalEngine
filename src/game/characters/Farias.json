@@ -1,0 +1,13 @@
+[
+{
+	Name: "Valentín Gómez Farías",
+	ImageID: Farias,
+	
+	BornDay: 14,
+	BornMonth: 2,
+	BornYear: 1781,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Teresa Czerwińska",
+	ImageID: Czerwinska,
+	
+	BornDay: 7,
+	BornMonth: 9,
+	BornYear: 1974,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

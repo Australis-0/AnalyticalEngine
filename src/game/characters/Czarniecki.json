@@ -1,0 +1,13 @@
+[
+{
+	Name: "Stefan Czarniecki",
+	ImageID: Czarniecki,
+	
+	BornDay: 12,
+	BornMonth: 10,
+	BornYear: 1599,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

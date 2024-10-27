@@ -1,0 +1,13 @@
+[
+{
+	Name: "Karl Lennart Oesch",
+	ImageID: Oesch,
+	
+	BornDay: 8,
+	BornMonth: 8,
+	BornYear: 1892,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

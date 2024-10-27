@@ -1,0 +1,13 @@
+[
+{
+	Name: "Rodolph Lambart",
+	ImageID: Lambart,
+	
+	BornDay: 16,
+	BornMonth: 10,
+	BornYear: 1865,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

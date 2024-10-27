@@ -1,0 +1,8 @@
+{
+	Name: "This mod add new events for the Game!",
+	Description: "This mod add new events in the game!",
+	
+	Tags: [ "Events" ],
+	
+	ChangeNote: "First release",
+}

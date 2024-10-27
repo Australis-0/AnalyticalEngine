@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Emomali Rahmon",
+			ImageID: 197,
+			
+			BornDay: 5,
+			BornMonth: 9,
+			BornYear: 1952,
+			
+			ReignYear: 1994,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

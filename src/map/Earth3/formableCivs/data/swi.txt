@@ -1,0 +1,17 @@
+{
+FormableCivTag: "swi",
+ClaimantsTag: [
+	"gen",
+	"gruy3",
+	"base3",
+	"zuri3",
+	"gall3",
+	"togg3",
+	"chur3",
+	"ten3",
+	"neuh3",
+	"vadu3"
+],
+Provinces: [ 310, 311, 3599, 309, 308, 301, 3600, 3601, 302, 6494, 303, 3602, 312, 7220, 304, 7419, 306, 7420, 305, 6508, 6879, 331, 330, 8053 ],
+CapitalProvinceID: 310
+}

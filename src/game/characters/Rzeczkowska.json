@@ -1,0 +1,13 @@
+[
+{
+	Name: "Magdalena Rzeczkowska",
+	ImageID: Rzeczkowska,
+	
+	BornDay: 22,
+	BornMonth: 4,
+	BornYear: 1974,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

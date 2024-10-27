@@ -1,0 +1,13 @@
+[
+{
+	Name: "Arthur Currie",
+	ImageID: Currie,
+	
+	BornDay: 5,
+	BornMonth: 12,
+	BornYear: 1875,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

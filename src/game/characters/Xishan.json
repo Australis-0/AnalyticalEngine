@@ -1,0 +1,13 @@
+[
+{
+	Name: "Yan Xishan",
+	ImageID: Xishan,
+	
+	BornDay: 8,
+	BornMonth: 10,
+	BornYear: 1883,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Jean Moulin",
+	ImageID: Moulin,
+	
+	BornDay: 20,
+	BornMonth: 6,
+	BornYear: 1899,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

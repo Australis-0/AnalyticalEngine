@@ -1,0 +1,13 @@
+[
+{
+	Name: "Hannibal",
+	ImageID: Hannibal,
+	
+	BornDay: 21,
+	BornMonth: 3,
+	BornYear: -247,
+	
+	Attack: 7,
+	Defense: 6,
+},
+]

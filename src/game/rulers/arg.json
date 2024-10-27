@@ -1,0 +1,26 @@
+{
+	Rulers: [
+		{
+			Name: "Javier Milei",
+			ImageID: 282,
+			
+			BornDay: 26,
+			BornMonth: 2,
+			BornYear: 1876,
+			
+			ReignYear: 1932,
+		},
+		{
+			Name: "Javier Milei",
+			ImageID: 36,
+			
+			BornDay: 22,
+			BornMonth: 10,
+			BornYear: 1970,
+			
+			ReignYear: 2022,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

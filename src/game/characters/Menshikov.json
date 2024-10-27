@@ -1,0 +1,13 @@
+[
+{
+	Name: "Alexander Menshikov",
+	ImageID: Menshikov,
+		
+	BornDay: 26,
+	BornMonth: 8,
+	BornYear: 1787,
+		
+	Attack: -1,
+	Defense: -1,
+},
+]

@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Hamad bin Isa Al Khalifa",
+			ImageID: 42,
+			
+			BornDay: 28,
+			BornMonth: 1,
+			BornYear: 1950,
+			
+			ReignYear: 1999,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

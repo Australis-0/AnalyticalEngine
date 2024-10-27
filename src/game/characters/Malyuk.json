@@ -1,0 +1,13 @@
+[
+{
+	Name: "Vasyl Malyuk",
+	ImageID: Malyuk,
+	
+	BornDay: 28,
+	BornMonth: 2,
+	BornYear: 1983,
+	
+	Attack: 5,
+	Defense: 2,
+},
+]

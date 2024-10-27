@@ -1,0 +1,13 @@
+[
+{
+	Name: "George Brink",
+	ImageID: Brink,
+	
+	BornDay: 27,
+	BornMonth: 9,
+	BornYear: 1889,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

@@ -1,0 +1,13 @@
+[
+{
+	Name: "Bogdan Klich",
+	ImageID: Klich,
+	
+	BornDay: 8,
+	BornMonth: 5,
+	BornYear: 1960,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

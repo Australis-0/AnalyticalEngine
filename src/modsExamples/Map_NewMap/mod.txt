@@ -1,0 +1,8 @@
+{
+	Name: "A new map for the game - Mod Example",
+	Description: "This item adds a brand new map to the game.",
+	
+	Tags: [ "Map" ],
+	
+	ChangeNote: "First release",
+}

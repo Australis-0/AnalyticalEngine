@@ -1,0 +1,13 @@
+[
+{
+	Name: "Edouard Mortier",
+	ImageID: Mortier,
+	
+	BornDay: 13,
+	BornMonth: 2,
+	BornYear: 1768,
+	
+	Attack: 6,
+	Defense: 6,
+},
+]

@@ -1,0 +1,4 @@
+{
+	SAVE_LOGS_TO_FILE: false,
+	SAVE_LOGS_LIMIT: 999,
+}

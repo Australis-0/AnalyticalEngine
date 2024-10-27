@@ -1,0 +1,11 @@
+{
+FormableCivTag: "mal",
+ClaimantsTag: [
+	"mala",
+	"pmal2",
+	"paha",
+	"kela3"
+],
+Provinces: [ 1582, 1585, 1586, 1581, 1579, 6714, 6713, 1580, 1587, 1583, 1590, 1591, 1588, 1584, 1592, 6712 ],
+CapitalProvinceID: 1582
+}

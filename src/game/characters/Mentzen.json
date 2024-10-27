@@ -1,0 +1,13 @@
+[
+{
+	Name: "Sławomir Mentzen",
+	ImageID: Mentzen,
+	
+	BornDay: 20,
+	BornMonth: 11,
+	BornYear: 1986,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

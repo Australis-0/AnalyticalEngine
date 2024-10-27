@@ -1,0 +1,18 @@
+[
+	{
+		CivTAG: "rus",
+		Administrative: "Medvedev",
+		Economic: "Mishustin",
+		Innovation: "",
+		Military: "Shoigu",
+		Generals: [ "Zhukov", "Mizintsev", ],
+	},
+	{
+		CivTAG: "ukr",
+		Administrative: "Shmyhal",
+		Economic: "",
+		Innovation: "",
+		Military: "Reznikov",
+		Generals: [ "Zaluzhnyi", "Syrskyi" ],
+	},
+]

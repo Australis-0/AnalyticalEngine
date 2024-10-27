@@ -1,0 +1,13 @@
+[
+{
+	Name: "Marc Compernol",
+	ImageID: Compernol,
+	
+	BornDay: 8,
+	BornMonth: 4,
+	BornYear: 1957,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

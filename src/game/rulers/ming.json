@@ -1,0 +1,166 @@
+{
+	"Rulers": [
+		{
+			"Name": "Hongwu Emperor",
+			"ImageID": -1,
+			
+			"BornDay": 21,
+			"BornMonth": 2,
+			"BornYear": 1328,
+			
+			"ReignYear": 1368
+		},
+		{
+			"Name": "Jianwen Emperor",
+			"ImageID": -1,
+			
+			"BornDay": 5,
+			"BornMonth": 12,
+			"BornYear": 1377,
+			
+			"ReignYear": 1398
+		},
+		{
+			"Name": "Yongle Emperor",
+			"ImageID": -1,
+			
+			"BornDay": 2,
+			"BornMonth": 12,
+			"BornYear": 1360,
+			
+			"ReignYear": 1402
+		},
+		{
+			"Name": "Hongxi Emperor",
+			"ImageID": -1,
+			
+			"BornDay": 30,
+			"BornMonth": 11,
+			"BornYear": 1378,
+			
+			"ReignYear": 1424
+		},
+		{
+			"Name": "Xiaozong Emperor",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1407,
+			
+			"ReignYear": 1425
+		},
+		{
+			Name: "Emperor Yingzong",
+			ImageID: 19,
+			
+			BornDay: 29,
+			BornMonth: 11,
+			BornYear: 1427,
+			
+			ReignYear: 1435,
+		},
+		{
+			"Name": "Jingtai Emperor",
+			"ImageID": -1,
+			
+			"BornDay": 10,
+			"BornMonth": 6,
+			"BornYear": 1436,
+			
+			"ReignYear": 1449
+		},
+		{
+			"Name": "Tianshun Emperor",
+			"ImageID": -1,
+			
+			"BornDay": 25,
+			"BornMonth": 11,
+			"BornYear": 1447,
+			
+			"ReignYear": 1457
+		},
+		{
+			"Name": "Chenghua Emperor",
+			"ImageID": -1,
+			
+			"BornDay": 27,
+			"BornMonth": 11,
+			"BornYear": 1447,
+			
+			"ReignYear": 1464
+		},
+		{
+			"Name": "Hongzhi Emperor",
+			"ImageID": -1,
+			
+			"BornDay": 30,
+			"BornMonth": 10,
+			"BornYear": 1470,
+			
+			"ReignYear": 1487
+		},
+		{
+			"Name": "Zhengde Emperor",
+			"ImageID": -1,
+			
+			"BornDay": 26,
+			"BornMonth": 11,
+			"BornYear": 1491,
+			
+			"ReignYear": 1505
+		},
+		{
+			"Name": "Jiajing Emperor",
+			"ImageID": -1,
+			
+			"BornDay": 16,
+			"BornMonth": 9,
+			"BornYear": 1507,
+			
+			"ReignYear": 1521
+		},
+		{
+			"Name": "Longqing Emperor",
+			"ImageID": -1,
+			
+			"BornDay": 4,
+			"BornMonth": 6,
+			"BornYear": 1537,
+			
+			"ReignYear": 1567
+		},
+		{
+			"Name": "Wanli Emperor",
+			"ImageID": -1,
+			
+			"BornDay": 4,
+			"BornMonth": 9,
+			"BornYear": 1563,
+			
+			"ReignYear": 1572
+		},
+		{
+			"Name": "Taichang Emperor",
+			"ImageID": -1,
+			
+			"BornDay": 1,
+			"BornMonth": 1,
+			"BornYear": 1563,
+			
+			"ReignYear": 1620
+		},
+		{
+			"Name": "Chongzhen Emperor",
+			"ImageID": -1,
+			
+			"BornDay": 6,
+			"BornMonth": 2,
+			"BornYear": 1611,
+			
+			"ReignYear": 1628
+		}
+	],
+	
+	"Age_of_History": "Rulers"
+}

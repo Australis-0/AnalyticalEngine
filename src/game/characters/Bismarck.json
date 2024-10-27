@@ -1,0 +1,13 @@
+[
+{
+	Name: "Otto von Bismarck",
+	ImageID: Bismarck,
+		
+	BornDay: 1,
+	BornMonth: 4,
+	BornYear: 1815,
+		
+	Attack: -1,
+	Defense: -1,
+},
+]

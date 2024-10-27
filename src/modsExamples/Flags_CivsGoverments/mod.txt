@@ -1,0 +1,8 @@
+{
+	Name: "This mod adds new flags for Civilizations depending on Government",
+	Description: "Theocracy, Merchant Republic Flag for France. Theocracy Flag for Spain. Communism flag for Andorra",
+	
+	Tags: [ "Map", "Government" ],
+	
+	ChangeNote: "First release",
+}

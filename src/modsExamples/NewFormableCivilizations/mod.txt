@@ -1,0 +1,8 @@
+{
+	Name: "New Formable Civilizations!",
+	Description: "This item will add new New Formable Civilizations.",
+	
+	Tags: [ "FormableCivilizations" ],
+	
+	ChangeNote: "First release",
+}

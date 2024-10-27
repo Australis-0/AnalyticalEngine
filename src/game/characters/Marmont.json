@@ -1,0 +1,13 @@
+[
+{
+	Name: "Auguste de Marmont",
+	ImageID: Marmont,
+	
+	BornDay: 20,
+	BornMonth: 7,
+	BornYear: 1774,
+	
+	Attack: 5,
+	Defense: 6,
+},
+]

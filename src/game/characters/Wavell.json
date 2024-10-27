@@ -1,0 +1,13 @@
+[
+{
+	Name: "Archibald Wavell",
+	ImageID: Wavell,
+	
+	BornDay: 5,
+	BornMonth: 5,
+	BornYear: 1883,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

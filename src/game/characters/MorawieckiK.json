@@ -1,0 +1,13 @@
+[
+{
+	Name: "Kornel Morawiecki",
+	ImageID: MorawieckiK,
+	
+	BornDay: 3,
+	BornMonth: 5,
+	BornYear: 1941,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

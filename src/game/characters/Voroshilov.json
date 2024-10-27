@@ -1,0 +1,13 @@
+[
+{
+	Name: "Kliment Voroshilov",
+	ImageID: Voroshilov,
+	
+	BornDay: 4,
+	BornMonth: 2,
+	BornYear: 1881,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

@@ -1,0 +1,9 @@
+{
+FormableCivTag: "cypk",
+ClaimantsTag: [
+	"cyn",
+	"cpr"
+],
+Provinces: [ 1357, 1356, 12506, 12507, 6898, 3011, 1355, 12505 ],
+CapitalProvinceID: 1357
+}

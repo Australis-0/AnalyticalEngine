@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Nayib Bukele",
+			ImageID: 81,
+			
+			BornDay: 24,
+			BornMonth: 7,
+			BornYear: 1981,
+			
+			ReignYear: 2019,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

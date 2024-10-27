@@ -1,0 +1,13 @@
+[
+{
+	Name: "Konstanty Kalinowski",
+	ImageID: Kalinowski,
+	
+	BornDay: 2,
+	BornMonth: 2,
+	BornYear: 1838,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

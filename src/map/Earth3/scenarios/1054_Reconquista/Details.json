@@ -1,0 +1,21 @@
+{
+Name: "Reconquista",
+Author: "Łukasz Jakowski",
+Civs: 28,
+Age: 2,
+Day: 9,
+Month: 7,
+Year: 1054,
+Campaign: true,
+CivDefault_Gold: 250,
+CivDefault_GoldRandom: 75,
+CivDefault_Legacy: 150,
+CivDefault_LegacyRandom: 50,
+CivDefault_ManpowerPercentage: 85,
+CivDefault_Technology: 13,
+ProvinceDefault_Population: 50000,
+ProvinceDefault_Economy: 14,
+ProvinceDefault_TaxEfficiency: 18,
+ProvinceDefault_Manpower: 6,
+HoursPerTurn: 24
+}

@@ -1,0 +1,21 @@
+{
+Name: "RussianFeudalism",
+Author: "Łukasz Jakowski",
+Civs: 75,
+Age: 3,
+Day: 1,
+Month: 4,
+Year: 1276,
+Campaign: true,
+CivDefault_Gold: 100,
+CivDefault_GoldRandom: 50,
+CivDefault_Legacy: 100,
+CivDefault_LegacyRandom: 50,
+CivDefault_ManpowerPercentage: 80,
+CivDefault_Technology: 16,
+ProvinceDefault_Population: 150000,
+ProvinceDefault_Economy: 24,
+ProvinceDefault_TaxEfficiency: 20,
+ProvinceDefault_Manpower: 18,
+HoursPerTurn: 24
+}

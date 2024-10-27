@@ -1,0 +1,13 @@
+[
+{
+	Name: "Frederick Roberts",
+	ImageID: Roberts,
+		
+	BornDay: 30,
+	BornMonth: 9,
+	BornYear: 1832,
+		
+	Attack: -1,
+	Defense: -1,
+},
+]

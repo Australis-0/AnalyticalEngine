@@ -1,0 +1,206 @@
+{
+	Army: [
+		{
+			Name: "Slinger",
+			ImageID: 40,
+			
+			UnitLevel: 0,
+			
+			Attack: 6,
+			Defense: 1,
+			MovementSpeed: 3.9,
+			
+			AttackRange: 1,
+			SiegeProgress: 0.01,
+			
+			RequiredTechID: -1,
+			
+			Cost: 10,
+			MaintenanceCost: 0.04,
+			
+			RecruitmentTime: 60,
+		},
+		{
+			Name: "Archer",
+			ImageID: 29,
+			
+			UnitLevel: 1,
+			
+			Attack: 9,
+			Defense: 3,
+			MovementSpeed: 4.1,
+			
+			AttackRange: 1,
+			SiegeProgress: 0.01,
+			
+			RequiredTechID: 1,
+			
+			Cost: 12,
+			MaintenanceCost: 0.05,
+			
+			RecruitmentTime: 60,
+		},
+		{
+			Name: "Bowmen",
+			ImageID: 2,
+			
+			UnitLevel: 2,
+			
+			Attack: 13,
+			Defense: 4,
+			MovementSpeed: 4.2,
+		
+			AttackRange: 2,
+			SiegeProgress: 0.01,
+			
+			RequiredTechID: 9,
+			
+			Cost: 15,
+			MaintenanceCost: 0.06,
+			
+			RecruitmentTime: 45,
+		},
+		{
+			Name: "Crossbowman",
+			ImageID: 3,
+			
+			UnitLevel: 3,
+			
+			Attack: 17,
+			Defense: 6,
+			MovementSpeed: 4.5,
+		
+			AttackRange: 2,
+			SiegeProgress: 0.01,
+			
+			RequiredTechID: 15,
+			
+			Cost: 17,
+			MaintenanceCost: 0.07,
+			
+			RecruitmentTime: 60,
+		},
+		{
+			Name: "HorseArcher",
+			ImageID: 42,
+			
+			UnitLevel: 4,
+			
+			Attack: 24,
+			Defense: 11,
+			MovementSpeed: 5.5,
+		
+			AttackRange: 2,
+			SiegeProgress: 0.01,
+			
+			RequiredTechID: 20,
+			
+			Cost: 20,
+			MaintenanceCost: 0.1,
+			
+			RecruitmentTime: 60,
+		},
+		{
+			Name: "Grenadier",
+			ImageID: 41,
+			
+			UnitLevel: 5,
+			
+			Attack: 34,
+			Defense: 18,
+			MovementSpeed: 4.5,
+		
+			AttackRange: 2,
+			SiegeProgress: 0.01,
+			
+			RequiredTechID: 47,
+			
+			Cost: 22,
+			MaintenanceCost: 0.14,
+			
+			RecruitmentTime: 60,
+		},
+		{
+			Name: "EliteGrenadier",
+			ImageID: 60,
+			
+			UnitLevel: 6,
+			
+			Attack: 38,
+			Defense: 24,
+			MovementSpeed: 4.7,
+		
+			AttackRange: 2,
+			SiegeProgress: 0.01,
+			
+			RequiredTechID: 53,
+			
+			Cost: 24,
+			MaintenanceCost: 0.16,
+			
+			RecruitmentTime: 60,
+		},
+		{
+			Name: "EarlyBomber",
+			ImageID: 61,
+			
+			UnitLevel: 7,
+			
+			Attack: 44,
+			Defense: 27,
+			MovementSpeed: 7.7,
+		
+			AttackRange: 2,
+			SiegeProgress: 0.01,
+			
+			RequiredTechID: 67,
+			
+			Cost: 28,
+			MaintenanceCost: 0.2,
+			
+			RecruitmentTime: 60,
+		},
+		{
+			Name: "Bomber",
+			ImageID: 54,
+			
+			UnitLevel: 8,
+			
+			Attack: 50,
+			Defense: 35,
+			MovementSpeed: 10.8,
+		
+			AttackRange: 2,
+			SiegeProgress: 0.01,
+			
+			RequiredTechID: 97,
+			
+			Cost: 30,
+			MaintenanceCost: 0.22,
+			
+			RecruitmentTime: 60,
+		},
+		{
+			Name: "FutureDrone",
+			ImageID: 55,
+			
+			UnitLevel: 9,
+			
+			Attack: 60,
+			Defense: 48,
+			MovementSpeed: 11.4,
+		
+			AttackRange: 2,
+			SiegeProgress: 0.01,
+			
+			RequiredTechID: 90,
+			
+			Cost: 35,
+			MaintenanceCost: 0.26,
+			
+			RecruitmentTime: 60,
+		},
+	],
+	
+	Age_of_History: Army
+}

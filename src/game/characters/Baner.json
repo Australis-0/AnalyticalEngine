@@ -1,0 +1,13 @@
+[
+{
+	Name: "Johan Banér",
+	ImageID: Baner,
+		
+	BornDay: 23,
+	BornMonth: 6,
+	BornYear: 1596,
+		
+	Attack: -1,
+	Defense: -1,
+},
+]

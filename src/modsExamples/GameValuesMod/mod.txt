@@ -1,0 +1,8 @@
+{
+	Name: "This mod shows that you can change GameValues in the game!",
+	Description: "This item will add edit GameValues in the game.",
+	
+	Tags: [ "GameValues", "Balance" ],
+	
+	ChangeNote: "First release",
+}

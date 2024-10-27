@@ -1,0 +1,13 @@
+[
+{
+	Name: "José María Bocanegra",
+	ImageID: Maria,
+	
+	BornDay: 25,
+	BornMonth: 6,
+	BornYear: 1787,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

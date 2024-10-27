@@ -1,0 +1,13 @@
+[
+{
+	Name: "Giuseppe Castellano",
+	ImageID: Castellano,
+	
+	BornDay: 12,
+	BornMonth: 9,
+	BornYear: 18,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

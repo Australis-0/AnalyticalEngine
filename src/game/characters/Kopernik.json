@@ -1,0 +1,13 @@
+[
+{
+	Name: "Mikołaj Kopernik",
+	ImageID: Kopernik,
+	
+	BornDay: 16,
+	BornMonth: 5,
+	BornYear: 1543,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

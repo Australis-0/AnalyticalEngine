@@ -1,0 +1,13 @@
+[
+{
+	Name: "Hans Karl von Diebitsch",
+	ImageID: Diebitsch,
+	
+	BornDay: 13,
+	BornMonth: 5,
+	BornYear: 1785,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

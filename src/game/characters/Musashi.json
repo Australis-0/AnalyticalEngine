@@ -1,0 +1,13 @@
+[
+{
+	Name: "Miyamoto Musashi",
+	ImageID: Musashi,
+	
+	BornDay: 19,
+	BornMonth: 3,
+	BornYear: 1584,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

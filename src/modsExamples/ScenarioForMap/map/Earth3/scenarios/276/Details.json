@@ -1,0 +1,20 @@
+{
+Name: "276",
+Author: "Name",
+Civs: 4,
+Age: 1,
+Day: 27,
+Month: 5,
+Year: 276,
+Campaign: false,
+CivDefault_Gold: 1000,
+CivDefault_GoldRandom: 500,
+CivDefault_Legacy: 250,
+CivDefault_LegacyRandom: 50,
+CivDefault_ManpowerPercentage: 95,
+CivDefault_Technology: -1,
+ProvinceDefault_Population: 125123,
+ProvinceDefault_Economy: 10,
+ProvinceDefault_TaxEfficiency: 14,
+ProvinceDefault_Manpower: 4
+}

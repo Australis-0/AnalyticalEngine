@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Gordana Siljanovska Davkova",
+			ImageID: 157,
+			
+			BornDay: 11,
+			BornMonth: 5,
+			BornYear: 1953,
+			
+			ReignYear: 2022,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

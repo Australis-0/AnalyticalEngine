@@ -1,0 +1,142 @@
+#######################################
+## Read: mods_steam_workshop.txt !
+## 
+## To create a new mod for submission to the Steam Workshop, first create a new folder for your mod within the 'mods' directory.
+## Then, copy or recreate all the modified files into that folder!
+##
+## For example, if a file was originally located in game/ExampleFile.json, 
+## it should be placed in mods/YourModName/game/ExampleFile.json in your mod's folder.
+##
+#####
+
+For your mod the path will be:
+mods/YOUR_MOD_NAME/game/buildings/
+
+#####
+
+Go to:
+game/buildings/
+
+And open as text file in notepad: Buildings.json
+
+### EXAMPLE
+		{
+			Name: ["MechanizedFarm"],
+			ImageID: [84],
+			GroupID: 2,
+			
+			CostGold: [300],
+			MaintenanceCost: [0.0],
+			ConstructionTime: [180],
+			
+			MonthlyIncome: [0.05,],
+			LocalGrowthRate: [25],
+			Economy: [0.25],
+			
+			RequiredTechID: [68],
+			
+			RequiredGovernmentID: -1,
+			RequiredReligionID: -1,
+			
+			SeaAccessRequired: false,
+			AI: [5],
+		},
+### EXAMPLE END
+
+
+ImageID: 84,
+ImageID from folder: game/buildings/buildingsImages/H/
+
+GroupID: 2,
+GroupID: 0 -> Administration
+GroupID: 1 -> Military
+GroupID: 2 -> Economy
+GroupID: 3 -> Unique Capital Building
+
+#####
+RequiredTechID: -1,
+If set to -1, this building doesn't require any technology and will be unlocked at the start of the game.
+
+RequiredTechID: 2,
+This means you need to unlock Technology ID 2 to access this building.
+
+Technology file with IDs:
+game/technologies/Technologies.json
+
+#####
+RequiredGovernmentID: -1,
+If set to -1, this building does not require any specific type of Government.
+
+RequiredGovernmentID: 2,
+This means that to unlock this building, the civilization must have a GovernmentID: 2.
+
+Government file with IDs:
+game/Governments.json
+
+#####
+RequiredReligionID: -1,
+If -1, this building does not require any specific type of Religion.
+
+RequiredReligionID: 1,
+This means that for this building to be available, the Civilization needs to have a ReligionID: 1
+
+Religion file with IDs:
+game/Religions.json
+
+########################
+### Available bonuses:
+
+TaxEfficiency: [X],
+MonthlyLegacy: [X],
+
+DefenseBonus: [X],
+FortLevel: [X],
+FortDefense: [X],
+MaximumManpower: [X],
+LocalManpower: [X],
+
+ConstructionCost: [X],
+ConstructionTimeBonus: [X],
+
+RecruitArmyCostInProvince: [X],
+
+LocalGrowthRate: [X],
+
+InvestInEconomyCost: [X],
+IncreaseManpowerCost: [X],
+IncreaseTaxEfficiencyCost: [X],
+DevelopInfrastructureCost: [X],
+IncreaseGrowthRateCost: [X],
+
+ProvinceMaintenance: [X],
+MonthlyIncome: [X],
+
+LocalTaxEfficiency: [X],
+
+DiseaseDeathRate: [X],
+CasualtiesNuclearAttacks: [X],
+
+Economy: [X],
+
+ResearchPoints: [X],
+ProductionEfficiency: [X],
+IncomeProduction: [X],
+
+MaxInfrastructure: [X],
+BuildingSlots: [X],
+
+ArmyMovementSpeed: [X],
+
+
+
+
+
+Adding new image of unit: Example: 92.png (It must be the next number of the last image)
+Add new image in folders:
+
+game/buildings/buildingsImages/H/
+game/buildings/buildingsImages/XH/
+game/buildings/buildingsImages/XXH/
+
+Don't forget to increase the total number of images in the file:
+game/buildings/buildingsImages/numOfImages.txt

@@ -1,0 +1,104 @@
+List of available bonuses for Buildings:
+
+TaxEfficiency: [X],
+MonthlyLegacy: [X],
+
+DefenseBonus: [X],
+FortLevel: [X],
+FortDefense: [X],
+
+MaximumManpower: [X],
+LocalManpower: [X],
+
+ConstructionCost: [X],
+ConstructionTimeBonus: [X],
+
+RecruitArmyCostInProvince: [X],
+
+LocalGrowthRate: [X],
+
+InvestInEconomyCost: [X],
+IncreaseManpowerCost: [X],
+IncreaseTaxEfficiencyCost: [X],
+DevelopInfrastructureCost: [X],
+IncreaseGrowthRateCost: [X],
+
+ProvinceMaintenance: [X],
+MonthlyIncome: [X],
+
+LocalTaxEfficiency: [X],
+
+DiseaseDeathRate: [X],
+CasualtiesNuclearAttacks: [X],
+
+Economy: [X],
+
+ResearchPoints: [X],
+ProductionEfficiency: [X],
+IncomeProduction: [X],
+
+MaxInfrastructure: [X],
+BuildingSlots: [X],
+
+ArmyMovementSpeed: [X],
+
+#######################################
+
+float CostGold[];
+float MaintenanceCost[];
+int ConstructionTime[];
+
+int RequiredTechID[];
+
+int RequiredGovernmentID = -1;
+int RequiredReligionID = -1;
+
+float TaxEfficiency[];
+float MonthlyLegacy[];
+
+int DefenseBonus[];
+int FortLevel[];
+int FortDefense[];
+
+int MaximumManpower[];
+float LocalManpower[];
+
+int ConstructionCost[];
+int ConstructionTimeBonus[];
+
+float RecruitArmyCostInProvince[];
+
+float LocalGrowthRate[];
+
+float InvestInEconomyCost[];
+float IncreaseManpowerCost[];
+float IncreaseTaxEfficiencyCost[];
+float DevelopInfrastructureCost[];
+float IncreaseGrowthRateCost[];
+
+float ProvinceMaintenance[];
+float MonthlyIncome[];
+
+float LocalTaxEfficiency[];
+
+float DiseaseDeathRate[];
+float CasualtiesNuclearAttacks[];
+
+float Economy[];
+
+float ResearchPoints[];
+float ProductionEfficiency[];
+float IncomeProduction[];
+
+int MaxInfrastructure[];
+int BuildingSlots[];
+
+float ArmyMovementSpeed[];
+
+int RequiredResource = -1;
+
+boolean UniqueCapitalBuilding = false;
+boolean SeaAccessRequired = false;
+boolean ShowUpgrades = true;
+
+int AI[];

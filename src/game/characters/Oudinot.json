@@ -1,0 +1,13 @@
+[
+{
+	Name: "Nicolas Oudinot",
+	ImageID: Oudinot,
+	
+	BornDay: 25,
+	BornMonth: 4,
+	BornYear: 1767,
+	
+	Attack: 7,
+	Defense: 6,
+},
+]

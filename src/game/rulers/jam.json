@@ -1,0 +1,16 @@
+{
+	Rulers: [
+		{
+			Name: "Patrick Allen",
+			ImageID: 114,
+			
+			BornDay: 7,
+			BornMonth: 2,
+			BornYear: 1951,
+			
+			ReignYear: 2009,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

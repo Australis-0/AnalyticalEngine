@@ -1,0 +1,13 @@
+[
+{
+	Name: "Michel Ney",
+	ImageID: Ney,
+	
+	BornDay: 10,
+	BornMonth: 1,
+	BornYear: 1769,
+	
+	Attack: 8,
+	Defense: 5,
+},
+]

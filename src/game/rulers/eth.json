@@ -1,0 +1,26 @@
+{
+	Rulers: [
+		{
+			Name: "Haile Selassie",
+			ImageID: 306,
+			
+			BornDay: 23,
+			BornMonth: 7,
+			BornYear: 1892,
+			
+			ReignYear: 1930,
+		},
+		{
+			Name: "Sahle Work Zewde",
+			ImageID: 87,
+			
+			BornDay: 21,
+			BornMonth: 2,
+			BornYear: 1950,
+			
+			ReignYear: 2018,
+		},
+	],
+	
+	Age_of_History: Rulers
+}

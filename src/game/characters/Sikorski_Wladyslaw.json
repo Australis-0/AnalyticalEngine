@@ -1,0 +1,13 @@
+[
+{
+	Name: "Władysław Sikorski",
+	ImageID: Sikorski_Wladyslaw,
+	
+	BornDay: 20,
+	BornMonth: 5,
+	BornYear: 1881,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

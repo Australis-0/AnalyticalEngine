@@ -1,0 +1,13 @@
+[
+{
+	Name: "Zbigniew Stonoga",
+	ImageID: Stonoga,
+	
+	BornDay: 17,
+	BornMonth: 10,
+	BornYear: 1974,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

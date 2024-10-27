@@ -1,0 +1,13 @@
+[
+{
+	Name: "Albrecht von Wallenstein",
+	ImageID: Wallenstein,
+		
+	BornDay: 24,
+	BornMonth: 9,
+	BornYear: 1583,
+		
+	Attack: -1,
+	Defense: -1,
+},
+]

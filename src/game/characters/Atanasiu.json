@@ -1,0 +1,13 @@
+[
+{
+	Name: "Vasile Atanasiu",
+	ImageID: Atanasiu,
+	
+	BornDay: 25,
+	BornMonth: 4,
+	BornYear: 1886,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]

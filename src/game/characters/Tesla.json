@@ -1,0 +1,13 @@
+[
+{
+	Name: "Nikola Tesla",
+	ImageID: Tesla,
+	
+	BornDay: 10,
+	BornMonth: 6,
+	BornYear: 1856,
+	
+	Attack: -1,
+	Defense: -1,
+},
+]
