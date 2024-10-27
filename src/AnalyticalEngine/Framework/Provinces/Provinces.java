@@ -1,10 +1,8 @@
-package AnalyticalEngine.Logic.Scopes;
+package AnalyticalEngine.Framework.Provinces;
 import java.util.*;
 
 import aoc.kingdoms.lukasz.jakowski.Game;
 import aoc.kingdoms.lukasz.map.province.Province;
-
-import AnalyticalEngine.Debugger.*;
 
 public class Provinces {
     public static HashMap<String, Province> getAllProvinces () {
@@ -57,5 +55,26 @@ public class Provinces {
 
         //Throw exception if Province could not be returned.
         throw new Exception("Invalid Province ID/Name: " + arg0_province_name);
+    }
+
+    public static List<String> getProvinceCores (String arg0_string) throws Exception {
+        return getProvinceCores(getProvince(arg0_string)); }
+    public static List<String> getProvinceCores (Province arg0_province) throws Exception {
+        //Convert from parameters
+        Province province = arg0_province;
+
+        //Declare local instance variable
+        List<Integer> core_ids = new ArrayList();
+        List<String> core_tags = new ArrayList();
+
+        //Iterate over all cores and push their Civilisation integer ids
+        for (int i = 0; i < province.iCoresSize; i++)
+            core_ids.add(province.getCore(i));
+        //Iterate over all core_ids and push their Civilisation tags
+        for (int i = 0; i < core_ids.size(); i++)
+            core_tags.add(Game.getCiv(core_ids.get(i)).getCivTag());
+
+        //Return statement
+        return core_tags;
     }
 }

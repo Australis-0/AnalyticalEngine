@@ -5,12 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09b6f7f8-b868-43e9-b471-ac1dbd15fa3b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Framework/Civilisations/Civilisations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Framework/Strings.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Debugger/GameProvinces.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Debugger/GameProvinces.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Scopes/Provinces.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Framework/Provinces/Provinces.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EvalClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/EvalClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Debugger/GameProvinces.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Debugger/GameProvinces.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Logic/Scopes/Provinces.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -27,6 +41,7 @@
   "keyToString": {
     "Application.DesktopLauncher.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/Project 1159 - 11.59 - AOC3/Age of History 3/AOC3 Source/src",
@@ -44,6 +59,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="AnalyticalEngine.Framework.Provinces" />
       <recent name="aoc.kingdoms.lukasz.jakowski" />
       <recent name="aoc.kingdoms.lukasz.jakowski.desktop" />
     </key>
@@ -85,7 +101,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1730008554989</updated>
-      <workItem from="1730008555996" duration="2766000" />
+      <workItem from="1730008555996" duration="6642000" />
     </task>
     <servers />
   </component>
