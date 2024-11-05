@@ -1,0 +1,140 @@
+[
+{
+	CivTAG: "usa",
+	CivID: 1,
+	PCID: 1,
+	CPID: 1
+},
+{
+	CivTAG: "dox_n",
+	CivID: 2,
+	PCID: 2,
+	CPID: 1395
+},
+{
+	CivTAG: "mex",
+	CivID: 3,
+	PCID: 3,
+	CPID: 1763
+},
+{
+	CivTAG: "gua",
+	CivID: 4,
+	PCID: 4,
+	CPID: 1777
+},
+{
+	CivTAG: "hou",
+	CivID: 5,
+	PCID: 5,
+	CPID: 1793
+},
+{
+	CivTAG: "hond2_n",
+	CivID: 6,
+	PCID: 6,
+	CPID: 1771
+},
+{
+	CivTAG: "els",
+	CivID: 7,
+	PCID: 7,
+	CPID: 1796
+},
+{
+	CivTAG: "nic",
+	CivID: 8,
+	PCID: 8,
+	CPID: 1818
+},
+{
+	CivTAG: "cor",
+	CivID: 9,
+	PCID: 9,
+	CPID: 1831
+},
+{
+	CivTAG: "pan",
+	CivID: 10,
+	PCID: 10,
+	CPID: 1852
+},
+{
+	CivTAG: "col",
+	CivID: 11,
+	PCID: 11,
+	CPID: 3854
+},
+{
+	CivTAG: "ven",
+	CivID: 12,
+	PCID: 12,
+	CPID: 3893
+},
+{
+	CivTAG: "bra",
+	CivID: 13,
+	PCID: 13,
+	CPID: 4200
+},
+{
+	CivTAG: "uru",
+	CivID: 14,
+	PCID: 14,
+	CPID: 4101
+},
+{
+	CivTAG: "arg",
+	CivID: 15,
+	PCID: 15,
+	CPID: 4089
+},
+{
+	CivTAG: "chl",
+	CivID: 16,
+	PCID: 16,
+	CPID: 4009
+},
+{
+	CivTAG: "par",
+	CivID: 17,
+	PCID: 17,
+	CPID: 3993
+},
+{
+	CivTAG: "bol",
+	CivID: 18,
+	PCID: 18,
+	CPID: 3984
+},
+{
+	CivTAG: "ecu",
+	CivID: 19,
+	PCID: 19,
+	CPID: 3942
+},
+{
+	CivTAG: "per",
+	CivID: 20,
+	PCID: 20,
+	CPID: 3957
+},
+{
+	CivTAG: "cub",
+	CivID: 21,
+	PCID: 21,
+	CPID: 1864
+},
+{
+	CivTAG: "hai",
+	CivID: 22,
+	PCID: 22,
+	CPID: 1889
+},
+{
+	CivTAG: "dom",
+	CivID: 23,
+	PCID: 23,
+	CPID: 1896
+}
+]

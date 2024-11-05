@@ -152,7 +152,7 @@ public class console {
             String classpath_option = "-classpath";
             String classpath_value = classpath.replace(";", File.pathSeparator);
 
-            Iterable<String> class_options = List.of(classpath_option, classpath_value);
+            Iterable<String> class_options = Arrays.asList(classpath_option, classpath_value);
 
             //Define EvalClass
             JavaCompiler compiler = ToolProvider.getSystemJavaCompiler();

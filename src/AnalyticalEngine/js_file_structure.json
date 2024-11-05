@@ -1,0 +1,11 @@
+{
+  directories: [
+    "/AnalyticalEngine/Logic/Conditions",
+    "/AnalyticalEngine/Logic/Effects",
+    "/AnalyticalEngine/Logic/Parsers",
+    "/AnalyticalEngine/Logic/Scopes"
+  ],
+  files: [
+
+  ]
+}

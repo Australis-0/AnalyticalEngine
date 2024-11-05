@@ -1,0 +1,2838 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x000000006e7050c0, pid=19572, tid=6316
+#
+# JRE version: Java(TM) SE Runtime Environment (23.0+37) (build 23+37-2369)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (23+37-2369, mixed mode, sharing, tiered, compressed oops, compressed class ptrs, g1 gc, windows-amd64)
+# Problematic frame:
+# C  [gdx64.dll+0x50c0]
+#
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   https://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -Djava.library.path=D:\Project 1159 - 11.59 - AOC3\Age of History 3\AOC3 Source\src -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.4\lib\idea_rt.jar=55966:C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.4\bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 aoc.kingdoms.lukasz.jakowski.desktop.DesktopLauncher
+
+Host: Intel(R) Core(TM) i9-14900F, 32 cores, 127G,  Windows 11 , 64 bit Build 22621 (10.0.22621.4391)
+Time: Tue Nov  5 22:54:31 2024 Mitteleuropäische Zeit elapsed time: 1609.843451 seconds (0d 0h 26m 49s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000001e3bd72a750):  JavaThread "main"             [_thread_in_native, id=6316, stack(0x000000d3e9c00000,0x000000d3e9d00000) (1024K)]
+
+Stack: [0x000000d3e9c00000,0x000000d3e9d00000],  sp=0x000000d3e9cff018,  free space=1020k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [gdx64.dll+0x50c0]  (no source info available)
+C  [gdx64.dll+0x138f3]  (no source info available)
+C  [gdx64.dll+0x139a5]  (no source info available)
+C  0x000001e3d0349991  (no source info available)
+
+The last pc belongs to native nmethod (printed below).
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+J 4566  com.badlogic.gdx.graphics.g2d.Gdx2DPixmap.setPixel(JIII)V (0 bytes) @ 0x000001e3d03498f6 [0x000001e3d03498a0+0x0000000000000056]
+J 5850 c2 aoc.kingdoms.lukasz.menusMapEditor.EditorMap_PrintMap.drawPixmapBIG(Lcom/badlogic/gdx/graphics/Pixmap;)V (203 bytes) @ 0x000001e3d0647b48 [0x000001e3d0647960+0x00000000000001e8]
+j  aoc.kingdoms.lukasz.menusMapEditor.EditorMap_PrintMap.saveScenarioMinimapPreviewTexture(Lcom/badlogic/gdx/graphics/g2d/SpriteBatch;)V+30
+j  aoc.kingdoms.lukasz.menusMapEditor.EditorMap_PrintMap.draw(Lcom/badlogic/gdx/graphics/g2d/SpriteBatch;IIZLaoc/kingdoms/lukasz/menu_element/Status;)V+40
+J 5001 c2 aoc.kingdoms.lukasz.menu.MenuManager.draw(Lcom/badlogic/gdx/graphics/g2d/SpriteBatch;III)V (368 bytes) @ 0x000001e3d0426408 [0x000001e3d0426120+0x00000000000002e8]
+J 5083 c2 aoc.kingdoms.lukasz.menu.MenuManager.draw(Lcom/badlogic/gdx/graphics/g2d/SpriteBatch;)V (468 bytes) @ 0x000001e3d048599c [0x000001e3d04858e0+0x00000000000000bc]
+J 4321 c2 aoc.kingdoms.lukasz.jakowski.Renderer.Renderer.renderUI()V (53 bytes) @ 0x000001e3d02b4644 [0x000001e3d02b45e0+0x0000000000000064]
+J 5248 c2 com.badlogic.gdx.backends.lwjgl3.Lwjgl3Window.update()Z (312 bytes) @ 0x000001e3d04d9e9c [0x000001e3d04d80c0+0x0000000000001ddc]
+J 5637% c2 com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application.loop()V (477 bytes) @ 0x000001e3d05c280c [0x000001e3d05c25a0+0x000000000000026c]
+j  com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application.<init>(Lcom/badlogic/gdx/ApplicationListener;Lcom/badlogic/gdx/backends/lwjgl3/Lwjgl3ApplicationConfiguration;)V+269
+j  aoc.kingdoms.lukasz.jakowski.desktop.DesktopLauncher.main([Ljava/lang/String;)V+365
+v  ~StubRoutines::call_stub 0x000001e3cf6d0fcd
+
+siginfo: EXCEPTION_ACCESS_VIOLATION (0xc0000005), reading address 0x000001e50541fc40
+
+
+Registers:
+RAX=0x000000006e7050c0, RBX=0x000001e4483ec4b0, RCX=0x000001e50541fc40, RDX=0x0000000000000004
+RSP=0x000000d3e9cff018, RBP=0x0000000000000000, RSI=0x000001e4483ec4b0, RDI=0x0000000000000c21
+R8 =0x000000006e721ac0, R9 =0x000001e49c13d040, R10=0x00007ff8d5a3ad41, R11=0x00000000fffff790
+R12=0x0000000000000000, R13=0x000000d3e9cff170, R14=0x000000d3e9cff100, R15=0x000001e3bd72a750
+RIP=0x000000006e7050c0, EFLAGS=0x0000000000010207
+
+
+Register to memory mapping:
+
+RAX=0x000000006e7050c0 gdx64.dll
+RBX=0x000001e4483ec4b0 points into unknown readable memory: 0x00014ff000022b00 | 00 2b 02 00 f0 4f 01 00
+RCX=0x000001e50541fc40 is an unknown value
+RDX=0x0000000000000004 is an unknown value
+RSP=0x000000d3e9cff018 is pointing into the stack for thread: 0x000001e3bd72a750
+RBP=0x0 is null
+RSI=0x000001e4483ec4b0 points into unknown readable memory: 0x00014ff000022b00 | 00 2b 02 00 f0 4f 01 00
+RDI=0x0000000000000c21 is an unknown value
+R8 =0x000000006e721ac0 gdx64.dll
+R9 =0x000001e49c13d040 points into unknown readable memory: 0xff000000ff000000 | 00 00 00 ff 00 00 00 ff
+R10=0x00007ff8d5a3ad41 jvm.dll
+R11=0x00000000fffff790 points into unknown readable memory: 0x0000000000000000 | 00 00 00 00 00 00 00 00
+R12=0x0 is null
+R13=0x000000d3e9cff170 is pointing into the stack for thread: 0x000001e3bd72a750
+R14=0x000000d3e9cff100 is pointing into the stack for thread: 0x000001e3bd72a750
+R15=0x000001e3bd72a750 is a thread
+
+Top of Stack: (sp=0x000000d3e9cff018)
+0x000000d3e9cff018:   000000006e7138f3 000000019f2675e0
+0x000000d3e9cff028:   00000000171925ff 000001e4483ec4b0
+0x000000d3e9cff038:   0000000000000c20 00000000171925ff
+0x000000d3e9cff048:   000000006e7139a5 0000000000000000
+0x000000d3e9cff058:   fffffffffffffff7 000001e4416df0fe
+0x000000d3e9cff068:   000000006e7138f3 000001e4416eb580
+0x000000d3e9cff078:   0000000000190000 0000000033e4ceb1
+0x000000d3e9cff088:   00000000171925ff 000000d3e9cff110
+0x000000d3e9cff098:   000001e3d0349991 000000d3e9cff138
+0x000000d3e9cff0a8:   000001e3cf6d8c06 000000019f2675e0
+0x000000d3e9cff0b8:   0000000000001401 0000000000000c21
+0x000000d3e9cff0c8:   00000000171925ff 0000000000000780
+0x000000d3e9cff0d8:   0000000000000000 0000000000000000
+0x000000d3e9cff0e8:   00000000a41346f0 fffffffffffffff7
+0x000000d3e9cff0f8:   00000000a41094b0 00000000a41094b0
+0x000000d3e9cff108:   000001e441609240 00000001a1352a68
+0x000000d3e9cff118:   000001e3d0647b48 00000001a1352a68
+0x000000d3e9cff128:   000000019f267568 0000043800000780
+0x000000d3e9cff138:   000003b100000000 000001e3cf6d889a
+0x000000d3e9cff148:   000000019f2675e0 000000019f267568
+0x000000d3e9cff158:   0000000000000438 000000d3e9cff1c8
+0x000000d3e9cff168:   000001e3cf6d8700 000000019f267568
+0x000000d3e9cff178:   00000001a1352a68 fffffffffffffff7
+0x000000d3e9cff188:   000001e441ae0c66 0000000000000004
+0x000000d3e9cff198:   000001e44208a578 0000000000000000
+0x000000d3e9cff1a8:   00000000a45b49b8 000001e441ae0ca0
+0x000000d3e9cff1b8:   fffffffffffffff5 000000d3e9cff1e0
+0x000000d3e9cff1c8:   000000d3e9cff238 000001e3cf6d8700
+0x000000d3e9cff1d8:   000000019f267290 00000000a40dfc60
+0x000000d3e9cff1e8:   00000001a1352a68 fffffffffffffff7
+0x000000d3e9cff1f8:   000001e441adfde0 0000000000000008
+0x000000d3e9cff208:   000001e44208a578 0000000000000000 
+
+Instructions: (pc=0x000000006e7050c0)
+0x000000006e704fc0:   56 53 89 ce 89 cb 89 d0 81 e6 ff 00 00 00 0f 84
+0x000000006e704fd0:   9d 00 00 00 0f b6 ca 41 89 f1 ba 81 80 80 80 41
+0x000000006e704fe0:   89 c3 44 0f af c9 41 c1 eb 10 45 0f b6 db 45 89
+0x000000006e704ff0:   d8 4c 0f af ca 89 da c1 ea 18 0f af d6 49 c1 e9
+0x000000006e705000:   27 44 29 c9 41 89 c1 0f b6 c4 41 c1 e9 18 44 0f
+0x000000006e705010:   af c1 44 8d 14 0e 44 0f af c9 41 01 d1 89 da c1
+0x000000006e705020:   ea 10 44 0f b6 da 44 89 da 0f af d6 45 8d 1c 10
+0x000000006e705030:   41 89 c0 31 d2 44 89 c8 41 f7 f2 31 d2 44 0f af
+0x000000006e705040:   c1 0f b6 cf 0f af ce 44 01 c1 41 89 c1 44 89 d8
+0x000000006e705050:   41 f7 f2 41 c1 e1 18 31 d2 c1 e0 10 41 09 c1 89
+0x000000006e705060:   c8 41 f7 f2 45 09 d1 89 c1 44 89 c8 c1 e1 08 09
+0x000000006e705070:   c8 5b 5e c3 66 66 2e 0f 1f 84 00 00 00 00 00 90
+0x000000006e705080:   0f b6 01 c3 66 66 2e 0f 1f 84 00 00 00 00 00 90
+0x000000006e705090:   0f b7 01 66 c1 c0 08 0f b7 c0 c3 0f 1f 44 00 00
+0x000000006e7050a0:   0f b6 01 0f b6 51 01 c1 e0 10 c1 e2 08 09 d0 0f
+0x000000006e7050b0:   b6 51 02 09 d0 c3 66 2e 0f 1f 84 00 00 00 00 00
+0x000000006e7050c0:   8b 01 0f c8 c3 66 66 2e 0f 1f 84 00 00 00 00 00
+0x000000006e7050d0:   0f b7 01 c3 66 66 2e 0f 1f 84 00 00 00 00 00 90
+0x000000006e7050e0:   56 53 48 83 ec 28 89 c8 89 d1 49 63 f0 f7 d9 89
+0x000000006e7050f0:   c3 d3 e3 89 d1 d3 e8 85 d2 0f 49 d8 81 fb ff 00
+0x000000006e705100:   00 00 77 34 b9 08 00 00 00 29 f1 d3 eb 83 fe 08
+0x000000006e705110:   7f 4e 48 8d 05 47 d3 01 00 0f af 1c b0 48 8d 05
+0x000000006e705120:   fc d2 01 00 8b 0c b0 89 d8 d3 f8 48 83 c4 28 5b
+0x000000006e705130:   5e c3 66 0f 1f 44 00 00 48 8d 0d fb bf 01 00 41
+0x000000006e705140:   b8 fa 13 00 00 48 8d 15 b4 bf 01 00 ff 15 22 41
+0x000000006e705150:   02 00 b9 08 00 00 00 29 f1 d3 eb 83 fe 08 7e b2
+0x000000006e705160:   41 b8 fc 13 00 00 48 8d 15 93 bf 01 00 48 8d 0d
+0x000000006e705170:   d8 bf 01 00 ff 15 fa 40 02 00 eb 96 0f 1f 40 00
+0x000000006e705180:   55 57 56 53 48 83 ec 28 48 8b 35 e5 40 02 00 48
+0x000000006e705190:   8d 2d 6a bf 01 00 48 8d 3d cb bf 01 00 8b 41 14
+0x000000006e7051a0:   48 89 cb 8b 49 10 eb 2d 0f 1f 84 00 00 00 00 00
+0x000000006e7051b0:   48 8b 13 48 39 53 08 76 0e 4c 8d 42 01 4c 89 03 
+
+
+Stack slot to memory mapping:
+
+stack at sp + 0 slots: 0x000000006e7138f3 gdx64.dll
+stack at sp + 1 slots: 0x000000019f2675e0 is an oop: java.nio.DirectByteBuffer 
+{0x000000019f2675e0} - klass: 'java/nio/DirectByteBuffer'
+ - ---- fields (total size 8 words):
+ - private 'mark' 'I' @12  -1 (0xffffffff)
+ - 'address' 'J' @16  2084226510912 (0x000001e54594b040)
+ - private 'position' 'I' @24  0 (0x00000000)
+ - private 'limit' 'I' @28  8294400 (0x007e9000)
+ - private final 'capacity' 'I' @32  8294400 (0x007e9000)
+ - final 'segment' 'Ljava/lang/foreign/MemorySegment;' @36  null (0x00000000)
+ - final 'offset' 'I' @40  0 (0x00000000)
+ - 'isReadOnly' 'Z' @44  false (0x00)
+ - 'bigEndian' 'Z' @45  true (0x01)
+ - 'nativeByteOrder' 'Z' @46  false (0x00)
+ - final 'hb' '[B' @48  null (0x00000000)
+ - private final 'isSync' 'Z' @47  false (0x00)
+ - private final 'fd' 'Ljava/io/FileDescriptor;' @52  null (0x00000000)
+ - private final 'att' 'Ljava/lang/Object;' @56  null (0x00000000)
+ - private final 'cleaner' 'Ljdk/internal/ref/Cleaner;' @60  null (0x00000000)
+stack at sp + 2 slots: 0x00000000171925ff is an unknown value
+stack at sp + 3 slots: 0x000001e4483ec4b0 points into unknown readable memory: 0x00014ff000022b00 | 00 2b 02 00 f0 4f 01 00
+stack at sp + 4 slots: 0x0000000000000c20 is an unknown value
+stack at sp + 5 slots: 0x00000000171925ff is an unknown value
+stack at sp + 6 slots: 0x000000006e7139a5 gdx64.dll
+stack at sp + 7 slots: 0x0 is null
+
+Lock stack of current Java thread (top to bottom):
+
+
+Compiled method (n/a) 1609953 4566     n 0       com.badlogic.gdx.graphics.g2d.Gdx2DPixmap::setPixel (native)
+ total in heap  [0x000001e3d0349788,0x000001e3d0349ac0] = 824
+ relocation     [0x000001e3d0349860,0x000001e3d0349898] = 56
+ main code      [0x000001e3d03498a0,0x000001e3d0349ab5] = 533
+ stub code      [0x000001e3d0349ab5,0x000001e3d0349ab8] = 3
+ oops           [0x000001e3d0349ab8,0x000001e3d0349ac0] = 8
+
+[Constant Pool (empty)]
+
+[MachCode]
+[Entry Point]
+  # {method} {0x000001e44160e1d8} 'setPixel' '(JIII)V' in 'com/badlogic/gdx/graphics/g2d/Gdx2DPixmap'
+  # parm0:    rdx:rdx   = long
+  # parm1:    r8        = int
+  # parm2:    r9        = int
+  # parm3:    rdi       = int
+  #           [sp+0x80]  (sp of caller)
+  0x000001e3d03498a0: 6690 448b | 5208 443b 
+
+  0x000001e3d03498a8: ;   {runtime_call ic_miss_stub}
+  0x000001e3d03498a8: 5008 0f85 | 304c 3dff 
+[Verified Entry Point]
+  0x000001e3d03498b0: 8984 2400 | 80ff ff55 | 488b ec48 | 83ec 7090 | 4181 7f20 | 0100 0000 
+
+  0x000001e3d03498c8: ;   {runtime_call StubRoutines (final stubs)}
+  0x000001e3d03498c8: 7405 e871 | de3b ff48 | 897c 2428 | 4c89 4c24 | 204d 8bc8 
+
+  0x000001e3d03498dc: ;   {oop(a 'java/lang/Class'{0x00000000a41094b0} = 'com/badlogic/gdx/graphics/g2d/Gdx2DPixmap')}
+  0x000001e3d03498dc: 4c8b c249 | beb0 9410 | a400 0000 | 004c 8974 | 2460 4c8d | 7424 6049 | 8bd6 c5f8 
+
+  0x000001e3d03498f8: ;   {internal_word}
+  0x000001e3d03498f8: 7749 baf6 | 9834 d0e3 | 0100 004d | 8997 a803 | 0000 4989 | a7a0 0300 
+
+  0x000001e3d0349910: ;   {external_word}
+  0x000001e3d0349910: 0049 ba41 | ada3 d5f8 | 7f00 0041 | 803a 000f | 844e 0000 | 0052 4150 
+
+  0x000001e3d0349928: ;   {metadata({method} {0x000001e44160e1d8} 'setPixel' '(JIII)V' in 'com/badlogic/gdx/graphics/g2d/Gdx2DPixmap')}
+  0x000001e3d0349928: 4151 48ba | d0e1 6041 | e401 0000 | 498b cf48 | 83ec 2040 | f6c4 0f0f | 8419 0000 | 0048 83ec 
+  0x000001e3d0349948: ;   {runtime_call}
+  0x000001e3d0349948: 0848 b800 | ee53 d5f8 | 7f00 00ff | d048 83c4 | 08e9 0c00 
+
+  0x000001e3d034995c: ;   {runtime_call}
+  0x000001e3d034995c: 0000 48b8 | 00ee 53d5 | f87f 0000 | ffd0 4883 | c420 4159 | 4158 5a49 | 8d8f c003 | 0000 41c7 
+  0x000001e3d034997c: 8744 0400 | 0004 0000 
+
+  0x000001e3d0349984: ;   {runtime_call}
+  0x000001e3d0349984: 0048 b880 | 1670 6e00 | 0000 00ff | d0c5 f877 | 41c7 8744 | 0400 0005 | 0000 00f0 | 8344 24c0 
+  0x000001e3d03499a4: 0049 3baf | 4804 0000 | 0f87 0e00 | 0000 4183 | bf40 0400 | 0000 0f84 | 2300 0000 | c5f8 7749 
+  0x000001e3d03499c4: 8bcf 4c8b | e448 83ec | 2048 83e4 
+
+  0x000001e3d03499d0: ;   {runtime_call}
+  0x000001e3d03499d0: f048 b890 | a91d d5f8 | 7f00 00ff | d049 8be4 | 4d33 e441 | c787 4404 | 0000 0800 | 0000 4183 
+  0x000001e3d03499f0: bfc8 0400 | 0002 0f84 | 9400 0000 
+
+  0x000001e3d03499fc: ;   {external_word}
+  0x000001e3d03499fc: 49ba 41ad | a3d5 f87f | 0000 4180 | 3a00 0f84 | 4400 0000 
+
+  0x000001e3d0349a10: ;   {metadata({method} {0x000001e44160e1d8} 'setPixel' '(JIII)V' in 'com/badlogic/gdx/graphics/g2d/Gdx2DPixmap')}
+  0x000001e3d0349a10: 48ba d0e1 | 6041 e401 | 0000 498b | cf48 83ec | 2040 f6c4 | 0f0f 8419 | 0000 0048 
+
+  0x000001e3d0349a2c: ;   {runtime_call}
+  0x000001e3d0349a2c: 83ec 0848 | b800 ee53 | d5f8 7f00 | 00ff d048 | 83c4 08e9 | 0c00 0000 
+
+  0x000001e3d0349a44: ;   {runtime_call}
+  0x000001e3d0349a44: 48b8 00ee | 53d5 f87f | 0000 ffd0 | 4883 c420 | 49c7 87a0 | 0300 0000 | 0000 0049 | c787 a803 
+  0x000001e3d0349a64: 0000 0000 | 0000 c5f8 | 7749 8b8f | 3004 0000 | c781 0001 | 0000 0000 | 0000 c949 | 837f 0800 
+  0x000001e3d0349a84: 0f85 0100 
+
+  0x000001e3d0349a88: ;   {runtime_call StubRoutines (initial stubs)}
+  0x000001e3d0349a88: 0000 c3e9 | 3074 38ff | c5f8 774c | 8be4 4883 | ec20 4883 
+
+  0x000001e3d0349a9c: ;   {runtime_call}
+  0x000001e3d0349a9c: e4f0 48b8 | b022 54d5 | f87f 0000 | ffd0 498b | e44d 33e4 | e947 ffff | fff4 f4f4 
+[/MachCode]
+
+
+Compiled method (c2) 1609957 5850   !   4       aoc.kingdoms.lukasz.menusMapEditor.EditorMap_PrintMap::drawPixmapBIG (203 bytes)
+ total in heap  [0x000001e3d0647788,0x000001e3d0648268] = 2784
+ relocation     [0x000001e3d0647860,0x000001e3d0647940] = 224
+ constants      [0x000001e3d0647940,0x000001e3d0647960] = 32
+ main code      [0x000001e3d0647960,0x000001e3d0648178] = 2072
+ stub code      [0x000001e3d0648178,0x000001e3d06481b0] = 56
+ oops           [0x000001e3d06481b0,0x000001e3d06481c0] = 16
+ metadata       [0x000001e3d06481c0,0x000001e3d0648268] = 168
+ immutable data [0x000001e3962c5fc0,0x000001e3962c6430] = 1136
+ dependencies   [0x000001e3962c5fc0,0x000001e3962c6018] = 88
+ nul chk table  [0x000001e3962c6018,0x000001e3962c6048] = 48
+ handler table  [0x000001e3962c6048,0x000001e3962c6078] = 48
+ scopes pcs     [0x000001e3962c6078,0x000001e3962c61a8] = 304
+ scopes data    [0x000001e3962c61a8,0x000001e3962c6430] = 648
+
+
+[Constant Pool]
+             Address          hex4                    hex8      
+  0x000001e3d0647940:   0x437f0000      0x3f800000437f0000      
+  0x000001e3d0647944:   0x3f800000                              
+  0x000001e3d0647948:   0xf4f4f4f4      0xf4f4f4f4f4f4f4f4      
+  0x000001e3d064794c:   0xf4f4f4f4                              
+  0x000001e3d0647950:   0xf4f4f4f4      0xf4f4f4f4f4f4f4f4      
+  0x000001e3d0647954:   0xf4f4f4f4                              
+  0x000001e3d0647958:   0xf4f4f4f4      0xf4f4f4f4f4f4f4f4      
+  0x000001e3d064795c:   0xf4f4f4f4                              
+
+[MachCode]
+[Instructions begin]
+  0x000001e3d0647960: ;   {no_reloc}
+  0x000001e3d0647960: 6690 448b | 5208 443b 
+
+  0x000001e3d0647968: ;   {runtime_call ic_miss_stub}
+  0x000001e3d0647968: 5008 0f85 | 706b 0dff 
+[Verified Entry Point]
+  0x000001e3d0647970: 8984 2400 | 80ff ff55 | 4883 ec40 | 4181 7f20 | 0100 0000 | 0f85 de07 | 0000 488b | da49 8bf8 
+  0x000001e3d0647990: ; implicit exception: dispatches to 0x000001e3d06480b8
+  0x000001e3d0647990: 458b 581c 
+
+  0x000001e3d0647994: ; implicit exception: dispatches to 0x000001e3d06480d0
+  0x000001e3d0647994: 478b 54dc | 0c45 85d2 | 0f8e 3403 | 0000 438b | 4cdc 18c5 | f857 c045 | 33db eb2b | 488b 7c24 
+  0x000001e3d06479b4: 0848 8bdd | 448b 5424 | 108b 4c24 | 1444 8b5c | 2418 41ff | c345 3bda | 0f8d 0403 | 0000 c5f9 
+  0x000001e3d06479d4: efc0 c4c1 
+
+  0x000001e3d06479d8: ;   {oop(a 'java/lang/Class'{0x00000000a40dc5b8} = 'aoc/kingdoms/lukasz/jakowski/Game')}
+  0x000001e3d06479d8: 7a2a c349 | b8b8 c50d | a400 0000 | 0041 8b90 | 9400 0000 | 448b 4b7c 
+
+  0x000001e3d06479f0: ;   {oop(a 'java/lang/Class'{0x00000000a45b49b8} = 'aoc/kingdoms/lukasz/menusMapEditor/EditorMap_PrintMap')}
+  0x000001e3d06479f0: 49b8 b849 | 5ba4 0000 | 0000 c4c1 | 7a10 4874 | c5e1 efdb | c4c1 622a | d9c5 e25e 
+
+  0x000001e3d0647a0c: ;   {external_word}
+  0x000001e3d0647a0c: d1c5 e854 | 1d0b 9808 | ffc5 e258 | c085 d20f | 84a3 0400 
+
+  0x000001e3d0647a20: ;   {oop(a 'java/lang/Class'{0x00000000a410d8f8} = 'aoc/kingdoms/lukasz/map/map/MapBG')}
+  0x000001e3d0647a20: 0049 b8f8 | d810 a400 | 0000 0045 | 8b40 74c5 | e1ef dbc4 | c162 2ad8 | c5e2 5ed1 | c5f8 2ed0 
+  0x000001e3d0647a40: 0f86 ae04 | 0000 85c9 | 0f8e 78ff | ffff c5e8 | 57d2 4533 | c0e9 4901 | 0000 660f | 1f44 0000 
+  0x000001e3d0647a60: ;   {section_word}
+  0x000001e3d0647a60: c5fa 591d | d8fe ffff | c5fa 2cfb | 81ff 0000 | 0080 0f84 | dc06 0000 
+
+  0x000001e3d0647a78: ;   {section_word}
+  0x000001e3d0647a78: c1e7 18c5 | f259 05bd | feff ff48 | 8b2c 2444 
+
+  0x000001e3d0647a88: ;   {section_word}
+  0x000001e3d0647a88: 8b45 7cc5 | ea59 15ad | feff ff44 | 8b95 8c00 | 0000 448b | 9d80 0000 
+
+  0x000001e3d0647aa0: ;   {oop(a 'java/lang/Class'{0x00000000a45b49b8} = 'aoc/kingdoms/lukasz/menusMapEditor/EditorMap_PrintMap')}
+  0x000001e3d0647aa0: 0049 b9b8 | 495b a400 | 0000 00c4 | c17a 1049 | 74c5 fa2c | c881 f900 | 0000 800f | 847f 0600 
+  0x000001e3d0647ac0: 00c5 f9ef | c0c4 c17a | 2ac3 c5fa | 5ed9 c1e1 
+
+  0x000001e3d0647ad0: ;   {external_word}
+  0x000001e3d0647ad0: 08c5 e054 | 1d47 9708 | ffc5 f9ef | c0c4 c17a | 2ac0 c5fa | 5ec9 c57a | 2ccb 4181 | f900 0000 
+  0x000001e3d0647af0: 800f 8434 | 0600 0044 | 034c 241c 
+
+  0x000001e3d0647afc: ;   {external_word}
+  0x000001e3d0647afc: c5f0 5405 | 1c97 08ff | c5fa 2cda | 81fb 0000 | 0080 0f84 | 0306 0000 | c57a 2cc0 | 4181 f800 
+  0x000001e3d0647b1c: 0000 800f | 84dd 0500 | 0044 0344 | 2418 c1e3 | 100b fb0b | f981 cfff | 0000 0047 | 8b54 d41c 
+  0x000001e3d0647b3c: ; implicit exception: dispatches to 0x000001e3d0648044
+  0x000001e3d0647b3c: 4b8b 54d4 
+
+  0x000001e3d0647b40: ;   {static_call}
+  0x000001e3d0647b40: 1066 90e8 
+
+  0x000001e3d0647b44: ; ImmutableOopMap {rbp=Oop [8]=Oop }
+                      ;*invokestatic setPixel {reexecute=0 rethrow=0 return_oop=0}
+                      ; - com.badlogic.gdx.graphics.g2d.Gdx2DPixmap::setPixel@7 (line 178)
+                      ; - com.badlogic.gdx.graphics.Pixmap::drawPixel@7 (line 420)
+                      ; - aoc.kingdoms.lukasz.menusMapEditor.EditorMap_PrintMap::drawPixmapBIG@177 (line 166)
+  0x000001e3d0647b44: 681d d0ff 
+
+  0x000001e3d0647b48: ;   {other}
+  0x000001e3d0647b48: 0f1f 8400 | c003 0000 | 448b 4424 | 1c41 ffc0 | 443b 4424 | 140f 8d4d 
+
+  0x000001e3d0647b60: ;   {oop(a 'java/lang/Class'{0x00000000a45b49b8} = 'aoc/kingdoms/lukasz/menusMapEditor/EditorMap_PrintMap')}
+  0x000001e3d0647b60: feff ff49 | bab8 495b | a400 0000 | 00c4 c17a 
+
+  0x000001e3d0647b70: ;   {oop(a 'java/lang/Class'{0x00000000a40dc5b8} = 'aoc/kingdoms/lukasz/jakowski/Game')}
+  0x000001e3d0647b70: 104a 7449 | bab8 c50d | a400 0000 | 0041 8b92 | 9400 0000 | c5e9 efd2 | c4c1 6a2a | d048 8b7c 
+  0x000001e3d0647b90: 2408 488b | dd44 8b54 | 2410 8b4c | 2414 448b | 5c24 1844 | 8b8b 8000 | 0000 c5e1 | efdb c4c1 
+  0x000001e3d0647bb0: 622a d9c5 
+
+  0x000001e3d0647bb4: ;   {external_word}
+  0x000001e3d0647bb4: e25e c1c5 | f854 1d61 | 9608 ffc5 | e258 c285 | d20f 841e 
+
+  0x000001e3d0647bc8: ;   {oop(a 'java/lang/Class'{0x00000000a410d8f8} = 'aoc/kingdoms/lukasz/map/map/MapBG')}
+  0x000001e3d0647bc8: 0100 0049 | b9f8 d810 | a400 0000 | 0045 8b49 | 78c5 e1ef | dbc4 c162 | 2ad9 c5e2 | 5ec9 c5f8 
+  0x000001e3d0647be8: 2ec8 0f86 | 2c01 0000 | 448b c945 | 2bc8 8b77 | 1c41 ffc9 
+
+  0x000001e3d0647bfc: ; implicit exception: dispatches to 0x000001e3d0647f9c
+  0x000001e3d0647bfc: 498b 54f4 | 1044 8944 | 241c 4489 | 5c24 1889 | 4c24 1444 | 8954 2410 | 4889 1c24 | 4889 7c24 
+  0x000001e3d0647c1c: 0845 8bc3 
+
+  0x000001e3d0647c20: ;   {static_call}
+  0x000001e3d0647c20: 6666 90e8 
+
+  0x000001e3d0647c24: ; ImmutableOopMap {[0]=Oop [8]=Oop }
+                      ;*invokestatic getPixel {reexecute=0 rethrow=0 return_oop=0}
+                      ; - com.badlogic.gdx.graphics.g2d.Gdx2DPixmap::getPixel@6 (line 182)
+                      ; - com.badlogic.gdx.graphics.Pixmap::getPixel@6 (line 379)
+                      ; - aoc.kingdoms.lukasz.menusMapEditor.EditorMap_PrintMap::drawPixmapBIG@103 (line 163)
+  0x000001e3d0647c24: 0820 d0ff 
+
+  0x000001e3d0647c28: ;   {other}
+  0x000001e3d0647c28: 0f1f 8400 | a004 0001 | 448b d041 | c1ea 0844 | 8bd8 41c1 | eb18 450f | b6d2 c5f1 | efc9 c4c1 
+  0x000001e3d0647c48: ;   {section_word}
+  0x000001e3d0647c48: 722a cbc5 | f25e 05ed | fcff ffc5 | e9ef d2c4 | c16a 2ad2 
+
+  0x000001e3d0647c5c: ;   {section_word}
+  0x000001e3d0647c5c: c5ea 5e0d | dcfc ffff | c1e8 1044 | 0fb6 d0c5 | e1ef dbc4 | c162 2ada 
+
+  0x000001e3d0647c74: ;   {section_word}
+  0x000001e3d0647c74: c5e2 5e15 | c4fc ffff | c5e0 57db | c5f8 2ed9 | 0f87 da00 
+
+  0x000001e3d0647c88: ;   {section_word}
+  0x000001e3d0647c88: 0000 c5f8 | 2e0d b2fc | ffff 0f87 | 1401 0000 | c5d8 57e4 | c5f8 2ee2 | 0f87 4e01 
+
+  0x000001e3d0647ca4: ;   {section_word}
+  0x000001e3d0647ca4: 0000 c5f8 | 2e15 96fc | ffff 0f87 | 8401 0000 | c5f8 2ed8 | 0f87 c201 
+
+  0x000001e3d0647cbc: ;   {section_word}
+  0x000001e3d0647cbc: 0000 c5f8 | 2e05 7efc | ffff 0f86 | 94fd ffff | bf00 0000 | ffe9 a5fd | ffff 4883 
+
+  0x000001e3d0647cd8: ;   {poll_return}
+  0x000001e3d0647cd8: c440 5d49 | 3ba7 4804 | 0000 0f87 | 0404 0000 | c3ba f6ff | ffff 488b | eb48 893c | 2444 8954 
+  0x000001e3d0647cf8: 2408 894c | 240c 4489 | 5c24 1044 | 8944 2414 | c5fa 1144 
+
+  0x000001e3d0647d0c: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0647d0c: 2418 90e8 
+
+  0x000001e3d0647d10: ; ImmutableOopMap {rbp=Oop [0]=Oop }
+                      ;*invokevirtual getHeight {reexecute=0 rethrow=0 return_oop=0}
+                      ; - aoc.kingdoms.lukasz.menusMapEditor.EditorMap_PrintMap::drawPixmapBIG@78 (line 162)
+  0x000001e3d0647d10: 4cc6 0dff 
+
+  0x000001e3d0647d14: ;   {other}
+  0x000001e3d0647d14: 0f1f 8400 | 8c05 0002 | c5f8 2ec8 | bdff ffff | ff0f 8a0e | 0000 000f | 8208 0000 | 0040 0f95 
+  0x000001e3d0647d34: c540 0fb6 | edf7 ddba | 45ff ffff | 4889 1c24 | 4889 7c24 | 0844 8954 | 2410 894c | 2414 4489 
+  0x000001e3d0647d54: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0647d54: 5c24 18e8 
+
+  0x000001e3d0647d58: ; ImmutableOopMap {[0]=Oop [8]=Oop }
+                      ;*ifge {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) aoc.kingdoms.lukasz.menusMapEditor.EditorMap_PrintMap::drawPixmapBIG@87 (line 162)
+  0x000001e3d0647d58: 04c6 0dff 
+
+  0x000001e3d0647d5c: ;   {other}
+  0x000001e3d0647d5c: 0f1f 8400 | d405 0003 | c5d8 57e4 | c5f8 2ee1 | bdff ffff | ff0f 8a0e | 0000 000f | 8208 0000 
+  0x000001e3d0647d7c: 0040 0f95 | c540 0fb6 | edf7 ddba | 45ff ffff | c5fa 114c | 2420 c5fa | 1154 2424 | c5fa 1144 
+  0x000001e3d0647d9c: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0647d9c: 2428 90e8 
+
+  0x000001e3d0647da0: ; ImmutableOopMap {[0]=Oop [8]=Oop }
+                      ;*ifge {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) com.badlogic.gdx.graphics.Color::clamp@37 (line 186)
+                      ; - com.badlogic.gdx.graphics.Color::<init>@26 (line 96)
+                      ; - aoc.kingdoms.lukasz.menusMapEditor.EditorMap_PrintMap::drawPixmapBIG@131 (line 164)
+  0x000001e3d0647da0: bcc5 0dff 
+
+  0x000001e3d0647da4: ;   {other}
+  0x000001e3d0647da4: 0f1f 8400 | 1c06 0004 
+
+  0x000001e3d0647dac: ;   {section_word}
+  0x000001e3d0647dac: c5f8 2e0d | 90fb ffff | bdff ffff | ff0f 8a0e | 0000 000f | 8208 0000 | 0040 0f95 | c540 0fb6 
+  0x000001e3d0647dcc: edba 45ff | ffff c5fa | 114c 2420 | c5fa 1154 | 2424 c5fa | 1144 2428 
+
+  0x000001e3d0647de4: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0647de4: 6666 90e8 
+
+  0x000001e3d0647de8: ; ImmutableOopMap {[0]=Oop [8]=Oop }
+                      ;*ifle {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) com.badlogic.gdx.graphics.Color::clamp@54 (line 188)
+                      ; - com.badlogic.gdx.graphics.Color::<init>@26 (line 96)
+                      ; - aoc.kingdoms.lukasz.menusMapEditor.EditorMap_PrintMap::drawPixmapBIG@131 (line 164)
+  0x000001e3d0647de8: 74c5 0dff 
+
+  0x000001e3d0647dec: ;   {other}
+  0x000001e3d0647dec: 0f1f 8400 | 6406 0005 | c5f8 2eda | bdff ffff | ff0f 8a0e | 0000 000f | 8208 0000 | 0040 0f95 
+  0x000001e3d0647e0c: c540 0fb6 | edf7 ddba | 45ff ffff | c5fa 114c | 2420 c5fa | 1154 2424 | c5fa 1144 
+
+  0x000001e3d0647e28: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0647e28: 2428 90e8 
+
+  0x000001e3d0647e2c: ; ImmutableOopMap {[0]=Oop [8]=Oop }
+                      ;*ifge {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) com.badlogic.gdx.graphics.Color::clamp@68 (line 190)
+                      ; - com.badlogic.gdx.graphics.Color::<init>@26 (line 96)
+                      ; - aoc.kingdoms.lukasz.menusMapEditor.EditorMap_PrintMap::drawPixmapBIG@131 (line 164)
+  0x000001e3d0647e2c: 30c5 0dff 
+
+  0x000001e3d0647e30: ;   {other}
+  0x000001e3d0647e30: 0f1f 8400 | a806 0006 
+
+  0x000001e3d0647e38: ;   {section_word}
+  0x000001e3d0647e38: c5f8 2e15 | 04fb ffff | bdff ffff | ff0f 8a0e | 0000 000f | 8208 0000 | 0040 0f95 | c540 0fb6 
+  0x000001e3d0647e58: edba 45ff | ffff c5fa | 114c 2420 | c5fa 1154 | 2424 c5fa | 1144 2428 
+
+  0x000001e3d0647e70: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0647e70: 6666 90e8 
+
+  0x000001e3d0647e74: ; ImmutableOopMap {[0]=Oop [8]=Oop }
+                      ;*ifle {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) com.badlogic.gdx.graphics.Color::clamp@85 (line 192)
+                      ; - com.badlogic.gdx.graphics.Color::<init>@26 (line 96)
+                      ; - aoc.kingdoms.lukasz.menusMapEditor.EditorMap_PrintMap::drawPixmapBIG@131 (line 164)
+  0x000001e3d0647e74: e8c4 0dff 
+
+  0x000001e3d0647e78: ;   {other}
+  0x000001e3d0647e78: 0f1f 8400 | f006 0007 | c5f8 2ee0 | bdff ffff | ff0f 8a0e | 0000 000f | 8208 0000 | 0040 0f95 
+  0x000001e3d0647e98: c540 0fb6 | edf7 ddba | 45ff ffff | c5fa 114c | 2420 c5fa | 1154 2424 | c5fa 1144 
+
+  0x000001e3d0647eb4: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0647eb4: 2428 90e8 
+
+  0x000001e3d0647eb8: ; ImmutableOopMap {[0]=Oop [8]=Oop }
+                      ;*ifge {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) com.badlogic.gdx.graphics.Color::clamp@99 (line 194)
+                      ; - com.badlogic.gdx.graphics.Color::<init>@26 (line 96)
+                      ; - aoc.kingdoms.lukasz.menusMapEditor.EditorMap_PrintMap::drawPixmapBIG@131 (line 164)
+  0x000001e3d0647eb8: a4c4 0dff 
+
+  0x000001e3d0647ebc: ;   {other}
+  0x000001e3d0647ebc: 0f1f 8400 | 3407 0008 | baf6 ffff | ff48 8beb | 4889 3c24 | 4489 5424 | 0889 4c24 | 0c44 895c 
+  0x000001e3d0647edc: 2410 c5fa | 1144 2414 
+
+  0x000001e3d0647ee4: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0647ee4: 6666 90e8 
+
+  0x000001e3d0647ee8: ; ImmutableOopMap {rbp=Oop [0]=Oop }
+                      ;*invokevirtual getWidth {reexecute=0 rethrow=0 return_oop=0}
+                      ; - aoc.kingdoms.lukasz.menusMapEditor.EditorMap_PrintMap::drawPixmapBIG@38 (line 161)
+  0x000001e3d0647ee8: 74c4 0dff 
+
+  0x000001e3d0647eec: ;   {other}
+  0x000001e3d0647eec: 0f1f 8400 | 6407 0009 | c5f8 2ed0 | bdff ffff | ff0f 8a0e | 0000 000f | 8208 0000 | 0040 0f95 
+  0x000001e3d0647f0c: c540 0fb6 | edf7 ddba | 45ff ffff 
+
+  0x000001e3d0647f18: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0647f18: 6666 90e8 
+
+  0x000001e3d0647f1c: ; ImmutableOopMap {}
+                      ;*ifge {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) aoc.kingdoms.lukasz.menusMapEditor.EditorMap_PrintMap::drawPixmapBIG@47 (line 161)
+  0x000001e3d0647f1c: 40c4 0dff 
+
+  0x000001e3d0647f20: ;   {other}
+  0x000001e3d0647f20: 0f1f 8400 | 9807 000a | 448b 5808 | 49ba 0000 | 0000 e401 | 0000 4d03 | d34d 8b52 
+
+  0x000001e3d0647f3c: ;   {metadata('java/lang/Exception')}
+  0x000001e3d0647f3c: 4049 bbb8 | e516 00e4 | 0100 004d | 3bd3 7436 | 488b d0eb | 2744 8b58 | 0849 ba00 | 0000 00e4 
+  0x000001e3d0647f5c: 0100 004d | 03d3 4d8b 
+
+  0x000001e3d0647f64: ;   {metadata('java/lang/Exception')}
+  0x000001e3d0647f64: 5240 49bb | b8e5 1600 | e401 0000 | 4d3b d374 | 1248 8bd0 | 4883 c440 
+
+  0x000001e3d0647f7c: ;   {runtime_call _rethrow_Java}
+  0x000001e3d0647f7c: 5de9 5e46 | 1aff 488b | e8eb 0348 | 8be8 ba9d 
+
+  0x000001e3d0647f8c: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0647f8c: ffff ffe8 
+
+  0x000001e3d0647f90: ; ImmutableOopMap {rbp=Oop }
+                      ;*astore {reexecute=0 rethrow=0 return_oop=0}
+                      ; - aoc.kingdoms.lukasz.menusMapEditor.EditorMap_PrintMap::drawPixmapBIG@195 (line 169)
+  0x000001e3d0647f90: ccc3 0dff 
+
+  0x000001e3d0647f94: ;   {other}
+  0x000001e3d0647f94: 0f1f 8400 | 0c08 000b | baf6 ffff | ff48 8beb | 4889 3c24 | 4489 5424 | 0889 4c24 | 0c44 8944 
+  0x000001e3d0647fb4: 2414 4489 | 5c24 1844 | 894c 241c 
+
+  0x000001e3d0647fc0: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0647fc0: 6666 90e8 
+
+  0x000001e3d0647fc4: ; ImmutableOopMap {rbp=Oop [0]=Oop }
+                      ;*invokevirtual getPixel {reexecute=0 rethrow=0 return_oop=0}
+                      ; - com.badlogic.gdx.graphics.Pixmap::getPixel@6 (line 379)
+                      ; - aoc.kingdoms.lukasz.menusMapEditor.EditorMap_PrintMap::drawPixmapBIG@103 (line 163)
+  0x000001e3d0647fc4: 98c3 0dff 
+
+  0x000001e3d0647fc8: ;   {other}
+  0x000001e3d0647fc8: 0f1f 8400 | 4008 000c | baf6 ffff | ff48 ff74 | 2408 488f | 0424 4889 | 4424 f88b | 4424 1089 
+  0x000001e3d0647fe8: 4424 0848 | 8b44 24f8 | 4889 4424 | f88b 4424 | 1489 4424 | 0c48 8b44 | 24f8 4889 | 4424 f88b 
+  0x000001e3d0648008: 4424 1889 | 4424 1048 | 8b44 24f8 | 4889 4424 | f88b 4424 | 1c89 4424 | 1448 8b44 | 24f8 4489 
+  0x000001e3d0648028: 4424 1844 | 894c 241c | 897c 2420 
+
+  0x000001e3d0648034: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0648034: 6666 90e8 
+
+  0x000001e3d0648038: ; ImmutableOopMap {rbp=Oop [0]=Oop }
+                      ;*invokevirtual drawPixel {reexecute=0 rethrow=0 return_oop=0}
+                      ; - aoc.kingdoms.lukasz.menusMapEditor.EditorMap_PrintMap::drawPixmapBIG@177 (line 166)
+  0x000001e3d0648038: 24c3 0dff 
+
+  0x000001e3d064803c: ;   {other}
+  0x000001e3d064803c: 0f1f 8400 | b408 000d | baf6 ffff | ff48 ff74 | 2408 488f | 0424 4889 | 4424 f88b | 4424 1089 
+  0x000001e3d064805c: 4424 0848 | 8b44 24f8 | 4889 4424 | f88b 4424 | 1489 4424 | 0c48 8b44 | 24f8 4889 | 4424 f88b 
+  0x000001e3d064807c: 4424 1889 | 4424 1048 | 8b44 24f8 | 4889 4424 | f88b 4424 | 1c89 4424 | 1448 8b44 | 24f8 4489 
+  0x000001e3d064809c: 4424 1844 | 894c 241c | 897c 2420 
+
+  0x000001e3d06480a8: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d06480a8: 6666 90e8 
+
+  0x000001e3d06480ac: ; ImmutableOopMap {rbp=Oop [0]=Oop }
+                      ;*invokevirtual setPixel {reexecute=0 rethrow=0 return_oop=0}
+                      ; - com.badlogic.gdx.graphics.Pixmap::drawPixel@7 (line 420)
+                      ; - aoc.kingdoms.lukasz.menusMapEditor.EditorMap_PrintMap::drawPixmapBIG@177 (line 166)
+  0x000001e3d06480ac: b0c2 0dff 
+
+  0x000001e3d06480b0: ;   {other}
+  0x000001e3d06480b0: 0f1f 8400 | 2809 000e | baf6 ffff | ff48 8beb 
+
+  0x000001e3d06480c0: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d06480c0: 6666 90e8 
+
+  0x000001e3d06480c4: ; ImmutableOopMap {rbp=Oop }
+                      ;*invokevirtual getWidth {reexecute=0 rethrow=0 return_oop=0}
+                      ; - aoc.kingdoms.lukasz.menusMapEditor.EditorMap_PrintMap::drawPixmapBIG@1 (line 155)
+  0x000001e3d06480c4: 98c2 0dff 
+
+  0x000001e3d06480c8: ;   {other}
+  0x000001e3d06480c8: 0f1f 8400 | 4009 000f | baf6 ffff | ff48 8beb | 4c89 0424 
+
+  0x000001e3d06480dc: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d06480dc: 6666 90e8 
+
+  0x000001e3d06480e0: ; ImmutableOopMap {rbp=Oop [0]=Oop }
+                      ;*invokevirtual getWidth {reexecute=0 rethrow=0 return_oop=0}
+                      ; - com.badlogic.gdx.graphics.Pixmap::getWidth@4 (line 384)
+                      ; - aoc.kingdoms.lukasz.menusMapEditor.EditorMap_PrintMap::drawPixmapBIG@1 (line 155)
+  0x000001e3d06480e0: 7cc2 0dff 
+
+  0x000001e3d06480e4: ;   {other}
+  0x000001e3d06480e4: 0f1f 8400 | 5c09 0010 
+
+  0x000001e3d06480ec: ;   {internal_word}
+  0x000001e3d06480ec: 49ba db7c | 64d0 e301 | 0000 4d89 | 9760 0400 
+
+  0x000001e3d06480fc: ;   {runtime_call SafepointBlob}
+  0x000001e3d06480fc: 00e9 ded2 | 0dff 4883 | ec08 c5fb 
+
+  0x000001e3d0648108: ;   {runtime_call StubRoutines (initial stubs)}
+  0x000001e3d0648108: 1104 24e8 | ba8f 08ff | 4158 e90e | faff ff48 | 83ec 08c5 | fb11 1424 
+
+  0x000001e3d0648120: ;   {runtime_call StubRoutines (initial stubs)}
+  0x000001e3d0648120: e8a5 8f08 | ff5b e9e9 | f9ff ff48 | 83ec 08c5 | fb11 1c24 
+
+  0x000001e3d0648134: ;   {runtime_call StubRoutines (initial stubs)}
+  0x000001e3d0648134: e891 8f08 | ff41 59e9 | b7f9 ffff | 4883 ec08 | c5fb 1104 
+
+  0x000001e3d0648148: ;   {runtime_call StubRoutines (initial stubs)}
+  0x000001e3d0648148: 24e8 7c8f | 08ff 59e9 | 6df9 ffff | 4883 ec08 | c5fb 111c 
+
+  0x000001e3d064815c: ;   {runtime_call StubRoutines (initial stubs)}
+  0x000001e3d064815c: 24e8 688f | 08ff 5fe9 | 10f9 ffff 
+
+  0x000001e3d0648168: ;   {runtime_call StubRoutines (final stubs)}
+  0x000001e3d0648168: e8d3 f50b | ffe9 18f8 | ffff f4f4 | f4f4 f4f4 
+[Stub Code]
+  0x000001e3d0648178: ;   {no_reloc}
+  0x000001e3d0648178: 48bb 0000 | 0000 0000 
+
+  0x000001e3d0648180: ;   {runtime_call nmethod}
+  0x000001e3d0648180: 0000 e9fb 
+
+  0x000001e3d0648184: ;   {static_stub}
+  0x000001e3d0648184: ffff ff48 | bb00 0000 | 0000 0000 
+
+  0x000001e3d0648190: ;   {runtime_call nmethod}
+  0x000001e3d0648190: 00e9 fbff 
+
+  0x000001e3d0648194: ;   {runtime_call ExceptionBlob}
+  0x000001e3d0648194: ffff e9c5 | 301a ffe8 | 0000 0000 | 4883 2c24 
+
+  0x000001e3d06481a4: ;   {runtime_call DeoptimizationBlob}
+  0x000001e3d06481a4: 05e9 d6c4 | 0dff f4f4 | f4f4 f4f4 
+[/MachCode]
+
+
+Compiled method (c2) 1609975 5001   !   4       aoc.kingdoms.lukasz.menu.MenuManager::draw (368 bytes)
+ total in heap  [0x000001e3d0425e08,0x000001e3d0427670] = 6248
+ relocation     [0x000001e3d0425ee0,0x000001e3d0426100] = 544
+ constants      [0x000001e3d0426100,0x000001e3d0426120] = 32
+ main code      [0x000001e3d0426120,0x000001e3d04274f8] = 5080
+ stub code      [0x000001e3d04274f8,0x000001e3d0427588] = 144
+ oops           [0x000001e3d0427588,0x000001e3d0427598] = 16
+ metadata       [0x000001e3d0427598,0x000001e3d0427670] = 216
+ immutable data [0x000001e3a3f9be60,0x000001e3a3f9cc48] = 3560
+ dependencies   [0x000001e3a3f9be60,0x000001e3a3f9bea0] = 64
+ nul chk table  [0x000001e3a3f9bea0,0x000001e3a3f9bf70] = 208
+ handler table  [0x000001e3a3f9bf70,0x000001e3a3f9c0c0] = 336
+ scopes pcs     [0x000001e3a3f9c0c0,0x000001e3a3f9c570] = 1200
+ scopes data    [0x000001e3a3f9c570,0x000001e3a3f9cc48] = 1752
+
+
+[Constant Pool]
+             Address          hex4                    hex8      
+  0x000001e3d0426100:   0x3f800000      0x3fd333333f800000      
+  0x000001e3d0426104:   0x3fd33333                              
+  0x000001e3d0426108:   0xf4f4f4f4      0xf4f4f4f4f4f4f4f4      
+  0x000001e3d042610c:   0xf4f4f4f4                              
+  0x000001e3d0426110:   0xf4f4f4f4      0xf4f4f4f4f4f4f4f4      
+  0x000001e3d0426114:   0xf4f4f4f4                              
+  0x000001e3d0426118:   0xf4f4f4f4      0xf4f4f4f4f4f4f4f4      
+  0x000001e3d042611c:   0xf4f4f4f4                              
+
+[MachCode]
+[Instructions begin]
+  0x000001e3d0426120: ;   {no_reloc}
+  0x000001e3d0426120: 6690 448b | 5208 443b 
+
+  0x000001e3d0426128: ;   {runtime_call ic_miss_stub}
+  0x000001e3d0426128: 5008 0f85 | b083 2fff 
+[Verified Entry Point]
+  0x000001e3d0426130: 8984 2400 | 80ff ff55 | 4883 ec60 | 4181 7f20 | 0100 0000 | 0f85 a113 | 0000 8974 | 2418 897c 
+  0x000001e3d0426150: 2414 4489 | 4c24 104c | 8944 2408 | 4889 5424 | 2044 8b9a | bc02 0000 
+
+  0x000001e3d0426168: ; implicit exception: dispatches to 0x000001e3d0426f94
+  0x000001e3d0426168: 478b 44dc 
+
+  0x000001e3d042616c: ;   {metadata('java/util/ArrayList')}
+  0x000001e3d042616c: 0841 81f8 | 20a0 1e00 | 0f85 4209 | 0000 4b8d | 2cdc 448b | 4d10 448b | 4424 1045 | 85c0 0f8c 
+  0x000001e3d042618c: 5c07 0000 | 453b c10f | 8d53 0700 | 008b 6d14 
+
+  0x000001e3d042619c: ; implicit exception: dispatches to 0x000001e3d0426fb8
+  0x000001e3d042619c: 458b 54ec | 0c45 8bc8 | 453b ca0f | 83fb 0800 | 004d 8d14 | ec43 8b6c | 8a10 458b 
+
+  0x000001e3d04261b8: ;   {metadata('java/util/ArrayList')}
+  0x000001e3d04261b8: 44ec 0841 | 81f8 20a0 | 1e00 0f85 | 300b 0000 | 4d8d 14ec | 418b 5a10 | ffcb 85db | 7d16 e965 
+  0x000001e3d04261d8: 0200 000f | 1f44 0000 | 4c8b 5424 | 2045 8b9a | bc02 0000 
+
+  0x000001e3d04261ec: ; implicit exception: dispatches to 0x000001e3d0426e04
+  0x000001e3d04261ec: 478b 54dc 
+
+  0x000001e3d04261f0: ;   {metadata('java/util/ArrayList')}
+  0x000001e3d04261f0: 0841 81fa | 20a0 1e00 | 0f85 2e08 | 0000 4b8d | 2cdc 448b | 4d10 448b | 5424 1045 | 3bd1 0f8d 
+  0x000001e3d0426210: a305 0000 | 8b6d 1445 | 8b54 ec0c | 448b 4424 | 1045 3bc2 | 0f83 6207 | 0000 4d8d | 14ec 478b 
+  0x000001e3d0426230: 5482 1047 | 8b5c d408 
+
+  0x000001e3d0426238: ;   {metadata('java/util/ArrayList')}
+  0x000001e3d0426238: 4181 fb20 | a01e 000f | 85c7 0a00 | 004c 8b5c | 2420 458b | 83c0 0200 | 0049 c1e2 | 0347 8b5c 
+  0x000001e3d0426258: ;   {metadata('java/util/ArrayList')}
+  0x000001e3d0426258: c408 4181 | fb20 a01e | 000f 85dd | 0700 004b | 8d0c c444 | 8b49 1044 | 8b44 2410 | 453b c10f 
+  0x000001e3d0426278: 8d17 0600 | 008b 6914 
+
+  0x000001e3d0426280: ; implicit exception: dispatches to 0x000001e3d0426e64
+  0x000001e3d0426280: 458b 5cec | 0c45 3bc3 | 0f83 1607 | 0000 4d8d | 1cec 438b | 6c83 1045 | 8b44 ec08 
+
+  0x000001e3d042629c: ;   {metadata('java/util/ArrayList')}
+  0x000001e3d042629c: 4181 f820 | a01e 000f | 857f 0a00 | 0048 c1e5 | 0344 8b4d | 1085 db0f | 8c25 0500 | 0041 3bd9 
+  0x000001e3d04262bc: 0f8d 1c05 | 0000 8b6d | 1445 8b5c | ec0c 413b | db0f 83ed | 0600 004d | 8d1c ec41 | 8b6c 9b10 
+  0x000001e3d04262dc: ; implicit exception: dispatches to 0x000001e3d0426efc
+  0x000001e3d04262dc: 458b 44ec 
+
+  0x000001e3d04262e0: ;   {metadata('java/lang/Integer')}
+  0x000001e3d04262e0: 0841 81f8 | e010 1800 | 0f85 8a0a | 0000 458b | 4a10 4d8d | 1cec 458b | 5b0c 4585 | db0f 8c2a 
+  0x000001e3d0426300: 0500 0045 | 3bd9 0f8d | 2105 0000 | 418b 6a14 
+
+  0x000001e3d0426310: ; implicit exception: dispatches to 0x000001e3d0426f20
+  0x000001e3d0426310: 458b 54ec | 0c45 3bda | 0f83 be06 | 0000 4d8d | 14ec 438b | 6c9a 1045 | 8b44 ec08 | 49ba 0000 
+  0x000001e3d0426330: 0000 e401 | 0000 4d03 | d04d 8b52 
+
+  0x000001e3d042633c: ;   {metadata('aoc/kingdoms/lukasz/menu/Menu')}
+  0x000001e3d042633c: 3849 b870 | ee0c 01e4 | 0100 004d | 3bd0 0f85 | 1c07 0000 | 4d8d 0cec | 450f b641 | 5845 85c0 
+  0x000001e3d042635c: 0f84 ca00 | 0000 4c8b | 5424 2045 | 8b82 c402 | 0000 470f | b654 c458 | 4c8b 4424 | 2041 8ba8 
+  0x000001e3d042637c: 7c02 0000 | 4585 d20f | 853f 0300 | 0044 3bdd | 0f84 2b03 | 0000 4533 | c04c 8b54 | 2420 418b 
+  0x000001e3d042639c: ba94 0200 | 0085 ff7d | 2f41 0fb6 | baaf 0200 | 0085 ff0f | 8580 0300 
+
+  0x000001e3d04263b4: ;   {oop(a 'java/lang/Class'{0x00000000a40dc5b8} = 'aoc/kingdoms/lukasz/jakowski/Game')}
+  0x000001e3d04263b4: 0049 bab8 | c50d a400 | 0000 0041 | 8bba d800 | 0000 418b | 4cfc 1441 | 3bcb 0f84 | fc02 0000 
+  0x000001e3d04263d4: ;   {oop(a 'aoc/kingdoms/lukasz/menu_element/Status'{0x00000000a40dfcc0})}
+  0x000001e3d04263d4: 48b9 c0fc | 0da4 0000 | 0000 458b | d049 8bd1 | 891c 244c | 8b44 2408 | 448b 4c24 | 148b 7c24 
+  0x000001e3d04263f4: 1841 8bf2 | 9048 b8e0 | d90c a2e3 
+
+  0x000001e3d0426400: ;   {virtual_call}
+  0x000001e3d0426400: 0100 00e8 
+
+  0x000001e3d0426404: ; ImmutableOopMap {[8]=Oop [32]=Oop }
+                      ;*invokevirtual draw {reexecute=0 rethrow=0 return_oop=0}
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@190 (line 2076)
+  0x000001e3d0426404: 087f 3cff 
+
+  0x000001e3d0426408: ;   {other}
+  0x000001e3d0426408: 0f1f 8400 | 0006 0000 
+
+  0x000001e3d0426410: ;   {oop(a 'java/lang/Class'{0x00000000a40e0040} = 'aoc/kingdoms/lukasz/jakowski/Renderer/Renderer')}
+  0x000001e3d0426410: 49ba 4000 | 0ea4 0000 | 0000 418b | aa10 0100 | 0085 ed0f | 8fab 0600 | 008b 1c24 | 4d8b 9750 
+  0x000001e3d0426430: 0400 00ff 
+
+  0x000001e3d0426434: ; ImmutableOopMap {[8]=Oop [32]=Oop }
+                      ;*goto {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) aoc.kingdoms.lukasz.menu.MenuManager::draw@210 (line 2073)
+                      ;   {poll}
+  0x000001e3d0426434: cb41 8502 | 85db 0f8d | a0fd ffff 
+
+  0x000001e3d0426440: ;   {oop(a 'java/lang/Class'{0x00000000a40dc5b8} = 'aoc/kingdoms/lukasz/jakowski/Game')}
+  0x000001e3d0426440: 49ba b8c5 | 0da4 0000 | 0000 458b | 92d8 0000 | 0047 8b44 | d40c 4585 | c00f 8d80 
+
+  0x000001e3d042645c: ;   {oop(a 'java/lang/Class'{0x00000000a40dc5b8} = 'aoc/kingdoms/lukasz/jakowski/Game')}
+  0x000001e3d042645c: 0100 0049 | bab8 c50d | a400 0000 | 0045 8b92 | 6401 0000 | 4585 d20f | 8423 0100 
+
+  0x000001e3d0426478: ;   {section_word}
+  0x000001e3d0426478: 00c5 fa10 | 057f fcff 
+
+  0x000001e3d0426480: ;   {oop(a 'java/lang/Class'{0x00000000a446bfc0} = 'aoc/kingdoms/lukasz/menu_element/menuElementHover/MenuElement_Hover')}
+  0x000001e3d0426480: ff48 bec0 | bf46 a400 | 0000 00c5 | fa10 9690 
+
+  0x000001e3d0426490: ;   {oop(a 'java/lang/Class'{0x00000000a40f57b8} = 'aoc/kingdoms/lukasz/jakowski/CFG')}
+  0x000001e3d0426490: 0000 0049 | bbb8 570f | a400 0000 | 004d 8b83 | d006 0000 | c5f8 2ec2 | 767f 4d8b | c84c 2b8e 
+  0x000001e3d04264b0: 8000 0000 | 8b8e 9800 | 0000 418b | 9be8 0600 | 00c5 f9ef | c0c4 c1fa | 2ac1 d1e3 | c5f1 efc9 
+  0x000001e3d04264d0: c5f2 2ac9 | c5fa 5ec9 | c5f2 58c2 
+
+  0x000001e3d04264dc: ;   {section_word}
+  0x000001e3d04264dc: c5fa 5915 | 20fc ffff | c5f1 efc9 | c5f2 2acb | c5ea 59d9 | c5f2 5ccb | c5fa 118e | 9400 0000 
+  0x000001e3d04264fc: c5e0 57db | c5f8 2ed9 | 7607 4489 | a694 0000 | 00c5 fa11 | 8690 0000 
+
+  0x000001e3d0426514: ;   {section_word}
+  0x000001e3d0426514: 00c5 f82e | 05e3 fbff | ff76 0ac7 | 8690 0000 | 0000 0080 
+
+  0x000001e3d0426528: ;   {oop(a 'java/lang/Class'{0x00000000a40f5588} = 'aoc/kingdoms/lukasz/jakowski/GameValues')}
+  0x000001e3d0426528: 3f49 bb88 | 550f a400 | 0000 0045 | 8b5b 784f | 635c dc18 | 4f8b 4cd4 | 104d 03d9 | 4d3b d87f 
+  0x000001e3d0426548: 534b 8d14 
+
+  0x000001e3d042654c: ;   {oop(a 'java/lang/Class'{0x00000000a443ade0} = 'aoc/kingdoms/lukasz/jakowski/Touch')}
+  0x000001e3d042654c: d449 bae0 | ad43 a400 | 0000 0045 | 8b5a 7441 | 8b7a 7841 | 83c3 1983 | c71e c5f9 | efc0 c4c1 
+  0x000001e3d042656c: 7a2a c3c5 | fa58 8e94 | 0000 00c5 | 7a2c c941 | 81f9 0000 | 0080 0f84 | 4e0f 0000 | 4c8b 4424 
+  0x000001e3d042658c: ;   {optimized virtual_call}
+  0x000001e3d042658c: 0866 90e8 
+
+  0x000001e3d0426590: ; ImmutableOopMap {[8]=Oop [32]=Oop }
+                      ;*invokevirtual draw_Hover {reexecute=0 rethrow=0 return_oop=0}
+                      ; - aoc.kingdoms.lukasz.menu_element.menuElementHover.MenuElement_Hover::drawProvinceInfo@20 (line 275)
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@310 (line 2101)
+  0x000001e3d0426590: fcf8 0600 
+
+  0x000001e3d0426594: ;   {other}
+  0x000001e3d0426594: 0f1f 8400 | 8c07 0002 | 4c8b 5424 | 2045 8b9a | cc02 0000 
+
+  0x000001e3d04265a8: ; implicit exception: dispatches to 0x000001e3d0427020
+  0x000001e3d04265a8: 430f b66c | dc5c 85ed | 0f85 6605 | 0000 418b | aac4 0200 | 0045 0fb6 | 5cec 5845 | 85db 0f85 
+  0x000001e3d04265c8: 2101 0000 | 4883 c460 
+
+  0x000001e3d04265d0: ;   {poll_return}
+  0x000001e3d04265d0: 5d49 3ba7 | 4804 0000 | 0f87 e20e | 0000 c343 | 8b6c d410 | 85ed 0f8c | ec05 0000 | 4b8d 14d4 
+  0x000001e3d04265f0: ;   {optimized virtual_call}
+  0x000001e3d04265f0: 6666 90e8 
+
+  0x000001e3d04265f4: ; ImmutableOopMap {[8]=Oop [32]=Oop }
+                      ;*invokevirtual updateElementHover_Animation {reexecute=0 rethrow=0 return_oop=0}
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@244 (line 2094)
+  0x000001e3d04265f4: d855 fdff 
+
+  0x000001e3d04265f8: ;   {other}
+  0x000001e3d04265f8: 0f1f 8400 | f007 0003 | 488b 5424 
+
+  0x000001e3d0426604: ;   {optimized virtual_call}
+  0x000001e3d0426604: 2066 90e8 
+
+  0x000001e3d0426608: ; ImmutableOopMap {[8]=Oop [32]=Oop }
+                      ;*invokevirtual getActiveMenu {reexecute=0 rethrow=0 return_oop=1}
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@248 (line 2096)
+  0x000001e3d0426608: 2450 d1ff 
+
+  0x000001e3d042660c: ;   {other}
+  0x000001e3d042660c: 0f1f 8400 | 0408 0004 
+
+  0x000001e3d0426614: ;   {oop(a 'java/lang/Class'{0x00000000a40dc5b8} = 'aoc/kingdoms/lukasz/jakowski/Game')}
+  0x000001e3d0426614: 49ba b8c5 | 0da4 0000 | 0000 418b | 9ad8 0000 | 0041 8b4c | dc0c 448b 
+
+  0x000001e3d042662c: ;   {metadata('java/util/ArrayList')}
+  0x000001e3d042662c: 5808 4181 | fb20 a01e | 000f 8541 | 0500 0044 | 8b48 1085 | c90f 8c05 | 0300 0041 | 3bc9 0f8d 
+  0x000001e3d042664c: fc02 0000 | 8b68 1445 | 8b54 ec0c | 413b ca0f | 83df 0400 | 004d 8d14 | ec41 8b6c | 8a10 458b 
+  0x000001e3d042666c: 5cec 0849 | ba00 0000 | 00e4 0100 | 004d 03d3 | 4d8b 5238 
+
+  0x000001e3d0426680: ;   {metadata('aoc/kingdoms/lukasz/menu/Menu')}
+  0x000001e3d0426680: 49bb 70ee | 0c01 e401 | 0000 4d3b | d30f 8521 | 0500 0041 | 8b74 dc10 | 498d 14ec | 4c8b 4424 
+  0x000001e3d04266a0: 0844 8b4c | 2414 33ff 
+
+  0x000001e3d04266a8: ;   {optimized virtual_call}
+  0x000001e3d04266a8: 6666 90e8 
+
+  0x000001e3d04266ac: ; ImmutableOopMap {[8]=Oop [32]=Oop }
+                      ;*invokevirtual drawHover {reexecute=0 rethrow=0 return_oop=0}
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@274 (line 2096)
+  0x000001e3d04266ac: 4040 0e00 
+
+  0x000001e3d04266b0: ;   {other}
+  0x000001e3d04266b0: 0f1f 8400 | a808 0005 | e9df feff | ff41 b801 | 0000 00e9 | cdfc ffff | 4533 c0e9 | c5fc ffff 
+  0x000001e3d04266d0: 410f b66c | fc18 85ed | 0f85 3a05 
+
+  0x000001e3d04266dc: ;   {oop(a 'aoc/kingdoms/lukasz/menu_element/Status'{0x00000000a446d968})}
+  0x000001e3d04266dc: 0000 48b9 | 68d9 46a4 | 0000 0000 | e9f1 fcff | ff45 8b5c 
+
+  0x000001e3d04266f0: ;   {metadata('aoc/kingdoms/lukasz/menus/Dialog')}
+  0x000001e3d04266f0: ec08 4181 | fb68 7c0e | 010f 85fd | 0400 0049 | 8d14 ec4c | 8b44 2408 | 448b 4c24 | 148b 7c24 
+  0x000001e3d0426710: 18be 0100 
+
+  0x000001e3d0426714: ;   {oop(a 'aoc/kingdoms/lukasz/menu_element/Status'{0x00000000a40dfcc0})}
+  0x000001e3d0426714: 0000 48b9 | c0fc 0da4 | 0000 0000 
+
+  0x000001e3d0426720: ;   {optimized virtual_call}
+  0x000001e3d0426720: 6666 90e8 
+
+  0x000001e3d0426724: ; ImmutableOopMap {}
+                      ;*invokevirtual draw {reexecute=0 rethrow=0 return_oop=0}
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@354 (line 2113)
+  0x000001e3d0426724: f8a4 91f8 
+
+  0x000001e3d0426728: ;   {other}
+  0x000001e3d0426728: 0f1f 8400 | 2009 0006 | e997 feff | ff44 8944 | 241c 4c89 | 4c24 2889 | 1c24 488b | d144 8b44 
+  0x000001e3d0426748: ;   {optimized virtual_call}
+  0x000001e3d0426748: 2410 90e8 
+
+  0x000001e3d042674c: ; ImmutableOopMap {[8]=Oop [32]=Oop [40]=Oop }
+                      ;*invokeinterface get {reexecute=0 rethrow=0 return_oop=1}
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::getTitleStatus@23 (line 2052)
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@187 (line 2078)
+  0x000001e3d042674c: 9080 2fff 
+
+  0x000001e3d0426750: ;   {other}
+  0x000001e3d0426750: 0f1f 8400 | 4809 0007 
+
+  0x000001e3d0426758: ; implicit exception: dispatches to 0x000001e3d0427490
+  0x000001e3d0426758: 448b 4008 
+
+  0x000001e3d042675c: ;   {metadata('java/util/ArrayList')}
+  0x000001e3d042675c: 4181 f820 | a01e 000f | 855f 0600 | 0048 8bd0 | 448b 0424 
+
+  0x000001e3d0426770: ;   {optimized virtual_call}
+  0x000001e3d0426770: 6666 90e8 
+
+  0x000001e3d0426774: ; ImmutableOopMap {[8]=Oop [32]=Oop [40]=Oop }
+                      ;*invokeinterface get {reexecute=0 rethrow=0 return_oop=1}
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::getTitleStatus@32 (line 2052)
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@187 (line 2078)
+  0x000001e3d0426774: 6880 2fff 
+
+  0x000001e3d0426778: ;   {other}
+  0x000001e3d0426778: 0f1f 8400 | 7009 0008 | 4c8b d044 
+
+  0x000001e3d0426784: ;   {metadata('java/lang/Integer')}
+  0x000001e3d0426784: 8b40 0841 | 81f8 e010 | 1800 0f85 | 4c06 0000 | 458b 5a0c | 413b eb0f | 848b 0100 | 0044 8b1c 
+  0x000001e3d04267a4: 244c 8b4c | 2428 448b | 4424 1c41 | 8bdb e91d | fcff ff33 | d244 8b44 | 2410 895c 
+
+  0x000001e3d04267c0: ;   {static_call}
+  0x000001e3d04267c0: 2434 90e8 
+
+  0x000001e3d04267c4: ; ImmutableOopMap {rbp=Oop [8]=Oop [32]=Oop }
+                      ;*invokestatic outOfBoundsCheckIndex {reexecute=0 rethrow=0 return_oop=1}
+                      ; - jdk.internal.util.Preconditions::checkIndex@12 (line 302)
+                      ; - java.util.Objects::checkIndex@3 (line 365)
+                      ; - java.util.ArrayList::get@5 (line 428)
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@32 (line 2075)
+  0x000001e3d04267c4: 1886 2fff 
+
+  0x000001e3d04267c8: ;   {other}
+  0x000001e3d04267c8: 0f1f 8400 | c009 0009 | 4885 c00f | 84d7 0400 | 0048 8be8 | eb7e 4c89 | 5424 2889 | 5c24 1c48 
+  0x000001e3d04267e8: ff74 2420 | 488f 0424 | 33d2 448b 
+
+  0x000001e3d04267f4: ;   {static_call}
+  0x000001e3d04267f4: c366 90e8 
+
+  0x000001e3d04267f8: ; ImmutableOopMap {rbp=Oop [0]=Oop [8]=Oop [40]=Oop }
+                      ;*invokestatic outOfBoundsCheckIndex {reexecute=0 rethrow=0 return_oop=1}
+                      ; - jdk.internal.util.Preconditions::checkIndex@12 (line 302)
+                      ; - java.util.Objects::checkIndex@3 (line 365)
+                      ; - java.util.ArrayList::get@5 (line 428)
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@55 (line 2075)
+  0x000001e3d04267f8: e485 2fff 
+
+  0x000001e3d04267fc: ;   {other}
+  0x000001e3d04267fc: 0f1f 8400 | f409 000a | 4885 c00f | 843f 0400 | 0048 8be8 | 48ff 3424 | 488f 4424 | 2048 8944 
+  0x000001e3d042681c: 24f8 8b44 | 241c 8944 | 2434 488b | 4424 f8eb | 2f33 d245 | 8bc3 895c | 2434 4c89 | 5424 2844 
+  0x000001e3d042683c: 895c 2430 
+
+  0x000001e3d0426840: ;   {static_call}
+  0x000001e3d0426840: 6666 90e8 
+
+  0x000001e3d0426844: ; ImmutableOopMap {[8]=Oop [32]=Oop [40]=Oop }
+                      ;*invokestatic outOfBoundsCheckIndex {reexecute=0 rethrow=0 return_oop=1}
+                      ; - jdk.internal.util.Preconditions::checkIndex@12 (line 302)
+                      ; - java.util.Objects::checkIndex@3 (line 365)
+                      ; - java.util.ArrayList::get@5 (line 428)
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@66 (line 2075)
+  0x000001e3d0426844: 9885 2fff 
+
+  0x000001e3d0426848: ;   {other}
+  0x000001e3d0426848: 0f1f 8400 | 400a 000b | 4885 c00f | 840b 0400 | 0048 8be8 | ba9d ffff | ff48 8944 | 24f8 8b44 
+  0x000001e3d0426868: 2410 8944 | 2404 488b | 4424 f848 | 8944 24f8 | 8b44 2414 | 8944 2410 | 488b 4424 
+
+  0x000001e3d0426884: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0426884: f866 90e8 
+
+  0x000001e3d0426888: ; ImmutableOopMap {rbp=Oop [8]=Oop [32]=Oop }
+                      ;*astore {reexecute=0 rethrow=0 return_oop=0}
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@200 (line 2082)
+  0x000001e3d0426888: d4da 2fff 
+
+  0x000001e3d042688c: ;   {other}
+  0x000001e3d042688c: 0f1f 8400 | 840a 000c | 4c89 5424 | 2889 5c24 | 1c48 ff74 | 2420 488f | 0424 33d2 | 488b 6c24 
+  0x000001e3d04268ac: 2048 894c 
+
+  0x000001e3d04268b0: ;   {static_call}
+  0x000001e3d04268b0: 2430 90e8 
+
+  0x000001e3d04268b4: ; ImmutableOopMap {rbp=Oop [0]=Oop [8]=Oop [40]=Oop [48]=Oop }
+                      ;*invokestatic outOfBoundsCheckIndex {reexecute=0 rethrow=0 return_oop=1}
+                      ; - jdk.internal.util.Preconditions::checkIndex@12 (line 302)
+                      ; - java.util.Objects::checkIndex@3 (line 365)
+                      ; - java.util.ArrayList::get@5 (line 428)
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@45 (line 2075)
+  0x000001e3d04268b4: 2885 2fff 
+
+  0x000001e3d04268b8: ;   {other}
+  0x000001e3d04268b8: 0f1f 8400 | b00a 000d | 4885 c00f | 84ff 0300 | 0048 8be8 | 48ff 3424 | 488f 4424 | 2048 8944 
+  0x000001e3d04268d8: 24f8 8b44 | 241c 8944 | 2434 488b | 4424 f8e9 | 70ff ffff 
+
+  0x000001e3d04268ec: ;   {static_call}
+  0x000001e3d04268ec: 33d2 90e8 
+
+  0x000001e3d04268f0: ; ImmutableOopMap {rbp=Oop [8]=Oop [32]=Oop }
+                      ;*invokestatic outOfBoundsCheckIndex {reexecute=0 rethrow=0 return_oop=1}
+                      ; - jdk.internal.util.Preconditions::checkIndex@12 (line 302)
+                      ; - java.util.Objects::checkIndex@3 (line 365)
+                      ; - java.util.ArrayList::get@5 (line 428)
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@5 (line 2073)
+  0x000001e3d04268f0: ec84 2fff 
+
+  0x000001e3d04268f4: ;   {other}
+  0x000001e3d04268f4: 0f1f 8400 | ec0a 000e | 4885 c00f | 8477 0300 | 0048 8be8 | ba9d ffff | ff48 8944 | 24f8 8b44 
+  0x000001e3d0426914: 2414 8944 | 2410 488b 
+
+  0x000001e3d042691c: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d042691c: 4424 f8e8 
+
+  0x000001e3d0426920: ; ImmutableOopMap {rbp=Oop [8]=Oop [32]=Oop }
+                      ;*astore {reexecute=0 rethrow=0 return_oop=0}
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@216 (line 2088)
+  0x000001e3d0426920: 3cda 2fff 
+
+  0x000001e3d0426924: ;   {other}
+  0x000001e3d0426924: 0f1f 8400 | 1c0b 000f 
+
+  0x000001e3d042692c: ;   {oop(a 'aoc/kingdoms/lukasz/menu_element/Status'{0x00000000a446d938})}
+  0x000001e3d042692c: 48b9 38d9 | 46a4 0000 | 0000 448b | 1424 4c8b | 4c24 2844 | 8b44 241c | 418b dae9 | 92fa ffff 
+  0x000001e3d042694c: 33d2 448b | c148 8944 | 2428 894c 
+
+  0x000001e3d0426958: ;   {static_call}
+  0x000001e3d0426958: 241c 90e8 
+
+  0x000001e3d042695c: ; ImmutableOopMap {[8]=Oop [32]=Oop [40]=Oop }
+                      ;*invokestatic outOfBoundsCheckIndex {reexecute=0 rethrow=0 return_oop=1}
+                      ; - jdk.internal.util.Preconditions::checkIndex@12 (line 302)
+                      ; - java.util.Objects::checkIndex@3 (line 365)
+                      ; - java.util.ArrayList::get@5 (line 428)
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@257 (line 2096)
+  0x000001e3d042695c: 8084 2fff 
+
+  0x000001e3d0426960: ;   {other}
+  0x000001e3d0426960: 0f1f 8400 | 580b 0010 | 4885 c00f | 856f 0300 | 00ba f6ff | ffff 4c8b | 5424 084c 
+
+  0x000001e3d042697c: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d042697c: 8914 24e8 
+
+  0x000001e3d0426980: ; ImmutableOopMap {[0]=Oop [32]=Oop }
+                      ;*athrow {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) jdk.internal.util.Preconditions::checkIndex@15 (line 302)
+                      ; - java.util.Objects::checkIndex@3 (line 365)
+                      ; - java.util.ArrayList::get@5 (line 428)
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@257 (line 2096)
+  0x000001e3d0426980: dcd9 2fff 
+
+  0x000001e3d0426984: ;   {other}
+  0x000001e3d0426984: 0f1f 8400 | 7c0b 0011 | bae6 ffff | ff89 1c24 
+
+  0x000001e3d0426994: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0426994: 6666 90e8 
+
+  0x000001e3d0426998: ; ImmutableOopMap {rbp=NarrowOop [8]=Oop [32]=Oop }
+                      ;*aaload {reexecute=0 rethrow=0 return_oop=0}
+                      ; - java.util.ArrayList::elementData@5 (line 412)
+                      ; - java.util.ArrayList::get@11 (line 429)
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@32 (line 2075)
+  0x000001e3d0426998: c4d9 2fff 
+
+  0x000001e3d042699c: ;   {other}
+  0x000001e3d042699c: 0f1f 8400 | 940b 0012 | bae6 ffff | ff89 1c24 | 4c89 5424 
+
+  0x000001e3d04269b0: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d04269b0: 2866 90e8 
+
+  0x000001e3d04269b4: ; ImmutableOopMap {rbp=NarrowOop [8]=Oop [32]=Oop [40]=Oop }
+                      ;*aaload {reexecute=0 rethrow=0 return_oop=0}
+                      ; - java.util.ArrayList::elementData@5 (line 412)
+                      ; - java.util.ArrayList::get@11 (line 429)
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@45 (line 2075)
+  0x000001e3d04269b4: a8d9 2fff 
+
+  0x000001e3d04269b8: ;   {other}
+  0x000001e3d04269b8: 0f1f 8400 | b00b 0013 | bae6 ffff | ff89 5c24 | 044c 8954 
+
+  0x000001e3d04269cc: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d04269cc: 2428 90e8 
+
+  0x000001e3d04269d0: ; ImmutableOopMap {rbp=NarrowOop [8]=Oop [32]=Oop [40]=Oop }
+                      ;*aaload {reexecute=0 rethrow=0 return_oop=0}
+                      ; - java.util.ArrayList::elementData@5 (line 412)
+                      ; - java.util.ArrayList::get@11 (line 429)
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@55 (line 2075)
+  0x000001e3d04269d0: 8cd9 2fff 
+
+  0x000001e3d04269d4: ;   {other}
+  0x000001e3d04269d4: 0f1f 8400 | cc0b 0014 | bae6 ffff | ff89 1c24 | 4889 4424 | f88b 4424 | 1089 4424 | 0448 8b44 
+  0x000001e3d04269f4: 24f8 4889 | 4424 f88b | 4424 1489 | 4424 1048 | 8b44 24f8 | 4889 4424 | f88b 4424 | 1889 4424 
+  0x000001e3d0426a14: 1448 8b44 | 24f8 4489 
+
+  0x000001e3d0426a1c: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0426a1c: 5c24 18e8 
+
+  0x000001e3d0426a20: ; ImmutableOopMap {rbp=NarrowOop [8]=Oop [32]=Oop }
+                      ;*aaload {reexecute=0 rethrow=0 return_oop=0}
+                      ; - java.util.ArrayList::elementData@5 (line 412)
+                      ; - java.util.ArrayList::get@11 (line 429)
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@66 (line 2075)
+  0x000001e3d0426a20: 3cd9 2fff 
+
+  0x000001e3d0426a24: ;   {other}
+  0x000001e3d0426a24: 0f1f 8400 | 1c0c 0015 | bade ffff | ff8b eb44 
+
+  0x000001e3d0426a34: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0426a34: 891c 24e8 
+
+  0x000001e3d0426a38: ; ImmutableOopMap {[0]=NarrowOop [8]=Oop [32]=Oop }
+                      ;*invokeinterface get {reexecute=0 rethrow=0 return_oop=0}
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@32 (line 2075)
+  0x000001e3d0426a38: 24d9 2fff 
+
+  0x000001e3d0426a3c: ;   {other}
+  0x000001e3d0426a3c: 0f1f 8400 | 340c 0016 | bade ffff | ff8b eb48 | ff74 2420 | 488f 0424 | 4c89 5424 | 2044 8944 
+  0x000001e3d0426a5c: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0426a5c: 241c 90e8 
+
+  0x000001e3d0426a60: ; ImmutableOopMap {[0]=Oop [8]=Oop [28]=NarrowOop [32]=Oop }
+                      ;*invokeinterface get {reexecute=0 rethrow=0 return_oop=0}
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@45 (line 2075)
+  0x000001e3d0426a60: fcd8 2fff 
+
+  0x000001e3d0426a64: ;   {other}
+  0x000001e3d0426a64: 0f1f 8400 | 5c0c 0017 | bade ffff | ff89 1c24 | 4889 4424 | f88b 4424 | 1089 4424 | 0448 8b44 
+  0x000001e3d0426a84: 24f8 4889 | 4424 f88b | 4424 1489 | 4424 1048 | 8b44 24f8 
+
+  0x000001e3d0426a98: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0426a98: 6666 90e8 
+
+  0x000001e3d0426a9c: ; ImmutableOopMap {rbp=NarrowOop [8]=Oop [32]=Oop }
+                      ;*checkcast {reexecute=0 rethrow=0 return_oop=0}
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@71 (line 2075)
+  0x000001e3d0426a9c: c0d8 2fff 
+
+  0x000001e3d0426aa0: ;   {other}
+  0x000001e3d0426aa0: 0f1f 8400 | 980c 0018 | bae6 ffff 
+
+  0x000001e3d0426aac: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0426aac: ff66 90e8 
+
+  0x000001e3d0426ab0: ; ImmutableOopMap {rbp=NarrowOop [8]=Oop [32]=Oop }
+                      ;*aaload {reexecute=0 rethrow=0 return_oop=0}
+                      ; - java.util.ArrayList::elementData@5 (line 412)
+                      ; - java.util.ArrayList::get@11 (line 429)
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@5 (line 2073)
+  0x000001e3d0426ab0: acd8 2fff 
+
+  0x000001e3d0426ab4: ;   {other}
+  0x000001e3d0426ab4: 0f1f 8400 | ac0c 0019 | bade ffff | ff41 8beb 
+
+  0x000001e3d0426ac4: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0426ac4: 6666 90e8 
+
+  0x000001e3d0426ac8: ; ImmutableOopMap {rbp=NarrowOop [8]=Oop [32]=Oop }
+                      ;*invokeinterface get {reexecute=0 rethrow=0 return_oop=0}
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@5 (line 2073)
+  0x000001e3d0426ac8: 94d8 2fff 
+
+  0x000001e3d0426acc: ;   {other}
+  0x000001e3d0426acc: 0f1f 8400 | c40c 001a | ba45 ffff | ff48 8944 | 24f8 8b44 | 2410 8944 | 2404 488b | 4424 f848 
+  0x000001e3d0426aec: 8944 24f8 | 8b44 2414 | 8944 2410 | 488b 4424 | f848 8944 | 24f8 8b44 | 2418 8944 | 2414 488b 
+  0x000001e3d0426b0c: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0426b0c: 4424 f8e8 
+
+  0x000001e3d0426b10: ; ImmutableOopMap {[8]=Oop [32]=Oop }
+                      ;*ifle {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) aoc.kingdoms.lukasz.jakowski.Renderer.Renderer::clearUnclearedScissors@3 (line 739)
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@194 (line 2080)
+  0x000001e3d0426b10: 4cd8 2fff 
+
+  0x000001e3d0426b14: ;   {other}
+  0x000001e3d0426b14: 0f1f 8400 | 0c0d 001b | ba45 ffff | ff48 8944 | 24f8 8b44 | 2414 8944 | 2410 488b 
+
+  0x000001e3d0426b30: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0426b30: 4424 f8e8 
+
+  0x000001e3d0426b34: ; ImmutableOopMap {[8]=Oop [32]=Oop }
+                      ;*ifeq {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) aoc.kingdoms.lukasz.menu.MenuManager::draw@320 (line 2104)
+  0x000001e3d0426b34: 28d8 2fff 
+
+  0x000001e3d0426b38: ;   {other}
+  0x000001e3d0426b38: 0f1f 8400 | 300d 001c | bae6 ffff | ff48 8944 | 24f8 8b44 | 2414 8944 | 2410 488b | 4424 f848 
+  0x000001e3d0426b58: 8944 24f8 | 8b44 2418 | 8944 2414 | 488b 4424 | f889 4c24 
+
+  0x000001e3d0426b6c: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0426b6c: 1866 90e8 
+
+  0x000001e3d0426b70: ; ImmutableOopMap {rbp=NarrowOop [8]=Oop [32]=Oop }
+                      ;*aaload {reexecute=0 rethrow=0 return_oop=0}
+                      ; - java.util.ArrayList::elementData@5 (line 412)
+                      ; - java.util.ArrayList::get@11 (line 429)
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@257 (line 2096)
+  0x000001e3d0426b70: ecd7 2fff 
+
+  0x000001e3d0426b74: ;   {other}
+  0x000001e3d0426b74: 0f1f 8400 | 6c0d 001d | bade ffff | ff4c 8b54 | 2408 4c89 | 1424 448b | 5c24 1444 | 895c 2408 
+  0x000001e3d0426b94: 448b 5424 | 1844 8954 | 240c 4889 | 4424 1089 
+
+  0x000001e3d0426ba4: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0426ba4: 4c24 18e8 
+
+  0x000001e3d0426ba8: ; ImmutableOopMap {[0]=Oop [16]=Oop [32]=Oop }
+                      ;*invokeinterface get {reexecute=0 rethrow=0 return_oop=0}
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@257 (line 2096)
+  0x000001e3d0426ba8: b4d7 2fff 
+
+  0x000001e3d0426bac: ;   {other}
+  0x000001e3d0426bac: 0f1f 8400 | a40d 001e | bade ffff | ff48 8944 | 24f8 8b44 | 2414 8944 | 2410 488b 
+
+  0x000001e3d0426bc8: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0426bc8: 4424 f8e8 
+
+  0x000001e3d0426bcc: ; ImmutableOopMap {rbp=NarrowOop [8]=Oop [32]=Oop }
+                      ;*checkcast {reexecute=0 rethrow=0 return_oop=0}
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@262 (line 2096)
+  0x000001e3d0426bcc: 90d7 2fff 
+
+  0x000001e3d0426bd0: ;   {other}
+  0x000001e3d0426bd0: 0f1f 8400 | c80d 001f | ba45 ffff | ff48 8944 | 24f8 8b44 | 2414 8944 | 2410 488b 
+
+  0x000001e3d0426bec: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0426bec: 4424 f8e8 
+
+  0x000001e3d0426bf0: ; ImmutableOopMap {[8]=Oop [32]=Oop }
+                      ;*iflt {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) aoc.kingdoms.lukasz.menu.MenuManager::draw@238 (line 2093)
+  0x000001e3d0426bf0: 6cd7 2fff 
+
+  0x000001e3d0426bf4: ;   {other}
+  0x000001e3d0426bf4: 0f1f 8400 | ec0d 0020 | bade ffff | ff4c 8b54 | 2408 4c89 
+
+  0x000001e3d0426c08: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0426c08: 1424 90e8 
+
+  0x000001e3d0426c0c: ; ImmutableOopMap {rbp=NarrowOop [0]=Oop }
+                      ;*invokevirtual draw {reexecute=0 rethrow=0 return_oop=0}
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@354 (line 2113)
+  0x000001e3d0426c0c: 50d7 2fff 
+
+  0x000001e3d0426c10: ;   {other}
+  0x000001e3d0426c10: 0f1f 8400 | 080e 0021 | ba45 ffff | ff89 1c24 | 4889 4424 | f88b 4424 | 1089 4424 | 0448 8b44 
+  0x000001e3d0426c30: 24f8 4c89 | 4c24 2844 | 8944 2438 
+
+  0x000001e3d0426c3c: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0426c3c: 6666 90e8 
+
+  0x000001e3d0426c40: ; ImmutableOopMap {[8]=Oop [32]=Oop [40]=Oop }
+                      ;*ifeq {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) aoc.kingdoms.lukasz.menu.MenuManager::getTitleStatus@90 (line 2057)
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@187 (line 2078)
+  0x000001e3d0426c40: 1cd7 2fff 
+
+  0x000001e3d0426c44: ;   {other}
+  0x000001e3d0426c44: 0f1f 8400 | 3c0e 0022 | baf6 ffff | ff8b 6c24 
+
+  0x000001e3d0426c54: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0426c54: 1c66 90e8 
+
+  0x000001e3d0426c58: ; ImmutableOopMap {[0]=Oop [8]=Oop [40]=Oop }
+                      ;*athrow {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) jdk.internal.util.Preconditions::checkIndex@15 (line 302)
+                      ; - java.util.Objects::checkIndex@3 (line 365)
+                      ; - java.util.ArrayList::get@5 (line 428)
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@55 (line 2075)
+  0x000001e3d0426c58: 04d7 2fff 
+
+  0x000001e3d0426c5c: ;   {other}
+  0x000001e3d0426c5c: 0f1f 8400 | 540e 0023 | baf6 ffff | ff8b 6c24 
+
+  0x000001e3d0426c6c: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0426c6c: 3466 90e8 
+
+  0x000001e3d0426c70: ; ImmutableOopMap {[8]=Oop [32]=Oop }
+                      ;*athrow {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) jdk.internal.util.Preconditions::checkIndex@15 (line 302)
+                      ; - java.util.Objects::checkIndex@3 (line 365)
+                      ; - java.util.ArrayList::get@5 (line 428)
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@66 (line 2075)
+  0x000001e3d0426c70: ecd6 2fff 
+
+  0x000001e3d0426c74: ;   {other}
+  0x000001e3d0426c74: 0f1f 8400 | 6c0e 0024 | baf6 ffff | ff48 8b6c | 2420 4c8b | 5424 084c | 8914 2448 | 8944 24f8 
+  0x000001e3d0426c94: 8b44 2410 | 8944 2408 | 488b 4424 
+
+  0x000001e3d0426ca0: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0426ca0: f866 90e8 
+
+  0x000001e3d0426ca4: ; ImmutableOopMap {rbp=Oop [0]=Oop }
+                      ;*athrow {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) jdk.internal.util.Preconditions::checkIndex@15 (line 302)
+                      ; - java.util.Objects::checkIndex@3 (line 365)
+                      ; - java.util.ArrayList::get@5 (line 428)
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@5 (line 2073)
+  0x000001e3d0426ca4: b8d6 2fff 
+
+  0x000001e3d0426ca8: ;   {other}
+  0x000001e3d0426ca8: 0f1f 8400 | a00e 0025 | baf6 ffff | ff8b 6c24 
+
+  0x000001e3d0426cb8: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0426cb8: 3466 90e8 
+
+  0x000001e3d0426cbc: ; ImmutableOopMap {[8]=Oop [32]=Oop }
+                      ;*athrow {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) jdk.internal.util.Preconditions::checkIndex@15 (line 302)
+                      ; - java.util.Objects::checkIndex@3 (line 365)
+                      ; - java.util.ArrayList::get@5 (line 428)
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@32 (line 2075)
+  0x000001e3d0426cbc: a0d6 2fff 
+
+  0x000001e3d0426cc0: ;   {other}
+  0x000001e3d0426cc0: 0f1f 8400 | b80e 0026 | baf6 ffff | ff8b 6c24 
+
+  0x000001e3d0426cd0: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0426cd0: 1c66 90e8 
+
+  0x000001e3d0426cd4: ; ImmutableOopMap {[0]=Oop [8]=Oop [40]=Oop }
+                      ;*athrow {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) jdk.internal.util.Preconditions::checkIndex@15 (line 302)
+                      ; - java.util.Objects::checkIndex@3 (line 365)
+                      ; - java.util.ArrayList::get@5 (line 428)
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@45 (line 2075)
+  0x000001e3d0426cd4: 88d6 2fff 
+
+  0x000001e3d0426cd8: ;   {other}
+  0x000001e3d0426cd8: 0f1f 8400 | d00e 0027 | 488b e8ba | 9dff ffff 
+
+  0x000001e3d0426ce8: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0426ce8: 6666 90e8 
+
+  0x000001e3d0426cec: ; ImmutableOopMap {rbp=Oop }
+                      ;*astore {reexecute=0 rethrow=0 return_oop=0}
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@360 (line 2117)
+  0x000001e3d0426cec: 70d6 2fff 
+
+  0x000001e3d0426cf0: ;   {other}
+  0x000001e3d0426cf0: 0f1f 8400 | e80e 0028 | bade ffff 
+
+  0x000001e3d0426cfc: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0426cfc: ff66 90e8 
+
+  0x000001e3d0426d00: ; ImmutableOopMap {rbp=NarrowOop [8]=Oop [32]=Oop }
+                      ;*checkcast {reexecute=0 rethrow=0 return_oop=0}
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@10 (line 2073)
+  0x000001e3d0426d00: 5cd6 2fff 
+
+  0x000001e3d0426d04: ;   {other}
+  0x000001e3d0426d04: 0f1f 8400 | fc0e 0029 | bade ffff | ff8b eb44 | 8954 241c 
+
+  0x000001e3d0426d18: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0426d18: 6666 90e8 
+
+  0x000001e3d0426d1c: ; ImmutableOopMap {[8]=Oop [28]=NarrowOop [32]=Oop }
+                      ;*checkcast {reexecute=0 rethrow=0 return_oop=0}
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@37 (line 2075)
+  0x000001e3d0426d1c: 40d6 2fff 
+
+  0x000001e3d0426d20: ;   {other}
+  0x000001e3d0426d20: 0f1f 8400 | 180f 002a | bade ffff | ff89 1c24 | 4889 4424 | f88b 4424 | 1089 4424 | 0448 8b44 
+  0x000001e3d0426d40: 24f8 4889 | 4424 f88b | 4424 1489 | 4424 1048 | 8b44 24f8 | 4889 4424 | f88b 4424 | 1889 4424 
+  0x000001e3d0426d60: 1448 8b44 | 24f8 4c89 
+
+  0x000001e3d0426d68: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0426d68: 5424 18e8 
+
+  0x000001e3d0426d6c: ; ImmutableOopMap {rbp=NarrowOop [8]=Oop [24]=Oop [32]=Oop }
+                      ;*checkcast {reexecute=0 rethrow=0 return_oop=0}
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@50 (line 2075)
+  0x000001e3d0426d6c: f0d5 2fff 
+
+  0x000001e3d0426d70: ;   {other}
+  0x000001e3d0426d70: 0f1f 8400 | 680f 002b | bade ffff | ff89 1c24 | 4889 4424 | f88b 4424 | 1089 4424 | 0448 8b44 
+  0x000001e3d0426d90: 24f8 4889 | 4424 f88b | 4424 1489 | 4424 1048 | 8b44 24f8 | 4889 4424 | f88b 4424 | 1889 4424 
+  0x000001e3d0426db0: 1448 8b44 | 24f8 4c89 
+
+  0x000001e3d0426db8: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0426db8: 5424 18e8 
+
+  0x000001e3d0426dbc: ; ImmutableOopMap {rbp=NarrowOop [8]=Oop [24]=Oop [32]=Oop }
+                      ;*checkcast {reexecute=0 rethrow=0 return_oop=0}
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@60 (line 2075)
+  0x000001e3d0426dbc: a0d5 2fff 
+
+  0x000001e3d0426dc0: ;   {other}
+  0x000001e3d0426dc0: 0f1f 8400 | b80f 002c | bade ffff | ff48 8944 
+
+  0x000001e3d0426dd0: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0426dd0: 2440 90e8 
+
+  0x000001e3d0426dd4: ; ImmutableOopMap {[8]=Oop [32]=Oop [40]=Oop [64]=Oop }
+                      ;*checkcast {reexecute=0 rethrow=0 return_oop=0}
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::getTitleStatus@28 (line 2052)
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@187 (line 2078)
+  0x000001e3d0426dd4: 88d5 2fff 
+
+  0x000001e3d0426dd8: ;   {other}
+  0x000001e3d0426dd8: 0f1f 8400 | d00f 002d | bade ffff | ff44 8b5c | 2410 4489 | 5c24 0448 | 8944 2440 
+
+  0x000001e3d0426df4: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0426df4: 6666 90e8 
+
+  0x000001e3d0426df8: ; ImmutableOopMap {[8]=Oop [32]=Oop [40]=Oop [64]=Oop }
+                      ;*checkcast {reexecute=0 rethrow=0 return_oop=0}
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::getTitleStatus@37 (line 2052)
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@187 (line 2078)
+  0x000001e3d0426df8: 64d5 2fff 
+
+  0x000001e3d0426dfc: ;   {other}
+  0x000001e3d0426dfc: 0f1f 8400 | f40f 002e | baf6 ffff 
+
+  0x000001e3d0426e08: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0426e08: ff8b ebe8 
+
+  0x000001e3d0426e0c: ; ImmutableOopMap {[8]=Oop [32]=Oop }
+                      ;*invokeinterface get {reexecute=0 rethrow=0 return_oop=0}
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@32 (line 2075)
+  0x000001e3d0426e0c: 50d5 2fff 
+
+  0x000001e3d0426e10: ;   {other}
+  0x000001e3d0426e10: 0f1f 8400 | 0810 002f | baf6 ffff 
+
+  0x000001e3d0426e1c: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0426e1c: ff8b ebe8 
+
+  0x000001e3d0426e20: ; ImmutableOopMap {[8]=Oop [32]=Oop }
+                      ;*aaload {reexecute=0 rethrow=0 return_oop=0}
+                      ; - java.util.ArrayList::elementData@5 (line 412)
+                      ; - java.util.ArrayList::get@11 (line 429)
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@32 (line 2075)
+  0x000001e3d0426e20: 3cd5 2fff 
+
+  0x000001e3d0426e24: ;   {other}
+  0x000001e3d0426e24: 0f1f 8400 | 1c10 0030 | baf4 ffff 
+
+  0x000001e3d0426e30: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0426e30: ff8b ebe8 
+
+  0x000001e3d0426e34: ; ImmutableOopMap {[8]=Oop [32]=Oop }
+                      ;*checkcast {reexecute=0 rethrow=0 return_oop=0}
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@37 (line 2075)
+  0x000001e3d0426e34: 28d5 2fff 
+
+  0x000001e3d0426e38: ;   {other}
+  0x000001e3d0426e38: 0f1f 8400 | 3010 0031 | baf6 ffff | ff8b eb48 | ff74 2420 | 488f 0424 | 4c89 5424 
+
+  0x000001e3d0426e54: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0426e54: 2066 90e8 
+
+  0x000001e3d0426e58: ; ImmutableOopMap {[0]=Oop [8]=Oop [32]=Oop }
+                      ;*invokeinterface get {reexecute=0 rethrow=0 return_oop=0}
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@45 (line 2075)
+  0x000001e3d0426e58: 04d5 2fff 
+
+  0x000001e3d0426e5c: ;   {other}
+  0x000001e3d0426e5c: 0f1f 8400 | 5410 0032 | baf6 ffff | ff8b eb48 | ff74 2420 | 488f 0424 | 4c89 5424 
+
+  0x000001e3d0426e78: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0426e78: 2066 90e8 
+
+  0x000001e3d0426e7c: ; ImmutableOopMap {[0]=Oop [8]=Oop [32]=Oop }
+                      ;*aaload {reexecute=0 rethrow=0 return_oop=0}
+                      ; - java.util.ArrayList::elementData@5 (line 412)
+                      ; - java.util.ArrayList::get@11 (line 429)
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@45 (line 2075)
+  0x000001e3d0426e7c: e0d4 2fff 
+
+  0x000001e3d0426e80: ;   {other}
+  0x000001e3d0426e80: 0f1f 8400 | 7810 0033 | baf4 ffff | ff8b eb48 | ff74 2420 | 488f 0424 | 4c89 5424 
+
+  0x000001e3d0426e9c: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0426e9c: 2066 90e8 
+
+  0x000001e3d0426ea0: ; ImmutableOopMap {[0]=Oop [8]=Oop [32]=Oop }
+                      ;*checkcast {reexecute=0 rethrow=0 return_oop=0}
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@50 (line 2075)
+  0x000001e3d0426ea0: bcd4 2fff 
+
+  0x000001e3d0426ea4: ;   {other}
+  0x000001e3d0426ea4: 0f1f 8400 | 9c10 0034 | baf6 ffff | ff89 1c24 | 4889 4424 | f88b 4424 | 1089 4424 | 0448 8b44 
+  0x000001e3d0426ec4: 24f8 4889 | 4424 f88b | 4424 1489 | 4424 1048 | 8b44 24f8 | 4889 4424 | f88b 4424 | 1889 4424 
+  0x000001e3d0426ee4: 1448 8b44 | 24f8 4c89 
+
+  0x000001e3d0426eec: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0426eec: 5424 18e8 
+
+  0x000001e3d0426ef0: ; ImmutableOopMap {[8]=Oop [24]=Oop [32]=Oop }
+                      ;*aaload {reexecute=0 rethrow=0 return_oop=0}
+                      ; - java.util.ArrayList::elementData@5 (line 412)
+                      ; - java.util.ArrayList::get@11 (line 429)
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@55 (line 2075)
+  0x000001e3d0426ef0: 6cd4 2fff 
+
+  0x000001e3d0426ef4: ;   {other}
+  0x000001e3d0426ef4: 0f1f 8400 | ec10 0035 | baf4 ffff | ff8b eb48 | ff74 2420 | 488f 0424 | 4c89 5424 
+
+  0x000001e3d0426f10: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0426f10: 2066 90e8 
+
+  0x000001e3d0426f14: ; ImmutableOopMap {[0]=Oop [8]=Oop [32]=Oop }
+                      ;*checkcast {reexecute=0 rethrow=0 return_oop=0}
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@60 (line 2075)
+  0x000001e3d0426f14: 48d4 2fff 
+
+  0x000001e3d0426f18: ;   {other}
+  0x000001e3d0426f18: 0f1f 8400 | 1011 0036 | baf6 ffff | ff8b eb44 | 895c 241c 
+
+  0x000001e3d0426f2c: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0426f2c: 6666 90e8 
+
+  0x000001e3d0426f30: ; ImmutableOopMap {[8]=Oop [32]=Oop }
+                      ;*aaload {reexecute=0 rethrow=0 return_oop=0}
+                      ; - java.util.ArrayList::elementData@5 (line 412)
+                      ; - java.util.ArrayList::get@11 (line 429)
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@66 (line 2075)
+  0x000001e3d0426f30: 2cd4 2fff 
+
+  0x000001e3d0426f34: ;   {other}
+  0x000001e3d0426f34: 0f1f 8400 | 2c11 0037 | baf4 ffff 
+
+  0x000001e3d0426f40: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0426f40: ff8b ebe8 
+
+  0x000001e3d0426f44: ; ImmutableOopMap {[8]=Oop [32]=Oop }
+                      ;*checkcast {reexecute=0 rethrow=0 return_oop=0}
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@71 (line 2075)
+  0x000001e3d0426f44: 18d4 2fff 
+
+  0x000001e3d0426f48: ;   {other}
+  0x000001e3d0426f48: 0f1f 8400 | 4011 0038 | baf6 ffff | ff8b eb48 | ff74 2420 | 488f 0424 | 4c89 4c24 
+
+  0x000001e3d0426f64: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0426f64: 2066 90e8 
+
+  0x000001e3d0426f68: ; ImmutableOopMap {[0]=Oop [8]=Oop [32]=Oop }
+                      ;*invokevirtual getVisible {reexecute=0 rethrow=0 return_oop=0}
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@135 (line 2077)
+  0x000001e3d0426f68: f4d3 2fff 
+
+  0x000001e3d0426f6c: ;   {other}
+  0x000001e3d0426f6c: 0f1f 8400 | 6411 0039 | baf6 ffff | ff89 1c24 | 4c89 4c24 | 2844 8944 
+
+  0x000001e3d0426f84: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0426f84: 243c 90e8 
+
+  0x000001e3d0426f88: ; ImmutableOopMap {[8]=Oop [32]=Oop [40]=Oop }
+                      ;*getfield hoverActiveMenuTitleID {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) aoc.kingdoms.lukasz.menu.MenuManager::getTitleStatus@53 (line 2056)
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@187 (line 2078)
+  0x000001e3d0426f88: d4d3 2fff 
+
+  0x000001e3d0426f8c: ;   {other}
+  0x000001e3d0426f8c: 0f1f 8400 | 8411 003a | baf6 ffff | ff48 8b6c | 2420 4c8b | 5424 084c | 8914 2489 
+
+  0x000001e3d0426fa8: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0426fa8: 7c24 0ce8 
+
+  0x000001e3d0426fac: ; ImmutableOopMap {rbp=Oop [0]=Oop }
+                      ;*invokeinterface get {reexecute=0 rethrow=0 return_oop=0}
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@5 (line 2073)
+  0x000001e3d0426fac: b0d3 2fff 
+
+  0x000001e3d0426fb0: ;   {other}
+  0x000001e3d0426fb0: 0f1f 8400 | a811 003b | baf6 ffff | ff48 8b6c | 2420 4c8b | 5424 084c | 8914 2489 
+
+  0x000001e3d0426fcc: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0426fcc: 7c24 0ce8 
+
+  0x000001e3d0426fd0: ; ImmutableOopMap {rbp=Oop [0]=Oop }
+                      ;*aaload {reexecute=0 rethrow=0 return_oop=0}
+                      ; - java.util.ArrayList::elementData@5 (line 412)
+                      ; - java.util.ArrayList::get@11 (line 429)
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@5 (line 2073)
+  0x000001e3d0426fd0: 8cd3 2fff 
+
+  0x000001e3d0426fd4: ;   {other}
+  0x000001e3d0426fd4: 0f1f 8400 | cc11 003c | baf4 ffff | ff48 8b6c | 2420 4c8b | 5424 084c | 8914 2444 | 894c 2408 
+  0x000001e3d0426ff4: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0426ff4: 6666 90e8 
+
+  0x000001e3d0426ff8: ; ImmutableOopMap {rbp=Oop [0]=Oop }
+                      ;*checkcast {reexecute=0 rethrow=0 return_oop=0}
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@10 (line 2073)
+  0x000001e3d0426ff8: 64d3 2fff 
+
+  0x000001e3d0426ffc: ;   {other}
+  0x000001e3d0426ffc: 0f1f 8400 | f411 003d | baf6 ffff | ff4c 8b54 | 2408 4c89 
+
+  0x000001e3d0427010: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0427010: 1424 90e8 
+
+  0x000001e3d0427014: ; ImmutableOopMap {[0]=Oop [32]=Oop }
+                      ;*getfield hoverActiveSliderMenuID {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) aoc.kingdoms.lukasz.menu.MenuManager::draw@226 (line 2093)
+  0x000001e3d0427014: 48d3 2fff 
+
+  0x000001e3d0427018: ;   {other}
+  0x000001e3d0427018: 0f1f 8400 | 1012 003e | baf6 ffff | ff4c 8b54 | 2408 4c89 
+
+  0x000001e3d042702c: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d042702c: 1424 90e8 
+
+  0x000001e3d0427030: ; ImmutableOopMap {[0]=Oop [32]=Oop }
+                      ;*invokevirtual getVisible {reexecute=0 rethrow=0 return_oop=0}
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@317 (line 2104)
+  0x000001e3d0427030: 2cd3 2fff 
+
+  0x000001e3d0427034: ;   {other}
+  0x000001e3d0427034: 0f1f 8400 | 2c12 003f | baf6 ffff | ff4c 8b54 | 2408 4c89 
+
+  0x000001e3d0427048: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0427048: 1424 90e8 
+
+  0x000001e3d042704c: ; ImmutableOopMap {[0]=Oop [32]=Oop }
+                      ;*invokevirtual getVisible {reexecute=0 rethrow=0 return_oop=0}
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@336 (line 2112)
+  0x000001e3d042704c: 10d3 2fff 
+
+  0x000001e3d0427050: ;   {other}
+  0x000001e3d0427050: 0f1f 8400 | 4812 0040 | baf6 ffff | ff4c 8b54 | 2408 4c89 
+
+  0x000001e3d0427064: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0427064: 1424 90e8 
+
+  0x000001e3d0427068: ; ImmutableOopMap {[0]=Oop [32]=Oop }
+                      ;*getfield HOVER_HIDE_TIME {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) aoc.kingdoms.lukasz.menu_element.menuElementHover.MenuElement_Hover::initHide@7 (line 138)
+                      ; - aoc.kingdoms.lukasz.menu_element.menuElementHover.MenuElement_Hover::drawProvinceInfo@1 (line 269)
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@310 (line 2101)
+  0x000001e3d0427068: f4d2 2fff 
+
+  0x000001e3d042706c: ;   {other}
+  0x000001e3d042706c: 0f1f 8400 | 6412 0041 | baf6 ffff | ff4c 8b54 | 2408 4c89 | 1424 448b | 5c24 1444 | 895c 2408 
+  0x000001e3d042708c: 4889 4424 
+
+  0x000001e3d0427090: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0427090: 1066 90e8 
+
+  0x000001e3d0427094: ; ImmutableOopMap {[0]=Oop [16]=Oop [32]=Oop }
+                      ;*getfield hoverActiveSliderMenuID {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) aoc.kingdoms.lukasz.menu.MenuManager::draw@254 (line 2096)
+  0x000001e3d0427094: c8d2 2fff 
+
+  0x000001e3d0427098: ;   {other}
+  0x000001e3d0427098: 0f1f 8400 | 9012 0042 | baf6 ffff | ff4c 8b54 | 2408 4c89 | 1424 894c 
+
+  0x000001e3d04270b0: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d04270b0: 2410 90e8 
+
+  0x000001e3d04270b4: ; ImmutableOopMap {[0]=Oop [32]=Oop }
+                      ;*invokeinterface get {reexecute=0 rethrow=0 return_oop=0}
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@257 (line 2096)
+  0x000001e3d04270b4: a8d2 2fff 
+
+  0x000001e3d04270b8: ;   {other}
+  0x000001e3d04270b8: 0f1f 8400 | b012 0043 | baf6 ffff | ff4c 8b54 | 2408 4c89 | 1424 894c 
+
+  0x000001e3d04270d0: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d04270d0: 2410 90e8 
+
+  0x000001e3d04270d4: ; ImmutableOopMap {[0]=Oop [32]=Oop }
+                      ;*aaload {reexecute=0 rethrow=0 return_oop=0}
+                      ; - java.util.ArrayList::elementData@5 (line 412)
+                      ; - java.util.ArrayList::get@11 (line 429)
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@257 (line 2096)
+  0x000001e3d04270d4: 88d2 2fff 
+
+  0x000001e3d04270d8: ;   {other}
+  0x000001e3d04270d8: 0f1f 8400 | d012 0044 | baf4 ffff | ff4c 8b54 | 2408 4c89 
+
+  0x000001e3d04270ec: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d04270ec: 1424 90e8 
+
+  0x000001e3d04270f0: ; ImmutableOopMap {[0]=Oop [32]=Oop }
+                      ;*checkcast {reexecute=0 rethrow=0 return_oop=0}
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@262 (line 2096)
+  0x000001e3d04270f0: 6cd2 2fff 
+
+  0x000001e3d04270f4: ;   {other}
+  0x000001e3d04270f4: 0f1f 8400 | ec12 0045 | 448b 5808 | 49ba 0000 | 0000 e401 | 0000 4d03 | d34d 8b52 
+
+  0x000001e3d0427110: ;   {metadata('java/lang/Exception')}
+  0x000001e3d0427110: 4049 bbb8 | e516 00e4 | 0100 004d | 3bd3 0f84 | 6403 0000 | 488b d0e9 | 9a02 0000 | 448b 5808 
+  0x000001e3d0427130: 49ba 0000 | 0000 e401 | 0000 4d03 | d34d 8b52 
+
+  0x000001e3d0427140: ;   {metadata('java/lang/Exception')}
+  0x000001e3d0427140: 4049 bbb8 | e516 00e4 | 0100 004d | 3bd3 0f84 | 1103 0000 | 488b d0e9 | 6a02 0000 | 448b 5808 
+  0x000001e3d0427160: 49ba 0000 | 0000 e401 | 0000 4d03 | d34d 8b52 
+
+  0x000001e3d0427170: ;   {metadata('java/lang/Exception')}
+  0x000001e3d0427170: 4049 bbb8 | e516 00e4 | 0100 004d | 3bd3 0f84 | d902 0000 | 488b d0e9 | 3a02 0000 | 448b 5808 
+  0x000001e3d0427190: 49ba 0000 | 0000 e401 | 0000 4d03 | d34d 8b52 
+
+  0x000001e3d04271a0: ;   {metadata('java/lang/Exception')}
+  0x000001e3d04271a0: 4049 bbb8 | e516 00e4 | 0100 004d | 3bd3 0f84 | a102 0000 | 488b d0e9 | 0a02 0000 | 488b e8eb 
+  0x000001e3d04271c0: 2b44 8b58 | 0849 ba00 | 0000 00e4 | 0100 004d | 03d3 4d8b 
+
+  0x000001e3d04271d4: ;   {metadata('java/lang/Exception')}
+  0x000001e3d04271d4: 5240 49b8 | b8e5 1600 | e401 0000 | 4d3b d00f | 85a7 0000 | 0048 8be8 | ba9d ffff | ff44 8b54 
+  0x000001e3d04271f4: 2410 4489 
+
+  0x000001e3d04271f8: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d04271f8: 5424 04e8 
+
+  0x000001e3d04271fc: ; ImmutableOopMap {rbp=Oop [8]=Oop [32]=Oop [40]=Oop }
+                      ;*astore_3 {reexecute=0 rethrow=0 return_oop=0}
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::getTitleStatus@104 (line 2064)
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@187 (line 2078)
+  0x000001e3d04271fc: 60d1 2fff 
+
+  0x000001e3d0427200: ;   {other}
+  0x000001e3d0427200: 0f1f 8400 | f813 0046 | 448b 5808 | 49ba 0000 | 0000 e401 | 0000 4d03 | d34d 8b52 
+
+  0x000001e3d042721c: ;   {metadata('java/lang/Exception')}
+  0x000001e3d042721c: 4049 bbb8 | e516 00e4 | 0100 004d | 3bd3 0f84 | 1d02 0000 | 488b d0e9 | 8e01 0000 | 448b 5008 
+  0x000001e3d042723c: 49bb 0000 | 0000 e401 | 0000 4d03 | da4d 8b53 
+
+  0x000001e3d042724c: ;   {metadata('java/lang/Exception')}
+  0x000001e3d042724c: 4049 bbb8 | e516 00e4 | 0100 004d | 3bd3 0f84 | ca01 0000 | 488b d0e9 | 5e01 0000 | 448b 5808 
+  0x000001e3d042726c: 49ba 0000 | 0000 e401 | 0000 4d03 | d34d 8b52 
+
+  0x000001e3d042727c: ;   {metadata('java/lang/Exception')}
+  0x000001e3d042727c: 4049 b8b8 | e516 00e4 | 0100 004d | 3bd0 0f84 | 2cff ffff | 49ba 0000 | 0000 e401 | 0000 4d03 
+  0x000001e3d042729c: d34d 8b52 
+
+  0x000001e3d04272a0: ;   {metadata('java/lang/Exception')}
+  0x000001e3d04272a0: 4049 bbb8 | e516 00e4 | 0100 004d | 3bd3 0f84 | 5d01 0000 | 488b d0e9 | 0a01 0000 | 448b 5008 
+  0x000001e3d04272c0: 49bb 0000 | 0000 e401 | 0000 4d03 | da4d 8b53 
+
+  0x000001e3d04272d0: ;   {metadata('java/lang/Exception')}
+  0x000001e3d04272d0: 4049 bbb8 | e516 00e4 | 0100 004d | 3bd3 0f84 | 2501 0000 | 488b d0e9 | da00 0000 | 448b 5008 
+  0x000001e3d04272f0: 49bb 0000 | 0000 e401 | 0000 4d03 | da4d 8b53 
+
+  0x000001e3d0427300: ;   {metadata('java/lang/Exception')}
+  0x000001e3d0427300: 4049 bbb8 | e516 00e4 | 0100 004d | 3bd3 0f84 | ed00 0000 | 488b d0e9 | aa00 0000 | 448b 5008 
+  0x000001e3d0427320: 49bb 0000 | 0000 e401 | 0000 4d03 | da4d 8b53 
+
+  0x000001e3d0427330: ;   {metadata('java/lang/Exception')}
+  0x000001e3d0427330: 4049 bbb8 | e516 00e4 | 0100 004d | 3bd3 0f84 | b500 0000 | 488b d0eb | 7d44 8b58 | 0849 ba00 
+  0x000001e3d0427350: 0000 00e4 | 0100 004d | 03d3 4d8b 
+
+  0x000001e3d042735c: ;   {metadata('java/lang/Exception')}
+  0x000001e3d042735c: 5240 49bb | b8e5 1600 | e401 0000 | 4d3b d30f | 8480 0000 | 0048 8bd0 | eb50 448b | 5008 49bb 
+  0x000001e3d042737c: 0000 0000 | e401 0000 | 4d03 da4d 
+
+  0x000001e3d0427388: ;   {metadata('java/lang/Exception')}
+  0x000001e3d0427388: 8b53 4049 | bbb8 e516 | 00e4 0100 | 004d 3bd3 | 744f 488b | d0eb 2744 | 8b58 0849 | ba00 0000 
+  0x000001e3d04273a8: 00e4 0100 | 004d 03d3 | 4d8b 5240 
+
+  0x000001e3d04273b4: ;   {metadata('java/lang/Exception')}
+  0x000001e3d04273b4: 49bb b8e5 | 1600 e401 | 0000 4d3b | d374 0d48 | 8bd0 4883 
+
+  0x000001e3d04273c8: ;   {runtime_call _rethrow_Java}
+  0x000001e3d04273c8: c460 5de9 | 1052 3cff | 488b e848 | 8944 24f8 | 8b04 2489 | 4424 3448 | 8b44 24f8 | e973 f4ff 
+  0x000001e3d04273e8: ff48 8be8 | e9f2 f8ff | ff48 8be8 | e9ea f8ff | ff48 8be8 | e9e2 f8ff | ff48 8be8 | e9da f8ff 
+  0x000001e3d0427408: ff48 8be8 | e9d2 f8ff | ff48 8be8 | 4889 4424 | f88b 0424 | 8944 2434 | 488b 4424 | f8e9 32f4 
+  0x000001e3d0427428: ffff 488b | e848 ff34 | 2448 8f44 | 2420 4889 | 4424 f88b | 4424 1c89 | 4424 3448 | 8b44 24f8 
+  0x000001e3d0427448: e90f f4ff | ff48 8be8 | e907 f4ff | ff48 8be8 | e9ab f4ff | ff48 8be8 | e9f7 f3ff | ff48 8be8 
+  0x000001e3d0427468: 48ff 3424 | 488f 4424 | 2048 8944 | 24f8 8b44 | 241c 8944 | 2434 488b | 4424 f8e9 | d4f3 ffff 
+  0x000001e3d0427488: 488b e8e9 | 53f8 ffff | baf4 ffff 
+
+  0x000001e3d0427494: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d0427494: ff66 90e8 
+
+  0x000001e3d0427498: ; ImmutableOopMap {[8]=Oop [32]=Oop [40]=Oop }
+                      ;*checkcast {reexecute=0 rethrow=0 return_oop=0}
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::getTitleStatus@28 (line 2052)
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@187 (line 2078)
+  0x000001e3d0427498: c4ce 2fff 
+
+  0x000001e3d042749c: ;   {other}
+  0x000001e3d042749c: 0f1f 8400 | 9416 0047 | baf4 ffff | ff44 8b5c | 2410 4489 
+
+  0x000001e3d04274b0: ;   {runtime_call UncommonTrapBlob}
+  0x000001e3d04274b0: 5c24 04e8 
+
+  0x000001e3d04274b4: ; ImmutableOopMap {[8]=Oop [32]=Oop [40]=Oop }
+                      ;*checkcast {reexecute=0 rethrow=0 return_oop=0}
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::getTitleStatus@37 (line 2052)
+                      ; - aoc.kingdoms.lukasz.menu.MenuManager::draw@187 (line 2078)
+  0x000001e3d04274b4: a8ce 2fff 
+
+  0x000001e3d04274b8: ;   {other}
+  0x000001e3d04274b8: 0f1f 8400 | b016 0048 
+
+  0x000001e3d04274c0: ;   {internal_word}
+  0x000001e3d04274c0: 49ba d165 | 42d0 e301 | 0000 4d89 | 9760 0400 
+
+  0x000001e3d04274d0: ;   {runtime_call SafepointBlob}
+  0x000001e3d04274d0: 00e9 0adf | 2fff 4883 | ec08 c5fb 
+
+  0x000001e3d04274dc: ;   {runtime_call StubRoutines (initial stubs)}
+  0x000001e3d04274dc: 110c 24e8 | e69b 2aff | 4159 e99d 
+
+  0x000001e3d04274e8: ;   {runtime_call StubRoutines (final stubs)}
+  0x000001e3d04274e8: f0ff ffe8 | 5002 2eff | e955 ecff | fff4 f4f4 
+[Stub Code]
+  0x000001e3d04274f8: ;   {no_reloc}
+  0x000001e3d04274f8: 48bb 0000 | 0000 0000 
+
+  0x000001e3d0427500: ;   {runtime_call nmethod}
+  0x000001e3d0427500: 0000 e9fb 
+
+  0x000001e3d0427504: ;   {static_stub}
+  0x000001e3d0427504: ffff ff48 | bbf0 f6a5 | 41e4 0100 
+
+  0x000001e3d0427510: ;   {runtime_call I2C/C2I adapters}
+  0x000001e3d0427510: 00e9 aec6 
+
+  0x000001e3d0427514: ;   {static_stub}
+  0x000001e3d0427514: 30ff 48bb | 0000 0000 | 0000 0000 
+
+  0x000001e3d0427520: ;   {runtime_call nmethod}
+  0x000001e3d0427520: e9fb ffff 
+
+  0x000001e3d0427524: ;   {static_stub}
+  0x000001e3d0427524: ff48 bb00 | 0000 0000 
+
+  0x000001e3d042752c: ;   {runtime_call nmethod}
+  0x000001e3d042752c: 0000 00e9 | fbff ffff 
+
+  0x000001e3d0427534: ;   {static_stub}
+  0x000001e3d0427534: 48bb 0000 | 0000 0000 
+
+  0x000001e3d042753c: ;   {runtime_call nmethod}
+  0x000001e3d042753c: 0000 e9fb 
+
+  0x000001e3d0427540: ;   {static_stub}
+  0x000001e3d0427540: ffff ff48 | bb00 0000 | 0000 0000 
+
+  0x000001e3d042754c: ;   {runtime_call nmethod}
+  0x000001e3d042754c: 00e9 fbff 
+
+  0x000001e3d0427550: ;   {static_stub}
+  0x000001e3d0427550: ffff 48bb | 0000 0000 | 0000 0000 
+
+  0x000001e3d042755c: ;   {runtime_call nmethod}
+  0x000001e3d042755c: e9fb ffff 
+
+  0x000001e3d0427560: ;   {static_stub}
+  0x000001e3d0427560: ff48 bb00 | 0000 0000 
+
+  0x000001e3d0427568: ;   {runtime_call nmethod}
+  0x000001e3d0427568: 0000 00e9 | fbff ffff 
+[Exception Handler]
+  0x000001e3d0427570: ;   {runtime_call ExceptionBlob}
+  0x000001e3d0427570: e9eb 3c3c | ffe8 0000 | 0000 4883 
+
+  0x000001e3d042757c: ;   {runtime_call DeoptimizationBlob}
+  0x000001e3d042757c: 2c24 05e9 | fcd0 2fff | f4f4 f4f4 
+[/MachCode]
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x000001e456d16df0, length=18, elements={
+0x000001e3bd72a750, 0x000001e381271630, 0x000001e381272350, 0x000001e381274bd0,
+0x000001e381275760, 0x000001e3812775b0, 0x000001e38127a430, 0x000001e381283710,
+0x000001e3812876c0, 0x000001e3813f17c0, 0x000001e4450e5620, 0x000001e4450e5c90,
+0x000001e44537fc70, 0x000001e4461b4cd0, 0x000001e4562abda0, 0x000001e45665fa70,
+0x000001e456665650, 0x000001e456665ce0
+}
+
+Java Threads: ( => current thread )
+=>0x000001e3bd72a750 JavaThread "main"                              [_thread_in_native, id=6316, stack(0x000000d3e9c00000,0x000000d3e9d00000) (1024K)]
+  0x000001e381271630 JavaThread "Reference Handler"          daemon [_thread_blocked, id=29872, stack(0x000000d3ea400000,0x000000d3ea500000) (1024K)]
+  0x000001e381272350 JavaThread "Finalizer"                  daemon [_thread_blocked, id=5500, stack(0x000000d3ea500000,0x000000d3ea600000) (1024K)]
+  0x000001e381274bd0 JavaThread "Signal Dispatcher"          daemon [_thread_blocked, id=27900, stack(0x000000d3ea600000,0x000000d3ea700000) (1024K)]
+  0x000001e381275760 JavaThread "Attach Listener"            daemon [_thread_blocked, id=14988, stack(0x000000d3ea700000,0x000000d3ea800000) (1024K)]
+  0x000001e3812775b0 JavaThread "Service Thread"             daemon [_thread_blocked, id=10104, stack(0x000000d3ea800000,0x000000d3ea900000) (1024K)]
+  0x000001e38127a430 JavaThread "Monitor Deflation Thread"   daemon [_thread_blocked, id=24684, stack(0x000000d3ea900000,0x000000d3eaa00000) (1024K)]
+  0x000001e381283710 JavaThread "C2 CompilerThread0"         daemon [_thread_blocked, id=22216, stack(0x000000d3eaa00000,0x000000d3eab00000) (1024K)]
+  0x000001e3812876c0 JavaThread "C1 CompilerThread0"         daemon [_thread_blocked, id=26992, stack(0x000000d3eab00000,0x000000d3eac00000) (1024K)]
+  0x000001e3813f17c0 JavaThread "Common-Cleaner"             daemon [_thread_blocked, id=30616, stack(0x000000d3ead00000,0x000000d3eae00000) (1024K)]
+  0x000001e4450e5620 JavaThread "Monitor Ctrl-Break"         daemon [_thread_in_native, id=26156, stack(0x000000d3eb000000,0x000000d3eb100000) (1024K)]
+  0x000001e4450e5c90 JavaThread "Notification Thread"        daemon [_thread_blocked, id=18016, stack(0x000000d3eb100000,0x000000d3eb200000) (1024K)]
+  0x000001e44537fc70 JavaThread "Thread-0"                          [_thread_in_native, id=19040, stack(0x000000d3eb200000,0x000000d3eb300000) (1024K)]
+  0x000001e4461b4cd0 JavaThread "Thread-1"                   daemon [_thread_blocked, id=30572, stack(0x000000d3eb900000,0x000000d3eba00000) (1024K)]
+  0x000001e4562abda0 JavaThread "Thread-3"                          [_thread_blocked, id=26740, stack(0x000000d3ec100000,0x000000d3ec200000) (1024K)]
+  0x000001e45665fa70 JavaThread "Thread-2"                          [_thread_blocked, id=29848, stack(0x000000d3eac00000,0x000000d3ead00000) (1024K)]
+  0x000001e456665650 JavaThread "Thread-4"                          [_thread_blocked, id=20580, stack(0x000000d3eae00000,0x000000d3eaf00000) (1024K)]
+  0x000001e456665ce0 JavaThread "Thread-5"                          [_thread_blocked, id=4620, stack(0x000000d3ed870000,0x000000d3ed970000) (1024K)]
+Total: 18
+
+Other Threads:
+  0x000001e381255a80 VMThread "VM Thread"                           [id=26500, stack(0x000000d3ea300000,0x000000d3ea400000) (1024K)]
+  0x000001e381244790 WatcherThread "VM Periodic Task Thread"        [id=16376, stack(0x000000d3ea200000,0x000000d3ea300000) (1024K)]
+  0x000001e3d87dd830 WorkerThread "GC Thread#0"                     [id=29044, stack(0x000000d3e9d00000,0x000000d3e9e00000) (1024K)]
+  0x000001e4469a7120 WorkerThread "GC Thread#1"                     [id=26852, stack(0x000000d3ec000000,0x000000d3ec100000) (1024K)]
+  0x000001e4469a74d0 WorkerThread "GC Thread#2"                     [id=20532, stack(0x000000d3ec370000,0x000000d3ec470000) (1024K)]
+  0x000001e4469a7880 WorkerThread "GC Thread#3"                     [id=25836, stack(0x000000d3ec470000,0x000000d3ec570000) (1024K)]
+  0x000001e4469a7c30 WorkerThread "GC Thread#4"                     [id=28076, stack(0x000000d3ec570000,0x000000d3ec670000) (1024K)]
+  0x000001e4469a7fe0 WorkerThread "GC Thread#5"                     [id=26760, stack(0x000000d3ec670000,0x000000d3ec770000) (1024K)]
+  0x000001e4596a3c60 WorkerThread "GC Thread#6"                     [id=18200, stack(0x000000d3ec770000,0x000000d3ec870000) (1024K)]
+  0x000001e4596a1ee0 WorkerThread "GC Thread#7"                     [id=20248, stack(0x000000d3ec870000,0x000000d3ec970000) (1024K)]
+  0x000001e4596a0c70 WorkerThread "GC Thread#8"                     [id=13796, stack(0x000000d3ec970000,0x000000d3eca70000) (1024K)]
+  0x000001e4596a2290 WorkerThread "GC Thread#9"                     [id=29740, stack(0x000000d3eca70000,0x000000d3ecb70000) (1024K)]
+  0x000001e4596a08c0 WorkerThread "GC Thread#10"                    [id=28224, stack(0x000000d3ecb70000,0x000000d3ecc70000) (1024K)]
+  0x000001e4596a3500 WorkerThread "GC Thread#11"                    [id=18908, stack(0x000000d3ecc70000,0x000000d3ecd70000) (1024K)]
+  0x000001e4596a4010 WorkerThread "GC Thread#12"                    [id=15828, stack(0x000000d3ecd70000,0x000000d3ece70000) (1024K)]
+  0x000001e4596a1780 WorkerThread "GC Thread#13"                    [id=22300, stack(0x000000d3ece70000,0x000000d3ecf70000) (1024K)]
+  0x000001e4596a29f0 WorkerThread "GC Thread#14"                    [id=28840, stack(0x000000d3ecf70000,0x000000d3ed070000) (1024K)]
+  0x000001e4596a1020 WorkerThread "GC Thread#15"                    [id=29804, stack(0x000000d3ed070000,0x000000d3ed170000) (1024K)]
+  0x000001e4596a38b0 WorkerThread "GC Thread#16"                    [id=29944, stack(0x000000d3ed170000,0x000000d3ed270000) (1024K)]
+  0x000001e4596a0510 WorkerThread "GC Thread#17"                    [id=23224, stack(0x000000d3ed270000,0x000000d3ed370000) (1024K)]
+  0x000001e4596a2640 WorkerThread "GC Thread#18"                    [id=6196, stack(0x000000d3ed370000,0x000000d3ed470000) (1024K)]
+  0x000001e4596a13d0 WorkerThread "GC Thread#19"                    [id=21600, stack(0x000000d3ed470000,0x000000d3ed570000) (1024K)]
+  0x000001e4596a1b30 WorkerThread "GC Thread#20"                    [id=27708, stack(0x000000d3ed570000,0x000000d3ed670000) (1024K)]
+  0x000001e4596a2da0 WorkerThread "GC Thread#21"                    [id=29656, stack(0x000000d3ed670000,0x000000d3ed770000) (1024K)]
+  0x000001e4596a3150 WorkerThread "GC Thread#22"                    [id=25240, stack(0x000000d3ed770000,0x000000d3ed870000) (1024K)]
+  0x000001e3bfc4ae80 ConcurrentGCThread "G1 Main Marker"            [id=19984, stack(0x000000d3e9e00000,0x000000d3e9f00000) (1024K)]
+  0x000001e3bfc4b8a0 WorkerThread "G1 Conc#0"                       [id=11712, stack(0x000000d3e9f00000,0x000000d3ea000000) (1024K)]
+  0x000001e3811110a0 ConcurrentGCThread "G1 Refine#0"               [id=9232, stack(0x000000d3ea000000,0x000000d3ea100000) (1024K)]
+  0x000001e381111a30 ConcurrentGCThread "G1 Service"                [id=22036, stack(0x000000d3ea100000,0x000000d3ea200000) (1024K)]
+Total: 29
+
+Threads with active compile tasks:
+Total: 0
+
+VM state: not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap address: 0x00000000a0000000, size: 30208 MB, Compressed Oops mode: Zero based, Oop shift amount: 3
+
+CDS archive(s) mapped at: [0x000001e400000000-0x000001e400d70000-0x000001e400d70000), size 14090240, SharedBaseAddress: 0x000001e400000000, ArchiveRelocationMode: 1.
+Compressed class space mapped at: 0x000001e401000000-0x000001e441000000, reserved size: 1073741824
+Narrow klass base: 0x000001e400000000, Narrow klass shift: 0, Narrow klass range: 0x41000000
+
+GC Precious Log:
+ CardTable entry size: 512
+ Card Set container configuration: InlinePtr #cards 3 size 8 Array Of Cards #cards 128 size 272 Howl #buckets 8 coarsen threshold 29491 Howl Bitmap #cards 4096 size 528 coarsen threshold 3686 Card regions per heap region 1 cards per card region 32768
+ CPUs: 32 total, 32 available
+ Memory: 127G
+ Large Page Support: Disabled
+ NUMA Support: Disabled
+ Compressed Oops: Enabled (Zero based)
+ Heap Region Size: 16M
+ Heap Min Capacity: 16M
+ Heap Initial Capacity: 2G
+ Heap Max Capacity: 30208M
+ Pre-touch: Disabled
+ Parallel Workers: 23
+ Concurrent Workers: 6
+ Concurrent Refinement Workers: 23
+ Periodic GC: Disabled
+
+Heap:
+ garbage-first heap   total reserved 30932992K, committed 5128192K, used 1409416K [0x00000000a0000000, 0x0000000800000000)
+  region size 16384K, 59 young (966656K), 1 survivors (16384K)
+ Metaspace       used 18569K, committed 18944K, reserved 1114112K
+  class space    used 1667K, committed 1856K, reserved 1048576K
+
+Heap Regions: E=young(eden), S=young(survivor), O=old, HS=humongous(starts), HC=humongous(continues), CS=collection set, F=free, TAMS=top-at-mark-start, PB=parsable bottom
+|   0|0x00000000a0000000, 0x00000000a1000000, 0x00000000a1000000|100%| O|  |TAMS 0x00000000a0000000| PB 0x00000000a0000000| Untracked |  0
+|   1|0x00000000a1000000, 0x00000000a2000000, 0x00000000a2000000|100%|HS|  |TAMS 0x00000000a1000000| PB 0x00000000a1000000| Complete |  0
+|   2|0x00000000a2000000, 0x00000000a3000000, 0x00000000a3000000|100%| O|  |TAMS 0x00000000a2000000| PB 0x00000000a2000000| Untracked |  0
+|   3|0x00000000a3000000, 0x00000000a4000000, 0x00000000a4000000|100%| O|  |TAMS 0x00000000a3000000| PB 0x00000000a3000000| Untracked |  0
+|   4|0x00000000a4000000, 0x00000000a5000000, 0x00000000a5000000|100%| O|  |TAMS 0x00000000a4000000| PB 0x00000000a4000000| Untracked |  0
+|   5|0x00000000a5000000, 0x00000000a6000000, 0x00000000a6000000|100%| O|  |TAMS 0x00000000a5000000| PB 0x00000000a5000000| Untracked |  0
+|   6|0x00000000a6000000, 0x00000000a7000000, 0x00000000a7000000|100%| O|  |TAMS 0x00000000a6000000| PB 0x00000000a6000000| Untracked |  0
+|   7|0x00000000a7000000, 0x00000000a8000000, 0x00000000a8000000|100%| O|  |TAMS 0x00000000a7000000| PB 0x00000000a7000000| Untracked |  0
+|   8|0x00000000a8000000, 0x00000000a9000000, 0x00000000a9000000|100%| O|  |TAMS 0x00000000a8000000| PB 0x00000000a8000000| Untracked |  0
+|   9|0x00000000a9000000, 0x00000000aa000000, 0x00000000aa000000|100%| O|  |TAMS 0x00000000a9000000| PB 0x00000000a9000000| Untracked |  0
+|  10|0x00000000aa000000, 0x00000000ab000000, 0x00000000ab000000|100%| O|  |TAMS 0x00000000aa000000| PB 0x00000000aa000000| Untracked |  0
+|  11|0x00000000ab000000, 0x00000000ac000000, 0x00000000ac000000|100%| O|  |TAMS 0x00000000ab000000| PB 0x00000000ab000000| Untracked |  0
+|  12|0x00000000ac000000, 0x00000000ad000000, 0x00000000ad000000|100%| O|  |TAMS 0x00000000ac000000| PB 0x00000000ac000000| Untracked |  0
+|  13|0x00000000ad000000, 0x00000000ae000000, 0x00000000ae000000|100%| O|  |TAMS 0x00000000ad000000| PB 0x00000000ad000000| Untracked |  0
+|  14|0x00000000ae000000, 0x00000000af000000, 0x00000000af000000|100%| O|  |TAMS 0x00000000ae000000| PB 0x00000000ae000000| Untracked |  0
+|  15|0x00000000af000000, 0x00000000b0000000, 0x00000000b0000000|100%| O|  |TAMS 0x00000000af000000| PB 0x00000000af000000| Untracked |  0
+|  16|0x00000000b0000000, 0x00000000b1000000, 0x00000000b1000000|100%| O|  |TAMS 0x00000000b0000000| PB 0x00000000b0000000| Untracked |  0
+|  17|0x00000000b1000000, 0x00000000b2000000, 0x00000000b2000000|100%| O|  |TAMS 0x00000000b1000000| PB 0x00000000b1000000| Untracked |  0
+|  18|0x00000000b2000000, 0x00000000b3000000, 0x00000000b3000000|100%| O|  |TAMS 0x00000000b2000000| PB 0x00000000b2000000| Untracked |  0
+|  19|0x00000000b3000000, 0x00000000b4000000, 0x00000000b4000000|100%| O|  |TAMS 0x00000000b3000000| PB 0x00000000b3000000| Untracked |  0
+|  20|0x00000000b4000000, 0x00000000b5000000, 0x00000000b5000000|100%| O|  |TAMS 0x00000000b4000000| PB 0x00000000b4000000| Untracked |  0
+|  21|0x00000000b5000000, 0x00000000b6000000, 0x00000000b6000000|100%| O|  |TAMS 0x00000000b5000000| PB 0x00000000b5000000| Untracked |  0
+|  22|0x00000000b6000000, 0x00000000b7000000, 0x00000000b7000000|100%| O|  |TAMS 0x00000000b6000000| PB 0x00000000b6000000| Untracked |  0
+|  23|0x00000000b7000000, 0x00000000b8000000, 0x00000000b8000000|100%| O|  |TAMS 0x00000000b7000000| PB 0x00000000b7000000| Untracked |  0
+|  24|0x00000000b8000000, 0x00000000b9000000, 0x00000000b9000000|100%| O|  |TAMS 0x00000000b8000000| PB 0x00000000b8000000| Untracked |  0
+|  25|0x00000000b9000000, 0x00000000ba000000, 0x00000000ba000000|100%| O|  |TAMS 0x00000000b9000000| PB 0x00000000b9000000| Untracked |  0
+|  26|0x00000000ba000000, 0x00000000bb000000, 0x00000000bb000000|100%| O|  |TAMS 0x00000000ba000000| PB 0x00000000ba000000| Untracked |  0
+|  27|0x00000000bb000000, 0x00000000bc000000, 0x00000000bc000000|100%| O|  |TAMS 0x00000000bb000000| PB 0x00000000bb000000| Untracked |  0
+|  28|0x00000000bc000000, 0x00000000bc7ecc30, 0x00000000bd000000| 49%| O|  |TAMS 0x00000000bc000000| PB 0x00000000bc000000| Untracked |  0
+|  29|0x00000000bd000000, 0x00000000bd000000, 0x00000000be000000|  0%| F|  |TAMS 0x00000000bd000000| PB 0x00000000bd000000| Untracked |  0
+|  30|0x00000000be000000, 0x00000000be000000, 0x00000000bf000000|  0%| F|  |TAMS 0x00000000be000000| PB 0x00000000be000000| Untracked |  0
+|  31|0x00000000bf000000, 0x00000000bf000000, 0x00000000c0000000|  0%| F|  |TAMS 0x00000000bf000000| PB 0x00000000bf000000| Untracked |  0
+|  32|0x00000000c0000000, 0x00000000c0000000, 0x00000000c1000000|  0%| F|  |TAMS 0x00000000c0000000| PB 0x00000000c0000000| Untracked |  0
+|  33|0x00000000c1000000, 0x00000000c1000000, 0x00000000c2000000|  0%| F|  |TAMS 0x00000000c1000000| PB 0x00000000c1000000| Untracked |  0
+|  34|0x00000000c2000000, 0x00000000c2000000, 0x00000000c3000000|  0%| F|  |TAMS 0x00000000c2000000| PB 0x00000000c2000000| Untracked |  0
+|  35|0x00000000c3000000, 0x00000000c3000000, 0x00000000c4000000|  0%| F|  |TAMS 0x00000000c3000000| PB 0x00000000c3000000| Untracked |  0
+|  36|0x00000000c4000000, 0x00000000c4000000, 0x00000000c5000000|  0%| F|  |TAMS 0x00000000c4000000| PB 0x00000000c4000000| Untracked |  0
+|  37|0x00000000c5000000, 0x00000000c5000000, 0x00000000c6000000|  0%| F|  |TAMS 0x00000000c5000000| PB 0x00000000c5000000| Untracked |  0
+|  38|0x00000000c6000000, 0x00000000c6000000, 0x00000000c7000000|  0%| F|  |TAMS 0x00000000c6000000| PB 0x00000000c6000000| Untracked |  0
+|  39|0x00000000c7000000, 0x00000000c7000000, 0x00000000c8000000|  0%| F|  |TAMS 0x00000000c7000000| PB 0x00000000c7000000| Untracked |  0
+|  40|0x00000000c8000000, 0x00000000c8000000, 0x00000000c9000000|  0%| F|  |TAMS 0x00000000c8000000| PB 0x00000000c8000000| Untracked |  0
+|  41|0x00000000c9000000, 0x00000000c9000000, 0x00000000ca000000|  0%| F|  |TAMS 0x00000000c9000000| PB 0x00000000c9000000| Untracked |  0
+|  42|0x00000000ca000000, 0x00000000ca000000, 0x00000000cb000000|  0%| F|  |TAMS 0x00000000ca000000| PB 0x00000000ca000000| Untracked |  0
+|  43|0x00000000cb000000, 0x00000000cb000000, 0x00000000cc000000|  0%| F|  |TAMS 0x00000000cb000000| PB 0x00000000cb000000| Untracked |  0
+|  44|0x00000000cc000000, 0x00000000cc000000, 0x00000000cd000000|  0%| F|  |TAMS 0x00000000cc000000| PB 0x00000000cc000000| Untracked |  0
+|  45|0x00000000cd000000, 0x00000000cd000000, 0x00000000ce000000|  0%| F|  |TAMS 0x00000000cd000000| PB 0x00000000cd000000| Untracked |  0
+|  46|0x00000000ce000000, 0x00000000ce000000, 0x00000000cf000000|  0%| F|  |TAMS 0x00000000ce000000| PB 0x00000000ce000000| Untracked |  0
+|  47|0x00000000cf000000, 0x00000000cf000000, 0x00000000d0000000|  0%| F|  |TAMS 0x00000000cf000000| PB 0x00000000cf000000| Untracked |  0
+|  48|0x00000000d0000000, 0x00000000d0000000, 0x00000000d1000000|  0%| F|  |TAMS 0x00000000d0000000| PB 0x00000000d0000000| Untracked |  0
+|  49|0x00000000d1000000, 0x00000000d1000000, 0x00000000d2000000|  0%| F|  |TAMS 0x00000000d1000000| PB 0x00000000d1000000| Untracked |  0
+|  50|0x00000000d2000000, 0x00000000d2000000, 0x00000000d3000000|  0%| F|  |TAMS 0x00000000d2000000| PB 0x00000000d2000000| Untracked |  0
+|  51|0x00000000d3000000, 0x00000000d3000000, 0x00000000d4000000|  0%| F|  |TAMS 0x00000000d3000000| PB 0x00000000d3000000| Untracked |  0
+|  52|0x00000000d4000000, 0x00000000d4000000, 0x00000000d5000000|  0%| F|  |TAMS 0x00000000d4000000| PB 0x00000000d4000000| Untracked |  0
+|  53|0x00000000d5000000, 0x00000000d5000000, 0x00000000d6000000|  0%| F|  |TAMS 0x00000000d5000000| PB 0x00000000d5000000| Untracked |  0
+|  54|0x00000000d6000000, 0x00000000d6000000, 0x00000000d7000000|  0%| F|  |TAMS 0x00000000d6000000| PB 0x00000000d6000000| Untracked |  0
+|  55|0x00000000d7000000, 0x00000000d7000000, 0x00000000d8000000|  0%| F|  |TAMS 0x00000000d7000000| PB 0x00000000d7000000| Untracked |  0
+|  56|0x00000000d8000000, 0x00000000d8000000, 0x00000000d9000000|  0%| F|  |TAMS 0x00000000d8000000| PB 0x00000000d8000000| Untracked |  0
+|  57|0x00000000d9000000, 0x00000000d9000000, 0x00000000da000000|  0%| F|  |TAMS 0x00000000d9000000| PB 0x00000000d9000000| Untracked |  0
+|  58|0x00000000da000000, 0x00000000da000000, 0x00000000db000000|  0%| F|  |TAMS 0x00000000da000000| PB 0x00000000da000000| Untracked |  0
+|  59|0x00000000db000000, 0x00000000db000000, 0x00000000dc000000|  0%| F|  |TAMS 0x00000000db000000| PB 0x00000000db000000| Untracked |  0
+|  60|0x00000000dc000000, 0x00000000dc000000, 0x00000000dd000000|  0%| F|  |TAMS 0x00000000dc000000| PB 0x00000000dc000000| Untracked |  0
+|  61|0x00000000dd000000, 0x00000000dd000000, 0x00000000de000000|  0%| F|  |TAMS 0x00000000dd000000| PB 0x00000000dd000000| Untracked |  0
+|  62|0x00000000de000000, 0x00000000de000000, 0x00000000df000000|  0%| F|  |TAMS 0x00000000de000000| PB 0x00000000de000000| Untracked |  0
+|  63|0x00000000df000000, 0x00000000df000000, 0x00000000e0000000|  0%| F|  |TAMS 0x00000000df000000| PB 0x00000000df000000| Untracked |  0
+|  64|0x00000000e0000000, 0x00000000e0000000, 0x00000000e1000000|  0%| F|  |TAMS 0x00000000e0000000| PB 0x00000000e0000000| Untracked |  0
+|  65|0x00000000e1000000, 0x00000000e1000000, 0x00000000e2000000|  0%| F|  |TAMS 0x00000000e1000000| PB 0x00000000e1000000| Untracked |  0
+|  66|0x00000000e2000000, 0x00000000e2000000, 0x00000000e3000000|  0%| F|  |TAMS 0x00000000e2000000| PB 0x00000000e2000000| Untracked |  0
+|  67|0x00000000e3000000, 0x00000000e3000000, 0x00000000e4000000|  0%| F|  |TAMS 0x00000000e3000000| PB 0x00000000e3000000| Untracked |  0
+|  68|0x00000000e4000000, 0x00000000e4000000, 0x00000000e5000000|  0%| F|  |TAMS 0x00000000e4000000| PB 0x00000000e4000000| Untracked |  0
+|  69|0x00000000e5000000, 0x00000000e5000000, 0x00000000e6000000|  0%| F|  |TAMS 0x00000000e5000000| PB 0x00000000e5000000| Untracked |  0
+|  70|0x00000000e6000000, 0x00000000e6000000, 0x00000000e7000000|  0%| F|  |TAMS 0x00000000e6000000| PB 0x00000000e6000000| Untracked |  0
+|  71|0x00000000e7000000, 0x00000000e7000000, 0x00000000e8000000|  0%| F|  |TAMS 0x00000000e7000000| PB 0x00000000e7000000| Untracked |  0
+|  72|0x00000000e8000000, 0x00000000e8000000, 0x00000000e9000000|  0%| F|  |TAMS 0x00000000e8000000| PB 0x00000000e8000000| Untracked |  0
+|  73|0x00000000e9000000, 0x00000000e9000000, 0x00000000ea000000|  0%| F|  |TAMS 0x00000000e9000000| PB 0x00000000e9000000| Untracked |  0
+|  74|0x00000000ea000000, 0x00000000ea000000, 0x00000000eb000000|  0%| F|  |TAMS 0x00000000ea000000| PB 0x00000000ea000000| Untracked |  0
+|  75|0x00000000eb000000, 0x00000000eb000000, 0x00000000ec000000|  0%| F|  |TAMS 0x00000000eb000000| PB 0x00000000eb000000| Untracked |  0
+|  76|0x00000000ec000000, 0x00000000ec000000, 0x00000000ed000000|  0%| F|  |TAMS 0x00000000ec000000| PB 0x00000000ec000000| Untracked |  0
+|  77|0x00000000ed000000, 0x00000000ed000000, 0x00000000ee000000|  0%| F|  |TAMS 0x00000000ed000000| PB 0x00000000ed000000| Untracked |  0
+|  78|0x00000000ee000000, 0x00000000ee000000, 0x00000000ef000000|  0%| F|  |TAMS 0x00000000ee000000| PB 0x00000000ee000000| Untracked |  0
+|  79|0x00000000ef000000, 0x00000000ef000000, 0x00000000f0000000|  0%| F|  |TAMS 0x00000000ef000000| PB 0x00000000ef000000| Untracked |  0
+|  80|0x00000000f0000000, 0x00000000f0000000, 0x00000000f1000000|  0%| F|  |TAMS 0x00000000f0000000| PB 0x00000000f0000000| Untracked |  0
+|  81|0x00000000f1000000, 0x00000000f1000000, 0x00000000f2000000|  0%| F|  |TAMS 0x00000000f1000000| PB 0x00000000f1000000| Untracked |  0
+|  82|0x00000000f2000000, 0x00000000f2000000, 0x00000000f3000000|  0%| F|  |TAMS 0x00000000f2000000| PB 0x00000000f2000000| Untracked |  0
+|  83|0x00000000f3000000, 0x00000000f3000000, 0x00000000f4000000|  0%| F|  |TAMS 0x00000000f3000000| PB 0x00000000f3000000| Untracked |  0
+|  84|0x00000000f4000000, 0x00000000f4000000, 0x00000000f5000000|  0%| F|  |TAMS 0x00000000f4000000| PB 0x00000000f4000000| Untracked |  0
+|  85|0x00000000f5000000, 0x00000000f5000000, 0x00000000f6000000|  0%| F|  |TAMS 0x00000000f5000000| PB 0x00000000f5000000| Untracked |  0
+|  86|0x00000000f6000000, 0x00000000f6000000, 0x00000000f7000000|  0%| F|  |TAMS 0x00000000f6000000| PB 0x00000000f6000000| Untracked |  0
+|  87|0x00000000f7000000, 0x00000000f7000000, 0x00000000f8000000|  0%| F|  |TAMS 0x00000000f7000000| PB 0x00000000f7000000| Untracked |  0
+|  88|0x00000000f8000000, 0x00000000f8000000, 0x00000000f9000000|  0%| F|  |TAMS 0x00000000f8000000| PB 0x00000000f8000000| Untracked |  0
+|  89|0x00000000f9000000, 0x00000000f9000000, 0x00000000fa000000|  0%| F|  |TAMS 0x00000000f9000000| PB 0x00000000f9000000| Untracked |  0
+|  90|0x00000000fa000000, 0x00000000fa000000, 0x00000000fb000000|  0%| F|  |TAMS 0x00000000fa000000| PB 0x00000000fa000000| Untracked |  0
+|  91|0x00000000fb000000, 0x00000000fb000000, 0x00000000fc000000|  0%| F|  |TAMS 0x00000000fb000000| PB 0x00000000fb000000| Untracked |  0
+|  92|0x00000000fc000000, 0x00000000fc000000, 0x00000000fd000000|  0%| F|  |TAMS 0x00000000fc000000| PB 0x00000000fc000000| Untracked |  0
+|  93|0x00000000fd000000, 0x00000000fd000000, 0x00000000fe000000|  0%| F|  |TAMS 0x00000000fd000000| PB 0x00000000fd000000| Untracked |  0
+|  94|0x00000000fe000000, 0x00000000fe000000, 0x00000000ff000000|  0%| F|  |TAMS 0x00000000fe000000| PB 0x00000000fe000000| Untracked |  0
+|  95|0x00000000ff000000, 0x00000000ff000000, 0x0000000100000000|  0%| F|  |TAMS 0x00000000ff000000| PB 0x00000000ff000000| Untracked |  0
+|  96|0x0000000100000000, 0x0000000100000000, 0x0000000101000000|  0%| F|  |TAMS 0x0000000100000000| PB 0x0000000100000000| Untracked |  0
+|  97|0x0000000101000000, 0x0000000101000000, 0x0000000102000000|  0%| F|  |TAMS 0x0000000101000000| PB 0x0000000101000000| Untracked |  0
+|  98|0x0000000102000000, 0x0000000102000000, 0x0000000103000000|  0%| F|  |TAMS 0x0000000102000000| PB 0x0000000102000000| Untracked |  0
+|  99|0x0000000103000000, 0x0000000103000000, 0x0000000104000000|  0%| F|  |TAMS 0x0000000103000000| PB 0x0000000103000000| Untracked |  0
+| 100|0x0000000104000000, 0x0000000104000000, 0x0000000105000000|  0%| F|  |TAMS 0x0000000104000000| PB 0x0000000104000000| Untracked |  0
+| 101|0x0000000105000000, 0x0000000105000000, 0x0000000106000000|  0%| F|  |TAMS 0x0000000105000000| PB 0x0000000105000000| Untracked |  0
+| 102|0x0000000106000000, 0x0000000106000000, 0x0000000107000000|  0%| F|  |TAMS 0x0000000106000000| PB 0x0000000106000000| Untracked |  0
+| 103|0x0000000107000000, 0x0000000107000000, 0x0000000108000000|  0%| F|  |TAMS 0x0000000107000000| PB 0x0000000107000000| Untracked |  0
+| 104|0x0000000108000000, 0x0000000108000000, 0x0000000109000000|  0%| F|  |TAMS 0x0000000108000000| PB 0x0000000108000000| Untracked |  0
+| 105|0x0000000109000000, 0x0000000109000000, 0x000000010a000000|  0%| F|  |TAMS 0x0000000109000000| PB 0x0000000109000000| Untracked |  0
+| 106|0x000000010a000000, 0x000000010a000000, 0x000000010b000000|  0%| F|  |TAMS 0x000000010a000000| PB 0x000000010a000000| Untracked |  0
+| 107|0x000000010b000000, 0x000000010b000000, 0x000000010c000000|  0%| F|  |TAMS 0x000000010b000000| PB 0x000000010b000000| Untracked |  0
+| 108|0x000000010c000000, 0x000000010c000000, 0x000000010d000000|  0%| F|  |TAMS 0x000000010c000000| PB 0x000000010c000000| Untracked |  0
+| 109|0x000000010d000000, 0x000000010d000000, 0x000000010e000000|  0%| F|  |TAMS 0x000000010d000000| PB 0x000000010d000000| Untracked |  0
+| 110|0x000000010e000000, 0x000000010e000000, 0x000000010f000000|  0%| F|  |TAMS 0x000000010e000000| PB 0x000000010e000000| Untracked |  0
+| 111|0x000000010f000000, 0x000000010f000000, 0x0000000110000000|  0%| F|  |TAMS 0x000000010f000000| PB 0x000000010f000000| Untracked |  0
+| 112|0x0000000110000000, 0x0000000110000000, 0x0000000111000000|  0%| F|  |TAMS 0x0000000110000000| PB 0x0000000110000000| Untracked |  0
+| 113|0x0000000111000000, 0x0000000111000000, 0x0000000112000000|  0%| F|  |TAMS 0x0000000111000000| PB 0x0000000111000000| Untracked |  0
+| 114|0x0000000112000000, 0x0000000112000000, 0x0000000113000000|  0%| F|  |TAMS 0x0000000112000000| PB 0x0000000112000000| Untracked |  0
+| 115|0x0000000113000000, 0x0000000113000000, 0x0000000114000000|  0%| F|  |TAMS 0x0000000113000000| PB 0x0000000113000000| Untracked |  0
+| 116|0x0000000114000000, 0x0000000114000000, 0x0000000115000000|  0%| F|  |TAMS 0x0000000114000000| PB 0x0000000114000000| Untracked |  0
+| 117|0x0000000115000000, 0x0000000115000000, 0x0000000116000000|  0%| F|  |TAMS 0x0000000115000000| PB 0x0000000115000000| Untracked |  0
+| 118|0x0000000116000000, 0x0000000116000000, 0x0000000117000000|  0%| F|  |TAMS 0x0000000116000000| PB 0x0000000116000000| Untracked |  0
+| 119|0x0000000117000000, 0x0000000117000000, 0x0000000118000000|  0%| F|  |TAMS 0x0000000117000000| PB 0x0000000117000000| Untracked |  0
+| 120|0x0000000118000000, 0x0000000118000000, 0x0000000119000000|  0%| F|  |TAMS 0x0000000118000000| PB 0x0000000118000000| Untracked |  0
+| 121|0x0000000119000000, 0x0000000119000000, 0x000000011a000000|  0%| F|  |TAMS 0x0000000119000000| PB 0x0000000119000000| Untracked |  0
+| 122|0x000000011a000000, 0x000000011a000000, 0x000000011b000000|  0%| F|  |TAMS 0x000000011a000000| PB 0x000000011a000000| Untracked |  0
+| 123|0x000000011b000000, 0x000000011b000000, 0x000000011c000000|  0%| F|  |TAMS 0x000000011b000000| PB 0x000000011b000000| Untracked |  0
+| 124|0x000000011c000000, 0x000000011c000000, 0x000000011d000000|  0%| F|  |TAMS 0x000000011c000000| PB 0x000000011c000000| Untracked |  0
+| 125|0x000000011d000000, 0x000000011d000000, 0x000000011e000000|  0%| F|  |TAMS 0x000000011d000000| PB 0x000000011d000000| Untracked |  0
+| 126|0x000000011e000000, 0x000000011e000000, 0x000000011f000000|  0%| F|  |TAMS 0x000000011e000000| PB 0x000000011e000000| Untracked |  0
+| 127|0x000000011f000000, 0x000000011f000000, 0x0000000120000000|  0%| F|  |TAMS 0x000000011f000000| PB 0x000000011f000000| Untracked |  0
+| 128|0x0000000120000000, 0x0000000120000000, 0x0000000121000000|  0%| F|  |TAMS 0x0000000120000000| PB 0x0000000120000000| Untracked |  0
+| 129|0x0000000121000000, 0x0000000121000000, 0x0000000122000000|  0%| F|  |TAMS 0x0000000121000000| PB 0x0000000121000000| Untracked |  0
+| 130|0x0000000122000000, 0x0000000122000000, 0x0000000123000000|  0%| F|  |TAMS 0x0000000122000000| PB 0x0000000122000000| Untracked |  0
+| 131|0x0000000123000000, 0x0000000123000000, 0x0000000124000000|  0%| F|  |TAMS 0x0000000123000000| PB 0x0000000123000000| Untracked |  0
+| 132|0x0000000124000000, 0x0000000124000000, 0x0000000125000000|  0%| F|  |TAMS 0x0000000124000000| PB 0x0000000124000000| Untracked |  0
+| 133|0x0000000125000000, 0x0000000125000000, 0x0000000126000000|  0%| F|  |TAMS 0x0000000125000000| PB 0x0000000125000000| Untracked |  0
+| 134|0x0000000126000000, 0x0000000126000000, 0x0000000127000000|  0%| F|  |TAMS 0x0000000126000000| PB 0x0000000126000000| Untracked |  0
+| 135|0x0000000127000000, 0x0000000127000000, 0x0000000128000000|  0%| F|  |TAMS 0x0000000127000000| PB 0x0000000127000000| Untracked |  0
+| 136|0x0000000128000000, 0x0000000128000000, 0x0000000129000000|  0%| F|  |TAMS 0x0000000128000000| PB 0x0000000128000000| Untracked |  0
+| 137|0x0000000129000000, 0x0000000129000000, 0x000000012a000000|  0%| F|  |TAMS 0x0000000129000000| PB 0x0000000129000000| Untracked |  0
+| 138|0x000000012a000000, 0x000000012a000000, 0x000000012b000000|  0%| F|  |TAMS 0x000000012a000000| PB 0x000000012a000000| Untracked |  0
+| 139|0x000000012b000000, 0x000000012b000000, 0x000000012c000000|  0%| F|  |TAMS 0x000000012b000000| PB 0x000000012b000000| Untracked |  0
+| 140|0x000000012c000000, 0x000000012c000000, 0x000000012d000000|  0%| F|  |TAMS 0x000000012c000000| PB 0x000000012c000000| Untracked |  0
+| 141|0x000000012d000000, 0x000000012d000000, 0x000000012e000000|  0%| F|  |TAMS 0x000000012d000000| PB 0x000000012d000000| Untracked |  0
+| 142|0x000000012e000000, 0x000000012e000000, 0x000000012f000000|  0%| F|  |TAMS 0x000000012e000000| PB 0x000000012e000000| Untracked |  0
+| 143|0x000000012f000000, 0x000000012f000000, 0x0000000130000000|  0%| F|  |TAMS 0x000000012f000000| PB 0x000000012f000000| Untracked |  0
+| 144|0x0000000130000000, 0x0000000130000000, 0x0000000131000000|  0%| F|  |TAMS 0x0000000130000000| PB 0x0000000130000000| Untracked |  0
+| 145|0x0000000131000000, 0x0000000131000000, 0x0000000132000000|  0%| F|  |TAMS 0x0000000131000000| PB 0x0000000131000000| Untracked |  0
+| 146|0x0000000132000000, 0x0000000132000000, 0x0000000133000000|  0%| F|  |TAMS 0x0000000132000000| PB 0x0000000132000000| Untracked |  0
+| 147|0x0000000133000000, 0x0000000133000000, 0x0000000134000000|  0%| F|  |TAMS 0x0000000133000000| PB 0x0000000133000000| Untracked |  0
+| 148|0x0000000134000000, 0x0000000134000000, 0x0000000135000000|  0%| F|  |TAMS 0x0000000134000000| PB 0x0000000134000000| Untracked |  0
+| 149|0x0000000135000000, 0x0000000135000000, 0x0000000136000000|  0%| F|  |TAMS 0x0000000135000000| PB 0x0000000135000000| Untracked |  0
+| 150|0x0000000136000000, 0x0000000136000000, 0x0000000137000000|  0%| F|  |TAMS 0x0000000136000000| PB 0x0000000136000000| Untracked |  0
+| 151|0x0000000137000000, 0x0000000137000000, 0x0000000138000000|  0%| F|  |TAMS 0x0000000137000000| PB 0x0000000137000000| Untracked |  0
+| 152|0x0000000138000000, 0x0000000138000000, 0x0000000139000000|  0%| F|  |TAMS 0x0000000138000000| PB 0x0000000138000000| Untracked |  0
+| 153|0x0000000139000000, 0x0000000139000000, 0x000000013a000000|  0%| F|  |TAMS 0x0000000139000000| PB 0x0000000139000000| Untracked |  0
+| 154|0x000000013a000000, 0x000000013a000000, 0x000000013b000000|  0%| F|  |TAMS 0x000000013a000000| PB 0x000000013a000000| Untracked |  0
+| 155|0x000000013b000000, 0x000000013b000000, 0x000000013c000000|  0%| F|  |TAMS 0x000000013b000000| PB 0x000000013b000000| Untracked |  0
+| 156|0x000000013c000000, 0x000000013c000000, 0x000000013d000000|  0%| F|  |TAMS 0x000000013c000000| PB 0x000000013c000000| Untracked |  0
+| 157|0x000000013d000000, 0x000000013d000000, 0x000000013e000000|  0%| F|  |TAMS 0x000000013d000000| PB 0x000000013d000000| Untracked |  0
+| 158|0x000000013e000000, 0x000000013e000000, 0x000000013f000000|  0%| F|  |TAMS 0x000000013e000000| PB 0x000000013e000000| Untracked |  0
+| 159|0x000000013f000000, 0x000000013f000000, 0x0000000140000000|  0%| F|  |TAMS 0x000000013f000000| PB 0x000000013f000000| Untracked |  0
+| 160|0x0000000140000000, 0x0000000140000000, 0x0000000141000000|  0%| F|  |TAMS 0x0000000140000000| PB 0x0000000140000000| Untracked |  0
+| 161|0x0000000141000000, 0x0000000141000000, 0x0000000142000000|  0%| F|  |TAMS 0x0000000141000000| PB 0x0000000141000000| Untracked |  0
+| 162|0x0000000142000000, 0x0000000142000000, 0x0000000143000000|  0%| F|  |TAMS 0x0000000142000000| PB 0x0000000142000000| Untracked |  0
+| 163|0x0000000143000000, 0x0000000143000000, 0x0000000144000000|  0%| F|  |TAMS 0x0000000143000000| PB 0x0000000143000000| Untracked |  0
+| 164|0x0000000144000000, 0x0000000144000000, 0x0000000145000000|  0%| F|  |TAMS 0x0000000144000000| PB 0x0000000144000000| Untracked |  0
+| 165|0x0000000145000000, 0x0000000145000000, 0x0000000146000000|  0%| F|  |TAMS 0x0000000145000000| PB 0x0000000145000000| Untracked |  0
+| 166|0x0000000146000000, 0x0000000146000000, 0x0000000147000000|  0%| F|  |TAMS 0x0000000146000000| PB 0x0000000146000000| Untracked |  0
+| 167|0x0000000147000000, 0x0000000147000000, 0x0000000148000000|  0%| F|  |TAMS 0x0000000147000000| PB 0x0000000147000000| Untracked |  0
+| 168|0x0000000148000000, 0x0000000148000000, 0x0000000149000000|  0%| F|  |TAMS 0x0000000148000000| PB 0x0000000148000000| Untracked |  0
+| 169|0x0000000149000000, 0x0000000149000000, 0x000000014a000000|  0%| F|  |TAMS 0x0000000149000000| PB 0x0000000149000000| Untracked |  0
+| 170|0x000000014a000000, 0x000000014a000000, 0x000000014b000000|  0%| F|  |TAMS 0x000000014a000000| PB 0x000000014a000000| Untracked |  0
+| 171|0x000000014b000000, 0x000000014b000000, 0x000000014c000000|  0%| F|  |TAMS 0x000000014b000000| PB 0x000000014b000000| Untracked |  0
+| 172|0x000000014c000000, 0x000000014c000000, 0x000000014d000000|  0%| F|  |TAMS 0x000000014c000000| PB 0x000000014c000000| Untracked |  0
+| 173|0x000000014d000000, 0x000000014d000000, 0x000000014e000000|  0%| F|  |TAMS 0x000000014d000000| PB 0x000000014d000000| Untracked |  0
+| 174|0x000000014e000000, 0x000000014e000000, 0x000000014f000000|  0%| F|  |TAMS 0x000000014e000000| PB 0x000000014e000000| Untracked |  0
+| 175|0x000000014f000000, 0x000000014f000000, 0x0000000150000000|  0%| F|  |TAMS 0x000000014f000000| PB 0x000000014f000000| Untracked |  0
+| 176|0x0000000150000000, 0x0000000150000000, 0x0000000151000000|  0%| F|  |TAMS 0x0000000150000000| PB 0x0000000150000000| Untracked |  0
+| 177|0x0000000151000000, 0x0000000151000000, 0x0000000152000000|  0%| F|  |TAMS 0x0000000151000000| PB 0x0000000151000000| Untracked |  0
+| 178|0x0000000152000000, 0x0000000152000000, 0x0000000153000000|  0%| F|  |TAMS 0x0000000152000000| PB 0x0000000152000000| Untracked |  0
+| 179|0x0000000153000000, 0x0000000153000000, 0x0000000154000000|  0%| F|  |TAMS 0x0000000153000000| PB 0x0000000153000000| Untracked |  0
+| 180|0x0000000154000000, 0x0000000154000000, 0x0000000155000000|  0%| F|  |TAMS 0x0000000154000000| PB 0x0000000154000000| Untracked |  0
+| 181|0x0000000155000000, 0x0000000155000000, 0x0000000156000000|  0%| F|  |TAMS 0x0000000155000000| PB 0x0000000155000000| Untracked |  0
+| 182|0x0000000156000000, 0x0000000156000000, 0x0000000157000000|  0%| F|  |TAMS 0x0000000156000000| PB 0x0000000156000000| Untracked |  0
+| 183|0x0000000157000000, 0x0000000157000000, 0x0000000158000000|  0%| F|  |TAMS 0x0000000157000000| PB 0x0000000157000000| Untracked |  0
+| 184|0x0000000158000000, 0x0000000158000000, 0x0000000159000000|  0%| F|  |TAMS 0x0000000158000000| PB 0x0000000158000000| Untracked |  0
+| 185|0x0000000159000000, 0x0000000159000000, 0x000000015a000000|  0%| F|  |TAMS 0x0000000159000000| PB 0x0000000159000000| Untracked |  0
+| 186|0x000000015a000000, 0x000000015a000000, 0x000000015b000000|  0%| F|  |TAMS 0x000000015a000000| PB 0x000000015a000000| Untracked |  0
+| 187|0x000000015b000000, 0x000000015b000000, 0x000000015c000000|  0%| F|  |TAMS 0x000000015b000000| PB 0x000000015b000000| Untracked |  0
+| 188|0x000000015c000000, 0x000000015c000000, 0x000000015d000000|  0%| F|  |TAMS 0x000000015c000000| PB 0x000000015c000000| Untracked |  0
+| 189|0x000000015d000000, 0x000000015d000000, 0x000000015e000000|  0%| F|  |TAMS 0x000000015d000000| PB 0x000000015d000000| Untracked |  0
+| 190|0x000000015e000000, 0x000000015e000000, 0x000000015f000000|  0%| F|  |TAMS 0x000000015e000000| PB 0x000000015e000000| Untracked |  0
+| 191|0x000000015f000000, 0x000000015f000000, 0x0000000160000000|  0%| F|  |TAMS 0x000000015f000000| PB 0x000000015f000000| Untracked |  0
+| 192|0x0000000160000000, 0x0000000160000000, 0x0000000161000000|  0%| F|  |TAMS 0x0000000160000000| PB 0x0000000160000000| Untracked |  0
+| 193|0x0000000161000000, 0x0000000161000000, 0x0000000162000000|  0%| F|  |TAMS 0x0000000161000000| PB 0x0000000161000000| Untracked |  0
+| 194|0x0000000162000000, 0x0000000162000000, 0x0000000163000000|  0%| F|  |TAMS 0x0000000162000000| PB 0x0000000162000000| Untracked |  0
+| 195|0x0000000163000000, 0x0000000163000000, 0x0000000164000000|  0%| F|  |TAMS 0x0000000163000000| PB 0x0000000163000000| Untracked |  0
+| 196|0x0000000164000000, 0x0000000164000000, 0x0000000165000000|  0%| F|  |TAMS 0x0000000164000000| PB 0x0000000164000000| Untracked |  0
+| 197|0x0000000165000000, 0x0000000165000000, 0x0000000166000000|  0%| F|  |TAMS 0x0000000165000000| PB 0x0000000165000000| Untracked |  0
+| 198|0x0000000166000000, 0x0000000166000000, 0x0000000167000000|  0%| F|  |TAMS 0x0000000166000000| PB 0x0000000166000000| Untracked |  0
+| 199|0x0000000167000000, 0x0000000167000000, 0x0000000168000000|  0%| F|  |TAMS 0x0000000167000000| PB 0x0000000167000000| Untracked |  0
+| 200|0x0000000168000000, 0x0000000168000000, 0x0000000169000000|  0%| F|  |TAMS 0x0000000168000000| PB 0x0000000168000000| Untracked |  0
+| 201|0x0000000169000000, 0x0000000169000000, 0x000000016a000000|  0%| F|  |TAMS 0x0000000169000000| PB 0x0000000169000000| Untracked |  0
+| 202|0x000000016a000000, 0x000000016a000000, 0x000000016b000000|  0%| F|  |TAMS 0x000000016a000000| PB 0x000000016a000000| Untracked |  0
+| 203|0x000000016b000000, 0x000000016b000000, 0x000000016c000000|  0%| F|  |TAMS 0x000000016b000000| PB 0x000000016b000000| Untracked |  0
+| 204|0x000000016c000000, 0x000000016c000000, 0x000000016d000000|  0%| F|  |TAMS 0x000000016c000000| PB 0x000000016c000000| Untracked |  0
+| 205|0x000000016d000000, 0x000000016d000000, 0x000000016e000000|  0%| F|  |TAMS 0x000000016d000000| PB 0x000000016d000000| Untracked |  0
+| 206|0x000000016e000000, 0x000000016e000000, 0x000000016f000000|  0%| F|  |TAMS 0x000000016e000000| PB 0x000000016e000000| Untracked |  0
+| 207|0x000000016f000000, 0x000000016f000000, 0x0000000170000000|  0%| F|  |TAMS 0x000000016f000000| PB 0x000000016f000000| Untracked |  0
+| 208|0x0000000170000000, 0x0000000170000000, 0x0000000171000000|  0%| F|  |TAMS 0x0000000170000000| PB 0x0000000170000000| Untracked |  0
+| 209|0x0000000171000000, 0x0000000171000000, 0x0000000172000000|  0%| F|  |TAMS 0x0000000171000000| PB 0x0000000171000000| Untracked |  0
+| 210|0x0000000172000000, 0x0000000172000000, 0x0000000173000000|  0%| F|  |TAMS 0x0000000172000000| PB 0x0000000172000000| Untracked |  0
+| 211|0x0000000173000000, 0x0000000173000000, 0x0000000174000000|  0%| F|  |TAMS 0x0000000173000000| PB 0x0000000173000000| Untracked |  0
+| 212|0x0000000174000000, 0x0000000174000000, 0x0000000175000000|  0%| F|  |TAMS 0x0000000174000000| PB 0x0000000174000000| Untracked |  0
+| 213|0x0000000175000000, 0x0000000175000000, 0x0000000176000000|  0%| F|  |TAMS 0x0000000175000000| PB 0x0000000175000000| Untracked |  0
+| 214|0x0000000176000000, 0x0000000176000000, 0x0000000177000000|  0%| F|  |TAMS 0x0000000176000000| PB 0x0000000176000000| Untracked |  0
+| 215|0x0000000177000000, 0x0000000177000000, 0x0000000178000000|  0%| F|  |TAMS 0x0000000177000000| PB 0x0000000177000000| Untracked |  0
+| 216|0x0000000178000000, 0x0000000178000000, 0x0000000179000000|  0%| F|  |TAMS 0x0000000178000000| PB 0x0000000178000000| Untracked |  0
+| 217|0x0000000179000000, 0x0000000179000000, 0x000000017a000000|  0%| F|  |TAMS 0x0000000179000000| PB 0x0000000179000000| Untracked |  0
+| 218|0x000000017a000000, 0x000000017a000000, 0x000000017b000000|  0%| F|  |TAMS 0x000000017a000000| PB 0x000000017a000000| Untracked |  0
+| 219|0x000000017b000000, 0x000000017b000000, 0x000000017c000000|  0%| F|  |TAMS 0x000000017b000000| PB 0x000000017b000000| Untracked |  0
+| 220|0x000000017c000000, 0x000000017c000000, 0x000000017d000000|  0%| F|  |TAMS 0x000000017c000000| PB 0x000000017c000000| Untracked |  0
+| 221|0x000000017d000000, 0x000000017d000000, 0x000000017e000000|  0%| F|  |TAMS 0x000000017d000000| PB 0x000000017d000000| Untracked |  0
+| 222|0x000000017e000000, 0x000000017e000000, 0x000000017f000000|  0%| F|  |TAMS 0x000000017e000000| PB 0x000000017e000000| Untracked |  0
+| 223|0x000000017f000000, 0x000000017f8757c8, 0x0000000180000000| 52%| S|CS|TAMS 0x000000017f000000| PB 0x000000017f000000| Complete |  0
+| 224|0x0000000180000000, 0x0000000180000000, 0x0000000181000000|  0%| F|  |TAMS 0x0000000180000000| PB 0x0000000180000000| Untracked |  0
+| 225|0x0000000181000000, 0x0000000181000000, 0x0000000182000000|  0%| F|  |TAMS 0x0000000181000000| PB 0x0000000181000000| Untracked |  0
+| 226|0x0000000182000000, 0x0000000182000000, 0x0000000183000000|  0%| F|  |TAMS 0x0000000182000000| PB 0x0000000182000000| Untracked |  0
+| 227|0x0000000183000000, 0x0000000183000000, 0x0000000184000000|  0%| F|  |TAMS 0x0000000183000000| PB 0x0000000183000000| Untracked |  0
+| 228|0x0000000184000000, 0x0000000184000000, 0x0000000185000000|  0%| F|  |TAMS 0x0000000184000000| PB 0x0000000184000000| Untracked |  0
+| 229|0x0000000185000000, 0x0000000185000000, 0x0000000186000000|  0%| F|  |TAMS 0x0000000185000000| PB 0x0000000185000000| Untracked |  0
+| 230|0x0000000186000000, 0x0000000186000000, 0x0000000187000000|  0%| F|  |TAMS 0x0000000186000000| PB 0x0000000186000000| Untracked |  0
+| 231|0x0000000187000000, 0x0000000187000000, 0x0000000188000000|  0%| F|  |TAMS 0x0000000187000000| PB 0x0000000187000000| Untracked |  0
+| 232|0x0000000188000000, 0x0000000188000000, 0x0000000189000000|  0%| F|  |TAMS 0x0000000188000000| PB 0x0000000188000000| Untracked |  0
+| 233|0x0000000189000000, 0x0000000189000000, 0x000000018a000000|  0%| F|  |TAMS 0x0000000189000000| PB 0x0000000189000000| Untracked |  0
+| 234|0x000000018a000000, 0x000000018a000000, 0x000000018b000000|  0%| F|  |TAMS 0x000000018a000000| PB 0x000000018a000000| Untracked |  0
+| 235|0x000000018b000000, 0x000000018b000000, 0x000000018c000000|  0%| F|  |TAMS 0x000000018b000000| PB 0x000000018b000000| Untracked |  0
+| 236|0x000000018c000000, 0x000000018c000000, 0x000000018d000000|  0%| F|  |TAMS 0x000000018c000000| PB 0x000000018c000000| Untracked |  0
+| 237|0x000000018d000000, 0x000000018d000000, 0x000000018e000000|  0%| F|  |TAMS 0x000000018d000000| PB 0x000000018d000000| Untracked |  0
+| 238|0x000000018e000000, 0x000000018e000000, 0x000000018f000000|  0%| F|  |TAMS 0x000000018e000000| PB 0x000000018e000000| Untracked |  0
+| 239|0x000000018f000000, 0x000000018f000000, 0x0000000190000000|  0%| F|  |TAMS 0x000000018f000000| PB 0x000000018f000000| Untracked |  0
+| 240|0x0000000190000000, 0x0000000190000000, 0x0000000191000000|  0%| F|  |TAMS 0x0000000190000000| PB 0x0000000190000000| Untracked |  0
+| 241|0x0000000191000000, 0x0000000191000000, 0x0000000192000000|  0%| F|  |TAMS 0x0000000191000000| PB 0x0000000191000000| Untracked |  0
+| 242|0x0000000192000000, 0x0000000192000000, 0x0000000193000000|  0%| F|  |TAMS 0x0000000192000000| PB 0x0000000192000000| Untracked |  0
+| 243|0x0000000193000000, 0x0000000193000000, 0x0000000194000000|  0%| F|  |TAMS 0x0000000193000000| PB 0x0000000193000000| Untracked |  0
+| 244|0x0000000194000000, 0x0000000194000000, 0x0000000195000000|  0%| F|  |TAMS 0x0000000194000000| PB 0x0000000194000000| Untracked |  0
+| 245|0x0000000195000000, 0x0000000195000000, 0x0000000196000000|  0%| F|  |TAMS 0x0000000195000000| PB 0x0000000195000000| Untracked |  0
+| 246|0x0000000196000000, 0x0000000196000000, 0x0000000197000000|  0%| F|  |TAMS 0x0000000196000000| PB 0x0000000196000000| Untracked |  0
+| 247|0x0000000197000000, 0x0000000197000000, 0x0000000198000000|  0%| F|  |TAMS 0x0000000197000000| PB 0x0000000197000000| Untracked |  0
+| 248|0x0000000198000000, 0x0000000198000000, 0x0000000199000000|  0%| F|  |TAMS 0x0000000198000000| PB 0x0000000198000000| Untracked |  0
+| 249|0x0000000199000000, 0x0000000199000000, 0x000000019a000000|  0%| F|  |TAMS 0x0000000199000000| PB 0x0000000199000000| Untracked |  0
+| 250|0x000000019a000000, 0x000000019a000000, 0x000000019b000000|  0%| F|  |TAMS 0x000000019a000000| PB 0x000000019a000000| Untracked |  0
+| 251|0x000000019b000000, 0x000000019b000000, 0x000000019c000000|  0%| F|  |TAMS 0x000000019b000000| PB 0x000000019b000000| Untracked |  0
+| 252|0x000000019c000000, 0x000000019c000000, 0x000000019d000000|  0%| F|  |TAMS 0x000000019c000000| PB 0x000000019c000000| Untracked |  0
+| 253|0x000000019d000000, 0x000000019d000000, 0x000000019e000000|  0%| F|  |TAMS 0x000000019d000000| PB 0x000000019d000000| Untracked |  0
+| 254|0x000000019e000000, 0x000000019e000000, 0x000000019f000000|  0%| F|  |TAMS 0x000000019e000000| PB 0x000000019e000000| Untracked |  0
+| 255|0x000000019f000000, 0x000000019f80e278, 0x00000001a0000000| 50%| E|  |TAMS 0x000000019f000000| PB 0x000000019f000000| Complete |  0
+| 256|0x00000001a0000000, 0x00000001a1000000, 0x00000001a1000000|100%| E|CS|TAMS 0x00000001a0000000| PB 0x00000001a0000000| Complete |  0
+| 257|0x00000001a1000000, 0x00000001a2000000, 0x00000001a2000000|100%| E|CS|TAMS 0x00000001a1000000| PB 0x00000001a1000000| Complete |  0
+| 258|0x00000001a2000000, 0x00000001a3000000, 0x00000001a3000000|100%| E|CS|TAMS 0x00000001a2000000| PB 0x00000001a2000000| Complete |  0
+| 259|0x00000001a3000000, 0x00000001a4000000, 0x00000001a4000000|100%| E|CS|TAMS 0x00000001a3000000| PB 0x00000001a3000000| Complete |  0
+| 260|0x00000001a4000000, 0x00000001a5000000, 0x00000001a5000000|100%| E|CS|TAMS 0x00000001a4000000| PB 0x00000001a4000000| Complete |  0
+| 261|0x00000001a5000000, 0x00000001a6000000, 0x00000001a6000000|100%| E|CS|TAMS 0x00000001a5000000| PB 0x00000001a5000000| Complete |  0
+| 262|0x00000001a6000000, 0x00000001a7000000, 0x00000001a7000000|100%| E|CS|TAMS 0x00000001a6000000| PB 0x00000001a6000000| Complete |  0
+| 263|0x00000001a7000000, 0x00000001a8000000, 0x00000001a8000000|100%| E|CS|TAMS 0x00000001a7000000| PB 0x00000001a7000000| Complete |  0
+| 264|0x00000001a8000000, 0x00000001a9000000, 0x00000001a9000000|100%| E|CS|TAMS 0x00000001a8000000| PB 0x00000001a8000000| Complete |  0
+| 265|0x00000001a9000000, 0x00000001aa000000, 0x00000001aa000000|100%| E|CS|TAMS 0x00000001a9000000| PB 0x00000001a9000000| Complete |  0
+| 266|0x00000001aa000000, 0x00000001ab000000, 0x00000001ab000000|100%| E|CS|TAMS 0x00000001aa000000| PB 0x00000001aa000000| Complete |  0
+| 267|0x00000001ab000000, 0x00000001ac000000, 0x00000001ac000000|100%| E|CS|TAMS 0x00000001ab000000| PB 0x00000001ab000000| Complete |  0
+| 268|0x00000001ac000000, 0x00000001ad000000, 0x00000001ad000000|100%| E|CS|TAMS 0x00000001ac000000| PB 0x00000001ac000000| Complete |  0
+| 269|0x00000001ad000000, 0x00000001ae000000, 0x00000001ae000000|100%| E|CS|TAMS 0x00000001ad000000| PB 0x00000001ad000000| Complete |  0
+| 270|0x00000001ae000000, 0x00000001af000000, 0x00000001af000000|100%| E|CS|TAMS 0x00000001ae000000| PB 0x00000001ae000000| Complete |  0
+| 271|0x00000001af000000, 0x00000001b0000000, 0x00000001b0000000|100%| E|CS|TAMS 0x00000001af000000| PB 0x00000001af000000| Complete |  0
+| 272|0x00000001b0000000, 0x00000001b1000000, 0x00000001b1000000|100%| E|CS|TAMS 0x00000001b0000000| PB 0x00000001b0000000| Complete |  0
+| 273|0x00000001b1000000, 0x00000001b2000000, 0x00000001b2000000|100%| E|CS|TAMS 0x00000001b1000000| PB 0x00000001b1000000| Complete |  0
+| 274|0x00000001b2000000, 0x00000001b3000000, 0x00000001b3000000|100%| E|CS|TAMS 0x00000001b2000000| PB 0x00000001b2000000| Complete |  0
+| 275|0x00000001b3000000, 0x00000001b4000000, 0x00000001b4000000|100%| E|CS|TAMS 0x00000001b3000000| PB 0x00000001b3000000| Complete |  0
+| 276|0x00000001b4000000, 0x00000001b5000000, 0x00000001b5000000|100%| E|CS|TAMS 0x00000001b4000000| PB 0x00000001b4000000| Complete |  0
+| 277|0x00000001b5000000, 0x00000001b6000000, 0x00000001b6000000|100%| E|CS|TAMS 0x00000001b5000000| PB 0x00000001b5000000| Complete |  0
+| 278|0x00000001b6000000, 0x00000001b7000000, 0x00000001b7000000|100%| E|CS|TAMS 0x00000001b6000000| PB 0x00000001b6000000| Complete |  0
+| 279|0x00000001b7000000, 0x00000001b8000000, 0x00000001b8000000|100%| E|CS|TAMS 0x00000001b7000000| PB 0x00000001b7000000| Complete |  0
+| 280|0x00000001b8000000, 0x00000001b9000000, 0x00000001b9000000|100%| E|CS|TAMS 0x00000001b8000000| PB 0x00000001b8000000| Complete |  0
+| 281|0x00000001b9000000, 0x00000001ba000000, 0x00000001ba000000|100%| E|CS|TAMS 0x00000001b9000000| PB 0x00000001b9000000| Complete |  0
+| 282|0x00000001ba000000, 0x00000001bb000000, 0x00000001bb000000|100%| E|CS|TAMS 0x00000001ba000000| PB 0x00000001ba000000| Complete |  0
+| 283|0x00000001bb000000, 0x00000001bc000000, 0x00000001bc000000|100%| E|CS|TAMS 0x00000001bb000000| PB 0x00000001bb000000| Complete |  0
+| 284|0x00000001bc000000, 0x00000001bd000000, 0x00000001bd000000|100%| E|CS|TAMS 0x00000001bc000000| PB 0x00000001bc000000| Complete |  0
+| 285|0x00000001bd000000, 0x00000001be000000, 0x00000001be000000|100%| E|CS|TAMS 0x00000001bd000000| PB 0x00000001bd000000| Complete |  0
+| 286|0x00000001be000000, 0x00000001bf000000, 0x00000001bf000000|100%| E|CS|TAMS 0x00000001be000000| PB 0x00000001be000000| Complete |  0
+| 287|0x00000001bf000000, 0x00000001c0000000, 0x00000001c0000000|100%| E|CS|TAMS 0x00000001bf000000| PB 0x00000001bf000000| Complete |  0
+| 288|0x00000001c0000000, 0x00000001c1000000, 0x00000001c1000000|100%| E|CS|TAMS 0x00000001c0000000| PB 0x00000001c0000000| Complete |  0
+| 289|0x00000001c1000000, 0x00000001c2000000, 0x00000001c2000000|100%| E|CS|TAMS 0x00000001c1000000| PB 0x00000001c1000000| Complete |  0
+| 290|0x00000001c2000000, 0x00000001c3000000, 0x00000001c3000000|100%| E|CS|TAMS 0x00000001c2000000| PB 0x00000001c2000000| Complete |  0
+| 291|0x00000001c3000000, 0x00000001c4000000, 0x00000001c4000000|100%| E|CS|TAMS 0x00000001c3000000| PB 0x00000001c3000000| Complete |  0
+| 292|0x00000001c4000000, 0x00000001c5000000, 0x00000001c5000000|100%| E|CS|TAMS 0x00000001c4000000| PB 0x00000001c4000000| Complete |  0
+| 293|0x00000001c5000000, 0x00000001c6000000, 0x00000001c6000000|100%| E|CS|TAMS 0x00000001c5000000| PB 0x00000001c5000000| Complete |  0
+| 294|0x00000001c6000000, 0x00000001c7000000, 0x00000001c7000000|100%| E|CS|TAMS 0x00000001c6000000| PB 0x00000001c6000000| Complete |  0
+| 295|0x00000001c7000000, 0x00000001c8000000, 0x00000001c8000000|100%| E|CS|TAMS 0x00000001c7000000| PB 0x00000001c7000000| Complete |  0
+| 296|0x00000001c8000000, 0x00000001c9000000, 0x00000001c9000000|100%| E|CS|TAMS 0x00000001c8000000| PB 0x00000001c8000000| Complete |  0
+| 297|0x00000001c9000000, 0x00000001ca000000, 0x00000001ca000000|100%| E|CS|TAMS 0x00000001c9000000| PB 0x00000001c9000000| Complete |  0
+| 298|0x00000001ca000000, 0x00000001cb000000, 0x00000001cb000000|100%| E|CS|TAMS 0x00000001ca000000| PB 0x00000001ca000000| Complete |  0
+| 299|0x00000001cb000000, 0x00000001cc000000, 0x00000001cc000000|100%| E|CS|TAMS 0x00000001cb000000| PB 0x00000001cb000000| Complete |  0
+| 300|0x00000001cc000000, 0x00000001cd000000, 0x00000001cd000000|100%| E|CS|TAMS 0x00000001cc000000| PB 0x00000001cc000000| Complete |  0
+| 301|0x00000001cd000000, 0x00000001ce000000, 0x00000001ce000000|100%| E|CS|TAMS 0x00000001cd000000| PB 0x00000001cd000000| Complete |  0
+| 302|0x00000001ce000000, 0x00000001cf000000, 0x00000001cf000000|100%| E|CS|TAMS 0x00000001ce000000| PB 0x00000001ce000000| Complete |  0
+| 303|0x00000001cf000000, 0x00000001d0000000, 0x00000001d0000000|100%| E|CS|TAMS 0x00000001cf000000| PB 0x00000001cf000000| Complete |  0
+| 304|0x00000001d0000000, 0x00000001d1000000, 0x00000001d1000000|100%| E|CS|TAMS 0x00000001d0000000| PB 0x00000001d0000000| Complete |  0
+| 305|0x00000001d1000000, 0x00000001d2000000, 0x00000001d2000000|100%| E|CS|TAMS 0x00000001d1000000| PB 0x00000001d1000000| Complete |  0
+| 306|0x00000001d2000000, 0x00000001d3000000, 0x00000001d3000000|100%| E|CS|TAMS 0x00000001d2000000| PB 0x00000001d2000000| Complete |  0
+| 307|0x00000001d3000000, 0x00000001d4000000, 0x00000001d4000000|100%| E|CS|TAMS 0x00000001d3000000| PB 0x00000001d3000000| Complete |  0
+| 308|0x00000001d4000000, 0x00000001d5000000, 0x00000001d5000000|100%| E|CS|TAMS 0x00000001d4000000| PB 0x00000001d4000000| Complete |  0
+| 309|0x00000001d5000000, 0x00000001d6000000, 0x00000001d6000000|100%| E|CS|TAMS 0x00000001d5000000| PB 0x00000001d5000000| Complete |  0
+| 310|0x00000001d6000000, 0x00000001d7000000, 0x00000001d7000000|100%| E|CS|TAMS 0x00000001d6000000| PB 0x00000001d6000000| Complete |  0
+| 311|0x00000001d7000000, 0x00000001d8000000, 0x00000001d8000000|100%| E|CS|TAMS 0x00000001d7000000| PB 0x00000001d7000000| Complete |  0
+| 312|0x00000001d8000000, 0x00000001d9000000, 0x00000001d9000000|100%| E|CS|TAMS 0x00000001d8000000| PB 0x00000001d8000000| Complete |  0
+
+Card table byte_map: [0x000001e3dc3f0000,0x000001e3dfef0000] _byte_map_base: 0x000001e3dbef0000
+
+Marking Bits: (CMBitMap*) 0x000001e3bfc37c90
+ Bits: [0x000001e3dfef0000, 0x000001e3fd6f0000)
+
+Polling page: 0x000001e3bd990000
+
+Metaspace:
+
+Usage:
+  Non-class:     16.51 MB used.
+      Class:      1.63 MB used.
+       Both:     18.13 MB used.
+
+Virtual space:
+  Non-class space:       64.00 MB reserved,      16.69 MB ( 26%) committed,  1 nodes.
+      Class space:        1.00 GB reserved,       1.81 MB ( <1%) committed,  1 nodes.
+             Both:        1.06 GB reserved,      18.50 MB (  2%) committed. 
+
+Chunk freelists:
+   Non-Class:  14.49 MB
+       Class:  14.04 MB
+        Both:  28.53 MB
+
+MaxMetaspaceSize: unlimited
+CompressedClassSpaceSize: 1.00 GB
+Initial GC threshold: 21.00 MB
+Current GC threshold: 21.00 MB
+CDS: on
+ - commit_granule_bytes: 65536.
+ - commit_granule_words: 8192.
+ - virtual_space_node_default_size: 8388608.
+ - enlarge_chunks_in_place: 1.
+ - use_allocation_guard: 0.
+
+
+Internal statistics:
+
+num_allocs_failed_limit: 0.
+num_arena_births: 310.
+num_arena_deaths: 0.
+num_vsnodes_births: 2.
+num_vsnodes_deaths: 0.
+num_space_committed: 295.
+num_space_uncommitted: 0.
+num_chunks_returned_to_freelist: 0.
+num_chunks_taken_from_freelist: 955.
+num_chunk_merges: 0.
+num_chunk_splits: 707.
+num_chunks_enlarged: 542.
+num_inconsistent_stats: 0.
+
+CodeHeap 'non-profiled nmethods': size=118912Kb used=7841Kb max_used=7841Kb free=111070Kb
+ bounds [0x000001e3cfea0000, 0x000001e3d0650000, 0x000001e3d72c0000]
+CodeHeap 'profiled nmethods': size=118848Kb used=12811Kb max_used=12811Kb free=106036Kb
+ bounds [0x000001e3c82c0000, 0x000001e3c8f50000, 0x000001e3cf6d0000]
+CodeHeap 'non-nmethods': size=8000Kb used=2334Kb max_used=4604Kb free=5665Kb
+ bounds [0x000001e3cf6d0000, 0x000001e3cfbf0000, 0x000001e3cfea0000]
+CodeCache: size=245760Kb, used=22986Kb, max_used=25256Kb, free=222771Kb
+ total_blobs=7146, nmethods=5846, adapters=1205, full_count=0
+Compilation: enabled, stopped_count=0, restarted_count=0
+
+Compilation events (20 events):
+Event: 1596.175 Thread 0x000001e3812876c0 5841       3       com.badlogic.gdx.graphics.Color::<init> (10 bytes)
+Event: 1596.175 Thread 0x000001e3812876c0 nmethod 5841 0x000001e3c8f3f208 code [0x000001e3c8f3f340, 0x000001e3c8f3f4d8]
+Event: 1596.175 Thread 0x000001e3812876c0 5842       3       com.badlogic.gdx.graphics.Color::rgba8888ToColor (59 bytes)
+Event: 1596.175 Thread 0x000001e3812876c0 nmethod 5842 0x000001e3c8f3f508 code [0x000001e3c8f3f660, 0x000001e3c8f3f7c0]
+Event: 1596.176 Thread 0x000001e381283710 5843       4       com.badlogic.gdx.graphics.Color::rgba8888ToColor (59 bytes)
+Event: 1596.176 Thread 0x000001e381283710 nmethod 5843 0x000001e3d0645b08 code [0x000001e3d0645c20, 0x000001e3d0645d18]
+Event: 1596.176 Thread 0x000001e381283710 5844       4       com.badlogic.gdx.graphics.Color::<init> (10 bytes)
+Event: 1596.176 Thread 0x000001e381283710 nmethod 5844 0x000001e3d0645e08 code [0x000001e3d0645f20, 0x000001e3d0646010]
+Event: 1596.183 Thread 0x000001e3812876c0 5845 % !   3       aoc.kingdoms.lukasz.menusMapEditor.EditorMap_PrintMap::drawPixmapBIG @ 53 (203 bytes)
+Event: 1596.184 Thread 0x000001e3812876c0 nmethod 5845% 0x000001e3c8f3f808 code [0x000001e3c8f3fa60, 0x000001e3c8f40a60]
+Event: 1596.184 Thread 0x000001e3812876c0 5846   !   3       aoc.kingdoms.lukasz.menusMapEditor.EditorMap_PrintMap::drawPixmapBIG (203 bytes)
+Event: 1596.184 Thread 0x000001e3812876c0 nmethod 5846 0x000001e3c8f40b88 code [0x000001e3c8f40de0, 0x000001e3c8f41cb0]
+Event: 1596.186 Thread 0x000001e381283710 5847 % !   4       aoc.kingdoms.lukasz.menusMapEditor.EditorMap_PrintMap::drawPixmapBIG @ 53 (203 bytes)
+Event: 1596.189 Thread 0x000001e381283710 nmethod 5847% 0x000001e3d0646108 code [0x000001e3d0646300, 0x000001e3d0646b90]
+Event: 1596.261 Thread 0x000001e381283710 5848   !   4       aoc.kingdoms.lukasz.menusMapEditor.EditorMap_PrintMap::drawPixmapBIG (203 bytes)
+Event: 1596.264 Thread 0x000001e381283710 nmethod 5848 0x000001e3d0646c88 code [0x000001e3d0646e60, 0x000001e3d06476b8]
+Event: 1596.437 Thread 0x000001e3812876c0 5849   !   3       aoc.kingdoms.lukasz.menusMapEditor.EditorMap_PrintMap::drawPixmapBIG (203 bytes)
+Event: 1596.438 Thread 0x000001e3812876c0 nmethod 5849 0x000001e3c8f41d88 code [0x000001e3c8f41fe0, 0x000001e3c8f42e80]
+Event: 1596.873 Thread 0x000001e381283710 5850   !   4       aoc.kingdoms.lukasz.menusMapEditor.EditorMap_PrintMap::drawPixmapBIG (203 bytes)
+Event: 1596.876 Thread 0x000001e381283710 nmethod 5850 0x000001e3d0647788 code [0x000001e3d0647960, 0x000001e3d06481b0]
+
+GC Heap History (20 events):
+Event: 38.361 GC heap before
+{Heap before GC invocations=8 (full 0):
+ garbage-first heap   total reserved 30932992K, committed 5128192K, used 654091K [0x00000000a0000000, 0x0000000800000000)
+  region size 16384K, 15 young (245760K), 2 survivors (32768K)
+ Metaspace       used 16716K, committed 16960K, reserved 1114112K
+  class space    used 1496K, committed 1600K, reserved 1048576K
+}
+Event: 38.368 GC heap after
+{Heap after GC invocations=9 (full 0):
+ garbage-first heap   total reserved 30932992K, committed 5128192K, used 467123K [0x00000000a0000000, 0x0000000800000000)
+  region size 16384K, 2 young (32768K), 2 survivors (32768K)
+ Metaspace       used 16716K, committed 16960K, reserved 1114112K
+  class space    used 1496K, committed 1600K, reserved 1048576K
+}
+Event: 83.648 GC heap before
+{Heap before GC invocations=9 (full 0):
+ garbage-first heap   total reserved 30932992K, committed 5128192K, used 663731K [0x00000000a0000000, 0x0000000800000000)
+  region size 16384K, 15 young (245760K), 2 survivors (32768K)
+ Metaspace       used 16913K, committed 17152K, reserved 1114112K
+  class space    used 1509K, committed 1600K, reserved 1048576K
+}
+Event: 83.653 GC heap after
+{Heap after GC invocations=10 (full 0):
+ garbage-first heap   total reserved 30932992K, committed 5128192K, used 471024K [0x00000000a0000000, 0x0000000800000000)
+  region size 16384K, 1 young (16384K), 1 survivors (16384K)
+ Metaspace       used 16913K, committed 17152K, reserved 1114112K
+  class space    used 1509K, committed 1600K, reserved 1048576K
+}
+Event: 191.145 GC heap before
+{Heap before GC invocations=10 (full 0):
+ garbage-first heap   total reserved 30932992K, committed 5128192K, used 765936K [0x00000000a0000000, 0x0000000800000000)
+  region size 16384K, 19 young (311296K), 1 survivors (16384K)
+ Metaspace       used 17707K, committed 17984K, reserved 1114112K
+  class space    used 1633K, committed 1792K, reserved 1048576K
+}
+Event: 191.147 GC heap after
+{Heap after GC invocations=11 (full 0):
+ garbage-first heap   total reserved 30932992K, committed 5128192K, used 470993K [0x00000000a0000000, 0x0000000800000000)
+  region size 16384K, 1 young (16384K), 1 survivors (16384K)
+ Metaspace       used 17707K, committed 17984K, reserved 1114112K
+  class space    used 1633K, committed 1792K, reserved 1048576K
+}
+Event: 292.084 GC heap before
+{Heap before GC invocations=11 (full 0):
+ garbage-first heap   total reserved 30932992K, committed 5128192K, used 815057K [0x00000000a0000000, 0x0000000800000000)
+  region size 16384K, 23 young (376832K), 1 survivors (16384K)
+ Metaspace       used 18026K, committed 18368K, reserved 1114112K
+  class space    used 1666K, committed 1856K, reserved 1048576K
+}
+Event: 292.089 GC heap after
+{Heap after GC invocations=12 (full 0):
+ garbage-first heap   total reserved 30932992K, committed 5128192K, used 477278K [0x00000000a0000000, 0x0000000800000000)
+  region size 16384K, 1 young (16384K), 1 survivors (16384K)
+ Metaspace       used 18026K, committed 18368K, reserved 1114112K
+  class space    used 1666K, committed 1856K, reserved 1048576K
+}
+Event: 397.921 GC heap before
+{Heap before GC invocations=12 (full 0):
+ garbage-first heap   total reserved 30932992K, committed 5128192K, used 968798K [0x00000000a0000000, 0x0000000800000000)
+  region size 16384K, 31 young (507904K), 1 survivors (16384K)
+ Metaspace       used 18079K, committed 18368K, reserved 1114112K
+  class space    used 1666K, committed 1856K, reserved 1048576K
+}
+Event: 397.925 GC heap after
+{Heap after GC invocations=13 (full 0):
+ garbage-first heap   total reserved 30932992K, committed 5128192K, used 476525K [0x00000000a0000000, 0x0000000800000000)
+  region size 16384K, 1 young (16384K), 1 survivors (16384K)
+ Metaspace       used 18079K, committed 18368K, reserved 1114112K
+  class space    used 1666K, committed 1856K, reserved 1048576K
+}
+Event: 506.214 GC heap before
+{Heap before GC invocations=13 (full 0):
+ garbage-first heap   total reserved 30932992K, committed 5128192K, used 1115501K [0x00000000a0000000, 0x0000000800000000)
+  region size 16384K, 40 young (655360K), 1 survivors (16384K)
+ Metaspace       used 18163K, committed 18496K, reserved 1114112K
+  class space    used 1666K, committed 1856K, reserved 1048576K
+}
+Event: 506.218 GC heap after
+{Heap after GC invocations=14 (full 0):
+ garbage-first heap   total reserved 30932992K, committed 5128192K, used 475286K [0x00000000a0000000, 0x0000000800000000)
+  region size 16384K, 1 young (16384K), 1 survivors (16384K)
+ Metaspace       used 18163K, committed 18496K, reserved 1114112K
+  class space    used 1666K, committed 1856K, reserved 1048576K
+}
+Event: 682.881 GC heap before
+{Heap before GC invocations=14 (full 0):
+ garbage-first heap   total reserved 30932992K, committed 5128192K, used 1278102K [0x00000000a0000000, 0x0000000800000000)
+  region size 16384K, 50 young (819200K), 1 survivors (16384K)
+ Metaspace       used 18326K, committed 18624K, reserved 1114112K
+  class space    used 1667K, committed 1856K, reserved 1048576K
+}
+Event: 682.884 GC heap after
+{Heap after GC invocations=15 (full 0):
+ garbage-first heap   total reserved 30932992K, committed 5128192K, used 475239K [0x00000000a0000000, 0x0000000800000000)
+  region size 16384K, 1 young (16384K), 1 survivors (16384K)
+ Metaspace       used 18326K, committed 18624K, reserved 1114112K
+  class space    used 1667K, committed 1856K, reserved 1048576K
+}
+Event: 867.862 GC heap before
+{Heap before GC invocations=15 (full 0):
+ garbage-first heap   total reserved 30932992K, committed 5128192K, used 1474663K [0x00000000a0000000, 0x0000000800000000)
+  region size 16384K, 62 young (1015808K), 1 survivors (16384K)
+ Metaspace       used 18432K, committed 18816K, reserved 1114112K
+  class space    used 1667K, committed 1856K, reserved 1048576K
+}
+Event: 867.867 GC heap after
+{Heap after GC invocations=16 (full 0):
+ garbage-first heap   total reserved 30932992K, committed 5128192K, used 475365K [0x00000000a0000000, 0x0000000800000000)
+  region size 16384K, 1 young (16384K), 1 survivors (16384K)
+ Metaspace       used 18432K, committed 18816K, reserved 1114112K
+  class space    used 1667K, committed 1856K, reserved 1048576K
+}
+Event: 1096.181 GC heap before
+{Heap before GC invocations=16 (full 0):
+ garbage-first heap   total reserved 30932992K, committed 5128192K, used 1687781K [0x00000000a0000000, 0x0000000800000000)
+  region size 16384K, 75 young (1228800K), 1 survivors (16384K)
+ Metaspace       used 18515K, committed 18880K, reserved 1114112K
+  class space    used 1667K, committed 1856K, reserved 1048576K
+}
+Event: 1096.186 GC heap after
+{Heap after GC invocations=17 (full 0):
+ garbage-first heap   total reserved 30932992K, committed 5128192K, used 475389K [0x00000000a0000000, 0x0000000800000000)
+  region size 16384K, 1 young (16384K), 1 survivors (16384K)
+ Metaspace       used 18515K, committed 18880K, reserved 1114112K
+  class space    used 1667K, committed 1856K, reserved 1048576K
+}
+Event: 1393.156 GC heap before
+{Heap before GC invocations=17 (full 0):
+ garbage-first heap   total reserved 30932992K, committed 5128192K, used 1917181K [0x00000000a0000000, 0x0000000800000000)
+  region size 16384K, 89 young (1458176K), 1 survivors (16384K)
+ Metaspace       used 18529K, committed 18880K, reserved 1114112K
+  class space    used 1667K, committed 1856K, reserved 1048576K
+}
+Event: 1393.168 GC heap after
+{Heap after GC invocations=18 (full 0):
+ garbage-first heap   total reserved 30932992K, committed 5128192K, used 475528K [0x00000000a0000000, 0x0000000800000000)
+  region size 16384K, 1 young (16384K), 1 survivors (16384K)
+ Metaspace       used 18529K, committed 18880K, reserved 1114112K
+  class space    used 1667K, committed 1856K, reserved 1048576K
+}
+
+Dll operation events (17 events):
+Event: 0.005 Loaded shared library C:\Program Files\Java\jdk-23\bin\java.dll
+Event: 0.028 Loaded shared library C:\Program Files\Java\jdk-23\bin\jsvml.dll
+Event: 0.060 Loaded shared library C:\Program Files\Java\jdk-23\bin\zip.dll
+Event: 0.062 Loaded shared library C:\Program Files\Java\jdk-23\bin\instrument.dll
+Event: 0.065 Loaded shared library C:\Program Files\Java\jdk-23\bin\net.dll
+Event: 0.066 Loaded shared library C:\Program Files\Java\jdk-23\bin\nio.dll
+Event: 0.069 Loaded shared library C:\Program Files\Java\jdk-23\bin\zip.dll
+Event: 0.100 Loaded shared library C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.4\bin\breakgen64.dll
+Event: 0.105 Loaded shared library C:\Program Files\Java\jdk-23\bin\extnet.dll
+Event: 0.106 Loaded shared library C:\Program Files\Java\jdk-23\bin\jimage.dll
+Event: 0.134 Loaded shared library C:\Users\htmlp\AppData\Local\Temp\libgdxVis-Australis\8d3b5089\gdx64.dll
+Event: 0.151 Loaded shared library D:\Project 1159 - 11.59 - AOC3\Age of History 3\AOC3 Source\src\windows\x64\org\lwjgl\lwjgl.dll
+Event: 0.377 Loaded shared library D:\Project 1159 - 11.59 - AOC3\Age of History 3\AOC3 Source\src\windows\x64\org\lwjgl\opengl\lwjgl_opengl.dll
+Event: 0.806 Loaded shared library C:\Users\htmlp\AppData\Local\Temp\steamworks4j\1.9.0\steam_api64.dll
+Event: 0.856 Loaded shared library C:\Users\htmlp\AppData\Local\Temp\steamworks4j\1.9.0\steamworks4j64.dll
+Event: 0.948 Loaded shared library C:\Users\htmlp\AppData\Local\Temp\libgdxVis-Australis\5c4d431d\gdx-freetype64.dll
+Event: 1.015 Loaded shared library D:\Project 1159 - 11.59 - AOC3\Age of History 3\AOC3 Source\src\windows\x64\org\lwjgl\stb\lwjgl_stb.dll
+
+Deoptimization events (20 events):
+Event: 1587.506 Thread 0x000001e3bd72a750 DEOPT PACKING pc=0x000001e3c8f3bc0a sp=0x000000d3e9cff200
+Event: 1587.506 Thread 0x000001e3bd72a750 DEOPT UNPACKING pc=0x000001e3cf724b22 sp=0x000000d3e9cfe708 mode 0
+Event: 1596.189 Thread 0x000001e3bd72a750 DEOPT PACKING pc=0x000001e3c8f40947 sp=0x000000d3e9cff050
+Event: 1596.189 Thread 0x000001e3bd72a750 DEOPT UNPACKING pc=0x000001e3cf724b22 sp=0x000000d3e9cfe5b0 mode 0
+Event: 1596.261 Thread 0x000001e3bd72a750 DEOPT PACKING pc=0x000001e3c8f41b9b sp=0x000000d3e9cff070
+Event: 1596.261 Thread 0x000001e3bd72a750 DEOPT UNPACKING pc=0x000001e3cf724b22 sp=0x000000d3e9cfe5b0 mode 0
+Event: 1596.412 Thread 0x000001e3bd72a750 Uncommon trap: trap_request=0xffffff45 fr.pc=0x000001e3d0647428 relative=0x00000000000005c8
+Event: 1596.412 Thread 0x000001e3bd72a750 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000001e3d0647428 method=aoc.kingdoms.lukasz.menusMapEditor.EditorMap_PrintMap.drawPixmapBIG(Lcom/badlogic/gdx/graphics/Pixmap;)V @ 16 c2
+Event: 1596.412 Thread 0x000001e3bd72a750 DEOPT PACKING pc=0x000001e3d0647428 sp=0x000000d3e9cff120
+Event: 1596.412 Thread 0x000001e3bd72a750 DEOPT UNPACKING pc=0x000001e3cf724402 sp=0x000000d3e9cff0b0 mode 2
+Event: 1596.524 Thread 0x000001e3bd72a750 DEOPT PACKING pc=0x000001e3c8f42d6b sp=0x000000d3e9cff070
+Event: 1596.524 Thread 0x000001e3bd72a750 DEOPT UNPACKING pc=0x000001e3cf724b22 sp=0x000000d3e9cfe5b0 mode 0
+Event: 1596.613 Thread 0x000001e3bd72a750 DEOPT PACKING pc=0x000001e3c8f42d6b sp=0x000000d3e9cff070
+Event: 1596.613 Thread 0x000001e3bd72a750 DEOPT UNPACKING pc=0x000001e3cf724b22 sp=0x000000d3e9cfe5b0 mode 0
+Event: 1596.700 Thread 0x000001e3bd72a750 DEOPT PACKING pc=0x000001e3c8f42d6b sp=0x000000d3e9cff070
+Event: 1596.700 Thread 0x000001e3bd72a750 DEOPT UNPACKING pc=0x000001e3cf724b22 sp=0x000000d3e9cfe5b0 mode 0
+Event: 1596.786 Thread 0x000001e3bd72a750 DEOPT PACKING pc=0x000001e3c8f42d6b sp=0x000000d3e9cff070
+Event: 1596.786 Thread 0x000001e3bd72a750 DEOPT UNPACKING pc=0x000001e3cf724b22 sp=0x000000d3e9cfe5b0 mode 0
+Event: 1596.872 Thread 0x000001e3bd72a750 DEOPT PACKING pc=0x000001e3c8f42d6b sp=0x000000d3e9cff070
+Event: 1596.872 Thread 0x000001e3bd72a750 DEOPT UNPACKING pc=0x000001e3cf724b22 sp=0x000000d3e9cfe5b0 mode 0
+
+Classes loaded (20 events):
+Event: 7.267 Loading class java/lang/Short$ShortCache
+Event: 7.267 Loading class java/lang/Short$ShortCache done
+Event: 8.165 Loading class java/lang/FdLibm$Atan2
+Event: 8.165 Loading class java/lang/FdLibm$Atan2 done
+Event: 8.165 Loading class java/lang/FdLibm
+Event: 8.165 Loading class java/lang/FdLibm done
+Event: 8.165 Loading class java/lang/FdLibm$Atan
+Event: 8.165 Loading class java/lang/FdLibm$Atan done
+Event: 9.653 Loading class java/util/Formatter$FixedString
+Event: 9.653 Loading class java/util/Formatter$FixedString done
+Event: 10.871 Loading class java/util/zip/DeflaterOutputStream
+Event: 10.871 Loading class java/util/zip/DeflaterOutputStream done
+Event: 181.300 Loading class java/io/DataOutputStream
+Event: 181.301 Loading class java/io/DataOutputStream done
+Event: 181.301 Loading class java/util/zip/CheckedOutputStream
+Event: 181.301 Loading class java/util/zip/CheckedOutputStream done
+Event: 181.301 Loading class java/util/zip/Deflater
+Event: 181.301 Loading class java/util/zip/Deflater done
+Event: 181.301 Loading class java/util/zip/Deflater$DeflaterZStreamRef
+Event: 181.301 Loading class java/util/zip/Deflater$DeflaterZStreamRef done
+
+Classes unloaded (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (20 events):
+Event: 169.294 Thread 0x000001e3bd72a750 Exception <a 'java/lang/NullPointerException'{0x00000001cc274680}> (0x00000001cc274680) 
+thrown [s\open\src\hotspot\share\runtime\sharedRuntime.cpp, line 627]
+Event: 169.295 Thread 0x000001e3bd72a750 Implicit null exception at 0x000001e3c883b987 to 0x000001e3c883bbea
+Event: 169.295 Thread 0x000001e3bd72a750 Exception <a 'java/lang/NullPointerException'{0x00000001cc274960}> (0x00000001cc274960) 
+thrown [s\open\src\hotspot\share\runtime\sharedRuntime.cpp, line 627]
+Event: 180.820 Thread 0x000001e3bd72a750 Exception <a 'java/lang/NoSuchMethodError'{0x00000001c9a4de78}: 'int java.lang.invoke.Invokers$Holder.invokeExact_MT(java.lang.Object, java.lang.Object, java.lang.Object)'> (0x00000001c9a4de78) 
+thrown [s\open\src\hotspot\share\interpreter\linkResolver.cpp, line 796]
+Event: 197.337 Thread 0x000001e3bd72a750 Exception <a 'java/lang/NoSuchMethodError'{0x00000001d44d4c48}: 'float java.lang.invoke.Invokers$Holder.invokeExact_MT(java.lang.Object, java.lang.Object, java.lang.Object)'> (0x00000001d44d4c48) 
+thrown [s\open\src\hotspot\share\interpreter\linkResolver.cpp, line 796]
+Event: 492.897 Thread 0x000001e3bd72a750 Implicit null exception at 0x000001e3c8b17887 to 0x000001e3c8b17b4a
+Event: 492.897 Thread 0x000001e3bd72a750 Exception <a 'java/lang/NullPointerException'{0x00000001b25042d8}> (0x00000001b25042d8) 
+thrown [s\open\src\hotspot\share\runtime\sharedRuntime.cpp, line 627]
+Event: 492.898 Thread 0x000001e3bd72a750 Implicit null exception at 0x000001e3c8b17887 to 0x000001e3c8b17b4a
+Event: 492.898 Thread 0x000001e3bd72a750 Exception <a 'java/lang/NullPointerException'{0x00000001b25045b8}> (0x00000001b25045b8) 
+thrown [s\open\src\hotspot\share\runtime\sharedRuntime.cpp, line 627]
+Event: 547.801 Thread 0x000001e3bd72a750 Exception <a 'java/lang/ArrayIndexOutOfBoundsException'{0x00000001c9ef82f8}: Index -1 out of bounds for length 12> (0x00000001c9ef82f8) 
+thrown [s\open\src\hotspot\share\interpreter\interpreterRuntime.cpp, line 422]
+Event: 547.802 Thread 0x000001e3bd72a750 Exception <a 'java/lang/ArrayIndexOutOfBoundsException'{0x00000001c9f24740}: Index -1 out of bounds for length 12> (0x00000001c9f24740) 
+thrown [s\open\src\hotspot\share\interpreter\interpreterRuntime.cpp, line 422]
+Event: 817.778 Thread 0x000001e3bd72a750 Implicit null exception at 0x000001e3c8b17887 to 0x000001e3c8b17b4a
+Event: 817.778 Thread 0x000001e3bd72a750 Exception <a 'java/lang/NullPointerException'{0x00000001b2d46648}> (0x00000001b2d46648) 
+thrown [s\open\src\hotspot\share\runtime\sharedRuntime.cpp, line 627]
+Event: 817.778 Thread 0x000001e3bd72a750 Implicit null exception at 0x000001e3c8b17887 to 0x000001e3c8b17b4a
+Event: 817.778 Thread 0x000001e3bd72a750 Exception <a 'java/lang/NullPointerException'{0x00000001b2d46928}> (0x00000001b2d46928) 
+thrown [s\open\src\hotspot\share\runtime\sharedRuntime.cpp, line 627]
+Event: 846.297 Thread 0x000001e3bd72a750 Exception <a 'java/lang/ArrayIndexOutOfBoundsException'{0x00000001a38c3ab8}: Index -1 out of bounds for length 12> (0x00000001a38c3ab8) 
+thrown [s\open\src\hotspot\share\interpreter\interpreterRuntime.cpp, line 422]
+Event: 921.011 Thread 0x000001e3bd72a750 Implicit null exception at 0x000001e3c8b17887 to 0x000001e3c8b17b4a
+Event: 921.011 Thread 0x000001e3bd72a750 Exception <a 'java/lang/NullPointerException'{0x00000001cff72e00}> (0x00000001cff72e00) 
+thrown [s\open\src\hotspot\share\runtime\sharedRuntime.cpp, line 627]
+Event: 921.011 Thread 0x000001e3bd72a750 Implicit null exception at 0x000001e3c8b17887 to 0x000001e3c8b17b4a
+Event: 921.011 Thread 0x000001e3bd72a750 Exception <a 'java/lang/NullPointerException'{0x00000001cff730e0}> (0x00000001cff730e0) 
+thrown [s\open\src\hotspot\share\runtime\sharedRuntime.cpp, line 627]
+
+VM Operations (20 events):
+Event: 251.208 Executing VM operation: HandshakeAllThreads (Deoptimize)
+Event: 251.208 Executing VM operation: HandshakeAllThreads (Deoptimize) done
+Event: 292.084 Executing VM operation: G1CollectForAllocation (G1 Evacuation Pause)
+Event: 292.089 Executing VM operation: G1CollectForAllocation (G1 Evacuation Pause) done
+Event: 397.921 Executing VM operation: G1CollectForAllocation (G1 Evacuation Pause)
+Event: 397.925 Executing VM operation: G1CollectForAllocation (G1 Evacuation Pause) done
+Event: 506.214 Executing VM operation: G1CollectForAllocation (G1 Evacuation Pause)
+Event: 506.218 Executing VM operation: G1CollectForAllocation (G1 Evacuation Pause) done
+Event: 541.396 Executing VM operation: HandshakeAllThreads (HandshakeForDeflation)
+Event: 541.396 Executing VM operation: HandshakeAllThreads (HandshakeForDeflation) done
+Event: 541.396 Executing VM operation: RendezvousGCThreads
+Event: 541.396 Executing VM operation: RendezvousGCThreads done
+Event: 682.881 Executing VM operation: G1CollectForAllocation (G1 Evacuation Pause)
+Event: 682.884 Executing VM operation: G1CollectForAllocation (G1 Evacuation Pause) done
+Event: 867.862 Executing VM operation: G1CollectForAllocation (G1 Evacuation Pause)
+Event: 867.867 Executing VM operation: G1CollectForAllocation (G1 Evacuation Pause) done
+Event: 1096.181 Executing VM operation: G1CollectForAllocation (G1 Evacuation Pause)
+Event: 1096.186 Executing VM operation: G1CollectForAllocation (G1 Evacuation Pause) done
+Event: 1393.156 Executing VM operation: G1CollectForAllocation (G1 Evacuation Pause)
+Event: 1393.168 Executing VM operation: G1CollectForAllocation (G1 Evacuation Pause) done
+
+Memory protections (0 events):
+No events
+
+Nmethod flushes (0 events):
+No events
+
+Events (20 events):
+Event: 217.500 Thread 0x000001e3812876c0 Thread added: 0x000001e39672ae20
+Event: 218.167 Thread 0x000001e39672ae20 Thread exited: 0x000001e39672ae20
+Event: 236.153 Thread 0x000001e3812876c0 Thread added: 0x000001e39672f910
+Event: 237.418 Thread 0x000001e39672f910 Thread exited: 0x000001e39672f910
+Event: 251.206 Thread 0x000001e3812876c0 Thread added: 0x000001e39672ae20
+Event: 251.579 Thread 0x000001e39672ae20 Thread exited: 0x000001e39672ae20
+Event: 388.251 Thread 0x000001e381283710 Thread added: 0x000001e39672d030
+Event: 393.253 Thread 0x000001e39672d030 Thread exited: 0x000001e39672d030
+Event: 547.882 Thread 0x000001e381283710 Thread added: 0x000001e39672eb70
+Event: 547.882 Thread 0x000001e381283710 Thread added: 0x000001e3967306b0
+Event: 548.098 Thread 0x000001e3967306b0 Thread exited: 0x000001e3967306b0
+Event: 552.514 Thread 0x000001e39672eb70 Thread exited: 0x000001e39672eb70
+Event: 779.664 Thread 0x000001e3812876c0 Thread added: 0x000001e39672f910
+Event: 785.246 Thread 0x000001e39672f910 Thread exited: 0x000001e39672f910
+Event: 920.228 Thread 0x000001e3812876c0 Thread added: 0x000001e39672f910
+Event: 920.912 Thread 0x000001e39672f910 Thread exited: 0x000001e39672f910
+Event: 948.078 Thread 0x000001e3812876c0 Thread added: 0x000001e39672f910
+Event: 948.761 Thread 0x000001e39672f910 Thread exited: 0x000001e39672f910
+Event: 1585.056 Thread 0x000001e3812876c0 Thread added: 0x000001e39672ffe0
+Event: 1587.506 Thread 0x000001e39672ffe0 Thread exited: 0x000001e39672ffe0
+
+
+Dynamic libraries:
+0x00007ff7f9a50000 - 0x00007ff7f9a60000 	C:\Program Files\Java\jdk-23\bin\java.exe
+0x00007ff983390000 - 0x00007ff9835a7000 	C:\Windows\SYSTEM32\ntdll.dll
+0x00007ff9820c0000 - 0x00007ff982184000 	C:\Windows\System32\KERNEL32.DLL
+0x00007ff980ae0000 - 0x00007ff980e99000 	C:\Windows\System32\KERNELBASE.dll
+0x00007ff9808a0000 - 0x00007ff9809b1000 	C:\Windows\System32\ucrtbase.dll
+0x00007ff9111a0000 - 0x00007ff9111b7000 	C:\Program Files\Java\jdk-23\bin\jli.dll
+0x00007ff90e5e0000 - 0x00007ff90e5fb000 	C:\Program Files\Java\jdk-23\bin\VCRUNTIME140.dll
+0x00007ff982190000 - 0x00007ff98233e000 	C:\Windows\System32\USER32.dll
+0x00007ff980f20000 - 0x00007ff980f46000 	C:\Windows\System32\win32u.dll
+0x00007ff982340000 - 0x00007ff982369000 	C:\Windows\System32\GDI32.dll
+0x00007ff9663e0000 - 0x00007ff966672000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.22621.4391_none_2715d37f73803e96\COMCTL32.dll
+0x00007ff9809c0000 - 0x00007ff980adb000 	C:\Windows\System32\gdi32full.dll
+0x00007ff980690000 - 0x00007ff98072a000 	C:\Windows\System32\msvcp_win.dll
+0x00007ff983130000 - 0x00007ff9831d7000 	C:\Windows\System32\msvcrt.dll
+0x00007ff9830f0000 - 0x00007ff983121000 	C:\Windows\System32\IMM32.DLL
+0x00007ff9776a0000 - 0x00007ff9776ac000 	C:\Program Files\Java\jdk-23\bin\vcruntime140_1.dll
+0x00007ff90d0d0000 - 0x00007ff90d15e000 	C:\Program Files\Java\jdk-23\bin\msvcp140.dll
+0x00007ff8d4df0000 - 0x00007ff8d5b3f000 	C:\Program Files\Java\jdk-23\bin\server\jvm.dll
+0x00007ff983290000 - 0x00007ff983342000 	C:\Windows\System32\ADVAPI32.dll
+0x00007ff981f30000 - 0x00007ff981fd7000 	C:\Windows\System32\sechost.dll
+0x00007ff980f50000 - 0x00007ff980f78000 	C:\Windows\System32\bcrypt.dll
+0x00007ff982370000 - 0x00007ff982484000 	C:\Windows\System32\RPCRT4.dll
+0x00007ff9810d0000 - 0x00007ff981141000 	C:\Windows\System32\WS2_32.dll
+0x00007ff9762c0000 - 0x00007ff9762f4000 	C:\Windows\SYSTEM32\WINMM.dll
+0x00007ff979e20000 - 0x00007ff979e2a000 	C:\Windows\SYSTEM32\VERSION.dll
+0x00007ff97f4e0000 - 0x00007ff97f52d000 	C:\Windows\SYSTEM32\POWRPROF.dll
+0x00007ff97f4c0000 - 0x00007ff97f4d3000 	C:\Windows\SYSTEM32\UMPDC.dll
+0x00007ff97f780000 - 0x00007ff97f798000 	C:\Windows\SYSTEM32\kernel.appcore.dll
+0x00007ff95db80000 - 0x00007ff95db8a000 	C:\Program Files\Java\jdk-23\bin\jimage.dll
+0x00007ff9795f0000 - 0x00007ff979822000 	C:\Windows\SYSTEM32\DBGHELP.DLL
+0x00007ff981a20000 - 0x00007ff981daf000 	C:\Windows\System32\combase.dll
+0x00007ff981fe0000 - 0x00007ff9820b7000 	C:\Windows\System32\OLEAUT32.dll
+0x00007ff9793c0000 - 0x00007ff9793f2000 	C:\Windows\SYSTEM32\dbgcore.DLL
+0x00007ff980ea0000 - 0x00007ff980f1b000 	C:\Windows\System32\bcryptPrimitives.dll
+0x00007ff978750000 - 0x00007ff97875f000 	C:\Program Files\Java\jdk-23\bin\instrument.dll
+0x00007ff90e5c0000 - 0x00007ff90e5de000 	C:\Program Files\Java\jdk-23\bin\java.dll
+0x00007ff982500000 - 0x00007ff9826a5000 	C:\Windows\System32\ole32.dll
+0x00007ff9826b0000 - 0x00007ff982f26000 	C:\Windows\System32\SHELL32.dll
+0x00007ff97e580000 - 0x00007ff97ee83000 	C:\Windows\SYSTEM32\windows.storage.dll
+0x00007ff97e440000 - 0x00007ff97e57f000 	C:\Windows\SYSTEM32\wintypes.dll
+0x00007ff981790000 - 0x00007ff981889000 	C:\Windows\System32\SHCORE.dll
+0x00007ff982f30000 - 0x00007ff982f8e000 	C:\Windows\System32\shlwapi.dll
+0x00007ff9805c0000 - 0x00007ff9805eb000 	C:\Windows\SYSTEM32\profapi.dll
+0x00007ff8db990000 - 0x00007ff8dba67000 	C:\Program Files\Java\jdk-23\bin\jsvml.dll
+0x00007ff90d090000 - 0x00007ff90d0a7000 	C:\Program Files\Java\jdk-23\bin\zip.dll
+0x00007ff95c020000 - 0x00007ff95c030000 	C:\Program Files\Java\jdk-23\bin\net.dll
+0x00007ff97fbf0000 - 0x00007ff97fc59000 	C:\Windows\system32\mswsock.dll
+0x00007ff90d0b0000 - 0x00007ff90d0c6000 	C:\Program Files\Java\jdk-23\bin\nio.dll
+0x00007ff956c60000 - 0x00007ff956c7a000 	C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.4\bin\breakgen64.dll
+0x00007ff961a60000 - 0x00007ff961a69000 	C:\Program Files\Java\jdk-23\bin\extnet.dll
+0x000000006e700000 - 0x000000006e72d000 	C:\Users\htmlp\AppData\Local\Temp\libgdxVis-Australis\8d3b5089\gdx64.dll
+0x00007ff9214e0000 - 0x00007ff92155b000 	D:\Project 1159 - 11.59 - AOC3\Age of History 3\AOC3 Source\src\windows\x64\org\lwjgl\lwjgl.dll
+0x00007ff90d510000 - 0x00007ff90d781000 	D:\Project 1159 - 11.59 - AOC3\Age of History 3\AOC3 Source\src\windows\x64\org\lwjgl\jemalloc\jemalloc.dll
+0x00007ff90e630000 - 0x00007ff90e6b5000 	D:\Project 1159 - 11.59 - AOC3\Age of History 3\AOC3 Source\src\windows\x64\org\lwjgl\glfw\glfw.dll
+0x00007ff954500000 - 0x00007ff954546000 	C:\Windows\SYSTEM32\dinput8.dll
+0x00007ff973e80000 - 0x00007ff973e91000 	C:\Windows\SYSTEM32\xinput1_4.dll
+0x00007ff980350000 - 0x00007ff98037c000 	C:\Windows\SYSTEM32\DEVOBJ.dll
+0x00007ff980380000 - 0x00007ff9803ce000 	C:\Windows\SYSTEM32\cfgmgr32.dll
+0x00007ff97dfb0000 - 0x00007ff97dfdb000 	C:\Windows\SYSTEM32\dwmapi.dll
+0x00007ff966930000 - 0x00007ff966b43000 	C:\Windows\SYSTEM32\inputhost.dll
+0x00007ff97c130000 - 0x00007ff97c263000 	C:\Windows\SYSTEM32\CoreMessaging.dll
+0x00007ff97db60000 - 0x00007ff97dc11000 	C:\Windows\system32\uxtheme.dll
+0x00007ff951b20000 - 0x00007ff951c3f000 	C:\Program Files (x86)\Stardock\Groupy2\groupy_64.dll
+0x00007ff97fdf0000 - 0x00007ff97fdfc000 	C:\Windows\SYSTEM32\CRYPTBASE.DLL
+0x00007ff982f90000 - 0x00007ff9830f0000 	C:\Windows\System32\MSCTF.dll
+0x00007ff8d9930000 - 0x00007ff8d9b0d000 	D:\Project 1159 - 11.59 - AOC3\Age of History 3\AOC3 Source\src\windows\x64\org\lwjgl\openal\OpenAL.dll
+0x00007ff981db0000 - 0x00007ff981e60000 	C:\Windows\System32\clbcatq.dll
+0x00007ff979010000 - 0x00007ff9790ae000 	C:\Windows\System32\MMDevApi.dll
+0x00007ff960120000 - 0x00007ff96030d000 	C:\Windows\SYSTEM32\AUDIOSES.DLL
+0x00007ff97e030000 - 0x00007ff97e045000 	C:\Windows\SYSTEM32\resourcepolicyclient.dll
+0x00007ff90e490000 - 0x00007ff90e590000 	C:\Windows\SYSTEM32\opengl32.dll
+0x00007ff95d2f0000 - 0x00007ff95d31d000 	C:\Windows\SYSTEM32\GLU32.dll
+0x00007ff97dc70000 - 0x00007ff97dca7000 	C:\Windows\SYSTEM32\dxcore.dll
+0x00007ff97a6e0000 - 0x00007ff97a824000 	C:\Windows\System32\AppXDeploymentClient.dll
+0x00007ff971eb0000 - 0x00007ff971fb0000 	C:\Windows\System32\Windows.ApplicationModel.dll
+0x00007ff97d290000 - 0x00007ff97d391000 	C:\Windows\system32\propsys.dll
+0x00007ff959210000 - 0x00007ff959236000 	C:\Windows\system32\mssprxy.dll
+0x00007ff970d80000 - 0x00007ff970dc9000 	C:\Windows\SYSTEM32\directxdatabasehelper.dll
+0x00007ff8e2e90000 - 0x00007ff8e54c8000 	C:\Windows\System32\DriverStore\FileRepository\nvmdsi.inf_amd64_bb627335e85bb104\nvoglv64.dll
+0x00007ff981150000 - 0x00007ff9815c4000 	C:\Windows\System32\SETUPAPI.dll
+0x00007ff97f530000 - 0x00007ff97f544000 	C:\Windows\SYSTEM32\WTSAPI32.dll
+0x00007ff97ff60000 - 0x00007ff97ff72000 	C:\Windows\SYSTEM32\msasn1.dll
+0x00007ff979db0000 - 0x00007ff979de2000 	C:\Windows\SYSTEM32\cryptnet.dll
+0x00007ff980730000 - 0x00007ff980896000 	C:\Windows\System32\CRYPT32.dll
+0x00007ff97fed0000 - 0x00007ff97ff19000 	C:\Windows\SYSTEM32\wldp.dll
+0x00007ff979ab0000 - 0x00007ff979c12000 	C:\Windows\SYSTEM32\drvstore.dll
+0x00007ff981040000 - 0x00007ff9810ac000 	C:\Windows\System32\WINTRUST.dll
+0x00007ff97f890000 - 0x00007ff97f8c4000 	C:\Windows\SYSTEM32\ntmarta.dll
+0x00007ff9810b0000 - 0x00007ff9810cf000 	C:\Windows\System32\imagehlp.dll
+0x00007ff97fe90000 - 0x00007ff97feab000 	C:\Windows\SYSTEM32\CRYPTSP.dll
+0x00007ff97f6e0000 - 0x00007ff97f715000 	C:\Windows\system32\rsaenh.dll
+0x00007ff8e0180000 - 0x00007ff8e2e90000 	C:\Windows\System32\DriverStore\FileRepository\nvmdsi.inf_amd64_bb627335e85bb104\nvgpucomp64.dll
+0x00007ff8d4480000 - 0x00007ff8d4750000 	C:\Windows\system32\nvspcap64.dll
+0x00007ff97f430000 - 0x00007ff97f496000 	C:\Windows\SYSTEM32\WINSTA.dll
+0x00007ff96da90000 - 0x00007ff96db4d000 	C:\Windows\SYSTEM32\mscms.dll
+0x00007ff8c6680000 - 0x00007ff8c66ca000 	C:\Windows\SYSTEM32\icm32.dll
+0x00007ff90da70000 - 0x00007ff90dad1000 	D:\Project 1159 - 11.59 - AOC3\Age of History 3\AOC3 Source\src\windows\x64\org\lwjgl\opengl\lwjgl_opengl.dll
+0x00007ff9667e0000 - 0x00007ff966925000 	C:\Windows\SYSTEM32\textinputframework.dll
+0x00007ff970590000 - 0x00007ff9708fd000 	C:\Windows\SYSTEM32\CoreUIComponents.dll
+0x00007ff97fc90000 - 0x00007ff97fcb8000 	C:\Windows\SYSTEM32\USERENV.dll
+0x00007ff97f0f0000 - 0x00007ff97f11d000 	C:\Windows\SYSTEM32\IPHLPAPI.DLL
+0x00007ff981ec0000 - 0x00007ff981ec9000 	C:\Windows\System32\NSI.dll
+0x00007ff925b00000 - 0x00007ff925b4c000 	C:\Users\htmlp\AppData\Local\Temp\steamworks4j\1.9.0\steam_api64.dll
+0x00007ff91ff80000 - 0x00007ff91ffcc000 	C:\Users\htmlp\AppData\Local\Temp\steamworks4j\1.9.0\steamworks4j64.dll
+0x00007ff8c3b20000 - 0x00007ff8c52b7000 	C:\Program Files (x86)\Steam\steamclient64.dll
+0x00007ff981ed0000 - 0x00007ff981ed8000 	C:\Windows\System32\PSAPI.DLL
+0x00007ff90d9b0000 - 0x00007ff90da68000 	C:\Program Files (x86)\Steam\vstdlib_s64.dll
+0x00007ff8d9620000 - 0x00007ff8d97bb000 	C:\Program Files (x86)\Steam\tier0_s64.dll
+0x00007ff97f550000 - 0x00007ff97f55c000 	C:\Windows\SYSTEM32\Secur32.dll
+0x00007ff97f9e0000 - 0x00007ff97fa23000 	C:\Windows\SYSTEM32\SSPICLI.DLL
+0x00007ff8cda20000 - 0x00007ff8cdbb4000 	C:\Program Files (x86)\Steam\gameoverlayrenderer64.dll
+0x000000006a340000 - 0x000000006a3f4000 	C:\Users\htmlp\AppData\Local\Temp\libgdxVis-Australis\5c4d431d\gdx-freetype64.dll
+0x00007ff90d470000 - 0x00007ff90d510000 	D:\Project 1159 - 11.59 - AOC3\Age of History 3\AOC3 Source\src\windows\x64\org\lwjgl\stb\lwjgl_stb.dll
+0x00007ff97ddb0000 - 0x00007ff97dea7000 	C:\Windows\SYSTEM32\dxgi.dll
+0x00007ff97b7f0000 - 0x00007ff97ba47000 	C:\Windows\SYSTEM32\d3d11.dll
+0x00007ff952a10000 - 0x00007ff952ad4000 	C:\Windows\System32\DriverStore\FileRepository\nvmdsi.inf_amd64_bb627335e85bb104\nvldumdx.dll
+0x00007ff8dbd00000 - 0x00007ff8e017c000 	C:\Windows\System32\DriverStore\FileRepository\nvmdsi.inf_amd64_bb627335e85bb104\nvwgf2umx.dll
+0x00007ff9010f0000 - 0x00007ff901245000 	C:\Windows\System32\DriverStore\FileRepository\nvmdsi.inf_amd64_bb627335e85bb104\nvppex.dll
+0x00007ff975bc0000 - 0x00007ff9762b8000 	C:\Windows\SYSTEM32\nvapi64.dll
+0x00007ff970c00000 - 0x00007ff970d79000 	C:\Windows\System32\Windows.UI.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;C:\Program Files\Java\jdk-23\bin;C:\Windows\SYSTEM32;C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.22621.4391_none_2715d37f73803e96;C:\Program Files\Java\jdk-23\bin\server;C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.4\bin;C:\Users\htmlp\AppData\Local\Temp\libgdxVis-Australis\8d3b5089;D:\Project 1159 - 11.59 - AOC3\Age of History 3\AOC3 Source\src\windows\x64\org\lwjgl;D:\Project 1159 - 11.59 - AOC3\Age of History 3\AOC3 Source\src\windows\x64\org\lwjgl\jemalloc;D:\Project 1159 - 11.59 - AOC3\Age of History 3\AOC3 Source\src\windows\x64\org\lwjgl\glfw;C:\Program Files (x86)\Stardock\Groupy2;D:\Project 1159 - 11.59 - AOC3\Age of History 3\AOC3 Source\src\windows\x64\org\lwjgl\openal;C:\Windows\System32\DriverStore\FileRepository\nvmdsi.inf_amd64_bb627335e85bb104;D:\Project 1159 - 11.59 - AOC3\Age of History 3\AOC3 Source\src\windows\x64\org\lwjgl\opengl;C:\Users\htmlp\AppData\Local\Temp\steamworks4j\1.9.0;C:\Program Files (x86)\Steam;C:\Users\htmlp\AppData\Local\Temp\libgdxVis-Australis\5c4d431d;D:\Project 1159 - 11.59 - AOC3\Age of History 3\AOC3 Source\src\windows\x64\org\lwjgl\stb
+
+VM Arguments:
+jvm_args: -Djava.library.path=D:\Project 1159 - 11.59 - AOC3\Age of History 3\AOC3 Source\src -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.4\lib\idea_rt.jar=55966:C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.4\bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 
+java_command: aoc.kingdoms.lukasz.jakowski.desktop.DesktopLauncher
+java_class_path (initial): D:\Project 1159 - 11.59 - AOC3\Age of History 3\AOC3 Source\target\classes;D:\Project 1159 - 11.59 - AOC3\Age of History 3\AOC3 Source\src;C:\Users\htmlp\.m2\repository\com\badlogicgames\gdx\gdx\1.11.0\gdx-1.11.0.jar;C:\Users\htmlp\.m2\repository\com\badlogicgames\gdx\gdx-jnigen-loader\2.3.1\gdx-jnigen-loader-2.3.1.jar;C:\Users\htmlp\.m2\repository\com\badlogicgames\gdx\gdx-backend-lwjgl3\1.11.0\gdx-backend-lwjgl3-1.11.0.jar;C:\Users\htmlp\.m2\repository\org\lwjgl\lwjgl\3.3.1\lwjgl-3.3.1.jar;C:\Users\htmlp\.m2\repository\org\lwjgl\lwjgl\3.3.1\lwjgl-3.3.1-natives-linux.jar;C:\Users\htmlp\.m2\repository\org\lwjgl\lwjgl\3.3.1\lwjgl-3.3.1-natives-linux-arm32.jar;C:\Users\htmlp\.m2\repository\org\lwjgl\lwjgl\3.3.1\lwjgl-3.3.1-natives-linux-arm64.jar;C:\Users\htmlp\.m2\repository\org\lwjgl\lwjgl\3.3.1\lwjgl-3.3.1-natives-macos.jar;C:\Users\htmlp\.m2\repository\org\lwjgl\lwjgl\3.3.1\lwjgl-3.3.1-natives-macos-arm64.jar;C:\Users\htmlp\.m2\repository\org\lwjgl\lwjgl\3.3.1\lwjgl-3.3.1-natives-windows.jar;C:\Users\htmlp\.m2\repository\org\lwjgl\lwjgl\3.3.1\lwjgl-3.3.1-natives-windows-x86.jar;C:\Users\htmlp\.m2\repository\org\lwjgl\lwjgl-glfw\3.3.1\lwjgl-glfw-3.3.1.jar;C:\Users\htmlp\.m2\repository\org\lwjgl\lwjgl-glfw\3.3.1\lwjgl-glfw-3.3.1-natives-linux.jar;C:\Users\htmlp\.m2\repository\org\lwjgl\lwjgl-glfw\3.3.1\lwjgl-glfw-3.3.1-natives-linux-arm32.jar;C:\Users\htmlp\.m2\repository\org\lwjgl\lwjgl-glfw\3.3.1\lwjgl-glfw-3.3.1-natives-linux-arm64.jar;C:\Users\htmlp\.m2\repository\org\lwjgl\lwjgl-glfw\3.3.1\lwjgl-glfw-3.3.1-natives-macos.jar;C:\Users\htmlp\.m2\repository\org\lwjgl\lwjgl-glfw\3.3.1\lwjgl-glfw-3.3.1-natives-macos-arm64.jar;C:\Users\htmlp\.m2\repository\org\lwjgl\lwjgl-glfw\3.3.1\lwjgl-glfw-3.3.1-natives-windows.jar;C:\Users\htmlp\.m2\repository\org\lwjgl\lwjgl-glfw\3.3.1\lwjgl-glfw-3.3.1-natives-windows-x86.jar;C:\Users\htmlp\.m2\repository\org\lwjgl\lwjgl-jemalloc\3.3.1\lwjgl-jemalloc-3.3.1.jar;C:\Users\htmlp\.m2\repository\org\lwjgl\lwjgl-jemalloc\3.3.1\lwjgl-jemalloc-3.3.1-natives-linux.jar;C:\Users\htmlp\.m2\repository\org\lwjgl\lwjgl-jemalloc\3.3.1\lwjgl-jemalloc-3.3.1-natives-linux-arm32.jar;C:\Users\htmlp\.m2\repository\org\lwjgl\lwjgl-jemalloc\3.3.1\lwjgl-jemalloc-3.3.1-natives-linux-arm64.jar;C:\Users\htmlp\.m2\repository\org\lwjgl\lwjgl-jemalloc\3.3.1\lwjgl-jemalloc-3.3.1-natives-macos.jar;C:\Users\htmlp\.m2\repository\org\lwjgl\lwjgl-jemalloc\3.3.1\lwjgl-jemalloc-3.3.1-natives-macos-arm64.jar;C:\Users\htmlp\.m2\repository\org\lwjgl\lwjgl-jemalloc\3.3.1\lwjgl-jemalloc-3.3.1-natives-windows.jar;C:\Users\htmlp\.m2\repository\org\lwjgl\lwjgl-jemalloc\3.3.1\lwjgl-jemalloc-3.3.1-natives-windows-x86.jar;C:\Users\htmlp\.m2\repository\org\lwjgl\lwjgl-openal\3.3.1\lwjgl-openal-3.3.1.jar;C:\Users\htmlp\.m2\repository\org\lwjgl\lwjgl-openal\3.3.1\lwjgl-openal-3.3.1-natives-linux.jar;C:\Users\htmlp\.m2\repository\org\lwjgl\lwjgl-openal\3.3.1\lwjgl-openal-3.3.1-natives-linux-arm32.jar;C:\Users\htmlp\.m2\repository\org\lwjgl\lwjgl-openal\3.3.1\lwjgl-openal-3.3.1-natives-linux-arm64.jar;C:\Users\htmlp\.m2\repository\org\lwjgl\lwjgl-openal\3.3.1\lwjgl-openal-3.3.1-natives-macos.jar;C:\Users\htmlp\.m2\repository\org\lwjgl\lwjgl-openal\3.3.1\lwjgl-openal-3.3.1-natives-macos-arm64.jar;C:\Users\htmlp\.m2\repository\org\lwjgl\lwjgl-openal\3.3.1\lwjgl-openal-3.3.1-natives-windows.jar;C:\Users\htmlp\.m2\repository\org\lwjgl\lwjgl-openal\3.3.1\lwjgl-openal-3.3.1-natives-windows-x86.jar;C:\Users\htmlp\.m2\repository\org\lwjgl\lwjgl-opengl\3.3.1\lwjgl-opengl-3.3.1.jar;C:\Users\htmlp\.m2\repository\org\lwjgl\lwjgl-opengl\3.3.1\lwjgl-opengl-3.3.1-natives-linux.jar;C:\Users\htmlp\.m2\repository\org\lwjgl\lwjgl-opengl\3.3.1\lwjgl-opengl-3.3.1-natives-linux-arm32.jar;C:\Users\htmlp\.m2\repository\org\lwjgl\lwjgl-opengl\3.3.1\lwjgl-opengl-3.3.1-natives-linux-arm64.jar;C:\Users\htmlp\.m2\repository\org\lwjgl\lwjgl-opengl\3.3.1\lwjgl-opengl-3.3.1-natives-macos.jar;C:\Users\htmlp\.m2\repository\org\lwjgl\lwjgl-opengl\3.3.1\lwjgl-opengl-3.3.1-natives-macos-arm64.jar;C:\Users\htmlp\.m2\repository\org\lwjgl\lwjgl-opengl\3.3.1\lwjgl-opengl-3.3.1-natives-windows.jar;C:\Users\htmlp\.m2\repository\org\lwjgl\lwjgl-opengl\3.3.1\lwjgl-opengl-3.3.1-natives-windows-x86.jar;C:\Users\htmlp\.m2\repository\org\lwjgl\lwjgl-stb\3.3.1\lwjgl-stb-3.3.1.jar;C:\Users\htmlp\.m2\repository\org\lwjgl\lwjgl-stb\3.3.1\lwjgl-stb-3.3.1-natives-linux.jar;C:\Users\htmlp\.m2\repository\org\lwjgl\lwjgl-stb\3.3.1\lwjgl-stb-3.3.1-natives-linux-arm32.jar;C:\Users\htmlp\.m2\repository\org\lwjgl\lwjgl-stb\3.3.1\lwjgl-stb-3.3.1-natives-linux-arm64.jar;C:\Users\htmlp\.m2\repository\org\lwjgl\lwjgl-stb\3.3.1\lwjgl-stb-3.3.1-natives-macos.jar;C:\Users\htmlp\.m2\repository\org\lwjgl\lwjgl-stb\3.3.1\lwjgl-stb-3.3.1-natives-macos-arm64.jar;C:\Users\htmlp\.m2\repository\org\lwjgl\lwjgl-stb\3.3.1\lwjgl-stb-3.3.1-natives-windows.jar;C:\Users\htmlp\.m2\repository\org\lwjgl\lwjgl-stb\3.3.1\lwjgl-stb-3.3.1-natives-windows-x86.jar;C:\Users\htmlp\.m2\repository\com\badlogicgames\jlayer\jlayer\1.0.1-gdx\jlayer-1.0.1-gdx.jar;C:\Users\htmlp\.m2\repository\org\jcraft\jorbis\0.0.17\jorbis-0.0.17.jar
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     intx CICompilerCount                          = 15                                        {product} {ergonomic}
+     uint ConcGCThreads                            = 6                                         {product} {ergonomic}
+     uint G1ConcRefinementThreads                  = 23                                        {product} {ergonomic}
+   size_t G1HeapRegionSize                         = 16777216                                  {product} {ergonomic}
+   size_t InitialHeapSize                          = 2147483648                                {product} {ergonomic}
+   size_t MarkStackSize                            = 4194304                                   {product} {ergonomic}
+   size_t MarkStackSizeMax                         = 536870912                                 {product} {ergonomic}
+   size_t MaxHeapSize                              = 31675383808                               {product} {ergonomic}
+   size_t MaxNewSize                               = 18991808512                               {product} {ergonomic}
+   size_t MinHeapDeltaBytes                        = 16777216                                  {product} {ergonomic}
+   size_t MinHeapSize                              = 16777216                                  {product} {ergonomic}
+    uintx NonNMethodCodeHeapSize                   = 8192000                                {pd product} {ergonomic}
+    uintx NonProfiledCodeHeapSize                  = 121765888                              {pd product} {ergonomic}
+    uintx ProfiledCodeHeapSize                     = 121700352                              {pd product} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 251658240                              {pd product} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+   size_t SoftMaxHeapSize                          = 31675383808                            {manageable} {ergonomic}
+     bool UseCompressedOops                        = true                           {product lp64_product} {ergonomic}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags foldmultilines=false
+ #1: stderr all=off uptime,level,tags foldmultilines=false
+
+Environment Variables:
+PATH=C:\Program Files\ImageMagick-7.1.1-Q16-HDRI;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;%NVM_HOME%;%NVM_SYMLINK%;C:\Users\htmlp\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\htmlp\AppData\Local\Programs\Python\Python313\;C:\Users\htmlp\AppData\Local\Microsoft\WindowsApps;C:\Users\htmlp\AppData\Roaming\npm;C:\Users\htmlp\AppData\Local\atom\bin;C:\Users\htmlp\AppData\Local\GitHubDesktop\bin;C:\Users\htmlp\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.3\bin;
+USERNAME=Vis-Australis
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 183 Stepping 1, GenuineIntel
+TMP=C:\Users\htmlp\AppData\Local\Temp
+TEMP=C:\Users\htmlp\AppData\Local\Temp
+
+
+
+
+Periodic native trim disabled
+
+---------------  S Y S T E M  ---------------
+
+OS:
+ Windows 11 , 64 bit Build 22621 (10.0.22621.4391)
+OS uptime: 0 days 18:44 hours
+Hyper-V role detected
+
+CPU: total 32 (initial active 32) (16 cores per cpu, 2 threads per core) family 6 model 183 stepping 1 microcode 0x120, cx8, cmov, fxsr, ht, mmx, 3dnowpref, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, lzcnt, tsc, tscinvbit, avx, avx2, aes, erms, clmul, bmi1, bmi2, adx, sha, fma, vzeroupper, clflush, clflushopt, clwb, hv, serialize, rdtscp, rdpid, fsrm, gfni, f16c, cet_ibt, cet_ss
+Processor Information for the first 32 processors :
+  Max Mhz: 2000, Current Mhz: 2000, Mhz Limit: 2000
+
+Memory: 4k page, system-wide physical 130904M (82484M free)
+TotalPageFile size 261976M (AvailPageFile size 201558M)
+current process WorkingSet (physical memory assigned to process): 4710M, peak: 4710M
+current process commit charge ("private bytes"): 10040M, peak: 10040M
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (23+37-2369) for windows-amd64 JRE (23+37-2369), built on 2024-08-20T16:01:23Z with MS VC++ 17.6 (VS2022)
+
+END.

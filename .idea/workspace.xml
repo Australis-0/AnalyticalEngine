@@ -5,14 +5,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09b6f7f8-b868-43e9-b471-ac1dbd15fa3b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Framework/Civilisations/Civilisations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Framework/Strings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Framework/Javascript.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/js_file_structure.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menusMapEditor/EditorMapProvinceNamePoints.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Debugger/GameProvinces.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Debugger/GameProvinces.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Scopes/Provinces.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Framework/Provinces/Provinces.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EvalClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/EvalClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/AnalyticalEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/AnalyticalEngine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Debugger/console.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Debugger/console.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/MapEditorSettings.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/MapEditorSettings.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/Maps.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/Maps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/Template/data/ProvincePoints/ProvincePoints.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modsExamples/Map_NewMap/map/Template/data/ProvincePoints/ProvincePoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/modsExamples/Map_NewMap/map/Template/data/ProvincePoints/ProvincePoints.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/Settings.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/settings/Settings.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/statistics/AoH.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/statistics/AoH.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Debugger/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Debugger/Game.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Debugger/GameProvinces.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Debugger/GameProvinces.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Logic/Scopes/Provinces.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Debugger/console$ConsoleFramework.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Debugger/console$ConsoleFramework.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Debugger/console$ToggleDebugger.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Debugger/console$ToggleDebugger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Debugger/console.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Debugger/console.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Framework/Civilisations/Civilisations.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Framework/Civilisations/Civilisations.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Framework/Java$JavaSourceFromString.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Framework/Java$JavaSourceFromString.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Framework/Java$MultipleClassLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Framework/Java$MultipleClassLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Framework/Java.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Framework/Java.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Framework/Methods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Framework/Methods.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Framework/Provinces/Provinces.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Framework/Provinces/Provinces.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Framework/Strings.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Framework/Strings.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/jakowski/desktop/DesktopLauncher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/jakowski/desktop/DesktopLauncher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusEditor/Editor$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusEditor/Editor$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusEditor/Editor$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusEditor/Editor$10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusEditor/Editor$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusEditor/Editor$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusEditor/Editor$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusEditor/Editor$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusEditor/Editor$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusEditor/Editor$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusEditor/Editor$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusEditor/Editor$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusEditor/Editor$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusEditor/Editor$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusEditor/Editor$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusEditor/Editor$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusEditor/Editor$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusEditor/Editor$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusEditor/Editor$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusEditor/Editor$9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusEditor/Editor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusEditor/Editor.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,34 +62,37 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2o0ZfC1L1x7npRv4fyHHy1nmYYv" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.DesktopLauncher.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Project 1159 - 11.59 - AOC3/Age of History 3/AOC3 Source/src",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.24023438",
-    "project.structure.side.proportion": "0.22651222",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.DesktopLauncher.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Project 1159 - 11.59 - AOC3/Age of History 3/AOC3 Source/src&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.24023438&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.22651222&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="AnalyticalEngine.Framework.Provinces" />
@@ -66,8 +102,10 @@
   </component>
   <component name="RunManager">
     <configuration name="DesktopLauncher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="23" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="aoc.kingdoms.lukasz.jakowski.desktop.DesktopLauncher" />
-      <module name="AOC3_Source" />
+      <module name="AOC3-Source" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
       <extension name="coverage">
         <pattern>
@@ -101,7 +139,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1730008554989</updated>
-      <workItem from="1730008555996" duration="6642000" />
+      <workItem from="1730008555996" duration="18064000" />
+      <workItem from="1730810542577" duration="85000" />
+      <workItem from="1730810633962" duration="1000" />
+      <workItem from="1730810641700" duration="494000" />
+      <workItem from="1730811142213" duration="53000" />
+      <workItem from="1730811200809" duration="11026000" />
     </task>
     <servers />
   </component>

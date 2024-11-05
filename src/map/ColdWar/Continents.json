@@ -1,0 +1,61 @@
+{
+	Age_of_History: Data,
+		Data: [
+		{
+			sName: "Ocean",
+			iR: 255,
+			iG: 255,
+			iB: 255,
+			
+			prioritizeColonization: false,
+		},
+		{
+			sName: "Asia",
+			iR: 37,
+			iG: 76,
+			iB: 110,
+			
+			prioritizeColonization: false,
+		},
+		{
+			sName: "Europe",
+			iR: 253,
+			iG: 213,
+			iB: 46,
+			
+			prioritizeColonization: false,
+		},
+		{
+			sName: "NorthAmerica",
+			iR: 65,
+			iG: 105,
+			iB: 225,
+			
+			prioritizeColonization: true,
+		},
+		{
+			sName: "Oceania",
+			iR: 215,
+			iG: 215,
+			iB: 215,
+			
+			prioritizeColonization: false,
+		},
+		{
+			sName: "SouthAmerica",
+			iR: 0,
+			iG: 149,
+			iB: 67,
+			
+			prioritizeColonization: true,
+		},
+		{
+			sName: "Africa",
+			iR: 178,
+			iG: 108,
+			iB: 4,
+			
+			prioritizeColonization: false,
+		},
+	]
+}

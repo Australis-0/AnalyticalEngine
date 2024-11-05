@@ -1,0 +1,47 @@
+{
+	Name: "Cold War",
+	Author: "AuthorName",
+	
+	NumOfProvinces: 9840,
+	DefaultMapScale: 2,
+	ExtraMapScale: 4,
+	WorldMap: true,
+	
+	ResearchCost: 1.0,
+	UnitsRecruitCost: 1.0,
+	UnitsMaintenanceCost: 1.0,
+	BuildingsCost: 1.0,
+	BuildingsMaintenanceCost: 1.0,
+	BuildingsConstructionTime: 1.0,
+	
+	BackgroundSize_X: 8,
+	BackgroundSize_Y: 5,
+	BackgroundScale: 1.0,
+	
+	BackgroundZoomOut_Enable: false,
+	BackgroundZoomOut_Size_X: 16,
+	BackgroundZoomOut_Size_Y: 10,
+	BackgroundZoomOut_Scale: 0.13,
+	
+	BackgroundZoomOut_AnimationDuration: 600,
+	
+	BackgroundColor: [18, 42, 66],
+	BackgroundColor_ZoomIn: [45, 80, 100],
+	BackgroundColor_ZoomOut: [28, 36, 41],
+	
+	SeaOverAlpha: 0.75,
+	
+	DistanceKm: 1.95,
+	
+	WastelandColor: [200, 165, 130],
+	
+	DRAW_CITIES_MIN_SCALE: 1.3,
+	DRAW_CIV_NAMES_START_DRAWING_MAP_SCALE: 0.4,
+	DRAW_INNER_BORDERS: 0.4,
+	DRAW_OCCUPIED_PROVINCES_MIN_SCALE: 0.15,
+	DRAW_ARMY_MIN_SCALE: 0.4,
+	DRAW_OCCUPIED_SCALE: 8,
+	
+	DefaultScenario: "Default",
+	Wiki: "Earth"
+}
