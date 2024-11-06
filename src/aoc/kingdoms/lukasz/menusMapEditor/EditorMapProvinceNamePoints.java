@@ -5,12 +5,15 @@
 
 package aoc.kingdoms.lukasz.menusMapEditor;
 
+import AnalyticalEngine.Debugger.console;
+import AnalyticalEngine.Framework.KeyboardHandler;
 import aoc.kingdoms.lukasz.jakowski.AA_KeyManager;
 import aoc.kingdoms.lukasz.jakowski.CFG;
 import aoc.kingdoms.lukasz.jakowski.Game;
 import aoc.kingdoms.lukasz.jakowski.FBO.FBOProvinceNames;
 import aoc.kingdoms.lukasz.jakowski.Renderer.Renderer;
 import aoc.kingdoms.lukasz.jakowski.SaveLoad.SaveManager;
+import aoc.kingdoms.lukasz.map.province.Province;
 import aoc.kingdoms.lukasz.map.province.ProvinceNameData;
 import aoc.kingdoms.lukasz.map.province.ProvinceNamesManager;
 import aoc.kingdoms.lukasz.menu.Colors;
@@ -29,9 +32,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class EditorMapProvinceNamePoints extends Menu {
-    //ANALYTICALENGINE BEGIN
     public static boolean editing_province_names = false;
-    //ANALYTICALENGINE END
+
+    //Event Handlers
+    //Keyboard Events
+    static KeyboardHandler province_name_input = new KeyboardHandler();
 
     public static boolean firstPoint = true;
     public static boolean centerPoint = false;
@@ -59,7 +64,6 @@ public class EditorMapProvinceNamePoints extends Menu {
             }
         });
 
-        //ANALYTICALENGINE BEGIN
         menuElements.add(new ButtonMain((String) null, 1, -1, CFG.GAME_WIDTH - CFG.PADDING - CFG.BUTTON_WIDTH*7, CFG.GAME_HEIGHT - CFG.BUTTON_HEIGHT - CFG.PADDING, CFG.BUTTON_WIDTH*4, true) {
             public void updateLanguage () {
                 this.setText((!editing_province_names) ? "Edit province names" : "Edit province name positions");
@@ -70,7 +74,6 @@ public class EditorMapProvinceNamePoints extends Menu {
                 this.updateLanguage();
             }
         });
-        //ANALYTICALENGINE END
 
         this.initMenu((MenuTitle)null, 0, 0, CFG.GAME_WIDTH, CFG.GAME_HEIGHT, menuElements, true);
     }
@@ -87,8 +90,19 @@ public class EditorMapProvinceNamePoints extends Menu {
 
     public final void drawEditorText(SpriteBatch oSB, int iTranslateX, int iTranslateY) {
         String sText;
+
         if (Game.iActiveProvince >= 0) {
-            sText = "PROVINCE NAME: " + Game.getProvince(Game.iActiveProvince).getProvinceName();
+            Province selected_province = Game.getProvince(Game.iActiveProvince);
+            String selected_province_id = Integer.toString(Game.iActiveProvince);
+            String selected_province_name = selected_province.getProvinceName();
+
+            sText = "PROVINCE NAME: " + province_name_input.getDisplayString();
+
+            if (!province_name_input.id.equals(selected_province_id)) {
+                province_name_input.id = selected_province_id;
+                province_name_input.loadString(selected_province_name);
+                console.log("Province changed.");
+            }
         } else {
             sText = "SELECT PROVINCE";
         }
@@ -115,16 +129,31 @@ public class EditorMapProvinceNamePoints extends Menu {
         Renderer.drawText(oSB, sText, iTranslateX + CFG.PADDING * 4, iTranslateY + CFG.PADDING * 4, Colors.COLOR_TEXT_TITLE);
     }
 
-    public static boolean keyUp(int keycode) {
-        if (keycode == 62) {
-            firstPoint = !firstPoint;
-            centerPoint = false;
-            return true;
-        } else if (keycode == 31) {
-            centerPoint = !centerPoint;
-            return true;
-        } else {
-            if (Game.iActiveProvince >= 0) {
+    //Events handler
+    public static boolean keyUp (int keycode) {
+        if (Game.iActiveProvince >= 0) {
+            Province selected_province = Game.getProvince(Game.iActiveProvince);
+
+            if (editing_province_names) {
+                //Province Name Editor
+                String current_province_name = selected_province.getProvinceName();
+                    province_name_input.pressKey(keycode);
+                selected_province.setProvinceName(province_name_input.getString());
+
+                console.log("Changed province name to \"" + province_name_input.getString() + "\".");
+                console.log(province_name_input.getString().length());
+                //System.out.println("Set province name to: \"" + selected_province.getProvinceName() + "\"");
+            } else {
+                //Positions Editor
+                //Positions Editor - Change Mode
+                if (keycode == 62) {
+                    firstPoint = (!firstPoint);
+                    centerPoint = false;
+                } else if (keycode == 31) {
+                    centerPoint = (!centerPoint);
+                }
+
+                //Positions Editor - Keybind Controls
                 if (ProvinceNamesManager.provinceNames.get(Game.iActiveProvince) != null) {
                     if (keycode == 46) {
                         if (Game.settingsManager.SETTINGS_PROVINCE_NAMES == 3) {
@@ -325,9 +354,8 @@ public class EditorMapProvinceNamePoints extends Menu {
                     }
 
                     if (keycode == 44) {
-                        if (ProvinceNamesManager.provinceNames.get(Game.iActiveProvince) == null) {
+                        if (ProvinceNamesManager.provinceNames.get(Game.iActiveProvince) == null)
                             return true;
-                        }
 
                         ((ProvinceNameData)ProvinceNamesManager.provinceNames.get(Game.iActiveProvince)).fX = (float)Game.getProvince(Game.iActiveProvince).getCenterX();
                         ((ProvinceNameData)ProvinceNamesManager.provinceNames.get(Game.iActiveProvince)).fX2 = (float)Game.getProvince(Game.iActiveProvince).getCenterX();
@@ -349,6 +377,7 @@ public class EditorMapProvinceNamePoints extends Menu {
 
                     ProvinceNamesManager.clearProvNameData(Game.iActiveProvince);
                     ProvinceNamesManager.buildProvNameData(Game.iActiveProvince, false);
+
                     return true;
                 }
 
@@ -363,8 +392,9 @@ public class EditorMapProvinceNamePoints extends Menu {
                 ProvinceNamesManager.clearProvNameData(Game.iActiveProvince);
                 ProvinceNamesManager.buildProvNameData(Game.iActiveProvince, false);
             }
-
-            return false;
         }
+
+        //Return statement
+        return false;
     }
 }

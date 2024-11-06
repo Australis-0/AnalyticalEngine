@@ -5,47 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09b6f7f8-b868-43e9-b471-ac1dbd15fa3b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Framework/Javascript.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/js_file_structure.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menusMapEditor/EditorMapProvinceNamePoints.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Framework/KeyboardHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Framework/Window.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/map/MapCities.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/province/ProvinceNamesManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/AnalyticalEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/AnalyticalEngine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Debugger/console.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Debugger/console.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/map/MapEditorSettings.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/MapEditorSettings.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/map/Maps.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/Maps.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/map/Template/data/ProvincePoints/ProvincePoints.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modsExamples/Map_NewMap/map/Template/data/ProvincePoints/ProvincePoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/modsExamples/Map_NewMap/map/Template/data/ProvincePoints/ProvincePoints.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/settings/Settings.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/settings/Settings.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menusMapEditor/EditorMapProvinceNamePoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menusMapEditor/EditorMapProvinceNamePoints.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/ColdWar/data/ProvinceNamePoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/ColdWar/data/ProvinceNamePoints.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/ColdWar/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_2.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/ColdWar/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/ColdWar/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_5.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/ColdWar/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_5.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/statistics/AoH.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/statistics/AoH.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Debugger/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Debugger/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Debugger/GameProvinces.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Debugger/GameProvinces.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Debugger/console$ConsoleFramework.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Debugger/console$ConsoleFramework.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Debugger/console$ToggleDebugger.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Debugger/console$ToggleDebugger.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Debugger/console.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Debugger/console.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Framework/Civilisations/Civilisations.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Framework/Civilisations/Civilisations.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Framework/Java$JavaSourceFromString.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Framework/Java$JavaSourceFromString.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Framework/Java$MultipleClassLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Framework/Java$MultipleClassLoader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Framework/Java.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Framework/Java.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Framework/Methods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Framework/Methods.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Framework/Provinces/Provinces.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Framework/Provinces/Provinces.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Framework/Strings.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Framework/Strings.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/jakowski/desktop/DesktopLauncher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/jakowski/desktop/DesktopLauncher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusEditor/Editor$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusEditor/Editor$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusEditor/Editor$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusEditor/Editor$10.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusEditor/Editor$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusEditor/Editor$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusEditor/Editor$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusEditor/Editor$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusEditor/Editor$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusEditor/Editor$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusEditor/Editor$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusEditor/Editor$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusEditor/Editor$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusEditor/Editor$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusEditor/Editor$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusEditor/Editor$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusEditor/Editor$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusEditor/Editor$8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusEditor/Editor$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusEditor/Editor$9.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusEditor/Editor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusEditor/Editor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusMapEditor/EditorMapProvinceNamePoints$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusMapEditor/EditorMapProvinceNamePoints$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusMapEditor/EditorMapProvinceNamePoints$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusMapEditor/EditorMapProvinceNamePoints$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusMapEditor/EditorMapProvinceNamePoints$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusMapEditor/EditorMapProvinceNamePoints$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusMapEditor/EditorMapProvinceNamePoints$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusMapEditor/EditorMapProvinceNamePoints$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusMapEditor/EditorMapProvinceNamePoints.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusMapEditor/EditorMapProvinceNamePoints.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +118,7 @@
       <workItem from="1730810633962" duration="1000" />
       <workItem from="1730810641700" duration="494000" />
       <workItem from="1730811142213" duration="53000" />
-      <workItem from="1730811200809" duration="11026000" />
+      <workItem from="1730811200809" duration="27775000" />
     </task>
     <servers />
   </component>
