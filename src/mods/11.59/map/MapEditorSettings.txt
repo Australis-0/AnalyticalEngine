@@ -1,0 +1,188 @@
+MAP_NAME=ColdWar
+WIDTH=17760
+HEIGHT=10750
+MAXIMUM_SIZE=true
+DRAW_POINTS=true
+DRAW_PROVINCE_ID=false
+#PROVINCES_PER_FILE=500
+
+
+CUT_FROM_PROVINCE_MODE=true
+
+CONVERT_AOH2_MAP_PROVINCES_DATA_TO_AOH3=false
+
+
+
+########################################################
+
+## To convert a map from AoH2 to the AoH3, put the provinces points file from old mapEditor and name it "convertMapData.txt" in the same folder as mapEditor_2.jar.
+## Change value to true: CONVERT_AOH2_MAP_PROVINCES_DATA_TO_AOH3=true and CUT_FROM_PROVINCE_MODE=false
+## Open mapEditor_2.jar and click ENTER to save data.
+
+## To export provinces from AoH2 to file Open the AoH2 game. Go to Editor -> Map Editor- > Map -> Edit Connections And Provinces -> and click 'Q'. File will be created in map folder.
+
+SPACE = Enable/Disable draw provinces
+O = Enable/Disable draw provinces points
+C = Enable/Disable draw cities
+V = Enable/Disable draw cities names
+Z = Enable/Disable background
+X = Enable/Disable backgroundMapEditor
+L = Rebuild provinces colors
+Y = Follow the path of the province
+P = Draw province ID
+J = Delete a province
+N = Add point to province
+M = Move point
+
+You can remove a province and add another one in its place by clicking "J".
+Do not close the editor until all deleted provinces have been added!
+
+########################################################
+
+### CUT_FROM_PROVINCE_MODE=true
+### New option for map editor
+### Creates a second province map that will crop the province pixels from the main map
+
+
+
+## Map -> Config.json
+
+#### CODE
+
+{
+	Name: "MapName",
+	Author: "AuthorName",
+	
+	NumOfProvinces: 1,
+	DefaultMapScale: 4,
+	WorldMap: true,
+	
+	BackgroundSize_X: 3,
+	BackgroundSize_Y: 2,
+	
+	BackgroundZoomOut_Enable: true,
+	BackgroundZoomOut_Size_X: 3,
+	BackgroundZoomOut_Size_Y: 2,
+	BackgroundZoomOut_Scale: 0.13,
+	
+	BackgroundZoomOut_AnimationDuration: 600,
+	
+	BackgroundColor: [13, 31, 49],
+	BackgroundColor_ZoomIn: [5, 22, 40],
+	BackgroundColor_ZoomOut: [11, 24, 33],
+	
+	WastelandColor: [200, 165, 130],
+	
+	DefaultScenario: "1440",
+	Wiki: "Earth",
+}
+
+#### CODE END
+
+
+
+## The width of every single image should be the same!
+## The height of every single image should be the same!
+
+## Example
+	BackgroundSize_X: 3,
+	BackgroundSize_Y: 2,
+	
+How many horizontal images and how many vertical images the map background is divided into.
+
+In this example we have 3 horizontal images and two vertical images.
+
+The naming of images:
+
+It will be always: Y_X.png
+
+0_0.png
+0_1.png
+0_2.png
+
+Next line of images:
+
+1_0.png
+1_1.png
+1_2.png
+
+## Example 2
+	BackgroundSize_X: 2,
+	BackgroundSize_Y: 2,
+	
+It will be always: Y_X.png
+
+0_0.png
+0_1.png
+
+Next line of images:
+
+1_0.png
+1_1.png
+
+
+## Example 3
+	BackgroundSize_X: 4,
+	BackgroundSize_Y: 3,
+	
+It will be always: Y_X.png
+
+0_0.png
+0_1.png
+0_2.png
+0_3.png
+
+Next line of images:
+
+1_0.png
+1_1.png
+1_2.png
+1_3.png
+
+Next line of images:
+
+2_0.png
+2_1.png
+2_2.png
+2_3.png
+
+
+
+#######################################
+##
+## How to add city
+##
+#######################################
+
+MapEditor_2_Cities.jar should be in the same folders as MapEditor_2.jar
+
+# Step 1:
+Just copy any text.
+Ctrl + C
+
+# Step 2:
+Click on the map in MapEditor_2_Cities to set the location of the city.
+
+# Step 3:
+Enter!
+
+##########################
+##
+## This feature pre-generates data to reduce loading times
+##
+## After adding new cities, you need to generate to which province each city belongs to in-game.
+
+To do this, go to: map/MAPNAME/cities/build_cities.txt
+Open the file and write inside it only:
+
+true
+
+# Next, launch the game, and during the loading process, the game will automatically generate all the necessary data.
+
+Once the data is generated, don't forget to disable the data generation by setting the file map/MAPNAME/cities/build_cities.txt to:
+
+false
+
+##########################
+
+@ All rights reserved Łukasz Jakowski Games

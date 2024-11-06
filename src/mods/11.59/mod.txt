@@ -1,0 +1,8 @@
+{
+	Name: "11:59",
+	Description: "Placeholder description.",
+	
+	Tags: ["11:59", "Cold War", "Total overhaul"],
+	
+	ChangeNote: "Beta version for developer testing.",
+}

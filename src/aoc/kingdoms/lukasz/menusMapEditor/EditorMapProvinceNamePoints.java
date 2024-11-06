@@ -78,9 +78,12 @@ public class EditorMapProvinceNamePoints extends Menu {
         this.initMenu((MenuTitle)null, 0, 0, CFG.GAME_WIDTH, CFG.GAME_HEIGHT, menuElements, true);
     }
 
-    public void draw(SpriteBatch oSB, int iTranslateX, int iTranslateY, boolean menuIsActive, Status titleStatus) {
+    public void draw (SpriteBatch oSB, int iTranslateX, int iTranslateY, boolean menuIsActive, Status titleStatus) {
+        //Draws boxes for buttons
         ImageManager.getImage(Images.boxBIG).draw2(oSB, iTranslateX, iTranslateY + CFG.GAME_HEIGHT - CFG.BUTTON_HEIGHT - CFG.PADDING * 2 - Images.boxTitleBORDERWIDTH, CFG.BUTTON_WIDTH * 2 + CFG.PADDING * 2 + Images.boxTitleBORDERWIDTH, CFG.BUTTON_HEIGHT + CFG.PADDING * 2 + Images.boxTitleBORDERWIDTH, true, false);
         ImageManager.getImage(Images.boxBIG).draw2(oSB, CFG.GAME_WIDTH - CFG.BUTTON_WIDTH * 2 - CFG.PADDING * 2 - Images.boxTitleBORDERWIDTH + iTranslateX, iTranslateY + CFG.GAME_HEIGHT - CFG.BUTTON_HEIGHT - CFG.PADDING * 2 - Images.boxTitleBORDERWIDTH, CFG.BUTTON_WIDTH * 2 + CFG.PADDING * 2 + Images.boxTitleBORDERWIDTH, CFG.BUTTON_HEIGHT + CFG.PADDING * 2 + Images.boxTitleBORDERWIDTH, false, false);
+
+        //Draws text
         this.drawEditorText(oSB, iTranslateX, iTranslateY);
         super.draw(oSB, iTranslateX, iTranslateY, menuIsActive, titleStatus);
         FBOProvinceNames.fboNumToGenerate_Names = 0;
@@ -88,7 +91,7 @@ public class EditorMapProvinceNamePoints extends Menu {
         FBOProvinceNames.disposeProvinceNamesFBO();
     }
 
-    public final void drawEditorText(SpriteBatch oSB, int iTranslateX, int iTranslateY) {
+    public final void drawEditorText (SpriteBatch oSB, int iTranslateX, int iTranslateY) {
         String sText;
 
         if (Game.iActiveProvince >= 0) {
@@ -101,7 +104,6 @@ public class EditorMapProvinceNamePoints extends Menu {
             if (!province_name_input.id.equals(selected_province_id)) {
                 province_name_input.id = selected_province_id;
                 province_name_input.loadString(selected_province_name);
-                console.log("Province changed.");
             }
         } else {
             sText = "SELECT PROVINCE";
@@ -122,10 +124,13 @@ public class EditorMapProvinceNamePoints extends Menu {
             sText = sText + "\n MODE -> RIGHT POINT";
         }
 
-        Renderer.glyphLayout.setText((BitmapFont)Renderer.fontMain.get(0), sText);
+        //Draw initial black background
         oSB.setColor(new Color(1.0F, 1.0F, 1.0F, 0.6F));
         Renderer.drawBoxCorner(oSB, iTranslateX + CFG.PADDING * 3, iTranslateY + CFG.PADDING * 3, (int)Renderer.glyphLayout.width + CFG.PADDING * 2, (int)Renderer.glyphLayout.height + CFG.PADDING * 2);
+
+        //Draw menu text
         oSB.setColor(Color.WHITE);
+        Renderer.glyphLayout.setText((BitmapFont)Renderer.fontMain.get(0), sText);
         Renderer.drawText(oSB, sText, iTranslateX + CFG.PADDING * 4, iTranslateY + CFG.PADDING * 4, Colors.COLOR_TEXT_TITLE);
     }
 
@@ -139,10 +144,6 @@ public class EditorMapProvinceNamePoints extends Menu {
                 String current_province_name = selected_province.getProvinceName();
                     province_name_input.pressKey(keycode);
                 selected_province.setProvinceName(province_name_input.getString());
-
-                console.log("Changed province name to \"" + province_name_input.getString() + "\".");
-                console.log(province_name_input.getString().length());
-                //System.out.println("Set province name to: \"" + selected_province.getProvinceName() + "\"");
             } else {
                 //Positions Editor
                 //Positions Editor - Change Mode
