@@ -103,6 +103,17 @@ public class console {
                 print_command_state_options.put("function", debugger_prefix + "console.ConsoleFramework.printCommandsVariable");
             addCommand("print-commands-variable", null, print_command_state_options);
 
+            //print-main
+            Map<String, Object> print_main_options = new HashMap<>();
+            print_main_options.put("description", "Prints the current main object for AnalytiaclEngine.");
+            print_main_options.put("function", debugger_prefix + "Main.printMain");
+            addCommand("print-main", null, print_main_options);
+                //print-main-cities
+                Map<String, Object> print_main_cities_options = new HashMap<>();
+                    print_main_cities_options.put("description", "Prints the number of currently loaded cities.");
+                    print_main_cities_options.put("function", debugger_prefix + "Main.printMainCities");
+                addCommand("print-main-cities", null, print_main_cities_options);
+
             //print-province
             Map<String, Object> print_province_options  = new HashMap<>();
                 print_province_options.put("description", "Prints Province information from the current GameState.");

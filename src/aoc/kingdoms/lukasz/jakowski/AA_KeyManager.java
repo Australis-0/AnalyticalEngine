@@ -218,32 +218,32 @@ public class AA_KeyManager {
         --Game.mapEdgeMove.MAP_MOVE_KEYBOARD;
         Game.mapEdgeMove.MAP_MOVE_KEYBOARD = Math.max(0, Game.mapEdgeMove.MAP_MOVE_KEYBOARD);
         if (CFG.isDesktop()) {
-            if (Game.menuManager.dialogMenu.getVisible()) {
-                if (keycode != 66 && keycode != 160 && keycode != 62) {
-                    if (keycode == 111 || keycode == 67) {
+            if (!AnalyticalEngine().keybind_freeze) {
+                if (Game.menuManager.dialogMenu.getVisible()) {
+                    if (keycode != 66 && keycode != 160 && keycode != 62) {
+                        if (keycode == 111 || keycode == 67) {
+                            Game.menuManager.dialogMenu.disableButtons();
+                            Dialog.dialogFalse();
+                            Game.menuManager.dialogMenu.closeMenu();
+                        }
+                    } else {
                         Game.menuManager.dialogMenu.disableButtons();
-                        Dialog.dialogFalse();
+                        Dialog.dialogTrue();
                         Game.menuManager.dialogMenu.closeMenu();
                     }
-                } else {
-                    Game.menuManager.dialogMenu.disableButtons();
-                    Dialog.dialogTrue();
-                    Game.menuManager.dialogMenu.closeMenu();
+
+                    return true;
                 }
-
-                return true;
-            }
-
-            if (keycode == 141) {
-                Game.soundsManager.loadNextMusic();
-                return true;
-            }
-
-            if (!Keyboard.keyboardMode) {
-                if (keycode == 44) {
-                    Game.mapScale.scrollScale(-1);
-                } else if (keycode == 43) {
-                    Game.mapScale.scrollScale(1);
+                if (keycode == 141) {
+                    Game.soundsManager.loadNextMusic();
+                    return true;
+                }
+                if (!Keyboard.keyboardMode) {
+                    if (keycode == 44) {
+                        Game.mapScale.scrollScale(-1);
+                    } else if (keycode == 43) {
+                        Game.mapScale.scrollScale(1);
+                    }
                 }
             }
 

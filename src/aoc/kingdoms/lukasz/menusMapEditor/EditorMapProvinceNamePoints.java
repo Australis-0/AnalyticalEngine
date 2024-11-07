@@ -75,8 +75,7 @@ public class EditorMapProvinceNamePoints extends Menu {
 
             //Update main
             AnalyticalEngine().main.put("map_cities", main_map_cities);
-            console.log("Main: " + AnalyticalEngine().main.size());
-            console.log("Cities: " + main_map_cities.size());
+            //console.log("Cities: " + main_map_cities.size() + "/" + Game.getProvincesSize());
         } catch (Exception e) {
             console.log(e);
         }
@@ -93,6 +92,7 @@ public class EditorMapProvinceNamePoints extends Menu {
             public void actionElement() {
                 EditorSaveLoad.saveCities();
                 SaveManager.saveProvinceNamesPoints();
+                Game.DRAW_CIV_NAMES_START_DRAWING_MAP_SCALE = 0.6F;
                 Game.menuManager.setViewID(View.EDITOR_MAPS_EDIT);
                 Game.menuManager.addToast(Game.lang.get("Saved"));
             }
@@ -123,6 +123,7 @@ public class EditorMapProvinceNamePoints extends Menu {
 
         //Load constants
         EditorSaveLoad.loadCities();
+        Game.DRAW_CIV_NAMES_START_DRAWING_MAP_SCALE = 0F;
     }
     //UI - Editor Menu/Map
     public void draw (SpriteBatch oSB, int iTranslateX, int iTranslateY, boolean menuIsActive, Status titleStatus) {
