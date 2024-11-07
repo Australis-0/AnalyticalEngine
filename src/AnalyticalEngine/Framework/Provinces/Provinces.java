@@ -22,6 +22,8 @@ public class Provinces {
         return all_provinces;
     }
 
+    public static Province getProvince (int arg0_province_id) throws Exception {
+        return getProvince(Integer.toString(arg0_province_id)); }
     public static Province getProvince (String arg0_province_name) throws Exception {
         //Convert from parameters
         String province_name = arg0_province_name;
@@ -55,6 +57,19 @@ public class Provinces {
 
         //Throw exception if Province could not be returned.
         throw new Exception("Invalid Province ID/Name: " + arg0_province_name);
+    }
+
+    public static float[] getProvinceCentre (String arg0_string) throws Exception {
+        return getProvinceCentre(getProvince(arg0_string)); }
+    public static float[] getProvinceCentre (Province arg0_province) throws Exception {
+        //Convert from parameters
+        Province province = arg0_province;
+
+        //Return statement
+        return new float[]{
+            (float) province.getCenterX(),
+            (float) province.getCenterY()
+        };
     }
 
     public static List<String> getProvinceCores (String arg0_string) throws Exception {

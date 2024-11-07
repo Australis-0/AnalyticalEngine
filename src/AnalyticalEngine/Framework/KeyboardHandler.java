@@ -246,7 +246,7 @@ public class KeyboardHandler {
 
         //Change current state
         current_string = new_string;
-        caret_position = new_string.length() - 1;
+        caret_position = new_string.length();
     }
     public void pressKey (int arg0_keycode) {
         //Convert from parameters

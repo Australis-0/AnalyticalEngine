@@ -4,19 +4,18 @@ import aoc.kingdoms.lukasz.jakowski.AA_Game;
 import com.badlogic.gdx.Files.FileType;
 import com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application;
 import com.badlogic.gdx.backends.lwjgl3.Lwjgl3ApplicationConfiguration;
+
+import java.awt.*;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.lang.*;
 
 //Import AnalyticalEngine
-import AnalyticalEngine.*;
+import static AnalyticalEngine.AnalyticalEngine.AnalyticalEngine;
 
 //Define DesktopLauncher
 public class DesktopLauncher {
-    public DesktopLauncher() {
-    }
-
     public static void main(String[] arg) {
         Lwjgl3ApplicationConfiguration config = new Lwjgl3ApplicationConfiguration();
         config.setTitle("PROJECT ORION - Age of Civilisations 3 - Dev Version");
@@ -31,7 +30,7 @@ public class DesktopLauncher {
         boolean tVSync = true;
 
         //INITIALISE ANALYTICAL ENGINE
-        AnalyticalEngine analytical_engine = (new AnalyticalEngine()).initialise();
+        AnalyticalEngine().initialise();
 
         try {
             FileReader fr = new FileReader("settings/Config.txt");

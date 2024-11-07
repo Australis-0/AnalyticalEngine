@@ -5,8 +5,12 @@
 
 package aoc.kingdoms.lukasz.menusMapEditor;
 
+import static AnalyticalEngine.AnalyticalEngine.AnalyticalEngine;
 import AnalyticalEngine.Debugger.console;
+import AnalyticalEngine.Framework.ABRS.EditorSaveLoad;
+import AnalyticalEngine.Framework.Datatypes.Map;
 import AnalyticalEngine.Framework.KeyboardHandler;
+import AnalyticalEngine.Framework.Provinces.Provinces;
 import aoc.kingdoms.lukasz.jakowski.AA_KeyManager;
 import aoc.kingdoms.lukasz.jakowski.CFG;
 import aoc.kingdoms.lukasz.jakowski.Game;
@@ -31,16 +35,54 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import java.util.ArrayList;
 import java.util.List;
 
+import static AnalyticalEngine.AnalyticalEngine.AnalyticalEngine;
+
 public class EditorMapProvinceNamePoints extends Menu {
+    //Declare global instance variables
+    public static boolean centerPoint = false;
     public static boolean editing_province_names = false;
+    public static boolean firstPoint = true;
 
     //Event Handlers
     //Keyboard Events
     static KeyboardHandler province_name_input = new KeyboardHandler();
 
-    public static boolean firstPoint = true;
-    public static boolean centerPoint = false;
+    //Framework
+    public static void editorSetProvinceName (String arg0_province_id, String arg1_province_name) {
+        //Convert from parameters
+        String province_id = arg0_province_id;
+        String province_name = arg1_province_name;
 
+        try {
+            //Declare local instance variables
+            ArrayList<Map.City> main_map_cities = (ArrayList<Map.City>) AnalyticalEngine().main.get("map_cities");
+            int province_city_index = Map.cityExistsIndexOf(province_id);
+            Province province_obj = Provinces.getProvince(province_id);
+
+            float[] province_centre = Provinces.getProvinceCentre(province_obj);
+
+            //Set province name; add city if it doesn't exist
+            province_obj.setProvinceName(province_name);
+            Map.City local_city = new Map.City(province_centre[0], province_centre[1], province_name, province_id);
+
+            console.log("City exists in index " + province_city_index);
+
+            if (province_city_index == -1) {
+                main_map_cities.add(local_city);
+            } else {
+                main_map_cities.set(province_city_index, local_city);
+            }
+
+            //Update main
+            AnalyticalEngine().main.put("map_cities", main_map_cities);
+            console.log("Main: " + AnalyticalEngine().main.size());
+            console.log("Cities: " + main_map_cities.size());
+        } catch (Exception e) {
+            console.log(e);
+        }
+    }
+
+    //UI - Editor Menu
     public EditorMapProvinceNamePoints() {
         List<MenuElement> menuElements = new ArrayList();
         menuElements.add(new ButtonMain((String)null, 1, -1, CFG.PADDING, CFG.GAME_HEIGHT - CFG.BUTTON_HEIGHT - CFG.PADDING, CFG.BUTTON_WIDTH * 2, true) {
@@ -49,6 +91,7 @@ public class EditorMapProvinceNamePoints extends Menu {
             }
 
             public void actionElement() {
+                EditorSaveLoad.saveCities();
                 SaveManager.saveProvinceNamesPoints();
                 Game.menuManager.setViewID(View.EDITOR_MAPS_EDIT);
                 Game.menuManager.addToast(Game.lang.get("Saved"));
@@ -71,14 +114,20 @@ public class EditorMapProvinceNamePoints extends Menu {
 
             public void actionElement() {
                 editing_province_names = (!editing_province_names);
+                AnalyticalEngine().keybind_freeze = editing_province_names;
                 this.updateLanguage();
             }
         });
 
         this.initMenu((MenuTitle)null, 0, 0, CFG.GAME_WIDTH, CFG.GAME_HEIGHT, menuElements, true);
-    }
 
+        //Load constants
+        EditorSaveLoad.loadCities();
+    }
+    //UI - Editor Menu/Map
     public void draw (SpriteBatch oSB, int iTranslateX, int iTranslateY, boolean menuIsActive, Status titleStatus) {
+        AnalyticalEngine().keybind_freeze = true;
+
         //Draws boxes for buttons
         ImageManager.getImage(Images.boxBIG).draw2(oSB, iTranslateX, iTranslateY + CFG.GAME_HEIGHT - CFG.BUTTON_HEIGHT - CFG.PADDING * 2 - Images.boxTitleBORDERWIDTH, CFG.BUTTON_WIDTH * 2 + CFG.PADDING * 2 + Images.boxTitleBORDERWIDTH, CFG.BUTTON_HEIGHT + CFG.PADDING * 2 + Images.boxTitleBORDERWIDTH, true, false);
         ImageManager.getImage(Images.boxBIG).draw2(oSB, CFG.GAME_WIDTH - CFG.BUTTON_WIDTH * 2 - CFG.PADDING * 2 - Images.boxTitleBORDERWIDTH + iTranslateX, iTranslateY + CFG.GAME_HEIGHT - CFG.BUTTON_HEIGHT - CFG.PADDING * 2 - Images.boxTitleBORDERWIDTH, CFG.BUTTON_WIDTH * 2 + CFG.PADDING * 2 + Images.boxTitleBORDERWIDTH, CFG.BUTTON_HEIGHT + CFG.PADDING * 2 + Images.boxTitleBORDERWIDTH, false, false);
@@ -90,7 +139,7 @@ public class EditorMapProvinceNamePoints extends Menu {
         FBOProvinceNames.disposeProvinceNamesTexture();
         FBOProvinceNames.disposeProvinceNamesFBO();
     }
-
+    //UI - Editor Menu
     public final void drawEditorText (SpriteBatch oSB, int iTranslateX, int iTranslateY) {
         String sText;
 
@@ -134,7 +183,7 @@ public class EditorMapProvinceNamePoints extends Menu {
         Renderer.drawText(oSB, sText, iTranslateX + CFG.PADDING * 4, iTranslateY + CFG.PADDING * 4, Colors.COLOR_TEXT_TITLE);
     }
 
-    //Events handler
+    //Events handler - Keyboard
     public static boolean keyUp (int keycode) {
         if (Game.iActiveProvince >= 0) {
             Province selected_province = Game.getProvince(Game.iActiveProvince);
@@ -143,7 +192,7 @@ public class EditorMapProvinceNamePoints extends Menu {
                 //Province Name Editor
                 String current_province_name = selected_province.getProvinceName();
                     province_name_input.pressKey(keycode);
-                selected_province.setProvinceName(province_name_input.getString());
+                editorSetProvinceName(Integer.toString(Game.iActiveProvince), province_name_input.getString());
             } else {
                 //Positions Editor
                 //Positions Editor - Change Mode
