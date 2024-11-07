@@ -35,13 +35,13 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import java.util.ArrayList;
 import java.util.List;
 
-import static AnalyticalEngine.AnalyticalEngine.AnalyticalEngine;
-
 public class EditorMapProvinceNamePoints extends Menu {
     //Declare global instance variables
     public static boolean centerPoint = false;
     public static boolean editing_province_names = false;
     public static boolean firstPoint = true;
+
+    public static boolean started_editor = true;
 
     //Event Handlers
     //Keyboard Events
@@ -90,11 +90,15 @@ public class EditorMapProvinceNamePoints extends Menu {
             }
 
             public void actionElement() {
+                started_editor = false;
+
                 EditorSaveLoad.saveCities();
                 SaveManager.saveProvinceNamesPoints();
-                Game.DRAW_CIV_NAMES_START_DRAWING_MAP_SCALE = 0.6F;
-                Game.menuManager.setViewID(View.EDITOR_MAPS_EDIT);
+                Game.menuManager.setViewIDWithoutAnimation(View.EDITOR_MAPS_EDIT);
                 Game.menuManager.addToast(Game.lang.get("Saved"));
+
+                AnalyticalEngine().keybind_freeze = false;
+                Game.DRAW_CIV_NAMES_START_DRAWING_MAP_SCALE = 0.6F;
             }
         });
         menuElements.add(new ButtonMain((String)null, 1, -1, CFG.GAME_WIDTH - CFG.PADDING - CFG.BUTTON_WIDTH * 2, CFG.GAME_HEIGHT - CFG.BUTTON_HEIGHT - CFG.PADDING, CFG.BUTTON_WIDTH * 2, true) {
@@ -123,12 +127,9 @@ public class EditorMapProvinceNamePoints extends Menu {
 
         //Load constants
         EditorSaveLoad.loadCities();
-        Game.DRAW_CIV_NAMES_START_DRAWING_MAP_SCALE = 0F;
     }
     //UI - Editor Menu/Map
     public void draw (SpriteBatch oSB, int iTranslateX, int iTranslateY, boolean menuIsActive, Status titleStatus) {
-        AnalyticalEngine().keybind_freeze = true;
-
         //Draws boxes for buttons
         ImageManager.getImage(Images.boxBIG).draw2(oSB, iTranslateX, iTranslateY + CFG.GAME_HEIGHT - CFG.BUTTON_HEIGHT - CFG.PADDING * 2 - Images.boxTitleBORDERWIDTH, CFG.BUTTON_WIDTH * 2 + CFG.PADDING * 2 + Images.boxTitleBORDERWIDTH, CFG.BUTTON_HEIGHT + CFG.PADDING * 2 + Images.boxTitleBORDERWIDTH, true, false);
         ImageManager.getImage(Images.boxBIG).draw2(oSB, CFG.GAME_WIDTH - CFG.BUTTON_WIDTH * 2 - CFG.PADDING * 2 - Images.boxTitleBORDERWIDTH + iTranslateX, iTranslateY + CFG.GAME_HEIGHT - CFG.BUTTON_HEIGHT - CFG.PADDING * 2 - Images.boxTitleBORDERWIDTH, CFG.BUTTON_WIDTH * 2 + CFG.PADDING * 2 + Images.boxTitleBORDERWIDTH, CFG.BUTTON_HEIGHT + CFG.PADDING * 2 + Images.boxTitleBORDERWIDTH, false, false);
@@ -139,6 +140,10 @@ public class EditorMapProvinceNamePoints extends Menu {
         FBOProvinceNames.fboNumToGenerate_Names = 0;
         FBOProvinceNames.disposeProvinceNamesTexture();
         FBOProvinceNames.disposeProvinceNamesFBO();
+
+        //Update constants
+        AnalyticalEngine().keybind_freeze = true;
+        Game.DRAW_CIV_NAMES_START_DRAWING_MAP_SCALE = 0F;
     }
     //UI - Editor Menu
     public final void drawEditorText (SpriteBatch oSB, int iTranslateX, int iTranslateY) {
