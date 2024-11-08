@@ -130,6 +130,10 @@ public class EditorMapProvinceNamePoints extends Menu {
     }
     //UI - Editor Menu/Map
     public void draw (SpriteBatch oSB, int iTranslateX, int iTranslateY, boolean menuIsActive, Status titleStatus) {
+        //Declare global instance variables
+        AnalyticalEngine().keybind_freeze = true;
+        Game.DRAW_CIV_NAMES_START_DRAWING_MAP_SCALE = 0F;
+
         //Draws boxes for buttons
         ImageManager.getImage(Images.boxBIG).draw2(oSB, iTranslateX, iTranslateY + CFG.GAME_HEIGHT - CFG.BUTTON_HEIGHT - CFG.PADDING * 2 - Images.boxTitleBORDERWIDTH, CFG.BUTTON_WIDTH * 2 + CFG.PADDING * 2 + Images.boxTitleBORDERWIDTH, CFG.BUTTON_HEIGHT + CFG.PADDING * 2 + Images.boxTitleBORDERWIDTH, true, false);
         ImageManager.getImage(Images.boxBIG).draw2(oSB, CFG.GAME_WIDTH - CFG.BUTTON_WIDTH * 2 - CFG.PADDING * 2 - Images.boxTitleBORDERWIDTH + iTranslateX, iTranslateY + CFG.GAME_HEIGHT - CFG.BUTTON_HEIGHT - CFG.PADDING * 2 - Images.boxTitleBORDERWIDTH, CFG.BUTTON_WIDTH * 2 + CFG.PADDING * 2 + Images.boxTitleBORDERWIDTH, CFG.BUTTON_HEIGHT + CFG.PADDING * 2 + Images.boxTitleBORDERWIDTH, false, false);
@@ -140,10 +144,6 @@ public class EditorMapProvinceNamePoints extends Menu {
         FBOProvinceNames.fboNumToGenerate_Names = 0;
         FBOProvinceNames.disposeProvinceNamesTexture();
         FBOProvinceNames.disposeProvinceNamesFBO();
-
-        //Update constants
-        AnalyticalEngine().keybind_freeze = true;
-        Game.DRAW_CIV_NAMES_START_DRAWING_MAP_SCALE = 0F;
     }
     //UI - Editor Menu
     public final void drawEditorText (SpriteBatch oSB, int iTranslateX, int iTranslateY) {
