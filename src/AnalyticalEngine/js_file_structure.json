@@ -1,4 +1,8 @@
 {
+  files: [
+    "/AnalyticalEngine/Config/.config_backend.js"
+  ],
+
   directories: [
     "/AnalyticalEngine/JS",
 
@@ -8,8 +12,5 @@
     "/AnalyticalEngine/Logic/Effects",
     "/AnalyticalEngine/Logic/Parsers",
     "/AnalyticalEngine/Logic/Scopes"
-  ],
-  files: [
-
   ]
 }

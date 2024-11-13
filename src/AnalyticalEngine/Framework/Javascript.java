@@ -23,7 +23,7 @@ import java.util.stream.Stream;
 
 public class Javascript {
     public static void executeJSFile (String arg0_file) {
-        executeJSFile(arg0_file, AnalyticalEngine().nashorn);}
+        executeJSFile(arg0_file, AnalyticalEngine().nashorn); }
     public static void executeJSFile (String arg0_file, ScriptEngine arg1_nashorn) {
         //Convert from parameters
         String file_path = arg0_file;
@@ -135,18 +135,19 @@ public class Javascript {
             file_structure_obj = file_structure_json.fromJson(HashMap.class, input_reader);
             input_reader.close();
 
-            Array<String> nashorn_directories = (Array<String>) file_structure_obj.get("directories");
-            console.log("Loading class type: " + nashorn_directories.getClass().getName() + " with directories: " + nashorn_directories);
+            //Load discrete nashorn_files. These are prioritised over individual directories
+            Array<String> nashorn_files = (Array<String>) file_structure_obj.get("files");
+            for (String local_file : nashorn_files)
+                executeJSFile(local_file, nashorn);
 
             //Now that directories are loaded into nashorn_directories, iterate over the List and execute .js files inside of them
+            Array<String> nashorn_directories = (Array<String>) file_structure_obj.get("directories");
             for (String local_directory : nashorn_directories) {
                 List<String> all_local_files = getAllFiles(local_directory);
-
-                console.log("Found JS files at paths " + all_local_files);
-                console.log("Loaded " + all_local_files.size() + " files present in " + local_directory);
-
                 for (String local_file : all_local_files)
                     executeJSFile(local_file, nashorn);
+
+                console.log("Loaded " + all_local_files.size() + " files present in " + local_directory);
             }
         } catch (Exception e) {
             e.printStackTrace();
