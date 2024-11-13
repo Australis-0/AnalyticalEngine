@@ -5,21 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09b6f7f8-b868-43e9-b471-ac1dbd15fa3b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Config/.config_backend.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Config/console/map_commands.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Config/console/meta_commands.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Config/console/province_commands.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/debugger/console_framework.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/arrays_basic.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/arrays_maths.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/objects_basic.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Framework/Javascript.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Framework/Javascript.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/JS/console.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/console.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/map/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/map/test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/JS/loops.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/loops.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/js_file_structure.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/js_file_structure.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Framework/Javascript.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Framework/Javascript.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +38,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.DesktopLauncher.executor": "Run",
+    "Application.DesktopLauncher.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
@@ -107,7 +95,7 @@
       <workItem from="1730810633962" duration="1000" />
       <workItem from="1730810641700" duration="494000" />
       <workItem from="1730811142213" duration="53000" />
-      <workItem from="1730811200809" duration="133348000" />
+      <workItem from="1730811200809" duration="134231000" />
     </task>
     <servers />
   </component>

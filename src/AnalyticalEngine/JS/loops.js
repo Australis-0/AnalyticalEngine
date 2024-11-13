@@ -1,19 +1,20 @@
 //Imports
 var Executors = java.util.concurrent.Executors;
+var Thread = java.lang.Thread;
 var TimeUnit = java.util.concurrent.TimeUnit;
 
 //Interval functions
 {
     /**
      * clearInterval() - Clears a currently set interval.
-     * @param {scheduler} arg0_scheduler - The scheduler for which to clear the given interval.
+     * @param {thread} arg0_thread - The thread for which to clear the given interval.
      */
-    function clearInterval (arg0_scheduler) {
+    function clearInterval (arg0_thread) {
         //Convert from parameters
-        var scheduler = arg0_scheduler;
+        var thread = arg0_thread;
 
-        //Shutdown scheduler
-        scheduler.shutdown();
+        //Cancel thread
+        if (thread && thread.isAlive()) thread.interrupt();
     }
 
     /**
@@ -21,7 +22,7 @@ var TimeUnit = java.util.concurrent.TimeUnit;
      * @param {Function} arg0_function - The function which to call per ms interval.
      * @param {number} arg1_delay - The delay in milliseconds. Every n_ms, this function is called.
      *
-     * @returns {scheduler}
+     * @returns {thread}
      */
     function setInterval (arg0_function, arg1_delay) {
         //Convert from parameters
@@ -29,11 +30,20 @@ var TimeUnit = java.util.concurrent.TimeUnit;
         var delay = arg1_delay;
 
         //Declare local instance variables
-        var scheduler = Executors.newScheduledThreadPool(1);
-        scheduler.scheduleAtFixedRate(local_function, 0, delay, TimeUnit.MILLISECONDS);
+        var interval_thread = new Thread(function(){
+            try {
+                while (!Thread.currentThread().isInterrupted()) {
+                    local_function();
+                    Thread.sleep(delay);
+                }
+            } catch (e) {
+                console.error(e);
+            }
+        });
+        interval_thread.start();
 
         //Return statement
-        return scheduler;
+        return interval_thread;
     }
 }
 
@@ -41,14 +51,14 @@ var TimeUnit = java.util.concurrent.TimeUnit;
 {
     /**
      * clearTimeout() - Clears a currently set timeout.
-     * @param {scheduler} arg0_scheduler - The scheduler for which to clear the given timeout.
+     * @param {thread} arg0_thread - The thread for which to clear the given timeout.
      */
-    function clearTimeout (arg0_future) {
+    function clearTimeout (arg0_thread) {
         //Convert from parameters
-        var future = arg0_future;
+        var thread = arg0_thread;
 
-        //Cancel future
-        future.cancel(false);
+        //Cancel thread
+        if (thread && thread.isAlive()) thread.interrupt();
     }
 
     /**
@@ -56,7 +66,7 @@ var TimeUnit = java.util.concurrent.TimeUnit;
      * @param {Function} arg0_function - The function which to call per ms interval.
      * @param {number} arg1_delay - The delay in milliseconds. After n_ms, this function is called.
      *
-     * @returns {scheduler}
+     * @returns {thread}
      */
     function setTimeout (arg0_function, arg1_delay) {
         //Convert from parameters
@@ -64,14 +74,17 @@ var TimeUnit = java.util.concurrent.TimeUnit;
         var delay = arg1_delay;
 
         //Declare local instance variables
-        var scheduler = Executors.newScheduledThreadPool(1);
-
-        var future = scheduler.schedule(function(){
-            local_function();
-            scheduler.shutdown(); //Automatically shut scheduler post-execution
+        var timeout_thread = new Thread(function(){
+            try {
+                Thread.sleep(delay);
+                local_function();
+            } catch (e) {
+                console.error(e);
+            }
         });
+        timeout_thread.start();
 
         //Return statement
-        return future;
+        return timeout_thread;
     }
 }
