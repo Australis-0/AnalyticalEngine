@@ -1,8 +1,18 @@
 package AnalyticalEngine.Framework.Provinces;
 import java.util.*;
 
+import AnalyticalEngine.AnalyticalEngine;
+import AnalyticalEngine.Debugger.console;
 import aoc.kingdoms.lukasz.jakowski.Game;
+import aoc.kingdoms.lukasz.jakowski.Renderer.Renderer;
 import aoc.kingdoms.lukasz.map.province.Province;
+import aoc.kingdoms.lukasz.map.province.ProvinceDraw;
+import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+
+//Import AnalyticalEngine
+import static AnalyticalEngine.AnalyticalEngine.AnalyticalEngine;
+import static aoc.kingdoms.lukasz.map.province.ProvinceDraw.updateDrawProvinces;
 
 public class Provinces {
     public static HashMap<String, Province> getAllProvinces () {
@@ -91,5 +101,47 @@ public class Provinces {
 
         //Return statement
         return core_tags;
+    }
+
+    public static void setProvinceColour (String arg0_string, int[] arg1_colour) throws Exception {
+        setProvinceColour(getProvince(arg0_string), arg1_colour); }
+    public static void setProvinceColour (Province arg0_province, int[] arg1_colour) {
+        //Convert from parameters
+        Province province = arg0_province;
+        int[] colour = arg1_colour;
+
+        //Declare local instance variables
+        float alpha = colour[3]/255f;
+        float blue = colour[2]/255f;
+        float green = colour[1]/255f;
+        float red = colour[0]/255f;
+
+        //THIS DRAWS THE COLOURS FOR ALL PROVINCES ON THE MAP! WHY!? WHY CAN'T YOU CHANGE A SINGLE PROVINCE COLOUR WITHOUT DOING THAT?
+        ProvinceDraw.drawProvinces = new ProvinceDraw.DrawProvinces() {
+            public void draw (SpriteBatch oSB) {
+                for (int i = 0; i < Game.NUM_OF_PROVINCES_IN_VIEW; i++) {
+                    Province local_province = Game.getProvince(Game.getProvinceInViewID(i));
+
+                    if (local_province.getProvinceID() == province.getProvinceID()) {
+                        oSB.setColor(red, blue, green, alpha);
+                    } else {
+                        oSB.setColor(0, 0, 0, 0);
+                    }
+
+                    local_province.drawLandProvince(oSB);
+                }
+                for (int i = 0; i < Game.NUM_OF_EXTRA_PROVINCES_IN_VIEW; i++) {
+                    Province local_province = Game.getProvince(Game.getProvinceInViewID(i));
+
+                    if (local_province.getProvinceID() == province.getProvinceID()) {
+                        oSB.setColor(red, blue, green, alpha);
+                    } else {
+                        oSB.setColor(0, 0, 0, 0);
+                    }
+
+                    local_province.drawLandProvince(oSB);
+                }
+            }
+        };
     }
 }

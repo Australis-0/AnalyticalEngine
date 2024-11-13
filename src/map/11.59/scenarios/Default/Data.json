@@ -136,5 +136,35 @@
 	CivID: 23,
 	PCID: 23,
 	CPID: 1896
+},
+{
+	CivTAG: "afg_m",
+	CivID: 24,
+	PCID: 24,
+	CPID: 5535
+},
+{
+	CivTAG: "nep_m",
+	CivID: 25,
+	PCID: 25,
+	CPID: 5991
+},
+{
+	CivTAG: "bhu_m",
+	CivID: 26,
+	PCID: 26,
+	CPID: 5998
+},
+{
+	CivTAG: "tib",
+	CivID: 27,
+	PCID: 27,
+	CPID: 6445
+},
+{
+	CivTAG: "xij",
+	CivID: 28,
+	PCID: 28,
+	CPID: 6421
 }
 ]

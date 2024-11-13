@@ -30,7 +30,9 @@ public class DesktopLauncher {
         boolean tVSync = true;
 
         //INITIALISE ANALYTICAL ENGINE
+        AA_Game application = new AA_Game();
         AnalyticalEngine().initialise();
+        AnalyticalEngine().setApplicationInstance(application);
 
         try {
             FileReader fr = new FileReader("settings/Config.txt");
@@ -79,6 +81,6 @@ public class DesktopLauncher {
 
         config.useVsync(tVSync);
         config.setAudioConfig(32, 512, 18);
-        new Lwjgl3Application(new AA_Game(), config);
+        new Lwjgl3Application(application, config);
     }
 }

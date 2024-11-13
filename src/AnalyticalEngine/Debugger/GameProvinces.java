@@ -51,4 +51,21 @@ public class GameProvinces {
             console.log((String) local_element[0] + ": " + local_method_string + local_element[2]);
         }
     }
+
+    public static void setProvinceColour (String arg0_province_id, String arg1_r, String arg2_g, String arg3_b, String arg4_a) throws Exception {
+        //Convert from parameters
+        String province_id = arg0_province_id;
+        int r = Integer.parseInt(arg1_r);
+        int g = Integer.parseInt(arg2_g);
+        int b = Integer.parseInt(arg3_b);
+        int a = Integer.parseInt(arg4_a);
+
+        //Declare local instance variables
+        int[] colour = {r, g, b, a};
+        Province province = Provinces.getProvince(province_id);
+
+        //Set province colour
+        Provinces.setProvinceColour(province, colour);
+        console.log("Set Province ID " + province.getProvinceID() + " colour to [" + r + ", " + g + ", " + b + ", " + a + "].");
+    }
 }

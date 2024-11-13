@@ -3,6 +3,7 @@ import AnalyticalEngine.Debugger.*;
 import AnalyticalEngine.Framework.ABRS.EditorSaveLoad;
 import AnalyticalEngine.Framework.Javascript;
 import AnalyticalEngine.Framework.Datatypes.Map;
+import aoc.kingdoms.lukasz.jakowski.AA_Game;
 
 import javax.script.ScriptEngine;
 import java.util.ArrayList;
@@ -10,6 +11,7 @@ import java.util.HashMap;
 
 public class AnalyticalEngine {
     private static AnalyticalEngine AnalyticalEngine;
+    public static AA_Game application;
     public static ScriptEngine nashorn;
     public static HashMap<String, Object> main = new HashMap<>();
 
@@ -37,5 +39,12 @@ public class AnalyticalEngine {
     public void initialiseGlobal () {
         //Begin populating main
         main.put("map_cities", new ArrayList<Map.City>());
+    }
+
+    public void setApplicationInstance (AA_Game arg0_application) {
+        //Convert from parameters
+        AA_Game application = arg0_application;
+
+        this.application = application;
     }
 }

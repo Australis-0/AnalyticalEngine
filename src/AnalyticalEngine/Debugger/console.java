@@ -121,6 +121,13 @@ public class console {
                 print_province_options.put("arg0_province_id_description", "(Number) - The Province ID which to get Province information for.");
                 print_province_options.put("arg1_display_methods_description", "(Boolean) - Optional. Whether to display methods. True by default.");
             addCommand("print-province", new String[]{"arg0_province_id", "arg1_display_methods"}, print_province_options);
+
+            //set-province-colour
+            Map<String, Object> set_province_colour_options = new HashMap<>();
+                set_province_colour_options.put("description", "Sets the colour of a province.");
+                set_province_colour_options.put("function", debugger_prefix + "GameProvinces.setProvinceColour");
+                set_province_colour_options.put("arg0_province_id_description", "(Number) - The Province ID to reference.");
+            addCommand("set-province-colour", new String[]{"arg0_province_id", "arg1_r", "arg2_g", "arg3_b", "arg4_a"}, set_province_colour_options);
         }
 
         public static void printCommandsVariable () {

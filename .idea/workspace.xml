@@ -5,8 +5,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09b6f7f8-b868-43e9-b471-ac1dbd15fa3b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/DesktopLauncher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/map/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/console.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/loops.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/AA_Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/Renderer/Renderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/AnalyticalEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/AnalyticalEngine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Debugger/GameProvinces.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Debugger/GameProvinces.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Debugger/console.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Debugger/console.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Framework/Javascript.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Framework/Javascript.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Framework/Provinces/Provinces.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Framework/Provinces/Provinces.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/js_file_structure.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/js_file_structure.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/desktop/DesktopLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/desktop/DesktopLauncher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/province/ProvinceNamesManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/province/ProvinceNamesManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/map/11.59/cities/cities.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/cities/cities.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/ProvinceDetails.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/ProvinceDetails.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNamePoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNamePoints.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/Data.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/Data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/DataProvinces.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/DataProvinces.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/Details.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/Details.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/preview.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/preview.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/statistics/usa.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/statistics/usa.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Debugger/GameProvinces.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Debugger/GameProvinces.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Debugger/console$ConsoleFramework.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Debugger/console$ConsoleFramework.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Debugger/console$ToggleDebugger.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Debugger/console$ToggleDebugger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Debugger/console.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Debugger/console.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Framework/Javascript.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Framework/Javascript.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Framework/Provinces/Provinces.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Framework/Provinces/Provinces.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/jakowski/desktop/DesktopLauncher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/jakowski/desktop/DesktopLauncher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/map/province/ProvinceNamesManager$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/map/province/ProvinceNamesManager$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/map/province/ProvinceNamesManager$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/map/province/ProvinceNamesManager$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/map/province/ProvinceNamesManager$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/map/province/ProvinceNamesManager$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/map/province/ProvinceNamesManager$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/map/province/ProvinceNamesManager$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/map/province/ProvinceNamesManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/map/province/ProvinceNamesManager.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +51,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -36,7 +71,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.DesktopLauncher.executor": "Debug",
+    "Application.DesktopLauncher.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
@@ -47,7 +82,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.24023438",
     "project.structure.side.proportion": "0.22651222",
     "settings.editor.selected.configurable": "editor.preferences.tabs",
@@ -55,6 +90,10 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Project 1159 - 11.59 - AOC3\Age of History 3\AOC3 Source\src\AnalyticalEngine\GameFramework\map" />
+      <recent name="D:\Project 1159 - 11.59 - AOC3\Age of History 3\AOC3 Source\src\AnalyticalEngine\GameFramework" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="AnalyticalEngine.Framework.Provinces" />
       <recent name="aoc.kingdoms.lukasz.jakowski" />
@@ -62,22 +101,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="DesktopLauncher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="23" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="aoc.kingdoms.lukasz.jakowski.desktop.DesktopLauncher" />
-      <module name="AOC3-Source" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="aoc.kingdoms.lukasz.jakowski.desktop.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.DesktopLauncher" />
@@ -105,7 +128,7 @@
       <workItem from="1730810633962" duration="1000" />
       <workItem from="1730810641700" duration="494000" />
       <workItem from="1730811142213" duration="53000" />
-      <workItem from="1730811200809" duration="68862000" />
+      <workItem from="1730811200809" duration="122445000" />
     </task>
     <servers />
   </component>

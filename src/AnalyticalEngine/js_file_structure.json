@@ -1,5 +1,9 @@
 {
   directories: [
+    "/AnalyticalEngine/JS",
+
+    "/AnalyticalEngine/GameFramework",
+
     "/AnalyticalEngine/Logic/Conditions",
     "/AnalyticalEngine/Logic/Effects",
     "/AnalyticalEngine/Logic/Parsers",
