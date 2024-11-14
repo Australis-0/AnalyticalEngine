@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09b6f7f8-b868-43e9-b471-ac1dbd15fa3b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/arrays_conversion.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/arrays_dataframes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/map/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/map/test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/JS/arrays_basic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/arrays_basic.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/JS/console.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/console_basic.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/JS/loops.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/loops_basic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/JS/arrays_maths.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/arrays_maths.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,9 +52,9 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.24023438",
+    "project.structure.proportion": "0.143695",
     "project.structure.side.proportion": "0.22651222",
-    "settings.editor.selected.configurable": "preferences.editor",
+    "settings.editor.selected.configurable": "preferences.language.and.region",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -97,7 +97,7 @@
       <workItem from="1730810633962" duration="1000" />
       <workItem from="1730810641700" duration="494000" />
       <workItem from="1730811142213" duration="53000" />
-      <workItem from="1730811200809" duration="135804000" />
+      <workItem from="1730811200809" duration="151807000" />
     </task>
     <servers />
   </component>
