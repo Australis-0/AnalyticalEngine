@@ -5,8 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09b6f7f8-b868-43e9-b471-ac1dbd15fa3b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/arrays_search_sort.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/src.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/actions_caching.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/actions_timelines.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/colours_basic.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/date_basic.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/date_conversion.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/date_history.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/demographics_basic.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/localisation_basic.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/numbers_basic.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/numbers_ranges.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/objects_maths.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/objects_smart_search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/pathfinding_a_star.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/strings_basic.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/strings_cleaning.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/strings_split.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/JS/arrays_maths.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/arrays_maths.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/cities/cities.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/cities/cities.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNamePoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNamePoints.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,21 +56,23 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.DesktopLauncher.executor": "Debug",
+    "Application.DesktopLauncher.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Shell Script.Autorun.executor": "Run",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Project 1159 - 11.59 - AOC3/Age of History 3/AOC3 Source/src",
+    "last_opened_file_path": "C:/Windows/System32/cmd.exe",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.143695",
     "project.structure.side.proportion": "0.22651222",
-    "settings.editor.selected.configurable": "preferences.language.and.region",
+    "settings.editor.selected.configurable": "preferences.editor",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -66,18 +87,32 @@
       <recent name="aoc.kingdoms.lukasz.jakowski.desktop" />
     </key>
   </component>
-  <component name="RunManager">
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.DesktopLauncher" />
-      </list>
-    </recent_temporary>
+  <component name="RunManager" selected="Application.DesktopLauncher">
+    <configuration name="Autorun" type="ShConfigurationType">
+      <option name="SCRIPT_TEXT" value="" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="false" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/autorun.bat" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="false" />
+      <option name="INTERPRETER_PATH" value="C:/Windows/System32/cmd.exe" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="true" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.DesktopLauncher" />
+      <item itemvalue="Shell Script.Autorun" />
+    </list>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23726.103" />
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23726.103" />
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
       </set>
     </attachedChunks>
   </component>
@@ -94,7 +129,9 @@
       <workItem from="1730810633962" duration="1000" />
       <workItem from="1730810641700" duration="494000" />
       <workItem from="1730811142213" duration="53000" />
-      <workItem from="1730811200809" duration="153388000" />
+      <workItem from="1730811200809" duration="158235000" />
+      <workItem from="1731784417683" duration="45000" />
+      <workItem from="1731784537399" duration="19991000" />
     </task>
     <servers />
   </component>

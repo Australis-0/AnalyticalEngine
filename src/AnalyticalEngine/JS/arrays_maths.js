@@ -686,7 +686,7 @@
 		}
 
 		//Return statement
-		return { Q, R };
+		return { Q: Q, R: R };
 	}
 
 	function QRLeastSquaredMatrix (arg0_matrix, arg1_matrix) {
