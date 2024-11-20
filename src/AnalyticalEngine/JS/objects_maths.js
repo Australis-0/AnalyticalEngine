@@ -1,5 +1,12 @@
 //Initialise function
 {
+	/**
+	 * addObject() - Adds a value to an object, recursively.
+	 * @param {Object} arg0_object - The object to pass.
+	 * @param {number} arg1_value - The value to add to each variable in the object.
+	 *
+	 * @returns {Object}
+	 */
 	function addObject (arg0_object, arg1_value) {
 		//Convert from parameters
 		var object = arg0_object;
@@ -9,6 +16,15 @@
 		return operateObject(object, "n + " + value);
 	}
 
+	/**
+	 * addObjects() - Adds values between two objects, recursively.
+	 * @param {Object} arg0_object - The 1st object to pass.
+	 * @param {Object} arg1_object - The 2nd object to pass.
+	 * @param {Object} [arg2_options]
+	 * @param {boolean} [arg2_options.recursive=true] - Whether the operation is recursive.
+	 *
+	 * @returns {{object: Object, ot_object: Object}}
+	 */
 	function addObjects (arg0_object, arg1_object, arg2_options) {
 		//Convert from parameters
 		var object = arg0_object;
@@ -19,6 +35,15 @@
 		return operateObjects(object, ot_object, "i = i + x", options);
 	}
 
+	/**
+	 * changeObjectRange() - Changes object ranges, non-recursively, for a given key.
+	 * @param {Object} arg0_object - The object to pass.
+	 * @param {String} arg1_key - The key corresponding to the range to modify.
+	 * @param {String} arg2_min_max_argument - Either 'minimum'/'maximum'. 'both' by default.
+	 * @param {number} arg3_value - The number to change these ranges by.
+	 *
+	 * @returns {Object}
+	 */
 	function changeObjectRange (arg0_object, arg1_key, arg2_min_max_argument, arg3_value) {
 		//Convert from parameters
 		var object = arg0_object;
@@ -50,6 +75,13 @@
 		return object;
 	}
 
+	/**
+	 * divideObject()  - Divides an object by a value, recursively.
+	 * @param {Object} arg0_object - The object to pass.
+	 * @param {number} arg1_value - The value to divide each variable in the object by.
+	 *
+	 * @returns {Object}
+	 */
 	function divideObject (arg0_object, arg1_value) {
 		//Convert from parameters
 		var object = arg0_object;
@@ -59,6 +91,15 @@
 		return operateObject(object, "n/" + value);
 	}
 
+	/**
+	 * divideObjects() - Divides two objects, recursively.
+	 * @param {Object} arg0_object - The 1st object to pass.
+	 * @param {Object} arg1_object - The 2nd object to pass.
+	 * @param {Object} [arg2_options]
+	 * @param {boolean} [arg2_options.recursive=true] - Whether the operation is recursive.
+	 *
+	 * @returns {{object: Object, ot_object: Object}}
+	 */
 	function divideObjects (arg0_object, arg1_object, arg2_options) {
 		//Convert from parameters
 		var object = arg0_object;
@@ -69,6 +110,15 @@
 		return operateObjects(object, ot_object, "i = i/x", options);
 	}
 
+	/**
+	 * getObjectMaximum() - Fetches the maximum value within an object.
+	 * @param {Object} arg0_object - The object to pass.
+	 * @param {Object} [arg1_options]
+	 * @param {boolean} [arg1_options.include_ranges=false] - Whether to include ranges.
+	 * @param {boolean} [arg1_options.recursive=true] - Whether the function should be recursive.
+	 *
+	 * @returns {number}
+	 */
 	function getObjectMaximum (arg0_object, arg1_options) {
 		//Convert from parameters
 		var object = arg0_object;
@@ -107,6 +157,13 @@
 		return local_maximum;
 	}
 
+	/**
+	 * getObjectMinimum() - Fetches the minimum value within an object.
+	 * @param {Object} arg0_object - The object to pass.
+	 * @param {Object} [arg1_options]
+	 * @param {boolean} [arg1_options.include_ranges=false] - Whether to include ranges.
+	 * @param {boolean} [arg1_options.recursive=true] - Whether the function is recursive.
+	 */
 	function getObjectMinimum (arg0_object, arg1_options) {
 		//Convert from parameters
 		var object = arg0_object;
@@ -142,6 +199,14 @@
 		return local_minimum;
 	}
 
+	/**
+	 * getObjectSum() - Fetches the object sum, recursively.
+	 * @param {Object} arg0_object - The object to pass.
+	 * @param {Object} [arg1_options]
+	 * @param {boolean} [arg1_options.recursive=true] - Whether to sum recursively.
+	 *
+	 * @returns {number}
+	 */
 	function getObjectSum (arg0_object, arg1_options) {
 		//Convert from parameters
 		var object = arg0_object;
@@ -170,6 +235,12 @@
 		return total_sum;
 	}
 
+	/**
+	 * invertFractionObject() - Inverts a fraction object, fetching the reciprocal of percentage values.
+	 * @param {Object} arg0_object - The object to pass.
+	 *
+	 * @returns {Object}
+	 */
 	function invertFractionObject (arg0_object) {
 		//Convert from parameters
 		var object = JSON.parse(JSON.stringify(arg0_object));
@@ -188,6 +259,15 @@
 		return object;
 	}
 
+	/**
+	 * modifyObjectRange() - Modifies ranges in an object recursively, by operating on objects.
+	 * @param {Object} arg0_object - The object to pass.
+	 * @param {number} arg1_value - The value to modify ranges by.
+	 * @param {Object} [arg2_options]
+	 * @param {Object} [arg2_options.include_numbers=true] - Whether to include single numbers.
+	 *
+	 * @returns {Object}
+	 */
 	function modifyObjectRange (arg0_object, arg1_value, arg2_options) {
 		//Convert from parameters
 		var object = arg0_object;
@@ -220,6 +300,13 @@
 		return object;
 	}
 
+	/**
+	 * multiplyObject() - Multiplies an object by a value, recursively.
+	 * @param {Object} arg0_object - The object to pass.
+	 * @param {number} arg1_value - The value to add to each variable in the object.
+	 *
+	 * @returns {Object}
+	 */
 	function multiplyObject (arg0_object, arg1_value) {
 		//Convert from parameters
 		var object = arg0_object;
@@ -229,6 +316,15 @@
 		return operateObject(object, "n*" + value + "");
 	}
 
+	/**
+	 * multiplyObjects() - Multiplies an object recursively.
+	 * @param {Object} arg0_object - The 1st object to pass.
+	 * @param {Object} arg1_object - The 2nd object to pass.
+	 * @param {Object} [arg2_options]
+	 * @param {boolean} [arg2_options.recursive=true] - Whether the operation is recursive.
+	 *
+	 * @returns {{object: Object, ot_object: Object}}
+	 */
 	function multiplyObjects (arg0_object, arg1_object, arg2_options) {
 		//Convert from parameters
 		var object = arg0_object;
@@ -239,6 +335,17 @@
 		return operateObjects(object, ot_object, "i = i*x", options);
 	}
 
+	/**
+	 * operateObject() - Performs an operation on a single object, recursively.
+	 * @param {Object} arg0_object - The object to pass to operateObject().
+	 * @param {String} arg1_equation - The string literal to use as an equation.<br>- 'n' represents the corresponding element of the 1st object.
+	 * @param {Object} [arg2_options]
+	 * @param {boolean} [arg2_options.log_errors=false] - Whether to log errors.
+	 * @param {boolean} [arg2_options.only_numbers=true] - Whether only numbers can be operated on.
+	 * @param {boolean} [arg2_options.recursive=true] - Whether the operation is recursive.
+	 *
+	 * @returns {Object}
+	 */
 	function operateObject (arg0_object, arg1_equation, arg2_options) {
 		//Convert from parameters
 		var object = arg0_object;
@@ -273,6 +380,18 @@
 		return processed_object;
 	}
 
+	/**
+	 * operateObjects() - Performs an operation on two objects together, recursively.
+	 * @param {Object} arg0_object - The 1st object to pass to operateObjects().
+	 * @param {Object} arg1_object - The 2nd object to pass to operateObjects().
+	 * @param {String} arg2_equation - The string literal to use as an equation (e.g. i = i + x).<br>- 'i' represents the corresponding element of the 1st object,<br>- 'x' represents the corresponding element of the 2nd object;<br>- undefined values are represented as zero.
+	 * @param {Object} [arg3_options]
+	 * @param {boolean} [arg3_options.log_errors=false] - Whether to log errors.
+	 * @param {boolean} [arg3_options.only_numbers=true] - Whether only numbers can be operated on.
+	 * @param {boolean} [arg3_options.recursive=true] - Whether the operation is recursive.
+	 *
+	 * @returns {{object: Object, ot_object: Object}}
+	 */
 	function operateObjects (arg0_object, arg1_object, arg2_equation, arg3_options) {
 		//Convert from parameters
 		var object = arg0_object;
@@ -364,6 +483,12 @@
 		};
 	}
 
+	/**
+	 * standardiseFraction() - Standardises the object to maximum = 1, with each other value being adjusted to a value.
+	 * @param {Object} arg0_object - The object to pass.
+	 *
+	 * @returns {Object}
+	 */
 	function standardiseFraction (arg0_object) {
 		//Convert from parameters
 		var object = JSON.parse(JSON.stringify(arg0_object));
@@ -387,6 +512,14 @@
 		return object;
 	}
 
+	/**
+	 * standardisePercentage() - Standardises the object to a given total.
+	 * @param {Object} arg0_object - The object to pass.
+	 * @param {number} arg1_total - The total figure to adjust the object to.
+	 * @param {boolean} [arg2_round=false] - Whether to force rounding when standardising.
+	 *
+	 * @returns {Object}
+	 */
 	function standardisePercentage (arg0_object, arg1_total, arg2_round) {
 		//Convert from parameters
 		var object = JSON.parse(JSON.stringify(arg0_object));
@@ -418,6 +551,13 @@
 		return object;
 	}
 
+	/**
+	 * subtractObject() - Subtracts a value from an object, recursively.
+	 * @param {Object} arg0_object - The object to pass.
+	 * @param {number} arg1_value - The value to add to each variable in the object.
+	 *
+	 * @returns {Object}
+	 */
 	function subtractObject (arg0_object, arg1_value) {
 		//Convert from parameters
 		var object = arg0_object;
@@ -427,6 +567,15 @@
 		return operateObject(object, "n - " + value);
 	}
 
+	/**
+	 * subtractObjects() - Subtracts one object from another, recursively.
+	 * @param {Object} arg0_object - The 1st object to pass.
+	 * @param {Object} arg1_object - The 2nd object to pass.
+	 * @param {Object} [arg2_options]
+	 * @param {boolean} [arg2_options.recursive=true] - Whether the operation is recursive.
+	 *
+	 * @returns {{object: Object, ot_object: Object}}
+	 */
 	function subtractObjects (arg0_object, arg1_object, arg2_options) {
 		//Convert from parameters
 		var object = arg0_object;

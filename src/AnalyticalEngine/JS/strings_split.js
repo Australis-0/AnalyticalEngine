@@ -1,5 +1,12 @@
 //Initialise functions
 {
+	/**
+	 * split() - Splits a string in two based on a character index.
+	 * @param {String} arg0_input_string - The string to pass to the function.
+	 * @param {number} [arg1_index=0] - The index to split the string on. 0 by default.
+	 *
+	 * @returns {Array<String, String>}
+	 */
 	function split (arg0_input_string, arg1_index) {
 		//Convert from parameters
 		var string = arg0_input_string;
@@ -9,6 +16,16 @@
 		return [string.slice(0, index), string.slice(index)];
 	}
 
+	/**
+	 * splitMarkdownString() - Splits a string according to Markdown, preserving lists, with \n as breakpoints.
+	 * @param {String} arg0_input_string - The input string to pass to the function.
+	 * @param {Object} [arg1_options]
+	 * @param {number} [arg1_options.maximum_characters=1024] - The maximum characters per page.
+	 * @param {number} [arg1_options.maximum_lines] - The maximum lines per page.
+	 * @param {boolean} [arg1_options.split_bullet_points=false] - Whether to try and keep boolean points together.
+	 *
+	 * @returns {Array<String>}
+	 */
 	function splitMarkdownString (arg0_input_string, arg1_options) {
 		//Convert from parameters
 		var input_string = arg0_input_string;
@@ -123,7 +140,13 @@
 		} catch (e) {}
 	}
 
-
+	/**
+	 * splitString() - Splits a string equally a character count.
+	 * @param {String} arg0_input_string - The string to pass to the function.
+	 * @param {number} [arg1_length=200] - The number of characters to allow per page.
+	 *
+	 * @returns {Array<String>}
+	 */
 	function splitString (arg0_input_string, arg1_length) {
 		//Convert from parameters
 		var string = arg0_input_string;
@@ -147,6 +170,14 @@
 		return string_array;
 	}
 
+	/**
+	 * truncateString() - Truncates a string after a given max. character length.
+	 * @param {String} arg0_input_string - The string to pass to the function.
+	 * @param {number} [arg1_length=80] - The number of max characters to display.
+	 * @param {boolean} [arg2_do_not_show_dots=false] - Whether to show dots at the end.
+	 *
+	 * @returns {String}
+	 */
 	function truncateString (arg0_input_string, arg1_length, arg2_do_not_show_dots) {
 		//Convert from parameters
 		var string = arg0_input_string;

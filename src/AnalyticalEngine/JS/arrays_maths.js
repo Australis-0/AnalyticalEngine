@@ -1,5 +1,11 @@
 //Initialise functions
 {
+	/**
+	 * absoluteValueArray() - Performs an absolute value operation on every valid element in an array, recursively.
+	 * @param {Array} arg0_array - The array to pass to the function.
+	 *
+	 * @returns {Array}
+	 */
 	function absoluteValueArray (arg0_array) {
 		//Convert from parameters
 		var array = getList(arg0_array);
@@ -8,6 +14,15 @@
 		return operateArray(array, "Math.abs(n)");
 	}
 
+	/**
+	 * absoluteValueArrays() - Absolute value the distance between two arrays, recursively.
+	 * @param {Array} arg0_array - The 1st array to perform absolute distances on.
+	 * @param {Array} arg1_arrya - The 2nd array with which to compare distances.
+	 * @param {Object} [arg2_options]
+	 * @param {boolean} [arg2_options.recursive=true] - Whether the operation is recursive.
+	 *
+	 * @returns {Array}
+	 */
 	function absoluteValueArrays (arg0_array, arg1_array, arg2_options) {
 		//Convert from parameters
 		var array = getList(arg0_array);
@@ -18,6 +33,12 @@
 		return operateArrays(array, ot_array, "Math.abs(i - x)", options);
 	}
 
+	/**
+	 * addArray() - Performs an addition operation on every valid element in an array, recursively.
+	 * @param {Array} arg0_array - The array to pass to the function.
+	 *
+	 * @returns {Array}
+	 */
 	function addArray (arg0_array, arg1_number) {
 		//Convert from parameters
 		var array = getList(arg0_array);
@@ -27,6 +48,15 @@
 		return operateArray(array, "n + " + number);
 	}
 
+	/**
+	 * addArrays() - Adds two arrays together recursively.
+	 * @param {Array} arg0_array - The 1st array to add to.
+	 * @param {Array} arg1_array - The 2nd array to add with.
+	 * @param {Object} [arg2_options]
+	 * @param {boolean} [arg2_options.recursive=true]
+	 *
+	 * @returns {Array}
+	 */
 	function addArrays (arg0_array, arg1_array, arg2_options) {
 		//Convert from parameters
 		var array = getList(arg0_array);
@@ -37,6 +67,13 @@
 		return operateArrays(array, ot_array, "i + x", options);
 	}
 
+	/**
+	 * adddMatrices() - Adds 2 matrices represented as 2D arrays together.
+	 * @param {Array<Array>} arg0_matrix - The 1st matrix to ad.
+	 * @param {Array<Array>} arg1_matrix - The 2nd matrix to add.
+	 *
+	 * @returns {Array<Array>}
+	 */
 	function addMatrices (arg0_matrix, arg1_matrix) {
 		//Convert from parameters
 		var matrix = arg0_matrix;
@@ -60,6 +97,13 @@
 		return return_matrix;
 	}
 
+	/**
+	 * appendArrays() - Concatenates two arrays and returns it.
+	 * @param {Array} arg0_array - The base array.
+	 * @param {Array} arg1_array - The 2nd array to append to the 1st.
+	 *
+	 * @returns {Array}
+	 */
 	function appendArrays (arg0_array, arg1_array) {
 		//Convert from parameters
 		var array = getList(arg0_array);
@@ -69,6 +113,13 @@
 		return array.concat(ot_array);
 	}
 
+	/**
+	 * arrayIsOfType() - Whether an array is purely of a given type.
+	 * @param {Array} arg0_array - The array to pass to the function.
+	 * @param {String} arg1_type - The typeof to compare to.
+	 *
+	 * @returns {Array}
+	 */
 	function arrayIsOfType (arg0_array, arg1_type) {
 		//Convert from parameters
 		var array = getList(arg0_array);
@@ -86,6 +137,13 @@
 		return (!check_failed);
 	}
 
+	/**
+	 * augmentMatrices() - Combine the columns of two matrices to form a new matrix.
+	 * @param {Array<Array>} arg0_matrix - The 1st matrix to augment on.
+	 * @param {Array<Array>} arg1_matrix - The 2nd matrix to augment with.
+	 *
+	 * @returns {Array<Array>}
+	 */
 	function augmentMatrices (arg0_matrix, arg1_matrix) {
 		//Convert from parameters
 		var matrix = arg0_matrix;
@@ -102,6 +160,12 @@
 		return return_matrix;
 	}
 
+	/**
+	 * choleskyDecompositionMatrix() - Performs a Cholesky decomposition on a matrix.
+	 * @param {Array<Array>} arg0_matrix - The matrix to pass to the function.
+	 *
+	 * @returns {Array<Array>}
+	 */
 	function choleskyDecompositionMatrix (arg0_matrix) {
 		//Convert from parameters
 		var matrix = arg0_matrix;
@@ -137,6 +201,12 @@
 		return lower_triangular_matrix;
 	}
 
+	/**
+	 * divideArray() - Performs a division operation on every valid element in an array, recursively.
+	 * @param {Array} arg0_array - The array to pass to the function.
+	 *
+	 * @returns {Array}
+	 */
 	function divideArray (arg0_array, arg1_number) {
 		//Convert from parameters
 		var array = getList(arg0_array);
@@ -146,6 +216,15 @@
 		return operateArray(array, "n/" + number);
 	}
 
+	/**
+	 * divideArrays() - Divides two arrays together recursively.
+	 * @param {Array} arg0_array - The base array.
+	 * @param {Array} arg1_array - The divisor array.
+	 * @param {Object} [arg2_options]
+	 * @param {boolean} [arg2_options.recursive] - Whether the opreation is recursive.
+	 *
+	 * @returns {Array}
+	 */
 	function divideArrays (arg0_array, arg1_array, arg2_options) {
 		//Convert from parameters
 		var array = getList(arg0_array);
@@ -156,6 +235,12 @@
 		return operateArrays(array, ot_array, "i/x", options);
 	}
 
+	/**
+	 * exponentiateArray() - Performs an exponent operation on every valid element in an array, recursively.
+	 * @param {Array} arg0_array - The array to pass to the function.
+	 *
+	 * @returns {Array}
+	 */
 	function exponentiateArray (arg0_array, arg1_number) {
 		//Convert from parameters
 		var array = getList(arg0_array);
@@ -165,6 +250,15 @@
 		return operateArray(array, "Math.pow(n, " + number + ")");
 	}
 
+	/**
+	 * exponentiateArrays() - Exponentiates two arrays recursively.
+	 * @param {Array} arg0_array - The base array.
+	 * @param {Array} arg1_array - The power array.
+	 * @param {Object} [arg2_options]
+	 * @param {boolean} [arg2_options.recursive=true] - Whether the operation is recursive.
+	 *
+	 * @returns {Array}
+	 */
 	function exponentiateArrays (arg0_array, arg1_array, arg2_options) {
 		//Convert from parameters
 		var array = getList(arg0_array);
@@ -175,6 +269,12 @@
 		return operateArrays(array, ot_array, "Math.pow(i, x)", options);
 	}
 
+	/**
+	 * gaussEliminationMatrix() - Performs Gauss elimination on a matrix.
+	 * @param {Array<Array>} - The matrix to pass to the function.
+	 *
+	 * @returns {Array<Array>}
+	 */
 	function gaussEliminationMatrix (arg0_matrix) {
 		//Convert from parameters
 		var matrix = arg0_matrix;
@@ -222,6 +322,14 @@
 		return solution;
 	}
 
+	/**
+	 * gaussJacobiMatrix() - Performs Gauss-Jacobi on a matrix.
+	 * @param {Array<Array>} arg0_matrix - The matrix to pass to the function.
+	 * @param {number} [arg1_tolerance=1e-6] - The level of accuracy to tolerate.
+	 * @param {number} [arg2_max_iterations=1000] - The number of max iterations.
+	 *
+	 * @returns {Array<Array>}
+	 */
 	function gaussJacobiMatrix (arg0_matrix, arg1_tolerance, arg2_max_iterations) {
 		//Convert from parameters
 		var matrix = arg0_matrix;
@@ -262,6 +370,12 @@
 		return solution;
 	}
 
+	/**
+	 * gaussJordanMatrix() - Performs Gauss-Jordan on a matrix.
+	 * @param {Array<Array>} arg0_matrix - The matrix to pass to the function.
+	 *
+	 * @returns {Array<Array>}
+	 */
 	function gaussJordanMatrix (arg0_matrix) {
 		//Convert from parameters
 		var matrix = arg0_matrix;
@@ -302,6 +416,14 @@
 		return solution;
 	}
 
+	/**
+	 * gaussSeidelMatrix() - Performs Gauss-Seidel on a matrix.
+	 * @param {Array<Array>} arg0_matrix - The matrix to pass to the function.
+	 * @param {number} [arg1_tolerance=1e-6] - The level of accuracy to tolerate.
+	 * @param {number} [arg2_max_iterations=1000] - The number of max iterations.
+	 *
+	 * @returns {Array<Array>}
+	 */
 	function gaussSeidelMatrix (arg0_matrix, arg1_tolerance, arg2_max_iterations) {
 		//Convert from parameters
 		var matrix = arg0_matrix;
@@ -342,6 +464,14 @@
 		return solution;
 	}
 
+	/**
+	 * getCofactor() - Fetches the cofactor in a matrix.
+	 * @param {Array<Array>} arg0_matrix - The matrix to pass to the function.
+	 * @param {number} arg1_row - The row to calculate cofactor for.
+	 * @param {number} arg2_column - The column to calculate cofactor for.
+	 *
+	 * @returns {Array<Array>}
+	 */
 	function getCofactor (arg0_matrix, arg1_row, arg2_column) {
 		//Convert from parameters
 		var matrix = arg0_matrix;
@@ -366,6 +496,12 @@
 		return minor_matrix.push(new_row);
 	}
 
+	/**
+	 * getMatrixDeterminant() - Calculates the matrix determinant.
+	 * @param {Array<Array>} - The matrix to pass to the function.
+	 *
+	 * @returns {number}
+	 */
 	function getMatrixDeterminant (arg0_matrix) {
 		//Convert fromn parameters
 		var matrix = arg0_matrix;
@@ -416,6 +552,12 @@
 		return sum;
 	}
 
+	/**
+	 * householderTransformationMatrix() - Performs Householder transformation on a matrix.
+	 * @param {Array<Array>} arg0_matrix - The matrix to pass to the function.
+	 *
+	 * @returns {Array<Array>}
+	 */
 	function householderTransformationMatrix (arg0_matrix) {
 		//Convert from parameters
 		var matrix = arg0_matrix;
@@ -457,6 +599,12 @@
 		return tridiagonal_matrix;
 	}
 
+	/**
+	 * inverseMatrix() - Inverts a matrix.
+	 * @param {Array<Array>} - The matrix to pass to the function.
+	 *
+	 * @returns {Array<Array>}
+	 */
 	function inverseMatrix (arg0_matrix) {
 		//Convert from parameters
 		var matrix = arg0_matrix;
@@ -498,6 +646,12 @@
 		return inverse;
 	}
 
+	/**
+	 * LUDecompositionMatrix() - Performs LUD decomposition on a matrix.
+	 * @param {Array<Array>} arg0_matrix - The matrix to pass to the function.
+	 *
+	 * @returns {{L: Array<Array>, U: Array<Array>}}
+	 */
 	function LUDecompositionMatrix (arg0_matrix) {
 		//Convert from parameters
 		var matrix = arg0_matrix;
@@ -538,6 +692,12 @@
 		return { L: L, U: U };
 	}
 
+	/**
+	 * multiplyArray() - Performs a multiplication operation on every valid element in an array, recursively.
+	 * @param {Array} arg0_array - The array to pass to the function.
+	 *
+	 * @returns {Array}
+	 */
 	function multiplyArray (arg0_array, arg1_number) {
 		//Convert from parameters
 		var array = getList(arg0_array);
@@ -547,6 +707,15 @@
 		return operateArray(array, "n*" + number);
 	}
 
+	/**
+	 * multiplyArrays() - Multiplies two arrays recursively.
+	 * @param {Array<number>} arg0_array - The base array.
+	 * @param {Array<number>} arg1_array - The array to multiply by.
+	 * @param {Object} [arg2_options]
+	 * @param [arg2_options.recursive=true] - Whether the operation is recursive.
+	 *
+	 * @returns {Array}
+	 */
 	function multiplyArrays (arg0_array, arg1_array, arg2_options) {
 		//Convert from parameters
 		var array = getList(arg0_array);
@@ -557,6 +726,13 @@
 		return operateArrays(array, ot_array, "i*x", options);
 	}
 
+	/**
+	 * multiplyMatrices() - Multiplies two matrices.
+	 * @param {Array<Array>} arg0_matrix - The 1st matrix to input.
+	 * @param {Array<Array>} arg1_matrix - The 2nd matrix to input.
+	 *
+	 * @returns {Array<Array>}
+	 */
 	function multiplyMatrices (arg0_matrix, arg1_matrix) {
 		//Convert from parameters
 		var matrix = arg0_matrix;
@@ -587,6 +763,13 @@
 		return return_matrix;
 	}
 
+	/**
+	 * operateArray() - Applies a mathematical equation to every element of an array, recursively.
+	 * @param {Array} arg0_array - The array to pass to operateArray().
+	 * @param {String} arg1_equation - The string literal to use as an equation.<br>- 'n' represents the current array element.
+	 *
+	 * @returns {Array}
+	 */
 	function operateArray (arg0_array, arg1_equation) {
 		//Convert from parameters
 		var array = getList(arg0_array);
@@ -607,6 +790,16 @@
 		});
 	}
 
+	/**
+	 * operateArrays() - Performs an operation when merging two arrays together, recursively.
+	 * @param {Array} arg0_array - The 1st array to pass to operateArrays().
+	 * @param {Array} arg1_array - The 2nd array to pass to operateArrays().
+	 * @param {String} arg2_equation - The string literal to use as an equation.<br>- 'i' represents the corresponding element of the 1st array,<br>- 'x' represents the corresponding element of the 2nd array.
+	 * @param {Object} [arg3_options]
+	 * @param {boolean} [arg3_options.recursive=true] - Whether the operation is recursive.
+	 *
+	 * @returns {Array}
+	 */
 	function operateArrays (arg0_array, arg1_array, arg2_equation, arg3_options) {
 		//Convert from parameters
 		var array = getList(arg0_array);
@@ -643,6 +836,12 @@
 		return result;
 	}
 
+	/**
+	 * QRDecompositionMatrix() - Performs QR decomposition on a matrix.
+	 * @param {Array<Array>} arg0_matrix - The matrix to pass to the function.
+	 *
+	 * @returns {{Q: number, R: number}}
+	 */
 	function QRDecompositionMatrix (arg0_matrix) {
 		//Convert from parameters
 		var matrix = arg0_matrix;
@@ -689,6 +888,13 @@
 		return { Q: Q, R: R };
 	}
 
+	/**
+	 * QRLeastSquaredMatrix() - Performs QR least squared on two matrices.
+	 * @param {Array<Array>} arg0_matrix - The 1st matrix to pass to the function.
+	 * @param {Array<Array>} arg1_matrix - The 2nd matrix to pass to the function.
+	 *
+	 * @returns {Array}
+	 */
 	function QRLeastSquaredMatrix (arg0_matrix, arg1_matrix) {
 		//Convert from parameters
 		var A = arg0_matrix;
@@ -726,6 +932,12 @@
 		return x_vector;
 	}
 
+	/**
+	 * rootArray() - Roots an array recursively.
+	 * @param {Array} arg0_array - The array to pass to the function.
+	 *
+	 * @returns {Array}
+	 */
 	function rootArray (arg0_array, arg1_number) {
 		//Convert from parameters
 		var array = getList(arg0_array);
@@ -735,6 +947,15 @@
 		return operateArray(array, "root(n, " + number + ")");
 	}
 
+	/**
+	 * rootArrays() - Roots two arrays recursively.
+	 * @param {Array} arg0_array - The 1st array to pass to the function.
+	 * @param {Array} arg1_array - The 2nd array to pass to the function.
+	 * @param {Object} [arg2_options]
+	 * @param {Object} [arg2_options.recursive=true] - Whether the operation is recursive.
+	 *
+	 * @returns {Array}
+	 */
 	function rootArrays (arg0_array, arg1_array, arg2_options) {
 		//Convert from parameters
 		var array = getList(arg0_array);
@@ -745,6 +966,13 @@
 		return operateArrays(array, ot_array, "root(i, x)", options);
 	}
 
+	/**
+	 * SORMatrix() - Performs SOR inversion and multiplication matrices.
+	 * @param {Array<Array>} arg0_matrix - The 1st matrix to pass to the function.
+	 * @param {Array<Array>} arg1_matrix - The 2nd matrix to pass to the function.
+	 *
+	 * @returns {Array}
+	 */
 	function SORMatrix (arg0_matrix, arg1_matrix) {
 		//Convert from parameters
 		var matrix = arg0_matrix;
@@ -762,6 +990,12 @@
 		return solution_matrix;
 	}
 
+	/**
+	 * subtractArray() - Subtracts from an array recursively.
+	 * @param {Array} arg0_array - The array to pass to the function.
+	 *
+	 * @returns {Array}
+	 */
 	function subtractArray (arg0_array, arg1_number) {
 		//Convert from parameters
 		var array = getList(arg0_array);
@@ -771,6 +1005,15 @@
 		return operateArray(array, "n - " + number);
 	}
 
+	/**
+	 * subtractArrays() - Subtract two arrays recursively.
+	 * @param {Array} arg0_array - The 1st base array.
+	 * @param {Array} arg1_array - The 2nd array, containing what to subtract from the 1st.
+	 * @param {Object} [arg2_options]
+	 * @param {Object} [arg2_options.recursive=true] - WHether the operation is recursive.
+	 *
+	 * @returns {Array}
+	 */
 	function subtractArrays (arg0_array, arg1_array, arg2_options) {
 		//Convert from parameters
 		var array = getList(arg0_array);
@@ -781,6 +1024,13 @@
 		return operateArrays(array, ot_array, "i - x", options);
 	}
 
+	/**
+	 * subtractMatrices() - Subtracts one matrix from another.
+	 * @param {Array<Array>} arg0_matrix - The 1st base matrix to subtract from.
+	 * @param {Array<Array>} arg1_matrix - The 2nd matrix to subtract with.
+	 *
+	 * @returns {Array<Array>}
+	 */
 	function subtractMatrices (arg0_matrix, arg1_matrix) {
 		//Convert from parameters
 		var matrix = arg0_matrix;
@@ -801,6 +1051,12 @@
 		return return_matrix;
 	}
 
+	/**
+	 * transposeMatrix() - Trnasposes a matrix.
+	 * @param {Array<Array>} arg0_matrix - The matrix to transpose.
+	 *
+	 * @returns {Array<Array>}
+	 */
 	function transposeMatrix (arg0_matrix) {
 		//Convert from parameters
 		var matrix = arg0_matrix;

@@ -1,5 +1,13 @@
 //Initialise functions
 {
+	/**
+	 * aStar() - Performs the A* algorithm between a starting point and destination within an object graph.
+	 * @param {Object} arg0_graph
+	 * @param {String} arg1_start_key - The node key to start in.
+	 * @param {String} arg2_end_key - The node key to end in.
+	 *
+	 * @returns {Array<String>}
+	 */
 	function aStar (arg0_graph, arg1_start_key, arg2_end_key) {
 		//Convert from parameters
 		var graph = arg0_graph;
@@ -65,6 +73,13 @@
 		return path;
 	}
 
+	/**
+	 * aStarHeuristicCost() - Currently a placeholder function. Returns 0.
+	 * @param {String} arg0_start_key - The start key on the graph.
+	 * @param {String} arg1_end_key - The end key on the graph.
+	 *
+	 * @returns 0
+	 */
 	function aStarHeuristicCost (arg0_start_key, arg1_end_key) {
 		//Convert from parameters
 		var start = arg0_start_key;
@@ -74,6 +89,13 @@
 		return 0;
 	}
 
+	/**
+	 * getLowestFScoreNode() - Fetches the node with the lowest F-score.
+	 * @param {Array<String>} arg0_nodes - The nodes to pass to the function.
+	 * @param {number} arg1_f_score - The F-score to compare to.
+	 *
+	 * @returns {String}
+	 */
 	function getLowestFScoreNode (arg0_nodes, arg1_f_score) {
 		//Convert from parameters
 		var nodes = arg0_nodes;
@@ -91,6 +113,13 @@
 		return lowest;
 	}
 
+	/**
+	 * getReverseNeighbours() - Fetches the reverse neighbours in a path graph.
+	 * @param {Object} arg0_graph - The graph to pass.
+	 * @param {String} arg1_node - The key of the node to reverse neighbours for.
+	 *
+	 * @returns {Object}
+	 */
 	function getReverseNeighbours (arg0_graph, arg1_node) {
 		//Convert from parameters
 		var graph = arg0_graph;
@@ -113,6 +142,13 @@
 		return reverse_neighbours;
 	}
 
+	/**
+	 * reconstructPath() - Internal helper function for recosntructing a path.
+	 * @param {Object} arg0_came_from - The starting node.
+	 * @param {Object} arg1_current - The ending node.
+	 *
+	 * @returns {Array<String>}
+	 */
 	function reconstructPath (arg0_came_from, arg1_current) {
 		//Convert from parameters
 		var came_from = arg0_came_from;

@@ -1,5 +1,27 @@
 //Initialise functions
 {
+	/**
+	 * getArrayElements() - Fetches array elements that fulfil the following criteria and returns it as an array. If an element being compared to is not of a valid type to the comparison (e.g. .greater option on an object), the element will be returned as-is in the new array.
+	 * @param {Array} arg0_array - The array to pass to the function.
+	 * @param {Object} [arg1_options]
+	 * @param {number} [arg1_options.cardinality] - Elements in returned array must have a length of this.
+	 * @param {number} [arg1_options.cardinality_greater] - Elements in returned array must have a length greater than this number.
+	 * @param {number} [arg1_options.cardinality_geq] - Elements in returned array must have a length greater to or equal to this number.
+	 * @param {number} [arg1_options.cardinality_leq] - Elements in returned array must have a length less than this number.
+	 * @param {number} [arg1_options.eq] - Elements in returned array are equal to this number.
+	 * @param {number} [arg1_options.greater] - Elements in returned array must be greater than this number.
+	 * @param {number} [arg1_options.geq] - Elements in returned array must be greater to or equal than this number.
+	 * @param {Array<number>} [arg1_options.indexes] - Fetches the following indexes.
+	 * @param {Array} [arg1_options.in_array/in_set] - Fetches elements that are also included in this set.
+	 * @param {number} [arg1_options.less] - Elements in returned array must be less than this number.
+	 * @param {number} [arg1_options.leq] - Elements in returned array must be less than or equal to this number.
+	 * @param {Array<number>} [arg1_options.not_indexes] - Compares only indexes not mentioned in this array.
+	 * @param {Array<number, number>} [arg1_options.range] - Returns array values within this range.
+	 * @param {Array<number, number>} [arg1_options.not_range] - Returns array values outside this range.
+	 * @param {boolean} [arg1_options.recursive] - Whether the array is recursive. False by default.
+	 *
+	 * @returns {Array}
+	 */
 	function getArrayElements (arg0_array, arg1_options) {
 		//Convert from parameters
 		var array = arg0_array;
@@ -76,6 +98,15 @@
 		return return_array;
 	}
 
+	/**
+	 * getArraySubstring() - Recursively fetches the element of an array containing a substring.
+	 * @param {Array} arg0_array - The array to pass to the function.
+	 * @param {String} arg1_string - The substring to search array elements for.
+	 * @param {Object} [arg2_options]
+	 * @param {boolean} [arg2_options.recursive=true] - Whether to traverse recursively.
+	 *
+	 * @returns {Array<String>}
+	 */
 	function getArraySubstring (arg0_array, arg1_string, arg2_options) {
 		//Convert from parameters
 		var array = getList(arg0_array);
@@ -106,6 +137,15 @@
 		return array_substring_elements;
 	}
 
+	/**
+	 * indexesOf() - Returns the indexes of an array of strings.
+	 * @param {Array} arg0_array - The array to pass to the function.
+	 * @param {Array<number>} arg1_index_array - The array of inddices to fetch from the array.
+	 * @param {Object} [arg2_options]
+	 * @param {boolean} [arg2_options.return_values=false] - Whether to return array values instead of indices.
+	 *
+	 * @returns {Array}
+	 */
 	function indexesOf (arg0_array, arg1_index_array, arg2_options) {
 		//Convert from parameters
 		var array = getList(arg0_array);
@@ -123,6 +163,15 @@
 		return return_array;
 	}
 
+	/**
+	 * sortArray() - Sorts an array. Can be based on subkey values (recursive, e.g. 'population.size').
+	 * @param {Array} arg0_array - The array to pass to the function.
+	 * @param {Object} [arg1_options]
+	 * @param {String} [arg1_options.sort_key=undefined] - The sort subkey to specify.
+	 * @param {String} [arg1_options.mode="descending"] - 'alphabetical'/'ascending'/'descending'. 'descending' by default.
+	 *
+	 * @returns {Array}
+	 */
 	function sortArray (arg0_array, arg1_options) {
 		//Convert from parameters
 		var array = getList(arg0_array);

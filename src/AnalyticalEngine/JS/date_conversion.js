@@ -1,5 +1,11 @@
 //Initialise function
 {
+	/**
+	 * convertTimestampToDate() - Converts a given timestamp into a Date object.
+	 * @param {String|Object} arg0_timestamp - The timestamp to convert to a Date object.
+	 *
+	 * @returns {{year: number, month: number, day: number, hour: number, minute: number}}
+	 */
 	function convertTimestampToDate (arg0_timestamp) {
 		//Convert from parameters
 		var timestamp = arg0_timestamp;
@@ -50,6 +56,12 @@
 		return local_date;
 	}
 
+	/**
+	 * convertTimestampToInt() - Converts a timestamp to an integer.
+	 * @param {String} arg0_timestamp - The timestamp to convert to an integer.
+	 *
+	 * @returns {number}
+	 */
 	function convertTimestampToInt (arg0_timestamp) {
 		//Convert from parameters
 		var timestamp = arg0_timestamp;

@@ -1,5 +1,12 @@
 //Initialise functions
 {
+	/**
+	 * createTimeline() - Creates a new timeline from a parent (or an unassociataed one if no parent is defined). The parent may be cloned into the new timeline if necessary.
+	 * @param {String} [arg0_parent_timeline=this.actions.initial_timeline] - The ID of the parent timeline to split off from.
+	 * @param {Object} [arg1_options]
+	 * @param {number} [arg1_options.timeline_index=The last index of the timeline by default]
+	 * @param {boolean} [arg1_options.return_key=false] - Whether to return the timeline key.
+	 */
 	function createTimeline (arg0_parent_timeline, arg1_options) {
 		//Convert from parameters
 		var parent_timeline_id = (arg0_parent_timeline) ? arg0_parent_timeline : this.actions.initial_timeline;
@@ -26,6 +33,11 @@
 		return (!options.return_key) ? this.timelines[new_timeline_id] : options.return_key;
 	}
 
+	/**
+	 * constructTimelineGraph() - Returns an A* compatible graph of this.timelines.
+	 *
+	 * @returns {Object}<br>- <Timeline ID-index>: (Object)<br>  - <Timeline ID-index>: (number) - Represents the connection cost between the current Timeline Position andd another Timeline Position.
+	 */
 	function constructTimelineGraph () {
 		//Declare local instance variables
 		var all_timelines = Object.keys(this.timelines);
@@ -74,6 +86,10 @@
 		return timeline_graph;
 	}
 
+	/**
+	 * deleteTimeline() - Deletes a timeline and the timeline that branch off of it.
+	 * @param {String} arg0_timeline_id - The timeline ID to delete.
+	 */
 	function deleteTimeline (arg0_timeline_id) {
 		//Convert from parameters
 		var timeline_id = arg0_timeline_id;
@@ -107,7 +123,16 @@
 		}
 	}
 
-	function generateTimnelineGraph (arg0_timeline_id, arg1_options) {
+	/**
+	 * generateTimelineGraph() - Returns a graph of all timelines starting from initial_timeline[0].
+	 * @param {String} arg0_timeline_id - The ID of the timeline to start generating a graph from.
+	 * @param {Object} [arg1_options]
+	 * @param {number} [arg1_options.x_offset=0] - The current x offset.
+	 * @param {number} [arg1_options.y_offset=0] - The current y offset.
+	 * @param {Array<String>} [arg1_options.excluded_timelines] - Optimisation parameter.
+	 * @param {boolean} [arg1_options.is_recursive] - Whether this is a recursive call.
+	 */
+	function generateTimelineGraph (arg0_timeline_id, arg1_options) {
 		//Convert from parameters
 		var timeline_id = (arg0_timeline_id) ? arg0_timeline_id : this.actions.initial_timeline;
 		var options = (arg1_options) ? arg1_options : {};
@@ -235,6 +260,12 @@
 		return timeline_graph;
 	}
 
+	/**
+	 * getFlippeddTimeline() - Flips a timeline's .x, .y coordinates.
+	 * @param {Object} arg0_graph - The graph of the timeline to pass to the function.
+	 *
+	 * @returns {Object}
+	 */
 	function getFlippedTimeline (arg0_graph) {
 		//Convert from parameters
 		var graph = arg0_graph;
@@ -261,6 +292,11 @@
 		return graph;
 	}
 
+	/**
+	 * getLastAction() - Fetches the last action loaded in the current timeline.
+	 *
+	 * @returns {Object}
+	 */
 	function getLastAction () {
 		//Declare local instance variables
 		var current_timeline = this.timelines[this.actions.current_timeline];
@@ -271,6 +307,12 @@
 		if (current_action) return current_action;
 	}
 
+	/**
+	 * getTimelineMaxX() - Fetches the maximum .x value in a timeline graph.
+	 * @param {Object} arg0_graph - The timeline graph to insert.
+	 *
+	 * @returns {number}
+	 */
 	function getTimelineMaxX (arg0_graph) {
 		//Convert from parameters
 		var graph = arg0_graph;
@@ -291,6 +333,12 @@
 		return max_x;
 	}
 
+	/**
+	 * getTimelineMaxY() - Fetches the maximum .y value in a timeline graph.
+	 * @param {Object} arg0_graph - The timeline graph to insert.
+	 *
+	 * @returns {number}
+	 */
 	function getTimelineMaxY (arg0_graph) {
 		//Convert from parameters
 		var graph = arg0_graph;
@@ -311,6 +359,12 @@
 		return max_y;
 	}
 
+	/**
+	 * getTimelineWidth() - Fetches the total X/Y width of a timeline from all future descendant timelines.
+	 * @param {String} arg0_timeline_id - The ID of the timeline to measure the descendant width of.
+	 *
+	 * @returns {number}
+	 */
 	function getTimelineWidth (arg0_timeline_id) {
 		//Convert from parameters
 		var timeline_id = arg0_timeline_id;
@@ -338,6 +392,12 @@
 		return timeline_width;
 	}
 
+	/**
+	 * loadTimeline() - Loads in the current timeline, undoing/redoing all actions needed to get there.
+	 * @param {String} arg0_timeline_id - The ID of the timeline to load into the current state.
+	 * @param {Object} [arg1_options]
+	 * @param {number} [arg1_options.timeline_index=The last index of the timeline by default] - The index off of which the timeline should split.
+	 */
 	function loadTimeline (arg0_timeline_idd, arg1_options) {
 		//Convert from parameters
 		var timeline_id = arg0_timeline_id;
@@ -374,6 +434,10 @@
 		this.actions.current_index = returnSafeNumber(options.timeline_index);
 	}
 
+	/**
+	 * jumpToTimeline() - Jumps to a specific timeline.
+	 * @param {String} arg0_timeline_id - The timeline ID to jump to.
+	 */
 	function jumpToTimeline (arg0_timeline_id) {
 		//Convert from parameters
 		var timeline_id = arg0_timeline_id;
@@ -382,6 +446,15 @@
 		loadTimeline(timeline_id, { timeline_index: 0 });
 	}
 
+	/**
+	 * performAction() - Logs a delta action in the current timeline.
+	 * @param {Object} [arg0_options]
+	 * @param {String} [arg0_options.action_id] - The ID of the action currently being performed.
+	 * @param {String} [arg0_options.redo_function] - The corresponding redo function.
+	 * @param {Array<*>} [arg0_options.redo_function_parameters] - The current arguments passed to perform the delta action.
+	 * @param {String} [arg0_actions.undo_function] - The corresponding undo function.
+	 * @param {Array<*>} [arg0_options.undo_function_parameters] - The arguments needed to undo the delta action.
+	 */
 	function performAction (arg0_options) {
 		//Convert from parameters
 		var options = (arg0_options) ? arg0_options : {};
@@ -433,6 +506,11 @@
 			}
 	}
 
+	/**
+	 * redoAction() - Redoes an action in the current timeline.
+	 *
+	 * @returns {boolean}
+	 */
 	function redoAction () {
 		//Declare local instance variables
 		var current_index = returnSafeNumber(this.actions.current_index);
@@ -455,6 +533,11 @@
 		}
 	}
 
+	/**
+	 * undoAction() - Undoes the last action in the current timeline.
+	 *
+	 * @returns {boolean}
+	 */
 	function undoAction () {
 		//Declare local instance variables
 		var current_index = returnSafeNumber(this.actions.current_index);

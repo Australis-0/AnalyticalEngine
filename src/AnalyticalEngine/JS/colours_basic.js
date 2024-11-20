@@ -1,5 +1,11 @@
 //Initialise functions
 {
+	/**
+	 * componentToHex() - Fetches the hex of a single component.
+	 * @param {number} [arg0_c] - The individual r/g/b component to pass to the function.
+	 *
+	 * @returns {String}
+	 */
 	function componentToHex (arg0_c) {
 		//Convert from parameters
 		var hex = arg0_c.toString(16);
@@ -8,6 +14,13 @@
 		return (hex.length == 1) ? "0" + hex : hex;
 	}
 
+	/**
+	 * deltaE() - Calculates the deltaE between two RGB values.
+	 * @param {Array<number, number, number>} arg0_rgb_a - The 1st RGB code to pass.
+	 * @param {Array<number, number, number>} arg1_rgb_b - The 2nd RGB code to pass.
+	 *
+	 * @returns {number}
+	 */
 	function deltaE (arg0_rgb_a, arg1_rgb_b) {
 		//Convert from parameters
 		var lab_a = RGB2Lab(arg0_rgb_a);
@@ -34,6 +47,11 @@
 		return (i < 0) ? 0 : Math.sqrt(i);
 	}
 
+	/**
+	 * generateRandomColour() - Generates a random RGB colour.
+	 *
+	 * @returns {Array<number, number, number>}
+	 */
 	function generateRandomColour (arg0_rgba) {
 		//Convert from parameters
 		var rgba = arg0_rgba;
@@ -44,6 +62,13 @@
 			[randomNumber(0, 255), randomNumber(0, 255), randomNumber(0, 255), randomNumber(0, 255)];
 	}
 
+	/**
+	 * getColourDistance() - Fetches the absolute colour distance between two colours.
+	 * @param {Array<number, number, number>} arg0_rgb - The 1st RGB code to pass.
+	 * @param {Array<number, number, number>} arg1_rgb - The 2nd RGB code to pass.
+	 *
+	 * @returns {number}
+	 */
 	function getColourDistance (arg0_rgb, arg1_rgb) {
 		//Convert from parameters
 		var colour_one = arg0_rgb;
@@ -60,6 +85,12 @@
 		return distance;
 	}
 
+	/**
+	 * hexToRGB() - Converts a hex to RGB.
+	 * @param {String} arg0_hex - The hex code to pass to the function.
+	 *
+	 * @returns {Array<number, number, number>}
+	 */
 	function hexToRGB (arg0_hex) {
 		//Convert from parameters
 		var hex = arg0_hex;
@@ -72,6 +103,14 @@
 		] : undefined;
 	}
 
+	/**
+	 * RGBToHex() - Converts an RGB value to hex.
+	 * @param {number} arg0_r - The r value.
+	 * @param {number} arg0_g - The g value.
+	 * @param {number} arg0_b - The b value.
+	 *
+	 * @returns {String}
+	 */
 	function RGBToHex (arg0_r, arg1_g, arg2_b) {
 		//Convert from parameters
 		var r = arg0_r;
@@ -88,6 +127,12 @@
 		return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
 	}
 
+	/**
+	 * RGB2Lab() - Converts an RGB value to lab distance.
+	 * @param {Array<number, number, number>} - The RGB value to pass.
+	 *
+	 * @returns {Array<number, number, number>}
+	 */
 	function RGB2Lab (arg0_rgb) {
 		//Convert from parameters
 		var rgb = arg0_rgb;

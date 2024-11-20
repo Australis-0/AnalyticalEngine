@@ -1,5 +1,11 @@
 //Initialise functions
 {
+	/**
+	 * alphabetiseNumber() - Alphabetises a number based on a0-j9.
+	 * @param {String} arg0_string - The string of the number to numerise; if applicable.
+	 *
+	 * @returns {String}
+	 */
 	function alphabetiseNumber (arg0_string) {
 		//Convert from parameters
 		var string = arg0_string.toString();
@@ -20,6 +26,12 @@
 		return alphabetised_string;
 	}
 
+	/**
+	 * arabicise() - Arabicises a Roman numeral string.
+	 * @param {String} arg0_number - The number to arabicise.
+	 *
+	 * @returns {number}
+	 */
 	function arabicise (arg0_number) {
 		//Convert from parameters
 		var number = arg0_number;
@@ -47,6 +59,12 @@
 		return result;
 	}
 
+	/**
+	 * degreesToRadians() - Convert degrees to radians.
+	 * @param {number} arg0_degrees - The number of degrees.
+	 *
+	 * @returns {number}
+	 */
 	function degreesToRadians (arg0_degrees) {
 		//Convert from parameters
 		var degrees = arg0_degrees;
@@ -55,6 +73,12 @@
 		return degrees*(Math.PI/180);
 	}
 
+	/**
+	 * deordinalise() - Deordinalises a string.
+	 * @param {String} arg0_string - The string to deordinalise.
+	 *
+	 * @returns {String}
+	 */
 	function deordinalise (arg0_string) {
 		//Convert from parameters
 		var string = arg0_string;
@@ -70,6 +94,13 @@
 		return parseInt(string);
 	}
 
+	/**
+	 * exp() - Exponentiates a number, similar to Math.pow()
+	 * @param {number} arg0_number - The base to exponentiate.
+	 * @param {number} arg1_number - The power to exponentiate by.
+	 *
+	 * @returns {number}
+	 */
 	function exp (arg0_number, arg1_number) {
 		//Convert from parameters
 		var base = arg0_number;
@@ -79,6 +110,12 @@
 		return Math.pow(base, power);
 	}
 
+	/**
+	 * factorial() - Calculates the factorial of a number.
+	 * @param {number} arg0_number - The number to calculate for.
+	 *
+	 * @returns {number}
+	 */
 	function factorial (arg0_number) {
 		//Convert from parameters
 		var number = parseInt(arg0_number);
@@ -97,6 +134,12 @@
 		return f_array[number] = factorial(number - 1)*number;
 	}
 
+	/**
+	 * generateRandomID() - Generates a random ID.
+	 * @param {Object} arg0_object - The object relative to which the ID is being generated; making sure to avoid duplicate IDs.
+	 *
+	 * @param {number}
+	 */
 	function generateRandomID (arg0_object) {
 		//Convert from parameters
 		var input_object = arg0_object;
@@ -120,6 +163,13 @@
 		}
 	}
 
+	/**
+	 * logarithm() -  Calculates logarithm/natural logarithm.
+	 * @param {number} arg0_x - The x to calculate the logarithm for.
+	 * @param {number} arg1_y - The y to calculate the logarithm for.
+	 *
+	 * @returns {number}
+	 */
 	function logarithm (arg0_x, arg1_y) {
 		//Convert from parameters
 		var x = arg0_x;
@@ -131,6 +181,12 @@
 			Math.log(x);
 	}
 
+	/**
+	 * logFactorial() - Calculates the log of a factorial.
+	 * @param {number} arg0_number - The number to pass to the function.
+	 *
+	 * @returns {number}
+	 */
 	function logFactorial (arg0_number) {
 		//Convert from parameters
 		var number = arg0_number;
@@ -148,6 +204,12 @@
 		}
 	}
 
+	/**
+	 * max() - Fetches the maximum value inside a variable.
+	 * @param {Array<number>} arg0_variable - The array to calculate the max value for.
+	 *
+	 * @returns {number}
+	 */
 	function max (arg0_variable) {
 		//Convert from parameters
 		var list_variable = getList(arg0_variable);
@@ -166,6 +228,12 @@
 		return maximum;
 	}
 
+	/**
+	 * min() - Fetches the minimum value inside a variable.
+	 * @param {Array<number>} - The array to calculate the min value for.
+	 *
+	 * @returns {number}
+	 */
 	function min (arg0_variable) {
 		//Convert from parameters
 		var list_variable = getList(arg0_variable);
@@ -184,6 +252,12 @@
 		return minimum;
 	}
 
+	/**
+	 * numeriseAlphabet() - Numerises an alphabetical string, assuming a0-j9.
+	 * @param {String} arg0_string - The string to numerise.
+	 *
+	 * @returns {String}
+	 */
 	function numeriseAlphabet (arg0_string) {
 		//Convert from parameters
 		var string = arg0_string.toString();
@@ -206,6 +280,12 @@
 		return alphabetised_string;
 	}
 
+	/**
+	 * oldDeordinalise() - Strip ordinals from a string and convert it to a number (e.g. '2nd' = 2).
+	 * @param {String} arg0_string - The string to deordinalise, using the old list specification pattern.
+	 *
+	 * @returns {String}
+	 */
 	function oldDeordinalise (arg0_string) {
 		//Convert from parameters
 		var deordinalised_string = arg0_string;
@@ -246,6 +326,12 @@
 		return deordinalised_string.join(" ").trim();
 	}
 
+	/**
+	 * ordinalise() - Orinalises a number.
+	 * @param {number} arg0_number - The input number to pass.
+	 *
+	 * @returns {String}
+	 */
 	function ordinalise (arg0_number) {
 		//Convert from parameters
 		var i = arg0_number;
@@ -266,6 +352,12 @@
 		return negative_suffix + i + "th";
 	}
 
+	/**
+	 * radiansToDegrees() - Converts radians to degrees.
+	 * @param {number} arg0_radians - The number of radians to pass.
+	 *
+	 * @returns {number}
+	 */
 	function radiansToDegrees (arg0_radians) {
 		//Convert from parameters
 		var radians = arg0_radians;
@@ -274,6 +366,14 @@
 		return (radians*180)/Math.PI;
 	}
 
+	/**
+	 * randomNumber() - Generates a random number between min and max.
+	 * @param {number} arg0_min - The min range.
+	 * @param {number} arg1_max - The max range.
+	 * @param {boolean} [arg2_do_not_round=false] - Whether to round.
+	 *
+	 * @returns {number}
+	 */
 	function randomNumber (arg0_min, arg1_max, arg2_do_not_round) {
 		//Convert from parameters
 		var min = arg0_min;
@@ -287,6 +387,13 @@
 		return (!do_not_round) ? Math.round(random_number) : random_number;
 	}
 
+	/**
+	 * returnSafeNumber() - Returns a safe number.
+	 * @param {number} arg0_operation - The variable, preferably a number to check for.
+	 * @param {number} [arg1_default=0] - The default to pass.
+	 *
+	 * @returns {number}
+	 */
 	function returnSafeNumber (arg0_operation, arg1_default) {
 		//Convert from parameters
 		var operation = arg0_operation;
@@ -298,6 +405,12 @@
 			default_number;
 	}
 
+	/**
+	 * romanise() - Romanises an arabic number an returns it as a string.
+	 * @param {number} arg0_number - The number to romanise.
+	 *
+	 * @returns {String}
+	 */
 	function romanise (arg0_number) {
 		//Convert from parameters
 		var number = arg0_number;
@@ -321,6 +434,13 @@
 		return roman_string;
 	}
 
+	/**
+	 * root() - Nth roots a number.
+	 * @param {number} arg0_number - The number to root.
+	 * @param {number} arg1_root - The root.
+	 *
+	 * @returns {number}
+	 */
 	function root (arg0_number, arg1_root) {
 		//Convert from parameters
 		var number = arg0_number;
@@ -340,6 +460,13 @@
 		} catch (e) {}
 	}
 
+	/**
+	 * round() - Rounds a number to n places.
+	 * @param {number} arg0_number - The number to round.
+	 * @param {number} arg1_rounding_places - The number to places to round by.
+	 *
+	 * @returns {number}
+	 */
 	function round (arg0_number, arg1_rounding_places) {
 		//Convert from parameters
 		var number = arg0_number;
@@ -352,6 +479,13 @@
 		return Math.round(number*multiplier)/multiplier;
 	}
 
+	/**
+	 * sigfig() -  Rounds a number to n significant figures.
+	 * @param {number} arg0_number - The number to round to significant figures.
+	 * @param {number} arg1_sigfigs - The number of sigfigs to round by.
+	 *
+	 * @returns {number}
+	 */
 	function sigfig (arg0_number, arg1_sigfigs) {
 		//Convert from parameters
 		var number = arg0_number;
@@ -368,6 +502,13 @@
 		return Math.round(number*multiplier)/multiplier;
 	}
 
+	/**
+	 * splitNumber() - Splits a number randomly into multiple parts.
+	 * @param {number} arg0_number - The number to split.
+	 * @param {number} arg1_parts - How many parts to split it into.
+	 *
+	 * @returns {Array<number>}
+	 */
 	function splitNumber (arg0_number, arg1_parts) {
 		//Convert from parameters
 		var number = arg0_number;
@@ -377,6 +518,13 @@
 		return splitNumberParts(number, parts).slice(); //Converts iterable to an array
 	}
 
+	/**
+	 * splitNumberParts() - Internal helper function for splitNumber()
+	 * @param {number} arg0_number - The number to split.
+	 * @param {number} arg1_parts - How many parts to split it into.
+	 *
+	 * @returns {Array<number>}
+	 */
 	function splitNumberParts (arg0_number, arg1_parts) {
 		//Convert from parameters
 		var number = arg0_number;
@@ -400,6 +548,13 @@
 		return result;
 	}
 
+	/**
+	 * unzero() - Makes sure to unzero a figure. Useful to avoid dividing by 0. 1 by default.
+	 * @param {number} arg0_number - The number to unzero.
+	 * @param {number} [arg1_default=1] - The default to set it to.
+	 *
+	 * @returns {number}
+	 */
 	function unzero (arg0_number, arg1_default) {
 		//Convert from parameters
 		var number = returnSafeNumber(arg0_number);

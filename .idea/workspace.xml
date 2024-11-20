@@ -6,6 +6,26 @@
   <component name="ChangeListManager">
     <list default="true" id="09b6f7f8-b868-43e9-b471-ac1dbd15fa3b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/JS/actions_caching.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/actions_caching.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/JS/actions_timelines.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/actions_timelines.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/JS/arrays_dataframes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/arrays_dataframes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/JS/arrays_maths.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/arrays_maths.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/JS/arrays_search_sort.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/arrays_search_sort.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/JS/colours_basic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/colours_basic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/JS/console_basic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/console_basic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/JS/date_basic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/date_basic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/JS/date_conversion.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/date_conversion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/JS/date_history.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/date_history.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/JS/demographics_basic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/demographics_basic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/JS/localisation_basic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/localisation_basic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/JS/numbers_basic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/numbers_basic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/JS/numbers_ranges.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/numbers_ranges.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/JS/objects_maths.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/objects_maths.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/JS/objects_smart_search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/objects_smart_search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/JS/pathfinding_a_star.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/pathfinding_a_star.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/JS/strings_basic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/strings_basic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/JS/strings_cleaning.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/strings_cleaning.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/JS/strings_split.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/strings_split.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/map/11.59/cities/cities.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/cities/cities.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNamePoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNamePoints.json" afterDir="false" />
     </list>
@@ -113,7 +133,7 @@
       <workItem from="1730811142213" duration="53000" />
       <workItem from="1730811200809" duration="158235000" />
       <workItem from="1731784417683" duration="45000" />
-      <workItem from="1731784537399" duration="24882000" />
+      <workItem from="1731784537399" duration="46577000" />
     </task>
     <servers />
   </component>

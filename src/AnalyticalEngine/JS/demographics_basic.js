@@ -1,5 +1,15 @@
 //Initialise functions
 {
+	/**
+	 * generateDemographicStructure() - Generates demographic population totals from the above Demographia data structure. Note that this function is recursive.
+	 * @param [arg0_options]
+	 * @param {Object} [arg0_options."object_key"]
+	 * @param {number} [arg0_options."object_key".population=undefined] - The absolute number to calculate for at this object depth.
+	 * @param {number} [arg0_options."object_key".population_percentage=undefined] - The percentage value to calculate for at this object depth.
+	 * @param {number} [arg0_options.population] - The total population to feed into the data structure.
+	 *
+	 * @returns {{"object_key": { population: number, population_percentage: number }, population: number}}
+	 */
 	function generateDemographicStructure (arg0_options) {
 		//Convert from parameters
 		var options = (arg0_options) ? arg0_options : {};

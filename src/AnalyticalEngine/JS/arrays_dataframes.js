@@ -253,7 +253,7 @@
 	 * @param {String} [arg2_options.equation] - The string literal to use as an equation (e.g. 'i + x*5'). If no equal sign is provided, this applies to every cell, regardless of column. Equations are split by semicolons.<br><br>As an example, x$D = i$B replaces the D column of the 2nd dataframe with the B column of the 1st.<br>- 'i' represents the corresponding element of the first dataframe,<br>  - 'i$Column' represents the selection of a 1st dataframe column named 'Column'.<br>- 'x' represents the corresponding element of the second dataframe,<br>  - 'x$Column' represents the selection of a 2nd dataframe column named 'Column'.
 	 * @param {boolean} [arg2_options.return_safe_number=true] - Whether to use returnSafeNumber().
 	 *
-	 * @returns {Object} Object<br>- .dataframe: (Array<Array, ...>) - The result of the 1st dataframe.<br>- .ot_dataframe: (Array<Array, ...>) - The result of the 2nd dataframe.
+	 * @returns {{dataframe: Array<Array>, ot_dataframe: Array<Array>}}
 	 */
 	function operateDataframes (arg0_dataframe, arg1_dataframe, arg2_options) {
 		//Convert from parameters

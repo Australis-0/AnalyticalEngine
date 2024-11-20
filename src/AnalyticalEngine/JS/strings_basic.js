@@ -1,5 +1,11 @@
 //Initialise function
 {
+	/**
+	 * capitaliseWords() - Capitalise all the words in a string.
+	 * @param {String} arg0_input_string - The string to pass to the function.
+	 *
+	 * @returns {String}
+	 */
 	function capitaliseWords (arg0_input_string) {
 		//Convert from parameters
 		var input_string = arg0_input_string;
@@ -17,6 +23,12 @@
 		return separate_words.join(" ");
 	}
 
+	/**
+	 * cleanStringify() - Cleans an input object to be compatible with JSON.stringify().
+	 * @param {String} arg0_input_object - The object to pass to the function.
+	 *
+	 * @returns {Object}
+	 */
 	function cleanStringify (arg0_input_object) {
 		//Convert from parameters
 		var input_object = arg0_input_object;
@@ -58,6 +70,13 @@
 		return JSON.stringify(input_object);
 	}
 
+	/**
+	 * equalsIgnoreCase() - Compares two strings, ignoring their case. Returns a boolean.
+	 * @param {String} arg0_string - The 1st string to compare.
+	 * @param {String} arg1_string - The 2nd string to compare.
+	 *
+	 * @returns {boolean}
+	 */
 	function equalsIgnoreCase (arg0_string, arg1_string) {
 		//Convert from parameters
 		var string = arg0_string.toString();
@@ -67,6 +86,12 @@
 		return (string.toLowerCase().trim() == ot_string.toLowerCase().trim());
 	}
 
+	/**
+	 * formaliseString() - Formalises a debug string into human-readable text.
+	 * @param {String} arg0_input_string - The string to pass to the function.
+	 *
+	 * @returns {String}
+	 */
 	function formaliseString (arg0_input_string) {
 		//Convert from parameters
 		var input_string = arg0_input_string;
@@ -78,6 +103,12 @@
 			});
 	}
 
+	/**
+	 * getDateFromString() - Fetches the date from an input string.
+	 * @param {String} arg0_input_string - The string to pass to the function.
+	 *
+	 * @returns {Date}
+	 */
 	function getDateFromString (arg0_input_string) {
 		//Convert from parameters
 		var input_string = arg0_input_string;
@@ -86,6 +117,12 @@
 		return Date.parse(input_string);
 	}
 
+	/**
+	 * getNesting() - Fetches the amount of nesting embedded within the current string.
+	 * @param {String} arg0_input_string - The string to pass to the function.
+	 *
+	 * @returns {number}
+	 */
 	function getNesting (arg0_input_string) {
 		//Convert from parameters
 		var string = arg0_input_string;
@@ -115,6 +152,12 @@
 		return nesting;
 	}
 
+	/**
+	 * isImage() - Checks if the given link is that of a compatible image.
+	 * @param {String} arg0_input_string - The input link to pass to the function.
+	 *
+	 * @returns {boolean}
+	 */
 	function isImage (arg0_input_string) {
 		//Convert from parameters
 		var input_string = arg0_input_string;
@@ -123,6 +166,12 @@
 		return /^https?:\/\/.+\.(jpg|jpeg|png|webp|avif|gif|svg)$/.test(input_string);
 	}
 
+	/**
+	 * parseBoolean() - Returns a human-readable version of a boolean.
+	 * @param {boolean} arg0_input_boolean - The boolean to pass to the function.
+	 *
+	 * @returns {String}
+	 */
 	function parseBoolean (arg0_input_boolean) {
 		//Convert from parameters
 		var input_boolean = arg0_input_boolean;
@@ -131,6 +180,12 @@
 		return (input_boolean) ? "Yes" : "No";
 	}
 
+	/**
+	 * parseDate() - Returns a string timestamp of a contemporary date.
+	 * @param {String} arg0_timestamp - The Date timestamp to pass to the function.
+	 *
+	 * @returns {String}
+	 */
 	function parseDate (arg0_timestamp) {
 		//Convert from parameters
 		var a = new Date(arg0_timestamp);
@@ -147,6 +202,12 @@
 		return date + " " + month + " " + year + " " + hour + ":" + min + ":" + sec;
 	}
 
+	/**
+	 * parseList() - Parses a list into human-readable form.
+	 * @param {Array<String>} arg0_input_list - The array to pass to the function.
+	 *
+	 * @returns {String}
+	 */
 	function parseList (arg0_input_list) {
 		//Convert from parameters
 		var name_array = getList(arg0_input_list);
@@ -169,6 +230,12 @@
 		return name_string;
 	}
 
+	/**
+	 * processOrdinalString() - Fetches the current ordinal present in a numeric string.
+	 * @param {String} arg0_input_string - The ordinal string to pass to the function.
+	 *
+	 * @returns {String}
+	 */
 	function processOrdinalString (arg0_input_string) {
 		//Convert from parameters
 		var input_string = arg0_input_string;

@@ -8,6 +8,12 @@
 
 //Initialise functions
 {
+	/**
+	 * daysInMonths() - Fetches the number of days already passed since the beginning of the year.
+	 * @param {Object<Date>} arg0_date_object - The adte object/timestamp to pass to the function.
+	 *
+	 * @returns {number}
+	 */
 	function daysInMonths (arg0_date_object) {
 		//Convert from parameters
 		var date = convertTimestampToDate(arg0_date_object);
@@ -25,11 +31,22 @@
 		return days;
 	}
 
+	/**
+	 * getBlankDate() - Returns a blank date where zero time has elapsed.
+	 *
+	 * @returns {{month: 0, hour: 0, year: 0, day: 0, minute: 0}}
+	 */
 	function getBlankDate () {
 		//Return statement
 		return { year: 0, month: 0, day: 0, hour: 0, minute: 0 };
 	}
 
+	/**
+	 * getDateString() - Returns a formatte ate string from a date object.
+	 * @param {Object<Date>} - The date object to pass to the function.
+	 *
+	 * @returns {String}
+	 */
 	function getDateString (arg0_date_object, arg1_format) {
 		//Convert from parameters
 		var date = arg0_date_object;
@@ -57,6 +74,12 @@
 		if (format == "YYYY-MM-DD") return year + "-" + padZero(date.month) + "-" + day;
 	}
 
+	/**
+	 * getMonth() - Fetches a month from a substring and returns its index.
+	 * @param {String} arg0_string - The month substring to pass.
+	 *
+	 * @returns {number}
+	 */
 	function getMonth (arg0_string) {
 		//Convert from parameters
 		var string = arg0_string.toLowerCase();
@@ -78,6 +101,12 @@
 		return local_month;
 	}
 
+	/**
+	 * getStandardYear() - Returns the standard numeric Gregorian year from a date object/timestamp.
+	 * @param {Object<Date>} arg0_date_object - The date object/timestamp to pass to the function.
+	 *
+	 * @returns {number}
+	 */
 	function getStandardYear (arg0_date_object) {
 		//Convert from parameters
 		var date = convertTimestampToDate(arg0_date_object);
@@ -86,6 +115,12 @@
 		return date.year;
 	}
 
+	/**
+	 * getTimestamp() - Returns the amount of minutes in a date.
+	 * @param {Object<Date>} - The date object/timestamp to pass to the function.
+	 *
+	 * @returns {String}
+	 */
 	function getTimestamp (arg0_date_object) {
 		//Convert from parameters
 		var date = convertTimestampToDate(arg0_date_object);
@@ -113,6 +148,13 @@
 		return ((timestamp_number >= 0) ? "tz" : "t") + "_" + timestamp_number;
 	}
 
+	/**
+	 * isLeapYear() - Whether the specified year is a leap year.
+	 * @param {number} arg0_year - The year to check for.
+	 * @param {boolean} [arg1_hanseceltican_standard=false] - Whether to account for Roman-errored leap years.
+	 *
+	 * @returns {boolean}
+	 */
 	function isLeapYear (arg0_year, arg1_hanseceltican_standard) {
 		//Convert from parameters
 		var year = parseInt(arg0_year);
@@ -127,6 +169,12 @@
 		return (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0) && year != 4);
 	}
 
+	/**
+	 * leapYearsBefore() - Fetches the number of leap years before a given year.
+	 * @param {number} arg0_year - The year to check for.
+	 *
+	 * @returns {number}
+	 */
 	function leapYearsBefore (arg0_year) {
 		//Convert from parameters
 		var year = parseInt(arg0_year);
@@ -138,6 +186,13 @@
 		return (year/4) - (year/100) + (year/400) - 1; //4AD was not a leap year
 	}
 
+	/**
+	 * leapYearsBetween() - Fetches the number of leap years between two years.
+	 * @param {number} arg0_start_year - The beginning year.
+	 * @param {number} arg1_end_year - The ending year.
+	 *
+	 * @returns {number}
+	 */
 	function leapYearsBetween (arg0_start_year, arg1_end_year) {
 		//Convert from parameters
 		var start_year = arg0_start_year;
@@ -147,6 +202,12 @@
 		return leapYearsBefore(end_year) - leapYearsBefore(start_year + 1);
 	}
 
+	/**
+	 * monthsFromDays() - Fetches the number of months from ddays, within the context of a date object.
+	 * @param {Object<Date>} - The date object/timestamp to pass to the function.
+	 *
+	 * @returns {number}
+	 */
 	function monthsFromDays (arg0_date_object) {
 		//Convert from parameters
 		var date = convertTimestampToDate(arg0_date_object);
@@ -169,10 +230,22 @@
 		return months + 1;
 	}
 
+	/**
+	 * padZero() - Formats leading zeroes if a number is less than ten.
+	 *
+	 * @returns {String}
+	 */
 	function padZero (arg0_value) {
 		return (arg0_value < 10) ? "0" + arg0_value : arg0_value;
 	}
 
+	/**
+	 * parseYears() - Returns days/months/years as an object depending on the year amount.
+	 * @param {number} arg0_number - The decimal number of years elapsed.
+	 * @param {number} [arg1_current_year=undefined] - The current year.
+	 *
+	 * @returns {{hour: number, day: number, month: number, year: number}}
+	 */
 	function parseYears (arg0_number, arg1_current_year) {
 		//Convert from parameters
 		var years_elapsed = arg0_number;

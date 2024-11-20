@@ -1,5 +1,16 @@
 //Initialise functions
 {
+	/**
+	 * createObjectSearch() - Creates a function to search an object regularly using a substring. Similar to createSmartSearch(), but creates a 'relevancy index' for each potential entry and offices them to a return object.
+	 *
+	 * @param {Object} [arg0_options]
+	 * @param {boolean} [arg0_options.exclude_zero_relevance=true] - Whether to exclude entries with zero or less relevance from the end result.
+	 * @param {String} [arg0_options.function_name] - The function name to define this search as in the global namespace.
+	 * @param {String} [arg0_options.priority_compounding="multiplicative"] - Either 'linear' or 'multiplicative'. 'multiplicative' by default.
+	 * @param {Array<String>} [arg0_options.priority_order] - The order of keys whose value should be searhced, both soft/hard. First is most important, last is least important. Note that these values compound on top of each other.
+	 *
+	 * @returns {Function}
+	 */
 	function createObjectSearch (arg0_options) {
 		//Convert from parameters
 		var options = (arg0_options) ? arg0_options : {};
@@ -90,6 +101,17 @@
 		return this[function_name];
 	}
 
+	/**
+	 * createSmartSearch() - Defines a smart search function off of which various attributes are checked in a specific order, both soft and hard.
+	 *
+	 * @param {Object} [arg0_options]
+	 * @param {String} [arg0_options.function_name] - The function name to define this search as in the global namespace.
+	 * @param {Array<String>} [arg0_options.priority_order] - The order in which to search, both soft/hard. First is most important, last is least important. 'key' defines base key.
+	 * @param {boolean} [arg0_options.hard_search=true] - Whether hard search is enabled.
+	 * @param {boolean} [arg0_options.soft_search=true] - Whether soft search is enabled.
+	 *
+	 * @returns {Function}
+	 */
 	function createSmartSearch (arg0_options) {
 		//Convert options
 		var options = (arg0_options) ? arg0_options : {};
@@ -179,6 +201,10 @@
 		return this[options.function_name];
 	}
 
+	/**
+	 * deleteSmartSearch() - Deletes a smart search function.
+	 * @param {String} arg0_name - The .function_name of the smart search to delkete.
+	 */
 	function deleteSmartSearch (arg0_function_name) {
 		//Convert from parameters
 		var function_name = arg0_function_name;

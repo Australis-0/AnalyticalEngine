@@ -1,5 +1,15 @@
 //Initialise functions
 {
+	/**
+	 * parseLocalisation() - Parses a localisation into a given string.
+	 * @param {String} arg0_string - The string to parse into a given localisation, with {} representing scope variables.
+	 * @param {Object} [arg1_options]
+	 * @param {boolean} [arg1_options.is_html=false] - Whether the localisation to be parsed is HTML.
+	 * @param {Object} [arg1_options.scopes]
+	 * @param {*} [arg1_options.scopes."variable_key"] - The value to replace {<variable>} string keys with.
+	 *
+	 * @returns {String}
+	 */
 	function parseLocalisation (arg0_string, arg1_options) {
 		//Convert from parameters
 		var string = arg0_string;
@@ -25,9 +35,15 @@
 		return string;
 	}
 
-	function parseMilliseconds (arg0_millisecondds) {
+	/**
+	 * parseMilliseconds() - Parses milliseconds into a human-readable time uration.
+	 * @param {arg0_milliseconds} - The number of milliseconds to parse.
+	 *
+	 * @returns {String}
+	 */
+	function parseMilliseconds (arg0_milliseconds) {
 		//Convert from parameters
-		var duration = arg0_millisecondds;
+		var duration = arg0_milliseconds;
 
 		//Declare local instance variables
 		var milliseconds = parseInt((duration % 1000)/100),
@@ -39,6 +55,15 @@
 		return ((hours > 0) ? parseNumber(hours) + " hours" : "") + ((minutes > 0) ? ((hours > 0) ? ", " : "") + parseNumber(minutes) + " minutes" : "") + ((seconds > 0) ? ((minutes > 0) ? ", " : "") + parseNumber(seconds) + " seconds" : "");
 	}
 
+	/**
+	 * parseNumber() - Formats a number to a string whilst displaying decimal separators (e.g. 1.567,23 instead of 1567.23).
+	 * @param {number} arg0_number - The number to parse.
+	 * @param {Object} [arg1_options]
+	 * @param {boolean} [arg1_options.display_float=false] - Whether to display a number to the hundreths place.
+	 * @param {boolean} [arg1_options.display_prefix=false] - Whether to display a starting prefix.
+	 *
+	 * @returns {String}
+	 */
 	function parseNumber (arg0_number, arg1_options) {
 		//Convert from parameters
 		var number = arg0_number;
@@ -67,6 +92,12 @@
 		);
 	}
 
+	/**
+	 * parseString() - Parses a debug string into human-readable text.
+	 * @param {String} arg0_string - The string to parse.
+	 *
+	 * @returns {String}
+	 */
 	function parseString (arg0_string) {
 		//Convert from parameters
 		var processed_string = arg0_string;
@@ -78,6 +109,16 @@
 			});
 	}
 
+	/**
+	 * printPercentage() - Formats a string to fit a certain percentage (e.g. 23%), instead of a default decimal number.
+	 * @param {number} - The number to format into a percentage.
+	 * @param [arg1_options]
+	 * @param {boolean} [arg1_options.base_zero] - Whether to start at a base zero instead of one.
+	 * @param {boolean} [arg1_options.display_float] - Whether to display a number to the hundreths place.
+	 * @param {boolean} [arg1_options.is_modifier] - Used for parsing negative modifiers.
+	 *
+	 * @returns {String}
+	 */
 	function printPercentage (arg0_number, arg1_options) {
 		//Convert from parameters
 		var number = arg0_number;
@@ -97,6 +138,12 @@
 		: "") + number_string + "%";
 	}
 
+	/**
+	 * printRange() - Returns a given range of numbers as a string using [min, max] format.
+	 * @param {Array<number, number>} - The range to input.
+	 *
+	 * @returns {String}
+	 */
 	function printRange (arg0_array) {
 		//Convert from parameters
 		var array = arg0_array;

@@ -1,5 +1,13 @@
 //Initialise functions
 {
+	/**
+	 * adjustObjectHistory() - Adjusts an object history keyframe to that of another date/timestamp.
+	 * @param {Object} arg0_object - The object being referenced.
+	 * @param {Object<Date>} arg1_date_object - The keyframe to move.
+	 * @param {Object<Date>} arg2_date_object - The date to move the keyframe to.
+	 *
+	 * @returns {Object}
+	 */
 	function adjustObjectHistory (arg0_object, arg1_date_object, arg2_date_object) {
 		//Convert from parameters
 		var local_object = arg0_object;
@@ -29,6 +37,14 @@
 		return local_object;
 	}
 
+	/**
+	 * checkObjectHistory() - Checks whether an object has a given property defined somewhere in its history.
+	 * @param {Object} arg0_object - The object being referenced.
+	 * @param {Object<Date>} arg1_date_object - The date being referenced.
+	 * @param {Function} arg2_conditional_function - The conditional function to check for in all history entries.
+	 *
+	 * @returns {boolean|*}
+	 */
 	function checkObjectHistory (arg0_object, arg1_date_object, arg2_conditional_function) {
 		//Convert from parameters
 		var local_object = arg0_object;
@@ -57,6 +73,15 @@
 		return has_property;
 	}
 
+	/**
+	 * createObjectHistory() - Creates an object history keyframe at the current date.
+	 * @param {Object} arg0_object - The object being referenced.
+	 * @param {Object<Date>} arg1_date_object - The date to create a history keyframe at.
+	 * @param {Object} [arg2_options=undefined] - The actual .options styling data being carried at this frame.
+	 * @param {Array<Array<number, number>>} - The coordinates to input for this frame. Defaults to old coordinates if available.
+	 *
+	 * @returns {Object}
+	 */
 	function createObjectHistory (arg0_object, arg1_date_object, arg2_options, arg3_coords) {
 		//Convert from parameters
 		var local_object = arg0_object;
@@ -123,6 +148,13 @@
 		return local_object;
 	}
 
+	/**
+	 * deleteObjectHistory() - Deletes an object history keyframe.
+	 * @param {Object} arg0_object - The object being referenced.
+	 * @param {Object<Date>} arg1_date_object - The date to delete a history keyframe at.
+	 *
+	 * @returns {Object|undefined} - Undefined if all history entries deleted.
+	 */
 	function deleteObjectHistory (arg0_object, arg1_date_object) {
 		//Convert from parameters
 		var local_object = arg0_object;
@@ -146,6 +178,12 @@
 		return local_object;
 	}
 
+	/**
+	 * getFirstHistoryFrame() - Returns the first history frame of an object.
+	 * @param {Object} arg0_object - The object being referenced.
+	 *
+	 * @returns {Object}
+	 */
 	function getFirstHistoryFrame (arg0_object) {
 		//Convert from parameters
 		var local_object = arg0_object;
@@ -175,6 +213,13 @@
 			}
 	}
 
+	/**
+	 * getHistoryCoords() - Fetches the coords of an object at a certain date.
+	 * @param {Object} arg0_object - The object being referenced.
+	 * @param {Object<Date>} - The date being referenced.
+	 *
+	 * @returns {Array<Array<number, number>>}
+	 */
 	function getHistoryCoords (arg0_object, arg1_date_object) {
 		//Convert from parameters
 		var local_object = arg0_object;
@@ -187,6 +232,13 @@
 		});
 	}
 
+	/**
+	 * getHistoryFrame() - Returns the history frame of an entity.
+	 * @param {Object} arg0_object - The object being referenced.
+	 * @param {Object<Date>} arg1_date_object - The date being referenced.
+	 *
+	 * @returns {Object}
+	 */
 	function getHistoryFrame (arg0_object, arg1_date_object) {
 		//Convert from parameters
 		var local_object = arg0_object;
@@ -231,6 +283,15 @@
 		return history_frame;
 	}
 
+	/**
+	 * getLastCoords() - Fetches the last valid .coords field from an object.
+	 * @param {Object} arg0_object - The object being referenced.
+	 * @param {Object} arg1_history_frame - The history frame object being referenced.
+	 * @param {Object} [arg2_options]
+	 * @param {boolean} [arg2_options.different_coords=false] - Whether the coords are required to be different.
+	 *
+	 * @returns {Array<Array<number, number>>}
+	 */
 	function getLastCoords (arg0_object, arg1_history_frame, arg2_options) {
 		//Convert from parameters
 		var local_object = arg0_object;
@@ -265,6 +326,13 @@
 			}
 	}
 
+	/**
+	 * getEntityLastIdenticalCoords() - Fetches the last identical coords prior to the current frame.
+	 * @param {Object} arg0_object - The object being referenced.
+	 * @param {Object} arg1_history_frame - The history frame object being referenced.
+	 *
+	 * @returns {Array<Array<number, number>>}
+	 */
 	function getEntityLastIdenticalCoords (arg0_object, arg1_history_frame) {
 		//Convert from parameters
 		var local_object = arg0_object;
@@ -288,6 +356,15 @@
 			}
 	}
 
+	/**
+	 * getObjectHistory() - Returns a history frame for the specified date.
+	 * @param {Object} arg0_object - The object being referenced.
+	 * @param {Object<Date>} arg1_date_object - The date being referenced.
+	 * @param {Object} [arg2_options]
+	 * @param {boolean} [arg2_options.return_key=false] - Whether to return the key insteadd of the object.
+	 *
+	 * @returns {Object}
+	 */
 	function getObjectHistory (arg0_object, arg1_date_object, arg2_options) {
 		//Convert from parameters
 		var local_object = arg0_object;
