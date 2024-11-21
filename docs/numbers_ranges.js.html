@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: numbers_ranges.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: numbers_ranges.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>//Initialise functions
+{
+	/**
+	 * addRange()/modifyRange() - Adds a number to a range.
+	 * @param {Array&lt;number, number>} arg0_range - The range to add to.
+	 * @param {number} arg1_number - The number to add to the range.
+	 *
+	 * @returns {Array&lt;number, number>}
+	 */
+	function addRange (arg0_range, arg1_number) {
+		//Convert from parameters
+		var range = arg0_range;
+		var number = arg1_number;
+
+		//Guard clause for number
+		if (isNaN(number)) return range;
+
+		//Add number to range
+		range[0] += number;
+		range[1] += number;
+
+		//Return statement
+		return range;
+	}
+
+	/**
+	 * addRanges() - Adds a range by another.
+	 * @param {Array&lt;number, number>} - The 1st range.
+	 * @param {Array&lt;number, number>} - The 2nd range.
+	 *
+	 * @returns {Array&lt;number, number>}
+	 */
+	function addRanges (arg0_range, arg1_range) {
+		//Convert from parameters
+		var range = getRange(arg0_range);
+		var ot_range = getRange(arg1_range);
+
+		//Apply operator
+		return_range[0] += ot_range[0];
+		return_range[1] += ot_range[1];
+
+		//Return statement
+		return return_range.sort();
+	}
+
+	/**
+	 * calculateNumberInRange() - Returns a given number within a range once standardised to its min, max potential.
+	 * @param {Array&lt;number, number>} arg0_range - The [min, max] bound range under which current values are valid.
+	 * @param {number} arg1_number - The actual number for which to calculate between this range.
+	 * @param {String} arg2_value_equation - The value equation which to use in these calculations for adjusted-iputs. Here VALUE represents arg1_number.
+	 *
+	 * @returns {number}
+	 */
+	function calculateNumberInRange(arg0_range, arg1_number, arg2_value_equation) {
+		//Convert from parameters
+		var range = getList(arg0_range);
+		var number = arg1_number;
+		var value_equation = (arg2_value_equation) ? arg2_value_equation : "VALUE";
+
+		//Guard clause; range must at least have min and max
+		if (range.length &lt; 2) return 0;
+
+		//Declare local instance variables
+		var actual_max_value = parseVariableString(value_equation, { VALUE: range[1] });
+		var actual_min_value = parseVariableString(value_equation, { VALUE: range[0] });
+
+		var actual_difference = actual_max_value - actual_min_value;
+		var nominal_difference = range[1] - range[0];
+
+		//Return statement
+		return range[0] + number*(nominal_difference/actual_difference);
+	}
+
+	/**
+	 * divideRange() - Divides a range by another.
+	 * @param {Array&lt;number, number>} arg0_range - The range to pass.
+	 * @param {number} arg1_number - The number to divide by.
+	 *
+	 * @returns {Array&lt;number, number>}
+	 */
+	function divideRange (arg0_range, arg1_number) {
+		//Convert from parameters
+		var range = arg0_range;
+		var number = arg1_number;
+
+		//Guard clause for number
+		if (isNaN(number)) return range;
+
+		//Divide range by number
+		range[0] /= number;
+		range[1] /= number;
+
+		//Return statement
+		return range;
+	}
+
+	/**
+	 * divideRnages() - Divides a range by another.
+	 * @param {Array&lt;number, number>} arg0_range - The 1st range to pass.
+	 * @param {Array&lt;number, number>} arg1_range - The 2nd range to pass.
+	 *
+	 * @returns {Array&lt;number, number>}
+	 */
+	function divideRanges (arg0_range, arg1_range) {
+		//Convert from parameters
+		var range = getRange(arg0_range);
+		var ot_range = getRange(arg1_range);
+
+		//Apply operator
+		range[0] /= ot_range[0];
+		range[1] /= ot_range[1];
+
+		//Return statement
+		return range.sort();
+	}
+
+	/**
+	 * exponentiateRange() - Exponentiates a range by another.
+	 * @param {Array&lt;number, number>} arg0_range - The range to pass.
+	 * @param {number} arg1_power - The number to pass.
+	 *
+	 * @returns {Array&lt;number, number>}
+	 */
+	function exponentiateRange (arg0_range, arg1_power) {
+		//Convert from parameters
+		var range = getRange(arg0_range);
+		var power = arg1_power;
+
+		//Guard clause for power
+		if (isNaN(power)) return power;
+
+		//Exponentiate range by power
+		range[0] = Math.pow(range[0], power);
+		range[1] = Math.pow(range[1], power);
+
+		//Return statement
+		return range.sort();
+	}
+
+	/**
+	 * exponentiateRanges() - Exponentiates a range by another.
+	 * @param {Array&lt;number, number>} - The 1st range to pass.
+	 * @param {Array&lt;number, number>} - The 2nd range to pass.
+	 *
+	 * @returns {Array&lt;number, number>}
+	 */
+	function exponentiateRanges (arg0_range, arg1_range) {
+		//Convert from parameters
+		var range = getRange(arg0_range);
+		var ot_range = getRange(arg1_range);
+
+		//Apply operator
+		range[0] = Math.pow(range[0], ot_range[0]);
+		range[1] = Math.pow(range[1], ot_range[1]);
+
+		//Return statement
+		return range.sort();
+	}
+
+	/**
+	 * getMidpoint() - Fetches the midpoint of a range.
+	 * @param {Array&lt;number, number>} - The range to pass.
+	 *
+	 * @returns {number}
+	 */
+	function getMidpoint (arg0_range) {
+		//Convert from parameters
+		var range = getRange(arg0_range);
+
+		//Return statement
+		return (range[0] + range[1])/2;
+	}
+
+	/**
+	 * getRange() - Gets a range from a given variable.
+	 * @param {*} - The range to pass.
+	 *
+	 * @returns {Array&lt;number, number>}
+	 */
+	function getRange (arg0_range) {
+		//Convert from parameters
+		var range = arg0_range;
+
+		//Declare local instance variables
+		var range_array = [];
+
+		//Check if range is Array
+		if (Array.isArray(range)) {
+			if (range.length >= 2) {
+				range_array = [range[0], range[1]];
+			} else if (range.length == 1) {
+				range_array = [range[0], range[0]];
+			} else {
+				range_array = [0, 0];
+			}
+		} else if (typeof range == "number") {
+			range_array = [range, range];
+		}
+
+		//Return statement
+		return JSON.parse(JSON.stringify(range_array.sort()));
+	}
+
+	/**
+	 * multiplyRange() - Multiplies a range by a number.
+	 * @param {Array&lt;number, number>} arg0_range - The range to pass.
+	 * @param {number} - The number to pass to the function.
+	 *
+	 * @returns {Array&lt;number, number>}
+	 */
+	function multiplyRange (arg0_range, arg1_number) {
+		//Convert from parameters
+		var range = getRange(arg0_range);
+		var number = arg1_number;
+
+		//Apply operator
+		range[0] *= number;
+		range[1] *= number;
+
+		//Return statement
+		return range.sort();
+	}
+
+	/**
+	 * multiplyRanges() - Multiplies a range by another.
+	 * @param {Array&lt;number, number>} - The 1st range to pass.
+	 * @param {Array&lt;number, number>} - The 2nd range to pass.
+	 *
+	 * @returns {Array&lt;number, number>}
+	 */
+	function multiplyRanges (arg0_range, arg1_range) {
+		//Convert from parameters
+		var range = getRange(arg0_range);
+		var ot_range = getRange(arg1_range);
+
+		//Apply operator
+		range[0] *= ot_range[0];
+		range[1] *= ot_range[1];
+
+		//Return statement
+		return range.sort();
+	}
+
+	/**
+	 * rootRange() - Roots a range by a given number.
+	 * @param {Array&lt;number, number>} arg0_range - The range to pass.
+	 * @param {number} arg1_root - The number to root a range by.
+	 *
+	 * @returns {Array&lt;number, number>}
+	 */
+	function rootRange (arg0_range, arg1_root) {
+		//Convert from parameters
+		var range = getRange(arg0_range);
+		var root = returnSafeNumber(arg1_root);
+
+		//Apply operator
+		range[0] = root(range[0], root);
+		range[1] = root(range[1], root);
+
+		//Return statement
+		return range.sort();
+	}
+
+	/**
+	 * rootRanges() - Roots ranges by one another.
+	 * @param {Array&lt;number, number>} arg0_range - The 1st range to pass.
+	 * @param {Array&lt;number, number>} arg1_range - The 2nd range to pass.
+	 *
+	 * @returns {Array&lt;number, number>}
+	 */
+	function rootRanges (arg0_range, arg1_range) {
+		//Convert from parameters
+		var range = getRange(arg0_range);
+		var ot_range = getRange(arg1_range);
+
+		//Apply operator
+		range[0] = root(range[0], ot_range[0]);
+		range[1] = root(range[1], ot_range[1]);
+
+		//Return statement
+		return range.sort();
+	}
+
+	/**
+	 * subtractRange() - Subtracts a number from a range.
+	 * @param {Array&lt;number, number>} arg0_range - The range to pass.
+	 *
+	 * @returns {Array&lt;number, number>}
+	 */
+	function subtractRange (arg0_range, arg1_number) {
+		//Convert from parameters
+		var range = getRange(arg0_range);
+		var number = arg1_number;
+
+		//Apply operator
+		range[0] -= number;
+		range[1] -= number;
+
+		//Return statement
+		return range.sort();
+	}
+
+	/**
+	 * subtractRanges() - Subtracts a range from another.
+	 * @param {Array&lt;number, number>} arg0_range - The 1st range to pass.
+	 * @param {Array&lt;number, number>} arg1_range - The 2nd range to pass.
+	 *
+	 * @returns {Array&lt;number, number>}
+	 */
+	function subtractRanges (arg0_range, arg1_range) {
+		//Convert from parameters
+		var range = getRange(arg0_range);
+		var ot_range = getRange(arg1_range);
+
+		//Apply operator
+		range[0] -= ot_range[0];
+		range[1] -= ot_range[1];
+
+		//Return statement
+		return range.sort();
+	}
+}
+
+//KEEP AT BOTTOM! Initialise function aliases
+{
+	modifyRange = addRange;
+}</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#LUDecompositionMatrix">LUDecompositionMatrix</a></li><li><a href="global.html#QRDecompositionMatrix">QRDecompositionMatrix</a></li><li><a href="global.html#QRLeastSquaredMatrix">QRLeastSquaredMatrix</a></li><li><a href="global.html#RGB2Lab">RGB2Lab</a></li><li><a href="global.html#RGBToHex">RGBToHex</a></li><li><a href="global.html#SORMatrix">SORMatrix</a></li><li><a href="global.html#aStar">aStar</a></li><li><a href="global.html#aStarHeuristicCost">aStarHeuristicCost</a></li><li><a href="global.html#absoluteValueArray">absoluteValueArray</a></li><li><a href="global.html#absoluteValueArrays">absoluteValueArrays</a></li><li><a href="global.html#addArray">addArray</a></li><li><a href="global.html#addArrays">addArrays</a></li><li><a href="global.html#addMatrices">addMatrices</a></li><li><a href="global.html#addObject">addObject</a></li><li><a href="global.html#addObjects">addObjects</a></li><li><a href="global.html#addRange">addRange</a></li><li><a href="global.html#addRanges">addRanges</a></li><li><a href="global.html#adjustObjectHistory">adjustObjectHistory</a></li><li><a href="global.html#alphabetiseNumber">alphabetiseNumber</a></li><li><a href="global.html#appendArrays">appendArrays</a></li><li><a href="global.html#appendDataframes">appendDataframes</a></li><li><a href="global.html#arabicise">arabicise</a></li><li><a href="global.html#arrayIsOfType">arrayIsOfType</a></li><li><a href="global.html#arrayToObject">arrayToObject</a></li><li><a href="global.html#augmentMatrices">augmentMatrices</a></li><li><a href="global.html#calculateNumberInRange">calculateNumberInRange</a></li><li><a href="global.html#capitaliseWords">capitaliseWords</a></li><li><a href="global.html#changeObjectRange">changeObjectRange</a></li><li><a href="global.html#checkObjectHistory">checkObjectHistory</a></li><li><a href="global.html#choleskyDecompositionMatrix">choleskyDecompositionMatrix</a></li><li><a href="global.html#cleanObject">cleanObject</a></li><li><a href="global.html#cleanStringify">cleanStringify</a></li><li><a href="global.html#clearInterval">clearInterval</a></li><li><a href="global.html#clearTimeout">clearTimeout</a></li><li><a href="global.html#componentToHex">componentToHex</a></li><li><a href="global.html#constructTimelineGraph">constructTimelineGraph</a></li><li><a href="global.html#convertDataframeToObject">convertDataframeToObject</a></li><li><a href="global.html#convertObjectToDataframe">convertObjectToDataframe</a></li><li><a href="global.html#convertTimestampToDate">convertTimestampToDate</a></li><li><a href="global.html#convertTimestampToInt">convertTimestampToInt</a></li><li><a href="global.html#createAction">createAction</a></li><li><a href="global.html#createArray">createArray</a></li><li><a href="global.html#createObjectHistory">createObjectHistory</a></li><li><a href="global.html#createObjectSearch">createObjectSearch</a></li><li><a href="global.html#createSmartSearch">createSmartSearch</a></li><li><a href="global.html#createTimeline">createTimeline</a></li><li><a href="global.html#daysInMonths">daysInMonths</a></li><li><a href="global.html#degreesToRadians">degreesToRadians</a></li><li><a href="global.html#deleteAction">deleteAction</a></li><li><a href="global.html#deleteObjectHistory">deleteObjectHistory</a></li><li><a href="global.html#deleteSmartSearch">deleteSmartSearch</a></li><li><a href="global.html#deleteTimeline">deleteTimeline</a></li><li><a href="global.html#deltaE">deltaE</a></li><li><a href="global.html#deordinalise">deordinalise</a></li><li><a href="global.html#dimensionality">dimensionality</a></li><li><a href="global.html#divideArray">divideArray</a></li><li><a href="global.html#divideArrays">divideArrays</a></li><li><a href="global.html#divideObject">divideObject</a></li><li><a href="global.html#divideObjects">divideObjects</a></li><li><a href="global.html#divideRange">divideRange</a></li><li><a href="global.html#divideRanges">divideRanges</a></li><li><a href="global.html#dumbFlattenObject">dumbFlattenObject</a></li><li><a href="global.html#dumbMergeObjects">dumbMergeObjects</a></li><li><a href="global.html#equalsIgnoreCase">equalsIgnoreCase</a></li><li><a href="global.html#equateObject">equateObject</a></li><li><a href="global.html#exp">exp</a></li><li><a href="global.html#exponentiateArray">exponentiateArray</a></li><li><a href="global.html#exponentiateArrays">exponentiateArrays</a></li><li><a href="global.html#exponentiateRange">exponentiateRange</a></li><li><a href="global.html#exponentiateRanges">exponentiateRanges</a></li><li><a href="global.html#factorial">factorial</a></li><li><a href="global.html#flattenArray">flattenArray</a></li><li><a href="global.html#flattenObject">flattenObject</a></li><li><a href="global.html#formaliseString">formaliseString</a></li><li><a href="global.html#gaussEliminationMatrix">gaussEliminationMatrix</a></li><li><a href="global.html#gaussJacobiMatrix">gaussJacobiMatrix</a></li><li><a href="global.html#gaussJordanMatrix">gaussJordanMatrix</a></li><li><a href="global.html#gaussSeidelMatrix">gaussSeidelMatrix</a></li><li><a href="global.html#generateDemographicStructure">generateDemographicStructure</a></li><li><a href="global.html#generateRandomColour">generateRandomColour</a></li><li><a href="global.html#generateRandomID">generateRandomID</a></li><li><a href="global.html#generateTimelineGraph">generateTimelineGraph</a></li><li><a href="global.html#getArrayElements">getArrayElements</a></li><li><a href="global.html#getArraySubstring">getArraySubstring</a></li><li><a href="global.html#getBlankDate">getBlankDate</a></li><li><a href="global.html#getCardinality">getCardinality</a></li><li><a href="global.html#getCofactor">getCofactor</a></li><li><a href="global.html#getColourDistance">getColourDistance</a></li><li><a href="global.html#getColumns">getColumns</a></li><li><a href="global.html#getDateFromString">getDateFromString</a></li><li><a href="global.html#getDateString">getDateString</a></li><li><a href="global.html#getDepth">getDepth</a></li><li><a href="global.html#getDimensions">getDimensions</a></li><li><a href="global.html#getEntityLastIdenticalCoords">getEntityLastIdenticalCoords</a></li><li><a href="global.html#getFirstHistoryFrame">getFirstHistoryFrame</a></li><li><a href="global.html#getFlippedTimeline">getFlippedTimeline</a></li><li><a href="global.html#getHistoryCoords">getHistoryCoords</a></li><li><a href="global.html#getHistoryFrame">getHistoryFrame</a></li><li><a href="global.html#getLastAction">getLastAction</a></li><li><a href="global.html#getLastCoords">getLastCoords</a></li><li><a href="global.html#getList">getList</a></li><li><a href="global.html#getLowestFScoreNode">getLowestFScoreNode</a></li><li><a href="global.html#getMatrixDeterminant">getMatrixDeterminant</a></li><li><a href="global.html#getMidpoint">getMidpoint</a></li><li><a href="global.html#getMonth">getMonth</a></li><li><a href="global.html#getNesting">getNesting</a></li><li><a href="global.html#getObjectHistory">getObjectHistory</a></li><li><a href="global.html#getObjectKey">getObjectKey</a></li><li><a href="global.html#getObjectList">getObjectList</a></li><li><a href="global.html#getObjectMaximum">getObjectMaximum</a></li><li><a href="global.html#getObjectMinimum">getObjectMinimum</a></li><li><a href="global.html#getObjectSum">getObjectSum</a></li><li><a href="global.html#getRange">getRange</a></li><li><a href="global.html#getRecursiveCardinality">getRecursiveCardinality</a></li><li><a href="global.html#getReverseNeighbours">getReverseNeighbours</a></li><li><a href="global.html#getRows">getRows</a></li><li><a href="global.html#getStandardYear">getStandardYear</a></li><li><a href="global.html#getSubobject">getSubobject</a></li><li><a href="global.html#getSubobjectKeys">getSubobjectKeys</a></li><li><a href="global.html#getSum">getSum</a></li><li><a href="global.html#getTimelineMaxX">getTimelineMaxX</a></li><li><a href="global.html#getTimelineMaxY">getTimelineMaxY</a></li><li><a href="global.html#getTimelineWidth">getTimelineWidth</a></li><li><a href="global.html#getTimestamp">getTimestamp</a></li><li><a href="global.html#hasHeader">hasHeader</a></li><li><a href="global.html#hexToRGB">hexToRGB</a></li><li><a href="global.html#householderTransformationMatrix">householderTransformationMatrix</a></li><li><a href="global.html#indexesOf">indexesOf</a></li><li><a href="global.html#initialiseUndoRedo">initialiseUndoRedo</a></li><li><a href="global.html#inverseMatrix">inverseMatrix</a></li><li><a href="global.html#invertFractionObject">invertFractionObject</a></li><li><a href="global.html#isArrayEmpty">isArrayEmpty</a></li><li><a href="global.html#isImage">isImage</a></li><li><a href="global.html#isLeapYear">isLeapYear</a></li><li><a href="global.html#jumpToTimeline">jumpToTimeline</a></li><li><a href="global.html#leapYearsBefore">leapYearsBefore</a></li><li><a href="global.html#leapYearsBetween">leapYearsBetween</a></li><li><a href="global.html#loadTimeline">loadTimeline</a></li><li><a href="global.html#logFactorial">logFactorial</a></li><li><a href="global.html#logarithm">logarithm</a></li><li><a href="global.html#max">max</a></li><li><a href="global.html#mergeDataframes">mergeDataframes</a></li><li><a href="global.html#mergeObjects">mergeObjects</a></li><li><a href="global.html#min">min</a></li><li><a href="global.html#modifyObjectRange">modifyObjectRange</a></li><li><a href="global.html#monthsFromDays">monthsFromDays</a></li><li><a href="global.html#moveElement">moveElement</a></li><li><a href="global.html#multiplyArray">multiplyArray</a></li><li><a href="global.html#multiplyArrays">multiplyArrays</a></li><li><a href="global.html#multiplyMatrices">multiplyMatrices</a></li><li><a href="global.html#multiplyObject">multiplyObject</a></li><li><a href="global.html#multiplyObjects">multiplyObjects</a></li><li><a href="global.html#multiplyRange">multiplyRange</a></li><li><a href="global.html#multiplyRanges">multiplyRanges</a></li><li><a href="global.html#numeriseAlphabet">numeriseAlphabet</a></li><li><a href="global.html#objectToArray">objectToArray</a></li><li><a href="global.html#oldDeordinalise">oldDeordinalise</a></li><li><a href="global.html#operateArray">operateArray</a></li><li><a href="global.html#operateArrays">operateArrays</a></li><li><a href="global.html#operateDataframes">operateDataframes</a></li><li><a href="global.html#operateObject">operateObject</a></li><li><a href="global.html#operateObjects">operateObjects</a></li><li><a href="global.html#ordinalise">ordinalise</a></li><li><a href="global.html#padZero">padZero</a></li><li><a href="global.html#parseBoolean">parseBoolean</a></li><li><a href="global.html#parseDate">parseDate</a></li><li><a href="global.html#parseList">parseList</a></li><li><a href="global.html#parseLocalisation">parseLocalisation</a></li><li><a href="global.html#parseMilliseconds">parseMilliseconds</a></li><li><a href="global.html#parseNumber">parseNumber</a></li><li><a href="global.html#parseString">parseString</a></li><li><a href="global.html#parseYears">parseYears</a></li><li><a href="global.html#performAction">performAction</a></li><li><a href="global.html#printPercentage">printPercentage</a></li><li><a href="global.html#printRange">printRange</a></li><li><a href="global.html#processOrdinalString">processOrdinalString</a></li><li><a href="global.html#radiansToDegrees">radiansToDegrees</a></li><li><a href="global.html#randomNumber">randomNumber</a></li><li><a href="global.html#reconstructPath">reconstructPath</a></li><li><a href="global.html#redoAction">redoAction</a></li><li><a href="global.html#removeZeroes">removeZeroes</a></li><li><a href="global.html#replaceKeys">replaceKeys</a></li><li><a href="global.html#returnSafeNumber">returnSafeNumber</a></li><li><a href="global.html#reverseArray">reverseArray</a></li><li><a href="global.html#romanise">romanise</a></li><li><a href="global.html#root">root</a></li><li><a href="global.html#rootArray">rootArray</a></li><li><a href="global.html#rootArrays">rootArrays</a></li><li><a href="global.html#rootRange">rootRange</a></li><li><a href="global.html#rootRanges">rootRanges</a></li><li><a href="global.html#round">round</a></li><li><a href="global.html#selectColumn">selectColumn</a></li><li><a href="global.html#selectRow">selectRow</a></li><li><a href="global.html#setColumn">setColumn</a></li><li><a href="global.html#setHeader">setHeader</a></li><li><a href="global.html#setInterval">setInterval</a></li><li><a href="global.html#setRow">setRow</a></li><li><a href="global.html#setTimeout">setTimeout</a></li><li><a href="global.html#sigfig">sigfig</a></li><li><a href="global.html#sortArray">sortArray</a></li><li><a href="global.html#sortObject">sortObject</a></li><li><a href="global.html#sortObjectByKey">sortObjectByKey</a></li><li><a href="global.html#split">split</a></li><li><a href="global.html#splitMarkdownString">splitMarkdownString</a></li><li><a href="global.html#splitNumber">splitNumber</a></li><li><a href="global.html#splitNumberParts">splitNumberParts</a></li><li><a href="global.html#splitString">splitString</a></li><li><a href="global.html#standardiseFraction">standardiseFraction</a></li><li><a href="global.html#standardisePercentage">standardisePercentage</a></li><li><a href="global.html#stripMarkdown">stripMarkdown</a></li><li><a href="global.html#stripNonNumerics">stripNonNumerics</a></li><li><a href="global.html#subtractArray">subtractArray</a></li><li><a href="global.html#subtractArrays">subtractArrays</a></li><li><a href="global.html#subtractMatrices">subtractMatrices</a></li><li><a href="global.html#subtractObject">subtractObject</a></li><li><a href="global.html#subtractObjects">subtractObjects</a></li><li><a href="global.html#subtractRange">subtractRange</a></li><li><a href="global.html#subtractRanges">subtractRanges</a></li><li><a href="global.html#transposeMatrix">transposeMatrix</a></li><li><a href="global.html#truncateArray">truncateArray</a></li><li><a href="global.html#truncateString">truncateString</a></li><li><a href="global.html#undoAction">undoAction</a></li><li><a href="global.html#uniqueArray">uniqueArray</a></li><li><a href="global.html#unzero">unzero</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.4</a> on Thu Nov 21 2024 04:15:29 GMT+0100 (GMT+01:00)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

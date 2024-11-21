@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: actions_timelines.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: actions_timelines.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>//Initialise functions
+{
+	/**
+	 * createTimeline() - Creates a new timeline from a parent (or an unassociataed one if no parent is defined). The parent may be cloned into the new timeline if necessary.
+	 * @param {String} [arg0_parent_timeline=this.actions.initial_timeline] - The ID of the parent timeline to split off from.
+	 * @param {Object} [arg1_options]
+	 * @param {number} [arg1_options.timeline_index=The last index of the timeline by default]
+	 * @param {boolean} [arg1_options.return_key=false] - Whether to return the timeline key.
+	 */
+	function createTimeline (arg0_parent_timeline, arg1_options) {
+		//Convert from parameters
+		var parent_timeline_id = (arg0_parent_timeline) ? arg0_parent_timeline : this.actions.initial_timeline;
+		var options = (arg1_options) ? arg1_options : {};
+
+		//Declare local instance variables
+		var new_timeline_id = generateRandomID(this.timelines);
+		var parent_timeline_array = this.timelines[parent_timeline_id];
+
+		//Create a new timeline with a base action
+		this.timelines[new_timeline_id] = [];
+		var new_timeline = this.timelines[new_timeline_id];
+		var root_action = {
+			id: new_timeline_id,
+			parent_timeline_id: parent_timeline_id,
+			parent_timeline_index: (options.timeline_index) ?
+				options.timeline_index : Math.max(parent_timeline_array.length - 1, 0)
+		};
+
+		//Push root_action to timeline
+		new_timeline.push(root_action);
+
+		//Return statement
+		return (!options.return_key) ? this.timelines[new_timeline_id] : options.return_key;
+	}
+
+	/**
+	 * constructTimelineGraph() - Returns an A* compatible graph of this.timelines.
+	 *
+	 * @returns {Object}&lt;br>- &lt;Timeline ID-index>: (Object)&lt;br>  - &lt;Timeline ID-index>: (number) - Represents the connection cost between the current Timeline Position andd another Timeline Position.
+	 */
+	function constructTimelineGraph () {
+		//Declare local instance variables
+		var all_timelines = Object.keys(this.timelines);
+		var timeline_graph = {};
+
+		//Iterate over all timelines
+		for (var i = 0; i &lt; all_timelines.length; i++) {
+			var local_timeline = this.timelines[all_timelines[i]];
+
+			for (var x = 0; x &lt; local_timeline.length; x++) {
+				var local_connections = [];
+				var local_key = all_timelines[i] + "-" + x;
+
+				//parent_timeline_id-parent_timeline_index connection handler
+				if (local_timeline[x].parent_timeline_id) {
+					var parent_timeline_index = returnSafeNumber(local_timeline[x].parent_timeline_index);
+
+					var parent_key = local_timeline[x].parent_timeline_id + "-" + parent_timeline_index;
+
+					//Check if parent_timeline_obj is defined
+					if (!timeline_graph[parent_key])
+						timeline_graph[parent_key] = {};
+					var parent_node = timeline_graph[parent_key];
+
+					//Set look-forwards connection to current node
+					parent_node[local_key] = 1;
+				}
+
+				//Look forwards to see if there's a connection here
+				if (local_timeline[x + 1])
+					local_connections.push(all_timelines[i] + "-" + (x + 1));
+
+				//Initialise local node
+				if (!timeline_graph[local_key])
+					timeline_graph[local_key] = {};
+				var local_node = timeline_graph[local_key];
+
+				//Add local_connections
+				for (var y = 0; y &lt; local_connections.length; y++)
+					if (!local_node[local_connections[y]])
+						local_node[local_connections[y]] = 1;
+			}
+		}
+
+		//Return statement
+		return timeline_graph;
+	}
+
+	/**
+	 * deleteTimeline() - Deletes a timeline and the timeline that branch off of it.
+	 * @param {String} arg0_timeline_id - The timeline ID to delete.
+	 */
+	function deleteTimeline (arg0_timeline_id) {
+		//Convert from parameters
+		var timeline_id = arg0_timeline_id;
+
+		//Declare local instance variables
+		var all_timelines = Object.keys(this.timelines);
+		var timeline = this.timelines[timeline_id];
+
+		//Delete all timelines that branch off of this one recursively
+		for (var i = 0; i &lt; all_timelines.length; i++) {
+			var local_timeline = all_timelines[i];
+
+			if (local_timeline[0])
+				if (local_timeline[0].parent_timeline_id == timeline_id)
+					deleteTimeline(all_timelines[i]); //Recursive deletion
+		}
+
+		//If this timeline is the current_timeline, shift current_timeline to initial_timeline
+		if (timeline_id == this.actions.current_timeline)
+			this.actions.current_timeline = this.actions.initial_timeline;
+
+		//Delete timeline
+		delete this.timelines[timeline_id];
+
+		//If this timeline is the initial timeline, delete this.actions.current_timeline; initialise undo/redo again
+		if (timeline_id == this.actions.initial_timeline) {
+			delete this.actions.current_timeline;
+			delete this.actions.initial_timeline;
+
+			initialiseUndoRedo();
+		}
+	}
+
+	/**
+	 * generateTimelineGraph() - Returns a graph of all timelines starting from initial_timeline[0].
+	 * @param {String} arg0_timeline_id - The ID of the timeline to start generating a graph from.
+	 * @param {Object} [arg1_options]
+	 * @param {number} [arg1_options.x_offset=0] - The current x offset.
+	 * @param {number} [arg1_options.y_offset=0] - The current y offset.
+	 * @param {Array&lt;String>} [arg1_options.excluded_timelines] - Optimisation parameter.
+	 * @param {boolean} [arg1_options.is_recursive] - Whether this is a recursive call.
+	 */
+	function generateTimelineGraph (arg0_timeline_id, arg1_options) {
+		//Convert from parameters
+		var timeline_id = (arg0_timeline_id) ? arg0_timeline_id : this.actions.initial_timeline;
+		var options = (arg1_options) ? arg1_options : {};
+
+		//Initialise options
+		if (!options.excluded_timelines) options.excluded_timelines = [];
+
+		//Guard clause for excluded_timelines
+		if (options.recursive &amp;&amp; !arg0_timeline_id) return {};
+		if (options.excluded_timelines.includes(timeline_id)) return {};
+
+		//Declare local instance variables
+		var all_timelines = Object.keys(this.timelines);
+		var current_y_offset = 0;
+		var timeline_array = this.timelines[timeline_id];
+		var timeline_coordinates = {};
+		var timeline_graph = {}; //Object list of UI elements: { x: (Number), y: (Number), name: (String), connections: (Array&lt;Array&lt;x, y>>) };
+		var x_offset = returnSafeNumber(options.x_offset);
+		var y_offset = returnSafeNumber(options.y_offset);
+
+		//Create list of .child_timelines first
+		if (timeline_id == this.actions.initial_timeline)
+			for (var i = 0; i &lt; all_timelines.length; i++) {
+				var local_child_timelines = [];
+				var local_timeline = this.timelines[all_timelines[i]];
+
+				for (var x = 0; x &lt; all_timelines.length; x++) {
+					var local_second_timeline = this.timelines[all_timelines[x]];
+
+					if (local_second_timeline[0])
+						if (local_second_timeline[0].parent_timeline_id == all_timelines[i]) {
+							var local_parent_timeline_id = local_second_timeline[0].parent_timeline_id;
+
+							var local_parent_timeline = this.timelines[local_parent_timeline_id];
+
+							if (!local_child_timelines.includes(all_timelines[x]) &amp;&amp; all_timelines[x] != all_timelines[i])
+								local_child_timelines.push(all_timelines[x]);
+						}
+				}
+
+				if (!local_timeline[0] &amp;&amp; local_child_timelines.length > 0)
+					local_timeline.push({});
+				if (local_child_timelines.length > 0)
+					local_timeline[0].child_timelines = local_child_timelines;
+			}
+
+		//Produce graph at this layer only for the current timeline and immediate all_timelines connected to it, then call recursively
+		if (timeline_array[0])
+			if (timeline_array[0].child_timelines) {
+				for (var i = 0; i &lt; timeline_array[0].child_timelines.length; i++) {
+					var local_child_timeline = global.timelines[timeline_array[0].child_timelines[i]];
+					var local_child_timeline_id = timeline_array[0].child_timelines[i];
+
+					var child_timeline_width = getTimelineWidth(local_child_timeline_id);
+
+					//Calculate x_offset; y_offset
+					var local_x_offset = x_offset + returnSafeNumber(local_child_timeline[0].parent_timeline_index);
+					var local_y_offset = y_offset + current_y_offset + child_timeline_width;
+
+					current_y_offset += child_timeline_width;
+
+					//Iterate recursively - This causes a max. stack call size error for some reason
+					var new_timeline_graph = generateTimelineGraph(local_child_timeline_id, {
+						x_offset: local_x_offset,
+						y_offset: local_y_offset,
+
+						x_original: x_offset,
+						y_original: y_offset,
+
+						is_recursive: true
+					});
+
+					var all_new_timeline_keys = Object.keys(new_timeline_graph);
+
+					for (var x = 0; x &lt; all_new_timeline_keys.length; x++)
+						timeline_graph[all_new_timeline_keys[x]] = new_timeline_graph[all_new_timeline_keys[x]];
+				}
+			}
+
+		//Parse connections
+		var last_id = "";
+
+		//Iterate over current timeline_array; parse connection_ids
+		for (var i = 0; i &lt; timeline_array.length; i++) {
+			var local_connection_ids = [];
+			var local_id = generateRandomID(timeline_graph);
+
+			timeline_graph[local_id] = {};
+
+			//.x_original/.y_original handler
+			if (options.x_original != undefined &amp;&amp; options.y_original != undefined)
+				local_connection_ids.push([last_id]);
+
+			//Connections handler
+			if (local_connection_ids.length > 0)
+				timeline_graph[local_id].connection_ids = local_connection_ids;
+
+			//Add .data field
+			timeline_graph[local_id].data = timeline_array[i];
+			timeline_graph[local_id].x = i;
+			timeline_graph[local_id].y = 0;
+
+			//Set last_id
+			last_id = local_id;
+		}
+
+		//Add x_offset; y_offset to timeline graph and to connections
+		var all_elements = Object.keys(timeline_graph);
+
+		//Iterate over all_elements to adjust x_offset; y_offset
+		for (var i = 0; i &lt; all_elements.length; i++) {
+			var local_element = timeline_graph[all_elements[i]];
+
+			local_element.x += x_offset;
+			local_element.y += y_offset;
+
+			if (local_element.connections)
+				for (var x = 0; x &lt; local_element.connections.length; x++) {
+					local_element.connections[x][0] += x_offset;
+					local_element.connections[x][1] += y_offset;
+				}
+		}
+
+		//Return statement
+		return timeline_graph;
+	}
+
+	/**
+	 * getFlippeddTimeline() - Flips a timeline's .x, .y coordinates.
+	 * @param {Object} arg0_graph - The graph of the timeline to pass to the function.
+	 *
+	 * @returns {Object}
+	 */
+	function getFlippedTimeline (arg0_graph) {
+		//Convert from parameters
+		var graph = arg0_graph;
+
+		//Declare local instance variables
+		var all_graph_keys = Object.keys(graph);
+
+		//Iterate over all_graph_keys
+		for (var i = 0; i &lt; all_graph_keys.length; i++) {
+			var local_graph_entry = graph[all_graph_keys[i]];
+
+			//Check to make sure local_graph_entry coordinates exist
+			if (local_graph_entry.x != undefined &amp;&amp; local_graph_entry.y != undefined) {
+				var old_x = JSON.parse(JSON.stringify(local_graph_entry.x));
+				var old_y = JSON.parse(JSON.stringify(local_graph_entry.y));
+
+				//Flip coordinates
+				local_graph_entry.x = old_y;
+				local_graph_entry.y = old_x;
+			}
+		}
+
+		//Return statement
+		return graph;
+	}
+
+	/**
+	 * getLastAction() - Fetches the last action loaded in the current timeline.
+	 *
+	 * @returns {Object}
+	 */
+	function getLastAction () {
+		//Declare local instance variables
+		var current_timeline = this.timelines[this.actions.current_timeline];
+
+		var current_action = current_timeline[this.actions.current_index];
+
+		//Return statement
+		if (current_action) return current_action;
+	}
+
+	/**
+	 * getTimelineMaxX() - Fetches the maximum .x value in a timeline graph.
+	 * @param {Object} arg0_graph - The timeline graph to insert.
+	 *
+	 * @returns {number}
+	 */
+	function getTimelineMaxX (arg0_graph) {
+		//Convert from parameters
+		var graph = arg0_graph;
+
+		//Declare local instance variables
+		var all_graph_keys = Object.keys(graph);
+		var max_x = 0;
+
+		//Iterate over all_graph_keys
+		for (var i = 0; i &lt; all_graph_keys.length; i++) {
+			var local_graph_entry = graph[all_graph_keys[i]];
+
+			if (local_graph_entry.x > max_x)
+				max_x = local_graph_entry.x;
+		}
+
+		//Return statement
+		return max_x;
+	}
+
+	/**
+	 * getTimelineMaxY() - Fetches the maximum .y value in a timeline graph.
+	 * @param {Object} arg0_graph - The timeline graph to insert.
+	 *
+	 * @returns {number}
+	 */
+	function getTimelineMaxY (arg0_graph) {
+		//Convert from parameters
+		var graph = arg0_graph;
+
+		//Declare local instance variables
+		var all_graph_keys = Object.keys(graph);
+		var max_y = 0;
+
+		//Iterate over all_graph_keys
+		for (var i = 0; i &lt; all_graph_keys.length; i++) {
+			var local_graph_entry = graph[all_graph_keys[i]];
+
+			if (local_graph_entry.y > max_y)
+				max_y = local_graph_entry.y;
+		}
+
+		//Return statement
+		return max_y;
+	}
+
+	/**
+	 * getTimelineWidth() - Fetches the total X/Y width of a timeline from all future descendant timelines.
+	 * @param {String} arg0_timeline_id - The ID of the timeline to measure the descendant width of.
+	 *
+	 * @returns {number}
+	 */
+	function getTimelineWidth (arg0_timeline_id) {
+		//Convert from parameters
+		var timeline_id = arg0_timeline_id;
+
+		//Declare local instance variables
+		var all_timelines = Object.keys(this.timelines);
+		var timeline_array = this.timelines[timeline_id];
+		var timeline_width = 0;
+
+		//Check if array has .child_timelines
+		if (timeline_array) {
+			if (!timeline_array[0])
+				timeline_array.push({});
+			if (timeline_array[0])
+				if (timeline_array[0].child_timelines)
+					for (var i = 0; i &lt; timeline_array[0].child_timelines.length; i++) {
+						var local_child_timeline_id = timeline_array[0].child_timelines[i];
+
+						timeline_width += timeline_array[0].child_timelines.length;
+						timeline_width += getTimelineWidth(local_child_timeline_id);
+					}
+		}
+
+		//Return statement
+		return timeline_width;
+	}
+
+	/**
+	 * loadTimeline() - Loads in the current timeline, undoing/redoing all actions needed to get there.
+	 * @param {String} arg0_timeline_id - The ID of the timeline to load into the current state.
+	 * @param {Object} [arg1_options]
+	 * @param {number} [arg1_options.timeline_index=The last index of the timeline by default] - The index off of which the timeline should split.
+	 */
+	function loadTimeline (arg0_timeline_idd, arg1_options) {
+		//Convert from parameters
+		var timeline_id = arg0_timeline_id;
+		var options = (arg1_options) ? arg1_options : {};
+
+		//Declare local instance variables
+		var current_index = returnSafeNumber(this.actions.current_index);
+		var timeline_graph = constructTimelineGraph();
+
+		//A* traversal from current_timeline-current_index to destination timeline_idd-options.timeline_index
+		var end_key = timeline_id + "-" + returnSafeNumber(options.timeline_index);
+		var start_key = this.actions.current_timeline + "-" + current_index;
+
+		var path = aStar(timeline_graph, start_key, end_key);
+
+		//Iterate over path and perform delta toggles
+		for (var i = 0; i &lt; path.length; i++) {
+			var split_key = path[i].split("-");
+
+			var local_element = this.timelines[split_key[0]][parseInt(split_key[1])];
+
+			//Perform current delta action, then set toggle
+			if (local_element.delta_toggle == "undo") {
+				this[local_element.undo_function].apply(this, local_element.undo_function_parameters);
+				local_element.delta_toggle = "redo";
+			} else {
+				this[local_element.redo_function].apply(this, local_element.redo_function_parameters);
+				local_element.delta_toggle = "undo";
+			}
+		}
+
+		//Set this.actions.current_timeline, this.actions.current_index
+		this.actions.current_timeline = timeline_id;
+		this.actions.current_index = returnSafeNumber(options.timeline_index);
+	}
+
+	/**
+	 * jumpToTimeline() - Jumps to a specific timeline.
+	 * @param {String} arg0_timeline_id - The timeline ID to jump to.
+	 */
+	function jumpToTimeline (arg0_timeline_id) {
+		//Convert from parameters
+		var timeline_id = arg0_timeline_id;
+
+		//Invoke loadTimeline()
+		loadTimeline(timeline_id, { timeline_index: 0 });
+	}
+
+	/**
+	 * performAction() - Logs a delta action in the current timeline.
+	 * @param {Object} [arg0_options]
+	 * @param {String} [arg0_options.action_id] - The ID of the action currently being performed.
+	 * @param {String} [arg0_options.redo_function] - The corresponding redo function.
+	 * @param {Array&lt;*>} [arg0_options.redo_function_parameters] - The current arguments passed to perform the delta action.
+	 * @param {String} [arg0_actions.undo_function] - The corresponding undo function.
+	 * @param {Array&lt;*>} [arg0_options.undo_function_parameters] - The arguments needed to undo the delta action.
+	 */
+	function performAction (arg0_options) {
+		//Convert from parameters
+		var options = (arg0_options) ? arg0_options : {};
+
+		//Declare local instance variables
+		var current_timeline = this.timelines[this.actions.current_timeline];
+		var current_index = returnSafeNumber(this.actions.current_index);
+		var local_action = this.actions[options.action_id];
+		var new_action = {
+			id: options.action_id,
+			name: (local_action.name) ? local_action.name : options.action_id,
+
+			delta_toggle: "undo",
+
+			redo_function: options.redo_function,
+			redo_function_parameters: options.redo_function_parameters,
+			undo_function: options.undo_function,
+			undo_function_parameters: options.undo_function_parameters
+		};
+
+		//Check if action was grouped
+		var action_grouped = (this.groupActions) ?
+			this.groupActions(new_action) : false;
+
+		if (!action_grouped)
+			if (!this.no_undo_redo_trees) {
+				if (current_index != current_timeline.length - 1) {
+					var new_timeline = createTimeline(this.actions.current_timeline);
+
+					new_timeline.push(new_action);
+
+					//Set current_timeline; current_index to new_timeline
+					this.actions.current_timeline = new_timeline[0].id;
+					this.actions.current_index = 1;
+				} else {
+					current_timeline.push(new_action);
+
+					//Set current_index
+					this.actions.current_index = current_timeline.length - 1;
+				}
+			} else {
+				//Splice element into current_timeline
+				current_timeline.splice(this.actions.current_index + 1, 0, new_action);
+
+				//Set current_index
+				this.actions.current_index++;
+
+				this.actions.current_index = Math.min(this.actions.current_index, current_timeline.length - 1);
+			}
+	}
+
+	/**
+	 * redoAction() - Redoes an action in the current timeline.
+	 *
+	 * @returns {boolean}
+	 */
+	function redoAction () {
+		//Declare local instance variables
+		var current_index = returnSafeNumber(this.actions.current_index);
+		var current_timeline = this.timelines[this.actions.current_timeline];
+
+		//See if there's an action to redo
+		if (current_timeline[current_index + 1]) {
+			var local_element = current_timeline[current_index + 1];
+
+			// Move forwards in the current timeline by default
+			this[local_element.redo_function].apply(this, local_element.redo_function_parameters);
+			local_element.delta_toggle = "undo";
+			this.actions.current_index = current_index + 1;
+
+			//Return statement; action successfully redone
+			return true;
+		} else {
+			//Return statement; nothing left to redo in the current tree
+			return false;
+		}
+	}
+
+	/**
+	 * undoAction() - Undoes the last action in the current timeline.
+	 *
+	 * @returns {boolean}
+	 */
+	function undoAction () {
+		//Declare local instance variables
+		var current_index = returnSafeNumber(this.actions.current_index);
+		var current_timeline = this.timelines[this.actions.current_timeline];
+
+		//See if there's an action to undo
+		if (current_timeline[current_index - 1]) {
+			var local_element = current_timeline[current_index - 1];
+
+			//Move backwards in the current timeline by default
+			this[local_element.undo_function].apply(this, local_element.undo_function_parameters);
+			local_element.delta_toggle = "redo";
+			this.actions.current_index = current_index - 1;
+
+			//Return statement; action successfully undone
+			return true;
+		} else {
+			//Return statement; nothing left to undo in the current tree
+			return false;
+		}
+	}
+}</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#LUDecompositionMatrix">LUDecompositionMatrix</a></li><li><a href="global.html#QRDecompositionMatrix">QRDecompositionMatrix</a></li><li><a href="global.html#QRLeastSquaredMatrix">QRLeastSquaredMatrix</a></li><li><a href="global.html#RGB2Lab">RGB2Lab</a></li><li><a href="global.html#RGBToHex">RGBToHex</a></li><li><a href="global.html#SORMatrix">SORMatrix</a></li><li><a href="global.html#aStar">aStar</a></li><li><a href="global.html#aStarHeuristicCost">aStarHeuristicCost</a></li><li><a href="global.html#absoluteValueArray">absoluteValueArray</a></li><li><a href="global.html#absoluteValueArrays">absoluteValueArrays</a></li><li><a href="global.html#addArray">addArray</a></li><li><a href="global.html#addArrays">addArrays</a></li><li><a href="global.html#addMatrices">addMatrices</a></li><li><a href="global.html#addObject">addObject</a></li><li><a href="global.html#addObjects">addObjects</a></li><li><a href="global.html#addRange">addRange</a></li><li><a href="global.html#addRanges">addRanges</a></li><li><a href="global.html#adjustObjectHistory">adjustObjectHistory</a></li><li><a href="global.html#alphabetiseNumber">alphabetiseNumber</a></li><li><a href="global.html#appendArrays">appendArrays</a></li><li><a href="global.html#appendDataframes">appendDataframes</a></li><li><a href="global.html#arabicise">arabicise</a></li><li><a href="global.html#arrayIsOfType">arrayIsOfType</a></li><li><a href="global.html#arrayToObject">arrayToObject</a></li><li><a href="global.html#augmentMatrices">augmentMatrices</a></li><li><a href="global.html#calculateNumberInRange">calculateNumberInRange</a></li><li><a href="global.html#capitaliseWords">capitaliseWords</a></li><li><a href="global.html#changeObjectRange">changeObjectRange</a></li><li><a href="global.html#checkObjectHistory">checkObjectHistory</a></li><li><a href="global.html#choleskyDecompositionMatrix">choleskyDecompositionMatrix</a></li><li><a href="global.html#cleanObject">cleanObject</a></li><li><a href="global.html#cleanStringify">cleanStringify</a></li><li><a href="global.html#clearInterval">clearInterval</a></li><li><a href="global.html#clearTimeout">clearTimeout</a></li><li><a href="global.html#componentToHex">componentToHex</a></li><li><a href="global.html#constructTimelineGraph">constructTimelineGraph</a></li><li><a href="global.html#convertDataframeToObject">convertDataframeToObject</a></li><li><a href="global.html#convertObjectToDataframe">convertObjectToDataframe</a></li><li><a href="global.html#convertTimestampToDate">convertTimestampToDate</a></li><li><a href="global.html#convertTimestampToInt">convertTimestampToInt</a></li><li><a href="global.html#createAction">createAction</a></li><li><a href="global.html#createArray">createArray</a></li><li><a href="global.html#createObjectHistory">createObjectHistory</a></li><li><a href="global.html#createObjectSearch">createObjectSearch</a></li><li><a href="global.html#createSmartSearch">createSmartSearch</a></li><li><a href="global.html#createTimeline">createTimeline</a></li><li><a href="global.html#daysInMonths">daysInMonths</a></li><li><a href="global.html#degreesToRadians">degreesToRadians</a></li><li><a href="global.html#deleteAction">deleteAction</a></li><li><a href="global.html#deleteObjectHistory">deleteObjectHistory</a></li><li><a href="global.html#deleteSmartSearch">deleteSmartSearch</a></li><li><a href="global.html#deleteTimeline">deleteTimeline</a></li><li><a href="global.html#deltaE">deltaE</a></li><li><a href="global.html#deordinalise">deordinalise</a></li><li><a href="global.html#dimensionality">dimensionality</a></li><li><a href="global.html#divideArray">divideArray</a></li><li><a href="global.html#divideArrays">divideArrays</a></li><li><a href="global.html#divideObject">divideObject</a></li><li><a href="global.html#divideObjects">divideObjects</a></li><li><a href="global.html#divideRange">divideRange</a></li><li><a href="global.html#divideRanges">divideRanges</a></li><li><a href="global.html#dumbFlattenObject">dumbFlattenObject</a></li><li><a href="global.html#dumbMergeObjects">dumbMergeObjects</a></li><li><a href="global.html#equalsIgnoreCase">equalsIgnoreCase</a></li><li><a href="global.html#equateObject">equateObject</a></li><li><a href="global.html#exp">exp</a></li><li><a href="global.html#exponentiateArray">exponentiateArray</a></li><li><a href="global.html#exponentiateArrays">exponentiateArrays</a></li><li><a href="global.html#exponentiateRange">exponentiateRange</a></li><li><a href="global.html#exponentiateRanges">exponentiateRanges</a></li><li><a href="global.html#factorial">factorial</a></li><li><a href="global.html#flattenArray">flattenArray</a></li><li><a href="global.html#flattenObject">flattenObject</a></li><li><a href="global.html#formaliseString">formaliseString</a></li><li><a href="global.html#gaussEliminationMatrix">gaussEliminationMatrix</a></li><li><a href="global.html#gaussJacobiMatrix">gaussJacobiMatrix</a></li><li><a href="global.html#gaussJordanMatrix">gaussJordanMatrix</a></li><li><a href="global.html#gaussSeidelMatrix">gaussSeidelMatrix</a></li><li><a href="global.html#generateDemographicStructure">generateDemographicStructure</a></li><li><a href="global.html#generateRandomColour">generateRandomColour</a></li><li><a href="global.html#generateRandomID">generateRandomID</a></li><li><a href="global.html#generateTimelineGraph">generateTimelineGraph</a></li><li><a href="global.html#getArrayElements">getArrayElements</a></li><li><a href="global.html#getArraySubstring">getArraySubstring</a></li><li><a href="global.html#getBlankDate">getBlankDate</a></li><li><a href="global.html#getCardinality">getCardinality</a></li><li><a href="global.html#getCofactor">getCofactor</a></li><li><a href="global.html#getColourDistance">getColourDistance</a></li><li><a href="global.html#getColumns">getColumns</a></li><li><a href="global.html#getDateFromString">getDateFromString</a></li><li><a href="global.html#getDateString">getDateString</a></li><li><a href="global.html#getDepth">getDepth</a></li><li><a href="global.html#getDimensions">getDimensions</a></li><li><a href="global.html#getEntityLastIdenticalCoords">getEntityLastIdenticalCoords</a></li><li><a href="global.html#getFirstHistoryFrame">getFirstHistoryFrame</a></li><li><a href="global.html#getFlippedTimeline">getFlippedTimeline</a></li><li><a href="global.html#getHistoryCoords">getHistoryCoords</a></li><li><a href="global.html#getHistoryFrame">getHistoryFrame</a></li><li><a href="global.html#getLastAction">getLastAction</a></li><li><a href="global.html#getLastCoords">getLastCoords</a></li><li><a href="global.html#getList">getList</a></li><li><a href="global.html#getLowestFScoreNode">getLowestFScoreNode</a></li><li><a href="global.html#getMatrixDeterminant">getMatrixDeterminant</a></li><li><a href="global.html#getMidpoint">getMidpoint</a></li><li><a href="global.html#getMonth">getMonth</a></li><li><a href="global.html#getNesting">getNesting</a></li><li><a href="global.html#getObjectHistory">getObjectHistory</a></li><li><a href="global.html#getObjectKey">getObjectKey</a></li><li><a href="global.html#getObjectList">getObjectList</a></li><li><a href="global.html#getObjectMaximum">getObjectMaximum</a></li><li><a href="global.html#getObjectMinimum">getObjectMinimum</a></li><li><a href="global.html#getObjectSum">getObjectSum</a></li><li><a href="global.html#getRange">getRange</a></li><li><a href="global.html#getRecursiveCardinality">getRecursiveCardinality</a></li><li><a href="global.html#getReverseNeighbours">getReverseNeighbours</a></li><li><a href="global.html#getRows">getRows</a></li><li><a href="global.html#getStandardYear">getStandardYear</a></li><li><a href="global.html#getSubobject">getSubobject</a></li><li><a href="global.html#getSubobjectKeys">getSubobjectKeys</a></li><li><a href="global.html#getSum">getSum</a></li><li><a href="global.html#getTimelineMaxX">getTimelineMaxX</a></li><li><a href="global.html#getTimelineMaxY">getTimelineMaxY</a></li><li><a href="global.html#getTimelineWidth">getTimelineWidth</a></li><li><a href="global.html#getTimestamp">getTimestamp</a></li><li><a href="global.html#hasHeader">hasHeader</a></li><li><a href="global.html#hexToRGB">hexToRGB</a></li><li><a href="global.html#householderTransformationMatrix">householderTransformationMatrix</a></li><li><a href="global.html#indexesOf">indexesOf</a></li><li><a href="global.html#initialiseUndoRedo">initialiseUndoRedo</a></li><li><a href="global.html#inverseMatrix">inverseMatrix</a></li><li><a href="global.html#invertFractionObject">invertFractionObject</a></li><li><a href="global.html#isArrayEmpty">isArrayEmpty</a></li><li><a href="global.html#isImage">isImage</a></li><li><a href="global.html#isLeapYear">isLeapYear</a></li><li><a href="global.html#jumpToTimeline">jumpToTimeline</a></li><li><a href="global.html#leapYearsBefore">leapYearsBefore</a></li><li><a href="global.html#leapYearsBetween">leapYearsBetween</a></li><li><a href="global.html#loadTimeline">loadTimeline</a></li><li><a href="global.html#logFactorial">logFactorial</a></li><li><a href="global.html#logarithm">logarithm</a></li><li><a href="global.html#max">max</a></li><li><a href="global.html#mergeDataframes">mergeDataframes</a></li><li><a href="global.html#mergeObjects">mergeObjects</a></li><li><a href="global.html#min">min</a></li><li><a href="global.html#modifyObjectRange">modifyObjectRange</a></li><li><a href="global.html#monthsFromDays">monthsFromDays</a></li><li><a href="global.html#moveElement">moveElement</a></li><li><a href="global.html#multiplyArray">multiplyArray</a></li><li><a href="global.html#multiplyArrays">multiplyArrays</a></li><li><a href="global.html#multiplyMatrices">multiplyMatrices</a></li><li><a href="global.html#multiplyObject">multiplyObject</a></li><li><a href="global.html#multiplyObjects">multiplyObjects</a></li><li><a href="global.html#multiplyRange">multiplyRange</a></li><li><a href="global.html#multiplyRanges">multiplyRanges</a></li><li><a href="global.html#numeriseAlphabet">numeriseAlphabet</a></li><li><a href="global.html#objectToArray">objectToArray</a></li><li><a href="global.html#oldDeordinalise">oldDeordinalise</a></li><li><a href="global.html#operateArray">operateArray</a></li><li><a href="global.html#operateArrays">operateArrays</a></li><li><a href="global.html#operateDataframes">operateDataframes</a></li><li><a href="global.html#operateObject">operateObject</a></li><li><a href="global.html#operateObjects">operateObjects</a></li><li><a href="global.html#ordinalise">ordinalise</a></li><li><a href="global.html#padZero">padZero</a></li><li><a href="global.html#parseBoolean">parseBoolean</a></li><li><a href="global.html#parseDate">parseDate</a></li><li><a href="global.html#parseList">parseList</a></li><li><a href="global.html#parseLocalisation">parseLocalisation</a></li><li><a href="global.html#parseMilliseconds">parseMilliseconds</a></li><li><a href="global.html#parseNumber">parseNumber</a></li><li><a href="global.html#parseString">parseString</a></li><li><a href="global.html#parseYears">parseYears</a></li><li><a href="global.html#performAction">performAction</a></li><li><a href="global.html#printPercentage">printPercentage</a></li><li><a href="global.html#printRange">printRange</a></li><li><a href="global.html#processOrdinalString">processOrdinalString</a></li><li><a href="global.html#radiansToDegrees">radiansToDegrees</a></li><li><a href="global.html#randomNumber">randomNumber</a></li><li><a href="global.html#reconstructPath">reconstructPath</a></li><li><a href="global.html#redoAction">redoAction</a></li><li><a href="global.html#removeZeroes">removeZeroes</a></li><li><a href="global.html#replaceKeys">replaceKeys</a></li><li><a href="global.html#returnSafeNumber">returnSafeNumber</a></li><li><a href="global.html#reverseArray">reverseArray</a></li><li><a href="global.html#romanise">romanise</a></li><li><a href="global.html#root">root</a></li><li><a href="global.html#rootArray">rootArray</a></li><li><a href="global.html#rootArrays">rootArrays</a></li><li><a href="global.html#rootRange">rootRange</a></li><li><a href="global.html#rootRanges">rootRanges</a></li><li><a href="global.html#round">round</a></li><li><a href="global.html#selectColumn">selectColumn</a></li><li><a href="global.html#selectRow">selectRow</a></li><li><a href="global.html#setColumn">setColumn</a></li><li><a href="global.html#setHeader">setHeader</a></li><li><a href="global.html#setInterval">setInterval</a></li><li><a href="global.html#setRow">setRow</a></li><li><a href="global.html#setTimeout">setTimeout</a></li><li><a href="global.html#sigfig">sigfig</a></li><li><a href="global.html#sortArray">sortArray</a></li><li><a href="global.html#sortObject">sortObject</a></li><li><a href="global.html#sortObjectByKey">sortObjectByKey</a></li><li><a href="global.html#split">split</a></li><li><a href="global.html#splitMarkdownString">splitMarkdownString</a></li><li><a href="global.html#splitNumber">splitNumber</a></li><li><a href="global.html#splitNumberParts">splitNumberParts</a></li><li><a href="global.html#splitString">splitString</a></li><li><a href="global.html#standardiseFraction">standardiseFraction</a></li><li><a href="global.html#standardisePercentage">standardisePercentage</a></li><li><a href="global.html#stripMarkdown">stripMarkdown</a></li><li><a href="global.html#stripNonNumerics">stripNonNumerics</a></li><li><a href="global.html#subtractArray">subtractArray</a></li><li><a href="global.html#subtractArrays">subtractArrays</a></li><li><a href="global.html#subtractMatrices">subtractMatrices</a></li><li><a href="global.html#subtractObject">subtractObject</a></li><li><a href="global.html#subtractObjects">subtractObjects</a></li><li><a href="global.html#subtractRange">subtractRange</a></li><li><a href="global.html#subtractRanges">subtractRanges</a></li><li><a href="global.html#transposeMatrix">transposeMatrix</a></li><li><a href="global.html#truncateArray">truncateArray</a></li><li><a href="global.html#truncateString">truncateString</a></li><li><a href="global.html#undoAction">undoAction</a></li><li><a href="global.html#uniqueArray">uniqueArray</a></li><li><a href="global.html#unzero">unzero</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.4</a> on Thu Nov 21 2024 04:15:29 GMT+0100 (GMT+01:00)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

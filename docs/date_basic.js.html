@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: date_basic.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: date_basic.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>//Initialise global variables
+{
+	var bc_leap_years = [-45, -42, -39, -36, -33, -30, -27, -24, -21, -18, -15, -12, -9];
+	var days_in_months = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31, 30, 31];
+	var lowercase_months = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"];
+	var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+}
+
+//Initialise functions
+{
+	/**
+	 * daysInMonths() - Fetches the number of days already passed since the beginning of the year.
+	 * @param {Object&lt;Date>} arg0_date_object - The adte object/timestamp to pass to the function.
+	 *
+	 * @returns {number}
+	 */
+	function daysInMonths (arg0_date_object) {
+		//Convert from parameters
+		var date = convertTimestampToDate(arg0_date_object);
+
+		//Declare local instance variables
+		var days = 0;
+
+		//Iterate over elapsed months
+		for (var i = 0; i &lt; date.month - 1; i++)
+			days += days_in_months[i];
+		if (isLeapYear(date.year) &amp;&amp; date.month >= 2)
+			days++;
+
+		//Return statement
+		return days;
+	}
+
+	/**
+	 * getBlankDate() - Returns a blank date where zero time has elapsed.
+	 *
+	 * @returns {{month: 0, hour: 0, year: 0, day: 0, minute: 0}}
+	 */
+	function getBlankDate () {
+		//Return statement
+		return { year: 0, month: 0, day: 0, hour: 0, minute: 0 };
+	}
+
+	/**
+	 * getDateString() - Returns a formatte ate string from a date object.
+	 * @param {Object&lt;Date>} - The date object to pass to the function.
+	 *
+	 * @returns {String}
+	 */
+	function getDateString (arg0_date_object, arg1_format) {
+		//Convert from parameters
+		var date = arg0_date_object;
+		var format = (arg1_format) ? arg1_format : "DD Month YYYY";
+
+		//Declare local instance variables
+		var day = padZero(date.day);
+		var hour = padZero(date.hour);
+		var minute = padZero(date.minute);
+		var month = months[getMonth(date.month)];
+		var year = date.year;
+
+		//Generate the formatted date string based on the requested format.
+		if (format == "DD MM YYYY") return day + " " + padZero(date.month) + " " + year;
+		if (format == "DD-MM-YYYY") return day + "-" + padZero(date.month) + "-" + year;
+		if (format == "DD/MM/YYYY") return day + "/" + padZero(date.month) + "/" + year;
+		if (format == "DD Month YYYY") return day + " " + month + " " + year;
+		if (format == "DD Month, YYYY") return day + " " + month + ", " + year;
+		if (format == "HH:MM") return hour + ":" + minute;
+		if (format == "MM DD YYYY") return month + " " + day + " " + year;
+		if (format == "MM-DD-YYYY") return month + "-" + day + "-" + year;
+		if (format == "MM/DD/YYYY") return month + "/" + day + "/" + year;
+		if (format == "Month DD YYYY") return month + " " + day + " " + year;
+		if (format == "Month DD, YYYY") return month + " " + day + ", " + year;
+		if (format == "YYYY-MM-DD") return year + "-" + padZero(date.month) + "-" + day;
+	}
+
+	/**
+	 * getMonth() - Fetches a month from a substring and returns its index.
+	 * @param {String} arg0_string - The month substring to pass.
+	 *
+	 * @returns {number}
+	 */
+	function getMonth (arg0_string) {
+		//Convert from parameters
+		var string = arg0_string.toLowerCase();
+
+		//Declare local instance variables
+		var lowercase_months = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"];
+
+		var local_month = lowercase_months.indexOf(string) + 1;
+
+		if (!local_month)
+			for (var i = 0; i &lt; lowercase_months.length; i++)
+				if (lowercase_months[i].includes(string)) {
+					local_month = i + 1;
+					break;
+				}
+		if (!local_month) local_month = 1;
+
+		//Return statement
+		return local_month;
+	}
+
+	/**
+	 * getStandardYear() - Returns the standard numeric Gregorian year from a date object/timestamp.
+	 * @param {Object&lt;Date>} arg0_date_object - The date object/timestamp to pass to the function.
+	 *
+	 * @returns {number}
+	 */
+	function getStandardYear (arg0_date_object) {
+		//Convert from parameters
+		var date = convertTimestampToDate(arg0_date_object);
+
+		//Return statement
+		return date.year;
+	}
+
+	/**
+	 * getTimestamp() - Returns the amount of minutes in a date.
+	 * @param {Object&lt;Date>} - The date object/timestamp to pass to the function.
+	 *
+	 * @returns {String}
+	 */
+	function getTimestamp (arg0_date_object) {
+		//Convert from parameters
+		var date = convertTimestampToDate(arg0_date_object);
+
+		//Guard clause
+		if (typeof date == "string") {
+			if (date.startsWith("t")) return date;
+			date = parseInt(date);
+		}
+		if (!isNaN(parseInt(date))) return date;
+
+		//Declare local instance variables
+		var is_leap_year = isLeapYear(date.year);
+		var leap_years = leapYearsBefore(date.year);
+		var year_minutes = (leap_years*366 + (date.year - leap_years)*365)*24*60;
+
+		var timestamp_number = Math.floor(returnSafeNumber(year_minutes) +
+			returnSafeNumber(daysInMonths(date)*24*60) +
+			returnSafeNumber(date.day*24*60) +
+			returnSafeNumber(date.hour*60) +
+			returnSafeNumber(date.minute));
+		timestamp_number = alphabetiseNumber(timestamp_number);
+
+		//Return statement
+		return ((timestamp_number >= 0) ? "tz" : "t") + "_" + timestamp_number;
+	}
+
+	/**
+	 * isLeapYear() - Whether the specified year is a leap year.
+	 * @param {number} arg0_year - The year to check for.
+	 * @param {boolean} [arg1_hanseceltican_standard=false] - Whether to account for Roman-errored leap years.
+	 *
+	 * @returns {boolean}
+	 */
+	function isLeapYear (arg0_year, arg1_hanseceltican_standard) {
+		//Convert from parameters
+		var year = parseInt(arg0_year);
+		var hanseceltican_standard = arg1_hanseceltican_standard;
+
+		//BC guard clause
+		if (global.bc_leap_years &amp;&amp; hanseceltican_standard)
+			if (global.bc_leap_years.indexOf(year) != -1)
+				return true;
+
+		//Return statement
+		return (((year % 4 == 0) &amp;&amp; (year % 100 != 0)) || (year % 400 == 0) &amp;&amp; year != 4);
+	}
+
+	/**
+	 * leapYearsBefore() - Fetches the number of leap years before a given year.
+	 * @param {number} arg0_year - The year to check for.
+	 *
+	 * @returns {number}
+	 */
+	function leapYearsBefore (arg0_year) {
+		//Convert from parameters
+		var year = parseInt(arg0_year);
+
+		//Decrement year
+		year--;
+
+		//Return statement
+		return (year/4) - (year/100) + (year/400) - 1; //4AD was not a leap year
+	}
+
+	/**
+	 * leapYearsBetween() - Fetches the number of leap years between two years.
+	 * @param {number} arg0_start_year - The beginning year.
+	 * @param {number} arg1_end_year - The ending year.
+	 *
+	 * @returns {number}
+	 */
+	function leapYearsBetween (arg0_start_year, arg1_end_year) {
+		//Convert from parameters
+		var start_year = arg0_start_year;
+		var end_year = arg1_end_year;
+
+		//Return statement
+		return leapYearsBefore(end_year) - leapYearsBefore(start_year + 1);
+	}
+
+	/**
+	 * monthsFromDays() - Fetches the number of months from ddays, within the context of a date object.
+	 * @param {Object&lt;Date>} - The date object/timestamp to pass to the function.
+	 *
+	 * @returns {number}
+	 */
+	function monthsFromDays (arg0_date_object) {
+		//Convert from parameters
+		var date = convertTimestampToDate(arg0_date_object);
+
+		//Declare local variables
+		var local_days_in_months = JSON.parse(JSON.stringify(days_in_months));
+		var months = 0;
+
+		//Leap year handling
+		if (isLeapYear(date.year)) local_days_in_months[1] = 29;
+
+		//Count number of months
+		for (var i = 0; i &lt; local_days_in_months.length; i++) {
+			date.day -= local_days_in_months[i];
+
+			if (date.day >= 0) months++;
+		}
+
+		//Return statement
+		return months + 1;
+	}
+
+	/**
+	 * padZero() - Formats leading zeroes if a number is less than ten.
+	 *
+	 * @returns {String}
+	 */
+	function padZero (arg0_value) {
+		return (arg0_value &lt; 10) ? "0" + arg0_value : arg0_value;
+	}
+
+	/**
+	 * parseYears() - Returns days/months/years as an object depending on the year amount.
+	 * @param {number} arg0_number - The decimal number of years elapsed.
+	 * @param {number} [arg1_current_year=undefined] - The current year.
+	 *
+	 * @returns {{hour: number, day: number, month: number, year: number}}
+	 */
+	function parseYears (arg0_number, arg1_current_year) {
+		//Convert from parameters
+		var years_elapsed = arg0_number;
+		var current_year = arg1_current_year;
+
+		//Declare local instance variables
+		var is_leap_year = (current_year) ? isLeapYear(current_year) : false;
+		var time_elapsed = {
+			hour: 0,
+			day: 0,
+			month: 0,
+			year: 0
+		};
+
+		var days_in_months = (!is_leap_year) ?
+			[31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31] :
+			[31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+
+		//Take care of the year field first
+		time_elapsed.year = Math.floor(years_elapsed);
+		years_elapsed -= Math.floor(years_elapsed);
+
+		//How many days has it been?
+		time_elapsed.day = Math.floor(
+			years_elapsed*((!is_leap_year) ? 365 : 366)
+		);
+		years_elapsed -= time_elapsed.day/((!is_leap_year) ? 365 : 366);
+
+		//How many months has it been?
+		for (var i = 0; i &lt; days_in_months.length; i++)
+			if (time_elapsed.day >= days_in_months[i]) {
+				time_elapsed.day -= days_in_months[i];
+				time_elapsed.month++;
+			}
+
+		//How many hours has it been?
+		time_elapsed.hour = years_elapsed*((!is_leap_year) ? 365*24 : 366*24);
+
+		//Return statement
+		time_elapsed.days_in_months = days_in_months;
+
+		//Return statement
+		return time_elapsed;
+	}
+}
+
+//KEEP AT BOTTOM! - Initialise aliases
+{
+	uppercase_months = months;
+}</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#LUDecompositionMatrix">LUDecompositionMatrix</a></li><li><a href="global.html#QRDecompositionMatrix">QRDecompositionMatrix</a></li><li><a href="global.html#QRLeastSquaredMatrix">QRLeastSquaredMatrix</a></li><li><a href="global.html#RGB2Lab">RGB2Lab</a></li><li><a href="global.html#RGBToHex">RGBToHex</a></li><li><a href="global.html#SORMatrix">SORMatrix</a></li><li><a href="global.html#aStar">aStar</a></li><li><a href="global.html#aStarHeuristicCost">aStarHeuristicCost</a></li><li><a href="global.html#absoluteValueArray">absoluteValueArray</a></li><li><a href="global.html#absoluteValueArrays">absoluteValueArrays</a></li><li><a href="global.html#addArray">addArray</a></li><li><a href="global.html#addArrays">addArrays</a></li><li><a href="global.html#addMatrices">addMatrices</a></li><li><a href="global.html#addObject">addObject</a></li><li><a href="global.html#addObjects">addObjects</a></li><li><a href="global.html#addRange">addRange</a></li><li><a href="global.html#addRanges">addRanges</a></li><li><a href="global.html#adjustObjectHistory">adjustObjectHistory</a></li><li><a href="global.html#alphabetiseNumber">alphabetiseNumber</a></li><li><a href="global.html#appendArrays">appendArrays</a></li><li><a href="global.html#appendDataframes">appendDataframes</a></li><li><a href="global.html#arabicise">arabicise</a></li><li><a href="global.html#arrayIsOfType">arrayIsOfType</a></li><li><a href="global.html#arrayToObject">arrayToObject</a></li><li><a href="global.html#augmentMatrices">augmentMatrices</a></li><li><a href="global.html#calculateNumberInRange">calculateNumberInRange</a></li><li><a href="global.html#capitaliseWords">capitaliseWords</a></li><li><a href="global.html#changeObjectRange">changeObjectRange</a></li><li><a href="global.html#checkObjectHistory">checkObjectHistory</a></li><li><a href="global.html#choleskyDecompositionMatrix">choleskyDecompositionMatrix</a></li><li><a href="global.html#cleanObject">cleanObject</a></li><li><a href="global.html#cleanStringify">cleanStringify</a></li><li><a href="global.html#clearInterval">clearInterval</a></li><li><a href="global.html#clearTimeout">clearTimeout</a></li><li><a href="global.html#componentToHex">componentToHex</a></li><li><a href="global.html#constructTimelineGraph">constructTimelineGraph</a></li><li><a href="global.html#convertDataframeToObject">convertDataframeToObject</a></li><li><a href="global.html#convertObjectToDataframe">convertObjectToDataframe</a></li><li><a href="global.html#convertTimestampToDate">convertTimestampToDate</a></li><li><a href="global.html#convertTimestampToInt">convertTimestampToInt</a></li><li><a href="global.html#createAction">createAction</a></li><li><a href="global.html#createArray">createArray</a></li><li><a href="global.html#createObjectHistory">createObjectHistory</a></li><li><a href="global.html#createObjectSearch">createObjectSearch</a></li><li><a href="global.html#createSmartSearch">createSmartSearch</a></li><li><a href="global.html#createTimeline">createTimeline</a></li><li><a href="global.html#daysInMonths">daysInMonths</a></li><li><a href="global.html#degreesToRadians">degreesToRadians</a></li><li><a href="global.html#deleteAction">deleteAction</a></li><li><a href="global.html#deleteObjectHistory">deleteObjectHistory</a></li><li><a href="global.html#deleteSmartSearch">deleteSmartSearch</a></li><li><a href="global.html#deleteTimeline">deleteTimeline</a></li><li><a href="global.html#deltaE">deltaE</a></li><li><a href="global.html#deordinalise">deordinalise</a></li><li><a href="global.html#dimensionality">dimensionality</a></li><li><a href="global.html#divideArray">divideArray</a></li><li><a href="global.html#divideArrays">divideArrays</a></li><li><a href="global.html#divideObject">divideObject</a></li><li><a href="global.html#divideObjects">divideObjects</a></li><li><a href="global.html#divideRange">divideRange</a></li><li><a href="global.html#divideRanges">divideRanges</a></li><li><a href="global.html#dumbFlattenObject">dumbFlattenObject</a></li><li><a href="global.html#dumbMergeObjects">dumbMergeObjects</a></li><li><a href="global.html#equalsIgnoreCase">equalsIgnoreCase</a></li><li><a href="global.html#equateObject">equateObject</a></li><li><a href="global.html#exp">exp</a></li><li><a href="global.html#exponentiateArray">exponentiateArray</a></li><li><a href="global.html#exponentiateArrays">exponentiateArrays</a></li><li><a href="global.html#exponentiateRange">exponentiateRange</a></li><li><a href="global.html#exponentiateRanges">exponentiateRanges</a></li><li><a href="global.html#factorial">factorial</a></li><li><a href="global.html#flattenArray">flattenArray</a></li><li><a href="global.html#flattenObject">flattenObject</a></li><li><a href="global.html#formaliseString">formaliseString</a></li><li><a href="global.html#gaussEliminationMatrix">gaussEliminationMatrix</a></li><li><a href="global.html#gaussJacobiMatrix">gaussJacobiMatrix</a></li><li><a href="global.html#gaussJordanMatrix">gaussJordanMatrix</a></li><li><a href="global.html#gaussSeidelMatrix">gaussSeidelMatrix</a></li><li><a href="global.html#generateDemographicStructure">generateDemographicStructure</a></li><li><a href="global.html#generateRandomColour">generateRandomColour</a></li><li><a href="global.html#generateRandomID">generateRandomID</a></li><li><a href="global.html#generateTimelineGraph">generateTimelineGraph</a></li><li><a href="global.html#getArrayElements">getArrayElements</a></li><li><a href="global.html#getArraySubstring">getArraySubstring</a></li><li><a href="global.html#getBlankDate">getBlankDate</a></li><li><a href="global.html#getCardinality">getCardinality</a></li><li><a href="global.html#getCofactor">getCofactor</a></li><li><a href="global.html#getColourDistance">getColourDistance</a></li><li><a href="global.html#getColumns">getColumns</a></li><li><a href="global.html#getDateFromString">getDateFromString</a></li><li><a href="global.html#getDateString">getDateString</a></li><li><a href="global.html#getDepth">getDepth</a></li><li><a href="global.html#getDimensions">getDimensions</a></li><li><a href="global.html#getEntityLastIdenticalCoords">getEntityLastIdenticalCoords</a></li><li><a href="global.html#getFirstHistoryFrame">getFirstHistoryFrame</a></li><li><a href="global.html#getFlippedTimeline">getFlippedTimeline</a></li><li><a href="global.html#getHistoryCoords">getHistoryCoords</a></li><li><a href="global.html#getHistoryFrame">getHistoryFrame</a></li><li><a href="global.html#getLastAction">getLastAction</a></li><li><a href="global.html#getLastCoords">getLastCoords</a></li><li><a href="global.html#getList">getList</a></li><li><a href="global.html#getLowestFScoreNode">getLowestFScoreNode</a></li><li><a href="global.html#getMatrixDeterminant">getMatrixDeterminant</a></li><li><a href="global.html#getMidpoint">getMidpoint</a></li><li><a href="global.html#getMonth">getMonth</a></li><li><a href="global.html#getNesting">getNesting</a></li><li><a href="global.html#getObjectHistory">getObjectHistory</a></li><li><a href="global.html#getObjectKey">getObjectKey</a></li><li><a href="global.html#getObjectList">getObjectList</a></li><li><a href="global.html#getObjectMaximum">getObjectMaximum</a></li><li><a href="global.html#getObjectMinimum">getObjectMinimum</a></li><li><a href="global.html#getObjectSum">getObjectSum</a></li><li><a href="global.html#getRange">getRange</a></li><li><a href="global.html#getRecursiveCardinality">getRecursiveCardinality</a></li><li><a href="global.html#getReverseNeighbours">getReverseNeighbours</a></li><li><a href="global.html#getRows">getRows</a></li><li><a href="global.html#getStandardYear">getStandardYear</a></li><li><a href="global.html#getSubobject">getSubobject</a></li><li><a href="global.html#getSubobjectKeys">getSubobjectKeys</a></li><li><a href="global.html#getSum">getSum</a></li><li><a href="global.html#getTimelineMaxX">getTimelineMaxX</a></li><li><a href="global.html#getTimelineMaxY">getTimelineMaxY</a></li><li><a href="global.html#getTimelineWidth">getTimelineWidth</a></li><li><a href="global.html#getTimestamp">getTimestamp</a></li><li><a href="global.html#hasHeader">hasHeader</a></li><li><a href="global.html#hexToRGB">hexToRGB</a></li><li><a href="global.html#householderTransformationMatrix">householderTransformationMatrix</a></li><li><a href="global.html#indexesOf">indexesOf</a></li><li><a href="global.html#initialiseUndoRedo">initialiseUndoRedo</a></li><li><a href="global.html#inverseMatrix">inverseMatrix</a></li><li><a href="global.html#invertFractionObject">invertFractionObject</a></li><li><a href="global.html#isArrayEmpty">isArrayEmpty</a></li><li><a href="global.html#isImage">isImage</a></li><li><a href="global.html#isLeapYear">isLeapYear</a></li><li><a href="global.html#jumpToTimeline">jumpToTimeline</a></li><li><a href="global.html#leapYearsBefore">leapYearsBefore</a></li><li><a href="global.html#leapYearsBetween">leapYearsBetween</a></li><li><a href="global.html#loadTimeline">loadTimeline</a></li><li><a href="global.html#logFactorial">logFactorial</a></li><li><a href="global.html#logarithm">logarithm</a></li><li><a href="global.html#max">max</a></li><li><a href="global.html#mergeDataframes">mergeDataframes</a></li><li><a href="global.html#mergeObjects">mergeObjects</a></li><li><a href="global.html#min">min</a></li><li><a href="global.html#modifyObjectRange">modifyObjectRange</a></li><li><a href="global.html#monthsFromDays">monthsFromDays</a></li><li><a href="global.html#moveElement">moveElement</a></li><li><a href="global.html#multiplyArray">multiplyArray</a></li><li><a href="global.html#multiplyArrays">multiplyArrays</a></li><li><a href="global.html#multiplyMatrices">multiplyMatrices</a></li><li><a href="global.html#multiplyObject">multiplyObject</a></li><li><a href="global.html#multiplyObjects">multiplyObjects</a></li><li><a href="global.html#multiplyRange">multiplyRange</a></li><li><a href="global.html#multiplyRanges">multiplyRanges</a></li><li><a href="global.html#numeriseAlphabet">numeriseAlphabet</a></li><li><a href="global.html#objectToArray">objectToArray</a></li><li><a href="global.html#oldDeordinalise">oldDeordinalise</a></li><li><a href="global.html#operateArray">operateArray</a></li><li><a href="global.html#operateArrays">operateArrays</a></li><li><a href="global.html#operateDataframes">operateDataframes</a></li><li><a href="global.html#operateObject">operateObject</a></li><li><a href="global.html#operateObjects">operateObjects</a></li><li><a href="global.html#ordinalise">ordinalise</a></li><li><a href="global.html#padZero">padZero</a></li><li><a href="global.html#parseBoolean">parseBoolean</a></li><li><a href="global.html#parseDate">parseDate</a></li><li><a href="global.html#parseList">parseList</a></li><li><a href="global.html#parseLocalisation">parseLocalisation</a></li><li><a href="global.html#parseMilliseconds">parseMilliseconds</a></li><li><a href="global.html#parseNumber">parseNumber</a></li><li><a href="global.html#parseString">parseString</a></li><li><a href="global.html#parseYears">parseYears</a></li><li><a href="global.html#performAction">performAction</a></li><li><a href="global.html#printPercentage">printPercentage</a></li><li><a href="global.html#printRange">printRange</a></li><li><a href="global.html#processOrdinalString">processOrdinalString</a></li><li><a href="global.html#radiansToDegrees">radiansToDegrees</a></li><li><a href="global.html#randomNumber">randomNumber</a></li><li><a href="global.html#reconstructPath">reconstructPath</a></li><li><a href="global.html#redoAction">redoAction</a></li><li><a href="global.html#removeZeroes">removeZeroes</a></li><li><a href="global.html#replaceKeys">replaceKeys</a></li><li><a href="global.html#returnSafeNumber">returnSafeNumber</a></li><li><a href="global.html#reverseArray">reverseArray</a></li><li><a href="global.html#romanise">romanise</a></li><li><a href="global.html#root">root</a></li><li><a href="global.html#rootArray">rootArray</a></li><li><a href="global.html#rootArrays">rootArrays</a></li><li><a href="global.html#rootRange">rootRange</a></li><li><a href="global.html#rootRanges">rootRanges</a></li><li><a href="global.html#round">round</a></li><li><a href="global.html#selectColumn">selectColumn</a></li><li><a href="global.html#selectRow">selectRow</a></li><li><a href="global.html#setColumn">setColumn</a></li><li><a href="global.html#setHeader">setHeader</a></li><li><a href="global.html#setInterval">setInterval</a></li><li><a href="global.html#setRow">setRow</a></li><li><a href="global.html#setTimeout">setTimeout</a></li><li><a href="global.html#sigfig">sigfig</a></li><li><a href="global.html#sortArray">sortArray</a></li><li><a href="global.html#sortObject">sortObject</a></li><li><a href="global.html#sortObjectByKey">sortObjectByKey</a></li><li><a href="global.html#split">split</a></li><li><a href="global.html#splitMarkdownString">splitMarkdownString</a></li><li><a href="global.html#splitNumber">splitNumber</a></li><li><a href="global.html#splitNumberParts">splitNumberParts</a></li><li><a href="global.html#splitString">splitString</a></li><li><a href="global.html#standardiseFraction">standardiseFraction</a></li><li><a href="global.html#standardisePercentage">standardisePercentage</a></li><li><a href="global.html#stripMarkdown">stripMarkdown</a></li><li><a href="global.html#stripNonNumerics">stripNonNumerics</a></li><li><a href="global.html#subtractArray">subtractArray</a></li><li><a href="global.html#subtractArrays">subtractArrays</a></li><li><a href="global.html#subtractMatrices">subtractMatrices</a></li><li><a href="global.html#subtractObject">subtractObject</a></li><li><a href="global.html#subtractObjects">subtractObjects</a></li><li><a href="global.html#subtractRange">subtractRange</a></li><li><a href="global.html#subtractRanges">subtractRanges</a></li><li><a href="global.html#transposeMatrix">transposeMatrix</a></li><li><a href="global.html#truncateArray">truncateArray</a></li><li><a href="global.html#truncateString">truncateString</a></li><li><a href="global.html#undoAction">undoAction</a></li><li><a href="global.html#uniqueArray">uniqueArray</a></li><li><a href="global.html#unzero">unzero</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.4</a> on Thu Nov 21 2024 04:15:29 GMT+0100 (GMT+01:00)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

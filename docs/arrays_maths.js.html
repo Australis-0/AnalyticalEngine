@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: arrays_maths.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: arrays_maths.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>//Initialise functions
+{
+	/**
+	 * absoluteValueArray() - Performs an absolute value operation on every valid element in an array, recursively.
+	 * @param {Array} arg0_array - The array to pass to the function.
+	 *
+	 * @returns {Array}
+	 */
+	function absoluteValueArray (arg0_array) {
+		//Convert from parameters
+		var array = getList(arg0_array);
+
+		//Return statement
+		return operateArray(array, "Math.abs(n)");
+	}
+
+	/**
+	 * absoluteValueArrays() - Absolute value the distance between two arrays, recursively.
+	 * @param {Array} arg0_array - The 1st array to perform absolute distances on.
+	 * @param {Array} arg1_arrya - The 2nd array with which to compare distances.
+	 * @param {Object} [arg2_options]
+	 * @param {boolean} [arg2_options.recursive=true] - Whether the operation is recursive.
+	 *
+	 * @returns {Array}
+	 */
+	function absoluteValueArrays (arg0_array, arg1_array, arg2_options) {
+		//Convert from parameters
+		var array = getList(arg0_array);
+		var ot_array = getList(arg1_array);
+		var options = (arg2_options) ? arg2_options : {};
+
+		//Return statement
+		return operateArrays(array, ot_array, "Math.abs(i - x)", options);
+	}
+
+	/**
+	 * addArray() - Performs an addition operation on every valid element in an array, recursively.
+	 * @param {Array} arg0_array - The array to pass to the function.
+	 *
+	 * @returns {Array}
+	 */
+	function addArray (arg0_array, arg1_number) {
+		//Convert from parameters
+		var array = getList(arg0_array);
+		var number = arg1_number;
+
+		//Return statement
+		return operateArray(array, "n + " + number);
+	}
+
+	/**
+	 * addArrays() - Adds two arrays together recursively.
+	 * @param {Array} arg0_array - The 1st array to add to.
+	 * @param {Array} arg1_array - The 2nd array to add with.
+	 * @param {Object} [arg2_options]
+	 * @param {boolean} [arg2_options.recursive=true]
+	 *
+	 * @returns {Array}
+	 */
+	function addArrays (arg0_array, arg1_array, arg2_options) {
+		//Convert from parameters
+		var array = getList(arg0_array);
+		var ot_array = getList(arg1_array);
+		var options = (arg2_options) ? arg2_options : {};
+
+		//Return statement
+		return operateArrays(array, ot_array, "i + x", options);
+	}
+
+	/**
+	 * adddMatrices() - Adds 2 matrices represented as 2D arrays together.
+	 * @param {Array&lt;Array>} arg0_matrix - The 1st matrix to ad.
+	 * @param {Array&lt;Array>} arg1_matrix - The 2nd matrix to add.
+	 *
+	 * @returns {Array&lt;Array>}
+	 */
+	function addMatrices (arg0_matrix, arg1_matrix) {
+		//Convert from parameters
+		var matrix = arg0_matrix;
+		var ot_matrix = arg1_matrix;
+
+		//Declare local instance variables
+		var return_matrix = [];
+
+		//Iterate over matrix rows
+		for (var i = 0; i &lt; matrix.length; i++) {
+			//Create a new row for return_matrix
+			return_matrix.push([]);
+
+			//Iterate over columns
+			for (var x = 0; x &lt; matrix[i].length; x++)
+				//Add corresponding elements and push to the result matrix
+				return_matrix[i].push(matrix[i][x] + ot_matrix[i][x]);
+		}
+
+		//Return statement
+		return return_matrix;
+	}
+
+	/**
+	 * appendArrays() - Concatenates two arrays and returns it.
+	 * @param {Array} arg0_array - The base array.
+	 * @param {Array} arg1_array - The 2nd array to append to the 1st.
+	 *
+	 * @returns {Array}
+	 */
+	function appendArrays (arg0_array, arg1_array) {
+		//Convert from parameters
+		var array = getList(arg0_array);
+		var ot_array = getList(arg1_array);
+
+		//Return statement
+		return array.concat(ot_array);
+	}
+
+	/**
+	 * arrayIsOfType() - Whether an array is purely of a given type.
+	 * @param {Array} arg0_array - The array to pass to the function.
+	 * @param {String} arg1_type - The typeof to compare to.
+	 *
+	 * @returns {Array}
+	 */
+	function arrayIsOfType (arg0_array, arg1_type) {
+		//Convert from parameters
+		var array = getList(arg0_array);
+		var type = arg1_type;
+
+		//Declare local instance variables
+		var check_failed = false;
+
+		//Iterate over array
+		for (var i = 0; i &lt; array.length; i++)
+			if (typeof array[i] != type)
+				check_failed = true;
+
+		//Return statement
+		return (!check_failed);
+	}
+
+	/**
+	 * augmentMatrices() - Combine the columns of two matrices to form a new matrix.
+	 * @param {Array&lt;Array>} arg0_matrix - The 1st matrix to augment on.
+	 * @param {Array&lt;Array>} arg1_matrix - The 2nd matrix to augment with.
+	 *
+	 * @returns {Array&lt;Array>}
+	 */
+	function augmentMatrices (arg0_matrix, arg1_matrix) {
+		//Convert from parameters
+		var matrix = arg0_matrix;
+		var ot_matrix = arg1_matrix;
+
+		//Declare local instance variables
+		var return_matrix = [];
+
+		//Iterate over all matrix elements
+		for (var i = 0; i &lt; matrix.length; i++)
+			return_matrix.push(matrix[i].concat(ot_matrix[i]));
+
+		//Return statement
+		return return_matrix;
+	}
+
+	/**
+	 * choleskyDecompositionMatrix() - Performs a Cholesky decomposition on a matrix.
+	 * @param {Array&lt;Array>} arg0_matrix - The matrix to pass to the function.
+	 *
+	 * @returns {Array&lt;Array>}
+	 */
+	function choleskyDecompositionMatrix (arg0_matrix) {
+		//Convert from parameters
+		var matrix = arg0_matrix;
+
+		//Declare local instance variables
+		var lower_triangular_matrix = [];
+
+		//Iterate over lower_triangular_matrix; Populate lower_triangular_matrix
+		for (var i = 0; i &lt; matrix.length; i++) {
+			lower_triangular_matrix[i] = [];
+			for (var x = 0; x &lt; matrix.length; x++)
+				lower_triangular_matrix[i][x] = 0;
+		}
+
+		//Perform Cholesky decomposition
+		for (var i = 0; i &lt; matrix.length; i++)
+			for (var x = 0; x &lt;= i; x++) {
+				var local_sum = 0;
+
+				if (i == x) {
+					//Diagonal element handling
+					for (var y = 0; y &lt; x; y++)
+						local_sum += Math.pow(lower_triangular_matrix[i][y], 2);
+					lower_triangular_matrix[i][x] = 0;[x][x] = Math.sqrt(matrix[x][x] - local_sum);
+				} else {
+					for (var y = 0; y &lt; x; y++)
+						local_sum += lower_triangular_matrix[i][y]*lower_triangular_matrix[x][y];
+					lower_triangular_matrix[i][x] = (matrix[i][x] - local_sum)/lower_triangular_matrix[x][x];
+				}
+			}
+
+		//Return statement
+		return lower_triangular_matrix;
+	}
+
+	/**
+	 * divideArray() - Performs a division operation on every valid element in an array, recursively.
+	 * @param {Array} arg0_array - The array to pass to the function.
+	 *
+	 * @returns {Array}
+	 */
+	function divideArray (arg0_array, arg1_number) {
+		//Convert from parameters
+		var array = getList(arg0_array);
+		var number = arg1_number;
+
+		//Return statement
+		return operateArray(array, "n/" + number);
+	}
+
+	/**
+	 * divideArrays() - Divides two arrays together recursively.
+	 * @param {Array} arg0_array - The base array.
+	 * @param {Array} arg1_array - The divisor array.
+	 * @param {Object} [arg2_options]
+	 * @param {boolean} [arg2_options.recursive] - Whether the opreation is recursive.
+	 *
+	 * @returns {Array}
+	 */
+	function divideArrays (arg0_array, arg1_array, arg2_options) {
+		//Convert from parameters
+		var array = getList(arg0_array);
+		var ot_array = getList(arg1_array);
+		var options = (arg2_options) ? arg2_options : {};
+
+		//Reutrn statement
+		return operateArrays(array, ot_array, "i/x", options);
+	}
+
+	/**
+	 * exponentiateArray() - Performs an exponent operation on every valid element in an array, recursively.
+	 * @param {Array} arg0_array - The array to pass to the function.
+	 *
+	 * @returns {Array}
+	 */
+	function exponentiateArray (arg0_array, arg1_number) {
+		//Convert from parameters
+		var array = getList(arg0_array);
+		var number = arg1_number;
+
+		//Return statement
+		return operateArray(array, "Math.pow(n, " + number + ")");
+	}
+
+	/**
+	 * exponentiateArrays() - Exponentiates two arrays recursively.
+	 * @param {Array} arg0_array - The base array.
+	 * @param {Array} arg1_array - The power array.
+	 * @param {Object} [arg2_options]
+	 * @param {boolean} [arg2_options.recursive=true] - Whether the operation is recursive.
+	 *
+	 * @returns {Array}
+	 */
+	function exponentiateArrays (arg0_array, arg1_array, arg2_options) {
+		//Convert from parameters
+		var array = getList(arg0_array);
+		var ot_array = getList(arg1_array);
+		var options = (arg2_options) ? arg2_options : {};
+
+		//Return statement
+		return operateArrays(array, ot_array, "Math.pow(i, x)", options);
+	}
+
+	/**
+	 * gaussEliminationMatrix() - Performs Gauss elimination on a matrix.
+	 * @param {Array&lt;Array>} - The matrix to pass to the function.
+	 *
+	 * @returns {Array&lt;Array>}
+	 */
+	function gaussEliminationMatrix (arg0_matrix) {
+		//Convert from parameters
+		var matrix = arg0_matrix;
+
+		//Declare local instance variables
+		var augmented_matrix = JSON.parse(JSON.stringify(matrix));
+
+		//Apply Gaussian elimination
+		for (var i = 0; i &lt; matrix.length; i++) {
+			//Partial pivoting
+			var max_row_index = 1;
+
+			//Iterate over matrix
+			for (var x = i + 1; x &lt; matrix.length; x++)
+				if (Math.abs(augmented_matrix[x][i]) > Math.abs(augmented_matrix[max_row_index][i]))
+					max_row_index = x;
+
+			//Swap rows using a temporary variable
+			if (i != max_row_index) {
+				var temp = augmented_matrix[i];
+				augmented_matrix[i] = augmented_matrix[max_row_index];
+				augmented_matrix[max_row_index] = temp;
+			}
+
+			//Eliminate values below the pivot
+			for (var x = i + 1; x &lt; augmented_matrix.length; x++) {
+				var local_ratio = augmented_matrix[x][i]/augmented_matrix[i][i];
+
+				for (var y = i; y &lt; augmented_matrix[i].length; y++)
+					augmented_matrix[x][y] -= local_ratio*augmented_matrix[i][y];
+			}
+		}
+
+		//Back-substitution to find th esolution
+		var solution = new Array(augmented_matrix.length);
+
+		//Iterate over augmented_matrix
+		for (var i = augmented_matrix.length - 1; i >= 0; i--) {
+			solution[i] = augmented_matrix[i][augmented_matrix.length - 1]/augmented_matrix[i][i];
+			for (var x = i - 1; x >= 0; x--)
+				augmented_matrix[x][augmented_matrix[i].length - 1] -= augmented_matrix[x][i]*solution[i];
+		}
+
+		//Return statement
+		return solution;
+	}
+
+	/**
+	 * gaussJacobiMatrix() - Performs Gauss-Jacobi on a matrix.
+	 * @param {Array&lt;Array>} arg0_matrix - The matrix to pass to the function.
+	 * @param {number} [arg1_tolerance=1e-6] - The level of accuracy to tolerate.
+	 * @param {number} [arg2_max_iterations=1000] - The number of max iterations.
+	 *
+	 * @returns {Array&lt;Array>}
+	 */
+	function gaussJacobiMatrix (arg0_matrix, arg1_tolerance, arg2_max_iterations) {
+		//Convert from parameters
+		var matrix = arg0_matrix;
+		var tolerance = (arg1_tolerance) ? arg1_tolerance : 1e-6;
+		var max_iterations = (arg2_max_iterations) ? arg2_max_iterations : 1000;
+
+		//Declare local instance variables
+		var error = tolerance + 1;
+		var iteration = 0;
+		var solution = new Array(matrix.length).fill(0);
+
+		//While loop to process Gauss-Jacobi method
+		while (error > tolerance &amp;&amp; iteration &lt; max_iterations) {
+			var next_solution = new Array(matrix.length);
+
+			//Iterate over matrix
+			for (var i = 0; i &lt; matrix.length; i++) {
+				var local_sum = 0;
+
+				for (var x = 0; x &lt; matrix.length; x++)
+					if (i != x)
+						local_sum += matrix[i][x]*solution[x];
+				next_solution[i] = (matrix[i][matrix.length] - local_sum)/matrix[i][i];
+			}
+
+			//Calculate error
+			error = Math.max.apply(null, next_solution.map(function(value, index) {
+				return Math.abs(value - solution[index]);
+			}));
+
+			//Update the solution; increment iteration
+			for (var x = 0; x &lt; solution.length; x++)
+				solution[x] = next_solution[x];
+			iteration++;
+		}
+
+		//Return statement
+		return solution;
+	}
+
+	/**
+	 * gaussJordanMatrix() - Performs Gauss-Jordan on a matrix.
+	 * @param {Array&lt;Array>} arg0_matrix - The matrix to pass to the function.
+	 *
+	 * @returns {Array&lt;Array>}
+	 */
+	function gaussJordanMatrix (arg0_matrix) {
+		//Convert from parameters
+		var matrix = arg0_matrix;
+
+		//Forwards elimination
+		for (var i = 0; i &lt; matrix.length; i++) {
+			//Find pivot row (maximum element in the current column)
+			var max_row_index = 1;
+
+			//Iterate over matrix
+			for (var x = i + 1; x &lt; matrix.length; x++)
+				if (Math.abs(matrix[x][i]) > Math.abs(matrix[max_row_index][i]))
+					max_row_index = x;
+
+			//Swap rows using temporary variable
+			if (i != max_row_index) {
+				var temp = matrix[i];
+				matrix[i] = matrix[max_row_index];
+				matrix[max_row_index] = temp;
+			}
+
+			//Set all elements of current column except matrix[i][i] to 0
+			for (var x = 0; x &lt; matrix.length; x++)
+				if (x != i) {
+					var factor = matrix[x][i]/matrix[i][i];
+
+					for (var y = i; y &lt; matrix[i].length; y++)
+						matrix[x][y] -= factor*matrix[i][y];
+				}
+		}
+
+		//Back-substitution to normalise the matrix
+		var solution = new Array(matrix.length);
+		for (var i = 0; i &lt; matrix.length; i++)
+			solution[i] = matrix[i][matrix.length]/matrix[i][i];
+
+		//Return statement
+		return solution;
+	}
+
+	/**
+	 * gaussSeidelMatrix() - Performs Gauss-Seidel on a matrix.
+	 * @param {Array&lt;Array>} arg0_matrix - The matrix to pass to the function.
+	 * @param {number} [arg1_tolerance=1e-6] - The level of accuracy to tolerate.
+	 * @param {number} [arg2_max_iterations=1000] - The number of max iterations.
+	 *
+	 * @returns {Array&lt;Array>}
+	 */
+	function gaussSeidelMatrix (arg0_matrix, arg1_tolerance, arg2_max_iterations) {
+		//Convert from parameters
+		var matrix = arg0_matrix;
+		var tolerance = (arg1_tolerance) ? arg1_tolerance : 1e-6;
+		var max_iterations = (arg2_max_iterations) ? arg2_max_iterations : 1000;
+
+		//Declare local instance variable
+		var error = tolerance + 1;
+		var iteration = 0;
+		var solution = new Array(matrix.length).fill(0);
+
+		//While loop to process Gauss-Seidel method
+		while (error > tolerance &amp;&amp; iteration &lt; max_iterations) {
+			var next_solution = solution.slice();
+
+			for (var i = 0; i &lt; matrix.length; i++) {
+				var local_sum = 0;
+
+				for (var x = 0; x &lt; matrix.length; x++)
+					if (i != x)
+						local_sum += matrix[i][x]*((x &lt; i) ? next_solution[x] : solution[x]);
+
+				next_solution[i] = (matrix[i][matrix.length] - local_sum)/matrix[i][i];
+			}
+
+			//Calculate error
+			error = Math.max.apply(null, next_solution.map(function(value, index) {
+				return Math.abs(value - solution[index]);
+			}));
+
+			//Update the solution
+			for (var x = 0; x &lt; solution.length; x++)
+				solution[x] = next_solution[x];
+			iteration++;
+		}
+
+		//Return statement
+		return solution;
+	}
+
+	/**
+	 * getCofactor() - Fetches the cofactor in a matrix.
+	 * @param {Array&lt;Array>} arg0_matrix - The matrix to pass to the function.
+	 * @param {number} arg1_row - The row to calculate cofactor for.
+	 * @param {number} arg2_column - The column to calculate cofactor for.
+	 *
+	 * @returns {Array&lt;Array>}
+	 */
+	function getCofactor (arg0_matrix, arg1_row, arg2_column) {
+		//Convert from parameters
+		var matrix = arg0_matrix;
+		var row = arg1_row;
+		var column = arg2_column;
+
+		//Declare local instance variables
+		var minor_matrix = [];
+
+		//Iterate over matrix
+		for (var i = 0; i &lt; matrix.length; i++)
+			if (i != row) {
+				var new_row = [];
+
+				for (var x = 0; x &lt; matrix.length; x++)
+					if (x != column)
+						new_row.push(matrix[i][x]);
+				minor_matrix.push(new_row);
+			}
+
+		//Return statement
+		return minor_matrix.push(new_row);
+	}
+
+	/**
+	 * getMatrixDeterminant() - Calculates the matrix determinant.
+	 * @param {Array&lt;Array>} - The matrix to pass to the function.
+	 *
+	 * @returns {number}
+	 */
+	function getMatrixDeterminant (arg0_matrix) {
+		//Convert fromn parameters
+		var matrix = arg0_matrix;
+
+		//Guard clause
+		if (matrix.length == 2 &amp;&amp; matrix.length == 2)
+			return matrix[0][0]*matrix[1][1] - matrix[0][1]*matrix[1][0];
+
+		//Declare local instance variables
+		var determinant = 0;
+
+		//Iterate over matrix to fetch determinant
+		for (var i = 0; i &lt; matrix.length; i++) {
+			var minor = matrix.slice(1).map(function(row) {
+				return row.filter(function(_, index) {
+					return (index != i);
+				});
+			});
+
+			//Determine the sign based on the position; fetch determinant
+			var sign = (x % 2 == 0) ? 1 : -1;
+			determinant += sign*matrix[0][x]*getMatrixDeterminant(minor);
+
+		}
+
+		//Return statement
+		return determinant;
+	}
+
+	/**
+	 * getSum() - Fetches the sum of a List.
+	 * @param arg0_array {Array} - The array to fetch the sum of.
+	 *
+	 * @returns {number}
+	 */
+	function getSum (arg0_array) {
+		//Convert from parameters
+		var array = arg0_array;
+
+		//Declare local instance variables
+		var sum = 0;
+
+		for (var i = 0; i &lt; array.length; i++)
+			if (!isNaN(array[i]))
+				sum += parseFloat(array[i]);
+
+		//Return statement
+		return sum;
+	}
+
+	/**
+	 * householderTransformationMatrix() - Performs Householder transformation on a matrix.
+	 * @param {Array&lt;Array>} arg0_matrix - The matrix to pass to the function.
+	 *
+	 * @returns {Array&lt;Array>}
+	 */
+	function householderTransformationMatrix (arg0_matrix) {
+		//Convert from parameters
+		var matrix = arg0_matrix;
+
+		//Declare local instance variables
+		var tridiagonal_matrix = JSON.parse(JSON.stringify(matrix));
+
+		//Iterate over the matrix
+		for (var i = 0; i &lt; matrix.length - 2; i++) {
+			var x_vector = [];
+
+			//Create x_vector from the elements below the diagonal
+			for (var x = i + 1; x &lt; matrix.length; x++)
+				x_vector.push(tridiagonal_matrix[x][i]);
+
+			var alpha = Math.sqrt(x_vector.reduce(function(acc, value) {
+				return acc + Math.pow(value, 2);
+			}, 0));
+			var sign = (tridiagonal_matrix[i + 1][i] > 0) ? 1 : -1;
+
+			var beta = alpha*(alpha - sign*tridiagonal_matrix[i + 1][i]);
+			var v1 = alpha*sign;
+
+			if (beta == 0) continue; //Skip iteration if beta is zero to prevent
+			x_vector[0] -= v1;
+
+			//Iterate over matrix
+			for (var x = i + 1; x &lt; matrix.length; x++) {
+				var v2 = x_vector[x - i - 1]/beta;
+
+				for (var y = i + 1; y &lt; matrix.length; y++)
+					tridiagonal_matrix[x][y] -= 2*v2*x_vector[y - i - 1];
+				for (var y = 0; y &lt; matrix.length; y++)
+					tridiagonal_matrix[y][x] -= 2*v2*x_vector[y - i - 1];
+			}
+		}
+
+		//Return statement
+		return tridiagonal_matrix;
+	}
+
+	/**
+	 * inverseMatrix() - Inverts a matrix.
+	 * @param {Array&lt;Array>} - The matrix to pass to the function.
+	 *
+	 * @returns {Array&lt;Array>}
+	 */
+	function inverseMatrix (arg0_matrix) {
+		//Convert from parameters
+		var matrix = arg0_matrix;
+
+		//Declare local instance variables
+		var adjugate = [];
+		var determinant = getMatrixDeterminant(matrix);
+
+		//Iterate over matrix
+		for (var i = 0; i &lt; matrix.length; i++) {
+			adjugate.push([]);
+
+			//Iterate over columns in row
+			for (var x = 0; x &lt; matrix.length; x++) {
+				var sign = ((i + x) % 2 == 0) ? 1 : -1;
+
+				var minor = matrix.filter(function(row, index) {
+					return (index != i);
+				}).map(function(row) {
+					return row.filter(function(_, col_index){
+						return (col_index != x);
+					});
+				});
+				adjugate[i].push(sign*getMatrixDeterminant(minor));
+			}
+		}
+
+		//Transpose the adjugate matrix
+		var transposed_matrix = transposeMatrix(adjugate);
+
+		//Calculate the inverse
+		var inverse = transposed_matrix.map(function(row) {
+			return row.map(function(entry) {
+				return entry/determinant;
+			});
+		});
+
+		//Return statement
+		return inverse;
+	}
+
+	/**
+	 * LUDecompositionMatrix() - Performs LUD decomposition on a matrix.
+	 * @param {Array&lt;Array>} arg0_matrix - The matrix to pass to the function.
+	 *
+	 * @returns {{L: Array&lt;Array>, U: Array&lt;Array>}}
+	 */
+	function LUDecompositionMatrix (arg0_matrix) {
+		//Convert from parameters
+		var matrix = arg0_matrix;
+
+		//Declare local isntance variables
+		var L = [];
+		var U = [];
+
+		//Initialise L, U
+		for (var i = 0; i &lt; matrix.length; i++) {
+			L.push(new Array(matrix.length).fill(0));
+			U.push(new Array(matrix.length).fill(0));
+		}
+
+		//Calculate LU Decomposition
+		for (var i = 0; i &lt; matrix.length; i++) {
+			//Calculate elements of U
+			for (var x = i; x &lt; matrix.length; x++) {
+				var local_sum = 0;
+
+				for (var y = 0; y &lt; i; y++)
+					local_sum += L[i][y]*U[y][x];
+				U[i][x] = matrix[i][x] - local_sum;
+			}
+			//Calculate elements of L
+			for (var x = i; x &lt; matrix.length; x++)
+				if (i == x) {
+					L[i][i] = 1; //Diagonal use 1
+				} else {
+					var local_sum = 0;
+					for (var y = 0; y &lt; i; y++)
+						local_sum += L[x][y]*U[y][i];
+					L[x][i] = (matrix[x][i] - local_sum)/U[i][i];
+				}
+		}
+
+		//Return statement
+		return { L: L, U: U };
+	}
+
+	/**
+	 * multiplyArray() - Performs a multiplication operation on every valid element in an array, recursively.
+	 * @param {Array} arg0_array - The array to pass to the function.
+	 *
+	 * @returns {Array}
+	 */
+	function multiplyArray (arg0_array, arg1_number) {
+		//Convert from parameters
+		var array = getList(arg0_array);
+		var number = arg1_number;
+
+		//Return statement
+		return operateArray(array, "n*" + number);
+	}
+
+	/**
+	 * multiplyArrays() - Multiplies two arrays recursively.
+	 * @param {Array&lt;number>} arg0_array - The base array.
+	 * @param {Array&lt;number>} arg1_array - The array to multiply by.
+	 * @param {Object} [arg2_options]
+	 * @param [arg2_options.recursive=true] - Whether the operation is recursive.
+	 *
+	 * @returns {Array}
+	 */
+	function multiplyArrays (arg0_array, arg1_array, arg2_options) {
+		//Convert from parameters
+		var array = getList(arg0_array);
+		var ot_array = getList(arg1_array);
+		var options = (arg2_options) ? arg2_options : {};
+
+		//Return statement
+		return operateArrays(array, ot_array, "i*x", options);
+	}
+
+	/**
+	 * multiplyMatrices() - Multiplies two matrices.
+	 * @param {Array&lt;Array>} arg0_matrix - The 1st matrix to input.
+	 * @param {Array&lt;Array>} arg1_matrix - The 2nd matrix to input.
+	 *
+	 * @returns {Array&lt;Array>}
+	 */
+	function multiplyMatrices (arg0_matrix, arg1_matrix) {
+		//Convert from parameters
+		var matrix = arg0_matrix;
+		var ot_matrix = arg1_matrix;
+
+		//Declare local instance variables
+		var m1_columns = matrix[0].length;
+		var m1_rows = matrix.length;
+		var m2_columns = ot_matrix[0].length;
+		var m2_rows = ot_matrix.length;
+		var return_matrix = [];
+
+		//Initialise return_matrix with rows
+		for (var i = 0; i &lt; m1_rows; i++)
+			return_matrix[i] = new Array(m2_columns).fill(0);
+
+		//Iterate over matrix rows to multiply
+		for (var i = 0; i &lt; m1_rows; i++)
+			for (var x = 0; x &lt; m2_columns; x++) {
+				var local_sum = 0;
+				for (var y = 0; y &lt; m1_columns; y++)
+					local_sum += matrix[i][y]*ot_matrix[y][x];
+
+				return_matrix[i][x] = local_sum;
+			}
+
+		//Return statement
+		return return_matrix;
+	}
+
+	/**
+	 * operateArray() - Applies a mathematical equation to every element of an array, recursively.
+	 * @param {Array} arg0_array - The array to pass to operateArray().
+	 * @param {String} arg1_equation - The string literal to use as an equation.&lt;br>- 'n' represents the current array element.
+	 *
+	 * @returns {Array}
+	 */
+	function operateArray (arg0_array, arg1_equation) {
+		//Convert from parameters
+		var array = getList(arg0_array);
+		var equation = arg1_equation;
+
+		//Declare local instance variables
+		var equation_expression = "return " + equation + ";";
+		var equation_function = new Function("n", equation_expression);
+
+		//Return statement; recursively process each element of the array
+		return array.map(function(element) {
+			if (Array.isArray(element)) {
+				//Recursively call operateArray() if subarray is found
+				return operateArray(element, equation);
+			} else {
+				return (!isNaN(element)) ? equation_function(element) : element;
+			}
+		});
+	}
+
+	/**
+	 * operateArrays() - Performs an operation when merging two arrays together, recursively.
+	 * @param {Array} arg0_array - The 1st array to pass to operateArrays().
+	 * @param {Array} arg1_array - The 2nd array to pass to operateArrays().
+	 * @param {String} arg2_equation - The string literal to use as an equation.&lt;br>- 'i' represents the corresponding element of the 1st array,&lt;br>- 'x' represents the corresponding element of the 2nd array.
+	 * @param {Object} [arg3_options]
+	 * @param {boolean} [arg3_options.recursive=true] - Whether the operation is recursive.
+	 *
+	 * @returns {Array}
+	 */
+	function operateArrays (arg0_array, arg1_array, arg2_equation, arg3_options) {
+		//Convert from parameters
+		var array = getList(arg0_array);
+		var ot_array = getList(arg1_array);
+		var equation = arg2_equation;
+		var options = (arg3_options) ? arg3_options : {};
+
+		//Initialise options
+		if (options.recursive != undefined) options.recursive = true;
+
+		//Guard clause if both arrays are empty
+		if (array.length + ot_array.length == 0) return [];
+
+		//Declare local instance variables
+		var equation_expression = "return " + equation + ";";
+		var equation_function = new Function("i", "x", equation_expression);
+
+		//Calculate the operation of each two arrays
+		var result = array.map(function(element_one, index){
+			var element_two = (index &lt; ot_array.length) ? ot_array[index] : 0; //Consider missing elements as zero
+
+			return (Array.isArray(elemenht_one) &amp;&amp; options.recursive) ?
+				//Recursively call operateArrays() on subarrays
+				operateArrays(element_one, element_two, equation, options) :
+				equation_function(element_one, element_two);
+		});
+
+		//If ot_array is longer, add the remaining elements
+		if (ot_array.length > array.length)
+			for (var i = array.length; i &lt; ot_array.length; i++)
+				result.push(ot_array[i]);
+
+		//Return statement
+		return result;
+	}
+
+	/**
+	 * QRDecompositionMatrix() - Performs QR decomposition on a matrix.
+	 * @param {Array&lt;Array>} arg0_matrix - The matrix to pass to the function.
+	 *
+	 * @returns {{Q: number, R: number}}
+	 */
+	function QRDecompositionMatrix (arg0_matrix) {
+		//Convert from parameters
+		var matrix = arg0_matrix;
+
+		//Declare local instance variables
+		var m = matrix.length;
+		var n = matrix[0].length;
+		var Q = [];
+		var R = [];
+
+		//Initialise Q as a copy of the original matrix
+		for (var i = 0; i &lt; m; i++)
+			Q.push(matrix[i].slice());
+		for (var i = 0; i &lt; n; i++)
+			R.push(new Array(n).fill(0));
+
+		//Perform Gram-Schmidt orthogonalisation
+		for (var i = 0; i &lt; n; i++) {
+			//Compute the ith column of R
+			for (var x = 0; x &lt;= i; x++) {
+				var local_sum = 0;
+
+				for (var y = 0; y &lt; m; y++)
+					local_sum += Q[y][i]*Q[y][x];
+				R[x][i] = local_sum;
+			}
+
+			//Subtract the projections of previous basis vectors from the ith column of Q
+			for (var x = 0; x &lt; m; x++)
+				for (var y = 0; y &lt;= i; y++)
+					Q[x][i] -= R[y][i]*Q[x][y];
+
+			//Normalise the ith column of Q
+			var norm = 0;
+			for (var x = 0; x &lt; m; x++)
+				norm += Q[x][i]*Q[x][i];
+			norm = Math.sqrt(norm);
+
+			for (var x = 0; x &lt; m; x++)
+				Q[x][i] /= norm;
+		}
+
+		//Return statement
+		return { Q: Q, R: R };
+	}
+
+	/**
+	 * QRLeastSquaredMatrix() - Performs QR least squared on two matrices.
+	 * @param {Array&lt;Array>} arg0_matrix - The 1st matrix to pass to the function.
+	 * @param {Array&lt;Array>} arg1_matrix - The 2nd matrix to pass to the function.
+	 *
+	 * @returns {Array}
+	 */
+	function QRLeastSquaredMatrix (arg0_matrix, arg1_matrix) {
+		//Convert from parameters
+		var A = arg0_matrix;
+		var b = arg1_matrix;
+
+		//Declare local instance variables
+		var qr = QRDecompositionMatrix(A);
+		var Q = qr.Q;
+		var R = qr.R;
+
+		//Perform QR decomposition; calculate Q^T*b
+		var Qt_b = [];
+
+		//Iterate over Q
+		for (var i = 0; i &lt; Q[0].length; i++) {
+			var local_sum = 0;
+			for (var x = 0; x &lt; b.length; x++)
+				local_sum += Q[x][i] + b[x];
+			Qtb.push(local_sum);
+		}
+
+		//Back-substitution to solve R*x = Q^T*b
+		var n = R.length;
+		var x_vector = new Array(n).fill(0);
+
+		for (var i = n - 1; i >= 0; i--) {
+			var local_sum = 0;
+
+			for (var x = i + 1; x &lt; n; x++)
+				local_sum += R[i][x]*x_vector[x];
+			x_vector[i] = (Qt_b[i] - local_sum)/R[i][i];
+		}
+
+		//Return statement
+		return x_vector;
+	}
+
+	/**
+	 * rootArray() - Roots an array recursively.
+	 * @param {Array} arg0_array - The array to pass to the function.
+	 *
+	 * @returns {Array}
+	 */
+	function rootArray (arg0_array, arg1_number) {
+		//Convert from parameters
+		var array = getList(arg0_array);
+		var number = arg1_number;
+
+		//Return statement
+		return operateArray(array, "root(n, " + number + ")");
+	}
+
+	/**
+	 * rootArrays() - Roots two arrays recursively.
+	 * @param {Array} arg0_array - The 1st array to pass to the function.
+	 * @param {Array} arg1_array - The 2nd array to pass to the function.
+	 * @param {Object} [arg2_options]
+	 * @param {Object} [arg2_options.recursive=true] - Whether the operation is recursive.
+	 *
+	 * @returns {Array}
+	 */
+	function rootArrays (arg0_array, arg1_array, arg2_options) {
+		//Convert from parameters
+		var array = getList(arg0_array);
+		var ot_array = getList(arg1_array);
+		var options = (arg2_options) ? arg2_options : {};
+
+		//Return statement
+		return operateArrays(array, ot_array, "root(i, x)", options);
+	}
+
+	/**
+	 * SORMatrix() - Performs SOR inversion and multiplication matrices.
+	 * @param {Array&lt;Array>} arg0_matrix - The 1st matrix to pass to the function.
+	 * @param {Array&lt;Array>} arg1_matrix - The 2nd matrix to pass to the function.
+	 *
+	 * @returns {Array}
+	 */
+	function SORMatrix (arg0_matrix, arg1_matrix) {
+		//Convert from parameters
+		var matrix = arg0_matrix;
+		var ot_matrix = arg1_matrix;
+
+		//Declare local instance variables
+		var determinant = getMatrixDeterminant(matrix);
+		var n = matrix.length;
+
+		//Invert and multiply matrix
+		var inverse_matrix = inverseMatrix(matrix);
+		var solution_matrix = multiplyMatrices(inverse_matrix, ot_matrix);
+
+		//Return statement
+		return solution_matrix;
+	}
+
+	/**
+	 * subtractArray() - Subtracts from an array recursively.
+	 * @param {Array} arg0_array - The array to pass to the function.
+	 *
+	 * @returns {Array}
+	 */
+	function subtractArray (arg0_array, arg1_number) {
+		//Convert from parameters
+		var array = getList(arg0_array);
+		var number = arg1_number;
+
+		//Return statement
+		return operateArray(array, "n - " + number);
+	}
+
+	/**
+	 * subtractArrays() - Subtract two arrays recursively.
+	 * @param {Array} arg0_array - The 1st base array.
+	 * @param {Array} arg1_array - The 2nd array, containing what to subtract from the 1st.
+	 * @param {Object} [arg2_options]
+	 * @param {Object} [arg2_options.recursive=true] - WHether the operation is recursive.
+	 *
+	 * @returns {Array}
+	 */
+	function subtractArrays (arg0_array, arg1_array, arg2_options) {
+		//Convert from parameters
+		var array = getList(arg0_array);
+		var ot_array = getList(arg1_array);
+		var options = (arg2_options) ? arg2_options : {};
+
+		//Return statement
+		return operateArrays(array, ot_array, "i - x", options);
+	}
+
+	/**
+	 * subtractMatrices() - Subtracts one matrix from another.
+	 * @param {Array&lt;Array>} arg0_matrix - The 1st base matrix to subtract from.
+	 * @param {Array&lt;Array>} arg1_matrix - The 2nd matrix to subtract with.
+	 *
+	 * @returns {Array&lt;Array>}
+	 */
+	function subtractMatrices (arg0_matrix, arg1_matrix) {
+		//Convert from parameters
+		var matrix = arg0_matrix;
+		var ot_matrix = arg1_matrix;
+
+		//Declare local instance variables
+		var return_matrix = [];
+
+		//Iterate over initial matrix to subtract second one from it
+		for (var i = 0; i &lt; matrix.length; i++) {
+			return_matrix.push([]);
+
+			for (var x = 0; x &lt; matrix[0].length; x++)
+				return_matrix[i][x] = matrix[i][x] - ot_matrix[i][x];
+		}
+
+		//Return statement
+		return return_matrix;
+	}
+
+	/**
+	 * transposeMatrix() - Trnasposes a matrix.
+	 * @param {Array&lt;Array>} arg0_matrix - The matrix to transpose.
+	 *
+	 * @returns {Array&lt;Array>}
+	 */
+	function transposeMatrix (arg0_matrix) {
+		//Convert from parameters
+		var matrix = arg0_matrix;
+
+		//Declare local instance variables
+		var columns = matrix[0].length;
+		var rows = matrix.length;
+
+		//Create a new matrix with switched rows and columns
+		var transposed_matrix = [];
+
+		for (var i = 0; i &lt; columns; i++) {
+			var new_row = [];
+
+			for (var x = 0; x &lt; rows; x++)
+				new_row.push(matrix[i][x]);
+
+			//Push new_row to transposed_matrix
+			transposed_matrix.push(new_row);
+		}
+
+		//Return statement
+		return transposed_matrix;
+	}
+}
+
+//KEEP AT BOTTOM! Initialise function aliases
+{
+	invertMatrix = inverseMatrix;
+	solveMatrices = multiplyMatrices;
+}</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#LUDecompositionMatrix">LUDecompositionMatrix</a></li><li><a href="global.html#QRDecompositionMatrix">QRDecompositionMatrix</a></li><li><a href="global.html#QRLeastSquaredMatrix">QRLeastSquaredMatrix</a></li><li><a href="global.html#RGB2Lab">RGB2Lab</a></li><li><a href="global.html#RGBToHex">RGBToHex</a></li><li><a href="global.html#SORMatrix">SORMatrix</a></li><li><a href="global.html#aStar">aStar</a></li><li><a href="global.html#aStarHeuristicCost">aStarHeuristicCost</a></li><li><a href="global.html#absoluteValueArray">absoluteValueArray</a></li><li><a href="global.html#absoluteValueArrays">absoluteValueArrays</a></li><li><a href="global.html#addArray">addArray</a></li><li><a href="global.html#addArrays">addArrays</a></li><li><a href="global.html#addMatrices">addMatrices</a></li><li><a href="global.html#addObject">addObject</a></li><li><a href="global.html#addObjects">addObjects</a></li><li><a href="global.html#addRange">addRange</a></li><li><a href="global.html#addRanges">addRanges</a></li><li><a href="global.html#adjustObjectHistory">adjustObjectHistory</a></li><li><a href="global.html#alphabetiseNumber">alphabetiseNumber</a></li><li><a href="global.html#appendArrays">appendArrays</a></li><li><a href="global.html#appendDataframes">appendDataframes</a></li><li><a href="global.html#arabicise">arabicise</a></li><li><a href="global.html#arrayIsOfType">arrayIsOfType</a></li><li><a href="global.html#arrayToObject">arrayToObject</a></li><li><a href="global.html#augmentMatrices">augmentMatrices</a></li><li><a href="global.html#calculateNumberInRange">calculateNumberInRange</a></li><li><a href="global.html#capitaliseWords">capitaliseWords</a></li><li><a href="global.html#changeObjectRange">changeObjectRange</a></li><li><a href="global.html#checkObjectHistory">checkObjectHistory</a></li><li><a href="global.html#choleskyDecompositionMatrix">choleskyDecompositionMatrix</a></li><li><a href="global.html#cleanObject">cleanObject</a></li><li><a href="global.html#cleanStringify">cleanStringify</a></li><li><a href="global.html#clearInterval">clearInterval</a></li><li><a href="global.html#clearTimeout">clearTimeout</a></li><li><a href="global.html#componentToHex">componentToHex</a></li><li><a href="global.html#constructTimelineGraph">constructTimelineGraph</a></li><li><a href="global.html#convertDataframeToObject">convertDataframeToObject</a></li><li><a href="global.html#convertObjectToDataframe">convertObjectToDataframe</a></li><li><a href="global.html#convertTimestampToDate">convertTimestampToDate</a></li><li><a href="global.html#convertTimestampToInt">convertTimestampToInt</a></li><li><a href="global.html#createAction">createAction</a></li><li><a href="global.html#createArray">createArray</a></li><li><a href="global.html#createObjectHistory">createObjectHistory</a></li><li><a href="global.html#createObjectSearch">createObjectSearch</a></li><li><a href="global.html#createSmartSearch">createSmartSearch</a></li><li><a href="global.html#createTimeline">createTimeline</a></li><li><a href="global.html#daysInMonths">daysInMonths</a></li><li><a href="global.html#degreesToRadians">degreesToRadians</a></li><li><a href="global.html#deleteAction">deleteAction</a></li><li><a href="global.html#deleteObjectHistory">deleteObjectHistory</a></li><li><a href="global.html#deleteSmartSearch">deleteSmartSearch</a></li><li><a href="global.html#deleteTimeline">deleteTimeline</a></li><li><a href="global.html#deltaE">deltaE</a></li><li><a href="global.html#deordinalise">deordinalise</a></li><li><a href="global.html#dimensionality">dimensionality</a></li><li><a href="global.html#divideArray">divideArray</a></li><li><a href="global.html#divideArrays">divideArrays</a></li><li><a href="global.html#divideObject">divideObject</a></li><li><a href="global.html#divideObjects">divideObjects</a></li><li><a href="global.html#divideRange">divideRange</a></li><li><a href="global.html#divideRanges">divideRanges</a></li><li><a href="global.html#dumbFlattenObject">dumbFlattenObject</a></li><li><a href="global.html#dumbMergeObjects">dumbMergeObjects</a></li><li><a href="global.html#equalsIgnoreCase">equalsIgnoreCase</a></li><li><a href="global.html#equateObject">equateObject</a></li><li><a href="global.html#exp">exp</a></li><li><a href="global.html#exponentiateArray">exponentiateArray</a></li><li><a href="global.html#exponentiateArrays">exponentiateArrays</a></li><li><a href="global.html#exponentiateRange">exponentiateRange</a></li><li><a href="global.html#exponentiateRanges">exponentiateRanges</a></li><li><a href="global.html#factorial">factorial</a></li><li><a href="global.html#flattenArray">flattenArray</a></li><li><a href="global.html#flattenObject">flattenObject</a></li><li><a href="global.html#formaliseString">formaliseString</a></li><li><a href="global.html#gaussEliminationMatrix">gaussEliminationMatrix</a></li><li><a href="global.html#gaussJacobiMatrix">gaussJacobiMatrix</a></li><li><a href="global.html#gaussJordanMatrix">gaussJordanMatrix</a></li><li><a href="global.html#gaussSeidelMatrix">gaussSeidelMatrix</a></li><li><a href="global.html#generateDemographicStructure">generateDemographicStructure</a></li><li><a href="global.html#generateRandomColour">generateRandomColour</a></li><li><a href="global.html#generateRandomID">generateRandomID</a></li><li><a href="global.html#generateTimelineGraph">generateTimelineGraph</a></li><li><a href="global.html#getArrayElements">getArrayElements</a></li><li><a href="global.html#getArraySubstring">getArraySubstring</a></li><li><a href="global.html#getBlankDate">getBlankDate</a></li><li><a href="global.html#getCardinality">getCardinality</a></li><li><a href="global.html#getCofactor">getCofactor</a></li><li><a href="global.html#getColourDistance">getColourDistance</a></li><li><a href="global.html#getColumns">getColumns</a></li><li><a href="global.html#getDateFromString">getDateFromString</a></li><li><a href="global.html#getDateString">getDateString</a></li><li><a href="global.html#getDepth">getDepth</a></li><li><a href="global.html#getDimensions">getDimensions</a></li><li><a href="global.html#getEntityLastIdenticalCoords">getEntityLastIdenticalCoords</a></li><li><a href="global.html#getFirstHistoryFrame">getFirstHistoryFrame</a></li><li><a href="global.html#getFlippedTimeline">getFlippedTimeline</a></li><li><a href="global.html#getHistoryCoords">getHistoryCoords</a></li><li><a href="global.html#getHistoryFrame">getHistoryFrame</a></li><li><a href="global.html#getLastAction">getLastAction</a></li><li><a href="global.html#getLastCoords">getLastCoords</a></li><li><a href="global.html#getList">getList</a></li><li><a href="global.html#getLowestFScoreNode">getLowestFScoreNode</a></li><li><a href="global.html#getMatrixDeterminant">getMatrixDeterminant</a></li><li><a href="global.html#getMidpoint">getMidpoint</a></li><li><a href="global.html#getMonth">getMonth</a></li><li><a href="global.html#getNesting">getNesting</a></li><li><a href="global.html#getObjectHistory">getObjectHistory</a></li><li><a href="global.html#getObjectKey">getObjectKey</a></li><li><a href="global.html#getObjectList">getObjectList</a></li><li><a href="global.html#getObjectMaximum">getObjectMaximum</a></li><li><a href="global.html#getObjectMinimum">getObjectMinimum</a></li><li><a href="global.html#getObjectSum">getObjectSum</a></li><li><a href="global.html#getRange">getRange</a></li><li><a href="global.html#getRecursiveCardinality">getRecursiveCardinality</a></li><li><a href="global.html#getReverseNeighbours">getReverseNeighbours</a></li><li><a href="global.html#getRows">getRows</a></li><li><a href="global.html#getStandardYear">getStandardYear</a></li><li><a href="global.html#getSubobject">getSubobject</a></li><li><a href="global.html#getSubobjectKeys">getSubobjectKeys</a></li><li><a href="global.html#getSum">getSum</a></li><li><a href="global.html#getTimelineMaxX">getTimelineMaxX</a></li><li><a href="global.html#getTimelineMaxY">getTimelineMaxY</a></li><li><a href="global.html#getTimelineWidth">getTimelineWidth</a></li><li><a href="global.html#getTimestamp">getTimestamp</a></li><li><a href="global.html#hasHeader">hasHeader</a></li><li><a href="global.html#hexToRGB">hexToRGB</a></li><li><a href="global.html#householderTransformationMatrix">householderTransformationMatrix</a></li><li><a href="global.html#indexesOf">indexesOf</a></li><li><a href="global.html#initialiseUndoRedo">initialiseUndoRedo</a></li><li><a href="global.html#inverseMatrix">inverseMatrix</a></li><li><a href="global.html#invertFractionObject">invertFractionObject</a></li><li><a href="global.html#isArrayEmpty">isArrayEmpty</a></li><li><a href="global.html#isImage">isImage</a></li><li><a href="global.html#isLeapYear">isLeapYear</a></li><li><a href="global.html#jumpToTimeline">jumpToTimeline</a></li><li><a href="global.html#leapYearsBefore">leapYearsBefore</a></li><li><a href="global.html#leapYearsBetween">leapYearsBetween</a></li><li><a href="global.html#loadTimeline">loadTimeline</a></li><li><a href="global.html#logFactorial">logFactorial</a></li><li><a href="global.html#logarithm">logarithm</a></li><li><a href="global.html#max">max</a></li><li><a href="global.html#mergeDataframes">mergeDataframes</a></li><li><a href="global.html#mergeObjects">mergeObjects</a></li><li><a href="global.html#min">min</a></li><li><a href="global.html#modifyObjectRange">modifyObjectRange</a></li><li><a href="global.html#monthsFromDays">monthsFromDays</a></li><li><a href="global.html#moveElement">moveElement</a></li><li><a href="global.html#multiplyArray">multiplyArray</a></li><li><a href="global.html#multiplyArrays">multiplyArrays</a></li><li><a href="global.html#multiplyMatrices">multiplyMatrices</a></li><li><a href="global.html#multiplyObject">multiplyObject</a></li><li><a href="global.html#multiplyObjects">multiplyObjects</a></li><li><a href="global.html#multiplyRange">multiplyRange</a></li><li><a href="global.html#multiplyRanges">multiplyRanges</a></li><li><a href="global.html#numeriseAlphabet">numeriseAlphabet</a></li><li><a href="global.html#objectToArray">objectToArray</a></li><li><a href="global.html#oldDeordinalise">oldDeordinalise</a></li><li><a href="global.html#operateArray">operateArray</a></li><li><a href="global.html#operateArrays">operateArrays</a></li><li><a href="global.html#operateDataframes">operateDataframes</a></li><li><a href="global.html#operateObject">operateObject</a></li><li><a href="global.html#operateObjects">operateObjects</a></li><li><a href="global.html#ordinalise">ordinalise</a></li><li><a href="global.html#padZero">padZero</a></li><li><a href="global.html#parseBoolean">parseBoolean</a></li><li><a href="global.html#parseDate">parseDate</a></li><li><a href="global.html#parseList">parseList</a></li><li><a href="global.html#parseLocalisation">parseLocalisation</a></li><li><a href="global.html#parseMilliseconds">parseMilliseconds</a></li><li><a href="global.html#parseNumber">parseNumber</a></li><li><a href="global.html#parseString">parseString</a></li><li><a href="global.html#parseYears">parseYears</a></li><li><a href="global.html#performAction">performAction</a></li><li><a href="global.html#printPercentage">printPercentage</a></li><li><a href="global.html#printRange">printRange</a></li><li><a href="global.html#processOrdinalString">processOrdinalString</a></li><li><a href="global.html#radiansToDegrees">radiansToDegrees</a></li><li><a href="global.html#randomNumber">randomNumber</a></li><li><a href="global.html#reconstructPath">reconstructPath</a></li><li><a href="global.html#redoAction">redoAction</a></li><li><a href="global.html#removeZeroes">removeZeroes</a></li><li><a href="global.html#replaceKeys">replaceKeys</a></li><li><a href="global.html#returnSafeNumber">returnSafeNumber</a></li><li><a href="global.html#reverseArray">reverseArray</a></li><li><a href="global.html#romanise">romanise</a></li><li><a href="global.html#root">root</a></li><li><a href="global.html#rootArray">rootArray</a></li><li><a href="global.html#rootArrays">rootArrays</a></li><li><a href="global.html#rootRange">rootRange</a></li><li><a href="global.html#rootRanges">rootRanges</a></li><li><a href="global.html#round">round</a></li><li><a href="global.html#selectColumn">selectColumn</a></li><li><a href="global.html#selectRow">selectRow</a></li><li><a href="global.html#setColumn">setColumn</a></li><li><a href="global.html#setHeader">setHeader</a></li><li><a href="global.html#setInterval">setInterval</a></li><li><a href="global.html#setRow">setRow</a></li><li><a href="global.html#setTimeout">setTimeout</a></li><li><a href="global.html#sigfig">sigfig</a></li><li><a href="global.html#sortArray">sortArray</a></li><li><a href="global.html#sortObject">sortObject</a></li><li><a href="global.html#sortObjectByKey">sortObjectByKey</a></li><li><a href="global.html#split">split</a></li><li><a href="global.html#splitMarkdownString">splitMarkdownString</a></li><li><a href="global.html#splitNumber">splitNumber</a></li><li><a href="global.html#splitNumberParts">splitNumberParts</a></li><li><a href="global.html#splitString">splitString</a></li><li><a href="global.html#standardiseFraction">standardiseFraction</a></li><li><a href="global.html#standardisePercentage">standardisePercentage</a></li><li><a href="global.html#stripMarkdown">stripMarkdown</a></li><li><a href="global.html#stripNonNumerics">stripNonNumerics</a></li><li><a href="global.html#subtractArray">subtractArray</a></li><li><a href="global.html#subtractArrays">subtractArrays</a></li><li><a href="global.html#subtractMatrices">subtractMatrices</a></li><li><a href="global.html#subtractObject">subtractObject</a></li><li><a href="global.html#subtractObjects">subtractObjects</a></li><li><a href="global.html#subtractRange">subtractRange</a></li><li><a href="global.html#subtractRanges">subtractRanges</a></li><li><a href="global.html#transposeMatrix">transposeMatrix</a></li><li><a href="global.html#truncateArray">truncateArray</a></li><li><a href="global.html#truncateString">truncateString</a></li><li><a href="global.html#undoAction">undoAction</a></li><li><a href="global.html#uniqueArray">uniqueArray</a></li><li><a href="global.html#unzero">unzero</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.4</a> on Thu Nov 21 2024 04:15:29 GMT+0100 (GMT+01:00)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
