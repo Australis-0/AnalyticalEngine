@@ -1,22 +1,12 @@
 //Extend Array type
 {
-	if (!Array.prototype.includes)
-		Array.prototype.includes = function (arg0_element, arg1_from_index) {
-			//Convert from parameters
-			var element = arg0_element;
-			var from_index = arg1_from_index;
+	Array.prototype.includes = function (arg0_element) {
+		//Convert from parameters
+		var element = arg0_element;
 
-			//Use from_index if provided
-			var start = (from_index || 0);
-			start = Math.max((start >= 0) ? start : this.length + start, 0);
-
-			for (var i = start; i < this.length; i++)
-				if (this[i] == element || Number.isNaN(this[i]) && Number.isNaN(element))
-					//Return statement
-					return true;
-			//Return statement
-			return false;
-		}
+		//Return statement
+		return (this.indexOf(element) != -1);
+	}
 }
 
 //Initialise functions

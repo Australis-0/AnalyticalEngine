@@ -5,9 +5,13 @@ import java.lang.*;
 import java.lang.reflect.*;
 import java.util.*;
 import java.util.regex.*;
+import javax.script.Invocable;
+import javax.script.ScriptEngine;
+import javax.script.ScriptException;
 import javax.tools.*;
 
 import AnalyticalEngine.AnalyticalEngine;
+import static AnalyticalEngine.AnalyticalEngine.AnalyticalEngine;
 import AnalyticalEngine.Debugger.*;
 import AnalyticalEngine.Framework.*;
 import AnalyticalEngine.Framework.Java;
@@ -222,9 +226,11 @@ public class console {
     public static void initialise () {
         //Initialise console commands
         ConsoleFramework.initialiseCommands();
+        ScriptEngine engine = AnalyticalEngine().nashorn;
+        Invocable invocable = (Invocable) engine;
 
         //Initialise separate console thread
-        Thread console_thread = new Thread (() -> {
+        /*Thread console_thread = new Thread (() -> {
             Scanner input = new Scanner(System.in);
 
             console.log("Analytical Engine (Console) initialised.");
@@ -232,19 +238,18 @@ public class console {
                 System.out.print("\n[Analytical Engine] > ");
                 String input_string = input.nextLine();
 
-                //Regexp pattern to delimit either spaces or quoted arguments.
-                Pattern local_delimiter = Pattern.compile("\"([^\"]*)\"|(\\S+)");
-                Matcher local_matcher = local_delimiter.matcher(input_string);
-
-                List<String> local_arguments = new ArrayList<>();
-                while (local_matcher.find())
-                    local_arguments.add((local_matcher.group(1) != null) ? local_matcher.group(1) : local_matcher.group(2));
-                String[] processed_args = local_arguments.toArray(new String[0]);
-
-                ConsoleFramework.parseConsoleCommand(processed_args);
+                //Invoke parseConsoleCommand()
+                Javascript.executeJS(engine, "console_framework.js", "parseConsoleCommand(\"" + input_string + "\");");
+                try {
+                    Object result = invocable.invokeFunction("parseConsoleCommand", input_string);
+                } catch (ScriptException e) {
+                    throw new RuntimeException(e);
+                } catch (NoSuchMethodException e) {
+                    throw new RuntimeException(e);
+                }
             }
         });
-        console_thread.start();
+        console_thread.start();*/
     }
 
     public static void log (Object arg0_object) {
@@ -252,6 +257,6 @@ public class console {
         Object object = arg0_object;
 
         if (debugger_enabled)
-            System.out.println("[Analytical Engine] " + object);
+            System.out.println("[JAVA] [AnalyticalEngine] " + object);
     }
 }

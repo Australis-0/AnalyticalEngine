@@ -5,6 +5,8 @@ config.console.map_commands = {
 	print_map_cities: {
 		name: "print-map-cities",
 		description: "Prints all currently named cities on the map.",
-		invoke_function: "printMapCities"
+		special_function: function () {
+
+		}
 	}
 };

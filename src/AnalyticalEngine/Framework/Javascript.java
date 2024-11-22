@@ -22,6 +22,37 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class Javascript {
+    public static void executeJS (ScriptEngine arg0_nashorn, String arg1_file_path, String arg2_code) {
+        //Convert from parameters
+        ScriptEngine engine = arg0_nashorn;
+        String file_path = arg1_file_path;
+        String script_content = arg2_code;
+
+        //Declare local instance variables
+        String script_wrapper = "try { " + script_content + " } catch (e) {" +
+                "e.fileName = '" + file_path + "'; " +
+                "e.fileStack = e.fileStack || []; " +
+                "e.fileStack.push({ fileName: '" + file_path + "', message: e.message, lineNumber: e.lineNumber }); " +
+                "throw e; }";
+
+        //Evaluate script with detailed stack tracing
+        try {
+            engine.eval(script_wrapper);
+        } catch (ScriptException e) {
+            System.err.println("Javascript error in file: " + file_path);
+            System.err.println("Message: " + e.getMessage());
+
+            //Extract line and column if available
+            int column_number = e.getColumnNumber();
+            int line_number = e.getLineNumber();
+
+            //Enhanced stack trace with JS file context
+            System.err.println("Error occurred at line: " + line_number + ", column " + column_number);
+            System.err.println("Full JS stack trace:");
+            e.printStackTrace();
+        }
+    }
+
     public static void executeJSFile (String arg0_file) {
         executeJSFile(arg0_file, AnalyticalEngine().nashorn); }
     public static void executeJSFile (String arg0_file, ScriptEngine arg1_nashorn) {
@@ -35,30 +66,7 @@ public class Javascript {
             BufferedReader reader = new BufferedReader(new InputStreamReader(input_stream));
         ) {
             String script_content = reader.lines().collect(Collectors.joining("\n"));
-            String script_wrapper = "try { " + script_content + " } catch (e) {" +
-                    "e.fileName = '" + file_path + "'; " +
-                    "e.fileStack = e.fileStack || []; " +
-                    "e.fileStack.push({ fileName: '" + file_path + "', message: e.message, lineNumber: e.lineNumber }); " +
-                    "throw e; }";
-
-            //Evaluate script with detailed stack tracing
-            try {
-                engine.eval(script_wrapper);
-            } catch (ScriptException e) {
-                /*console.log("[ERROR] Javascript failure for " + file_path + " with following stack trace:");
-                e.printStackTrace();*/
-                System.err.println("Javascript error in file: " + file_path);
-                System.err.println("Message: " + e.getMessage());
-
-                //Extract line and column if available
-                int column_number = e.getColumnNumber();
-                int line_number = e.getLineNumber();
-
-                //Enhanced stack trace with JS file context
-                System.err.println("Error occurred at line: " + line_number + ", column " + column_number);
-                System.err.println("Full JS stack trace:");
-                e.printStackTrace();
-            }
+            executeJS(engine, file_path, script_content);
         } catch (IOException e) {
             e.printStackTrace();
         }

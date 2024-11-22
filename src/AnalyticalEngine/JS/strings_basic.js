@@ -1,4 +1,15 @@
-//Initialise function
+//Extend String type
+{
+	String.prototype.includes = function (arg0_string) {
+		//Convert from parameters
+		var string = arg0_string;
+
+		//Return statement
+		return (this.indexOf(string) != -1);
+	}
+}
+
+//Initialise functions
 {
 	/**
 	 * capitaliseWords() - Capitalise all the words in a string.

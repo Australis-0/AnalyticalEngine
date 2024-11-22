@@ -4,7 +4,8 @@
   ],
 
   directories: [
-    "/AnalyticalEngine/JS",
+    "/AnalyticalEngine/JS", //THIS SHOULD ALWAYS BE AT THE TOP!
+    "/AnalyticalEngine/Config",
 
     "/AnalyticalEngine/GameFramework",
 
