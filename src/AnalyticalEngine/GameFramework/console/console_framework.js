@@ -224,7 +224,6 @@
                 //Check for .special_function
                 if (local_command.special_function) {
                     args.shift();
-                    console.log("Found " + local_command.name + ", running local_command.special_function");
                     return_value = local_command.special_function(args);
                 }
         }
@@ -250,6 +249,7 @@
             var local_command_category = config.console[all_sorted_categories[i]];
 
             //Add local_command_category header to help_string
+            help_string.push("");
             help_string.push((local_command_category.name) ? local_command_category.name : all_sorted_categories[i]);
             help_string.push("---");
             help_string.push("");
@@ -288,6 +288,10 @@
                 }
         }
 
+        //Print help in console
         console.log(help_string.join("\n"));
+
+        //Return statement
+        return help_string;
     }
 }

@@ -18,7 +18,7 @@ config.console.meta_commands = {
         arg0_exit_code_description: "(Number) - Optional. The exit code to send when quitting the game. 0 by default.",
         special_function: function (args) {
             var exit_code = (args[0]) ? parseInt(args[0]) : 0;
-            java.lang.System.exit(0);
+            java.lang.System.exit(exit_code);
         }
     },
     help: {
@@ -26,14 +26,13 @@ config.console.meta_commands = {
         description: "Displays all commands.",
         special_function: function (args) {
             printHelp();
-            console.log("Help function invoked.");
         }
     },
     print_commands_state: {
         name: "print-commands-variable",
         description: "prints all current commands.",
         special_function: function (args) {
-            console.log(config.all_console_commands);
+            console.log(Object.keys(config.all_console_commands));
         }
     }
 };
