@@ -5,17 +5,19 @@
         var options = (arg0_options) ? arg0_options : {};
 
         //Declare local instance variables
-        var flattened_console_commands = config.flattened_console_commands;
+        var flattened_console_commands = (config.flattened_console_commands) ?
+            config.flattened_console_commands : dumbFlattenObject(config.console);
         var return_console_commands = [];
         var return_keys = [];
 
         //Iterate over all_flattened_console_commands
         var all_flattened_console_commands = Object.keys(flattened_console_commands);
 
-        for (var i = 0; i < all_flattened_console_commands.length; i++) {
-            return_console_commands.push(flattened_console_commands[all_flattened_console_commands[i]]);
-            return_keys.push(all_flattened_console_commands[i]);
-        }
+        for (var i = 0; i < all_flattened_console_commands.length; i++)
+            if (!config.console_reserved_keys.includes(all_flattened_console_commands[i])) {
+                return_console_commands.push(flattened_console_commands[all_flattened_console_commands[i]]);
+                return_keys.push(all_flattened_console_commands[i]);
+            }
 
         //Return statement
         return (!options.return_keys) ? return_console_commands : return_keys;
@@ -191,20 +193,20 @@
         var string = arg0_string;
 
         //Declare local instance variables
-        var regex = /(?:'([^']*)'|"([^"]*)"|\\(.)|([^\s\\'"]+))/g;
+        var regex = /"([^"]*)"|\\(.)|([^\s\\"]+)/g;
 
         var matches = string.match(regex) || [];
 
         //Return statement; clean up matched tokens: remove inverted commas and resolve escapes
         return matches.map(function (token) {
             if (token.startsWith('"') && token.endsWith('"')) {
+                //Remove double quotes and resolve escaped characters within them
                 return token.slice(1, -1).replace(/\\(["\\])/g, '$1');
-            } else if (token.startsWith("'") && token.endsWith("'")) {
-                return token.slice(1, -1); //Single inverted commas do not process escape characters
             } else if (token.startsWith('\\')) {
-                return token.slice(1); //Remove the backslash for escaped characters
+                //Remove the backslash for escaped characters
+                return token.slice(1);
             }
-            return token; //Unquoted
+            return token; //Unquoted (including single quotes treated as normal characters)
         });
     }
 
@@ -224,7 +226,12 @@
                 //Check for .special_function
                 if (local_command.special_function) {
                     args.shift();
-                    return_value = local_command.special_function(args);
+
+                    try {
+                        return_value = local_command.special_function(args);
+                    } catch (e) {
+                        console.log(e);
+                    }
                 }
         }
 

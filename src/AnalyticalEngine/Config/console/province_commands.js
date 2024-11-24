@@ -2,7 +2,7 @@ config.console.province_commands = {
 	name: "Province Commands",
 	order: 3,
 
-	print_map_cities: {
+	print_province: {
 		name: "print-province",
 		description: "Prints information on a province currently on the map.",
 

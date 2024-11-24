@@ -118,7 +118,9 @@ public class Javascript {
         ScriptEngineManager nashorn_manager = new ScriptEngineManager();
         ScriptEngine nashorn = nashorn_manager.getEngineByName("nashorn");
 
-        //Error handdling
+        ClassLoader class_loader = Thread.currentThread().getContextClassLoader();
+
+        //Error handling
         if (nashorn == null) {
             console.log("[ERROR] [FATAL] Nashorn is null! This implies that the wrong JDK has been selected. This has to be selected at runtime to be the bundled JDK that ships with AOC3 by default at src/lib/.");
             console.log("- Java Version: " + System.getProperty("java.version"));
@@ -127,6 +129,9 @@ public class Javascript {
         }
 
         if (nashorn == null) console.log("Nashorn is null.");
+
+        //Imports for nashorn
+        nashorn.put("classLoader", class_loader);
 
         //Load files as stated in js_file_structure.json
         String file_path = "/AnalyticalEngine/js_file_structure.json";

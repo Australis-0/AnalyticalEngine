@@ -75,7 +75,7 @@ public class EditorMapProvinceNamePoints extends Menu {
 
             //Update main
             AnalyticalEngine().main.put("map_cities", main_map_cities);
-            //console.log("Cities: " + main_map_cities.size() + "/" + Game.getProvincesSize());
+            //console.log("Cities: " + main_map_cities.size() + "/" + AnalyticalEngineGame.getProvincesSize());
         } catch (Exception e) {
             console.log(e);
         }

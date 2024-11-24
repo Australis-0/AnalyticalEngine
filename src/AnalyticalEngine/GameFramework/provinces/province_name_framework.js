@@ -1,0 +1,62 @@
+//Initialise functions
+{
+	function createCity (arg0_province_id, arg1_city_name, arg2_x, arg3_y) {
+		//Convert from parameters
+		var province_id = parseInt(arg0_province_id);
+		var city_name = arg1_city_name;
+		var x = parseFloat(arg2_x);
+		var y = parseFloat(arg3_y);
+
+		//Declare local instance variables
+		var new_city_obj = {
+			Name: city_name,
+			x: x/Game.mapBG.iMapScale,
+			y: y/Game.mapBG.iMapScale,
+			p: province_id
+		};
+
+		if (!getCity(province_id))
+			main.map.cities.push(new_city_obj);
+	}
+
+	function getCity (arg0_province_id, arg1_options) {
+		//Convert from parameters
+		var province_id = parseInt(arg0_province_id);
+		var options = (arg1_options) ? arg1_options : {};
+
+		//Declare local instance variables
+		var main_map_cities = main.map.cities;
+
+		//Iterate over all main_map_cities
+		for (var i = 0; i < main_map_cities.length; i++) {
+			var local_city = main_map_cities[i];
+
+			//Return statement
+			if (local_city.p == province_id)
+				return (!options.return_index) ? main_map_cities[i] : i;
+		}
+	}
+
+	function modifyCity (arg0_province_id, arg1_city_name, arg2_x, arg3_y) {
+		//Convert from parameters
+		var province_id = arg0_province_id;
+		var city_name = arg1_city_name;
+		var x = parseFloat(arg2_x);
+		var y = parseFloat(arg3_y);
+
+		//Declare local instance variables
+		var city_index = getCity(province_id, { return_index: true });
+
+		//If city_obj exists, modify that. Otherwise, create a new city
+		if (city_index != undefined) {
+			main.map.cities[city_index] = {
+				Name: city_name,
+				x: x/Game.mapBG.iMapScale,
+				y: y/Game.mapBG.iMapScale,
+				p: province_id
+			};
+		} else {
+			createCity(city_name, x, y, province_id);
+		}
+	}
+}

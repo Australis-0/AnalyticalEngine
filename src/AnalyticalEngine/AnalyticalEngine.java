@@ -26,7 +26,6 @@ public class AnalyticalEngine {
     }
 
     public AnalyticalEngine initialise () {
-        console.initialise();
         console.log("Current working directory: " + System.getProperty("user.dir"));
 
         //Initialise JS
