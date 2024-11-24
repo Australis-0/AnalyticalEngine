@@ -8,6 +8,14 @@
 
 //Initialise functions
 {
+	function fixInvalidJSON (arg0_json_string) {
+		//Convert from parameters
+		var json_string = arg0_json_string;
+
+		//Return statement
+		return json_string.replace(/([{,])\s*(\w+)\s*:/g, '$1"$2":');
+	}
+
 	function loadFileAsObject (arg0_file_path) {
 		//Convert from parameters
 		var file_path = arg0_file_path;
@@ -24,8 +32,10 @@
 			json_string += line;
 		reader.close();
 
+		var fixed_json = fixInvalidJSON(json_string);
+
 		//Return statement
-		return JSON.parse(json_string);
+		return JSON.parse(fixed_json);
 	}
 
 	function writeObjectToFile (arg0_object, arg1_file_path) {
@@ -34,10 +44,11 @@
 		var file_path = arg1_file_path;
 
 		//Declare local instance variables
-		var json_string = JSON.stringify(object);
+		var json_string = JSON.stringify(object, null, 4)
+			.replace(/"(\w+)":/g, '$1:');
 
 		//Create a FileWriter and PrintWriter to write to a file
-		var writer = new PrintWriter(new FileWriter(json_string));
+		var writer = new PrintWriter(new FileWriter(file_path));
 		writer.println(json_string);
 		writer.close();
 	}
