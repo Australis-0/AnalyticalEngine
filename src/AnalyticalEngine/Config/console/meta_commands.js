@@ -7,7 +7,9 @@ config.console.meta_commands = {
         description: "Runs Javascript code directly in-console.",
         special_function: function (args) {
             var return_value = eval(args.join(" "));
-            console.log(return_value);
+
+            if (return_value != undefined)
+                console.log(return_value);
         }
     },
     exit: {

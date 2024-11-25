@@ -242,6 +242,28 @@
 	}
 
 	/**
+	 * parseNonMarkdownNesting() - Returns a string with the correct padding (2-space per nesting).
+	 *
+	 * @param {number} arg0_nesting - The amount of nesting to convert.
+	 *
+	 * @returns {String}
+	 */
+	function parseNonMarkdownNesting (arg0_nesting) {
+		//Convert from parameters
+		var nesting = parseInt(arg0_nesting);
+
+		//Declare local instance variables
+		var nesting_string = "";
+
+		//Populate nesting_string
+		for (var i = 0; i < nesting; i++)
+			nesting_string += "  ";
+
+		//Return statement
+		return nesting_string;
+	}
+
+	/**
 	 * processOrdinalString() - Fetches the current ordinal present in a numeric string.
 	 * @param {String} arg0_input_string - The ordinal string to pass to the function.
 	 *
