@@ -62,7 +62,7 @@
 
 				//Return statement
 				if (page_change)
-					return page_change;
+					return current_page;
 			}
 		});
 	}
