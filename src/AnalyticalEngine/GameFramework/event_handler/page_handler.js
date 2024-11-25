@@ -1,6 +1,6 @@
 //Set on_page_change EventHandler
 {
-	setTimeout(function(){
+	function initialiseOnPageChangeHandler () {
 		global.on_page_change = (global.on_page_change) ? global.on_page_change : {};
 		global.on_page_change.debug = function (arg0_current_page) {
 			//Convert from parameters
@@ -14,5 +14,5 @@
 			//Convert from parameters
 			var current_page = arg0_current_page;
 		};
-	}, 100);
+	}
 }
