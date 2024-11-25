@@ -6,7 +6,10 @@ Object.defineProperty(this, "Game", {
 });
 
 //Define global namespace for non-imports and event handlers
-var global = {};
+var global = {
+	cache: {},
+	debug: {}
+};
 
 //Initialise functions
 {

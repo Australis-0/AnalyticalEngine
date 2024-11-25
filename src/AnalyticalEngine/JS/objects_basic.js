@@ -523,7 +523,7 @@
 	 * @param {Object} arg0_object - The object to sort.
 	 * @param {Object} [arg1_options] - Options.
 	 * @param {string} [arg1_options.key] - The sub-key to sort by. Non-recursive.
-	 * @param {string} [arg1_options.type="descending"] - Either 'ascending' or 'descending'.
+	 * @param {string} [arg1_options.mode="descending"] - Either 'ascending' or 'descending'.
 	 *
 	 * @returns {Object}
 	 */

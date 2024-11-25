@@ -5,4 +5,8 @@ setTimeout(function(){
 	initOptimisation();
 
 	initialiseConsole();
+
+	setTimeout(function(){
+		initialiseEventHandlers();
+	}, 3000);
 }, 1);

@@ -163,7 +163,7 @@
 
     function getConsoleCommandCategoriesInOrder () {
         //Declare local instance variables
-        var sorted_commands = sortObjectByKey(config.console, { key: "order" });
+        var sorted_commands = sortObjectByKey(config.console, { key: "order", mode: "ascending" });
 
         //Return statement
         return sorted_commands;
@@ -263,7 +263,6 @@
 
             //Iterate over all_local_commands
             var all_local_commands = Object.keys(local_command_category);
-            console.log("Local commands: " + all_local_commands)
 
             for (var x = 0; x < all_local_commands.length; x++)
                 if (config.console_reserved_keys.indexOf(all_local_commands[x]) == -1) {
