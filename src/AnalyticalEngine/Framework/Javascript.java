@@ -2,10 +2,15 @@ package AnalyticalEngine.Framework;
 
 import AnalyticalEngine.AnalyticalEngine;
 import static AnalyticalEngine.AnalyticalEngine.AnalyticalEngine;
+import static AnalyticalEngine.AnalyticalEngine.application;
+import static aoc.kingdoms.lukasz.jakowski.desktop.DesktopLauncher.main_thread_tasks;
+
 import AnalyticalEngine.Debugger.console;
+import aoc.kingdoms.lukasz.jakowski.desktop.DesktopLauncher;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.Json;
 
+import javax.script.Invocable;
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
 import javax.script.ScriptException;
@@ -16,6 +21,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.*;
+import java.util.function.Consumer;
 import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
 import java.util.stream.Collectors;
@@ -131,7 +137,27 @@ public class Javascript {
         if (nashorn == null) console.log("Nashorn is null.");
 
         //Imports for nashorn
+        new Thread(() -> {
+            try {
+                console.log("[DEBUG] Waiting for application to be initialised ...");
+                while (application == null)
+                    Thread.sleep(100);
+                nashorn.put("application", application);
+                console.log("[DEBUG] 'application' initialised ...");
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }).start();
+
         nashorn.put("classLoader", class_loader);
+        Consumer<Runnable> run_on_main_thread = (command) -> {
+            if (command != null) {
+                main_thread_tasks.add(command);
+            } else {
+                System.err.println("[ERROR] Invalid argument: Expected a Runnable command.");
+            }
+        };
+        nashorn.put("runOnMainThread", run_on_main_thread);
 
         //Load files as stated in js_file_structure.json
         String file_path = "/AnalyticalEngine/js_file_structure.json";

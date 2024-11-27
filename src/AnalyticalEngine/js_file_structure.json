@@ -9,6 +9,7 @@
 
     "/AnalyticalEngine/GameFramework",
 
+    "/AnalyticalEngine/Editor",
     "/AnalyticalEngine/Logic/Conditions",
     "/AnalyticalEngine/Logic/Effects",
     "/AnalyticalEngine/Logic/Parsers",

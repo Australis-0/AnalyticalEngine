@@ -10,12 +10,19 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.lang.*;
+import java.util.concurrent.ConcurrentLinkedQueue;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 
 //Import AnalyticalEngine
 import static AnalyticalEngine.AnalyticalEngine.AnalyticalEngine;
 
 //Define DesktopLauncher
 public class DesktopLauncher {
+    public static AA_Game application;
+    public static final ConcurrentLinkedQueue<Runnable> main_thread_tasks = new ConcurrentLinkedQueue<>();
+
     public static void main(String[] arg) {
         Lwjgl3ApplicationConfiguration config = new Lwjgl3ApplicationConfiguration();
         config.setTitle("PROJECT ORION - Age of Civilisations 3 - Dev Version");
@@ -30,7 +37,7 @@ public class DesktopLauncher {
         boolean tVSync = true;
 
         //INITIALISE ANALYTICAL ENGINE
-        AA_Game application = new AA_Game();
+        application = new AA_Game();
         AnalyticalEngine().initialise();
         AnalyticalEngine().setApplicationInstance(application);
 

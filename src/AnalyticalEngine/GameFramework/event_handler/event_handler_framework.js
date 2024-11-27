@@ -28,15 +28,12 @@
 			global[key + "_logic_loop"] = setInterval(function(){
 				var boolean_check = options.conditional_function();
 
-				/*if (boolean_check)
-					console.log("Boolean check: " + boolean_check);*/
 				if (boolean_check) {
 					var all_event_handler_keys = Object.keys(global[key]);
 
 					for (var i = 0; i < all_event_handler_keys.length; i++) {
 						var local_value = global[key][all_event_handler_keys[i]];
 
-						//console.log("Typeof: " + typeof local_value + " | Local value: " + local_value);
 						if (typeof local_value == "function")
 							local_value(boolean_check);
 					}

@@ -7,6 +7,7 @@ package aoc.kingdoms.lukasz.jakowski;
 
 import aoc.kingdoms.lukasz.jakowski.Renderer.Renderer;
 import aoc.kingdoms.lukasz.jakowski.Steam.SteamManager;
+import aoc.kingdoms.lukasz.jakowski.desktop.DesktopLauncher;
 import aoc.kingdoms.lukasz.map.map.Map;
 import aoc.kingdoms.lukasz.map.map.MapBG;
 import aoc.kingdoms.lukasz.map.map.Map_Data;
@@ -161,6 +162,10 @@ public class AA_Game extends ApplicationAdapter {
     }
 
     public void render() {
+        Runnable task;
+        while ((task = DesktopLauncher.main_thread_tasks.poll()) != null)
+            task.run();
+
         this.renderer.render();
     }
 
@@ -201,6 +206,8 @@ public class AA_Game extends ApplicationAdapter {
                 Touch.buttonTouch = button;
                 Touch.setMousePosXY(screenX, screenY);
                 AA_Game.this.touch.actionDown(screenX, screenY, pointer, button);
+                System.out.println("Clicked! " + Touch.buttonTouch);
+
                 return true;
             }
 
