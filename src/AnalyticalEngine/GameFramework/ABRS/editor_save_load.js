@@ -6,6 +6,10 @@ this.PrintWriter = Java.type("java.io.PrintWriter");
 
 //Initialise functions
 {
+	function initialiseSaveLoad () {
+		loadCities();
+	}
+
 	function loadCities () {
 		//Declare local instance variables
 		var main_cities_file_path = "map/" + Game.map.getFile_ActiveMap_Path() + "cities/cities.json";

@@ -23,9 +23,20 @@ var global = {
 
 //Initialise functions
 {
+	function setGlobalVariable (arg0_key, arg1_value) {
+		//Convert from parameters
+		var key = arg0_key;
+		var value = arg1_value;
+
+		//Set global[key]
+		global[key] = value;
+	}
+
 	function initGlobal () {
 		this.main = {
-			//Map (Provinces and associated data structures)
+			interfaces: {}, //Contains all Menus instantiated via Nashorn in-game.
+
+			//Map (Provinces and assoiated data structures)
 			map: {
 				cities: []
 			}

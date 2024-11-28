@@ -26,6 +26,11 @@ import com.badlogic.gdx.graphics.Pixmap.Format;
 import com.badlogic.gdx.graphics.Texture.TextureFilter;
 import com.badlogic.gdx.graphics.Texture.TextureWrap;
 
+import javax.script.Invocable;
+import javax.script.ScriptException;
+
+import static AnalyticalEngine.AnalyticalEngine.nashorn;
+
 public class AA_Game extends ApplicationAdapter {
     private Touch touch = new Touch();
     public static Renderer renderer;
@@ -174,6 +179,10 @@ public class AA_Game extends ApplicationAdapter {
     }
 
     private void initInput() {
+        //Declare local instance variables
+        Invocable invocable = (Invocable) nashorn;
+
+        //Handle interactions
         Gdx.input.setInputProcessor(new InputAdapter() {
             public boolean keyDown(int keycode) {
                 return AA_KeyManager.keyDown(keycode);
@@ -206,7 +215,16 @@ public class AA_Game extends ApplicationAdapter {
                 Touch.buttonTouch = button;
                 Touch.setMousePosXY(screenX, screenY);
                 AA_Game.this.touch.actionDown(screenX, screenY, pointer, button);
-                System.out.println("Clicked! " + Touch.buttonTouch);
+
+                //Send to global.left_mouse_click or global.right_mouse_click
+                try {
+                    if (Touch.buttonTouch == 0)
+                        invocable.invokeFunction("setGlobalVariable", "left_mouse_click", true);
+                    if (Touch.buttonTouch == 1)
+                        invocable.invokeFunction("setGlobalVariable", "right_mouse_click", true);
+                } catch (ScriptException | NoSuchMethodException e) {
+                    e.printStackTrace();
+                }
 
                 return true;
             }
@@ -244,6 +262,17 @@ public class AA_Game extends ApplicationAdapter {
             public boolean touchUp(int screenX, int screenY, int pointer, int button) {
                 Touch.setMousePosXY(screenX, screenY);
                 AA_Game.this.touch.actionUp(screenX, screenY, pointer, button);
+
+                //Send to global.left_mouse_release or global.right_mouse_release
+                try {
+                    if (Touch.buttonTouch == 0)
+                        invocable.invokeFunction("setGlobalVariable", "left_mouse_release", true);
+                    if (Touch.buttonTouch == 1)
+                        invocable.invokeFunction("setGlobalVariable", "right_mouse_release", true);
+                } catch (ScriptException | NoSuchMethodException e) {
+                    e.printStackTrace();
+                }
+
                 return true;
             }
 

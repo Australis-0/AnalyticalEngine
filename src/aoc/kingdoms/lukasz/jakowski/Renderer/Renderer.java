@@ -259,7 +259,7 @@ public class Renderer {
 
     }
 
-    private final void renderUI() {
+    public void renderUI() {
         try {
             Game.menuManager.draw(this.oSB);
         } catch (Exception var2) {

@@ -7,6 +7,21 @@ config.console.ui_commands = {
 	name: "UI Commands",
 	order: 4,
 
+	create_dummy_menu: {
+		name: "create-dummy-menu",
+		description: "Spawns in a sample dummy menu for testing purposes.",
+		arg0_title_description: "The title of the Window to spawn.",
+		special_function: function (args) {
+			if (args.length >= 1) {
+				createDummyMenu({ name: args.join(" ") });
+			} else {
+				createDummyMenu();
+			}
+
+			console.log("Dummy menu spawned on-screen.");
+		}
+	},
+
 	print_page: {
 		name: "print-page",
 		description: "Prints current information related to the in-game MenuManager.",
