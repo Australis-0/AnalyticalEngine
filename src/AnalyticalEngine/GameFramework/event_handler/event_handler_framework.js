@@ -45,6 +45,40 @@
 	 * initialiseEventHandlers() - Initialises all active event handlers wherever needed.
 	 */
 	function initialiseEventHandlers () {
+		//Interactions
+		declareEventHandler("onmousedown", {
+			conditional_function: function () {
+				//Declare local instance variables
+				var e;
+
+				if (global.left_mouse_click) e = "left_click";
+				if (global.right_mouse_click) e = "right_click";
+
+				delete global.left_mouse_click;
+				delete global.right_mouse_click;
+
+				//Return statement
+				return e;
+			},
+			interval: 8 //120FPS
+		});
+		declareEventHandler("onclick", {
+			conditional_function: function () {
+				//Declare local instance variables
+				var e;
+
+				if (global.left_mouse_release) e = "left_click";
+				if (global.right_mouse_release) e = "right_click";
+
+				delete global.left_mouse_release;
+				delete global.right_mouse_release;
+
+				//Return statement
+				return e;
+			},
+			interval: 8
+		});
+
 		//Page handler
 		declareEventHandler("on_page_change", {
 			conditional_function: function () {

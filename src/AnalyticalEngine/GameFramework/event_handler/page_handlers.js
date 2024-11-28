@@ -13,6 +13,13 @@
 		global.on_page_change.editor_handler = function (arg0_current_page) {
 			//Convert from parameters
 			var current_page = arg0_current_page;
+
+			//Load mapdata on initialisation
+			if (current_page == "MAINMENU" && !main.map_loaded) {
+				console.log("Loaded Nashorn Mapdata.");
+
+				initialiseSaveLoad();
+			}
 		};
 	}
 }

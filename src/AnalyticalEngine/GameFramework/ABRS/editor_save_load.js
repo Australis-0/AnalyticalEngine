@@ -7,6 +7,8 @@ this.PrintWriter = Java.type("java.io.PrintWriter");
 //Initialise functions
 {
 	function initialiseSaveLoad () {
+		main.map_loaded = true;
+
 		loadCities();
 	}
 
