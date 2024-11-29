@@ -204,8 +204,6 @@
 			}
 		}
 
-		//console.log("New context menu: ", options);
-
 		//2. Iterate over all_options_keys that are subobjects; add them to the menu
 		for (var i = 0; i < all_options_keys.length; i++) {
 			var local_value = options[all_options_keys[i]];
@@ -263,7 +261,7 @@
 			var current_x_width = 0;
 			var current_y_height = 0;
 			var menu_dimensions = getContextMenuDimensions(options);
-			console.log("Menu dimensions: " + menu_dimensions);
+			//console.log("Menu dimensions: " + menu_dimensions);
 
 			//Set .x
 			for (var i = 0; i < menu_dimensions[0] + 1; i++) {
@@ -278,14 +276,13 @@
 			//Set .y
 			//Iterate over all_options_keys and set local y height per row
 			for (var i = 0; i < menu_dimensions[1] + 1; i++) {
-				console.log("Iterating over Y: " + i);
-
+				//console.log("Iterating over Y: " + i);
 				for (var x = 0; x < interface_obj.menu_properties.length; x++) {
 					//console.log(interface_obj.menu_properties[x]);
 					if (!interface_obj.menu_properties[x].raw_coords)
 						if (interface_obj.menu_properties[x].y == i) {
 							interface_obj.menu_elements[x].setPosY(current_y_height);
-							console.log("Set " + ordinalise(x) + " element to Y: " + current_y_height);
+							//console.log("Set " + ordinalise(x) + " element to Y: " + current_y_height);
 						}
 				}
 
@@ -366,6 +363,13 @@
 		return dummy_interface_obj.menu_obj;
 	}
 
+	/**
+	 * getColumnsInRow() - Fetches the total number of columns in a row.
+	 * @param {Object} arg0_context_menu_obj - The context menu to input.
+	 * @param {number} arg1_y - The row to target.
+	 *
+	 * @returns {number}
+	 */
 	function getColumnsInRow (arg0_context_menu_obj, arg1_y) {
 		//Convert from parameters
 		var context_menu_obj = arg0_context_menu_obj;
@@ -416,6 +420,13 @@
 		return [max_x, max_y];
 	}
 
+	/**
+	 * getMaxColumnWidth() - Fetches the maximal width of a given column needed for rendering.
+	 * @param {Object} arg0_interface_obj - The interface object to input.
+	 * @param {number} arg1_x - The column to target.
+	 *
+	 * @returns {number}
+	 */
 	function getMaxColumnWidth (arg0_interface_obj, arg1_x) {
 		//Convert from parameters
 		var interface_obj = arg0_interface_obj;
@@ -435,6 +446,13 @@
 		return max_column_width;
 	}
 
+	/**
+	 * getMaxRowHeight() - Fetches the maximal height of a given row needed for rendering.
+	 * @param {Object} arg0_interface_obj - The interface object to input.
+	 * @param {number} arg1_y - The row to target.
+	 *
+	 * @returns {number}
+	 */
 	function getMaxRowHeight (arg0_interface_obj, arg1_y) {
 		//Convert from parameters
 		var interface_obj = arg0_interface_obj;
@@ -455,6 +473,13 @@
 		return max_row_height;
 	}
 
+	/**
+	 * getRowsInColumn() - Fetches the total number of rows in a column.
+	 * @param {Object} arg0_context_menu_obj - The context menu to input.
+	 * @param {number} arg1_x - The column to target.
+	 *
+	 * @returns {number}
+	 */
 	function getRowsInColumn (arg0_context_menu_obj, arg1_x) {
 		//Convert from parameters
 		var context_menu_obj = arg0_context_menu_obj;
@@ -476,6 +501,14 @@
 		return max_row;
 	}
 
+	/**
+	 * getTotalColumnHeight() - Fetches the total display column height for all elements  with no padding.
+	 * @param {Object} arg0_interface_obj - The interface object to input.
+	 * @param {number} arg1_x - The column to target.
+	 *
+	 * @returns {number}
+	 */
+	//[WIP] - Adjust for padding options
 	function getTotalColumnHeight (arg0_interface_obj, arg1_x) {
 		//Convert from parameters
 		var interface_obj = arg0_interface_obj;
@@ -495,6 +528,13 @@
 		return total_column_height;
 	}
 
+	/**
+	 * getTotalRowWidth() - Fetches the total display row width for all elements with no padding.
+	 * @param {Object} arg0_interface_obj - The interface object to input.
+	 * @param {number} arg1_y - The row to target.
+	 *
+	 * @returns {number}
+	 */
 	function getTotalRowWidth (arg0_interface_obj, arg1_y) {
 		//Convert from parameters
 		var interface_obj = arg0_interface_obj;
