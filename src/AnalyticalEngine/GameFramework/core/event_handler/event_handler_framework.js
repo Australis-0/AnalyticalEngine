@@ -99,6 +99,31 @@
 	}
 
 	/**
+	 * initialisePostLoadingEventHandlers() - Initialises event handlers after the game is loaded.
+	 */
+	function initialisePostLoadingEventHandlers () {
+		//Map handler
+		declareEventHandler("on_province_click", {
+			conditional_function: function () {
+				//Declare local instance variables
+				var current_province = Game.iActiveProvince;
+
+				if (current_province >= 0) {
+					var province_change = false;
+
+					if (global.cache.selected_province_id != current_province)
+						province_change = true;
+					global.cache.selected_province_id = current_province;
+
+					//Return statement
+					if (province_change)
+						return current_province;
+				}
+			}
+		});
+	}
+
+	/**
 	 * invokeEventHandler() - Manually invokes the functions associated with a particular event handler.
 	 * @param {String} arg0_key - The key to which the event handler is bound.
 	 * @param {Object} [arg1_options] - The options to pass to the functions associated with that event handler.

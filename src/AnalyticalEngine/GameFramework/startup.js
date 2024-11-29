@@ -10,6 +10,7 @@ setTimeout(function(){
 		//Initialise individual EventHandlers
 		initialiseOnPageChangeHandler();
 		initialiseOnclickHandler();
+		initialiseOnProvinceClickHandler();
 
 		//Initialise EventHandler logic
 		initialiseEventHandlers();

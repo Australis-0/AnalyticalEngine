@@ -102,6 +102,7 @@
 	 * @param {boolean} [arg0_options.lock_hover=false]
 	 * @param {String} [arg0_options.name] - If undefined, the MenuTitle is null instead.
 	 * @param {boolean} [arg0_options.no_title=true] - Whether there is a title or not.
+	 * @param {boolean} [arg0_options.raw_coords=false] - Whether to skip auto-formatting and manually supply all coords. For use in non-vertical menus.
 	 * @param {boolean} [arg0_options.resizeable=true]
 	 *
 	 * @param {number} [arg0_options.height]
@@ -112,6 +113,7 @@
 	 * @param {Object} [arg0_options."input_key"]
 	 *  @param {String} [arg0_options."input_key".name]
 	 * 	@param {String} [arg0_options."input_key".type="button"]
+	 * 	@param {number} [arg0_options."input_key".raw_coords=false] - Whether to use raw specified coords instead of autoformatting.
 	 * 	@param {number} [arg0_options."input_key".raw_width=false] - Whether to override default multiplication for .width.
 	 * 	@param {number} [arg0_options."input_key".width=2] - The width as multiplied by CFG.BUTTON_WIDTH.
 	 * 	@param {number} [arg0_options."input_key".x]
@@ -135,6 +137,7 @@
 		if (options.lock_hover != true) options.lock_hover = false;
 		if (options.no_title != false) options.no_title = true;
 		if (!options.name) options.name = "";
+		if (options.raw_coords != true) options.raw_coords = false;
 		if (options.resizeable != false) options.resizeable = true;
 
 		options.height = (options.height) ?
@@ -145,6 +148,7 @@
 		options.y = returnSafeNumber(options.y);
 
 		//Declare local instance variables
+		var all_options_keys = Object.keys(options);
 		var menu_obj = new Menu();
 
 		var current_view_id = Game.menuManager.viewID;
@@ -165,7 +169,7 @@
 		var interface_obj = initInterface();
 		var menu_elements_array_list = new ArrayList();
 		var menu_elements = [];
-		var onclick = [];
+		var menu_properties = [];
 
 		//Construct MenuTitle
 		var menu_title_obj = (options.no_title) ? null : createMenuTitle({
@@ -184,14 +188,31 @@
 			options.y = getJavaInteger(CFG.GAME_HEIGHT) - options.y;
 		}
 
-		//Iterate over all_options_keys that are subobjects
-		var all_options_keys = Object.keys(options);
+		//1. Iterate over all_options_keys that are subobjects; fix their .x/.y coordinates if unspecified
+		var column_one_current_rows = getColumns(options, 0);
 
 		for (var i = 0; i < all_options_keys.length; i++) {
 			var local_value = options[all_options_keys[i]];
 
 			if (typeof local_value == "object" && local_value.type) {
+				if (local_value.x == undefined)
+					local_value.x = 0;
+				if (local_value.y == undefined) {
+					local_value.y = JSON.parse(JSON.stringify(column_one_current_rows));
+					column_one_current_rows++;
+				}
+			}
+		}
+
+		//console.log("New context menu: ", options);
+
+		//2. Iterate over all_options_keys that are subobjects; add them to the menu
+		for (var i = 0; i < all_options_keys.length; i++) {
+			var local_value = options[all_options_keys[i]];
+
+			if (typeof local_value == "object" && local_value.type) {
 				var new_menu_element_obj;
+				var new_properties_obj = {};
 
 				//Parse type
 				if (local_value.type == "button") {
@@ -200,14 +221,21 @@
 
 				if (new_menu_element_obj) {
 					menu_elements.push(new_menu_element_obj);
-					onclick.push((local_value.special_function) ? local_value.special_function : undefined);
+
+					//Push new_properties_obj
+					new_properties_obj.x = local_value.x;
+					new_properties_obj.y = local_value.y;
+
+					if (local_value.special_function)
+						new_properties_obj.onclick = local_value.special_function;
+					menu_properties.push(new_properties_obj);
 				}
 			}
 		}
 
-		//Set interface_obj
+		//3. Set .interface_obj
 		interface_obj.menu_elements = menu_elements;
-		interface_obj.onclick = onclick;
+		interface_obj.menu_properties = menu_properties;
 
 		//Initialise menu and add to view
 		for (var i = 0; i < interface_obj.menu_elements.length; i++)
@@ -226,11 +254,51 @@
 			false,
 			true,
 			false);
+
+		//Add trackers to main.interfaces[<interface_id>]
+		interface_obj.menu_obj = menu_obj;
+
+		//3. Autoformat interface_obj.menu_obj with table layout
+		if (!options.raw_coords) {
+			var current_x_width = 0;
+			var current_y_height = 0;
+			var menu_dimensions = getContextMenuDimensions(options);
+			console.log("Menu dimensions: " + menu_dimensions);
+
+			//Set .x
+			for (var i = 0; i < menu_dimensions[0] + 1; i++) {
+				for (var x = 0; x < interface_obj.menu_properties.length; x++)
+					if (!interface_obj.menu_properties[x].raw_coords)
+						if (interface_obj.menu_properties[x].x == i)
+							interface_obj.menu_elements[x].setPosX(current_x_width);
+
+				current_x_width += getMaxColumnWidth(interface_obj, i);
+			}
+
+			//Set .y
+			//Iterate over all_options_keys and set local y height per row
+			for (var i = 0; i < menu_dimensions[1] + 1; i++) {
+				console.log("Iterating over Y: " + i);
+
+				for (var x = 0; x < interface_obj.menu_properties.length; x++) {
+					//console.log(interface_obj.menu_properties[x]);
+					if (!interface_obj.menu_properties[x].raw_coords)
+						if (interface_obj.menu_properties[x].y == i) {
+							interface_obj.menu_elements[x].setPosY(current_y_height);
+							console.log("Set " + ordinalise(x) + " element to Y: " + current_y_height);
+						}
+				}
+
+				current_y_height += getMaxRowHeight(interface_obj, i);
+			}
+		}
+
+		//KEEP AT BOTTOM! Update Game menu draw so that UI appears on screen
 		Game.menuManager.addNextMenuToView(current_view_id, menu_obj);
 		Game.menuManager.setOrderOfMenu(current_view_id); //This is needed to refresh the menu order
 
-		//KEEP AT BOTTOM! Add trackers to main.interfaces[<interface_id>]
-		interface_obj.menu_obj = menu_obj;
+		menu_obj.setWidth_Resize(options.width); //Update scrollable
+		menu_obj.updateScrollable();
 
 		//Return statement
 		return interface_obj;
@@ -275,7 +343,6 @@
 				name: "Centre-aligned button",
 				raw_width: true,
 				width: 400,
-				y: CFG.BUTTON_HEIGHT,
 
 				align: "centre",
 				special_function: function () {
@@ -287,7 +354,6 @@
 				name: "Right-aligned button",
 				raw_width: true,
 				width: 400,
-				y: CFG.BUTTON_HEIGHT*2,
 
 				align: "right",
 				special_function: function () {
@@ -298,6 +364,149 @@
 
 		//Return statement
 		return dummy_interface_obj.menu_obj;
+	}
+
+	function getContextMenuDimensions (arg0_context_menu_obj) {
+		//Convert from parameters
+		var context_menu_obj = arg0_context_menu_obj;
+
+		//Declare local instance variables
+		var all_context_menu_keys = Object.keys(context_menu_obj);
+		var max_x = 0;
+		var max_y = 0;
+
+		//Iterate over all_context_menu_keys
+		for (var i = 0; i < all_context_menu_keys.length; i++) {
+			var local_value = context_menu_obj[all_context_menu_keys[i]];
+
+			if (typeof local_value == "object") {
+				if (local_value.x) max_x = Math.max(max_x, local_value.x);
+				if (local_value.y) max_y = Math.max(max_y, local_value.y);
+			}
+		}
+
+		//Return statement
+		return [max_x, max_y];
+	}
+
+	function getColumns (arg0_context_menu_obj, arg1_x) {
+		//Convert from parameters
+		var context_menu_obj = arg0_context_menu_obj;
+		var x_column = parseInt(arg1_x);
+
+		//Declare local instance variables
+		var all_context_menu_keys = Object.keys(context_menu_obj);
+		var max_x = 0;
+
+		//Iterate over all_context_menu_keys
+		for (var i = 0; i < all_context_menu_keys.length; i++) {
+			var local_value = context_menu_obj[all_context_menu_keys[i]];
+
+			if (typeof local_value == "object")
+				if (!local_value.raw_coords && local_value.x == x_column)
+					max_x = Math.max(max_x, local_value.x);
+		}
+
+		//Return statement
+		return max_x;
+	}
+
+	function getMaxColumnWidth (arg0_interface_obj, arg1_x) {
+		//Convert from parameters
+		var interface_obj = arg0_interface_obj;
+		var x_column = parseInt(arg1_x);
+
+		//Declare local instance variables
+		var max_column_width = 0;
+
+		//Iterate over interface_obj.menu_properties
+		if (interface_obj)
+			if (interface_obj.menu_properties)
+				for (var i = 0; i < interface_obj.menu_properties.length; i++)
+					if (interface_obj.menu_properties[i].x == x_column)
+						max_column_width = Math.max(max_column_width, interface_obj.menu_elements[i].getWidth());
+
+		//Return statement
+		return max_column_width;
+	}
+
+	function getMaxRowHeight (arg0_interface_obj, arg1_y) {
+		//Convert from parameters
+		var interface_obj = arg0_interface_obj;
+		var y_row = parseInt(arg1_y);
+
+		//Declare local instance variables
+		var max_row_height = 0;
+
+		//Iterate over interface_obj.menu_properties
+		if (interface_obj)
+			if (interface_obj.menu_properties)
+				for (var i = 0; i < interface_obj.menu_properties.length; i++)
+					if (interface_obj.menu_properties[i].y == y_row) {
+						max_row_height = Math.max(max_row_height, interface_obj.menu_elements[i].getHeight());
+					}
+
+		//Return statement
+		return max_row_height;
+	}
+
+	function getRows (arg0_context_menu_obj, arg1_y) {
+		//Convert from parameters
+		var context_menu_obj = arg0_context_menu_obj;
+		var y_row = parseInt(arg1_y);
+
+		//Declare local instance variables
+		var all_context_menu_keys = Object.keys(context_menu_obj);
+		var max_y = 0;
+
+		for (var i = 0; i < all_context_menu_keys.length; i++) {
+			var local_value = context_menu_obj[all_context_menu_keys[i]];
+
+			if (typeof local_value == "object")
+				if (!local_value.raw_coords && local_value.y == y_row)
+					max_y = Math.max(max_y, local_value.y);
+		}
+
+		//Return statement
+		return max_y;
+	}
+
+	function getTotalColumnHeight (arg0_interface_obj, arg1_x) {
+		//Convert from parameters
+		var interface_obj = arg0_interface_obj;
+		var x_column = parseInt(arg1_x);
+
+		//Declare local instance variables
+		var total_column_height = 0;
+
+		//Iterate over interface_obj.menu_properties
+		if (interface_obj)
+			if (interface_obj.menu_properties)
+				for (var i = 0; i < interface_obj.menu_properties.length; i++)
+					if (interface_obj.menu_properties[i].x == x_column)
+						total_column_height += interface_obj.menu_elements[i].getHeight();
+
+		//Return statement
+		return total_column_height;
+	}
+
+	function getTotalRowWidth (arg0_interface_obj, arg1_y) {
+		//Convert from parameters
+		var interface_obj = arg0_interface_obj;
+		var y_row = parseInt(arg1_y);
+
+		//Declare local instance variables
+		var total_row_width = 0;
+
+		//Iterate over interface_obj.menu_properties
+		if (interface_obj)
+			if (interface_obj.menu_properties)
+				for (var i = 0; i < interface_obj.menu_properties.length; i++)
+					if (interface_obj.menu_properties[i].y == y_row)
+						total_row_width += interface_obj.menu_elements[i].getWidth();
+
+		//Return statement
+		return total_row_width;
 	}
 
 	/**
@@ -361,6 +570,9 @@
 		return new_menu_title_obj;
 	}
 
+	/**
+	 * menuHandler() - Handles onclick events for menus in-game.
+	 */
 	function menuHandler () {
 		//Declare local instance variables
 		var all_interface_keys = Object.keys(main.interfaces);
@@ -375,11 +587,13 @@
 				//Handle local_interface.menu_elements
 				for (var x = 0; x < local_interface.menu_elements.length; x++) {
 					var local_element = local_interface.menu_elements[x];
+					var local_properties = local_interface.menu_properties[x];
 
-					if (local_element.getIsHovered() && global.left_mouse_release)
-						//console.log("Clicked button: " + local_element.getText());
-						if (local_interface.onclick[x])
-							local_interface.onclick[x]();
+					if (local_element.getIsHovered()) {
+						console.log("Clicked on button: " + local_element.getText());
+						if (local_properties.onclick)
+							local_properties.onclick();
+					}
 				}
 		}
 

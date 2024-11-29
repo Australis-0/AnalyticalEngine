@@ -1,7 +1,7 @@
 //Set on_page_change EventHandler
 {
 	function initialiseOnPageChangeHandler () {
-		global.on_page_change = (global.on_page_change) ? global.on_page_change : {};
+		if (!global.on_page_change) global.on_page_change = {};
 		global.on_page_change.debug = function (arg0_current_page) {
 			//Convert from parameters
 			var current_page = arg0_current_page;
@@ -16,9 +16,10 @@
 
 			//Load mapdata on initialisation
 			if (current_page == "MAINMENU" && !main.map_loaded) {
-				console.log("Loaded Nashorn Mapdata.");
+				console.log("Loaded Nashorn Mapdata; post-loading event handlers.");
 
 				initialiseSaveLoad();
+				initialisePostLoadingEventHandlers();
 			}
 		};
 	}
