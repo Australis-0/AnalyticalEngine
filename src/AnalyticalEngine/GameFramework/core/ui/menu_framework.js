@@ -189,7 +189,7 @@
 		}
 
 		//1. Iterate over all_options_keys that are subobjects; fix their .x/.y coordinates if unspecified
-		var column_one_current_rows = getColumns(options, 0);
+		var column_one_current_rows = getRowsInColumn(options, 0);
 
 		for (var i = 0; i < all_options_keys.length; i++) {
 			var local_value = options[all_options_keys[i]];
@@ -366,6 +366,33 @@
 		return dummy_interface_obj.menu_obj;
 	}
 
+	function getColumnsInRow (arg0_context_menu_obj, arg1_y) {
+		//Convert from parameters
+		var context_menu_obj = arg0_context_menu_obj;
+		var row = parseInt(arg1_y);
+
+		//Declare local instance variables
+		var all_context_menu_keys = Object.keys(context_menu_obj);
+		var max_column = 0;
+
+		//Iterate over all_context_menu_keys
+		for (var i = 0; i < all_context_menu_keys.length; i++) {
+			var local_value = context_menu_obj[all_context_menu_keys[i]];
+
+			if (local_value.y == row)
+				max_column = Math.max(max_row, local_value.x + 1);
+		}
+
+		//Return statement
+		return max_column;
+	}
+
+	/**
+	 * getContextMenuDimensions() - Returns the [x, y] dimensions of the current context menu.
+	 * @param {Object} arg0_context_menu_obj - The context menu to input.
+	 *
+	 * @returns {Array<number, number>}
+	 */
 	function getContextMenuDimensions (arg0_context_menu_obj) {
 		//Convert from parameters
 		var context_menu_obj = arg0_context_menu_obj;
@@ -387,28 +414,6 @@
 
 		//Return statement
 		return [max_x, max_y];
-	}
-
-	function getColumns (arg0_context_menu_obj, arg1_x) {
-		//Convert from parameters
-		var context_menu_obj = arg0_context_menu_obj;
-		var x_column = parseInt(arg1_x);
-
-		//Declare local instance variables
-		var all_context_menu_keys = Object.keys(context_menu_obj);
-		var max_x = 0;
-
-		//Iterate over all_context_menu_keys
-		for (var i = 0; i < all_context_menu_keys.length; i++) {
-			var local_value = context_menu_obj[all_context_menu_keys[i]];
-
-			if (typeof local_value == "object")
-				if (!local_value.raw_coords && local_value.x == x_column)
-					max_x = Math.max(max_x, local_value.x);
-		}
-
-		//Return statement
-		return max_x;
 	}
 
 	function getMaxColumnWidth (arg0_interface_obj, arg1_x) {
@@ -450,25 +455,25 @@
 		return max_row_height;
 	}
 
-	function getRows (arg0_context_menu_obj, arg1_y) {
+	function getRowsInColumn (arg0_context_menu_obj, arg1_x) {
 		//Convert from parameters
 		var context_menu_obj = arg0_context_menu_obj;
-		var y_row = parseInt(arg1_y);
+		var column = parseInt(arg1_x);
 
 		//Declare local instance variables
 		var all_context_menu_keys = Object.keys(context_menu_obj);
-		var max_y = 0;
+		var max_row = 0;
 
+		//Iterate over all_context_menu_keys
 		for (var i = 0; i < all_context_menu_keys.length; i++) {
 			var local_value = context_menu_obj[all_context_menu_keys[i]];
 
-			if (typeof local_value == "object")
-				if (!local_value.raw_coords && local_value.y == y_row)
-					max_y = Math.max(max_y, local_value.y);
+			if (local_value.x == column)
+				max_row = Math.max(max_row, local_value.y + 1);
 		}
 
 		//Return statement
-		return max_y;
+		return max_row;
 	}
 
 	function getTotalColumnHeight (arg0_interface_obj, arg1_x) {
