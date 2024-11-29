@@ -14,6 +14,5 @@ setTimeout(function(){
 
 		//Initialise EventHandler logic
 		initialiseEventHandlers();
-		initialiseUI();
 	}, 3000);
 }, 1);

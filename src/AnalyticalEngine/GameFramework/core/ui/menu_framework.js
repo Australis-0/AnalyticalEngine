@@ -646,8 +646,4 @@
 		Game.menuManager.update();
 		Game.menuManager.setOrderOfMenu(current_view_id); //This is needed to refresh the menu order
 	}
-
-	function initialiseUI () {
-		//global.dummy_menu_obj = createDummyMenu(); //Temp synchronisation
-	}
 }
