@@ -5,6 +5,11 @@
 
 //Initialise functions
 {
+	/**
+	 * getAllProvinces() - Returns an array of all province objects.
+	 *
+	 * @returns {Array<Object>}
+	 */
 	function getAllProvinces () {
 		//Declare local instance variables
 		var all_provinces = [];
@@ -22,6 +27,14 @@
 		return all_provinces;
 	}
 
+	/**
+	 * getProvince() - Returns a province object based upon its given province name/ID.
+	 * @param {String} arg0_province_name - The province name/ID to return the province for.
+	 * @param {Object} [arg1_options]
+	 * @param {boolean} [arg1_options.return_key=false] - Whether to return the Province ID instead of a Province object.
+	 *
+	 * @returns {Object|String}
+	 */
 	function getProvince (arg0_province_name, arg1_options) {
 		//Convert from parameters
 		var province_name = arg0_province_name;
@@ -56,6 +69,12 @@
 		return (!options.return_key) ? province_obj : province_id;
 	}
 
+	/**
+	 * getProvinceCentre() - Returns the centrepoint of a province.
+	 * @param {String} arg0_province_name - The province name to fetch the centrepoint for.
+	 *
+	 * @returns {Array<number, number>}
+	 */
 	function getProvinceCentre (arg0_province_name) {
 		//Convert from parameters
 		var province_obj = getProvince(arg0_province_name);
@@ -64,6 +83,12 @@
 		return [province_obj.getCenterX(), province_obj.getCenterY()];
 	}
 
+	/**
+	 * getProvinceCores() - Fetches an array of all CivTags that have cores on a specific province.
+	 * @param {String} arg0_province_name - The province name to fetch cores for.
+	 *
+	 * @returns {Array<String>}
+	 */
 	function getProvinceCores (arg0_province_name) {
 		//Convert from parameters
 		var province_obj = getProvince(arg0_province_name);

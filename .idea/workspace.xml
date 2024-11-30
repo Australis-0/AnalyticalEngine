@@ -6,21 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="09b6f7f8-b868-43e9-b471-ac1dbd15fa3b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/provinces/province_framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/provinces/province_framework.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/provinces/province_name_framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/provinces/province_name_framework.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/ui/keyboard_framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/ui/keyboard_framework.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/ui/menu_framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/ui/menu_framework.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/startup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/startup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/ui/editors/province_names_editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/ui/editors/province_names_editor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/Renderer/Renderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/Renderer/Renderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menusMapEditor/EditorMapProvinceNamePoints.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/map/11.59/cities/cities.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/cities/cities.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/jakowski/Renderer/Renderer$SimpleTaskArmyText.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/jakowski/Renderer/Renderer$SimpleTaskArmyText.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/jakowski/Renderer/Renderer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/jakowski/Renderer/Renderer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusMapEditor/EditorMapProvinceNamePoints$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusMapEditor/EditorMapProvinceNamePoints$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusMapEditor/EditorMapProvinceNamePoints$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusMapEditor/EditorMapProvinceNamePoints$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusMapEditor/EditorMapProvinceNamePoints.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +116,7 @@
       <workItem from="1730811200809" duration="158235000" />
       <workItem from="1731784417683" duration="45000" />
       <workItem from="1731784537399" duration="102233000" />
-      <workItem from="1732517435175" duration="90777000" />
+      <workItem from="1732517435175" duration="91792000" />
     </task>
     <servers />
   </component>

@@ -2,7 +2,10 @@
 {
 	/**
 	 * createCity() - Creates a new city object for a given province.
-	 *
+	 * @param {String} arg0_province_id - The province ID for which to change the province name for.
+	 * @param {String} arg1_city_name - The city name to specify.
+	 * @param {number} arg2_x - The x coordinate.
+	 * @param {number} arg3_y - The y coordinate.
 	 */
 	function createCity (arg0_province_id, arg1_city_name, arg2_x, arg3_y) {
 		//Convert from parameters
@@ -49,6 +52,13 @@
 		}
 	}
 
+	/**
+	 * modifyCity() - Creates/modifies an extant city object to change the province name for.
+	 * @param {String} arg0_province_id - The province ID for which to change the province name for.
+	 * @param {String} arg1_city_name - The city name for the province.
+	 * @param {number} arg2_x - The x coordinate for the city.
+	 * @param {number} arg3_y - The y coordinate for the city.
+	 */
 	function modifyCity (arg0_province_id, arg1_city_name, arg2_x, arg3_y) {
 		//Convert from parameters
 		var province_id = arg0_province_id;
