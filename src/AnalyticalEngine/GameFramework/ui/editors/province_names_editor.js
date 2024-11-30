@@ -57,6 +57,28 @@
 									button_el.setText("Edit province names") : button_el.setText("Edit province name positions");
 							}
 						},
+						view_unnamed_provinces_button: {
+							type: "button",
+							name: "View unnamed provinces",
+							width: 3,
+
+							special_function: function (e) {
+								//Convert from parameters
+								var button_el = e.element;
+								var interface_obj = e.interface_obj;
+
+								//Declare local instance variables
+								var current_mapmode = getCurrentMapmode();
+
+								if (current_mapmode != "undefined_province_names") {
+									switchMapmode("undefined_province_names");
+									button_el.setText("Hide unnamed provinces");
+								} else {
+									clearMapmode();
+									button_el.setText("View unnamed provinces");
+								}
+							}
+						},
 						save_province_names_button: {
 							type: "button",
 							name: "Save province names",

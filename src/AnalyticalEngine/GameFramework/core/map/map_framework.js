@@ -6,12 +6,12 @@
 
 //Initialise functions
 {
-	function clearMap () {
+	function clearMapmode () {
 		switchMapmode("MODE_DEFAULT_TERRAIN");
 		ProvinceDraw.updateDrawProvinces_Standard();
 		Game.mapModes.updateViews();
 
-		delete main.map.custom_mapmode;
+		delete main.mapmodes.custom_mapmode;
 	}
 
 	function getAllMapmodes () {
@@ -21,15 +21,15 @@
 
 	function getCurrentMapmode () {
 		//Return statement
-		if (main.map.custom_mapmode)
-			return main.map.custom_mapmode;
+		if (main.mapmodes.custom_mapmode)
+			return main.mapmodes.custom_mapmode;
 
-		//Iterate over main.map.mapmodes if custom mapmode is not active
-		for (var i = 0; i < main.map.mapmodes.length; i++)
-			if (Game.mapModes[main.map.mapmodes[i]])
-				if (Game.mapModes.iActiveMapModeID == Game.mapModes[main.map.mapmodes[i]])
+		//Iterate over main.mapmodes.all_mapmodes if custom mapmode is not active
+		for (var i = 0; i < main.mapmodes.all_mapmodes.length; i++)
+			if (Game.mapModes[main.mapmodes.all_mapmodes[i]])
+				if (Game.mapModes.iActiveMapModeID == Game.mapModes[main.mapmodes.all_mapmodes[i]])
 					//Return statement
-					return main.map.mapmodes[i];
+					return main.mapmodes.all_mapmodes[i];
 
 		//Return statement
 		return "MODE_DEFAULT_TERRAIN";
@@ -52,11 +52,11 @@
 
 		//Custom mapmode handler
 		if (mapmode_id) {
-			delete main.map.custom_mapmode;
+			delete main.mapmodes.custom_mapmode;
 			Game.mapModes.setActiveViewID(mapmode_id);
 		} else {
-			clearMap();
-			main.map.custom_mapmode = mapmode;
+			clearMapmode();
+			main.mapmodes.custom_mapmode = mapmode;
 		}
 	}
 }

@@ -44,6 +44,10 @@ var global = {
 
 				//Map data structures
 				cities: []
+			},
+			mapmodes: {
+				all_mapmodes: getAllMapmodes(),
+				custom_mapmode: undefined
 			}
 		};
 	}
