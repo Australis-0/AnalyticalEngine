@@ -64,6 +64,8 @@
 
 							special_function: function (e) {
 								saveCities();
+
+								Game.menuManager.addToast("[AnalyticalEngine] Saved province names.");
 								console.log("[Editor] Province Names Editor: Saved province names.");
 							}
 						}

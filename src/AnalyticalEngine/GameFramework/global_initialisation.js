@@ -38,7 +38,8 @@ var global = {
 
 			//Map (Provinces and assoiated data structures)
 			map: {
-				cities: []
+				cities: [],
+				mapmodes: getAllMapmodes()
 			}
 		};
 	}

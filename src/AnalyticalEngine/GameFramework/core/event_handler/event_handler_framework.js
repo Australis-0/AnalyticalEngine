@@ -103,6 +103,24 @@
 	 */
 	function initialisePostLoadingEventHandlers () {
 		//Map handler
+		declareEventHandler("on_mapmode_change", {
+			conditional_function: function () {
+				//Declare local instance variables
+				var current_mapmode = getCurrentMapmode();
+
+				if (current_mapmode) {
+					var mapmode_change = false;
+
+					if (global.cache.current_mapmode != current_mapmode)
+						mapmode_change = true;
+					global.cache.current_mapmode = current_mapmode;
+
+					//Return statement
+					if (mapmode_change)
+						return current_mapmode;
+				}
+			}
+		});
 		declareEventHandler("on_province_click", {
 			conditional_function: function () {
 				//Declare local instance variables

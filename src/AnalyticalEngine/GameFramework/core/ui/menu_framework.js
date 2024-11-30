@@ -787,7 +787,7 @@
 					var local_properties = local_interface.menu_properties[x];
 
 					if (local_element.getIsHovered()) {
-						console.log("Clicked on button: " + local_element.getText());
+						//console.log("Clicked on button: " + local_element.getText());
 						if (local_properties.onclick)
 							local_properties.onclick({
 								element: local_element,

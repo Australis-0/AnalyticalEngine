@@ -11,5 +11,13 @@ config.console.map_commands = {
 			//Print Main
 			console.log("Cities: " + main_map_cities.length + "/" + Game.getProvincesSize() + " Provinces");
 		}
+	},
+	toggle_mapmode_info: {
+		name: "toggle-mapmode-info",
+		description: "Prints information on different mapmodes when the event fires.",
+		special_function: function (args) {
+			global.debug.log_mapmode_info = (!global.debug.log_mapmode_info);
+			console.log("Set global.debug.log_mapmode_info to " + global.debug.log_mapmode_info);
+		}
 	}
 };
