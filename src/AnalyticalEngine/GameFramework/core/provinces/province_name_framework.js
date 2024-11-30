@@ -1,5 +1,9 @@
 //Initialise functions
 {
+	/**
+	 * createCity() - Creates a new city object for a given province.
+	 *
+	 */
 	function createCity (arg0_province_id, arg1_city_name, arg2_x, arg3_y) {
 		//Convert from parameters
 		var province_id = parseInt(arg0_province_id);
@@ -19,6 +23,14 @@
 			main.map.cities.push(new_city_obj);
 	}
 
+	/**
+	 * getCity() - Fetches the given city currently in main.map.cities.
+	 * @param {String} arg0_province_id - The province ID to fetch the city name for.
+	 * @param [arg1_options]
+	 * @param [arg1_options.return_index=false] - Whether to return the index instead of city object.
+	 *
+	 * @returns {Object}
+	 */
 	function getCity (arg0_province_id, arg1_options) {
 		//Convert from parameters
 		var province_id = parseInt(arg0_province_id);

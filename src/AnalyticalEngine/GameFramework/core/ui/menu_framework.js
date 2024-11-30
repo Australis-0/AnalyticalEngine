@@ -15,16 +15,18 @@
 	this.integer_class = Java.type("java.lang.Integer").TYPE;
 	this.list_class = Java.type("java.util.List");
 	this.Renderer = Java.type("aoc.kingdoms.lukasz.jakowski.Renderer.Renderer");
+	this.TextBG = Java.type("aoc.kingdoms.lukasz.menu_element.textStatic.TextBG");
+	this.Text_Static = Java.type("aoc.kingdoms.lukasz.menu_element.textStatic.Text_Static");
 	this.Touch = Java.type("aoc.kingdoms.lukasz.jakowski.Touch");
 }
 
 //Initialise functions
 {
 	/**
-	 * createButton() - Creates a button and returns it as an Object for adding to menuElements in createContextMenu().
+	 * createButton() - Creates a button and returns it as an Object for adding to menu_elements in createContextMenu().
 	 * @param {Object} [arg0_options]
 	 * @param {String} [arg0_options.name]
-	 * @param {boolean} [arg0_options.raw_width=false] - Whether the width is not multiplied by CFG.BUTTON_WIDTH.
+	 * @param {boolean} [arg0_options.raw_dimensions=false] - Whether the width is not multiplied by CFG.BUTTON_WIDTH.
 	 * @param {number} [arg0_options.width=2] - The width as multiplied by CFG.BUTTON_WIDTH.
 	 * @param {number} [arg0_options.x=0]
 	 * @param {number} [arg0_options.y=0]
@@ -40,7 +42,7 @@
 		//Convert from parameters
 		var options = (arg0_options) ? arg0_options : {};
 
-		//Initialise functions
+		//Initialise options
 		options.align = (options.align) ? options.align : "centre";
 		options.clickable = (options.clickable != false) ? true : false;
 		options.name = (options.name) ? options.name : "";
@@ -49,7 +51,7 @@
 		options.y = returnSafeNumber(options.y);
 
 		//Declare local instance variables
-		var actual_width = parseInt((!options.raw_width) ?
+		var actual_width = parseInt((!options.raw_dimensions) ?
 			CFG.BUTTON_WIDTH*options.width : options.width);
 
 		var actual_text_position = -1;
@@ -93,9 +95,96 @@
 	}
 
 	/**
+	 * createText() - Creates static text and returns it as an Object for adding to menu_elements in createContextMenu().
+	 * @param {Object} [arg0_options]
+	 * @param {String} [arg0_options.name]
+	 * @param {boolean} [arg0_options.raw_dimensions=false]
+	 * @param {number} [arg0_options.height=0.5]
+	 * @param {number} [arg0_options.font_weight=700] - Either '700' or '400'.
+	 * @param {number} [arg0_options.margin=25]
+	 * @param {number} [arg0_options.width=2]
+	 * @param {number} [arg0_options.x=0]
+	 * @param {number} [arg0_options.y=0]
+	 *
+	 * @param {String} [arg0_options.align="centre"] - Optional. Either 'left', 'centre', or 'right'.
+	 */
+	function createText (arg0_options) {
+		//Convert from parameters
+		var options = (arg0_options) ? arg0_options : {};
+
+		//Initialise options
+		options.align = (options.align) ? options.align : "centre";
+		options.name = (options.name) ? options.name : "";
+		options.height = returnSafeNumber(options.height, 0.5);
+		options.margin = returnSafeNumber(options.margin, 25);
+		options.width = returnSafeNumber(options.width, 2);
+		options.x = returnSafeNumber(options.x);
+		options.y = returnSafeNumber(options.y);
+
+		//Declare local instance variables
+		var font_id_map = { "400": 1, "700": 0 };
+		var local_menu_elements = [];
+
+		var actual_font_id = font_id_map[options.font_weight.toString()];
+			if (actual_font_id == undefined) actual_font_id = 0;
+		var actual_height = parseInt((!options.raw_dimensions) ?
+			CFG.BUTTON_WIDTH*options.height : options.height);
+		var actual_width = parseInt((!options.raw_dimensions) ?
+			CFG.BUTTON_WIDTH*options.width : options.width);
+		var actual_text_position = -1;
+			//Adjust actual_text_position
+			if (options.align == "left")
+				actual_text_position = options.margin;
+			if (options.align == "right") {
+				//Create phantom dummy_button_obj to calculate displayed text width from
+				var dummy_text_obj = new Text_Static(
+					null, //(sText) Initial string
+					actual_font_id, //(fontID)
+					actual_text_position, //(itextPositionX)
+					parseInt(options.x), //(iPosX)
+					parseInt(options.y), //(iPosY)
+					actual_width, //(nWidth)
+					actual_height //(nHeight)
+				);
+				dummy_text_obj.setText(options.name);
+				var dummy_text_width = dummy_text_obj.getTextWidth();
+
+				actual_text_position = actual_width - options.margin - dummy_button_width;
+			}
+
+		//Construct new_text_obj
+		local_menu_elements.push(new Text_Static(
+			null, //(sText) Initial string
+			actual_font_id, //(fontID)
+			actual_text_position, //(itextPositionX)
+			parseInt(options.x), //(iPosX)
+			parseInt(options.y), //(iPosY)
+			actual_width, //(nWidth)
+			54 //(nHeight)
+		));
+		local_menu_elements.push(new TextBG(
+			null,
+			0,
+			parseInt(options.x),
+			parseInt(options.y),
+			actual_width,
+			actual_height
+		));
+
+		//Post-process handling
+		//options.name
+		local_menu_elements[0].setText(options.name);
+
+		//Return statement
+		return local_menu_elements;
+	}
+
+	/**
 	 * createContextMenu() - Creates a new context menu to add for the current in-game screen.
 	 * @param [arg0_options]
 	 * @param {String} [arg0_options.anchor="top_left"] - Either 'bottom_left', 'bottom_right', 'top_left', or 'top_right'.
+	 * @param {String} [arg0_options.id] - Random ID by default.
+	 *
 	 * @param {boolean} [arg0_options.can_close=true]
 	 * @param {boolean} [arg0_options.draggable=true]
 	 * @param {boolean} [arg0_options.has_back_button=false]
@@ -112,9 +201,10 @@
 	 *
 	 * @param {Object} [arg0_options."input_key"]
 	 *  @param {String} [arg0_options."input_key".name]
-	 * 	@param {String} [arg0_options."input_key".type="button"]
+	 * 	@param {String} [arg0_options."input_key".type] - Either 'button'/'text'.
 	 * 	@param {number} [arg0_options."input_key".raw_coords=false] - Whether to use raw specified coords instead of autoformatting.
-	 * 	@param {number} [arg0_options."input_key".raw_width=false] - Whether to override default multiplication for .width.
+	 * 	@param {number} [arg0_options."input_key".raw_dimensions=false] - Whether to override default multiplication for .width.
+	 * 	@param {number} [arg0_options."input_key".height=2] - The height as multiplied by CFG.BUTTON_WIDTH.
 	 * 	@param {number} [arg0_options."input_key".width=2] - The width as multiplied by CFG.BUTTON_WIDTH.
 	 * 	@param {number} [arg0_options."input_key".x]
 	 * 	@param {number} [arg0_options."input_key".y]
@@ -166,7 +256,7 @@
 			java.lang.Boolean.TYPE
 		);
 			init_menu_method.setAccessible(true);
-		var interface_obj = initInterface();
+		var interface_obj = initInterface(options.id);
 		var menu_elements_array_list = new ArrayList();
 		var menu_elements = [];
 		var menu_properties = [];
@@ -210,23 +300,30 @@
 
 			if (typeof local_value == "object" && local_value.type) {
 				var new_menu_element_obj;
-				var new_properties_obj = {};
 
 				//Parse type
 				if (local_value.type == "button") {
 					new_menu_element_obj = createButton(local_value);
+				} else if (local_value.type == "text") {
+					new_menu_element_obj = createText(local_value);
 				}
 
 				if (new_menu_element_obj) {
-					menu_elements.push(new_menu_element_obj);
+					var local_menu_elements = getList(new_menu_element_obj);
 
-					//Push new_properties_obj
-					new_properties_obj.x = local_value.x;
-					new_properties_obj.y = local_value.y;
+					for (var x = 0; x < local_menu_elements.length; x++) {
+						menu_elements.push(local_menu_elements[x]);
+						var new_properties_obj = {};
 
-					if (local_value.special_function)
-						new_properties_obj.onclick = local_value.special_function;
-					menu_properties.push(new_properties_obj);
+						//Push new_properties_obj
+						new_properties_obj.id = all_options_keys[i];
+						new_properties_obj.x = local_value.x;
+						new_properties_obj.y = local_value.y;
+
+						if (local_value.special_function)
+							new_properties_obj.onclick = local_value.special_function;
+						menu_properties.push(new_properties_obj);
+					}
 				}
 			}
 		}
@@ -242,16 +339,16 @@
 		//console.log("Invoking init_menu_method with parameters: ", menu_obj + " ", menu_title_obj + " ", options.x + " ", options.y + " ", options.width + " ", options.height + " ", menu_elements_array_list + " ", true + " ", false + " ", true + " ", false + " ");
 		init_menu_method.invoke(
 			menu_obj,
-			menu_title_obj,
-			setJavaInteger(options.x),
-			setJavaInteger(options.y),
-			setJavaInteger(options.width),
-			setJavaInteger(options.height),
-			menu_elements_array_list,
-			true,
-			false,
-			true,
-			false);
+			menu_title_obj, //(menuTitle)
+			setJavaInteger(options.x), //(iPosX)
+			setJavaInteger(options.y), //(iPosY)
+			setJavaInteger(options.width), //(iWidth)
+			setJavaInteger(options.height), //(iHeight)
+			menu_elements_array_list, //(menuElements)
+			true, //(visible)
+			options.has_back_button, //(initWithBackButton)
+			options.can_close, //(closeable)
+			options.lock_hover); //(lockHoverOverMenuBackground)
 
 		//Add trackers to main.interfaces[<interface_id>]
 		interface_obj.menu_obj = menu_obj;
@@ -269,7 +366,6 @@
 					if (!interface_obj.menu_properties[x].raw_coords)
 						if (interface_obj.menu_properties[x].x == i)
 							interface_obj.menu_elements[x].setPosX(current_x_width);
-
 				current_x_width += getMaxColumnWidth(interface_obj, i);
 			}
 
@@ -277,15 +373,14 @@
 			//Iterate over all_options_keys and set local y height per row
 			for (var i = 0; i < menu_dimensions[1] + 1; i++) {
 				//console.log("Iterating over Y: " + i);
-				for (var x = 0; x < interface_obj.menu_properties.length; x++) {
+				for (var x = 0; x < interface_obj.menu_properties.length; x++)
 					//console.log(interface_obj.menu_properties[x]);
-					if (!interface_obj.menu_properties[x].raw_coords)
-						if (interface_obj.menu_properties[x].y == i) {
+					if (!interface_obj.menu_properties[x].raw_coords) {
+						if (interface_obj.menu_properties[x].y == i)
 							interface_obj.menu_elements[x].setPosY(current_y_height);
-							//console.log("Set " + ordinalise(x) + " element to Y: " + current_y_height);
-						}
-				}
 
+						//console.log("Iterating over current_y_height: " + current_y_height);
+					}
 				current_y_height += getMaxRowHeight(interface_obj, i);
 			}
 		}
@@ -324,10 +419,20 @@
 			x: 500,
 			y: 400,
 
+			text_test: {
+				type: "text",
+				name: "This is a test",
+
+				align: "left",
+				font_weight: 700,
+				height: 70,
+				raw_dimensions: true,
+				width: 400
+			},
 			left_align_button: {
 				type: "button",
 				name: "Left-aligned button",
-				raw_width: true,
+				raw_dimensions: true,
 				width: 400,
 
 				align: "left",
@@ -338,7 +443,7 @@
 			centre_align_button: {
 				type: "button",
 				name: "Centre-aligned button",
-				raw_width: true,
+				raw_dimensions: true,
 				width: 400,
 
 				align: "centre",
@@ -349,18 +454,57 @@
 			right_align_button: {
 				type: "button",
 				name: "Right-aligned button",
-				raw_width: true,
+				raw_dimensions: true,
 				width: 400,
 
 				align: "right",
 				special_function: function () {
 					console.log("Right-aligned dummy menu test button reporting for duty!");
 				}
-			},
+			}
 		});
 
 		//Return statement
 		return dummy_interface_obj.menu_obj;
+	}
+
+	/**
+	 * createMenuTitle() - Creates a MenuTitle for an open menu.
+	 * @param {Object} [arg0_options]
+	 * @param {String} [arg0_options.name]
+	 *
+	 * @param {boolean} [arg0_options.draggable=true]
+	 * @param {number} [arg0_options.font_size=1.0]
+	 * @param {number} [arg0_options.height=CFG.BUTTON_HEIGHT + CFG.BUTTON_HEIGHT/2]
+	 * @param {boolean} [arg0_options.resizeable=true]
+	 *
+	 * @returns {MenuTitle}
+	 */
+	function createMenuTitle (arg0_options) {
+		//Convert from parameters
+		var options = (arg0_options) ? arg0_options : {};
+
+		//Initialise options
+		if (!options.name) options.name = "";
+		if (options.draggable != false) options.draggable = true;
+		if (!options.font_size) options.font_size = (options.font_size) ?
+			new Float(options.font_size) : new Float(1.0);
+		if (!options.height) options.height = (options.height) ?
+			returnSafeNumber(options.height) : CFG.BUTTON_HEIGHT + CFG.BUTTON_HEIGHT/2;
+		if (options.resizeable != false) options.resizeable = true;
+
+		//Declare local instance variables
+		var new_menu_title_obj = new MenuTitle(
+			"", //(sText)
+			options.font_size, //(fontScale)
+			options.height, //(titleHeight)
+			options.draggable, //(moveable)
+			options.resizeable //(resizable)
+		);
+		new_menu_title_obj.setText(options.name);
+
+		//Return statement
+		return new_menu_title_obj;
 	}
 
 	/**
@@ -421,6 +565,52 @@
 	}
 
 	/**
+	 * getContextMenuElement() - Returns {.elements, .properties} after fetching a context menu element by its ID.
+	 * @param {Object} arg0_interface_obj - The interface object to input.
+	 * @param {String} arg1_element_id - The .id key to search for.
+	 * @param {Object} [arg2_options]
+	 * @param {boolean} [arg2_options.return_indexes=false] - Whether to return indexes instead of objects.
+	 *
+	 * @returns {{elements: [], indexes: [], properties: []}}
+	 */
+	function getContextMenuElement (arg0_interface_obj, arg1_element_id) {
+		//Convert from parameters
+		var interface_obj = arg0_interface_obj;
+		var element_id = arg1_element_id;
+
+		//Declare local instance variables
+		var element_exists = [false, []]; //[element_exists, [element_indices]];
+		var search_name = element_id.toLowerCase().trim();
+
+		//ID search - hard search only
+		{
+			for (var i = 0; i < interface_obj.menu_elements.length; i++)
+				if (interface_obj.menu_properties[i])
+					if (interface_obj.menu_properties[i].id.toLowerCase() == search_name) {
+						element_exists[0] = true;
+						element_exists[1].push(i);
+					}
+		}
+
+		var return_elements = [];
+		var return_properties = [];
+
+		//Iterate over element_exists[1]
+		for (var i = 0; i < element_exists[1].length; i++) {
+			var local_element = interface_obj.menu_elements[element_exists[1][i]];
+			var local_properties = interface_obj.menu_properties[element_exists[1][i]];
+
+			return_elements.push(local_element);
+			return_properties.push(local_properties);
+		}
+
+		//console.log(return_elements.length + " ", return_properties.length + " ", element_exists[1]);
+
+		//Return statement
+		return { elements: return_elements, indexes: element_exists[1], properties: return_properties };
+	}
+
+	/**
 	 * getMaxColumnWidth() - Fetches the maximal width of a given column needed for rendering.
 	 * @param {Object} arg0_interface_obj - The interface object to input.
 	 * @param {number} arg1_x - The column to target.
@@ -439,7 +629,7 @@
 		if (interface_obj)
 			if (interface_obj.menu_properties)
 				for (var i = 0; i < interface_obj.menu_properties.length; i++)
-					if (interface_obj.menu_properties[i].x == x_column)
+					if (interface_obj.menu_properties[i].x == x_column && !interface_obj.menu_properties[i].raw_coords)
 						max_column_width = Math.max(max_column_width, interface_obj.menu_elements[i].getWidth());
 
 		//Return statement
@@ -465,9 +655,8 @@
 		if (interface_obj)
 			if (interface_obj.menu_properties)
 				for (var i = 0; i < interface_obj.menu_properties.length; i++)
-					if (interface_obj.menu_properties[i].y == y_row) {
+					if (interface_obj.menu_properties[i].y == y_row && !interface_obj.menu_properties[i].raw_coords)
 						max_row_height = Math.max(max_row_height, interface_obj.menu_elements[i].getHeight());
-					}
 
 		//Return statement
 		return max_row_height;
@@ -566,53 +755,16 @@
 		var interface_id = (arg0_interface_id) ? arg0_interface_id : generateRandomID(main.interfaces);
 
 		//Declare local instance variables
-		main.interfaces[interface_id] = { id: interface_id };
+		if (!main.interfaces[interface_id])
+			main.interfaces[interface_id] = {};
 		var interface_obj = main.interfaces[interface_id];
 
+		interface_obj.id = interface_id;
 		interface_obj.menu_elements = []; //Stores all elements added to the current Menu (except MenuTitle)
 		interface_obj.onclick = []; //Handles onclick elements (except MenuTitle)
 
 		//Return statement
 		return interface_obj;
-	}
-
-	/**
-	 * createMenuTitle() - Creates a MenuTitle for an open menu.
-	 * @param {Object} [arg0_options]
-	 * @param {String} [arg0_options.name]
-	 *
-	 * @param {boolean} [arg0_options.draggable=true]
-	 * @param {number} [arg0_options.font_size=1.0]
-	 * @param {number} [arg0_options.height=CFG.BUTTON_HEIGHT + CFG.BUTTON_HEIGHT/2]
-	 * @param {boolean} [arg0_options.resizeable=true]
-	 *
-	 * @returns {MenuTitle}
-	 */
-	function createMenuTitle (arg0_options) {
-		//Convert from parameters
-		var options = (arg0_options) ? arg0_options : {};
-
-		//Initialise options
-		if (!options.name) options.name = "";
-		if (options.draggable != false) options.draggable = true;
-		if (!options.font_size) options.font_size = (options.font_size) ?
-			new Float(options.font_size) : new Float(1.0);
-		if (!options.height) options.height = (options.height) ?
-			returnSafeNumber(options.height) : CFG.BUTTON_HEIGHT + CFG.BUTTON_HEIGHT/2;
-		if (options.resizeable != false) options.resizeable = true;
-
-		//Declare local instance variables
-		var new_menu_title_obj = new MenuTitle(
-			"", //(sText)
-			options.font_size, //(fontScale)
-			options.height, //(titleHeight)
-			options.draggable, //(moveable)
-			options.resizeable //(resizable)
-		);
-		new_menu_title_obj.setText(options.name);
-
-		//Return statement
-		return new_menu_title_obj;
 	}
 
 	/**
@@ -637,7 +789,10 @@
 					if (local_element.getIsHovered()) {
 						console.log("Clicked on button: " + local_element.getText());
 						if (local_properties.onclick)
-							local_properties.onclick();
+							local_properties.onclick({
+								element: local_element,
+								interface_obj: local_interface
+							});
 					}
 				}
 		}

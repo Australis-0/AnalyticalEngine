@@ -14,5 +14,8 @@ setTimeout(function(){
 
 		//Initialise EventHandler logic
 		initialiseEventHandlers();
+
+		//Initialise Editor handlers
+		initialiseProvinceNamesEditorEventHandlers();
 	}, 3000);
 }, 1);

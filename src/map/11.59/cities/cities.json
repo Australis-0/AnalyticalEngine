@@ -834,7 +834,7 @@
         p: 203
     },
     {
-        Name: "Lima",
+        Name: "Sandusky",
         x: 4750,
         y: 2916,
         p: 198
@@ -5046,7 +5046,7 @@
         p: 899
     },
     {
-        Name: "La Jolla",
+        Name: "La Jolla Reservation",
         x: 3113,
         y: 3398,
         p: 900

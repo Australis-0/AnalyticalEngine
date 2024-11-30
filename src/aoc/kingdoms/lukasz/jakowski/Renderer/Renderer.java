@@ -275,6 +275,14 @@ public class Renderer {
         uFPS.drawFPS(this.oSB);
     }
 
+    //ANALYTICALENGINE START
+
+    public void drawEditorMenuBG(int iX, int iY, int iWidth, int iHeight, int iTranslateX, int iTranslateY) {
+        drawBox_EDGE_TOP_LR(this.oSB, Images.mainBox, iX + iTranslateX, iY + iTranslateY, iWidth, iHeight, true);
+    }
+
+    //ANALYTICALENGINE END
+
     public final void drawKeyboardText(SpriteBatch oSB) {
         if (Keyboard.keyboardMode && (!CFG.isDesktop() || GameValues.info.DESKTOP_KEYBOARD_DRAW_EXTRA_TEXT)) {
             int textW = getTextWidth(Keyboard.keyboardMessage, CFG.FONT_REGULAR);

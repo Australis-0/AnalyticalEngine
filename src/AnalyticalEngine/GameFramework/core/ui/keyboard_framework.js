@@ -16,6 +16,7 @@
 	 * @param {Object} [arg1_options]
 	 * @param {String} [arg1_options.placeholder=""] - The placeholder string to use.
 	 * @param {Function} [arg1_options.special_function] - The special function to invoke upon saving the keyboard prompt. (e) feeds in string. Undefined by default.
+	 * @param {Function} [arg1_options.update_function] - The function to run upon key events.
 	 */
 	function openKeyboardPrompt (arg0_variable_key, arg1_options) {
 		//Convert from parameters
@@ -45,6 +46,9 @@
 
 				//Set variables
 				Keyboard.keyboardMessage += char;
+
+				if (options.update_function)
+					options.update_function(JSON.parse(JSON.stringify(Keyboard.keyboardMessage)));
 			},
 
 			delete: function () {
@@ -53,6 +57,9 @@
 				} else {
 					Keyboard.keyboardMessage = "";
 				}
+
+				if (options.update_function)
+					options.update_function(JSON.parse(JSON.stringify(Keyboard.keyboardMessage)));
 			},
 
 			save: function () {
