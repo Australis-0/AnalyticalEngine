@@ -47,7 +47,8 @@ var global = {
 			},
 			mapmodes: {
 				all_mapmodes: getAllMapmodes(),
-				custom_mapmode: undefined
+				custom_mapmode: undefined,
+				province_colours: {}
 			}
 		};
 	}

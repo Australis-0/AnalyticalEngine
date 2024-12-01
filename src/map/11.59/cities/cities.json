@@ -6906,7 +6906,7 @@
         p: 7664
     },
     {
-        Name: "Laurentian Channel Lpa",
+        Name: "Laurentian Channel LPA",
         x: 6018,
         y: 2590,
         p: 7666
@@ -9258,7 +9258,7 @@
         p: 1285
     },
     {
-        Name: "Saint-Jean-sur-Richelieu",
+        Name: "Granby",
         x: 5275,
         y: 2670,
         p: 1282
@@ -19452,7 +19452,7 @@
         p: 2518
     },
     {
-        Name: "Lubljana",
+        Name: "Ljubljana",
         x: 9595,
         y: 2624,
         p: 2904
@@ -21036,25 +21036,25 @@
         p: 2837
     },
     {
-        Name: "Iasi",
+        Name: "Vaslui",
         x: 10248,
         y: 2599,
         p: 2836
     },
     {
-        Name: "botosani",
+        Name: "Iasi",
         x: 10227,
         y: 2555,
         p: 2838
     },
     {
-        Name: "Suceava",
+        Name: "Piatra Neamt",
         x: 10185,
         y: 2568,
         p: 2840
     },
     {
-        Name: "Roman",
+        Name: "Bacau",
         x: 10200,
         y: 2603,
         p: 2839
@@ -56568,183 +56568,453 @@
         p: 2521
     },
     {
-        Name: 42408,
-        x: 2899,
-        y: 11.625,
-        p: null
+        Name: "Clinton",
+        x: 5301,
+        y: 2899,
+        p: 93
     },
     {
-        Name: 42408,
-        x: 2899,
-        y: 11.625,
-        p: null
+        Name: "Rockland",
+        x: 5456,
+        y: 2742,
+        p: 121
     },
     {
-        Name: 42408,
-        x: 2899,
-        y: 11.625,
-        p: null
+        Name: "Camden",
+        x: 5144,
+        y: 2787,
+        p: 54
     },
     {
-        Name: 42408,
-        x: 2899,
-        y: 11.625,
-        p: null
+        Name: "Detroit River",
+        x: 4783,
+        y: 2853,
+        p: 1403
     },
     {
-        Name: 42408,
-        x: 2899,
-        y: 11.625,
-        p: null
+        Name: "Lake St. Clair",
+        x: 4802,
+        y: 2837,
+        p: 1404
     },
     {
-        Name: 42408,
-        x: 2899,
-        y: 11.625,
-        p: null
+        Name: "St. Clair River",
+        x: 4810,
+        y: 2819,
+        p: 1405
     },
     {
-        Name: 42408,
-        x: 2899,
-        y: 11.625,
-        p: null
+        Name: "Bad River Reservation",
+        x: 4405,
+        y: 2594,
+        p: 312
     },
     {
-        Name: 42408,
-        x: 2899,
-        y: 11.625,
-        p: null
+        Name: "Mille Lacs Reservation",
+        x: 4261,
+        y: 2619,
+        p: 345
     },
     {
-        Name: 42408,
-        x: 2899,
-        y: 11.625,
-        p: null
+        Name: "Matagorda Bay",
+        x: 4106,
+        y: 3693,
+        p: 491
     },
     {
-        Name: 42408,
-        x: 2899,
-        y: 11.625,
-        p: null
+        Name: "Lake Nipigon",
+        x: 4526,
+        y: 2398,
+        p: 1226
     },
     {
-        Name: 42408,
-        x: 2899,
-        y: 11.625,
-        p: null
+        Name: "Prairies River",
+        x: 5241,
+        y: 2653,
+        p: 1315
     },
     {
-        Name: 42408,
-        x: 2899,
-        y: 11.625,
-        p: null
+        Name: "Saint-Jean-sur-Richelieu",
+        x: 5260,
+        y: 2675,
+        p: 1271
     },
     {
-        Name: 42408,
-        x: 2899,
-        y: 11.625,
-        p: null
+        Name: "Riviere Saguenay",
+        x: 5409,
+        y: 2490,
+        p: 1307
     },
     {
-        Name: 42408,
-        x: 2899,
-        y: 11.625,
-        p: null
+        Name: "Grand Lake",
+        x: 5620,
+        y: 2645,
+        p: 1124
     },
     {
-        Name: 42408,
-        x: 2899,
-        y: 11.625,
-        p: null
+        Name: "Grand Manan",
+        x: 5584,
+        y: 2704,
+        p: 128
     },
     {
-        Name: 43648,
-        x: 2742,
-        y: 15.125,
-        p: null
+        Name: "Lake Rossignol",
+        x: 5678,
+        y: 2728,
+        p: 1141
     },
     {
-        Name: 43648,
-        x: 2742,
-        y: 15.125,
-        p: null
+        Name: "South Laurentian Channel",
+        x: 6067,
+        y: 2653,
+        p: 7689
     },
     {
-        Name: 43648,
-        x: 2742,
-        y: 15.125,
-        p: null
+        Name: "East Green Bank",
+        x: 6106,
+        y: 2694,
+        p: 7687
     },
     {
-        Name: 43648,
-        x: 2742,
-        y: 15.125,
-        p: null
+        Name: "West Green Bank",
+        x: 6083,
+        y: 2635,
+        p: 7688
     },
     {
-        Name: 43648,
-        x: 2742,
-        y: 15.125,
-        p: null
+        Name: "Coast of Miquelon",
+        x: 6091,
+        y: 2582,
+        p: 7665
     },
     {
-        Name: 43648,
-        x: 2742,
-        y: 15.125,
-        p: null
+        Name: "Meelpaeg Reservoir",
+        x: 6086,
+        y: 2495,
+        p: 1245
     },
     {
-        Name: 43648,
-        x: 2742,
-        y: 15.125,
-        p: null
+        Name: "Grand Lake",
+        x: 6044,
+        y: 2448,
+        p: 1244
     },
     {
-        Name: 43648,
-        x: 2742,
-        y: 15.125,
-        p: null
+        Name: "Kawawachikamach",
+        x: 5649,
+        y: 2101,
+        p: 1343
     },
     {
-        Name: 43648,
-        x: 2742,
-        y: 15.125,
-        p: null
+        Name: "Kamestastin Lake",
+        x: 5732,
+        y: 2050,
+        p: 1233
     },
     {
-        Name: 43648,
-        x: 2742,
-        y: 15.125,
-        p: null
+        Name: "Akpatok Island",
+        x: 5518,
+        y: 1767,
+        p: 1644
     },
     {
-        Name: 43648,
-        x: 2742,
-        y: 15.125,
-        p: null
+        Name: "Lac Quillinaaq",
+        x: 5164,
+        y: 1939,
+        p: 1231
     },
     {
-        Name: 43648,
-        x: 2742,
-        y: 15.125,
-        p: null
+        Name: "Lac de la Corvette",
+        x: 5219,
+        y: 2212,
+        p: 1239
     },
     {
-        Name: 43648,
-        x: 2742,
-        y: 15.125,
-        p: null
+        Name: "Moose River",
+        x: 4903,
+        y: 2314,
+        p: 1425
     },
     {
-        Name: 43648,
-        x: 2742,
-        y: 15.125,
-        p: null
+        Name: "Akimiski Island",
+        x: 4900,
+        y: 2230,
+        p: 1574
     },
     {
-        Name: 43648,
-        x: 2742,
-        y: 15.125,
-        p: null
+        Name: "Sanikiluaq",
+        x: 4972,
+        y: 1993,
+        p: 1641
+    },
+    {
+        Name: "Mansel Island",
+        x: 4941,
+        y: 1730,
+        p: 1642
+    },
+    {
+        Name: "Coral Harbour",
+        x: 4749,
+        y: 1545,
+        p: 1643
+    },
+    {
+        Name: "Nottingham Island",
+        x: 5053,
+        y: 1577,
+        p: 1645
+    },
+    {
+        Name: "Trout Lake",
+        x: 4417,
+        y: 2229,
+        p: 1222
+    },
+    {
+        Name: "Wabakimi Lake",
+        x: 4401,
+        y: 2325,
+        p: 1225
+    },
+    {
+        Name: "Greenwater Lake",
+        x: 4414,
+        y: 2454,
+        p: 1224
+    },
+    {
+        Name: "Fort Alexander",
+        x: 4128,
+        y: 2351,
+        p: 1428
+    },
+    {
+        Name: "Cross Lake",
+        x: 4058,
+        y: 2130,
+        p: 1215
+    },
+    {
+        Name: "Brightsand Lake",
+        x: 3530,
+        y: 2204,
+        p: 1509
+    },
+    {
+        Name: "Tobin Lake",
+        x: 3666,
+        y: 2200,
+        p: 1505
+    },
+    {
+        Name: "Grande Cache",
+        x: 2868,
+        y: 2084,
+        p: 1562
+    },
+    {
+        Name: "Rosario Strait",
+        x: 2836,
+        y: 2483,
+        p: 825
+    },
+    {
+        Name: "Marietta-Alderwood",
+        x: 2829,
+        y: 2462,
+        p: 822
+    },
+    {
+        Name: "North Bentinck Arm",
+        x: 2583,
+        y: 2267,
+        p: 7709
+    },
+    {
+        Name: "St. Pierre Bank",
+        x: 6049,
+        y: 2680,
+        p: 7690
+    },
+    {
+        Name: "Perigueux",
+        x: 8914,
+        y: 2678,
+        p: 2217
+    },
+    {
+        Name: "Rye Bay Banks",
+        x: 8925,
+        y: 2336,
+        p: 8518
+    },
+    {
+        Name: "Bailleul",
+        x: 9024,
+        y: 2343,
+        p: 2075
+    },
+    {
+        Name: "Nairn",
+        x: 8690,
+        y: 1940,
+        p: 1067
+    },
+    {
+        Name: "Farne Islands",
+        x: 8821,
+        y: 2064,
+        p: 8530
+    },
+    {
+        Name: "Clew Bay",
+        x: 8385,
+        y: 2164,
+        p: 8375
+    },
+    {
+        Name: "Broad Sound",
+        x: 8569,
+        y: 2394,
+        p: 8426
+    },
+    {
+        Name: "D'Artagnan Canyon",
+        x: 8680,
+        y: 2663,
+        p: 8438
+    },
+    {
+        Name: "Canyon de la Rochelle",
+        x: 8636,
+        y: 2672,
+        p: 8437
+    },
+    {
+        Name: "Lakonikos Kolpos",
+        x: 9998,
+        y: 3204,
+        p: 7475
+    },
+    {
+        Name: "Corfu",
+        x: 9857,
+        y: 3015,
+        p: 3023
+    },
+    {
+        Name: "Patmos",
+        x: 10197,
+        y: 3151,
+        p: 5126
+    },
+    {
+        Name: "Botosani",
+        x: 10198,
+        y: 2522,
+        p: 2841
+    },
+    {
+        Name: "Suceava",
+        x: 10152,
+        y: 2535,
+        p: 2860
+    },
+    {
+        Name: "Kralovsky",
+        x: 9961,
+        y: 2480,
+        p: 2815
+    },
+    {
+        Name: "Bled",
+        x: 9576,
+        y: 2611,
+        p: 2905
+    },
+    {
+        Name: "Lago d'Iseo",
+        x: 9376,
+        y: 2642,
+        p: 2580
+    },
+    {
+        Name: "Schaffhausen",
+        x: 9302,
+        y: 2527,
+        p: 2309
+    },
+    {
+        Name: "Busingen am Hochrhein",
+        x: 9302,
+        y: 2528,
+        p: 2308
+    },
+    {
+        Name: "Boblingen",
+        x: 9319,
+        y: 2469,
+        p: 2416
+    },
+    {
+        Name: "Starnberger See",
+        x: 9432,
+        y: 2510,
+        p: 2433
+    },
+    {
+        Name: "Mrakov",
+        x: 9533,
+        y: 2440,
+        p: 2529
+    },
+    {
+        Name: "Wesel",
+        x: 9207,
+        y: 2285,
+        p: 9820
+    },
+    {
+        Name: "Pueblo Viejo",
+        x: 4040,
+        y: 4043,
+        p: 1723
+    },
+    {
+        Name: "Nicholas Channel",
+        x: 4956,
+        y: 4008,
+        p: 8080
+    },
+    {
+        Name: "Old Bahama Channel",
+        x: 4999,
+        y: 4003,
+        p: 8078
+    },
+    {
+        Name: "Megano Grande Cayo",
+        x: 5032,
+        y: 4052,
+        p: 8089
+    },
+    {
+        Name: "Golfo de Guacanayabo",
+        x: 4992,
+        y: 4124,
+        p: 8084
+    },
+    {
+        Name: "Cayman Islands",
+        x: 4904,
+        y: 4210,
+        p: 1856
+    },
+    {
+        Name: "Nordkapp",
+        x: 10326,
+        y: 1143,
+        p: 8655
     }
 ]

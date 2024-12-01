@@ -15,6 +15,44 @@
 	}
 
 	/**
+	 * convertRGB() - Converts [r, g, b] to float fraction format.
+	 * @param {Array<number, number, number>} arg0_rgb - The RGB array to convert.
+	 *
+	 * @returns {Array<number, number, number, 1.0>}
+	 */
+	function convertRGB (arg0_rgb) {
+		//Convert from parameters
+		var rgb = getList(arg0_rgb);
+
+		//Return statement
+		return [
+			new Float(rgb[0]/255),
+			new Float(rgb[1]/255),
+			new Float(rgb[2]/255),
+			new Float(1.0)
+		];
+	}
+
+	/**
+	 * convertRGBA() - Converts [r, g, b, a] to float fraction format.
+	 * @param {Array<number, number, number, number>} arg0_rgba - The RGBA array to convert.
+	 *
+	 * @returns {Array<number, number, number, number>}
+	 */
+	function convertRGBA (arg0_rgba) {
+		//Convert from parameters
+		var rgba = getList(arg0_rgba);
+
+		//Return statement
+		return [
+			new Float(rgba[0]/255),
+			new Float(rgba[1]/255),
+			new Float(rgba[2]/255),
+			new Float(rgba[3])
+		];
+	}
+
+	/**
 	 * deltaE() - Calculates the deltaE between two RGB values.
 	 * @param {Array<number, number, number>} arg0_rgb_a - The 1st RGB code to pass.
 	 * @param {Array<number, number, number>} arg1_rgb_b - The 2nd RGB code to pass.

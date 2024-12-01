@@ -5,12 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09b6f7f8-b868-43e9-b471-ac1dbd15fa3b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Config/mapmodes/undefined_province_names.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Config/.config_backend.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Config/.config_backend.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Config/console/map_commands.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Config/console/map_commands.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/event_handler/event_handler_framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/event_handler/event_handler_framework.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/event_handler/on_mapmode_change_handlers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/event_handler/on_mapmode_change_handlers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/map/map_framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/map/map_framework.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/provinces/province_name_framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/provinces/province_name_framework.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/global_initialisation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/global_initialisation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/ui/editors/province_names_editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/ui/editors/province_names_editor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/JS/colours_basic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/colours_basic.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/map/11.59/cities/cities.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/cities/cities.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNamePoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNamePoints.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/statistics/usa.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/statistics/usa.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +125,7 @@
       <workItem from="1730811200809" duration="158235000" />
       <workItem from="1731784417683" duration="45000" />
       <workItem from="1731784537399" duration="102233000" />
-      <workItem from="1732517435175" duration="102402000" />
+      <workItem from="1732517435175" duration="123223000" />
     </task>
     <servers />
   </component>

@@ -106,16 +106,23 @@
 		declareEventHandler("on_mapmode_change", {
 			conditional_function: function () {
 				//Declare local instance variables
+				var current_base_mapmode = getCurrentBaseMapmode();
 				var current_mapmode = getCurrentMapmode();
 
 				if (current_mapmode) {
+					var base_mapmode_change = false;
 					var mapmode_change = false;
 
+					if (global.cache.current_base_mapmode != current_base_mapmode)
+						base_mapmode_change = true;
+					global.cache.current_base_mapmode = current_base_mapmode;
 					if (global.cache.current_mapmode != current_mapmode)
 						mapmode_change = true;
 					global.cache.current_mapmode = current_mapmode;
 
 					//Return statement
+					if (base_mapmode_change)
+						return current_base_mapmode;
 					if (mapmode_change)
 						return current_mapmode;
 				}

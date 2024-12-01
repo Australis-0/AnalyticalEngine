@@ -2,6 +2,17 @@ config.console.map_commands = {
 	name: "Map Commands",
 	order: 2,
 
+	change_mapmode: {
+		name: "change-mapmode",
+		description: "Changes the current mapmode.",
+		arg0_mapmode_description: "The mapmode to change to.",
+		special_function: function (args) {
+			var new_mapmode = args[0];
+
+			switchMapmode(new_mapmode);
+			console.log("Switched mapmode to: " + new_mapmode);
+		}
+	},
 	print_map_cities: {
 		name: "print-map-cities",
 		description: "Prints all currently named cities on the map.",

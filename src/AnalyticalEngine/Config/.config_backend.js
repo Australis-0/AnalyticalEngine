@@ -4,3 +4,4 @@ var config = {};
 config.console = {};
     config.console_reserved_keys = ["name", "order"];
 config.interfaces = {};
+config.mapmodes = {};

@@ -1,0 +1,18 @@
+{
+sCivTag: "usa",
+iTurnID: 1,
+iDay: 1,
+iMonth: 1,
+iYear: 1946,
+scenarioTAG: "Default",
+SCENARIO_EVENTS: true,
+AOC_MODE: false,
+HOURS_PER_TURN: 1,
+DIFFICULTY: 2,
+FOG_OF_WAR: true,
+SPECTATOR_MODE: false,
+SANDBOX: false,
+ENABLE_CALL_VASSALS: false,
+AI_AGGRESSIVENESS: 0,
+time: 1733044857905
+}

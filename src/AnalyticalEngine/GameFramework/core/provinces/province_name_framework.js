@@ -11,8 +11,8 @@
 		//Convert from parameters
 		var province_id = parseInt(arg0_province_id);
 		var city_name = arg1_city_name;
-		var x = parseFloat(arg2_x);
-		var y = parseFloat(arg3_y);
+		var x = parseInt(arg2_x);
+		var y = parseInt(arg3_y);
 
 		//Declare local instance variables
 		var new_city_obj = {
@@ -61,10 +61,10 @@
 	 */
 	function modifyCity (arg0_province_id, arg1_city_name, arg2_x, arg3_y) {
 		//Convert from parameters
-		var province_id = arg0_province_id;
+		var province_id = parseInt(arg0_province_id);
 		var city_name = arg1_city_name;
-		var x = parseFloat(arg2_x);
-		var y = parseFloat(arg3_y);
+		var x = parseInt(arg2_x);
+		var y = parseInt(arg3_y);
 
 		//Declare local instance variables
 		var city_index = getCity(province_id, { return_index: true });
@@ -78,7 +78,7 @@
 				p: province_id
 			};
 		} else {
-			createCity(city_name, x, y, province_id);
+			createCity(province_id, city_name, x, y);
 		}
 	}
 }
