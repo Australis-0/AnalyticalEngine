@@ -57016,5 +57016,47 @@
         x: 10326,
         y: 1143,
         p: 8655
+    },
+    {
+        Name: "Yuma Trough",
+        x: 5532,
+        y: 4287,
+        p: 8162
+    },
+    {
+        Name: "Dos Ninos Knoll",
+        x: 5594,
+        y: 4145,
+        p: 8186
+    },
+    {
+        Name: "Camaron Knoll",
+        x: 5746,
+        y: 4070,
+        p: 8207
+    },
+    {
+        Name: "Bonaire Plain",
+        x: 5444,
+        y: 4600,
+        p: 8154
+    },
+    {
+        Name: "Gran Roque",
+        x: 5588,
+        y: 4667,
+        p: 1925
+    },
+    {
+        Name: "El Alamein",
+        x: 10294,
+        y: 3543,
+        p: 4424
+    },
+    {
+        Name: "Etang de Berre",
+        x: 9132,
+        y: 2778,
+        p: 2164
     }
 ]

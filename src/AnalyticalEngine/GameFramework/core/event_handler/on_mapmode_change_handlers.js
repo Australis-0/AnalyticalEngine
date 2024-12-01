@@ -22,7 +22,6 @@
 			var mapmode = arg0_mapmode;
 
 			//Declare local instance variables
-			var all_provinces = getAllProvinces();
 			var mapmodes = config.mapmodes;
 
 			//Clear custom mapmodes if the mapmode is manually changed, i.e. in-game.
@@ -38,59 +37,67 @@
 				//.live_update handler
 				if (!main.mapmodes.live_update_logic_loop)
 					main.mapmodes.live_update_logic_loop = setInterval(function(){
-						var local_custom_mapmode_obj = config.mapmodes[main.mapmodes.custom_mapmode];
+						//Make sure custom_mapmode still exists within a setInterval context
+						if (main.mapmodes.custom_mapmode) {
+							var all_provinces = getAllProvinces();
+							var local_custom_mapmode_obj = config.mapmodes[main.mapmodes.custom_mapmode];
 
-						if (local_custom_mapmode_obj.live_update)
-							loadCustomMapmode(local_custom_mapmode_obj, {
-								all_provinces: all_provinces,
-								live_update: true
-							});
+							if (local_custom_mapmode_obj.live_update)
+								loadCustomMapmode(local_custom_mapmode_obj, {
+									all_provinces: all_provinces,
+									live_update: true
+								});
+						}
 					}, 100);
 
 				//2. Parse the current main.mapmodes.province_colours
-				ProvinceDraw.drawProvinces = new ProvinceDraw.DrawProvinces({
-					draw: function (oSB) {
-						//Render updates
-						for (var i = 0; i < Game.NUM_OF_PROVINCES_IN_VIEW; i++) {
-							var local_province = getProvince(Game.getProvinceInViewID(i));
-							var local_province_id = local_province.getProvinceID();
+				try {
+					ProvinceDraw.drawProvinces = new ProvinceDraw.DrawProvinces({
+						draw: function (oSB) {
+							//Render updates
+							for (var i = 0; i < Game.NUM_OF_PROVINCES_IN_VIEW; i++) {
+								var local_province = getProvince(Game.getProvinceInViewID(i));
+								var local_province_id = local_province.getProvinceID();
 
-							var local_colour = main.mapmodes.province_colours[local_province_id];
+								var local_colour = main.mapmodes.province_colours[local_province_id];
 
-							if (local_colour != undefined) {
-								if (local_colour.length == 3) {
-									local_colour = convertRGB(local_colour);
-								} else if (local_colour.length >= 4) {
-									local_colour = convertRGBA(local_colour);
+								if (local_colour != undefined) {
+									if (local_colour.length == 3) {
+										local_colour = convertRGB(local_colour);
+									} else if (local_colour.length >= 4) {
+										local_colour = convertRGBA(local_colour);
+									}
+									oSB.setColor(local_colour[0], local_colour[1], local_colour[2], local_colour[3]);
+								} else {
+									oSB.setColor(0, 0, 0, 0);
 								}
-								oSB.setColor(local_colour[0], local_colour[1], local_colour[2], local_colour[3]);
-							} else {
-								oSB.setColor(0, 0, 0, 0);
+
+								local_province.drawLandProvince(oSB);
 							}
+							for (var i = 0; i < Game.NUM_OF_EXTRA_PROVINCES_IN_VIEW; i++) {
+								var local_province = getProvince(Game.getProvinceInViewID(i));
+								var local_province_id = local_province.getProvinceID();
 
-							local_province.drawLandProvince(oSB);
-						}
-						for (var i = 0; i < Game.NUM_OF_EXTRA_PROVINCES_IN_VIEW; i++) {
-							var local_province = getProvince(Game.getProvinceInViewID(i));
-							var local_province_id = local_province.getProvinceID();
+								var local_colour = main.mapmodes.province_colours[local_province_id];
 
-							var local_colour = main.mapmodes.province_colours[local_province_id];
-
-							if (local_colour != undefined) {
-								if (local_colour.length == 3) {
-									local_colour = convertRGB(local_colour);
-								} else if (local_colour.length >= 4) {
-									local_colour = convertRGBA(local_colour);
+								if (local_colour != undefined) {
+									if (local_colour.length == 3) {
+										local_colour = convertRGB(local_colour);
+									} else if (local_colour.length >= 4) {
+										local_colour = convertRGBA(local_colour);
+									}
+									oSB.setColor(local_colour[0], local_colour[1], local_colour[2], local_colour[3]);
+								} else {
+									oSB.setColor(0, 0, 0, 0);
 								}
-								oSB.setColor(local_colour[0], local_colour[1], local_colour[2], local_colour[3]);
-							} else {
-								oSB.setColor(0, 0, 0, 0);
-							}
 
-							local_province.drawLandProvince(oSB);
+								local_province.drawLandProvince(oSB);
+							}
 						}
-					}
-				});
+					});
+				} catch (e) {
+					console.log(e);
+				}
 			}
 		};
 	}

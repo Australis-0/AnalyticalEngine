@@ -73,8 +73,14 @@ var console = {
     error: function () {
         //Declare local instance variables
         var arguments = Array.prototype.slice.call(arguments);
+        var e = new Error();
+        var stack = e.stack;
 
         print("[AnalyticalEngine] [ERROR] " + console.print.apply(null, arguments));
+        print("[AnalyticalEngine] Stack trace: " + stack);
+
+        /*var caller = stack.split("\n")[2];  // Assuming the caller is the third line
+        print("Called from: " + caller);*/
     },
 
     /**
