@@ -508,6 +508,43 @@
 	}
 
 	/**
+	 * deleteInterface() - Deletes an interface/context menu currently on screen.
+	 *
+	 * @param {String} arg0_interface_id - The interface ID to remove.
+	 */
+	function deleteInterface (arg0_interface_id) {
+		//Convert from parameters
+		var interface_id = arg0_interface_id;
+
+		//Declare local instance variables
+		var interface_obj = (typeof interface_id == "object") ? interface_id : main.interfaces[interface_id];
+
+		//Make sure interface_obj exists
+		if (interface_obj) {
+			//1. Close menu visually
+			if (interface_obj.menu_obj) {
+				interface_obj.menu_obj.setVisible(false);
+				interface_obj.menu_obj.dispose();
+				interface_obj.menu_obj.closeMenu();
+			}
+
+			//2. Close any _logic_loop keys
+			var all_interface_keys = Object.keys(interface_obj);
+
+			//Iterate over all_interface_keys
+			for (var i = 0; i < all_interface_keys.length; i++)
+				if (all_interface_keys[i].endsWith("_logic_loop")) {
+					var local_value = interface_obj[all_interface_keys[i]];
+
+					clearInterval(local_value);
+				}
+
+			//3. Delete interface
+			delete main.interfaces[interface_obj.id];
+		}
+	}
+
+	/**
 	 * getColumnsInRow() - Fetches the total number of columns in a row.
 	 * @param {Object} arg0_context_menu_obj - The context menu to input.
 	 * @param {number} arg1_y - The row to target.
