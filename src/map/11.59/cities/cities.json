@@ -18756,7 +18756,7 @@
         p: 2717
     },
     {
-        Name: "Zawiercie",
+        Name: "Dabrowa Gornicza",
         x: 9841,
         y: 2376,
         p: 2720
@@ -26346,7 +26346,7 @@
         p: 4498
     },
     {
-        Name: "Freetown",
+        Name: "Makeni",
         x: 8288,
         y: 4829,
         p: 4512
@@ -57058,5 +57058,227 @@
         x: 9132,
         y: 2778,
         p: 2164
+    },
+    {
+        Name: "Havel",
+        x: 9528,
+        y: 2242,
+        p: 2342
+    },
+    {
+        Name: "Little Belt",
+        x: 9362,
+        y: 2082,
+        p: 8619
+    },
+    {
+        Name: "Sejero Bugt",
+        x: 9440,
+        y: 2032,
+        p: 8621
+    },
+    {
+        Name: "Guldborgsund",
+        x: 9462,
+        y: 2109,
+        p: 8614
+    },
+    {
+        Name: "Smalandsfarvandet",
+        x: 9457,
+        y: 2092,
+        p: 8615
+    },
+    {
+        Name: "Grytet",
+        x: 9508,
+        y: 2064,
+        p: 8610
+    },
+    {
+        Name: "Byrum",
+        x: 9422,
+        y: 1954,
+        p: 2035
+    },
+    {
+        Name: "Anholt",
+        x: 9451,
+        y: 1987,
+        p: 2036
+    },
+    {
+        Name: "Slawkow",
+        x: 9851,
+        y: 2373,
+        p: 2719
+    },
+    {
+        Name: "Zaiwercie",
+        x: 9854,
+        y: 2364,
+        p: 2721
+    },
+    {
+        Name: "Ostroleka",
+        x: 9969,
+        y: 2218,
+        p: 2765
+    },
+    {
+        Name: "Aland",
+        x: 9881,
+        y: 1778,
+        p: 2004
+    },
+    {
+        Name: "Femunden",
+        x: 9464,
+        y: 1664,
+        p: 1933
+    },
+    {
+        Name: "Tunnsjoen",
+        x: 9540,
+        y: 1509,
+        p: 1938
+    },
+    {
+        Name: "Kayraly",
+        x: 10336,
+        y: 1375,
+        p: 3351
+    },
+    {
+        Name: "Suoperya",
+        x: 10350,
+        y: 1421,
+        p: 3352
+    },
+    {
+        Name: "Ozero Kamennoye",
+        x: 10369,
+        y: 1524,
+        p: 3312
+    },
+    {
+        Name: "Lappalanjarvi",
+        x: 10199,
+        y: 1720,
+        p: 2000
+    },
+    {
+        Name: "Replotfjarden",
+        x: 10007,
+        y: 1567,
+        p: 2026
+    },
+    {
+        Name: "Degumnieki",
+        x: 10206,
+        y: 1985,
+        p: 3107
+    },
+    {
+        Name: "Kuznetsk",
+        x: 11130,
+        y: 2200,
+        p: 3447
+    },
+    {
+        Name: "Penza",
+        x: 11027,
+        y: 2199,
+        p: 3446
+    },
+    {
+        Name: "Cheboksary",
+        x: 11206,
+        y: 2061,
+        p: 3459
+    },
+    {
+        Name: "Leeuwin Sill",
+        x: 14742,
+        y: 7651,
+        p: 9400
+    },
+    {
+        Name: "South of Murray",
+        x: 15687,
+        y: 7789,
+        p: 9373
+    },
+    {
+        Name: "Discovery Seamounts",
+        x: 8998,
+        y: 7501,
+        p: 8925
+    },
+    {
+        Name: "La Romanche Passage",
+        x: 8347,
+        y: 5231,
+        p: 8838
+    },
+    {
+        Name: "Freetown",
+        x: 8233,
+        y: 4876,
+        p: 4511
+    },
+    {
+        Name: "Shadwan Islands",
+        x: 10550,
+        y: 3727,
+        p: 4391
+    },
+    {
+        Name: "Tiran Island",
+        x: 10588,
+        y: 3706,
+        p: 4390
+    },
+    {
+        Name: "Geziret El Dibia",
+        x: 10705,
+        y: 4025,
+        p: 8957
+    },
+    {
+        Name: "Alo'daid",
+        x: 11413,
+        y: 3918,
+        p: 5369
+    },
+    {
+        Name: "Farur",
+        x: 11587,
+        y: 3805,
+        p: 5418
+    },
+    {
+        Name: "Abumusa",
+        x: 11595,
+        y: 3828,
+        p: 5417
+    },
+    {
+        Name: "Larak",
+        x: 11659,
+        y: 3770,
+        p: 5472
+    },
+    {
+        Name: "Hormoz",
+        x: 11666,
+        y: 3759,
+        p: 5471
+    },
+    {
+        Name: "Hajiabad",
+        x: 11651,
+        y: 3685,
+        p: 5488
     }
 ]

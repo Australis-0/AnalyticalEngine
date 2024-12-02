@@ -8,25 +8,18 @@ config.mapmodes.undefined_province_names = {
 		var province_obj = getProvince(arg0_province_obj);
 
 		//Declare local instance variables
-		var has_province_name = false;
 		var province_colour = undefined;
 		var province_id = province_obj.getProvinceID();
 
+		var has_city = getCity(province_id);
+
 		//Check has_province_name
 		//Set the province colour to red if a corresponding city object doesn't exist.
-		if (province_obj.getProvinceName() == "Unnamed")
-			province_colour = [255, 0, 0, 0.5];
-
-		//[WIP] - Deprecated code as it doesn't account for all Unnamed province names.
-		/*
-		if (main.map.cities)
-			has_province_name = (getCity(province_id)) ? true : false;
-		if (!has_province_name)
-			province_colour = [255, 0, 0, 0.5];
-		//Set the province colour to yellow if the province is named 'Unnamed'.
-		if (province_obj.getProvinceName() == "Unnamed" && has_province_name)
-			province_colour = [255, 255, 0, 0.5];
-		 */
+		if (province_obj.getProvinceName() == "Unnamed") { //[WIP] - Account for all random province names in future.
+			province_colour = (!has_city) ?
+				[255, 0, 0, 0.5] : //Set to red if city doesn't exist
+				[255, 255, 0, 0.5]; //Set to yellow if city exists but is still Unnamed
+		}
 
 		//Return statement
 		return province_colour;
