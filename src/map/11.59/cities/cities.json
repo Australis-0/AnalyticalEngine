@@ -9096,7 +9096,7 @@
         p: 2156
     },
     {
-        Name: "Menton",
+        Name: "Sanremo",
         x: 9265,
         y: 2750,
         p: 2562
@@ -27912,7 +27912,7 @@
         p: 4641
     },
     {
-        Name: "UAbou Deia",
+        Name: "Uabou Dela",
         x: 9806,
         y: 4690,
         p: 4640
@@ -59044,5 +59044,47 @@
         x: 12440,
         y: 3600,
         p: 9878
+    },
+    {
+        Name: "Buguskoye",
+        x: 12217,
+        y: 2694,
+        p: 3704
+    },
+    {
+        Name: "Sebkha of Oran",
+        x: 8839,
+        y: 3252,
+        p: 4291
+    },
+    {
+        Name: "Panama Canal",
+        x: 4948,
+        y: 4831,
+        p: 9863
+    },
+    {
+        Name: "Suez Canal",
+        x: 10480,
+        y: 3551,
+        p: 9862
+    },
+    {
+        Name: "Edinburgh of the Seven Seas",
+        x: 8266,
+        y: 7596,
+        p: 4234
+    },
+    {
+        Name: "Gough Island",
+        x: 8389,
+        y: 7783,
+        p: 4235
+    },
+    {
+        Name: "Pitcairn Island",
+        x: 2548,
+        y: 6829,
+        p: 3812
     }
 ]
