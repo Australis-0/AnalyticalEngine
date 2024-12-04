@@ -868,5 +868,35 @@
 	CivID: 145,
 	PCID: 145,
 	CPID: 1908
+},
+{
+	CivTAG: "ida3",
+	CivID: 146,
+	PCID: 146,
+	CPID: 5670
+},
+{
+	CivTAG: "patn3",
+	CivID: 147,
+	PCID: 147,
+	CPID: 5916
+},
+{
+	CivTAG: "kalh3",
+	CivID: 148,
+	PCID: 148,
+	CPID: 5774
+},
+{
+	CivTAG: "asha2",
+	CivID: 149,
+	PCID: 149,
+	CPID: 4560
+},
+{
+	CivTAG: "twes2",
+	CivID: 150,
+	PCID: 150,
+	CPID: 7407
 }
 ]
