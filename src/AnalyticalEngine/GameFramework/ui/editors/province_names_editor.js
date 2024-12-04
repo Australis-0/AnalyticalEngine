@@ -155,6 +155,6 @@
 					"Province Name: " + current_province_name + "|" +
 					"\nEditing province names: " + interface_obj.edit_province_names + "");
 			}
-		}, 8); //120FPS
+		}, 100); //10FPS
 	}
 }

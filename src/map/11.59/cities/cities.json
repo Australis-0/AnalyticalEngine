@@ -16812,13 +16812,13 @@
         p: 2364
     },
     {
-        Name: "Middle Upper Rhine",
+        Name: "Middle Lower Rhine",
         x: 9205,
         y: 2298,
         p: 2357
     },
     {
-        Name: "Upper Rhine",
+        Name: "Lower Rhine",
         x: 9187,
         y: 2285,
         p: 2355
@@ -31776,14 +31776,14 @@
         p: 5298
     },
     {
-        Name: "Slug",
+        Name: "Hisza",
         x: 10817,
-        y: 3201,
+        y: 3205,
         p: 5297
     },
     {
-        Name: "Rasel 'Ain",
-        x: 10849,
+        Name: "Tall Tamr",
+        x: 10851,
         y: 3193,
         p: 5299
     },
@@ -33840,7 +33840,7 @@
         p: 5544
     },
     {
-        Name: "Gwadar",
+        Name: "Pasni",
         x: 11982,
         y: 3860,
         p: 5545
@@ -34044,7 +34044,7 @@
         p: 5588
     },
     {
-        Name: "Abottabad",
+        Name: "Manshera",
         x: 12440,
         y: 3301,
         p: 5586
@@ -35100,7 +35100,7 @@
         p: 5852
     },
     {
-        Name: "Unnamed",
+        Name: "Barara",
         x: 12670,
         y: 3562,
         p: 5854
@@ -35946,7 +35946,7 @@
         p: 5744
     },
     {
-        Name: "Hyderabad",
+        Name: "Raichur",
         x: 12672,
         y: 4340,
         p: 5748
@@ -36018,7 +36018,7 @@
         p: 5820
     },
     {
-        Name: "Unnamed",
+        Name: "Mandai",
         x: 12871,
         y: 4068,
         p: 5814
@@ -39612,7 +39612,7 @@
         p: 6617
     },
     {
-        Name: "Unnamed",
+        Name: "Futangxiang",
         x: 14372,
         y: 3918,
         p: 6626
@@ -45372,7 +45372,7 @@
         p: 9680
     },
     {
-        Name: "Shirshov Ridge",
+        Name: "Gulf of Anadyr",
         x: 17565,
         y: 1710,
         p: 9685
@@ -45480,7 +45480,7 @@
         p: 8710
     },
     {
-        Name: "Timofeev Hill",
+        Name: "North Pole Abyssal Plain",
         x: 15249,
         y: 439,
         p: 8706
@@ -46542,7 +46542,7 @@
         p: 8061
     },
     {
-        Name: "Mar del Plata",
+        Name: "Valhala",
         x: 6106,
         y: 7670,
         p: 8247
@@ -47094,9 +47094,9 @@
         p: 8175
     },
     {
-        Name: "Mar Caribe",
-        x: 5585,
-        y: 4370,
+        Name: "Vieques",
+        x: 5655,
+        y: 4286,
         p: 8163
     },
     {
@@ -48420,7 +48420,7 @@
         p: 8419
     },
     {
-        Name: "Dangeart Canyon",
+        Name: "Dangeart Shelf",
         x: 8476,
         y: 2460,
         p: 8482
@@ -50220,7 +50220,7 @@
         p: 8268
     },
     {
-        Name: "Seast Thulean Rise",
+        Name: "East Thulean Rise",
         x: 7613,
         y: 2137,
         p: 8334
@@ -55212,7 +55212,7 @@
         p: 9775
     },
     {
-        Name: "Tomodachi Seamounts",
+        Name: "Friendship Rise",
         x: 16089,
         y: 4017,
         p: 9779
@@ -57280,5 +57280,1769 @@
         x: 11651,
         y: 3685,
         p: 5488
+    },
+    {
+        Name: "Kilindoni",
+        x: 10842,
+        y: 5842,
+        p: 4938
+    },
+    {
+        Name: "Lake Eyasi",
+        x: 10623,
+        y: 5588,
+        p: 4910
+    },
+    {
+        Name: "Gabati",
+        x: 10499,
+        y: 4483,
+        p: 4747
+    },
+    {
+        Name: "Badme",
+        x: 10736,
+        y: 4510,
+        p: 4775
+    },
+    {
+        Name: "Kokobay",
+        x: 10828,
+        y: 4505,
+        p: 4777
+    },
+    {
+        Name: "Male",
+        x: 12493,
+        y: 5188,
+        p: 5111
+    },
+    {
+        Name: "Addu City",
+        x: 12494,
+        y: 5369,
+        p: 5112
+    },
+    {
+        Name: "Eydhafushi",
+        x: 12492,
+        y: 5018,
+        p: 5110
+    },
+    {
+        Name: "Lakshadweep Coast",
+        x: 12547,
+        y: 4880,
+        p: 9054
+    },
+    {
+        Name: "Kamba",
+        x: 13238,
+        y: 3666,
+        p: 6437
+    },
+    {
+        Name: "Cabo Verde",
+        x: 7694,
+        y: 4419,
+        p: 4452
+    },
+    {
+        Name: "Elena Seamount",
+        x: 7574,
+        y: 4646,
+        p: 8743
+    },
+    {
+        Name: "Demerara Fan",
+        x: 6250,
+        y: 4738,
+        p: 8227
+    },
+    {
+        Name: "North Gramberg Plain",
+        x: 6127,
+        y: 4588,
+        p: 8219
+    },
+    {
+        Name: "South Gramberg Plain",
+        x: 6129,
+        y: 4612,
+        p: 8218
+    },
+    {
+        Name: "Vestreykjaneshryggur",
+        x: 7419,
+        y: 1667,
+        p: 8323
+    },
+    {
+        Name: "South Rockall Trough",
+        x: 7715,
+        y: 2170,
+        p: 8333
+    },
+    {
+        Name: "Darwin Seamount",
+        x: 4328,
+        y: 5241,
+        p: 7854
+    },
+    {
+        Name: "Isla Guadalupe",
+        x: 3043,
+        y: 3639,
+        p: 1670
+    },
+    {
+        Name: "Puerto Balleto",
+        x: 3624,
+        y: 4086,
+        p: 1690
+    },
+    {
+        Name: "Isla Socorro",
+        x: 3404,
+        y: 4252,
+        p: 3825
+    },
+    {
+        Name: "Lago Nahuel Huapi",
+        x: 5354,
+        y: 7819,
+        p: 4037
+    },
+    {
+        Name: "Lago Todos los Santos",
+        x: 5312,
+        y: 7831,
+        p: 4021
+    },
+    {
+        Name: "Purus River",
+        x: 5808,
+        y: 5660,
+        p: 4120
+    },
+    {
+        Name: "Putumayo River",
+        x: 5499,
+        y: 5558,
+        p: 4119
+    },
+    {
+        Name: "Uatuma River",
+        x: 6003,
+        y: 5521,
+        p: 4129
+    },
+    {
+        Name: "Nhamunda RIver",
+        x: 6075,
+        y: 5498,
+        p: 4130
+    },
+    {
+        Name: "Baia de Caxiuana",
+        x: 6346,
+        y: 5488,
+        p: 4139
+    },
+    {
+        Name: "Mar del Plata Wedge",
+        x: 6317,
+        y: 7656,
+        p: 8884
+    },
+    {
+        Name: "Golfo Corcovado",
+        x: 4985,
+        y: 7890,
+        p: 8000
+    },
+    {
+        Name: "Sars Guyot",
+        x: 5221,
+        y: 8760,
+        p: 8006
+    },
+    {
+        Name: "Lago Fagnano",
+        x: 5524,
+        y: 8629,
+        p: 4029
+    },
+    {
+        Name: "Lago Blanco",
+        x: 5474,
+        y: 8604,
+        p: 4028
+    },
+    {
+        Name: "Carranza",
+        x: 8713,
+        y: 2793,
+        p: 2227
+    },
+    {
+        Name: "Oiseaux Marins Sud Golfe du Lion",
+        x: 9100,
+        y: 2843,
+        p: 7556
+    },
+    {
+        Name: "L'Emporda",
+        x: 9083,
+        y: 2856,
+        p: 7570
+    },
+    {
+        Name: "Menorca Coast",
+        x: 9078,
+        y: 2954,
+        p: 7568
+    },
+    {
+        Name: "Valletta",
+        x: 9588,
+        y: 3227,
+        p: 3005
+    },
+    {
+        Name: "Lampedusa",
+        x: 9507,
+        y: 3243,
+        p: 3004
+    },
+    {
+        Name: "Tracino",
+        x: 9472,
+        y: 3178,
+        p: 3003
+    },
+    {
+        Name: "Boughrara Gulf",
+        x: 9429,
+        y: 3373,
+        p: 7503
+    },
+    {
+        Name: "Dangeart Canyon",
+        x: 8376,
+        y: 2517,
+        p: 8468
+    },
+    {
+        Name: "East Charcot Seamounts",
+        x: 8283,
+        y: 2644,
+        p: 8415
+    },
+    {
+        Name: "Tagus",
+        x: 8419,
+        y: 3057,
+        p: 8443
+    },
+    {
+        Name: "Cape Trafalgar",
+        x: 8576,
+        y: 3211,
+        p: 8404
+    },
+    {
+        Name: "Torshavn",
+        x: 8537,
+        y: 1678,
+        p: 1652
+    },
+    {
+        Name: "Jan Mayen",
+        x: 8460,
+        y: 1133,
+        p: 1660
+    },
+    {
+        Name: "Grense Norges",
+        x: 8760,
+        y: 1394,
+        p: 9810
+    },
+    {
+        Name: "Johannsen Seamount",
+        x: 8832,
+        y: 615,
+        p: 8734
+    },
+    {
+        Name: "Snoskaret",
+        x: 9955,
+        y: 711,
+        p: 8667
+    },
+    {
+        Name: "Kvitoya Coast",
+        x: 10489,
+        y: 586,
+        p: 8678
+    },
+    {
+        Name: "Zemlya Georga",
+        x: 11605,
+        y: 543,
+        p: 3620
+    },
+    {
+        Name: "Admiralteystvo Trough",
+        x: 11495,
+        y: 933,
+        p: 8682
+    },
+    {
+        Name: "Reka Pechora",
+        x: 11461,
+        y: 1355,
+        p: 3400
+    },
+    {
+        Name: "Krasnodarskoye Vodokhranilishche",
+        x: 10820,
+        y: 2684,
+        p: 3323
+    },
+    {
+        Name: "Bokey Salt Plains",
+        x: 11224,
+        y: 2475,
+        p: 3398
+    },
+    {
+        Name: "Ozero Neyto",
+        x: 12349,
+        y: 1251,
+        p: 3497
+    },
+    {
+        Name: "Ozero Numto",
+        x: 12768,
+        y: 1539,
+        p: 3549
+    },
+    {
+        Name: "Taz River",
+        x: 12861,
+        y: 1373,
+        p: 3538
+    },
+    {
+        Name: "Beloyarsky",
+        x: 12130,
+        y: 1491,
+        p: 3551
+    },
+    {
+        Name: "Ostrov",
+        x: 12735,
+        y: 584,
+        p: 3564
+    },
+    {
+        Name: "Ozero Yambuto",
+        x: 12805,
+        y: 1123,
+        p: 3537
+    },
+    {
+        Name: "Ozero Maloye Sovetskoye",
+        x: 13001,
+        y: 1364,
+        p: 3556
+    },
+    {
+        Name: "Ozero Makovskoye",
+        x: 13089,
+        y: 1383,
+        p: 3557
+    },
+    {
+        Name: "Kureyka",
+        x: 13150,
+        y: 1305,
+        p: 3558
+    },
+    {
+        Name: "Ozero Nadudoturku",
+        x: 13030,
+        y: 1023,
+        p: 3542
+    },
+    {
+        Name: "Ozero Purinskoye Pervoye",
+        x: 13250,
+        y: 1058,
+        p: 3544
+    },
+    {
+        Name: "Ozero Ayaturku",
+        x: 13423,
+        y: 964,
+        p: 3545
+    },
+    {
+        Name: "Pzero Matuda",
+        x: 13670,
+        y: 1088,
+        p: 3555
+    },
+    {
+        Name: "Khatanga",
+        x: 13966,
+        y: 1067,
+        p: 3547
+    },
+    {
+        Name: "Ozero Kiyeng-kyuyei",
+        x: 14292,
+        y: 1012,
+        p: 3546
+    },
+    {
+        Name: "Lake Kozhozero",
+        x: 10758,
+        y: 1605,
+        p: 3361
+    },
+    {
+        Name: "Lake Chukhloma",
+        x: 10972,
+        y: 1876,
+        p: 3429
+    },
+    {
+        Name: "Mansouri",
+        x: 10618,
+        y: 3392,
+        p: 5259
+    },
+    {
+        Name: "Sea of Galilee",
+        x: 10635,
+        y: 3416,
+        p: 5236
+    },
+    {
+        Name: "Silat ad-Dhahr",
+        x: 10615,
+        y: 3443,
+        p: 5204
+    },
+    {
+        Name: "Kefar Sava",
+        x: 10604,
+        y: 3456,
+        p: 5227
+    },
+    {
+        Name: "Aihulske Lake",
+        x: 10559,
+        y: 2629,
+        p: 3179
+    },
+    {
+        Name: "Mount Error Guyot",
+        x: 11710,
+        y: 4735,
+        p: 9041
+    },
+    {
+        Name: "Yuqing Seamount",
+        x: 11736,
+        y: 4736,
+        p: 9042
+    },
+    {
+        Name: "Liezu Seamount",
+        x: 11734,
+        y: 4810,
+        p: 9047
+    },
+    {
+        Name: "Serendip Seamount",
+        x: 11523,
+        y: 4933,
+        p: 8976
+    },
+    {
+        Name: "South Benadir Basin",
+        x: 11226,
+        y: 5601,
+        p: 9075
+    },
+    {
+        Name: "Alix Seamount",
+        x: 11975,
+        y: 6264,
+        p: 9091
+    },
+    {
+        Name: "Lameyre Ridge",
+        x: 12058,
+        y: 8213,
+        p: 9226
+    },
+    {
+        Name: "Elcano Rise",
+        x: 11410,
+        y: 7952,
+        p: 9224
+    },
+    {
+        Name: "Chah Nimeh",
+        x: 11893,
+        y: 3538,
+        p: 5474
+    },
+    {
+        Name: "De Hilmand Hamun",
+        x: 11912,
+        y: 3493,
+        p: 5522
+    },
+    {
+        Name: "Hamun-i-Lora",
+        x: 12081,
+        y: 3623,
+        p: 5514
+    },
+    {
+        Name: "Passu",
+        x: 12582,
+        y: 3192,
+        p: 5582
+    },
+    {
+        Name: "Surukwat Kangri",
+        x: 12665,
+        y: 3225,
+        p: 5581
+    },
+    {
+        Name: "Qianglong Gongma",
+        x: 12783,
+        y: 3349,
+        p: 5782
+    },
+    {
+        Name: "Phalodi",
+        x: 12447,
+        y: 3719,
+        p: 5624
+    },
+    {
+        Name: "Borovoye",
+        x: 12365,
+        y: 2157,
+        p: 3728
+    },
+    {
+        Name: "Kadibek",
+        x: 12527,
+        y: 2200,
+        p: 3688
+    },
+    {
+        Name: "Bol. Azhbulat",
+        x: 12700,
+        y: 2192,
+        p: 3689
+    },
+    {
+        Name: "Gabrial",
+        x: 12486,
+        y: 3238,
+        p: 5592
+    },
+    {
+        Name: "Abottabad",
+        x: 12493,
+        y: 3302,
+        p: 5594
+    },
+    {
+        Name: "Murree",
+        x: 12486,
+        y: 3365,
+        p: 5584
+    },
+    {
+        Name: "Hyderabad",
+        x: 12714,
+        y: 4294,
+        p: 5751
+    },
+    {
+        Name: "Bargarh",
+        x: 12999,
+        y: 4116,
+        p: 5917
+    },
+    {
+        Name: "Tarapai",
+        x: 13112,
+        y: 4057,
+        p: 5945
+    },
+    {
+        Name: "Berhampore",
+        x: 13235,
+        y: 3922,
+        p: 5979
+    },
+    {
+        Name: "Nari Bari",
+        x: 12869,
+        y: 3872,
+        p: 5898
+    },
+    {
+        Name: "Chakghat",
+        x: 12867,
+        y: 3878,
+        p: 5897
+    },
+    {
+        Name: "Paletwa",
+        x: 13475,
+        y: 4095,
+        p: 6073
+    },
+    {
+        Name: "Matupi",
+        x: 13496,
+        y: 4095,
+        p: 6074
+    },
+    {
+        Name: "Hakha",
+        x: 13497,
+        y: 4029,
+        p: 6075
+    },
+    {
+        Name: "Gangaw",
+        x: 13529,
+        y: 4073,
+        p: 6076
+    },
+    {
+        Name: "Lakshmanpur",
+        x: 13458,
+        y: 4634,
+        p: 6037
+    },
+    {
+        Name: "Indira Bazar",
+        x: 13443,
+        y: 4734,
+        p: 6038
+    },
+    {
+        Name: "North Sentinel Island",
+        x: 13430,
+        y: 4684,
+        p: 6036
+    },
+    {
+        Name: "Campbell Bay",
+        x: 13483,
+        y: 4895,
+        p: 6039
+    },
+    {
+        Name: "Ninetyeast Trough",
+        x: 13422,
+        y: 5207,
+        p: 9182
+    },
+    {
+        Name: "Sungai Besar",
+        x: 13862,
+        y: 5154,
+        p: 6312
+    },
+    {
+        Name: "Johor Strait",
+        x: 14001,
+        y: 5291,
+        p: 9147
+    },
+    {
+        Name: "Ko Losin",
+        x: 13936,
+        y: 4939,
+        p: 9169
+    },
+    {
+        Name: "Ratu Songkhla",
+        x: 13967,
+        y: 4916,
+        p: 9170
+    },
+    {
+        Name: "Dao Con Son",
+        x: 14140,
+        y: 4854,
+        p: 6268
+    },
+    {
+        Name: "Shenhu Canyon Province",
+        x: 14559,
+        y: 4163,
+        p: 9586
+    },
+    {
+        Name: "Nong Khai",
+        x: 13939,
+        y: 4292,
+        p: 6180
+    },
+    {
+        Name: "Dhangadhi",
+        x: 12872,
+        y: 3625,
+        p: 5987
+    },
+    {
+        Name: "Chandannath",
+        x: 12941,
+        y: 3625,
+        p: 5991
+    },
+    {
+        Name: "Tulsipur",
+        x: 12950,
+        y: 3698,
+        p: 5993
+    },
+    {
+        Name: "Pokhara",
+        x: 13012,
+        y: 3695,
+        p: 5992
+    },
+    {
+        Name: "Chhusang",
+        x: 13039,
+        y: 3669,
+        p: 5988
+    },
+    {
+        Name: "Birgunj",
+        x: 13110,
+        y: 3766,
+        p: 5955
+    },
+    {
+        Name: "Kathmandu",
+        x: 13085,
+        y: 3739,
+        p: 5994
+    },
+    {
+        Name: "Dhunche",
+        x: 13103,
+        y: 3715,
+        p: 5989
+    },
+    {
+        Name: "Biratnagar",
+        x: 13181,
+        y: 3749,
+        p: 5990
+    },
+    {
+        Name: "Relgo Tshogom",
+        x: 13272,
+        y: 3737,
+        p: 5995
+    },
+    {
+        Name: "Rinchen Bumpa",
+        x: 13368,
+        y: 3705,
+        p: 5996
+    },
+    {
+        Name: "Thimpu",
+        x: 13303,
+        y: 3735,
+        p: 5998
+    },
+    {
+        Name: "Trongsa",
+        x: 13375,
+        y: 3738,
+        p: 5997
+    },
+    {
+        Name: "Narayanpur",
+        x: 13497,
+        y: 3768,
+        p: 6006
+    },
+    {
+        Name: "Baxoi",
+        x: 13685,
+        y: 3653,
+        p: 6452
+    },
+    {
+        Name: "Namhkamwu",
+        x: 13778,
+        y: 4036,
+        p: 6142
+    },
+    {
+        Name: "Cheorwon-eup",
+        x: 15147,
+        y: 3097,
+        p: 6981
+    },
+    {
+        Name: "Ulleung",
+        x: 15336,
+        y: 3134,
+        p: 6980
+    },
+    {
+        Name: "Sado Kaikyo",
+        x: 15715,
+        y: 3046,
+        p: 9650
+    },
+    {
+        Name: "Okushiri Kaikyo",
+        x: 15781,
+        y: 2836,
+        p: 9655
+    },
+    {
+        Name: "Shchastya Bay",
+        x: 15852,
+        y: 2183,
+        p: 9591
+    },
+    {
+        Name: "Bol'shoy Shantar",
+        x: 15659,
+        y: 2103,
+        p: 3675
+    },
+    {
+        Name: "Avachinskiy Zaliv",
+        x: 16736,
+        y: 2223,
+        p: 9688
+    },
+    {
+        Name: "Kronotskiy Zaliv",
+        x: 16811,
+        y: 2157,
+        p: 9689
+    },
+    {
+        Name: "Kamchatskiy Zaliv",
+        x: 16892,
+        y: 2052,
+        p: 9673
+    },
+    {
+        Name: "Karaginskiy Zaliv",
+        x: 16978,
+        y: 1875,
+        p: 9672
+    },
+    {
+        Name: "Anzhu Islands",
+        x: 15991,
+        y: 898,
+        p: 3622
+    },
+    {
+        Name: "Makorta Seamount",
+        x: 13532,
+        y: 170,
+        p: 8718
+    },
+    {
+        Name: "Timofeev Hill",
+        x: 15171,
+        y: 342,
+        p: 8707
+    },
+    {
+        Name: "Medvezhyi Islands",
+        x: 16846,
+        y: 1148,
+        p: 3572
+    },
+    {
+        Name: "Medvezhyi Coast",
+        x: 16854,
+        y: 1149,
+        p: 8690
+    },
+    {
+        Name: "Shirshov Ridge",
+        x: 17728,
+        y: 1833,
+        p: 9684
+    },
+    {
+        Name: "Saint Paul Island",
+        x: 497,
+        y: 1977,
+        p: 7638
+    },
+    {
+        Name: "Mekoryuk",
+        x: 666,
+        y: 1786,
+        p: 1628
+    },
+    {
+        Name: "St. Matthew Island",
+        x: 361,
+        y: 1761,
+        p: 1630
+    },
+    {
+        Name: "Gambell",
+        x: 477,
+        y: 1590,
+        p: 1631
+    },
+    {
+        Name: "Imuruk Basin",
+        x: 707,
+        y: 1484,
+        p: 1170
+    },
+    {
+        Name: "Teshekpuk Lake",
+        x: 1305,
+        y: 1158,
+        p: 1176
+    },
+    {
+        Name: "North Beuafort Sea",
+        x: 1762,
+        y: 937,
+        p: 7614
+    },
+    {
+        Name: "Sonne Seamount",
+        x: 1201,
+        y: 4316,
+        p: 7836
+    },
+    {
+        Name: "Xuzhou",
+        x: 14606,
+        y: 3356,
+        p: 6841
+    },
+    {
+        Name: "Ruyang",
+        x: 14403,
+        y: 3351,
+        p: 6810
+    },
+    {
+        Name: "Shangshe",
+        x: 14407,
+        y: 3193,
+        p: 6899
+    },
+    {
+        Name: "Shenmu",
+        x: 14320,
+        y: 3037,
+        p: 6776
+    },
+    {
+        Name: "Wuhai",
+        x: 14155,
+        y: 3018,
+        p: 6511
+    },
+    {
+        Name: "Taizhou",
+        x: 14871,
+        y: 3662,
+        p: 6721
+    },
+    {
+        Name: "Qimei",
+        x: 14774,
+        y: 3983,
+        p: 6686
+    },
+    {
+        Name: "Liuqiu",
+        x: 14819,
+        y: 4040,
+        p: 6956
+    },
+    {
+        Name: "Small and South Rock",
+        x: 14678,
+        y: 4836,
+        p: 9802
+    },
+    {
+        Name: "Johnson Reef South",
+        x: 14519,
+        y: 4795,
+        p: 7142
+    },
+    {
+        Name: "Thitu Island",
+        x: 14517,
+        y: 4713,
+        p: 7148
+    },
+    {
+        Name: "North Reef",
+        x: 14519,
+        y: 4688,
+        p: 7152
+    },
+    {
+        Name: "Pasih Beluwah",
+        x: 14828,
+        y: 5314,
+        p: 9479
+    },
+    {
+        Name: "Papua Plateau",
+        x: 16014,
+        y: 6021,
+        p: 9459
+    },
+    {
+        Name: "Esa' Ala",
+        x: 16388,
+        y: 5972,
+        p: 7284
+    },
+    {
+        Name: "Lorengau",
+        x: 16186,
+        y: 5483,
+        p: 7279
+    },
+    {
+        Name: "Ogasawara",
+        x: 15893,
+        y: 3751,
+        p: 7395
+    },
+    {
+        Name: "Nishi-Fukutoku Seamount",
+        x: 15648,
+        y: 3748,
+        p: 9639
+    },
+    {
+        Name: "Owashi Fracture Zone",
+        x: 15669,
+        y: 3964,
+        p: 9641
+    },
+    {
+        Name: "Tomodachi Seamount",
+        x: 16052,
+        y: 4078,
+        p: 9728
+    },
+    {
+        Name: "East Leg Ridge",
+        x: 15742,
+        y: 4488,
+        p: 9791
+    },
+    {
+        Name: "West Caroline Basin",
+        x: 15612,
+        y: 5131,
+        p: 9756
+    },
+    {
+        Name: "Aruwi Hill",
+        x: 15666,
+        y: 5161,
+        p: 9757
+    },
+    {
+        Name: "South Eauripik Plain",
+        x: 15739,
+        y: 5212,
+        p: 9516
+    },
+    {
+        Name: "Mid Eauripik Plain",
+        x: 15742,
+        y: 5127,
+        p: 9759
+    },
+    {
+        Name: "North Eauripik Plain",
+        x: 15742,
+        y: 5104,
+        p: 9758
+    },
+    {
+        Name: "East Caroline Basin",
+        x: 15907,
+        y: 5151,
+        p: 9760
+    },
+    {
+        Name: "Feihuanghe Kou",
+        x: 14831,
+        y: 3366,
+        p: 9601
+    },
+    {
+        Name: "Feihuanghe Coast",
+        x: 14837,
+        y: 3345,
+        p: 9600
+    },
+    {
+        Name: "Kalapani",
+        x: 12875,
+        y: 3570,
+        p: 5986
+    },
+    {
+        Name: "Yangtze Delta",
+        x: 14869,
+        y: 3490,
+        p: 6401
+    },
+    {
+        Name: "Upper Yangtze River",
+        x: 14763,
+        y: 3489,
+        p: 6400
+    },
+    {
+        Name: "Chao Lake",
+        x: 14678,
+        y: 3489,
+        p: 6385
+    },
+    {
+        Name: "Shijiu Lake",
+        x: 14746,
+        y: 3506,
+        p: 6386
+    },
+    {
+        Name: "Middle Upper Yangtze River",
+        x: 14648,
+        y: 3563,
+        p: 6399
+    },
+    {
+        Name: "Lower Upper Yangtze River",
+        x: 14509,
+        y: 3598,
+        p: 6398
+    },
+    {
+        Name: "Upper Middle Yangtze River",
+        x: 14311,
+        y: 3544,
+        p: 6396
+    },
+    {
+        Name: "Middle Yangtze River",
+        x: 14159,
+        y: 3600,
+        p: 6395
+    },
+    {
+        Name: "Lower Middle Yangtze River",
+        x: 14027,
+        y: 3595,
+        p: 6394
+    },
+    {
+        Name: "Yalong Jiang",
+        x: 13919,
+        y: 3552,
+        p: 6392
+    },
+    {
+        Name: "Upper Yalong Jiang",
+        x: 13846,
+        y: 3434,
+        p: 6391
+    },
+    {
+        Name: "Upper Lower Yangtze River",
+        x: 13963,
+        y: 3739,
+        p: 6393
+    },
+    {
+        Name: "Middle Lower Yangtze River",
+        x: 13838,
+        y: 3764,
+        p: 6390
+    },
+    {
+        Name: "Lower Yangtze River",
+        x: 13744,
+        y: 3578,
+        p: 6389
+    },
+    {
+        Name: "Upper Yellow River",
+        x: 14696,
+        y: 3151,
+        p: 6380
+    },
+    {
+        Name: "Upper Middle Yellow River",
+        x: 14586,
+        y: 3232,
+        p: 6381
+    },
+    {
+        Name: "Middle Yellow River",
+        x: 14423,
+        y: 3295,
+        p: 6382
+    },
+    {
+        Name: "Mianchi",
+        x: 14397,
+        y: 3287,
+        p: 6807
+    },
+    {
+        Name: "Lower Yellow River",
+        x: 14335,
+        y: 3187,
+        p: 6379
+    },
+    {
+        Name: "Christmas Island",
+        x: 14090,
+        y: 6001,
+        p: 5108
+    },
+    {
+        Name: "Lake Mackay",
+        x: 15232,
+        y: 6734,
+        p: 7340
+    },
+    {
+        Name: "Lake Disappointment",
+        x: 14937,
+        y: 6774,
+        p: 7341
+    },
+    {
+        Name: "Hervey Bay",
+        x: 16421,
+        y: 6882,
+        p: 9418
+    },
+    {
+        Name: "North Macquarie Ridge",
+        x: 16774,
+        y: 8390,
+        p: 9331
+    },
+    {
+        Name: "15JA A",
+        x: 16905,
+        y: 8256,
+        p: 9330
+    },
+    {
+        Name: "Norfolk Island",
+        x: 17165,
+        y: 7108,
+        p: 9426
+    },
+    {
+        Name: "West Three Kings Ridge",
+        x: 17347,
+        y: 7172,
+        p: 9432
+    },
+    {
+        Name: "Hunter Ridge",
+        x: 17472,
+        y: 6808,
+        p: 9446
+    },
+    {
+        Name: "Funafuti",
+        x: 17660,
+        y: 5825,
+        p: 7412
+    },
+    {
+        Name: "Reserve Bank",
+        x: 17673,
+        y: 8014,
+        p: 9835
+    },
+    {
+        Name: "Antipodes Fracture Zone",
+        x: 224,
+        y: 8367,
+        p: 7983
+    },
+    {
+        Name: "Campbell Escarpment",
+        x: 17265,
+        y: 8636,
+        p: 9341
+    },
+    {
+        Name: "Axthelm Seamount",
+        x: 17039,
+        y: 9101,
+        p: 9012
+    },
+    {
+        Name: "Fakarava",
+        x: 1894,
+        y: 6496,
+        p: 3819
+    },
+    {
+        Name: "Papeete",
+        x: 1485,
+        y: 6382,
+        p: 3818
+    },
+    {
+        Name: "Tahuata",
+        x: 1996,
+        y: 5934,
+        p: 7940
+    },
+    {
+        Name: "Rapa",
+        x: 1631,
+        y: 6895,
+        p: 3817
+    },
+    {
+        Name: "Midway Atoll",
+        x: 487,
+        y: 3837,
+        p: 3794
+    },
+    {
+        Name: "Roumu Seamounts",
+        x: 717,
+        y: 5547,
+        p: 7882
+    },
+    {
+        Name: "Gallego Rise",
+        x: 2907,
+        y: 5473,
+        p: 7858
+    },
+    {
+        Name: "Gatun Lake",
+        x: 4937,
+        y: 4825,
+        p: 1844
+    },
+    {
+        Name: "Heredia",
+        x: 4737,
+        y: 4774,
+        p: 1831
+    },
+    {
+        Name: "Nachtigaller Shoal",
+        x: 6543,
+        y: 9277,
+        p: 8834
+    },
+    {
+        Name: "Aurora Canyon",
+        x: 6625,
+        y: 9293,
+        p: 8832
+    },
+    {
+        Name: "Yelcho Canyon",
+        x: 6862,
+        y: 9345,
+        p: 8833
+    },
+    {
+        Name: "Smyley",
+        x: 5077,
+        y: 10143,
+        p: 7426
+    },
+    {
+        Name: "Duse Bay",
+        x: 6083,
+        y: 9178,
+        p: 8012
+    },
+    {
+        Name: "Zuni",
+        x: 3473,
+        y: 3307,
+        p: 625
+    },
+    {
+        Name: "Southern Ute",
+        x: 3534,
+        y: 3170,
+        p: 607
+    },
+    {
+        Name: "Bear Lake",
+        x: 3387,
+        y: 2866,
+        p: 670
+    },
+    {
+        Name: "Vila dos Remedios",
+        x: 7432,
+        y: 5322,
+        p: 4241
+    },
+    {
+        Name: "North Brazilian Rise",
+        x: 7243,
+        y: 5404,
+        p: 8261
+    },
+    {
+        Name: "Bayingolin",
+        x: 13108,
+        y: 2881,
+        p: 6421
+    },
+    {
+        Name: "Lantau",
+        x: 14501,
+        y: 4044,
+        p: 9880
+    },
+    {
+        Name: "New Territories",
+        x: 14507,
+        y: 4035,
+        p: 9881
+    },
+    {
+        Name: "Kwun Tong",
+        x: 14517,
+        y: 4037,
+        p: 9882
+    },
+    {
+        Name: "Khukh Lake",
+        x: 14593,
+        y: 2383,
+        p: 3647
+    },
+    {
+        Name: "Ozero Bol'shoye Yeravnoye",
+        x: 14383,
+        y: 2232,
+        p: 3646
+    },
+    {
+        Name: "Lake Gusinoye",
+        x: 14129,
+        y: 2316,
+        p: 3645
+    },
+    {
+        Name: "Suluk",
+        x: 10809,
+        y: 3188,
+        p: 9889
+    },
+    {
+        Name: "Tell Halaf",
+        x: 10839,
+        y: 3184,
+        p: 9888
+    },
+    {
+        Name: "Charlotte Amalie",
+        x: 5682,
+        y: 4297,
+        p: 9885
+    },
+    {
+        Name: "Road Town",
+        x: 5692,
+        y: 4273,
+        p: 9884
+    },
+    {
+        Name: "Marigot",
+        x: 5768,
+        y: 4294,
+        p: 9886
+    },
+    {
+        Name: "Philipsburg",
+        x: 5768,
+        y: 4297,
+        p: 9887
+    },
+    {
+        Name: "Gwadar",
+        x: 11954,
+        y: 3870,
+        p: 9883
+    },
+    {
+        Name: "Rybinsk Reservoir",
+        x: 10768,
+        y: 1875,
+        p: 9868
+    },
+    {
+        Name: "Neva River",
+        x: 10390,
+        y: 1798,
+        p: 9864
+    },
+    {
+        Name: "Svir River",
+        x: 10568,
+        y: 1744,
+        p: 9865
+    },
+    {
+        Name: "White Sea Canal",
+        x: 10600,
+        y: 1614,
+        p: 9866
+    },
+    {
+        Name: "Vyg River",
+        x: 10584,
+        y: 1536,
+        p: 9867
+    },
+    {
+        Name: "Upper Volga",
+        x: 10726,
+        y: 1786,
+        p: 9869
+    },
+    {
+        Name: "Upper Middle Volga",
+        x: 10967,
+        y: 1966,
+        p: 9870
+    },
+    {
+        Name: "Middle Volga",
+        x: 11257,
+        y: 2173,
+        p: 9871
+    },
+    {
+        Name: "Lower Middle Volga",
+        x: 11111,
+        y: 2405,
+        p: 9872
+    },
+    {
+        Name: "Lower Volga",
+        x: 11178,
+        y: 2542,
+        p: 9873
+    },
+    {
+        Name: "Volga-Don Canal",
+        x: 11073,
+        y: 2478,
+        p: 9874
+    },
+    {
+        Name: "Middle Don",
+        x: 10988,
+        y: 2502,
+        p: 9875
+    },
+    {
+        Name: "Lower Don",
+        x: 10864,
+        y: 2542,
+        p: 9876
+    },
+    {
+        Name: "Upper Lower Rhine",
+        x: 9213,
+        y: 2316,
+        p: 9841
+    },
+    {
+        Name: "High Upper Lower Rhine",
+        x: 9222,
+        y: 2330,
+        p: 9844
+    },
+    {
+        Name: "Middle Rhine",
+        x: 9234,
+        y: 2349,
+        p: 9843
+    },
+    {
+        Name: "Lower Upper Rhine",
+        x: 9255,
+        y: 2372,
+        p: 9842
+    },
+    {
+        Name: "Middle Upper Rhine",
+        x: 9275,
+        y: 2459,
+        p: 9845
+    },
+    {
+        Name: "Upper Rhine",
+        x: 9293,
+        y: 2531,
+        p: 9846
+    },
+    {
+        Name: "Upper Danube",
+        x: 9339,
+        y: 2497,
+        p: 9847
+    },
+    {
+        Name: "Middle Upper Danube",
+        x: 9469,
+        y: 2463,
+        p: 9848
+    },
+    {
+        Name: "Lower Upper Danube",
+        x: 9608,
+        y: 2488,
+        p: 9849
+    },
+    {
+        Name: "Upper Middle Danube",
+        x: 9687,
+        y: 2493,
+        p: 9850
+    },
+    {
+        Name: "Middle Danube",
+        x: 9762,
+        y: 2509,
+        p: 9851
+    },
+    {
+        Name: "Lower Middle Danube",
+        x: 9813,
+        y: 2577,
+        p: 9852
+    },
+    {
+        Name: "Upper Lower Danube",
+        x: 9845,
+        y: 2661,
+        p: 9853
+    },
+    {
+        Name: "Middle Lower Danube",
+        x: 9907,
+        y: 2696,
+        p: 9854
+    },
+    {
+        Name: "Lower Danube",
+        x: 9975,
+        y: 2728,
+        p: 9855
+    },
+    {
+        Name: "Far Lower Danube",
+        x: 10119,
+        y: 2753,
+        p: 9856
+    },
+    {
+        Name: "Dobrogean Danube",
+        x: 10264,
+        y: 2700,
+        p: 9857
+    },
+    {
+        Name: "Danubian River Delta",
+        x: 10324,
+        y: 2684,
+        p: 9858
+    },
+    {
+        Name: "Upper Main",
+        x: 9309,
+        y: 2385,
+        p: 9860
+    },
+    {
+        Name: "Lower Main",
+        x: 9376,
+        y: 2407,
+        p: 9861
+    },
+    {
+        Name: "Rhine-Main-Danube Canal",
+        x: 9436,
+        y: 2446,
+        p: 9859
+    },
+    {
+        Name: "Lower Indus",
+        x: 12267,
+        y: 3805,
+        p: 9877
+    },
+    {
+        Name: "Upper Sutlej",
+        x: 12561,
+        y: 3512,
+        p: 9879
+    },
+    {
+        Name: "Lower Sutlej",
+        x: 12440,
+        y: 3600,
+        p: 9878
     }
 ]
