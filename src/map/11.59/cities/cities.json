@@ -3006,7 +3006,7 @@
         p: 367
     },
     {
-        Name: "clear Lake",
+        Name: "Clear Lake",
         x: 4279,
         y: 2816,
         p: 371
@@ -16770,13 +16770,13 @@
         p: 2382
     },
     {
-        Name: "Bonn",
+        Name: "Duren",
         x: 9199,
         y: 2353,
         p: 2372
     },
     {
-        Name: "Siegburg",
+        Name: "Bonn",
         x: 9233,
         y: 2343,
         p: 2376
@@ -17400,7 +17400,7 @@
         p: 2471
     },
     {
-        Name: "Wittenau",
+        Name: "Reinickendorf",
         x: 9535,
         y: 2232,
         p: 2340
@@ -19836,7 +19836,7 @@
         p: 2965
     },
     {
-        Name: "Niksic",
+        Name: "Podgorica",
         x: 9820,
         y: 2827,
         p: 2966
@@ -21324,7 +21324,7 @@
         p: 3233
     },
     {
-        Name: "Zhdanov",
+        Name: "Mariupol",
         x: 10732,
         y: 2560,
         p: 3246
@@ -21840,7 +21840,7 @@
         p: 3263
     },
     {
-        Name: "Artemovsk",
+        Name: "Bakhmut",
         x: 10747,
         y: 2472,
         p: 3270
@@ -24390,7 +24390,7 @@
         p: 3707
     },
     {
-        Name: "Ili",
+        Name: "Zharkent",
         x: 12709,
         y: 2774,
         p: 3708
@@ -26802,9 +26802,9 @@
         p: 4558
     },
     {
-        Name: "Ho",
-        x: 8912,
-        y: 4941,
+        Name: "Aloga",
+        x: 8913,
+        y: 5016,
         p: 4559
     },
     {
@@ -26838,9 +26838,9 @@
         p: 4565
     },
     {
-        Name: "Tamale",
-        x: 8825,
-        y: 4816,
+        Name: "Yendi",
+        x: 8889,
+        y: 4792,
         p: 4563
     },
     {
@@ -29412,7 +29412,7 @@
         p: 5089
     },
     {
-        Name: "Andratambazaha",
+        Name: "Lake Alaotra",
         x: 11273,
         y: 6418,
         p: 5088
@@ -32052,13 +32052,13 @@
         p: 5307
     },
     {
-        Name: "Nineveh",
+        Name: "Mosul",
         x: 11009,
         y: 3220,
         p: 5331
     },
     {
-        Name: "Mosul",
+        Name: "Al-Ba'aj",
         x: 10959,
         y: 3239,
         p: 5333
@@ -33606,25 +33606,25 @@
         p: 5530
     },
     {
-        Name: "Bala Murghab",
+        Name: "Qala-e-Naw",
         x: 12030,
         y: 3268,
         p: 5532
     },
     {
-        Name: "Maimana",
+        Name: "Maymana",
         x: 12080,
         y: 3236,
         p: 5537
     },
     {
-        Name: "Andkhui",
+        Name: "Andkhoy",
         x: 12089,
         y: 3177,
         p: 5536
     },
     {
-        Name: "Akcha",
+        Name: "Sheberghan",
         x: 12129,
         y: 3181,
         p: 5539
@@ -33636,19 +33636,19 @@
         p: 5540
     },
     {
-        Name: "Rustak",
+        Name: "Kunduz",
         x: 12267,
         y: 3175,
         p: 5531
     },
     {
-        Name: "Sabz Bahar",
+        Name: "Taleqan",
         x: 12325,
         y: 3184,
         p: 5525
     },
     {
-        Name: "Faizabad",
+        Name: "Fayzabad",
         x: 12374,
         y: 3167,
         p: 5509
@@ -33660,61 +33660,61 @@
         p: 5510
     },
     {
-        Name: "Barikot",
+        Name: "Parun",
         x: 12372,
         y: 3255,
         p: 5508
     },
     {
-        Name: "Bagram",
+        Name: "Kharo",
         x: 12321,
         y: 3255,
         p: 5521
     },
     {
-        Name: "Lagham",
+        Name: "Bagram",
         x: 12279,
         y: 3285,
         p: 5513
     },
     {
-        Name: "Kabul",
+        Name: "Bamyan",
         x: 12199,
         y: 3302,
         p: 5535
     },
     {
-        Name: "Panjshir",
+        Name: "Baghlan",
         x: 12284,
         y: 3237,
         p: 5542
     },
     {
-        Name: "Miram Shah",
+        Name: "Khost",
         x: 12326,
         y: 3382,
         p: 5502
     },
     {
-        Name: "Matun",
+        Name: "Gardez",
         x: 12304,
         y: 3366,
         p: 5503
     },
     {
-        Name: "Ali Khel",
+        Name: "Pol-e Alam",
         x: 12298,
         y: 3346,
         p: 5504
     },
     {
-        Name: "Shakin",
+        Name: "Wazakhwa",
         x: 12268,
         y: 3433,
         p: 5501
     },
     {
-        Name: "Kalat i Ghilzai",
+        Name: "Qalat-e Gilzay",
         x: 12193,
         y: 3448,
         p: 5515
@@ -33726,13 +33726,13 @@
         p: 5520
     },
     {
-        Name: "Girishk",
+        Name: "Lashkar Gah",
         x: 12023,
         y: 3527,
         p: 5524
     },
     {
-        Name: "Chakhansur",
+        Name: "Zaranj",
         x: 11950,
         y: 3535,
         p: 5523
@@ -33744,85 +33744,85 @@
         p: 5526
     },
     {
-        Name: "Washir",
+        Name: "Warg",
         x: 12030,
         y: 3410,
         p: 5529
     },
     {
-        Name: "Shahidan",
+        Name: "Sangin",
         x: 12071,
         y: 3425,
         p: 5527
     },
     {
-        Name: "Daulat Yar",
+        Name: "Chagcharan Firuzkoh",
         x: 12085,
         y: 3332,
         p: 5533
     },
     {
-        Name: "Sharan",
+        Name: "Kajran",
         x: 12152,
         y: 3365,
         p: 5534
     },
     {
-        Name: "Qadir",
+        Name: "Tirin Kut",
         x: 12141,
         y: 3404,
         p: 5528
     },
     {
-        Name: "Qala-i-Babakar",
+        Name: "Ghazni",
         x: 12239,
         y: 3408,
         p: 5516
     },
     {
-        Name: "Ghazni",
+        Name: "Sangi Masha",
         x: 12213,
         y: 3370,
         p: 5518
     },
     {
-        Name: "Baraq Rajan",
+        Name: "Maidan Shahr",
         x: 12239,
         y: 3322,
         p: 5519
     },
     {
-        Name: "Jagdalak",
+        Name: "Kabul",
         x: 12302,
         y: 3311,
         p: 5505
     },
     {
-        Name: "Jalalabad",
+        Name: "Golbahar",
         x: 12312,
         y: 3288,
         p: 5512
     },
     {
-        Name: "JKahi",
+        Name: "Mitarlam",
         x: 12344,
         y: 3296,
         p: 5511
     },
     {
-        Name: "Gardez",
+        Name: "Sheikhabad",
         x: 12260,
         y: 3347,
         p: 5517
     },
     {
-        Name: "Butola",
+        Name: "Aybak",
         x: 12221,
         y: 3224,
         p: 5541
     },
     {
-        Name: "Daulat Yar",
+        Name: "Sar-e Pol",
         x: 12147,
         y: 3242,
         p: 5538
@@ -34014,7 +34014,7 @@
         p: 5569
     },
     {
-        Name: "Parachinar",
+        Name: "Jalalabad",
         x: 12352,
         y: 3323,
         p: 5506
@@ -34116,7 +34116,7 @@
         p: 5597
     },
     {
-        Name: "Bajaur",
+        Name: "Asadabad",
         x: 12389,
         y: 3286,
         p: 5507
@@ -34218,7 +34218,7 @@
         p: 5877
     },
     {
-        Name: "Pauri",
+        Name: "Shimla",
         x: 12755,
         y: 3553,
         p: 5880
@@ -34326,9 +34326,9 @@
         p: 5630
     },
     {
-        Name: "Jamnagar",
-        x: 12326,
-        y: 4032,
+        Name: "Dwarka",
+        x: 12287,
+        y: 4044,
         p: 5631
     },
     {
@@ -34506,7 +34506,7 @@
         p: 5872
     },
     {
-        Name: "Jindd",
+        Name: "Jind",
         x: 12664,
         y: 3654,
         p: 5871
@@ -34566,13 +34566,13 @@
         p: 5863
     },
     {
-        Name: "Chatsu",
+        Name: "Tonk",
         x: 12627,
         y: 3818,
         p: 5840
     },
     {
-        Name: "Tonk",
+        Name: "Deoli",
         x: 12621,
         y: 3856,
         p: 5838
@@ -35094,7 +35094,7 @@
         p: 5846
     },
     {
-        Name: "Nalagarh",
+        Name: "Chachgaurh",
         x: 12663,
         y: 3538,
         p: 5852
@@ -35124,7 +35124,7 @@
         p: 5881
     },
     {
-        Name: "Chachrauh",
+        Name: "Nalagarh",
         x: 12678,
         y: 3543,
         p: 5853
@@ -39912,7 +39912,7 @@
         p: 6559
     },
     {
-        Name: "Sichang",
+        Name: "Liangshan Yi",
         x: 13950,
         y: 3723,
         p: 6556
@@ -59086,5 +59086,59 @@
         x: 2548,
         y: 6829,
         p: 3812
+    },
+    {
+        Name: "Kinkony",
+        x: 11140,
+        y: 6337,
+        p: 5087
+    },
+    {
+        Name: "Iguela Lagoon",
+        x: 9372,
+        y: 5528,
+        p: 4683
+    },
+    {
+        Name: "N'Djamena",
+        x: 9622,
+        y: 4653,
+        p: 4632
+    },
+    {
+        Name: "Lake Fitri",
+        x: 9744,
+        y: 4611,
+        p: 4634
+    },
+    {
+        Name: "Jamnagar",
+        x: 12331,
+        y: 4032,
+        p: 9890
+    },
+    {
+        Name: "Ho",
+        x: 8906,
+        y: 4926,
+        p: 9893
+    },
+    {
+        Name: "Tamale",
+        x: 8817,
+        y: 4817,
+        p: 9892
+    },
+    {
+        Name: "Labuan",
+        x: 14564,
+        y: 5058,
+        p: 9891
+    },
+    {
+        Name: "Lagoa Cajari",
+        x: 6653,
+        y: 5568,
+        p: 4142
     }
 ]

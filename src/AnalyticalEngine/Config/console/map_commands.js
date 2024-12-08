@@ -13,6 +13,16 @@ config.console.map_commands = {
 			console.log("Switched mapmode to: " + new_mapmode);
 		}
 	},
+	print_map_civilisations: {
+		name: "print-map-civilisations",
+		description: "Prints all civilisations on map.",
+		special_function: function (args) {
+			var all_civ_tags = getAllCurrentCivTags();
+
+			console.log("Current Civs (" + all_civ_tags.length + "):\n");
+			console.log("- " + all_civ_tags.join("\n- "));
+		}
+	},
 	print_map_cities: {
 		name: "print-map-cities",
 		description: "Prints all currently named cities on the map.",
