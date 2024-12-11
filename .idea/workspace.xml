@@ -6,20 +6,111 @@
   <component name="ChangeListManager">
     <list default="true" id="09b6f7f8-b868-43e9-b471-ac1dbd15fa3b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Config/console/map_commands.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Config/console/map_commands.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/civilisations/civilisation_framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/civilisations/civilisation_framework.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/events/triggers/EventTrigger_CivGovernmentIs.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/events/triggers/EventTrigger_CivGovernmentIs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/AA_Game$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/AA_Game$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/AA_Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/AA_Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/AI/Diplomacy/AI_Alliances.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/AI/Diplomacy/AI_Alliances.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/AI/Diplomacy/AI_Pacts.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/AI/Diplomacy/AI_Pacts.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/Game$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/Game$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/Game$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/Game$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/Game$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/Game$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/Game$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/Game$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/Game$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/Game$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/Game$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/Game$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/Game$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/Game$9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/Game$ArmyPos.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/Game$ArmyPos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/Game$VassalsToRelease.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/Game$VassalsToRelease.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/LanguageManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/LanguageManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/Renderer/Renderer.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/Renderer/Renderer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/SaveLoad/ExportData$Save_ProvinceData_3M.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/SaveLoad/ExportData$Save_ProvinceData_3M.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/SaveLoad/ExportData$Save_ProvinceData_Images.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/SaveLoad/ExportData$Save_ProvinceData_Images.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/SaveLoad/ExportData$Save_ProvinceData_ScenarioCivs.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/SaveLoad/ExportData$Save_ProvinceData_ScenarioCivs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/SaveLoad/ExportData.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/SaveLoad/ExportData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/SaveLoad/LoadSavedGameManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/SaveLoad/LoadSavedGameManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/SaveLoad/SaveManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/SaveLoad/SaveManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/AdvantagesManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/AdvantagesManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/ColonizationManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/ColonizationManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/IdeologiesManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/IdeologiesManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/PeaceTreaty$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/PeaceTreaty$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/PeaceTreaty$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/PeaceTreaty$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/PeaceTreaty$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/PeaceTreaty$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/PeaceTreaty.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/PeaceTreaty.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/ReligionManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/ReligionManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/civilization/Civilization$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/civilization/Civilization$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/civilization/Civilization.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/civilization/Civilization.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/diplomacy/DiplomacyManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/diplomacy/DiplomacyManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/map/Map$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/map/Map$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/map/Map$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/map/Map$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/map/Map$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/map/Map$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/map/Map$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/map/Map$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/map/Map.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/map/Map.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/map/MapBG$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/map/MapBG$10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/map/MapBG$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/map/MapBG$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/map/MapBG$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/map/MapBG$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/map/MapBG$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/map/MapBG$9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/map/MapBG.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/map/MapBG.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/map/MapModeManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/map/MapModeManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/map/MapScenarios$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/map/MapScenarios$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/map/MapScenarios$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/map/MapScenarios$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/map/MapScenarios$ScenarioCivData.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/map/MapScenarios$ScenarioCivData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/map/MapScenarios$ScenarioCivDataSerializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/map/MapScenarios$ScenarioCivDataSerializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/map/MapScenarios$ScenarioCivData_Provinces.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/map/MapScenarios$ScenarioCivData_Provinces.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/map/MapScenarios$ScenarioCoresData.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/map/MapScenarios$ScenarioCoresData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/map/MapScenarios$ScenarioReligionData.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/map/MapScenarios$ScenarioReligionData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/map/MapScenarios.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/map/MapScenarios.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/province/ProvinceNamesManager$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/province/ProvinceNamesManager$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/province/ProvinceNamesManager$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/province/ProvinceNamesManager$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/province/ProvinceNamesManager$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/province/ProvinceNamesManager$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/province/ProvinceNamesManager$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/province/ProvinceNamesManager$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/province/ProvinceNamesManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/province/ProvinceNamesManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menus/MainMenu$1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menus/MainMenu$1$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menus/MainMenu$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menus/MainMenu$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menus/MainMenu$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menus/MainMenu$10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menus/MainMenu$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menus/MainMenu$11.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menus/MainMenu$12$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menus/MainMenu$12$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menus/MainMenu$12$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menus/MainMenu$12$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menus/MainMenu$12.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menus/MainMenu$12.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menus/MainMenu$13.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menus/MainMenu$13.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menus/MainMenu$14.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menus/MainMenu$14.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menus/MainMenu$15.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menus/MainMenu$15.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menus/MainMenu$16.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menus/MainMenu$16.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menus/MainMenu$17$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menus/MainMenu$17$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menus/MainMenu$17.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menus/MainMenu$17.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menus/MainMenu$18.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menus/MainMenu$18.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menus/MainMenu$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menus/MainMenu$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menus/MainMenu$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menus/MainMenu$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menus/MainMenu$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menus/MainMenu$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menus/MainMenu$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menus/MainMenu$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menus/MainMenu$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menus/MainMenu$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menus/MainMenu$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menus/MainMenu$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menus/MainMenu$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menus/MainMenu$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menus/MainMenu$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menus/MainMenu$9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menus/MainMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menus/MainMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menusInGame/Diplomacy/InGame_AllianceList$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menusInGame/Diplomacy/InGame_AllianceList$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menusInGame/Diplomacy/InGame_AllianceList$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menusInGame/Diplomacy/InGame_AllianceList$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menusInGame/Diplomacy/InGame_AllianceList$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menusInGame/Diplomacy/InGame_AllianceList$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menusInGame/Diplomacy/InGame_AllianceList$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menusInGame/Diplomacy/InGame_AllianceList$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menusMapEditor/EditorMapResources$UndoResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menusMapEditor/EditorMapResources$UndoResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menusMapEditor/EditorMapResources.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menusMapEditor/EditorMapResources.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menusScenarioEditor/ScenarioAssign$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menusScenarioEditor/ScenarioAssign$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menusScenarioEditor/ScenarioAssign$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menusScenarioEditor/ScenarioAssign$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menusScenarioEditor/ScenarioCivilizations$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menusScenarioEditor/ScenarioCivilizations$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menusScenarioEditor/ScenarioCivilizations$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menusScenarioEditor/ScenarioCivilizations$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menusScenarioEditor/ScenarioCivilizations$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menusScenarioEditor/ScenarioCivilizations$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menusScenarioEditor/ScenarioCivilizationsList.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menusScenarioEditor/ScenarioCivilizationsList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menusScenarioEditor/Wasteland/ScenarioWasteland$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menusScenarioEditor/Wasteland/ScenarioWasteland$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menusScenarioEditor/Wasteland/ScenarioWasteland$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menusScenarioEditor/Wasteland/ScenarioWasteland$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/textures/ImageManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/textures/ImageManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/desktop.ini" beforeDir="false" afterPath="$PROJECT_DIR$/src/desktop.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/AlliancesSpecial.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/AlliancesSpecial.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/Data.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/Data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/DataProvinces.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/DataProvinces.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/preview.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/preview.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/north_waziristan.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/south_waziristan.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mods/11.59/languages/Bundle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/languages/Bundle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/languages/Bundle/Bundle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/languages/Bundle_.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/languages/loading/Bundle/Bundle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11/59/languages/loading/Bundle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/GameCivs/game/civilizations/frenchprotectorateinmorocco.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/GameCivs/game/civilizations/frenchprotectorateoftunisia.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/GameCivs/game/civilizations/syrianrepublic.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/GameCivs/gfx/flagsH/frenchprotectorateinmorocco.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/GameCivs/gfx/flagsH/frenchprotectorateoftunisia.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/GameCivs/gfx/flagsH/syrianrepublic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11/59/languages/loading/Bundle.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +219,7 @@
       <workItem from="1731784417683" duration="45000" />
       <workItem from="1731784537399" duration="102233000" />
       <workItem from="1732517435175" duration="135466000" />
-      <workItem from="1733268013030" duration="117272000" />
+      <workItem from="1733268013030" duration="122047000" />
     </task>
     <servers />
   </component>
