@@ -13,6 +13,34 @@ config.console.map_commands = {
 			console.log("Switched mapmode to: " + new_mapmode);
 		}
 	},
+	find_civilisation: {
+		name: "find-civilisation",
+		description: "Pans to a civilisation's capital.",
+		arg0_civilisation_description: "The civilisation to pan to.",
+		special_function: function (args) {
+			//Convert from parameters
+			var input_civ_name = args.join(" ");
+
+			//Declare local instance variables
+			var civ_obj = getCivilisation(input_civ_name);
+
+			//Fetch capital_obj if possible; pan to it if it exists. Otherwise log that the civilisation does not presently exist
+			if (civ_obj) {
+				var capital_obj = getCivilisationCapital(civ_obj);
+				var capital_name = getProvinceName(capital_obj, { display_province_id: true });
+				var civ_name = getCivilisationName(civ_obj);
+
+				if (capital_obj) {
+					panToProvince(capital_obj);
+					console.log("Scrolled to " + capital_name);
+				} else {
+					console.log(civ_name + " currently isn't on the map.");
+				}
+			} else {
+				console.log("'" + input_civ_name + "' is not a defined civilisation.");
+			}
+		}
+	},
 	print_map_civilisations: {
 		name: "print-map-civilisations",
 		description: "Prints all civilisations on map.",

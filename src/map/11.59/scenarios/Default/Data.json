@@ -1,6 +1,6 @@
 [
 {
-	CivTAG: "usa",
+	CivTAG: "usa_o",
 	CivID: 1,
 	PCID: 1,
 	CPID: 1,
@@ -8,14 +8,14 @@
 	TaxEff: 10
 },
 {
-	CivTAG: "dox_n",
+	CivTAG: "dox_o",
 	CivID: 2,
 	PCID: 2,
 	CPID: 1395,
 	Population: 12292000
 },
 {
-	CivTAG: "mex",
+	CivTAG: "mex_v",
 	CivID: 3,
 	PCID: 3,
 	CPID: 1763,

@@ -126,22 +126,22 @@
 		return core_tags;
 	}
 
-	function setProvinceController (arg0_province_name, arg1_civilisation_name, arg2_options) {
+	function setProvinceController (arg0_province_name, arg1_civ_name, arg2_options) {
 		//Convert from parameters
 		var province_name = arg0_province_name;
-		var civilisation_name = arg1_civilisation_name;
+		var civ_name = arg1_civ_name;
 		var options = (arg2_options) ? arg2_options : {};
 
 		//Declare local instance variables
-		var civilisation_obj = getCivilisation(civilisation_name);
+		var civ_obj = getCivilisation(civ_name);
 		var province_obj = getProvince(province_name);
 
-		var from_civilisation_id = province_obj.getCivID();
+		var from_civ_id = province_obj.getCivID();
 		var province_id = province_obj.iProvinceID;
-		var to_civilisation_id = civilisation_obj.iCivID;
+		var to_civ_id = civ_obj.iCivID;
 
 		//Assign province controller
-		province_obj.setOccupiedByCivID(to_civilisation_id);
+		province_obj.setOccupiedByCivID(to_civ_id);
 
 		//Create UpdateTask to update the current map; deal with interfaces
 		if (!options.do_not_display) {
@@ -152,42 +152,42 @@
 					CivilizationRegionsManager.updateRegionsInView = true;
 				}
 			});
-			var update_task_obj = new UpdateTask("buildCivilizationsRegion" + from_civilisation_id, from_civilisation_id);
+			var update_task_obj = new UpdateTask("buildCivilizationsRegion" + from_civ_id, from_civ_id);
 			Game.gameThreadUpdate.addSimpleTask(update_task_obj);
 		}
 	}
 
-	function setProvinceControllers (arg0_province_names, arg1_civilisation_name) {
+	function setProvinceControllers (arg0_province_names, arg1_civ_name) {
 		//Convert from parameters
 		var province_names = getList(arg0_province_names);
-		var civilisation_name = arg1_civilisation_name;
+		var civ_name = arg1_civ_name;
 
 		//Declare local instance variables
-		var civilisation_obj = getCivilisation(civilisation_name);
+		var civ_obj = getCivilisation(civ_name);
 
 		//Iterate over all province_names
 		for (var i = 0; i < province_names.length; i++)
-			setProvinceController(province_names[i], civilisation_name, {
+			setProvinceController(province_names[i], civ_name, {
 				do_not_display: (i == province_names.length - 1)
 			});
 	}
 
-	function setProvinceOwner (arg0_province_name, arg1_civilisation_name, arg2_options) {
+	function setProvinceOwner (arg0_province_name, arg1_civ_name, arg2_options) {
 		//Convert from parameters
 		var province_name = arg0_province_name;
-		var civilisation_name = arg1_civilisation_name;
+		var civ_name = arg1_civ_name;
 		var options = (arg2_options) ? arg2_options : {};
 
 		//Declare local instance variables
-		var civilisation_obj = getCivilisation(civilisation_name);
+		var civ_obj = getCivilisation(civ_name);
 		var province_obj = getProvince(province_name);
 
-		var from_civilisation_id = province_obj.getCivID();
+		var from_civ_id = province_obj.getCivID();
 		var province_id = province_obj.iProvinceID;
-		var to_civilisation_id = civilisation_obj.iCivID;
+		var to_civ_id = civ_obj.iCivID;
 
 		//Assign province owner
-		province_obj.setCivID_RemoveOldAddNewToCiv(to_civilisation_id);
+		province_obj.setCivID_RemoveOldAddNewToCiv(to_civ_id);
 		Game.updateProvinceBorder(province_id);
 
 		//Create UpdateTask to update the current map; deal with interfaces
@@ -199,7 +199,7 @@
 					CivilizationRegionsManager.updateRegionsInView = true;
 				}
 			});
-			var update_task_obj = new UpdateTask("buildCivilizationsRegion" + from_civilisation_id, from_civilisation_id);
+			var update_task_obj = new UpdateTask("buildCivilizationsRegion" + from_civ_id, from_civ_id);
 			Game.gameThreadUpdate.addSimpleTask(update_task_obj);
 		}
 	}
@@ -207,21 +207,21 @@
 	/**
 	 * setProvinceOwners() - Sets a new Civilisation owner for multiple provinces.
 	 * @param {Array<number|Object<Province>|String>} arg0_province_names - The province names to transfer to a new owner.
-	 * @param {number|Object<Civilisation>|String} arg1_civilisation_name - The civilisation to transfer provinces to.
+	 * @param {number|Object<Civilisation>|String} arg1_civ_name - The civilisation to transfer provinces to.
 	 *
 	 * @returns {number}
 	 */
-	function setProvinceOwners (arg0_province_names, arg1_civilisation_name) {
+	function setProvinceOwners (arg0_province_names, arg1_civ_name) {
 		//Convert from parameters
 		var province_names = getList(arg0_province_names);
-		var civilisation_name = arg1_civilisation_name;
+		var civ_name = arg1_civ_name;
 
 		//Declare local instance variables
-		var civilisation_obj = getCivilisation(civilisation_name);
+		var civ_obj = getCivilisation(civ_name);
 
 		//Iterate over all province_names
 		for (var i = 0; i < province_names.length; i++)
-			setProvinceOwner(province_names[i], civilisation_name, {
+			setProvinceOwner(province_names[i], civ_name, {
 				do_not_display: (i == province_names.length - 1)
 			});
 

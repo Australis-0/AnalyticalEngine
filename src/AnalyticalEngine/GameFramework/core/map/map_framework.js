@@ -165,6 +165,18 @@
 		}
 	}
 
+	function panToProvince (arg0_province_id) {
+		//Convert from parameters
+		var province_id = arg0_province_id;
+
+		//Declare local instance variables
+		var province_obj = getProvince(province_id);
+
+		//Pan to province
+		if (province_obj)
+			Game.mapCoords.centerToProvinceID(province_obj.getProvinceID());
+	}
+
 	/**
 	 * switchMapmode() - Switches between the current mapmode and another one. Accepts custom mapmodes.
 	 * @param {String} arg0_mapmode - The mapmode to switch to.

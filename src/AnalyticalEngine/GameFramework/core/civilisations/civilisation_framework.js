@@ -28,8 +28,9 @@
 	 * getCivilisation() - Fetches a Game Civilisation based on its ID/tag/name.
 	 * @param {String|number} arg0_civ_name
 	 * @param [arg1_options]
+	 * @param [arg1_options.return_current_tag=false] - Whether to return the current CivTag.
 	 * @param [arg1_options.return_key=false] - Whether to return the Civ ID instead.
-	 * @param [arg1_options.return_tag=false] - Whether to return the CivTag.
+	 * @param [arg1_options.return_tag=false] - Whether to return the base CivTag.
 	 *
 	 * @returns {Object<Civilisation>|number|String}
 	 */
@@ -69,15 +70,16 @@
 			for (var i = 0; i < Game.lCivs.size(); i++) {
 				var local_civ = Game.lCivs.get(i);
 
-				if (local_civ.civData.realTag == civ_name) {
+				if (local_civ.realTag == civ_name) {
 					civ_id = local_civ.iCivID;
 					civ_obj = local_civ;
 				}
 			}
 
 			//Name search
-			if (!civ_obj && typeof search_name == "string") {
+			if (!civ_obj && typeof civ_name == "string") {
 				var search_name = civ_name.trim().toLowerCase();
+				//console.log("Searching for " + search_name);
 
 				//Name - Soft search 1st
 				for (var i = 0; i < Game.lCivs.size(); i++) {
@@ -102,10 +104,51 @@
 		}
 
 		//Return statement
+		if (civ_obj && options.return_current_tag)
+			return civ_obj.civData.t;
 		if (civ_obj && options.return_tag)
 			return civ_obj.realTag;
 
 		//Return statement
 		return (!options.return_key) ? civ_obj : civ_id;
+	}
+
+	function getCivilisationCapital (arg0_civ_name) {
+		//Convert from parameters
+		var civ_name = arg0_civ_name;
+
+		//Declare local instance variables
+		var capital_obj;
+		var civ_obj = getCivilisation(civ_name);
+
+		//Fetch capital_obj if possible
+		if (civ_obj)
+			if (civ_obj.civData.c >= 0) {
+				var capital_obj = getProvince(civ_obj.civData.c);
+
+				//Return statement
+				return capital_obj;
+			}
+	}
+
+	function getCivilisationName (arg0_civ_name) {
+		//Convert from parameters
+		var civ_name = arg0_civ_name;
+
+		//Declare local instance variables
+		var civ_name = "";
+		var civ_obj = getCivilisation(civ_name);
+
+		//Return name if available
+		if (civ_obj)
+			return civ_obj.sCivName;
+	}
+
+	function getCurrentTag (arg0_civ_name) {
+		//Convert from parameters
+		var civ_name = arg0_civ_name;
+
+		//Return statement
+		return getCivilisation(civ_name, { return_current_tag: true });
 	}
 }

@@ -53,6 +53,33 @@
 	}
 
 	/**
+	 * getProvinceName() - Returns a province name.
+	 * @param {number|Object|String} arg0_province_id - The province to return the name of.
+	 * @param [arg1_options]
+	 * @param [arg1_options.display_province_id=false] - Whether to display the Province ID.
+	 *
+	 * @returns {String}
+	 */
+	function getProvinceName (arg0_province_id, arg1_options) {
+		//Convert from parameters
+		var province_id = arg0_province_id;
+		var options = (arg1_options) ? arg1_options : {};
+
+		//Declare local instance variables
+		var province_id;
+		var province_name;
+		var province_obj = getProvince(province_id);
+
+		//Set province_id; province_name
+		province_id = province_obj.getProvinceID();
+		province_name = province_obj.getProvinceName();
+
+		//Return statement
+		return (!options.display_province_id) ?
+			province_name : province_name + " (ID: " + province_id + ")";
+	}
+
+	/**
 	 * modifyCity() - Creates/modifies an extant city object to change the province name for.
 	 * @param {String} arg0_province_id - The province ID for which to change the province name for.
 	 * @param {String} arg1_city_name - The city name for the province.

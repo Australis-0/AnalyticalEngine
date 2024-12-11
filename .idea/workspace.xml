@@ -5,43 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09b6f7f8-b868-43e9-b471-ac1dbd15fa3b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/java_handler/java_files.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/map/map_data_framework.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mods/11.59/game/temp_notes.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Config/console/map_commands.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Config/console/map_commands.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/civilisations/civilisation_framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/civilisations/civilisation_framework.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/map/map_framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/map/map_framework.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/provinces/province_framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/provinces/province_framework.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/global_initialisation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/global_initialisation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/JS/arrays_basic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/arrays_basic.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/JS/arrays_maths.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/arrays_maths.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/JS/colours_basic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/colours_basic.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/JS/console_basic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/console_basic.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/JS/objects_maths.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/objects_maths.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/JS/strings_basic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/strings_basic.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/JS/strings_split.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/strings_split.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EvalClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/LanguageManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/LanguageManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Civilizations.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Civilizations.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/advantages/Advantages.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/advantages/Advantages.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/ProvinceDetails.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/ProvinceDetails.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_10.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_10.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_11.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_11.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_12.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_12.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_13.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_13.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_6.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_6.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_7.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_7.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_8.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_8.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_9.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_9.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/AlliancesSpecial.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/AlliancesSpecial.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/provinces/province_name_framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/provinces/province_name_framework.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/Data.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/Data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/DataProvinces.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/DataProvinces.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/Details.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/Details.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/preview.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/preview.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/statistics/AoH.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/statistics/AoH.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/statistics/fra.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/statistics/fra.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/jakowski/LanguageManager$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/jakowski/LanguageManager$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/jakowski/LanguageManager$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/jakowski/LanguageManager$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/jakowski/LanguageManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/jakowski/LanguageManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/Governments.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/Governments.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +122,7 @@
       <workItem from="1731784417683" duration="45000" />
       <workItem from="1731784537399" duration="102233000" />
       <workItem from="1732517435175" duration="135466000" />
-      <workItem from="1733268013030" duration="104424000" />
+      <workItem from="1733268013030" duration="112182000" />
     </task>
     <servers />
   </component>

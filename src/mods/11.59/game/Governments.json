@@ -6,7 +6,7 @@
 			Extra_Tag: "",
 			GOV_GROUP_ID: 0,
 
-			RulerTitle: NoLeader,
+			RulerTitle: AnarchyNoLeader,
 			RulerRoman: false,
 			KingsImages: false,
 
@@ -36,7 +36,7 @@
 			Extra_Tag: "a",
 			GOV_GROUP_ID: 0,
 
-			RulerTitle: NoLeader,
+			RulerTitle: AnarchoCommunismNoLeader,
 			RulerRoman: false,
 			KingsImages: false,
 
@@ -68,7 +68,7 @@
 			Extra_Tag: "b",
 			GOV_GROUP_ID: 1,
 
-			RulerTitle: Comrade,
+			RulerTitle: CommunismComrade,
 			RulerRoman: false,
 			KingsImages: false,
 
@@ -95,10 +95,10 @@
 		},
 		{
 			Name: "Partial Communism",
-			Extra_Tag: "b",
+			Extra_Tag: "c",
 			GOV_GROUP_ID: 1,
 
-			RulerTitle: Comrade,
+			RulerTitle: PartialCommunismPremier,
 			RulerRoman: false,
 			KingsImages: false,
 
@@ -125,10 +125,10 @@
 		},
 		{
 			Name: "Titoism",
-			Extra_Tag: "b",
+			Extra_Tag: "d",
 			GOV_GROUP_ID: 1,
 
-			RulerTitle: Comrade,
+			RulerTitle: TitoismPrimeMinisterPresident,
 			RulerRoman: false,
 			KingsImages: false,
 
@@ -154,11 +154,11 @@
 			AI_PEACE_ORDER_CHANCE2: 15,
 		},
 		{
-			Name: "Real Communism",
-			Extra_Tag: "b",
+			Name: "Real Socialism",
+			Extra_Tag: "e",
 			GOV_GROUP_ID: 1,
 
-			RulerTitle: Comrade,
+			RulerTitle: RealSocialismGeneralSecretary,
 			RulerRoman: false,
 			KingsImages: false,
 
@@ -185,10 +185,10 @@
 		},
 		{
 			Name: "Marxism-Leninism",
-			Extra_Tag: "b",
+			Extra_Tag: "f",
 			GOV_GROUP_ID: 1,
 
-			RulerTitle: Comrade,
+			RulerTitle: MarxismLeninismFirstSecretary,
 			RulerRoman: false,
 			KingsImages: false,
 
@@ -215,10 +215,10 @@
 		},
 		{
 			Name: "Maoism",
-			Extra_Tag: "b",
+			Extra_Tag: "g",
 			GOV_GROUP_ID: 1,
 
-			RulerTitle: Comrade,
+			RulerTitle: MaoismChairman,
 			RulerRoman: false,
 			KingsImages: false,
 
@@ -245,10 +245,10 @@
 		},
 		{
 			Name: "Stalinism",
-			Extra_Tag: "b",
+			Extra_Tag: "h",
 			GOV_GROUP_ID: 1,
 
-			RulerTitle: Comrade,
+			RulerTitle: StalinismGeneralSecretary,
 			RulerRoman: false,
 			KingsImages: false,
 
@@ -275,10 +275,10 @@
 		},
 		{
 			Name: "Dengism",
-			Extra_Tag: "b",
+			Extra_Tag: "i",
 			GOV_GROUP_ID: 1,
 
-			RulerTitle: Comrade,
+			RulerTitle: DengismChairmanOfTheCentralAdvisoryCommission,
 			RulerRoman: false,
 			KingsImages: false,
 
@@ -305,10 +305,10 @@
 		},
 		{
 			Name: "State Capitalism",
-			Extra_Tag: "b",
+			Extra_Tag: "j",
 			GOV_GROUP_ID: 1,
 
-			RulerTitle: Comrade,
+			RulerTitle: StateCapitalismGeneralSecretary,
 			RulerRoman: false,
 			KingsImages: false,
 
@@ -337,10 +337,10 @@
 		//Democracy
 		{
 			Name: "Eurocommunism",
-			Extra_Tag: "b",
+			Extra_Tag: "k",
 			GOV_GROUP_ID: 2,
 
-			RulerTitle: Comrade,
+			RulerTitle: EurocommunismPresident,
 			RulerRoman: false,
 			KingsImages: false,
 
@@ -367,10 +367,10 @@
 		},
 		{
 			Name: "Left-Wing Populism",
-			Extra_Tag: "b",
+			Extra_Tag: "l",
 			GOV_GROUP_ID: 2,
 
-			RulerTitle: Comrade,
+			RulerTitle: EurocommunismPresident,
 			RulerRoman: false,
 			KingsImages: false,
 
@@ -397,10 +397,10 @@
 		},
 		{
 			Name: "Democratic Socialism",
-			Extra_Tag: "b",
+			Extra_Tag: "m",
 			GOV_GROUP_ID: 2,
 
-			RulerTitle: Comrade,
+			RulerTitle: DemocraticSocialismPresident,
 			RulerRoman: false,
 			KingsImages: false,
 
@@ -427,10 +427,10 @@
 		},
 		{
 			Name: "Social Democrat",
-			Extra_Tag: "b",
+			Extra_Tag: "n",
 			GOV_GROUP_ID: 2,
 
-			RulerTitle: Comrade,
+			RulerTitle: SocialDemocratPresident,
 			RulerRoman: false,
 			KingsImages: false,
 
@@ -457,10 +457,10 @@
 		},
 		{
 			Name: "Social Liberal",
-			Extra_Tag: "b",
+			Extra_Tag: "o",
 			GOV_GROUP_ID: 2,
 
-			RulerTitle: Comrade,
+			RulerTitle: SocialLiberalPresident,
 			RulerRoman: false,
 			KingsImages: false,
 
@@ -487,10 +487,10 @@
 		},
 		{
 			Name: "Centrism",
-			Extra_Tag: "b",
+			Extra_Tag: "p",
 			GOV_GROUP_ID: 2,
 
-			RulerTitle: Comrade,
+			RulerTitle: CentrismPresident,
 			RulerRoman: false,
 			KingsImages: false,
 
@@ -517,10 +517,10 @@
 		},
 		{
 			Name: "Market Liberal",
-			Extra_Tag: "b",
+			Extra_Tag: "q",
 			GOV_GROUP_ID: 2,
 
-			RulerTitle: Comrade,
+			RulerTitle: MarketLiberalPresident,
 			RulerRoman: false,
 			KingsImages: false,
 
@@ -547,10 +547,10 @@
 		},
 		{
 			Name: "Conservative",
-			Extra_Tag: "b",
+			Extra_Tag: "r",
 			GOV_GROUP_ID: 2,
 
-			RulerTitle: Comrade,
+			RulerTitle: ConservativePresident,
 			RulerRoman: false,
 			KingsImages: false,
 
@@ -577,10 +577,10 @@
 		},
 		{
 			Name: "Reactionary",
-			Extra_Tag: "b",
+			Extra_Tag: "s",
 			GOV_GROUP_ID: 2,
 
-			RulerTitle: Comrade,
+			RulerTitle: ReactionaryPresident,
 			RulerRoman: false,
 			KingsImages: false,
 
@@ -607,10 +607,10 @@
 		},
 		{
 			Name: "Right-Wing Populism",
-			Extra_Tag: "b",
+			Extra_Tag: "t",
 			GOV_GROUP_ID: 2,
 
-			RulerTitle: Comrade,
+			RulerTitle: RightWingPopulismPresident,
 			RulerRoman: false,
 			KingsImages: false,
 
@@ -637,10 +637,10 @@
 		},
 		{
 			Name: "Illiberal Democracy",
-			Extra_Tag: "b",
+			Extra_Tag: "u",
 			GOV_GROUP_ID: 2,
 
-			RulerTitle: Comrade,
+			RulerTitle: IlliberalDemocracyPresident,
 			RulerRoman: false,
 			KingsImages: false,
 
@@ -667,10 +667,10 @@
 		},
 		{
 			Name: "Authoritarian Democracy",
-			Extra_Tag: "b",
+			Extra_Tag: "v",
 			GOV_GROUP_ID: 2,
 
-			RulerTitle: Comrade,
+			RulerTitle: AuthoritarianDemocracyPresident,
 			RulerRoman: false,
 			KingsImages: false,
 
@@ -699,10 +699,10 @@
 		//Right-wing Authoritarianism
 		{
 			Name: "Dictatorship",
-			Extra_Tag: "b",
+			Extra_Tag: "w",
 			GOV_GROUP_ID: 3,
 
-			RulerTitle: Comrade,
+			RulerTitle: DictatorshipPrimeMinister,
 			RulerRoman: false,
 			KingsImages: false,
 
@@ -729,10 +729,10 @@
 		},
 		{
 			Name: "Authoritarian Conservatism",
-			Extra_Tag: "b",
+			Extra_Tag: "x",
 			GOV_GROUP_ID: 3,
 
-			RulerTitle: Comrade,
+			RulerTitle: AuthoritarianConservatismPrimeMinister,
 			RulerRoman: false,
 			KingsImages: false,
 
@@ -759,10 +759,10 @@
 		},
 		{
 			Name: "Authoritarian Dictatorship",
-			Extra_Tag: "b",
+			Extra_Tag: "y",
 			GOV_GROUP_ID: 3,
 
-			RulerTitle: Comrade,
+			RulerTitle: AuthoritarianDictatorshipPresident,
 			RulerRoman: false,
 			KingsImages: false,
 
@@ -789,10 +789,10 @@
 		},
 		{
 			Name: "Military Junta",
-			Extra_Tag: "b",
+			Extra_Tag: "z",
 			GOV_GROUP_ID: 3,
 
-			RulerTitle: Comrade,
+			RulerTitle: MilitaryJuntaPresident,
 			RulerRoman: false,
 			KingsImages: false,
 
@@ -819,10 +819,10 @@
 		},
 		{
 			Name: "Falangism",
-			Extra_Tag: "b",
+			Extra_Tag: "0",
 			GOV_GROUP_ID: 3,
 
-			RulerTitle: Comrade,
+			RulerTitle: FalangismHead,
 			RulerRoman: false,
 			KingsImages: false,
 
@@ -849,10 +849,10 @@
 		},
 		{
 			Name: "Clerical Fascism",
-			Extra_Tag: "b",
+			Extra_Tag: "1",
 			GOV_GROUP_ID: 3,
 
-			RulerTitle: Comrade,
+			RulerTitle: ClericalFascismChancellor,
 			RulerRoman: false,
 			KingsImages: false,
 
@@ -879,10 +879,10 @@
 		},
 		{
 			Name: "Fascism",
-			Extra_Tag: "b",
+			Extra_Tag: "2",
 			GOV_GROUP_ID: 3,
 
-			RulerTitle: Comrade,
+			RulerTitle: FascismPrimeMinister,
 			RulerRoman: false,
 			KingsImages: false,
 
@@ -909,10 +909,10 @@
 		},
 		{
 			Name: "National Socialism",
-			Extra_Tag: "b",
+			Extra_Tag: "3",
 			GOV_GROUP_ID: 3,
 
-			RulerTitle: Comrade,
+			RulerTitle: NationalSocialismFuhrer,
 			RulerRoman: false,
 			KingsImages: false,
 
@@ -940,10 +940,10 @@
 
 		{
 			Name: "Pan-Arabism",
-			Extra_Tag: "b",
+			Extra_Tag: "4",
 			GOV_GROUP_ID: 4,
 
-			RulerTitle: Comrade,
+			RulerTitle: PanArabismPresident,
 			RulerRoman: false,
 			KingsImages: false,
 
@@ -970,10 +970,10 @@
 		},
 		{
 			Name: "Islamic Republic",
-			Extra_Tag: "b",
+			Extra_Tag: "5",
 			GOV_GROUP_ID: 4,
 
-			RulerTitle: Comrade,
+			RulerTitle: IslamicRepublicPrimeMinister,
 			RulerRoman: false,
 			KingsImages: false,
 
@@ -1000,10 +1000,10 @@
 		},
 		{
 			Name: "Islamism",
-			Extra_Tag: "b",
+			Extra_Tag: "6",
 			GOV_GROUP_ID: 4,
 
-			RulerTitle: Comrade,
+			RulerTitle: IslamismPresident,
 			RulerRoman: false,
 			KingsImages: false,
 
@@ -1030,10 +1030,10 @@
 		},
 		{
 			Name: "Islamic Theocracy",
-			Extra_Tag: "b",
+			Extra_Tag: "7",
 			GOV_GROUP_ID: 4,
 
-			RulerTitle: Comrade,
+			RulerTitle: IslamicTheocracySupremeLeader,
 			RulerRoman: false,
 			KingsImages: false,
 
@@ -1060,10 +1060,10 @@
 		},
 		{
 			Name: "Radical Islamism",
-			Extra_Tag: "b",
+			Extra_Tag: "8",
 			GOV_GROUP_ID: 4,
 
-			RulerTitle: Comrade,
+			RulerTitle: RadicalIslamismSupremeLeader,
 			RulerRoman: false,
 			KingsImages: false,
 
@@ -1091,14 +1091,14 @@
 
 		{
 			Name: "Electoral Monarchy",
-			Extra_Tag: "b",
+			Extra_Tag: "9",
 			GOV_GROUP_ID: 4,
 
-			RulerTitle: Comrade,
-			RulerRoman: false,
-			KingsImages: false,
+			RulerTitle: ElectoralMonarchyKing,
+			RulerRoman: true,
+			KingsImages: true,
 
-			Color: [23, 107, 30],
+			Color: [66, 134, 244],
 
 			MUST_BE_CHANGED: false,
 			REQUIRED_TECHNOLOGY: -1,
@@ -1121,14 +1121,14 @@
 		},
 		{
 			Name: "Semi-Constitutional Monarchy",
-			Extra_Tag: "b",
+			Extra_Tag: "[",
 			GOV_GROUP_ID: 4,
 
-			RulerTitle: Comrade,
-			RulerRoman: false,
-			KingsImages: false,
+			RulerTitle: SemiConstitutionalMonarchyKing,
+			RulerRoman: true,
+			KingsImages: true,
 
-			Color: [23, 107, 30],
+			Color: [66, 134, 244],
 
 			MUST_BE_CHANGED: false,
 			REQUIRED_TECHNOLOGY: -1,
@@ -1149,6 +1149,126 @@
 			AI_PEACE_ORDER2: [1, 2, 0, 4, 5, 6, 7, 8, 3],
 			AI_PEACE_ORDER_CHANCE2: 15,
 		},
+		{
+			Name: "Theocratic Monarchy",
+			Extra_Tag: "]",
+			GOV_GROUP_ID: 4,
+
+			RulerTitle: TheocraticMonarchyKing,
+			RulerRoman: true,
+			KingsImages: true,
+
+			Color: [66, 134, 244],
+
+			MUST_BE_CHANGED: false,
+			REQUIRED_TECHNOLOGY: -1,
+			REVOLUTIONISTS: false,
+			STARTING_ARMY: 1.0,
+			TRIBAL: false,
+
+			AI_BUILD_BUILDING: 100,
+			AI_BUILD_DEVELOP_INFRASTRUCTURE: 68,
+			AI_BUILD_INCREASE_TAX_EFFICIENCY: 40,
+			AI_BUILD_INCREASE_MANPOWER: 52,
+			AI_BUILD_INCREASE_GROWTH_RATE: 62,
+			AI_BUILD_INVEST_IN_ECONOMY: 25,
+			AI_BUILD_SCORE: [85, 65, 30, 60, 35, 65, 45, 25, 45, 65, 85, 40, 25, 50, 40, 0],
+			AI_EXTRA_AGGRESSIVENESS: 0,
+			AI_PEACE_ORDER: [2, 4, 6, 0, 1, 5, 3, 7, 8],
+			AI_PEACE_ORDER_CHANCE: 85,
+			AI_PEACE_ORDER2: [1, 2, 0, 4, 5, 6, 7, 8, 3],
+			AI_PEACE_ORDER_CHANCE2: 15,
+		},
+		{
+			Name: "Absolute Monarchy",
+			Extra_Tag: "{",
+			GOV_GROUP_ID: 4,
+
+			RulerTitle: AbsoluteMonarchyKing,
+			RulerRoman: true,
+			KingsImages: true,
+
+			Color: [66, 134, 244],
+
+			MUST_BE_CHANGED: false,
+			REQUIRED_TECHNOLOGY: -1,
+			REVOLUTIONISTS: false,
+			STARTING_ARMY: 1.0,
+			TRIBAL: false,
+
+			AI_BUILD_BUILDING: 100,
+			AI_BUILD_DEVELOP_INFRASTRUCTURE: 68,
+			AI_BUILD_INCREASE_TAX_EFFICIENCY: 40,
+			AI_BUILD_INCREASE_MANPOWER: 52,
+			AI_BUILD_INCREASE_GROWTH_RATE: 62,
+			AI_BUILD_INVEST_IN_ECONOMY: 25,
+			AI_BUILD_SCORE: [85, 65, 30, 60, 35, 65, 45, 25, 45, 65, 85, 40, 25, 50, 40, 0],
+			AI_EXTRA_AGGRESSIVENESS: 0,
+			AI_PEACE_ORDER: [2, 4, 6, 0, 1, 5, 3, 7, 8],
+			AI_PEACE_ORDER_CHANCE: 85,
+			AI_PEACE_ORDER2: [1, 2, 0, 4, 5, 6, 7, 8, 3],
+			AI_PEACE_ORDER_CHANCE2: 15,
+		},
+		{
+			Name: "Empire",
+			Extra_Tag: "}",
+			GOV_GROUP_ID: 4,
+
+			RulerTitle: EmpireEmperor,
+			RulerRoman: true,
+			KingsImages: true,
+
+			Color: [66, 134, 244],
+
+			MUST_BE_CHANGED: false,
+			REQUIRED_TECHNOLOGY: -1,
+			REVOLUTIONISTS: false,
+			STARTING_ARMY: 1.0,
+			TRIBAL: false,
+
+			AI_BUILD_BUILDING: 100,
+			AI_BUILD_DEVELOP_INFRASTRUCTURE: 68,
+			AI_BUILD_INCREASE_TAX_EFFICIENCY: 40,
+			AI_BUILD_INCREASE_MANPOWER: 52,
+			AI_BUILD_INCREASE_GROWTH_RATE: 62,
+			AI_BUILD_INVEST_IN_ECONOMY: 25,
+			AI_BUILD_SCORE: [85, 65, 30, 60, 35, 65, 45, 25, 45, 65, 85, 40, 25, 50, 40, 0],
+			AI_EXTRA_AGGRESSIVENESS: 0,
+			AI_PEACE_ORDER: [2, 4, 6, 0, 1, 5, 3, 7, 8],
+			AI_PEACE_ORDER_CHANCE: 85,
+			AI_PEACE_ORDER2: [1, 2, 0, 4, 5, 6, 7, 8, 3],
+			AI_PEACE_ORDER_CHANCE2: 15,
+		},
+		{
+			Name: "Theocracy",
+			Extra_Tag: "(",
+			GOV_GROUP_ID: 4,
+
+			RulerTitle: TheocracyPope,
+			RulerRoman: true,
+			KingsImages: true,
+
+			Color: [255, 255, 255],
+
+			MUST_BE_CHANGED: false,
+			REQUIRED_TECHNOLOGY: -1,
+			REVOLUTIONISTS: false,
+			STARTING_ARMY: 1.0,
+			TRIBAL: false,
+
+			AI_BUILD_BUILDING: 100,
+			AI_BUILD_DEVELOP_INFRASTRUCTURE: 68,
+			AI_BUILD_INCREASE_TAX_EFFICIENCY: 40,
+			AI_BUILD_INCREASE_MANPOWER: 52,
+			AI_BUILD_INCREASE_GROWTH_RATE: 62,
+			AI_BUILD_INVEST_IN_ECONOMY: 25,
+			AI_BUILD_SCORE: [85, 65, 30, 60, 35, 65, 45, 25, 45, 65, 85, 40, 25, 50, 40, 0],
+			AI_EXTRA_AGGRESSIVENESS: 0,
+			AI_PEACE_ORDER: [2, 4, 6, 0, 1, 5, 3, 7, 8],
+			AI_PEACE_ORDER_CHANCE: 85,
+			AI_PEACE_ORDER2: [1, 2, 0, 4, 5, 6, 7, 8, 3],
+			AI_PEACE_ORDER_CHANCE2: 15,
+		}
 	],
 
 	Age_of_History: Governments
