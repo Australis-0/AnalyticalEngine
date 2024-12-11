@@ -100,7 +100,8 @@
 	CivTAG: "arg",
 	CivID: 15,
 	PCID: 15,
-	CPID: 4089
+	CPID: 4089,
+	Population: 15912000
 },
 {
 	CivTAG: "chl",
@@ -154,7 +155,8 @@
 	CivTAG: "afg_m",
 	CivID: 24,
 	PCID: 24,
-	CPID: 5505
+	CPID: 5505,
+	Population: 7301178
 },
 {
 	CivTAG: "nep_m",
@@ -184,13 +186,15 @@
 	CivTAG: "uni_m",
 	CivID: 29,
 	PCID: 29,
-	CPID: 957
+	CPID: 957,
+	Population: 48987800
 },
 {
 	CivTAG: "fra",
 	CivID: 30,
 	PCID: 30,
-	CPID: 2097
+	CPID: 2097,
+	Population: 40125230
 },
 {
 	CivTAG: "net",
@@ -349,10 +353,11 @@
 	CPID: 2031
 },
 {
-	CivTAG: "rus_c",
+	CivTAG: "rus_h",
 	CivID: 57,
 	PCID: 57,
-	CPID: 3375
+	CPID: 3375,
+	Population: 170500000
 },
 {
 	CivTAG: "ice",
@@ -370,7 +375,8 @@
 	CivTAG: "aneg",
 	CivID: 60,
 	PCID: 60,
-	CPID: 4749
+	CPID: 4749,
+	Population: 8483547
 },
 {
 	CivTAG: "tpal_m",
@@ -406,7 +412,8 @@
 	CivTAG: "ad2",
 	CivID: 66,
 	PCID: 66,
-	CPID: 5390
+	CPID: 5390,
+	Population: 80516
 },
 {
 	CivTAG: "tmus_m",
@@ -514,7 +521,8 @@
 	CivTAG: "eth_m",
 	CivID: 84,
 	PCID: 84,
-	CPID: 4797
+	CPID: 4797,
+	Population: 17100000
 },
 {
 	CivTAG: "lii",
@@ -568,19 +576,22 @@
 	CivTAG: "brra",
 	CivID: 93,
 	PCID: 93,
-	CPID: 5872
+	CPID: 5872,
+	Population: 300300000
 },
 {
 	CivTAG: "yucl",
 	CivID: 94,
 	PCID: 94,
-	CPID: 6560
+	CPID: 6560,
+	Population: 9066000
 },
 {
 	CivTAG: "guag",
 	CivID: 95,
 	PCID: 95,
-	CPID: 6631
+	CPID: 6631,
+	Population: 27210000
 },
 {
 	CivTAG: "aus_m",
@@ -778,7 +789,8 @@
 	CivTAG: "qin_f",
 	CivID: 128,
 	PCID: 128,
-	CPID: 6706
+	CPID: 6706,
+	Population: 355907000
 },
 {
 	CivTAG: "mon_c",
@@ -1159,7 +1171,8 @@
 	CivTAG: "peoplesliberationarmy",
 	CivID: 191,
 	PCID: 191,
-	CPID: 6933
+	CPID: 6933,
+	Population: 100120000
 },
 {
 	CivTAG: "khosorutleague",
@@ -1243,7 +1256,8 @@
 	CivTAG: "sovietoccupationofmanchuria",
 	CivID: 205,
 	PCID: 205,
-	CPID: 6533
+	CPID: 6533,
+	Population: 41822000
 },
 {
 	CivTAG: "sovietciviladministrationinkorea",
@@ -1585,7 +1599,8 @@
 	CivTAG: "amreli",
 	CivID: 262,
 	PCID: 262,
-	CPID: 5635
+	CPID: 5635,
+	Population: 576242
 },
 {
 	CivTAG: "bantwa",
@@ -1909,7 +1924,8 @@
 	CivTAG: "alwar",
 	CivID: 316,
 	PCID: 316,
-	CPID: 5862
+	CPID: 5862,
+	Population: 861896
 },
 {
 	CivTAG: "jindstate",
@@ -1993,7 +2009,8 @@
 	CivTAG: "akalkot",
 	CivID: 330,
 	PCID: 330,
-	CPID: 5745
+	CPID: 5745,
+	Population: 100047
 },
 {
 	CivTAG: "kolhapur",
@@ -2083,7 +2100,8 @@
 	CivTAG: "alipura",
 	CivID: 345,
 	PCID: 345,
-	CPID: 5894
+	CPID: 5894,
+	Population: 15316
 },
 {
 	CivTAG: "charkhari",
@@ -2101,7 +2119,8 @@
 	CivTAG: "ajaigarh",
 	CivID: 348,
 	PCID: 348,
-	CPID: 5890
+	CPID: 5890,
+	Population: 98236
 },
 {
 	CivTAG: "maihar",
@@ -2119,7 +2138,8 @@
 	CivTAG: "albb3",
 	CivID: 351,
 	PCID: 351,
-	CPID: 5896
+	CPID: 5896,
+	Population: 10000
 },
 {
 	CivTAG: "unchehra",
@@ -2341,7 +2361,8 @@
 	CivTAG: "anglofrenchcondominiumofthenewhebrides",
 	CivID: 388,
 	PCID: 388,
-	CPID: 7405
+	CPID: 7405,
+	Population: 45000
 },
 {
 	CivTAG: "leb",

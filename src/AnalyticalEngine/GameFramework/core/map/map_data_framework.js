@@ -280,6 +280,7 @@
 	 * writeASCFileToImage() - Used to write a .asc file to a valid image.
 	 * @param {String} arg0_input_file_path - The file path of the ASC file to translate to a PNG.
 	 * @param {options} [arg1_options]
+	 * @param {String} [arg1_options.mode="percentage"] - What the mode should be. Either 'absolute'/'percentage'.
 	 * @param {String} [arg1_options.output_file_path="asc_output.png"] - The output file path in the base directory.
 	 * @param {String} [arg1_options.scalar=2] - The scalar to divide the max_value by.
 	 *
@@ -291,6 +292,7 @@
 		var options = (arg1_options) ? arg1_options : {};
 
 		//Initialise options
+		if (!options.mode) options.mode = "percentage";
 		if (!options.output_file_path) options.output_file_path = "asc_output.png";
 		options.scalar = returnSafeNumber(options.scalar, 2);
 
@@ -315,9 +317,13 @@
 				var local_value = asc_dataframe[x][i];
 
 				if (local_value != undefined) {
-					var local_g = Math.min(Math.round((local_value/max_value)*100), 200);
+					if (options.mode == "absolute") {
+						local_colour = convertIntToRGBA(local_value);
+					} else if (options.mode == "percentage") {
+						var local_g = Math.min(Math.round((local_value/max_value)*100), 200);
 
-					local_colour = convertRGBAToInt([0, local_g, 0, 255]);
+						local_colour = convertRGBAToInt([0, local_g, 0, 255]);
+					}
 				} else {
 					local_colour = convertRGBAToInt([0, 0, 0, 0]);
 				}
