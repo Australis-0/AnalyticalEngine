@@ -131,24 +131,49 @@
 			}
 	}
 
-	function getCivilisationName (arg0_civ_name) {
+	/**
+	 * getCivilisationName() - Returns the present civilisation name.
+	 * @param {number|Object|String} arg0_civ_name - The civilisation to pass to the function.
+	 * @param [arg1_options]
+	 * @param [arg1_options.display_debug=false] - Whether to display full debug information.
+	 *
+	 * @returns {String}
+	 */
+	function getCivilisationName (arg0_civ_name, arg1_options) {
 		//Convert from parameters
 		var civ_name = arg0_civ_name;
+		var options = (arg1_options) ? arg1_options : {};
 
 		//Declare local instance variables
-		var civ_name = "";
 		var civ_obj = getCivilisation(civ_name);
 
-		//Return name if available
-		if (civ_obj)
+		//Return statement; guard clause if debug information is not required
+		if (civ_obj && !options.display_debug)
 			return civ_obj.sCivName;
+
+		//If options.display_debug is true, print full string
+		if (civ_obj && options.display_debug) {
+			var actual_civ_name = getCivilisationName(civ_obj);
+			var capital_obj = getCivilisationCapital(civ_obj);
+			var civ_tag = getCurrentTag(civ_obj);
+
+			var capital_name = (capital_obj) ?
+				getProvinceName(capital_obj, { display_province_id: true }) : "None";
+
+			//Return statement
+			return civ_tag + " - (" + actual_civ_name + ") - Capital: " + capital_name;
+		}
 	}
 
 	function getCurrentTag (arg0_civ_name) {
 		//Convert from parameters
 		var civ_name = arg0_civ_name;
 
+		//Declare local instance variables
+		var civ_obj = getCivilisation(civ_name);
+
 		//Return statement
-		return getCivilisation(civ_name, { return_current_tag: true });
+		if (civ_obj)
+			return civ_obj.civData.t;
 	}
 }

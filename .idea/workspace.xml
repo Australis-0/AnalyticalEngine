@@ -8,12 +8,18 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Config/console/map_commands.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Config/console/map_commands.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/civilisations/civilisation_framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/civilisations/civilisation_framework.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/map/map_framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/map/map_framework.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/provinces/province_framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/provinces/province_framework.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/provinces/province_name_framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/provinces/province_name_framework.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/Data.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/Data.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/preview.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/preview.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/Governments.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/Governments.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/languages/Bundle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/languages/Bundle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/languages/Bundle/Bundle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/languages/Bundle_.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/languages/loading/Bundle/Bundle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11/59/languages/loading/Bundle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/GameCivs/game/civilizations/frenchprotectorateinmorocco.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/GameCivs/game/civilizations/frenchprotectorateoftunisia.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/GameCivs/game/civilizations/syrianrepublic.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/GameCivs/gfx/flagsH/frenchprotectorateinmorocco.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/GameCivs/gfx/flagsH/frenchprotectorateoftunisia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/GameCivs/gfx/flagsH/syrianrepublic.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +128,7 @@
       <workItem from="1731784417683" duration="45000" />
       <workItem from="1731784537399" duration="102233000" />
       <workItem from="1732517435175" duration="135466000" />
-      <workItem from="1733268013030" duration="112182000" />
+      <workItem from="1733268013030" duration="117272000" />
     </task>
     <servers />
   </component>

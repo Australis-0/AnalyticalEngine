@@ -46,9 +46,30 @@ config.console.map_commands = {
 		description: "Prints all civilisations on map.",
 		special_function: function (args) {
 			var all_civ_tags = getAllCurrentCivTags();
+			var civ_names = [];
 
-			console.log("Current Civs (" + all_civ_tags.length + "):\n");
-			console.log("- " + all_civ_tags.join("\n- "));
+			//Iterate over all_civ_tags to fill in civ_names
+			for (var i = 0; i < all_civ_tags.length; i++)
+				civ_names.push(getCivilisationName(all_civ_tags[i], { display_debug: true }));
+
+			//Print current civ tags to console
+			console.log("Current Civilisations (" + civ_names.length + "):\n- " + civ_names.join("\n- "));
+		}
+	},
+	print_map_civilisations_with_no_government: {
+		name: "print-map-civilisations-with-no-government",
+		description: "Prints all civilisations on map currently without a government.",
+		special_function: function (args) {
+			var all_civ_tags = getAllCurrentCivTags();
+			var civ_names = [];
+
+			//Iterate over all_civ_tags to fetch civs without government
+			for (var i = 0; i < all_civ_tags.length; i++)
+				if (all_civ_tags[i].split("_").length == 1)
+					civ_names.push(getCivilisationName(all_civ_tags[i], { display_debug: true }));
+
+			//Print current civ tags to console
+			console.log("Civilisations with No Government (" + civ_names.length + "):\n- " + civ_names.join("\n- "));
 		}
 	},
 	print_map_cities: {
