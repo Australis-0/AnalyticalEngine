@@ -129,7 +129,7 @@
 
 		//Declare local instance variables
 		var all_object_keys = Object.keys(object);
-		var local_maximum;
+		var local_maximum = -Infinity;
 
 		//Iterate over all_object_keys
 		for (var i = 0; i < all_object_keys.length; i++) {
@@ -171,7 +171,7 @@
 
 		//Declare local instance variables
 		var all_object_keys = Object.keys(object);
-		var local_minimum;
+		var local_minimum = Infinity;
 
 		//Iterate over all_object_keys
 		for (var i = 0; i < all_object_keys.length; i++) {
@@ -298,6 +298,27 @@
 
 		//Return statement
 		return object;
+	}
+
+	/**
+	 * modifyValue() - Modifies a key value in an object. Helps to deal with undefineds.
+	 *
+	 * @param {Object} arg0_object - The object to modify.
+	 * @param {String} arg1_key - The key to modify.
+	 * @param {number} arg2_value - The value to modify the object key by.
+	 */
+	function modifyValue (arg0_object, arg1_key, arg2_value) {
+		//Convert from parameters
+		var object = arg0_object;
+		var key = arg1_key;
+		var value = arg2_value;
+
+		//Set value if not defined; otherwise modify it
+		if (object[key]) {
+			object[key] += value;
+		} else {
+			object[key] = value;
+		}
 	}
 
 	/**

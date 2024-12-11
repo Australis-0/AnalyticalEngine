@@ -141,7 +141,7 @@
 	}
 
 	/**
-	 * splitString() - Splits a string equally a character count.
+	 * splitString() - Splits a string into multiple pages via a character count.
 	 * @param {String} arg0_input_string - The string to pass to the function.
 	 * @param {number} [arg1_length=200] - The number of characters to allow per page.
 	 *
@@ -168,6 +168,29 @@
 
 		//Return statement
 		return string_array;
+	}
+
+	/**
+	 * splitStringByNumber() - Splits a string by character interval.
+	 * @param {String} arg0_input_string - The string to pass to the function.
+	 * @param {number} [arg1_length=1] - The number of characters per element.
+	 *
+	 * @returns {Array<String>}
+	 */
+	function splitStringByNumber (arg0_input_string, arg1_length) {
+		//Convert from parameters
+		var input_string = arg0_input_string;
+		var length = returnSafeNumber(arg1_length, 1);
+
+		//Declare local instance variables
+		var processed_string = [];
+
+		//Iterate over input_string.length
+		for (var i = 0; i < input_string.length; i += length)
+			processed_string.push(input_string.substring(i, i + length));
+
+		//Return statement
+		return processed_string;
 	}
 
 	/**

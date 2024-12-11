@@ -124,12 +124,12 @@
 	 */
 	function flattenArray (arg0_input_array) {
 		//Convert from parameters
-		var input_array = arg0_input_array;
+		var input_array = getList(arg0_input_array);
 
 		//Declare local instance variables/functions
 		function internalHelperFlatten (arg0_array) {
 			//Convert from parameters
-			var array = [];
+			var array = arg0_array;
 
 			//Declare local instance variables
 			var return_array = [];
@@ -137,13 +137,13 @@
 			//Iterate over array
 			for (var i = 0; i < array.length; i++)
 				if (Array.isArray(array[i])) {
-					result = result.concat(flatten(array[i]));
+					return_array = return_array.concat(internalHelperFlatten(array[i]));
 				} else {
-					result.push(array[i]);
+					return_array.push(array[i]);
 				}
 
 			//Return statement
-			return result;
+			return return_array;
 		}
 
 		//Return statement

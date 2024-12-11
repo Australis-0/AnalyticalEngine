@@ -1,7 +1,13 @@
 //Import classes
 {
+	this.BufferedReader = Java.type("java.io.BufferedReader");
+	this.BufferedWriter = Java.type("java.io.BufferedWriter");
+	this.File = Java.type("java.io.File");
+	this.FileReader = Java.type("java.io.FileReader");
+	this.FileWriter = Java.type("java.io.FileWriter");
 	//this.Game = "aoc.kingdoms.lukasz.jakowski.Game"; - Dynamically loaded
 	this.ProvinceDraw = Java.type("aoc.kingdoms.lukasz.map.province.ProvinceDraw");
+	this.StringBuilder = Java.type("java.lang.StringBuilder");
 }
 
 //Initialise functions

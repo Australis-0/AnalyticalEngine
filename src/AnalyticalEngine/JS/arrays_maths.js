@@ -531,6 +531,50 @@
 		return determinant;
 	}
 
+	function getMaximumInArray (arg0_array, arg1_max_value) {
+		//Convert from parameters
+		var array = arg0_array;
+		var max_value = arg1_max_value;
+
+		//Iterate over array recursively
+		for (var i = 0; i < array.length; i++)
+			if (Array.isArray(array[i])) {
+				max_value = getMaximumInArray(array[i], max_value);
+			} else {
+				if (typeof array[i] == "number")
+					if (max_value) {
+						max_value = Math.max(array[i], max_value);
+					} else {
+						max_value = array[i];
+					}
+			}
+
+		//Return statement
+		return max_value;
+	}
+
+	function getMinimumInArray (arg0_array, arg1_min_value) {
+		//Convert from parameters
+		var array = arg0_array;
+		var min_value = arg1_min_value;
+
+		//Iterate over array recursively
+		for (var i = 0; i < array.length; i++)
+			if (Array.isArray(array[i])) {
+				min_value = getMinimumInArray(array[i], min_value);
+			} else {
+				if (typeof array[i] == "number")
+					if (min_value) {
+						min_value = Math.min(array[i], min_value);
+					} else {
+						min_value = array[i];
+					}
+			}
+
+		//Return statement
+		return min_value;
+	}
+
 	/**
 	 * getSum() - Fetches the sum of a List.
 	 * @param arg0_array {Array} - The array to fetch the sum of.

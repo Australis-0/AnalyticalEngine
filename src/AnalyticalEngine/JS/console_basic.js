@@ -14,6 +14,8 @@ var console = {
                 processed_string += console.convertObjectToString(array[i], { inline: true });
             } else if (typeof array[i] == "string") {
                 processed_string += '"' + array[i].toString() + '"';
+            } else if (array[i] == undefined) {
+                processed_string += "undefined";
             } else {
                 processed_string += array[i].toString();
             }

@@ -5,6 +5,7 @@
 
 package aoc.kingdoms.lukasz.jakowski;
 
+import AnalyticalEngine.Debugger.console;
 import aoc.kingdoms.lukasz.jakowski.Steam.SteamManager;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;
@@ -70,7 +71,7 @@ public class LanguageManager {
     public void loadModsLanguages(String nTag) {
         try {
             this.modsBundles.clear();
-            System.out.println("Called loadModsLanguages() with '" + nTag + "'.");
+            console.log("Called loadModsLanguages() with '" + nTag + "'.");
 
             for(int i = 0; i < SteamManager.modsFoldersSize; ++i) {
                 if (Gdx.files.external((String)SteamManager.modsFolders.get(i) + "languages/Bundle" + "_" + nTag + ".properties").exists()) {

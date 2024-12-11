@@ -49,7 +49,13 @@ var global = {
 				all_mapmodes: getAllMapmodes(),
 				custom_mapmode: undefined,
 				province_colours: {}
-			}
+			},
+			/*
+			provinces: (Object)
+				<province_key>: (Object)
+					growth_rate: (Number, Percentage)
+			 */
+			provinces: {}
 		};
 	}
 }

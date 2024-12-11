@@ -15,6 +15,39 @@
 	}
 
 	/**
+	 * convertIntToRGB() - Converts int back to [r, g, b].
+	 * @param {number} - The int to convert back to RGB/A.
+	 *
+	 * @returns {Array<number, number, number, number>}
+	 */
+	function convertIntToRGB (arg0_colour) {
+		//Convert from parameters
+		var colour = arg0_colour;
+
+		//Return statement
+		return convertIntToRGBA(colour);
+	}
+
+	/**
+	 * convertIntToRGBA() - Converts int back to [r, g, b, a].
+	 * @param {number} - The int to convert back to RGBA.
+	 *
+	 * @returns {Array<number, number, number, number>}
+	 */
+	function convertIntToRGBA (arg0_colour) {
+		//Convert from parameters
+		var colour = arg0_colour;
+
+		//Return statement
+		return [
+			(colour >> 16) & 0xFF, //red
+			(colour >> 8) & 0xFF,  //green
+			colour & 0xFF,         //blue
+			(colour >> 24) & 0xFF  //alpha
+		];
+	}
+
+	/**
 	 * convertRGB() - Converts [r, g, b] to float fraction format.
 	 * @param {Array<number, number, number>} arg0_rgb - The RGB array to convert.
 	 *
@@ -53,6 +86,50 @@
 	}
 
 	/**
+	 * convertRGBToInt() - Converts [r, g, b] to int fraction format.
+	 * @param {Array<number, number, number>} arg0_rgb - The RGB array to convert.
+	 *
+	 * @returns {number}
+	 */
+	function convertRGBToInt (arg0_rgb) {
+		//Convert from parameters
+		var rgb = arg0_rgb;
+
+		//Return statement
+		return convertRGBAToInt([rgb[0], rgb[1], rgb[2], 255]);
+	}
+
+	/**
+	 * convertRGBAToInt() - Converts [r, g, b, a] to int fraction format.
+	 * @param {Array<number, number, number, number>} arg0_rgba - The RGBA array to convert.
+	 *
+	 * @returns {number}
+	 */
+	function convertRGBAToInt (arg0_rgba) {
+		//Convert from parameters
+		var rgba = arg0_rgba;
+
+		//Return statement
+		return ((rgba[3] & 0xFF) << 24) | //alpha
+			((rgba[0] & 0xFF) << 16) | //red
+			((rgba[1] & 0xFF) << 8)  | //green
+			(rgba[2] & 0xFF); //blue
+	}
+
+	function decodeRGBAsNumber (arg0_rgb) {
+		//Convert from parameters
+		var rgb = arg0_rgb;
+
+		//Declare local instance variables
+		var r = rgb[0];
+		var g = rgb[1];
+		var b = rgb[2];
+
+		//Return statement
+		return (r << 16) | (g << 8) | b;
+	}
+
+	/**
 	 * deltaE() - Calculates the deltaE between two RGB values.
 	 * @param {Array<number, number, number>} arg0_rgb_a - The 1st RGB code to pass.
 	 * @param {Array<number, number, number>} arg1_rgb_b - The 2nd RGB code to pass.
@@ -83,6 +160,20 @@
 
 		//Return statement
 		return (i < 0) ? 0 : Math.sqrt(i);
+	}
+
+	function encodeNumberAsRGB (arg0_number) {
+		//Convert from parameters
+		var number = returnSafeNumber(arg0_number);
+
+		//Declare local instance variables
+		var r = (number >> 16) & 0xFF;
+		var g = (number >> 8) & 0xFF;
+		var b = number & 0xFF;
+		var a = 255;
+
+		//Return statement
+		return [r, g, b, a];
 	}
 
 	/**

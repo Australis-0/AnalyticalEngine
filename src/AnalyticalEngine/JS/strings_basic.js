@@ -178,6 +178,26 @@
 	}
 
 	/**
+	 * padZeroes() - Pads a string with zeroes to be fixed width.
+	 * @param {String} [arg0_input_string=""] - The string to pass to the function.
+	 * @param {number} [arg1_length=1] - The length to pad the string out to.
+	 *
+	 * @returns {String}
+	 */
+	function padZeroes (arg0_input_string, arg1_length) {
+		//Convert from parameters
+		var input_string = (arg0_input_string) ? arg0_input_string : "";
+		var length = (arg1_length) ? arg1_length : 1;
+
+		//Pad zeroes
+		for (var i = input_string.length; i < length; i++)
+			input_string = "0" + input_string;
+
+		//Return statement
+		return input_string;
+	}
+
+	/**
 	 * parseBoolean() - Returns a human-readable version of a boolean.
 	 * @param {boolean} arg0_input_boolean - The boolean to pass to the function.
 	 *

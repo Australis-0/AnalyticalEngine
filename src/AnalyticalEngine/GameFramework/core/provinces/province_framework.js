@@ -1,7 +1,17 @@
 //Declare imports
 {
 	//this.Game = "aoc.kingdoms.lukasz.jakowski.Game"; - Dynamically loaded
+	this.BufferedImage = Java.type("java.awt.image.BufferedImage");
 	this.CivilizationRegionsManager = Java.type("aoc.kingdoms.lukasz.map.civilization.CivilizationRegionsManager");
+	this.File = Java.type("java.io.File");
+	this.Graphics2D = Java.type("java.awt.Graphics2D");
+	this.FileHandle = Java.type("com.badlogic.gdx.files.FileHandle");
+	this.ImageIO = Java.type("javax.imageio.ImageIO")
+	this.Pixmap = Java.type("com.badlogic.gdx.graphics.Pixmap");
+	this.PixmapIO = Java.type("com.badlogic.gdx.graphics.PixmapIO");
+	this.ProvinceDrawDetails = Java.type("aoc.kingdoms.lukasz.map.province.ProvinceDrawDetails");
+	this.Random = Java.type("java.util.Random");
+	this.Texture = Java.type("com.badlogic.gdx.graphics.Texture");
 }
 
 //Initialise functions
@@ -194,6 +204,13 @@
 		}
 	}
 
+	/**
+	 * setProvinceOwners() - Sets a new Civilisation owner for multiple provinces.
+	 * @param {Array<number|Object<Province>|String>} arg0_province_names - The province names to transfer to a new owner.
+	 * @param {number|Object<Civilisation>|String} arg1_civilisation_name - The civilisation to transfer provinces to.
+	 *
+	 * @returns {number}
+	 */
 	function setProvinceOwners (arg0_province_names, arg1_civilisation_name) {
 		//Convert from parameters
 		var province_names = getList(arg0_province_names);
@@ -207,12 +224,34 @@
 			setProvinceOwner(province_names[i], civilisation_name, {
 				do_not_display: (i == province_names.length - 1)
 			});
+
+		//Return statement
+		return province_names.length;
+	}
+
+	function setProvincePopulationGrowthRate (arg0_province_name, arg1_value) {
+		//Convert from parameters
+		var province_name = arg0_province_name;
+		var value = Math.round(returnSafeNumber(arg1_value*100));
+
+		//Declare local instance variables
+		var province_obj = getProvince(province_name);
+
+		//Set growth rate
+		province_obj.setGrowthRate(value);
+		ProvinceDrawDetails.updateDrawProvinceDetails_GrowthRate(province_obj.getProvinceID());
+
+		//Return statement
+		return value;
 	}
 
 	/**
 	 * updateProvinces() - Fixes all bugs related to province status changes (e.g. sea province assignment).
 	 */
 	function updateProvinces () {
+		//Declare local instance variables
+		var all_provinces = getAllProvinces();
 
+		//
 	}
 }
