@@ -113,6 +113,25 @@
 		return (!options.return_key) ? civ_obj : civ_id;
 	}
 
+	function getCivilisationActualName (arg0_civ_name) {
+		//Convert from parameters
+		var civ_name = arg0_civ_name;
+
+		//Declare local instance variables
+		var civilisation_tag = getCurrentTag(civ_name);
+		var split_tag = civilisation_tag.split("_");
+		var localisation_value;
+
+		//Fetch localisation_value name for civ
+		localisation_value = Game.lang.getCiv(split_tag[0]);
+		if (split_tag.length > 1)
+			if (Game.lang.getCiv(civilisation_tag) != civilisation_tag)
+				localisation_value = Game.lang.getCiv(civilisation_tag);
+
+		//Return statement
+		return localisation_value;
+	}
+
 	function getCivilisationCapital (arg0_civ_name) {
 		//Convert from parameters
 		var civ_name = arg0_civ_name;
@@ -175,5 +194,25 @@
 		//Return statement
 		if (civ_obj)
 			return civ_obj.civData.t;
+	}
+
+	function setCivilisationName (arg0_civ_name, arg1_new_civ_name, arg2_options) {
+		//Convert from parameters
+		var civ_name = arg0_civ_name;
+		var new_civ_name = arg1_new_civ_name;
+		var options = (arg2_options) ? arg2_options : {};
+
+		//Declare local instance variables
+		var civilisation_obj = getCivilisation(civ_name);
+
+		var civilisation_id = civilisation_obj.getCivID();
+
+		//Rename civilisation only if valid new_civ_name is provided
+		if (new_civ_name)
+			if (typeof new_civ_name == "string" && new_civ_name.length > 0) {
+				civilisation_obj.setCivName(new_civ_name);
+				if (!options.do_not_reload)
+					CivilizationRegionsManager.buildCivilizationsRegions_TextOver(civilisation_id);
+			}
 	}
 }

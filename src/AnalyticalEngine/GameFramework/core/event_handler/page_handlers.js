@@ -22,5 +22,15 @@
 				initialisePostLoadingEventHandlers();
 			}
 		};
+		global.on_page_change.scenario_handler = function (arg0_current_page) {
+			//Convert from parameters
+			var current_page = arg0_current_page;
+
+			//Load scenario data on NEW_GAME
+			if (current_page == "NEW_GAME") {
+				console.log("Scenario loaded: " + getCurrentScenario());
+				loadScenario(getCurrentScenario());
+			}
+		}
 	}
 }

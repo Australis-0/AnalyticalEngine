@@ -2,10 +2,12 @@
 // Source code recreated from a .class file by IntelliJ IDEA
 // (powered by FernFlower decompiler)
 //
-
 package aoc.kingdoms.lukasz.jakowski;
 
 import AnalyticalEngine.Debugger.console;
+import aoc.kingdoms.lukasz.jakowski.CFG;
+import aoc.kingdoms.lukasz.jakowski.FileManager;
+import aoc.kingdoms.lukasz.jakowski.Game;
 import aoc.kingdoms.lukasz.jakowski.Steam.SteamManager;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;
@@ -38,21 +40,43 @@ public class LanguageManager {
         this.updateKeyOutput();
     }
 
-    public final void initCivsBundle(String nTag) {
-        FileHandle fileHandleCivs = FileManager.loadFile("game/languages/civilizations/Bundle");
-        if (nTag != null && nTag.length() > 0) {
-            if (FileManager.loadFile("game/languages/civilizations/Bundle_" + nTag + ".properties").exists()) {
-                Locale localeCivs = new Locale(nTag);
-                this.bundleCivs = I18NBundle.createBundle(fileHandleCivs, localeCivs);
-            } else {
-                Locale localeCivs = new Locale("");
-                this.bundleCivs = I18NBundle.createBundle(fileHandleCivs, localeCivs);
-            }
+    public final void initCivsBundle (String arg0_language_id) {
+        //Convert from parameters
+        String language_id = arg0_language_id;
+
+        //Declare local instance variables
+        FileHandle file_handle_civs = FileManager.loadFile("game/languages/civilizations/Bundle");
+        boolean language_file_exists = FileManager.loadFile("game/languages/civilizations/Bundle_" + language_id + ".properties").exists();
+
+        //1. Load this.bundleCivs by default
+        if (language_id != null && language_id.length() > 0 && !language_file_exists) {
+            Locale locale_civs = new Locale(language_id);
+            this.bundleCivs = I18NBundle.createBundle(file_handle_civs, locale_civs);
         } else {
-            Locale localeCivs = new Locale(nTag);
-            this.bundleCivs = I18NBundle.createBundle(fileHandleCivs, localeCivs);
+            Locale locale_civs = new Locale(language_id);
+            this.bundleCivs = I18NBundle.createBundle(file_handle_civs, locale_civs);
         }
 
+        //2. Iterate over all mod folders and override this.bundleCivs if applicable
+        for (int i = 0; i < SteamManager.modsFoldersSize; i++) {
+            FileHandle local_file_handle_civs = FileManager.loadFile((String) SteamManager.modsFolders.get(i) + "languages/civilisations/Bundle.properties");
+            FileHandle local_locale_file_handle_civs = FileManager.loadFile((String) SteamManager.modsFolders.get(i) + "languages/civilisations/Bundle_" + language_id + ".properties");
+
+            if (local_file_handle_civs.exists()) {
+                Locale local_locale_civs = new Locale(language_id);
+                FileHandle local_stripped_file_handle_civs = local_file_handle_civs.sibling("Bundle");
+
+                //Set bundleCivs; make sure to strip .properties
+                this.bundleCivs = I18NBundle.createBundle(local_stripped_file_handle_civs, local_locale_civs);
+            }
+            if (local_locale_file_handle_civs.exists()) {
+                FileHandle local_stripped_file_handle_civs = local_file_handle_civs.sibling("Bundle");
+                Locale local_locale_civs = new Locale(language_id);
+
+                //Set bundleCivs; make sure to strip .properties
+                this.bundleCivs = I18NBundle.createBundle(local_stripped_file_handle_civs, local_locale_civs);
+            }
+        }
     }
 
     public final void initLoadingBundle(String nTag) {

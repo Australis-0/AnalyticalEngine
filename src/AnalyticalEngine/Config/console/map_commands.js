@@ -72,6 +72,37 @@ config.console.map_commands = {
 			console.log("Civilisations with No Government (" + civ_names.length + "):\n- " + civ_names.join("\n- "));
 		}
 	},
+	print_map_civilisations_with_overridden_names: {
+		name: "print-map-civilisations-with-overridden-names",
+		description: "Prints all civilisations that have their base names overridden.",
+		special_function: function (args) {
+			var all_civ_tags = getAllCurrentCivTags();
+			var civ_names_with_overridden_names = [];
+			var civ_tags_with_overridden_names = [];
+
+			//Iterate over all_civ_tags to fetch civs with overridden names
+			for (var i = 0; i < all_civ_tags.length; i++) {
+				var local_split_tag = all_civ_tags[i].split("_");
+				var localisation_value;
+
+				//Fetch localisation_value name for civ
+				localisation_value = getCivilisationActualName(all_civ_tags[i]);
+
+				//Check to see if localisation_value matches current name
+				if (localisation_value) {
+					var local_civ_name = getCivilisationName(all_civ_tags[i]);
+
+					if (local_civ_name != localisation_value) {
+						civ_names_with_overridden_names.push(getCivilisationName(all_civ_tags[i], { display_debug: true }));
+						civ_tags_with_overridden_names.push(all_civ_tags[i]);
+					}
+				}
+			}
+
+			//Print current civ tags to console
+			console.log("Current Civilisations With Overridden Names (" + civ_names_with_overridden_names.length + "):\n- " + civ_names_with_overridden_names.join("\n- "));
+		}
+	},
 	print_map_cities: {
 		name: "print-map-cities",
 		description: "Prints all currently named cities on the map.",

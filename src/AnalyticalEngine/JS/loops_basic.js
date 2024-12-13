@@ -79,7 +79,11 @@ var TimeUnit = java.util.concurrent.TimeUnit;
                 Thread.sleep(delay);
                 local_function();
             } catch (e) {
-                console.error(e);
+                try {
+                    console.error(e);
+                } catch (e) {
+                    console.error("An error could not be logged to console due to ArrayIndexOutOfBoundsException!");
+                }
             }
         });
         timeout_thread.start();
