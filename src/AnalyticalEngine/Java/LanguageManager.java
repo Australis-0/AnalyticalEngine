@@ -19,9 +19,9 @@ import java.util.Locale;
 
 public class LanguageManager {
     public static boolean translationsKeysMode = false;
-    private I18NBundle bundle;
-    private I18NBundle bundleCivs;
-    private I18NBundle bundleLoading;
+    public I18NBundle bundle;
+    public I18NBundle bundleCivs;
+    public I18NBundle bundleLoading;
     public int iLoading_NumOfTexts = 0;
     private KeyOutput keyOutput;
     public List<I18NBundle> modsBundles = new ArrayList();
@@ -243,35 +243,35 @@ public class LanguageManager {
         return this.keyOutput.get(key, nValue, nValue2);
     }
 
-    public String getCiv(String key) {
-        try {
-            return this.bundleCivs.get(key);
-        } catch (Exception var8) {
-            if (key != null && key.indexOf(95) > 0) {
-                try {
-                    for(int i = 0; i < this.modsBundlesSize; ++i) {
-                        try {
-                            return ((I18NBundle)this.modsBundles.get(i)).get(key.substring(0, key.indexOf(95)));
-                        } catch (Exception e) {
-                            throw new RuntimeException(e);
-                        }
-                    }
+    public String getCiv (String arg0_key) { //[WIP] - Refactor this so that it actually returns the correct key in line with base tags
+        //Convert from parameters
+        String key = arg0_key;
 
-                    return this.bundleCivs.get(key.substring(0, key.indexOf(95)));
-                } catch (Exception var7) {
-                }
-            }
+        //Guard clause if the current actual tag (e.g. 'eth_m') is already included.
+        try { return this.bundleCivs.get(key); } catch (Exception e) {}
 
+        //If key is defined and it contains an underscore, but the actual tag localisation couldn't be found, fetch the base tag localisation
+        if (key != null && key.indexOf(95) > 0) {
+            //Try to push the base tag
             try {
-                Game.LoadCivilizationData tCiv = Game.loadCivilization(key);
-                if (tCiv.Name != null && tCiv.Name.length() > 0) {
-                    return tCiv.Name;
-                }
-            } catch (Exception var5) {
-            }
+                String[] split_tag = key.split("_");
 
-            return key;
+                //Return statement
+                return this.bundleCivs.get(split_tag[0]);
+            } catch (Exception e) {}
         }
+
+        //Load default civilisation loc (i.e. in civilisation.json files) as fallback.
+        try {
+            Game.LoadCivilizationData civ_obj = Game.loadCivilization(key);
+
+            if (civ_obj.Name != null && civ_obj.Name.length() > 0)
+                //Return statement
+                return civ_obj.Name;
+        } catch (Exception e) {}
+
+        //Return raw key if no localisation could be found
+        return key;
     }
 
     public String getLoading(String key) {
