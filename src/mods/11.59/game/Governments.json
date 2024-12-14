@@ -244,6 +244,36 @@
 			AI_PEACE_ORDER_CHANCE2: 15,
 		},
 		{
+			Name: "National Stalinism",
+			Extra_Tag: ".",
+			GOV_GROUP_ID: 1,
+
+			RulerTitle: NationalStalinism,
+			RulerRoman: false,
+			KingsImages: false,
+
+			Color: [204, 0, 0],
+
+			MUST_BE_CHANGED: false,
+			REQUIRED_TECHNOLOGY: -1,
+			REVOLUTIONISTS: false,
+			STARTING_ARMY: 1.0,
+			TRIBAL: false,
+
+			AI_BUILD_BUILDING: 100,
+			AI_BUILD_DEVELOP_INFRASTRUCTURE: 68,
+			AI_BUILD_INCREASE_TAX_EFFICIENCY: 40,
+			AI_BUILD_INCREASE_MANPOWER: 52,
+			AI_BUILD_INCREASE_GROWTH_RATE: 62,
+			AI_BUILD_INVEST_IN_ECONOMY: 25,
+			AI_BUILD_SCORE: [85, 65, 30, 60, 35, 65, 45, 25, 45, 65, 85, 40, 25, 50, 40, 0],
+			AI_EXTRA_AGGRESSIVENESS: 0,
+			AI_PEACE_ORDER: [2, 4, 6, 0, 1, 5, 3, 7, 8],
+			AI_PEACE_ORDER_CHANCE: 85,
+			AI_PEACE_ORDER2: [1, 2, 0, 4, 5, 6, 7, 8, 3],
+			AI_PEACE_ORDER_CHANCE2: 15,
+		},
+		{
 			Name: "Stalinism",
 			Extra_Tag: "h",
 			GOV_GROUP_ID: 1,
@@ -706,7 +736,7 @@
 			RulerRoman: false,
 			KingsImages: false,
 
-			Color: [150, 150, 150],
+			Color: [80, 80, 80],
 
 			MUST_BE_CHANGED: false,
 			REQUIRED_TECHNOLOGY: -1,
@@ -736,7 +766,7 @@
 			RulerRoman: false,
 			KingsImages: false,
 
-			Color: [150, 150, 150],
+			Color: [80, 80, 80],
 
 			MUST_BE_CHANGED: false,
 			REQUIRED_TECHNOLOGY: -1,
@@ -766,7 +796,7 @@
 			RulerRoman: false,
 			KingsImages: false,
 
-			Color: [150, 150, 150],
+			Color: [80, 80, 80],
 
 			MUST_BE_CHANGED: false,
 			REQUIRED_TECHNOLOGY: -1,
@@ -796,7 +826,7 @@
 			RulerRoman: false,
 			KingsImages: false,
 
-			Color: [150, 150, 150],
+			Color: [80, 80, 80],
 
 			MUST_BE_CHANGED: false,
 			REQUIRED_TECHNOLOGY: -1,
@@ -1098,7 +1128,7 @@
 			RulerRoman: true,
 			KingsImages: true,
 
-			Color: [66, 134, 244],
+			Color: [255, 194, 36],
 
 			MUST_BE_CHANGED: false,
 			REQUIRED_TECHNOLOGY: -1,
@@ -1128,7 +1158,7 @@
 			RulerRoman: true,
 			KingsImages: true,
 
-			Color: [66, 134, 244],
+			Color: [255, 194, 36],
 
 			MUST_BE_CHANGED: false,
 			REQUIRED_TECHNOLOGY: -1,
@@ -1158,7 +1188,7 @@
 			RulerRoman: true,
 			KingsImages: true,
 
-			Color: [66, 134, 244],
+			Color: [255, 194, 36],
 
 			MUST_BE_CHANGED: false,
 			REQUIRED_TECHNOLOGY: -1,
@@ -1188,7 +1218,7 @@
 			RulerRoman: true,
 			KingsImages: true,
 
-			Color: [66, 134, 244],
+			Color: [255, 194, 36],
 
 			MUST_BE_CHANGED: false,
 			REQUIRED_TECHNOLOGY: -1,
@@ -1218,7 +1248,7 @@
 			RulerRoman: true,
 			KingsImages: true,
 
-			Color: [66, 134, 244],
+			Color: [255, 194, 36],
 
 			MUST_BE_CHANGED: false,
 			REQUIRED_TECHNOLOGY: -1,
@@ -1249,6 +1279,67 @@
 			KingsImages: true,
 
 			Color: [255, 255, 255],
+
+			MUST_BE_CHANGED: false,
+			REQUIRED_TECHNOLOGY: -1,
+			REVOLUTIONISTS: false,
+			STARTING_ARMY: 1.0,
+			TRIBAL: false,
+
+			AI_BUILD_BUILDING: 100,
+			AI_BUILD_DEVELOP_INFRASTRUCTURE: 68,
+			AI_BUILD_INCREASE_TAX_EFFICIENCY: 40,
+			AI_BUILD_INCREASE_MANPOWER: 52,
+			AI_BUILD_INCREASE_GROWTH_RATE: 62,
+			AI_BUILD_INVEST_IN_ECONOMY: 25,
+			AI_BUILD_SCORE: [85, 65, 30, 60, 35, 65, 45, 25, 45, 65, 85, 40, 25, 50, 40, 0],
+			AI_EXTRA_AGGRESSIVENESS: 0,
+			AI_PEACE_ORDER: [2, 4, 6, 0, 1, 5, 3, 7, 8],
+			AI_PEACE_ORDER_CHANCE: 85,
+			AI_PEACE_ORDER2: [1, 2, 0, 4, 5, 6, 7, 8, 3],
+			AI_PEACE_ORDER_CHANCE2: 15,
+		},
+
+		{
+			Name: "Colonial Administration",
+			Extra_Tag: ")",
+			GOV_GROUP_ID: 5,
+
+			RulerTitle: ColonialAdministrationGovernorGeneral,
+			RulerRoman: true,
+			KingsImages: true,
+
+			Color: [160, 150, 115],
+
+			MUST_BE_CHANGED: false,
+			REQUIRED_TECHNOLOGY: -1,
+			REVOLUTIONISTS: false,
+			STARTING_ARMY: 1.0,
+			TRIBAL: false,
+
+			AI_BUILD_BUILDING: 100,
+			AI_BUILD_DEVELOP_INFRASTRUCTURE: 68,
+			AI_BUILD_INCREASE_TAX_EFFICIENCY: 40,
+			AI_BUILD_INCREASE_MANPOWER: 52,
+			AI_BUILD_INCREASE_GROWTH_RATE: 62,
+			AI_BUILD_INVEST_IN_ECONOMY: 25,
+			AI_BUILD_SCORE: [85, 65, 30, 60, 35, 65, 45, 25, 45, 65, 85, 40, 25, 50, 40, 0],
+			AI_EXTRA_AGGRESSIVENESS: 0,
+			AI_PEACE_ORDER: [2, 4, 6, 0, 1, 5, 3, 7, 8],
+			AI_PEACE_ORDER_CHANCE: 85,
+			AI_PEACE_ORDER2: [1, 2, 0, 4, 5, 6, 7, 8, 3],
+			AI_PEACE_ORDER_CHANCE2: 15,
+		},
+		{
+			Name: "Military Administration",
+			Extra_Tag: "!",
+			GOV_GROUP_ID: 5,
+
+			RulerTitle: MilitaryAdministrationGeneral,
+			RulerRoman: true,
+			KingsImages: true,
+
+			Color: [160, 150, 115],
 
 			MUST_BE_CHANGED: false,
 			REQUIRED_TECHNOLOGY: -1,
