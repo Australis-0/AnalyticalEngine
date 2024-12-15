@@ -1,7 +1,66 @@
 //Initialise functions
 {
-	function initialiseViewMapmodes () {
+	function initialiseEditorViewMapmodes () {
+		//Declare local instance variables
+		var all_mapmodes = Object.keys(config.mapmodes);
+		if (!main.interfaces.editor_view_mapmodes)
+			main.interfaces.editor_view_mapmodes = {};
+		var interface_obj = main.interfaces.editor_view_mapmodes;
 
+		if (!interface_obj.menu_obj) {
+			var editor_view_mapmodes_menu_obj = {
+				id: "editor_view_mapmodes",
+				name: "AnalyticalEngine\nMapmodes:",
+				no_title: false,
+				persistent: ["SCENARIO_WASTELAND_CONTINENTS", "SCENARIO_WASTELAND", "SCENARIO_CIVILIZATIONS", "SCENARIO_ASSIGN", "SCENARIO_SETTINGS"],
+
+				anchor: "top_left",
+				can_close: true,
+				height: 400,
+				width: 3*CFG.BUTTON_WIDTH,
+				x: 200,
+				y: 300,
+
+				default: {
+					type: "button",
+					name: "Default",
+					width: 3,
+					x: 0,
+					y: 0,
+
+					special_function: function (e) {
+						clearMapmode();
+					}
+				}
+			};
+			var mapmode_button_y = 1;
+
+			//Iterate over all_mapmodes
+			for (var i = 0; i < all_mapmodes.length; i++)
+				(function (local_mapmode_id) {
+					var local_mapmode = config.mapmodes[all_mapmodes[i]];
+
+					if (local_mapmode.is_editor_mapmode) {
+						editor_view_mapmodes_menu_obj[all_mapmodes[i]] = {
+							type: "button",
+							name: (local_mapmode.name) ? local_mapmode.name : all_mapmodes[i],
+							width: 3,
+							x: 0,
+							y: mapmode_button_y,
+
+							special_function: function (e) {
+								console.log("Switching mapmode to: " + local_mapmode_id);
+								switchMapmode(local_mapmode_id);
+							}
+						};
+
+						mapmode_button_y++;
+					}
+				})(all_mapmodes[i]);
+
+			//Create context menu
+			var editor_view_mapmodes_menu = createContextMenu(editor_view_mapmodes_menu_obj);
+		}
 	}
 
 	/**
@@ -12,7 +71,7 @@
 		if (!main.interfaces.mod_editor)
 			main.interfaces.mod_editor = {};
 		var interface_obj = main.interfaces.mod_editor;
-		interface_obj.open_windows = [];
+		interface_obj.active_windows = [];
 
 		if (!interface_obj.menu_obj)
 			var mod_editor_menu = createContextMenu({
@@ -20,6 +79,7 @@
 				name: "AnalyticalEngine\nMod Editor:",
 				no_title: false,
 				persistent: ["SCENARIO_WASTELAND_CONTINENTS", "SCENARIO_WASTELAND", "SCENARIO_CIVILIZATIONS", "SCENARIO_ASSIGN", "SCENARIO_SETTINGS"],
+				pinned: true,
 
 				anchor: "top_left",
 				can_close: false,
@@ -100,8 +160,7 @@
 						var button_el = e.element;
 						var interface_obj = e.interface_obj;
 
-						if (!interface_obj.open_windows.includes("mod_editor_mapmodes"))
-							interface_obj.open_windows.push("mod_editor_mapmodes");
+						openEditorWindow("editor_view_mapmodes", initialiseEditorViewMapmodes);
 					}
 				},
 				view_mod_editor_settings: {
@@ -116,8 +175,8 @@
 						var button_el = e.element;
 						var interface_obj = e.interface_obj;
 
-						if (!interface_obj.open_windows.includes("mod_editor_settings"))
-							interface_obj.open_windows.push("mod_editor_settings");
+						if (!interface_obj.active_windows.includes("editor_settings"))
+							interface_obj.active_windows.push("editor_settings");
 					}
 				}
 			});
@@ -128,6 +187,30 @@
 
 		//Return statement
 		return main.interfaces.mod_editor;
+	}
+
+	function openEditorWindow (arg0_window_id, arg1_window_function) {
+		//Convert from parameters
+		var window_id = arg0_window_id;
+		var window_function = arg1_window_function;
+
+		//Declare local instance variables
+		var interface_obj = main.interfaces.mod_editor;
+
+		if (interface_obj)
+			if (!interface_obj.active_windows.includes(window_id)) {
+				//Call window_function();
+				if (typeof window_function == "function") {
+					window_function();
+				} else if (typeof window_function == "string") {
+					this[window_function]();
+				}
+				interface_obj.active_windows.push(window_id);
+			} else {
+				if (main.interfaces[window_id]) try {
+					main.interfaces[window_id].menu_obj.setVisible(true);
+				} catch (e) { console.error(e); }
+			}
 	}
 
 	/**

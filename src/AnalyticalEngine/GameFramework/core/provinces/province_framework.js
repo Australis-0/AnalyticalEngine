@@ -126,6 +126,28 @@
 		return core_tags;
 	}
 
+	/**
+	 * getProvinceOwner() - Returns the province owner's CivTag.
+	 * @param {String} arg0_province_name - The province name to fetch the province owner for.
+	 * @param {Object} [arg1_options]
+	 * @param {boolean} [arg1_options.return_object=false] - Whether to return the Civilisation object.
+	 *
+	 * @returns {String|Object}
+	 */
+	function getProvinceOwner (arg0_province_name, arg1_options) {
+		//Convert from parameters
+		var province_name = arg0_province_name;
+		var options = (arg1_options) ? arg1_options : {};
+
+		//Declare local instance variables
+		var province_obj = getProvince(province_name);
+		var province_owner = Game.getCiv(province_obj.getCivID());
+
+		//Return statement
+		return (!options.return_object) ?
+			province_owner.getCivTag() : province_owner;
+	}
+
 	function setProvinceController (arg0_province_name, arg1_civ_name, arg2_options) {
 		//Convert from parameters
 		var province_name = arg0_province_name;

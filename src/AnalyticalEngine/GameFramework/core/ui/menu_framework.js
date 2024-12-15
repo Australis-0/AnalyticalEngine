@@ -22,6 +22,14 @@
 
 //Initialise functions
 {
+	function addElements (arg0_interface_id, arg1_context_menu_obj) {
+		//Convert from parameters
+		var interface_id = arg0_interface_id;
+		var context_menu_obj = arg1_context_menu_obj;
+
+		//Declare local instance variables
+	}
+
 	/**
 	 * createButton() - Creates a button and returns it as an Object for adding to menu_elements in createContextMenu().
 	 * @param {Object} [arg0_options]
@@ -101,11 +109,13 @@
 	 * @param {String} [arg0_options.id] - Random ID by default.
 	 *
 	 * @param {boolean} [arg0_options.can_close=true]
+	 * @param {boolean} [arg0_options.do_not_display=false] - Whether to display the menu or simply return its form without .menu_obj;
 	 * @param {boolean} [arg0_options.draggable=true]
 	 * @param {boolean} [arg0_options.has_back_button=false]
 	 * @param {boolean} [arg0_options.lock_hover=false]
 	 * @param {String} [arg0_options.name] - If undefined, the MenuTitle is null instead.
 	 * @param {boolean} [arg0_options.no_title=true] - Whether there is a title or not.
+	 * @param {boolean} [arg0_options.pinned=false] - If the Menu is pinned such that it always sits at the front.
 	 * @param {Array<String>|boolean|String} [arg0_options.persistent=false] - If the menu should persist across view changes. False by default.
 	 * @param {boolean} [arg0_options.raw_coords=false] - Whether to skip auto-formatting and manually supply all coords. For use in non-vertical menus.
 	 * @param {boolean} [arg0_options.resizeable=true]
@@ -174,7 +184,7 @@
 			java.lang.Boolean.TYPE
 		);
 			init_menu_method.setAccessible(true);
-		var interface_obj = initInterface(options.id);
+		var interface_obj = initInterface((!options.do_not_display) ? options.id : "cache");
 		var menu_elements_array_list = new ArrayList();
 		var menu_elements = [];
 		var menu_properties = [];
@@ -249,40 +259,16 @@
 		//3. Set .interface_obj
 		interface_obj.menu_elements = menu_elements;
 		interface_obj.menu_flags = {
-			persistent: (options.persistent)
+			persistent: (options.persistent),
+			pinned: (options.pinned)
 		};
 		interface_obj.menu_properties = menu_properties;
 
-		//Initialise menu and add to view
-		for (var i = 0; i < interface_obj.menu_elements.length; i++)
-			menu_elements_array_list.add(interface_obj.menu_elements[i]);
-
-		//console.log("Invoking init_menu_method with parameters: ", menu_obj + " ", menu_title_obj + " ", options.x + " ", options.y + " ", options.width + " ", options.height + " ", menu_elements_array_list + " ", true + " ", false + " ", true + " ", false + " ");
-		init_menu_method.invoke(
-			menu_obj,
-			menu_title_obj, //(menuTitle)
-			setJavaInteger(options.x), //(iPosX)
-			setJavaInteger(options.y), //(iPosY)
-			setJavaInteger(options.width), //(iWidth)
-			setJavaInteger(options.height), //(iHeight)
-			menu_elements_array_list, //(menuElements)
-			true, //(visible)
-			options.has_back_button, //(initWithBackButton)
-			options.can_close, //(closeable)
-			options.lock_hover); //(lockHoverOverMenuBackground)
-		//If interface_obj.menu_obj was already there, call .setVisible(false) on it
-		if (interface_obj.menu_obj)
-			interface_obj.menu_obj.setVisible(false);
-
-		//Add trackers to main.interfaces[<interface_id>]
-		interface_obj.menu_obj = menu_obj;
-
-		//3. Autoformat interface_obj.menu_obj with table layout
+		//4. Autoformat interface_obj.menu_obj with table layout
 		if (!options.raw_coords) {
 			var current_x_width = 0;
 			var current_y_height = 0;
 			var menu_dimensions = getContextMenuDimensions(options);
-			//console.log("Menu dimensions: " + menu_dimensions);
 
 			//Set .x
 			for (var i = 0; i < menu_dimensions[0] + 1; i++) {
@@ -308,6 +294,37 @@
 				current_y_height += getMaxRowHeight(interface_obj, i);
 			}
 		}
+
+		//Return statement
+		if (options.do_not_display) {
+			delete main.interfaces.cache; //Make sure to delete the cache interface used.
+
+			return interface_obj;
+		}
+
+		//Initialise menu and add to view
+		for (var i = 0; i < interface_obj.menu_elements.length; i++)
+			menu_elements_array_list.add(interface_obj.menu_elements[i]);
+
+		//console.log("Invoking init_menu_method with parameters: ", menu_obj + " ", menu_title_obj + " ", options.x + " ", options.y + " ", options.width + " ", options.height + " ", menu_elements_array_list + " ", true + " ", false + " ", true + " ", false + " ");
+		init_menu_method.invoke(
+			menu_obj,
+			menu_title_obj, //(menuTitle)
+			setJavaInteger(options.x), //(iPosX)
+			setJavaInteger(options.y), //(iPosY)
+			setJavaInteger(options.width), //(iWidth)
+			setJavaInteger(options.height), //(iHeight)
+			menu_elements_array_list, //(menuElements)
+			true, //(visible)
+			options.has_back_button, //(initWithBackButton)
+			options.can_close, //(closeable)
+			options.lock_hover); //(lockHoverOverMenuBackground)
+		//If interface_obj.menu_obj was already there, call .setVisible(false) on it
+		if (interface_obj.menu_obj)
+			interface_obj.menu_obj.setVisible(false);
+
+		//Add trackers to main.interfaces[<interface_id>]
+		interface_obj.menu_obj = menu_obj;
 
 		//KEEP AT BOTTOM! Update Game menu draw so that UI appears on screen
 		Game.menuManager.addNextMenuToView(current_view_id, menu_obj);
@@ -516,6 +533,50 @@
 		return local_menu_elements;
 	}
 
+	function deleteElements (arg0_interface_id, arg1_element_ids) {
+		//Convert from parameters
+		var interface_id = arg0_interface_id;
+		var element_ids = getList(arg1_element_ids);
+
+		//Declare local instance variables
+		var interface_obj = (typeof interface_id != "object") ?
+			main.interfaces[interface_id] : interface_id;
+
+		//Set menuElements as being accessible
+		var menu_class = interface_obj.menu_obj.getClass();
+		var menu_elements_field = menu_class.getDeclaredField("menuElements");
+		var menu_elements_size_field = menu_class.getDeclaredField("iMenuElementsSize");
+		menu_elements_field.setAccessible(true);
+		menu_elements_size_field.setAccessible(true);
+
+		var menu_elements = menu_elements_field.get(interface_obj.menu_obj);
+		var menu_elements_size = menu_elements_size_field.get(interface_obj.menu_obj);
+
+		//Iterate over element_ids
+		for (var i = element_ids.length - 1; i >= 0; i--) {
+			var local_element = getElement(interface_obj, element_ids[i]);
+			var local_remove_element = false;
+
+			if (!isNaN(element_ids[i])) {
+				local_remove_element = true;
+			} else {
+				if (local_element)
+					local_remove_element = true;
+			}
+
+			if (local_remove_element) {
+				var local_index = local_element.index;
+
+				menu_elements.remove(element_ids[i]);
+				interface_obj.menu_elements.splice(local_index, 1);
+				interface_obj.menu_properties.splice(local_index, 1);
+			}
+		}
+
+		//Update menu_elements_size; field must be set manually instead of assigned.
+		menu_elements_size_field.set(interface_obj.menu_obj, menu_elements.size());
+	}
+
 	/**
 	 * deleteInterface() - Deletes an interface/context menu currently on screen.
 	 *
@@ -611,22 +672,25 @@
 	}
 
 	/**
-	 * getContextMenuElement() - Returns {.elements, .properties} after fetching a context menu element by its ID.
-	 * @param {Object} arg0_interface_obj - The interface object to input.
+	 * getElement() - Returns {.elements, .properties} after fetching a context menu element by its ID.
+	 * @param {Object|String} arg0_interface_id - The interface object to input.
 	 * @param {String} arg1_element_id - The .id key to search for.
 	 * @param {Object} [arg2_options]
 	 * @param {boolean} [arg2_options.return_indexes=false] - Whether to return indexes instead of objects.
 	 *
-	 * @returns {{elements: [], indexes: [], properties: []}}
+	 * @returns {{element: MenuElement, index: number, properties: {}}}
 	 */
-	function getContextMenuElement (arg0_interface_obj, arg1_element_id) {
+	function getElement (arg0_interface_id, arg1_element_id) {
 		//Convert from parameters
-		var interface_obj = arg0_interface_obj;
+		var interface_id = arg0_interface_id;
 		var element_id = arg1_element_id;
 
 		//Declare local instance variables
-		var element_exists = [false, []]; //[element_exists, [element_indices]];
-		var search_name = element_id.toLowerCase().trim();
+		var element_exists = [false, -1]; //[element_exists, element_index];
+		var interface_obj = (typeof interface_id != "object") ?
+			main.interfaces[interface_id] : interface_id;
+		var search_name = (typeof element_id == "string") ?
+			element_id.toLowerCase().trim() : element_id;
 
 		//ID search - hard search only
 		{
@@ -634,26 +698,28 @@
 				if (interface_obj.menu_properties[i])
 					if (interface_obj.menu_properties[i].id.toLowerCase() == search_name) {
 						element_exists[0] = true;
-						element_exists[1].push(i);
+						element_exists[1] = i;
 					}
 		}
 
-		var return_elements = [];
-		var return_properties = [];
-
-		//Iterate over element_exists[1]
-		for (var i = 0; i < element_exists[1].length; i++) {
-			var local_element = interface_obj.menu_elements[element_exists[1][i]];
-			var local_properties = interface_obj.menu_properties[element_exists[1][i]];
-
-			return_elements.push(local_element);
-			return_properties.push(local_properties);
+		//Index search - hard search only
+		{
+			if (!isNaN(search_name))
+				if (interface_obj.menu_properties[search_name]) {
+					element_exists[0] = true;
+					element_exists[1] = search_name;
+				}
 		}
 
-		//console.log(return_elements.length + " ", return_properties.length + " ", element_exists[1]);
+		//Declare return_element; return_property.
+		var return_element = (element_exists[0]) ?
+			interface_obj.menu_elements[element_exists[1]] : undefined;
+		var return_property = (element_exists[0]) ?
+			interface_obj.menu_properties[element_exists[1]] : undefined;
 
 		//Return statement
-		return { elements: return_elements, indexes: element_exists[1], properties: return_properties };
+		return (element_exists[0]) ?
+			{ element: return_element, index: element_exists[1], properties: return_property } : undefined;
 	}
 
 	/**
@@ -787,6 +853,24 @@
 
 		//Return statement
 		return total_row_width;
+	}
+
+	function initialiseMenuLogic () {
+		main.menu_logic_loop = setInterval(function(){
+			var all_interfaces = Object.keys(main.interfaces);
+			var current_view_id = Game.menuManager.viewID;
+
+			//Iterate over all_interfaces
+			for (var i = 0; i < all_interfaces.length; i++) {
+				var local_interface = main.interfaces[all_interfaces[i]];
+
+				if (local_interface.menu_flags)
+					if (local_interface.menu_flags.pinned) {
+						Game.menuManager.addNextMenuToView(current_view_id, local_interface.menu_obj);
+						Game.menuManager.setOrderOfMenu(current_view_id);
+					}
+			}
+		}, 100);
 	}
 
 	/**

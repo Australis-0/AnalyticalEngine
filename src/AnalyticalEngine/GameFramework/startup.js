@@ -15,6 +15,7 @@ setTimeout(function(){
 
 		//Initialise EventHandler logic
 		initialiseEventHandlers();
+		initialiseMenuLogic();
 
 		//Initialise Editor handlers
 		initialiseProvinceNamesEditorEventHandlers();

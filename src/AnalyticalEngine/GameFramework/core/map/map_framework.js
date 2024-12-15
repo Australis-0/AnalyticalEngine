@@ -189,12 +189,13 @@
 		var mapmode_id = getMapmodeID(mapmode);
 
 		//Custom mapmode handler
-		if (mapmode_id != undefined) {
-			delete main.mapmodes.custom_mapmode;
-			Game.mapModes.setActiveViewID(mapmode_id);
-		} else {
-			clearMapmode();
-			main.mapmodes.custom_mapmode = mapmode;
-		}
+		if (getCurrentMapmode() != mapmode)
+			if (mapmode_id != undefined) {
+				delete main.mapmodes.custom_mapmode;
+				Game.mapModes.setActiveViewID(mapmode_id);
+			} else {
+				clearMapmode();
+				main.mapmodes.custom_mapmode = mapmode;
+			}
 	}
 }

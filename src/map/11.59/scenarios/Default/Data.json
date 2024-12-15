@@ -1295,7 +1295,7 @@
 	CPID: 6146
 },
 {
-	CivTAG: "manglon",
+	CivTAG: "manglon_{",
 	CivID: 212,
 	PCID: 92,
 	CPID: 6136
@@ -1331,25 +1331,25 @@
 	CPID: 6144
 },
 {
-	CivTAG: "keng3",
+	CivTAG: "keng3_{",
 	CivID: 218,
 	PCID: 92,
 	CPID: 6133
 },
 {
-	CivTAG: "mawkmai",
+	CivTAG: "mawkmai_{",
 	CivID: 219,
 	PCID: 92,
 	CPID: 6115
 },
 {
-	CivTAG: "mongpan",
+	CivTAG: "mongpan_{",
 	CivID: 220,
 	PCID: 92,
 	CPID: 6119
 },
 {
-	CivTAG: "kantarawadi",
+	CivTAG: "kantarawadi_{",
 	CivID: 221,
 	PCID: 92,
 	CPID: 6098
@@ -1451,13 +1451,13 @@
 	CPID: 6112
 },
 {
-	CivTAG: "mongnawn",
+	CivTAG: "mongnawn_{",
 	CivID: 238,
 	PCID: 92,
 	CPID: 6124
 },
 {
-	CivTAG: "mongnai",
+	CivTAG: "mongnai_{",
 	CivID: 239,
 	PCID: 92,
 	CPID: 6120
@@ -1602,7 +1602,7 @@
 	CPID: 5629
 },
 {
-	CivTAG: "rajkot",
+	CivTAG: "rajkot_{",
 	CivID: 263,
 	PCID: 92,
 	CPID: 5626
