@@ -10,7 +10,7 @@
 		if (!interface_obj.menu_obj) {
 			var editor_view_mapmodes_menu_obj = {
 				id: "editor_view_mapmodes",
-				name: "AnalyticalEngine\nMapmodes:",
+				name: "AnalyticalEngine - Mapmodes:",
 				no_title: false,
 				persistent: ["SCENARIO_WASTELAND_CONTINENTS", "SCENARIO_WASTELAND", "SCENARIO_CIVILIZATIONS", "SCENARIO_ASSIGN", "SCENARIO_SETTINGS"],
 
@@ -76,7 +76,7 @@
 		if (!interface_obj.menu_obj)
 			var mod_editor_menu = createContextMenu({
 				id: "mod_editor",
-				name: "AnalyticalEngine\nMod Editor:",
+				name: "AnalyticalEngine - Mod Editor:",
 				no_title: false,
 				persistent: ["SCENARIO_WASTELAND_CONTINENTS", "SCENARIO_WASTELAND", "SCENARIO_CIVILIZATIONS", "SCENARIO_ASSIGN", "SCENARIO_SETTINGS"],
 				pinned: true,

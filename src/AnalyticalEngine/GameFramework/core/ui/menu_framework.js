@@ -306,7 +306,6 @@
 		for (var i = 0; i < interface_obj.menu_elements.length; i++)
 			menu_elements_array_list.add(interface_obj.menu_elements[i]);
 
-		//console.log("Invoking init_menu_method with parameters: ", menu_obj + " ", menu_title_obj + " ", options.x + " ", options.y + " ", options.width + " ", options.height + " ", menu_elements_array_list + " ", true + " ", false + " ", true + " ", false + " ");
 		init_menu_method.invoke(
 			menu_obj,
 			menu_title_obj, //(menuTitle)
