@@ -326,11 +326,13 @@
 		interface_obj.menu_obj = menu_obj;
 
 		//KEEP AT BOTTOM! Update Game menu draw so that UI appears on screen
-		Game.menuManager.addNextMenuToView(current_view_id, menu_obj);
+		var raw_menu_id = Game.menuManager.addNextMenuToView(current_view_id, menu_obj);
 		Game.menuManager.setOrderOfMenu(current_view_id); //This is needed to refresh the menu order
 
 		menu_obj.setWidth_Resize(options.width); //Update scrollable
 		menu_obj.updateScrollable();
+
+		interface_obj.raw_id = raw_menu_id;
 
 		//Return statement
 		return interface_obj;
@@ -858,16 +860,15 @@
 		main.menu_logic_loop = setInterval(function(){
 			var all_interfaces = Object.keys(main.interfaces);
 			var current_view_id = Game.menuManager.viewID;
+			var number_of_menus = Game.menuManager.getNumberOfMenus();
 
 			//Iterate over all_interfaces
 			for (var i = 0; i < all_interfaces.length; i++) {
 				var local_interface = main.interfaces[all_interfaces[i]];
 
 				if (local_interface.menu_flags)
-					if (local_interface.menu_flags.pinned && isCurrentlyPersistent(local_interface)) {
-						Game.menuManager.addNextMenuToView(current_view_id, local_interface.menu_obj);
-						Game.menuManager.setOrderOfMenu(current_view_id);
-					}
+					if (local_interface.menu_flags.pinned && isCurrentlyPersistent(local_interface))
+						Game.menuManager.setOrderOfMenu(local_interface.raw_id, number_of_menus);
 			}
 		}, 100);
 	}
