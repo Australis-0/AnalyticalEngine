@@ -133,15 +133,6 @@
 					var local_province_id = options.all_provinces[i].getProvinceID();
 
 					if (local_colour != undefined) {
-						//[WIP] - Deprecated code
-						//var colour_change = false;
-
-						/*if (local_colour != undefined)
-							if (local_province_colour != undefined)
-								if (local_colour.join(", ") != local_province_colour.join(", "))
-									colour_change = true;
-
-						if (colour_change)*/
 						main.mapmodes.province_colours[local_province_id] = local_colour;
 					} else {
 						if (custom_mapmode_obj.separate_mapmode)

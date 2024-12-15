@@ -29,6 +29,7 @@
 					y: 0,
 
 					special_function: function (e) {
+						clearMap();
 						clearMapmode();
 					}
 				}

@@ -938,7 +938,7 @@
 	CPID: 6552
 },
 {
-	CivTAG: "garze",
+	CivTAG: "garze_]",
 	CivID: 153,
 	PCID: 153,
 	CPID: 6465
@@ -1155,7 +1155,7 @@
 	CPID: 6555
 },
 {
-	CivTAG: "chaungbianspecialregion",
+	CivTAG: "chaungbianspecialregion_w",
 	CivID: 189,
 	PCID: 127,
 	CPID: 6556
@@ -1180,7 +1180,7 @@
 	CPID: 6448
 },
 {
-	CivTAG: "songpangarrison",
+	CivTAG: "songpangarrison_!",
 	CivID: 193,
 	PCID: 193,
 	CPID: 6573
@@ -1271,25 +1271,25 @@
 	CPID: 7102
 },
 {
-	CivTAG: "mongmit",
+	CivTAG: "mongmit_{",
 	CivID: 208,
 	PCID: 92,
 	CPID: 6131
 },
 {
-	CivTAG: "taupeng",
+	CivTAG: "taupeng_{",
 	CivID: 209,
 	PCID: 92,
 	CPID: 6129
 },
 {
-	CivTAG: "mangshiconfederacy",
+	CivTAG: "mangshiconfederacy_{",
 	CivID: 210,
 	PCID: 127,
 	CPID: 6453
 },
 {
-	CivTAG: "wastates",
+	CivTAG: "wastates_{",
 	CivID: 211,
 	PCID: 92,
 	CPID: 6146
@@ -1301,31 +1301,31 @@
 	CPID: 6136
 },
 {
-	CivTAG: "mongsu",
+	CivTAG: "mongsu_{",
 	CivID: 213,
 	PCID: 92,
 	CPID: 6138
 },
 {
-	CivTAG: "kehsi",
+	CivTAG: "kehsi_{",
 	CivID: 214,
 	PCID: 92,
 	CPID: 6137
 },
 {
-	CivTAG: "hsi2",
+	CivTAG: "hsi2_{",
 	CivID: 215,
 	PCID: 92,
 	CPID: 6127
 },
 {
-	CivTAG: "southhsenwi",
+	CivTAG: "southhsenwi_{",
 	CivID: 216,
 	PCID: 92,
 	CPID: 6140
 },
 {
-	CivTAG: "northernshan",
+	CivTAG: "northernshan_{",
 	CivID: 217,
 	PCID: 92,
 	CPID: 6144
@@ -1355,97 +1355,97 @@
 	CPID: 6098
 },
 {
-	CivTAG: "bawlake",
+	CivTAG: "bawlake_{",
 	CivID: 222,
 	PCID: 92,
 	CPID: 6065
 },
 {
-	CivTAG: "kyebogyi",
+	CivTAG: "kyebogyi_{",
 	CivID: 223,
 	PCID: 92,
 	CPID: 6064
 },
 {
-	CivTAG: "mongpai",
+	CivTAG: "mongpai_{",
 	CivID: 224,
 	PCID: 92,
 	CPID: 6097
 },
 {
-	CivTAG: "loilong",
+	CivTAG: "loilong_{",
 	CivID: 225,
 	PCID: 92,
 	CPID: 6095
 },
 {
-	CivTAG: "sakol",
+	CivTAG: "sakol_{",
 	CivID: 226,
 	PCID: 92,
 	CPID: 6096
 },
 {
-	CivTAG: "hsatung",
+	CivTAG: "hsatung_{",
 	CivID: 227,
 	PCID: 92,
 	CPID: 6108
 },
 {
-	CivTAG: "wanyin",
+	CivTAG: "wanyin_{",
 	CivID: 228,
 	PCID: 92,
 	CPID: 6110
 },
 {
-	CivTAG: "taunggyi",
+	CivTAG: "taunggyi_{",
 	CivID: 229,
 	PCID: 92,
 	CPID: 6100
 },
 {
-	CivTAG: "aungban",
+	CivTAG: "aungban_{",
 	CivID: 230,
 	PCID: 92,
 	CPID: 6101
 },
 {
-	CivTAG: "poila",
+	CivTAG: "poila_{",
 	CivID: 231,
 	PCID: 92,
 	CPID: 6102
 },
 {
-	CivTAG: "yengnan",
+	CivTAG: "yengnan_{",
 	CivID: 232,
 	PCID: 92,
 	CPID: 6103
 },
 {
-	CivTAG: "mongping",
+	CivTAG: "mongping_{",
 	CivID: 233,
 	PCID: 92,
 	CPID: 6113
 },
 {
-	CivTAG: "mongkung",
+	CivTAG: "mongkung_{",
 	CivID: 234,
 	PCID: 92,
 	CPID: 6125
 },
 {
-	CivTAG: "laikha",
+	CivTAG: "laikha_{",
 	CivID: 235,
 	PCID: 92,
 	CPID: 6122
 },
 {
-	CivTAG: "namkhok",
+	CivTAG: "namkhok_{",
 	CivID: 236,
 	PCID: 92,
 	CPID: 6109
 },
 {
-	CivTAG: "mongpawng",
+	CivTAG: "mongpawng_{",
 	CivID: 237,
 	PCID: 92,
 	CPID: 6112
@@ -1463,7 +1463,7 @@
 	CPID: 6120
 },
 {
-	CivTAG: "mawstate",
+	CivTAG: "mawstate_{",
 	CivID: 240,
 	PCID: 92,
 	CPID: 6106
@@ -2147,7 +2147,7 @@
 	CPID: 5904
 },
 {
-	CivTAG: "koreya",
+	CivTAG: "koreya_{",
 	CivID: 353,
 	PCID: 92,
 	CPID: 5912

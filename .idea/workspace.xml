@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09b6f7f8-b868-43e9-b471-ac1dbd15fa3b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Java/MenuManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/ui/menu_framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/ui/menu_framework.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/map/map_framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/map/map_framework.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/ui/editors/mod_editor/mod_editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/ui/editors/mod_editor/mod_editor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/Data.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/Data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/preview.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/preview.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +179,7 @@
       <workItem from="1732517435175" duration="135466000" />
       <workItem from="1733268013030" duration="140060000" />
       <workItem from="1734063049185" duration="6504000" />
-      <workItem from="1734101363418" duration="41665000" />
+      <workItem from="1734101363418" duration="43159000" />
     </task>
     <servers />
   </component>
