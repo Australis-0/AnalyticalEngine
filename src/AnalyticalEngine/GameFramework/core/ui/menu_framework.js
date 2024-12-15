@@ -95,91 +95,6 @@
 	}
 
 	/**
-	 * createText() - Creates static text and returns it as an Object for adding to menu_elements in createContextMenu().
-	 * @param {Object} [arg0_options]
-	 * @param {String} [arg0_options.name]
-	 * @param {boolean} [arg0_options.raw_dimensions=false]
-	 * @param {number} [arg0_options.height=0.5]
-	 * @param {number} [arg0_options.font_weight=700] - Either '700' or '400'.
-	 * @param {number} [arg0_options.margin=25]
-	 * @param {number} [arg0_options.width=2]
-	 * @param {number} [arg0_options.x=0]
-	 * @param {number} [arg0_options.y=0]
-	 *
-	 * @param {String} [arg0_options.align="centre"] - Optional. Either 'left', 'centre', or 'right'.
-	 */
-	function createText (arg0_options) {
-		//Convert from parameters
-		var options = (arg0_options) ? arg0_options : {};
-
-		//Initialise options
-		options.align = (options.align) ? options.align : "centre";
-		options.name = (options.name) ? options.name : "";
-		options.height = returnSafeNumber(options.height, 0.5);
-		options.margin = returnSafeNumber(options.margin, 25);
-		options.width = returnSafeNumber(options.width, 2);
-		options.x = returnSafeNumber(options.x);
-		options.y = returnSafeNumber(options.y);
-
-		//Declare local instance variables
-		var font_id_map = { "400": 1, "700": 0 };
-		var local_menu_elements = [];
-
-		var actual_font_id = font_id_map[options.font_weight.toString()];
-			if (actual_font_id == undefined) actual_font_id = 0;
-		var actual_height = parseInt((!options.raw_dimensions) ?
-			CFG.BUTTON_WIDTH*options.height : options.height);
-		var actual_width = parseInt((!options.raw_dimensions) ?
-			CFG.BUTTON_WIDTH*options.width : options.width);
-		var actual_text_position = -1;
-			//Adjust actual_text_position
-			if (options.align == "left")
-				actual_text_position = options.margin;
-			if (options.align == "right") {
-				//Create phantom dummy_button_obj to calculate displayed text width from
-				var dummy_text_obj = new Text_Static(
-					null, //(sText) Initial string
-					actual_font_id, //(fontID)
-					actual_text_position, //(itextPositionX)
-					parseInt(options.x), //(iPosX)
-					parseInt(options.y), //(iPosY)
-					actual_width, //(nWidth)
-					actual_height //(nHeight)
-				);
-				dummy_text_obj.setText(options.name);
-				var dummy_text_width = dummy_text_obj.getTextWidth();
-
-				actual_text_position = actual_width - options.margin - dummy_button_width;
-			}
-
-		//Construct new_text_obj
-		local_menu_elements.push(new Text_Static(
-			null, //(sText) Initial string
-			actual_font_id, //(fontID)
-			actual_text_position, //(itextPositionX)
-			parseInt(options.x), //(iPosX)
-			parseInt(options.y), //(iPosY)
-			actual_width, //(nWidth)
-			54 //(nHeight)
-		));
-		local_menu_elements.push(new TextBG(
-			null,
-			0,
-			parseInt(options.x),
-			parseInt(options.y),
-			actual_width,
-			actual_height
-		));
-
-		//Post-process handling
-		//options.name
-		local_menu_elements[0].setText(options.name);
-
-		//Return statement
-		return local_menu_elements;
-	}
-
-	/**
 	 * createContextMenu() - Creates a new context menu to add for the current in-game screen.
 	 * @param [arg0_options]
 	 * @param {String} [arg0_options.anchor="top_left"] - Either 'bottom_left', 'bottom_right', 'top_left', or 'top_right'.
@@ -191,6 +106,7 @@
 	 * @param {boolean} [arg0_options.lock_hover=false]
 	 * @param {String} [arg0_options.name] - If undefined, the MenuTitle is null instead.
 	 * @param {boolean} [arg0_options.no_title=true] - Whether there is a title or not.
+	 * @param {Array<String>|boolean|String} [arg0_options.persistent=false] - If the menu should persist across view changes. False by default.
 	 * @param {boolean} [arg0_options.raw_coords=false] - Whether to skip auto-formatting and manually supply all coords. For use in non-vertical menus.
 	 * @param {boolean} [arg0_options.resizeable=true]
 	 *
@@ -213,6 +129,8 @@
 	 *  @param {boolean} [arg0_options.clickable=true]
 	 *  @param {Function} [arg0_options."input_key".special_function]
 	 *  @param {String} [arg0_options."input_key".tooltip]
+	 *
+	 * @returns {{id: String, menu_elements: Array<MenuElement>, menu_flags: {}, menu_properties: {}, menu_obj: Menu}}
 	 */
 	//[WIP] - Finish function body
 	function createContextMenu (arg0_options) {
@@ -330,6 +248,9 @@
 
 		//3. Set .interface_obj
 		interface_obj.menu_elements = menu_elements;
+		interface_obj.menu_flags = {
+			persistent: (options.persistent)
+		};
 		interface_obj.menu_properties = menu_properties;
 
 		//Initialise menu and add to view
@@ -349,6 +270,9 @@
 			options.has_back_button, //(initWithBackButton)
 			options.can_close, //(closeable)
 			options.lock_hover); //(lockHoverOverMenuBackground)
+		//If interface_obj.menu_obj was already there, call .setVisible(false) on it
+		if (interface_obj.menu_obj)
+			interface_obj.menu_obj.setVisible(false);
 
 		//Add trackers to main.interfaces[<interface_id>]
 		interface_obj.menu_obj = menu_obj;
@@ -505,6 +429,91 @@
 
 		//Return statement
 		return new_menu_title_obj;
+	}
+
+	/**
+	 * createText() - Creates static text and returns it as an Object for adding to menu_elements in createContextMenu().
+	 * @param {Object} [arg0_options]
+	 * @param {String} [arg0_options.name]
+	 * @param {boolean} [arg0_options.raw_dimensions=false]
+	 * @param {number} [arg0_options.height=0.5]
+	 * @param {number} [arg0_options.font_weight=700] - Either '700' or '400'.
+	 * @param {number} [arg0_options.margin=25]
+	 * @param {number} [arg0_options.width=2]
+	 * @param {number} [arg0_options.x=0]
+	 * @param {number} [arg0_options.y=0]
+	 *
+	 * @param {String} [arg0_options.align="centre"] - Optional. Either 'left', 'centre', or 'right'.
+	 */
+	function createText (arg0_options) {
+		//Convert from parameters
+		var options = (arg0_options) ? arg0_options : {};
+
+		//Initialise options
+		options.align = (options.align) ? options.align : "centre";
+		options.name = (options.name) ? options.name : "";
+		options.height = returnSafeNumber(options.height, 0.5);
+		options.margin = returnSafeNumber(options.margin, 25);
+		options.width = returnSafeNumber(options.width, 2);
+		options.x = returnSafeNumber(options.x);
+		options.y = returnSafeNumber(options.y);
+
+		//Declare local instance variables
+		var font_id_map = { "400": 1, "700": 0 };
+		var local_menu_elements = [];
+
+		var actual_font_id = font_id_map[options.font_weight.toString()];
+		if (actual_font_id == undefined) actual_font_id = 0;
+		var actual_height = parseInt((!options.raw_dimensions) ?
+			CFG.BUTTON_WIDTH*options.height : options.height);
+		var actual_width = parseInt((!options.raw_dimensions) ?
+			CFG.BUTTON_WIDTH*options.width : options.width);
+		var actual_text_position = -1;
+		//Adjust actual_text_position
+		if (options.align == "left")
+			actual_text_position = options.margin;
+		if (options.align == "right") {
+			//Create phantom dummy_button_obj to calculate displayed text width from
+			var dummy_text_obj = new Text_Static(
+				null, //(sText) Initial string
+				actual_font_id, //(fontID)
+				actual_text_position, //(itextPositionX)
+				parseInt(options.x), //(iPosX)
+				parseInt(options.y), //(iPosY)
+				actual_width, //(nWidth)
+				actual_height //(nHeight)
+			);
+			dummy_text_obj.setText(options.name);
+			var dummy_text_width = dummy_text_obj.getTextWidth();
+
+			actual_text_position = actual_width - options.margin - dummy_button_width;
+		}
+
+		//Construct new_text_obj
+		local_menu_elements.push(new Text_Static(
+			null, //(sText) Initial string
+			actual_font_id, //(fontID)
+			actual_text_position, //(itextPositionX)
+			parseInt(options.x), //(iPosX)
+			parseInt(options.y), //(iPosY)
+			actual_width, //(nWidth)
+			54 //(nHeight)
+		));
+		local_menu_elements.push(new TextBG(
+			null,
+			0,
+			parseInt(options.x),
+			parseInt(options.y),
+			actual_width,
+			actual_height
+		));
+
+		//Post-process handling
+		//options.name
+		local_menu_elements[0].setText(options.name);
+
+		//Return statement
+		return local_menu_elements;
 	}
 
 	/**

@@ -1,6 +1,9 @@
 //Import classes
 {
 	//this.Game = "aoc.kingdoms.lukasz.jakowski.Game"; - Dynamically loaded
+	this.GameCivs = Java.type("aoc.kingdoms.lukasz.menusEditor.GameCivs");
+	this.Menu_LoadScenario = Java.type("aoc.kingdoms.lukasz.menus.LoadSave.Menu_LoadScenario");
+	this.ScenarioWasteland = Java.type("aoc.kingdoms.lukasz.menusScenarioEditor.Wasteland.ScenarioWasteland");
 	this.View = Java.type("aoc.kingdoms.lukasz.menu.View");
 }
 
@@ -35,5 +38,40 @@
 					//Return statement
 					return all_page_keys[i];
 			}
+	}
+
+	function switchPage (arg0_page) {
+		//Convert from parameters
+		var page = arg0_page;
+
+		//Declare local instance variables
+		var current_page_id = Game.menuManager.getViewID();
+
+		//Change View
+		try {
+			if (View[page])
+				if (getCurrentPage() != page)
+					if (page == "SCENARIO_ASSIGN") {
+						//SCENARIO_ASSIGN HANDLING
+						CFG.iCreateScenario_AssignProvinces_Civ = 0;
+						Game.keyboard.hideKeyboard();
+						Game.mapBG.requestToDisposeMinimap = true;
+
+						Game.menuManager.setViewIDWithoutAnimation(View[page]);
+					} else if (page == "SCENARIO_CIVILIZATIONS") {
+						//SCENARIO_CIVILIZATIONS HANDLING
+						Gdx.app.postRunnable(function() {
+							GameCivs.sSearch = "";
+							ScenarioWasteland.lUndo.clear();
+							Game.iActiveProvince = -1;
+							CFG.brushTool = false;
+							Game.menuManager.setViewIDWithoutAnimation(View.SCENARIO_CIVILIZATIONS);
+						});
+					} else {
+						Game.menuManager.setViewIDWithoutAnimation(View[page]);
+					}
+		} catch (e) {
+			console.error(e);
+		}
 	}
 }
