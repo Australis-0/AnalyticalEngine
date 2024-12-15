@@ -864,7 +864,7 @@
 				var local_interface = main.interfaces[all_interfaces[i]];
 
 				if (local_interface.menu_flags)
-					if (local_interface.menu_flags.pinned) {
+					if (local_interface.menu_flags.pinned && isCurrentlyPersistent(local_interface)) {
 						Game.menuManager.addNextMenuToView(current_view_id, local_interface.menu_obj);
 						Game.menuManager.setOrderOfMenu(current_view_id);
 					}
@@ -894,6 +894,34 @@
 
 		//Return statement
 		return interface_obj;
+	}
+
+	function isCurrentlyPersistent (arg0_interface_id) {
+		//Convert from parameters
+		var interface_id = arg0_interface_id;
+
+		//Declare local instance variables
+		var current_page = getCurrentPage();
+		var interface_obj = (typeof interface_id != "object") ?
+			main.interfaces[interface_id] : interface_id;
+
+		//Guard clause if interface_obj.menu_flags.persistent is a true boolean
+		if (interface_obj)
+			if (interface_obj.menu_flags)
+				if (interface_obj.menu_flags.persistent == true)
+					return true;
+
+		//Check if it lines up with persistence
+		if (interface_obj)
+			if (interface_obj.menu_flags)
+				if (interface_obj.menu_flags.persistent) {
+					var persistent_views = getList(interface_obj.menu_flags.persistent);
+
+					//Iterate over persistent_views and check if the current_page is one of them. If so, break and return.
+					for (var i = 0; i < persistent_views.length; i++)
+						if (current_page == persistent_views[i])
+							return true;
+				}
 	}
 
 	/**

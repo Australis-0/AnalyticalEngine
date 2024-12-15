@@ -1019,7 +1019,7 @@
 {
 	CivTAG: "sovietmilitaryadministrationinaustria_!",
 	CivID: 166,
-	PCID: 166,
+	PCID: 397,
 	CPID: 2502
 },
 {
@@ -1055,13 +1055,13 @@
 {
 	CivTAG: "sovietmilitaryadministrationingermany_!",
 	CivID: 172,
-	PCID: 172,
+	PCID: 397,
 	CPID: 2344
 },
 {
 	CivTAG: "sovietoccupationofromania_h",
 	CivID: 173,
-	PCID: 173,
+	PCID: 397,
 	CPID: 2818
 },
 {
@@ -1248,14 +1248,14 @@
 {
 	CivTAG: "sovietoccupationofmanchuria_!",
 	CivID: 204,
-	PCID: 204,
+	PCID: 397,
 	CPID: 6533,
 	Population: 41822000
 },
 {
 	CivTAG: "sovietciviladministrationinkorea_!",
 	CivID: 205,
-	PCID: 205,
+	PCID: 397,
 	CPID: 6968
 },
 {
@@ -2299,7 +2299,7 @@
 {
 	CivTAG: "azerbaijanpeoplesgovernment_f",
 	CivID: 378,
-	PCID: 378,
+	PCID: 397,
 	CPID: 5437
 },
 {

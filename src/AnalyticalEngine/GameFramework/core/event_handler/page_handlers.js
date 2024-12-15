@@ -21,23 +21,10 @@
 			for (var i = 0; i < all_interfaces.length; i++) {
 				var local_interface = main.interfaces[all_interfaces[i]];
 
-				if (local_interface.menu_flags.persistent)
-					//Check if type is of Array or boolean
-					if (typeof local_interface.menu_flags.persistent != "boolean") {
-						var persistent_views = getList(local_interface.menu_flags.persistent);
-
-						//Iterate over persistent_views and check if the current_page is one of them. If so, break and display
-						for (var x = 0; x < persistent_views.length; x++)
-							if (current_page == persistent_views[x]) {
-								Game.menuManager.addNextMenuToView(current_view_id, local_interface.menu_obj);
-								Game.menuManager.setOrderOfMenu(current_view_id); //This is needed to refresh the menu order
-
-								break;
-							}
-					} else {
-						Game.menuManager.addNextMenuToView(current_view_id, local_interface.menu_obj);
-						Game.menuManager.setOrderOfMenu(current_view_id); //This is needed to refresh the menu order
-					}
+				if (isCurrentlyPersistent(local_interface)) {
+					Game.menuManager.addNextMenuToView(current_view_id, local_interface.menu_obj);
+					Game.menuManager.setOrderOfMenu(current_view_id); //This is needed to refresh the menu order
+				}
 			}
 		}
 
