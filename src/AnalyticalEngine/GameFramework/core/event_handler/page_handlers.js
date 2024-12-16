@@ -32,14 +32,19 @@
 			//Convert from parameters
 			var current_page = arg0_current_page;
 
-			//Load mapdata on initialisation
+			//Declare local instance variables
+			var mod_editor_pages = ["SCENARIO_WASTELAND_CONTINENTS", "SCENARIO_WASTELAND", "SCENARIO_CIVILIZATIONS", "SCENARIO_ASSIGN", "SCENARIO_SETTINGS"];
+
+			//Load Mapdata on initialisation
 			if (current_page == "MAINMENU" && !main.map_loaded) {
 				console.log("Loaded Nashorn Mapdata; post-loading event handlers.");
+				main.game_loaded = true;
 
 				initialiseSaveLoad();
 				initialisePostLoadingEventHandlers();
 			}
 			//Load Mod Editor
+			main.in_mod_editor = (mod_editor_pages.includes(current_page));
 			if (current_page == "SCENARIO_CIVILIZATIONS") {
 				initialiseModEditor();
 			}

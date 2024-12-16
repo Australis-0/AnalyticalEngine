@@ -51,7 +51,14 @@
 		try {
 			if (View[page])
 				if (getCurrentPage() != page)
-					if (page == "SCENARIO_ASSIGN") {
+					if (page == "EDITOR_GAMECIVS_EDIT") {
+						Gdx.app.postRunnable(function(){
+							var civilisation_tag = "sau_m";
+							GameCivsEdit.nCiv = Game.loadCivilization(civilisation_tag);
+							GameCivsEdit.goBackTo = View[getCurrentPage()];
+							Game.menuManager.setViewID(View.EDITOR_GAMECIVS_EDIT);
+						});
+					} else if (page == "SCENARIO_ASSIGN") {
 						//SCENARIO_ASSIGN HANDLING
 						CFG.iCreateScenario_AssignProvinces_Civ = 0;
 						Game.keyboard.hideKeyboard();

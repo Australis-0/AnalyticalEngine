@@ -90,6 +90,15 @@
 		return "MODE_DEFAULT_TERRAIN";
 	}
 
+	function getHoveredProvince () {
+		//Declare local instance variables
+		var hovered_province_id = Game.iHoveredProvinceID;
+
+		//Return statement
+		return (hovered_province_id > -1) ?
+			getProvince(Game.iHoveredProvinceID) : undefined;
+	}
+
 	/**
 	 * getMapmodeID() - Returns the current base in-game ID of the present base mapmode.
 	 * @param {String} arg0_mapmode - The mapmode to fetch the ID of.

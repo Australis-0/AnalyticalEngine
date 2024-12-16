@@ -3,6 +3,7 @@
 	this.AA_Game = Java.type("aoc.kingdoms.lukasz.jakowski.AA_Game");
 	this.ArrayList = Java.type("java.util.ArrayList");
 	this.ButtonMain = Java.type("aoc.kingdoms.lukasz.menu_element.button.ButtonMain");
+	this.ButtonStatsRect_Active = Java.type("aoc.kingdoms.lukasz.menu_element.button.ButtonStatsRect_Active");
 	this.CFG = Java.type("aoc.kingdoms.lukasz.jakowski.CFG");
 	this.DesktopLauncher = Java.type("aoc.kingdoms.lukasz.jakowski.desktop.DesktopLauncher");
 	this.Float = Java.type("java.lang.Float");
@@ -35,6 +36,7 @@
 	 * @param {Object} [arg0_options]
 	 * @param {String} [arg0_options.name]
 	 * @param {boolean} [arg0_options.raw_dimensions=false] - Whether the width is not multiplied by CFG.BUTTON_WIDTH.
+	 * @param {number} [arg0_options.height]
 	 * @param {number} [arg0_options.width=2] - The width as multiplied by CFG.BUTTON_WIDTH.
 	 * @param {number} [arg0_options.x=0]
 	 * @param {number} [arg0_options.y=0]
@@ -54,11 +56,14 @@
 		options.align = (options.align) ? options.align : "centre";
 		options.clickable = (options.clickable != false) ? true : false;
 		options.name = (options.name) ? options.name : "";
+		options.height = returnSafeNumber(options.height);
 		options.width = returnSafeNumber(options.width, 2);
 		options.x = returnSafeNumber(options.x);
 		options.y = returnSafeNumber(options.y);
 
 		//Declare local instance variables
+		var actual_height = parseInt((!options.raw_dimensions) ?
+			CFG.BUTTON_WIDTH*options.height : options.height);
 		var actual_width = parseInt((!options.raw_dimensions) ?
 			CFG.BUTTON_WIDTH*options.width : options.width);
 
@@ -84,15 +89,29 @@
 			}
 
 		//Construct new_button_obj
-		var new_button_obj = new ButtonMain(
-			null, //(sText) Initial string
-			0, //(fontID)
-			actual_text_position, //(itextPositionX)
-			parseInt(options.x), //(iPosX)
-			parseInt(options.y), //(iPosY)
-			actual_width, //(nWidth)
-			options.clickable //(isClickable)
-		);
+		var new_button_obj;
+
+		if (!options.height) {
+			new_button_obj = new ButtonMain(
+				null, //(sText) Initial string
+				0, //(fontID)
+				actual_text_position, //(itextPositionX)
+				parseInt(options.x), //(iPosX)
+				parseInt(options.y), //(iPosY)
+				actual_width, //(nWidth)
+				options.clickable //(isClickable)
+			);
+		} else {
+			new_button_obj = new ButtonStatsRect_Active(
+				null, //(sText) Initial string
+				actual_text_position, //(posX)
+				parseInt(options.x), //(iPosX)
+				parseInt(options.y), //(iPosY)
+				actual_width, //(nWidth)
+				actual_height, //(nHeight)
+				0 //(fontID)
+			);
+		}
 
 		//Post-process handling
 		//options.name
@@ -375,6 +394,7 @@
 				type: "button",
 				name: "Left-aligned button",
 				raw_dimensions: true,
+				height: 40,
 				width: 400,
 
 				align: "left",
@@ -933,7 +953,7 @@
 	/**
 	 * menuHandler() - Handles onclick events for menus in-game.
 	 */
-	function menuHandler () {
+	function menuHandler (e) {
 		//Declare local instance variables
 		var all_interface_keys = Object.keys(main.interfaces);
 		var current_view_id = Game.menuManager.viewID;
@@ -949,16 +969,28 @@
 					var local_element = local_interface.menu_elements[x];
 					var local_properties = local_interface.menu_properties[x];
 
-					if (local_element.getIsHovered()) {
-						//console.log("Clicked on button: " + local_element.getText());
-						if (local_properties.onclick)
-							local_properties.onclick({
-								element: local_element,
-								interface_obj: local_interface
-							});
-					}
+					//Left click functionality
+					if (e == "left_click")
+						if (local_element.getIsHovered()) {
+							//console.log("Clicked on button: " + local_element.getText());
+							if (local_properties.onclick)
+								local_properties.onclick({
+									element: local_element,
+									interface_obj: local_interface
+								});
+						}
 				}
 		}
+
+		//Draw right-click context menus
+		var hovered_province = getHoveredProvince();
+		if (main.game_loaded && main.in_mod_editor)
+			if (hovered_province != undefined)
+				if (e == "left_click") {
+					closeMapContextMenu(hovered_province.getProvinceID());
+				} else if (e == "right_click") {
+					openMapContextMenu(hovered_province.getProvinceID());
+				}
 
 		//Draw current menus
 		Game.menuManager.update();

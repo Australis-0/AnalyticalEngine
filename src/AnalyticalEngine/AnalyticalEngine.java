@@ -1,8 +1,6 @@
 package AnalyticalEngine;
 import AnalyticalEngine.Debugger.*;
-import AnalyticalEngine.Framework.ABRS.EditorSaveLoad;
 import AnalyticalEngine.Framework.Javascript;
-import AnalyticalEngine.Framework.Datatypes.Map;
 import aoc.kingdoms.lukasz.jakowski.AA_Game;
 
 import javax.script.ScriptEngine;
@@ -37,7 +35,6 @@ public class AnalyticalEngine {
 
     public void initialiseGlobal () {
         //Begin populating main
-        main.put("map_cities", new ArrayList<Map.City>());
     }
 
     public void setApplicationInstance (AA_Game arg0_application) {

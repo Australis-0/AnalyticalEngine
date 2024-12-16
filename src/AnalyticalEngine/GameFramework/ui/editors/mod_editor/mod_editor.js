@@ -46,6 +46,7 @@
 						editor_view_mapmodes_menu_obj[all_mapmodes[i]] = {
 							type: "button",
 							name: (local_mapmode.name) ? local_mapmode.name : all_mapmodes[i],
+							height: 0.4,
 							width: 3,
 							x: 0,
 							y: mapmode_button_y,

@@ -32,7 +32,7 @@ import javax.script.ScriptException;
 import static AnalyticalEngine.AnalyticalEngine.nashorn;
 
 public class AA_Game extends ApplicationAdapter {
-    private Touch touch = new Touch();
+    public Touch touch = new Touch();
     public static Renderer renderer;
 
     public AA_Game() {
