@@ -17,8 +17,15 @@ config.mapmodes.no_government = {
 		if (province_owner) {
 			var split_tag = province_owner.split("_");
 
-			if (split_tag.length == 1)
-				province_colour = [255, 0, 0, 0.5]; //Set to red if no government suffix tag is present.
+			if (province_owner) {
+				if (split_tag.length == 1) {
+					province_colour = [255, 0, 0, 0.5]; //Set to red if no government suffix tag is present.
+				} else {
+					province_colour = [0, 0, 0, 0]; //Set to transparent if province has a valid government.
+				}
+			} else {
+				province_colour = [255, 255, 0, 0.5]; //Set to yellow if province is wasteland.
+			}
 		}
 
 		//Return statement

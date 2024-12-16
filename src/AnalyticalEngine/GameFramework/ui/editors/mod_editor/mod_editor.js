@@ -13,6 +13,7 @@
 				name: "AnalyticalEngine - Mapmodes:",
 				no_title: false,
 				persistent: ["SCENARIO_WASTELAND_CONTINENTS", "SCENARIO_WASTELAND", "SCENARIO_CIVILIZATIONS", "SCENARIO_ASSIGN", "SCENARIO_SETTINGS"],
+				pinned: 1, //Pinned to 1 layer behind Mod Editor.
 
 				anchor: "top_left",
 				can_close: true,

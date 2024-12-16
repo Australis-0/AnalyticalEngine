@@ -560,9 +560,9 @@
 	CPID: 4822
 },
 {
-	CivTAG: "estt",
+	CivTAG: "estt_v",
 	CivID: 91,
-	PCID: 91,
+	PCID: 397,
 	CPID: 6428
 },
 {
@@ -798,7 +798,7 @@
 	CPID: 6774
 },
 {
-	CivTAG: "ins",
+	CivTAG: "ins_v",
 	CivID: 130,
 	PCID: 130,
 	CPID: 7216
@@ -932,7 +932,7 @@
 	CPID: 6469
 },
 {
-	CivTAG: "ninglang",
+	CivTAG: "ninglang_]",
 	CivID: 152,
 	PCID: 152,
 	CPID: 6552
@@ -944,7 +944,7 @@
 	CPID: 6465
 },
 {
-	CivTAG: "muli",
+	CivTAG: "muli_{",
 	CivID: 154,
 	PCID: 154,
 	CPID: 6554
@@ -1143,13 +1143,13 @@
 	CPID: 4814
 },
 {
-	CivTAG: "liangmuclan",
+	CivTAG: "liangmuclan_{",
 	CivID: 187,
 	PCID: 127,
 	CPID: 6462
 },
 {
-	CivTAG: "zhefangmangshi",
+	CivTAG: "zhefangmangshi_{",
 	CivID: 188,
 	PCID: 127,
 	CPID: 6555
@@ -2309,7 +2309,7 @@
 	CPID: 9891
 },
 {
-	CivTAG: "federatedmalaystates",
+	CivTAG: "federatedmalaystates_)",
 	CivID: 380,
 	PCID: 380,
 	CPID: 6316
@@ -2418,9 +2418,15 @@
 	CPID: 3375
 },
 {
-	CivTAG: "colonyofsaotomeandprincipe",
+	CivTAG: "colonyofsaotomeandprincipe_)",
 	CivID: 398,
 	PCID: 398,
 	CPID: 4663
+},
+{
+	CivTAG: "colonyofcapeverde_)",
+	CivID: 399,
+	PCID: 399,
+	CPID: 4452
 }
 ]

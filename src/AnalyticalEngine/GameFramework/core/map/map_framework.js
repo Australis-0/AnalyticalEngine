@@ -135,8 +135,10 @@
 					if (local_colour != undefined) {
 						main.mapmodes.province_colours[local_province_id] = local_colour;
 					} else {
-						if (custom_mapmode_obj.separate_mapmode)
-							main.mapmodes.province_colours[local_province_id] = [0, 0, 0, 0];
+						if (custom_mapmode_obj.separate_mapmode) {
+							local_colour = [0, 0, 0, 0];
+							main.mapmodes.province_colours[local_province_id] = local_colour;
+						}
 					}
 				}
 

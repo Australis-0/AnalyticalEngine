@@ -592,7 +592,7 @@ public class MenuManager {
 
             //Clamp inverted_z_index to valid bounds
             if (inverted_z_index < 0) inverted_z_index = 0; //Place at start
-            if (inverted_z_index > current_order.size()) inverted_z_index = current_order.size(); //Place at end
+            if (inverted_z_index >= current_order.size()) inverted_z_index = current_order.size() - 1; //Place at end
             current_order.add(inverted_z_index, menu_id);
 
             //Update .orderOfMenu for the current view

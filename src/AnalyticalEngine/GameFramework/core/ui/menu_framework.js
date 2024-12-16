@@ -867,8 +867,13 @@
 				var local_interface = main.interfaces[all_interfaces[i]];
 
 				if (local_interface.menu_flags)
-					if (local_interface.menu_flags.pinned && isCurrentlyPersistent(local_interface))
-						Game.menuManager.setOrderOfMenu(local_interface.raw_id, number_of_menus);
+					if (local_interface.menu_flags.pinned && isCurrentlyPersistent(local_interface)) {
+						if (!isNaN(local_interface.menu_flags.pinned)) {
+							Game.menuManager.setOrderOfMenu(local_interface.raw_id, number_of_menus - returnSafeNumber(local_interface.menu_flags.pinned));
+						} else {
+							Game.menuManager.setOrderOfMenu(local_interface.raw_id, number_of_menus);
+						}
+					}
 			}
 		}, 100);
 	}
