@@ -34,6 +34,9 @@ var console = {
         var object = arg0_object;
         var options = (arg1_options) ? arg1_options : {};
 
+        //Guard clause for Java errors
+        if (object instanceof java.lang.Throwable) return object.toString();
+
         //Initialise options
         if (!options.nesting) options.nesting = 1;
 

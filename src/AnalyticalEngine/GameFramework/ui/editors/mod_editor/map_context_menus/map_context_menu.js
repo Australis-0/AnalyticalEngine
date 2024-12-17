@@ -72,7 +72,7 @@
 
 			interface_obj.menu_obj.setPosX(mouse_coords[0]);
 			interface_obj.menu_obj.setPosY(mouse_coords[1]);
-			interface_obj.menu_obj.setVisible(true);
+			interface_obj.menu_obj.setVisible(true); //Check if this is causing the memory leak
 
 			var edit_civilisation_button = getElement("map_context_menu", "edit_civilisation");
 

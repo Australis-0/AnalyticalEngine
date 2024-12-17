@@ -367,20 +367,20 @@
 {
 	CivTAG: "aneg_)",
 	CivID: 59,
-	PCID: 59,
+	PCID: 29,
 	CPID: 4749,
 	Population: 8483547
 },
 {
 	CivTAG: "tpal_)",
 	CivID: 60,
-	PCID: 60,
+	PCID: 29,
 	CPID: 5222
 },
 {
 	CivTAG: "ttra_[",
 	CivID: 61,
-	PCID: 61,
+	PCID: 29,
 	CPID: 5251
 },
 {
@@ -411,7 +411,7 @@
 {
 	CivTAG: "tmus_{",
 	CivID: 66,
-	PCID: 66,
+	PCID: 29,
 	CPID: 5414
 },
 {
@@ -423,13 +423,13 @@
 {
 	CivTAG: "stru_)",
 	CivID: 68,
-	PCID: 68,
+	PCID: 29,
 	CPID: 5419
 },
 {
 	CivTAG: "kuw_[",
 	CivID: 69,
-	PCID: 69,
+	PCID: 29,
 	CPID: 5303
 },
 {
@@ -447,67 +447,67 @@
 {
 	CivTAG: "tbuch_)",
 	CivID: 72,
-	PCID: 72,
+	PCID: 29,
 	CPID: 5037
 },
 {
 	CivTAG: "tsor_)",
 	CivID: 73,
-	PCID: 73,
+	PCID: 29,
 	CPID: 5023
 },
 {
 	CivTAG: "trho_)",
 	CivID: 74,
-	PCID: 74,
+	PCID: 29,
 	CPID: 4975
 },
 {
 	CivTAG: "tang_)",
 	CivID: 75,
-	PCID: 75,
+	PCID: 29,
 	CPID: 4939
 },
 {
 	CivTAG: "zan_[",
 	CivID: 76,
-	PCID: 76,
+	PCID: 29,
 	CPID: 4879
 },
 {
 	CivTAG: "tken_)",
 	CivID: 77,
-	PCID: 77,
+	PCID: 29,
 	CPID: 4898
 },
 {
 	CivTAG: "tuga_)",
 	CivID: 78,
-	PCID: 78,
+	PCID: 29,
 	CPID: 4887
 },
 {
 	CivTAG: "maw2_)",
 	CivID: 79,
-	PCID: 79,
+	PCID: 29,
 	CPID: 4987
 },
 {
 	CivTAG: "nige3_)",
 	CivID: 80,
-	PCID: 80,
+	PCID: 29,
 	CPID: 4588
 },
 {
 	CivTAG: "tsie_)",
 	CivID: 81,
-	PCID: 81,
+	PCID: 29,
 	CPID: 4511
 },
 {
 	CivTAG: "golc_)",
 	CivID: 82,
-	PCID: 82,
+	PCID: 29,
 	CPID: 4558
 },
 {
@@ -526,37 +526,37 @@
 {
 	CivTAG: "afra_)",
 	CivID: 85,
-	PCID: 85,
+	PCID: 30,
 	CPID: 4493
 },
 {
 	CivTAG: "gam2_)",
 	CivID: 86,
-	PCID: 86,
+	PCID: 29,
 	CPID: 4474
 },
 {
 	CivTAG: "conb_)",
 	CivID: 87,
-	PCID: 87,
+	PCID: 32,
 	CPID: 4701
 },
 {
 	CivTAG: "sww_{",
 	CivID: 88,
-	PCID: 88,
+	PCID: 29,
 	CPID: 5048
 },
 {
 	CivTAG: "ruan_)",
 	CivID: 89,
-	PCID: 89,
+	PCID: 32,
 	CPID: 4916
 },
 {
 	CivTAG: "somb_)",
 	CivID: 90,
-	PCID: 90,
+	PCID: 29,
 	CPID: 4822
 },
 {
@@ -568,7 +568,7 @@
 {
 	CivTAG: "brra_[",
 	CivID: 92,
-	PCID: 92,
+	PCID: 29,
 	CPID: 5872,
 	Population: 300300000
 },
@@ -721,61 +721,61 @@
 {
 	CivTAG: "infro_)",
 	CivID: 117,
-	PCID: 117,
+	PCID: 30,
 	CPID: 6292
 },
 {
 	CivTAG: "phra_[",
 	CivID: 118,
-	PCID: 118,
+	PCID: 30,
 	CPID: 6228
 },
 {
 	CivTAG: "kedd_[",
 	CivID: 119,
-	PCID: 119,
+	PCID: 29,
 	CPID: 6308
 },
 {
 	CivTAG: "kela3_)",
 	CivID: 120,
-	PCID: 120,
+	PCID: 29,
 	CPID: 6325
 },
 {
 	CivTAG: "joho_[",
 	CivID: 121,
-	PCID: 121,
+	PCID: 29,
 	CPID: 6320
 },
 {
 	CivTAG: "sara_[",
 	CivID: 122,
-	PCID: 122,
+	PCID: 29,
 	CPID: 6332
 },
 {
 	CivTAG: "borr_)",
 	CivID: 123,
-	PCID: 123,
+	PCID: 29,
 	CPID: 6343
 },
 {
 	CivTAG: "bru_{",
 	CivID: 124,
-	PCID: 124,
+	PCID: 29,
 	CPID: 6336
 },
 {
 	CivTAG: "pgui_)",
 	CivID: 125,
-	PCID: 125,
+	PCID: 34,
 	CPID: 4495
 },
 {
 	CivTAG: "spgu_)",
 	CivID: 126,
-	PCID: 126,
+	PCID: 33,
 	CPID: 4662
 },
 {
@@ -806,7 +806,7 @@
 {
 	CivTAG: "jap_!",
 	CivID: 131,
-	PCID: 131,
+	PCID: 1,
 	CPID: 7072
 },
 {
@@ -830,45 +830,45 @@
 {
 	CivTAG: "guu2_)",
 	CivID: 135,
-	PCID: 135,
+	PCID: 29,
 	CPID: 3909,
 	Population: 375701
 },
 {
 	CivTAG: "frg_)",
 	CivID: 136,
-	PCID: 136,
+	PCID: 30,
 	CPID: 3926,
 	Population: 25499
 },
 {
 	CivTAG: "mqu_)",
 	CivID: 137,
-	PCID: 137,
+	PCID: 30,
 	CPID: 1915
 },
 {
 	CivTAG: "guu_)",
 	CivID: 138,
-	PCID: 138,
+	PCID: 30,
 	CPID: 1913
 },
 {
 	CivTAG: "jami2_)",
 	CivID: 139,
-	PCID: 139,
+	PCID: 29,
 	CPID: 1879
 },
 {
 	CivTAG: "twind_)",
 	CivID: 140,
-	PCID: 140,
+	PCID: 29,
 	CPID: 1919
 },
 {
 	CivTAG: "lee2_)",
 	CivID: 141,
-	PCID: 141,
+	PCID: 29,
 	CPID: 1908
 },
 {
@@ -892,13 +892,13 @@
 {
 	CivTAG: "asha2_)",
 	CivID: 145,
-	PCID: 145,
+	PCID: 29,
 	CPID: 4560
 },
 {
 	CivTAG: "twes2_)",
 	CivID: 146,
-	PCID: 146,
+	PCID: 29,
 	CPID: 7407
 },
 {
@@ -964,25 +964,25 @@
 {
 	CivTAG: "britishmilitaryadministrationineritrea_!",
 	CivID: 157,
-	PCID: 157,
+	PCID: 29,
 	CPID: 4776
 },
 {
 	CivTAG: "crowncolonyofthebahamas_)",
 	CivID: 158,
-	PCID: 158,
+	PCID: 29,
 	CPID: 1857
 },
 {
 	CivTAG: "colonyofbarbados_)",
 	CivID: 159,
-	PCID: 159,
+	PCID: 29,
 	CPID: 1916
 },
 {
 	CivTAG: "colonyoftrinidadandtobago_)",
 	CivID: 160,
-	PCID: 160,
+	PCID: 29,
 	CPID: 1921
 },
 {
@@ -995,13 +995,13 @@
 {
 	CivTAG: "colonyoftheriodeoro_)",
 	CivID: 162,
-	PCID: 162,
+	PCID: 33,
 	CPID: 4282
 },
 {
 	CivTAG: "spanishprotectorateinmorocco_)",
 	CivID: 163,
-	PCID: 163,
+	PCID: 33,
 	CPID: 4244
 },
 {
@@ -1013,7 +1013,7 @@
 {
 	CivTAG: "britishforcesofoccupationinaustria_!",
 	CivID: 165,
-	PCID: 165,
+	PCID: 29,
 	CPID: 2510
 },
 {
@@ -1025,31 +1025,31 @@
 {
 	CivTAG: "unitedstatesforcesinaustria_!",
 	CivID: 167,
-	PCID: 167,
+	PCID: 1,
 	CPID: 2495
 },
 {
 	CivTAG: "frenchzone_!",
 	CivID: 168,
-	PCID: 168,
+	PCID: 30,
 	CPID: 2513
 },
 {
 	CivTAG: "officeofmilitarygovernmentunitedstates_!",
 	CivID: 169,
-	PCID: 169,
+	PCID: 1,
 	CPID: 2392
 },
 {
 	CivTAG: "frenchforcesingermany_!",
 	CivID: 170,
-	PCID: 170,
+	PCID: 30,
 	CPID: 2419
 },
 {
 	CivTAG: "britisharmyoftherhine_!",
 	CivID: 171,
-	PCID: 171,
+	PCID: 29,
 	CPID: 2389
 },
 {
@@ -1067,67 +1067,67 @@
 {
 	CivTAG: "britishmilitaryadministrationinlibya_!",
 	CivID: 174,
-	PCID: 174,
+	PCID: 29,
 	CPID: 4379
 },
 {
 	CivTAG: "militaryterritoryoffezzanghadames_!",
 	CivID: 175,
-	PCID: 175,
+	PCID: 30,
 	CPID: 4361
 },
 {
 	CivTAG: "frenchequatorialafrica_)",
 	CivID: 176,
-	PCID: 176,
+	PCID: 30,
 	CPID: 4703
 },
 {
 	CivTAG: "northerncameroons_)",
 	CivID: 177,
-	PCID: 177,
+	PCID: 29,
 	CPID: 4616
 },
 {
 	CivTAG: "southerncameroons_)",
 	CivID: 178,
-	PCID: 178,
+	PCID: 29,
 	CPID: 4659
 },
 {
 	CivTAG: "territoryofcameroun_)",
 	CivID: 179,
-	PCID: 179,
+	PCID: 30,
 	CPID: 4675
 },
 {
 	CivTAG: "portugueseangola_)",
 	CivID: 180,
-	PCID: 180,
+	PCID: 34,
 	CPID: 4950
 },
 {
 	CivTAG: "colonyofmozambique_)",
 	CivID: 181,
-	PCID: 181,
+	PCID: 34,
 	CPID: 5005
 },
 {
 	CivTAG: "protectorateofbasotholand_[",
 	CivID: 182,
-	PCID: 182,
+	PCID: 29,
 	CPID: 5055
 },
 {
 	CivTAG: "colonyofmadagascar_)",
 	CivID: 183,
-	PCID: 183,
+	PCID: 30,
 	CPID: 5098
 },
 {
 	CivTAG: "britishmilitaryadministrationinsomaliland_!",
 	CivID: 184,
-	PCID: 184,
+	PCID: 29,
 	CPID: 4837
 },
 {
@@ -1139,7 +1139,7 @@
 {
 	CivTAG: "britishmilitaryadministrationinogadenandhaud_!",
 	CivID: 186,
-	PCID: 186,
+	PCID: 29,
 	CPID: 4814
 },
 {
@@ -1261,13 +1261,13 @@
 {
 	CivTAG: "unitedstatesarmymilitarygovernmentinkorea_!",
 	CivID: 206,
-	PCID: 206,
+	PCID: 1,
 	CPID: 6988
 },
 {
 	CivTAG: "commonwealthofthephilippines_r",
 	CivID: 207,
-	PCID: 207,
+	PCID: 1,
 	CPID: 7102
 },
 {
@@ -1543,13 +1543,13 @@
 {
 	CivTAG: "northernterritories_)",
 	CivID: 253,
-	PCID: 253,
+	PCID: 29,
 	CPID: 9892
 },
 {
 	CivTAG: "transvoltatogoland_)",
 	CivID: 254,
-	PCID: 254,
+	PCID: 29,
 	CPID: 9893
 },
 {
@@ -2311,31 +2311,31 @@
 {
 	CivTAG: "federatedmalaystates_)",
 	CivID: 380,
-	PCID: 380,
+	PCID: 29,
 	CPID: 6316
 },
 {
 	CivTAG: "perlis_[",
 	CivID: 381,
-	PCID: 381,
+	PCID: 29,
 	CPID: 6306
 },
 {
 	CivTAG: "straitssettlements_)",
 	CivID: 382,
-	PCID: 382,
+	PCID: 29,
 	CPID: 7158
 },
 {
 	CivTAG: "terengganu_!",
 	CivID: 383,
-	PCID: 383,
+	PCID: 29,
 	CPID: 6331
 },
 {
 	CivTAG: "portuguesetimor_)",
 	CivID: 384,
-	PCID: 384,
+	PCID: 34,
 	CPID: 7264
 },
 {
@@ -2372,13 +2372,13 @@
 {
 	CivTAG: "frenchprotectorateoftunisia_[",
 	CivID: 390,
-	PCID: 390,
+	PCID: 30,
 	CPID: 4346
 },
 {
 	CivTAG: "frenchprotectorateinmorocco_[",
 	CivID: 391,
-	PCID: 391,
+	PCID: 30,
 	CPID: 4276
 },
 {
@@ -2426,7 +2426,7 @@
 {
 	CivTAG: "colonyofcapeverde_)",
 	CivID: 399,
-	PCID: 399,
+	PCID: 34,
 	CPID: 4452
 }
 ]
