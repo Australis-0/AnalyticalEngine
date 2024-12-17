@@ -1,0 +1,21 @@
+{
+Name: "The Bear And The Eagle",
+Author: "Vis Tacitus",
+Civs: 399,
+Age: 8,
+Day: 1,
+Month: 1,
+Year: 1946,
+Campaign: false,
+CivDefault_Gold: 1250,
+CivDefault_GoldRandom: 500,
+CivDefault_Legacy: 125,
+CivDefault_LegacyRandom: 50,
+CivDefault_ManpowerPercentage: 85,
+CivDefault_Technology: 81,
+ProvinceDefault_Population: 900000,
+ProvinceDefault_Economy: 25,
+ProvinceDefault_TaxEfficiency: 25,
+ProvinceDefault_Manpower: 20,
+HoursPerTurn: 1
+}

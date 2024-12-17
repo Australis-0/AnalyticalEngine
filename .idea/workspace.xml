@@ -5,51 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09b6f7f8-b868-43e9-b471-ac1dbd15fa3b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Config/interface/editor_map_context_menu/editor_map_context_menu_navigation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/editor/map_context_menu_framework.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Config/.config_backend.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Config/.config_backend.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/optimisation_framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/optimisation_framework.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/ui/editors/mod_editor/map_context_menus/map_context_menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/ui/editors/mod_editor/map_context_menus/map_context_menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/JS/console_basic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/console_basic.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Civilizations.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Civilizations.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/Data.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/Data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/preview.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/preview.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/afra.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/afra.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/aneg.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/aneg.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/asha2.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/asha2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/bel_m.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/bel_m.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/britishmilitaryadministrationineritrea.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/britishmilitaryadministrationineritrea.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/britishmilitaryadministrationinlibya.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/britishmilitaryadministrationinlibya.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/britishmilitaryadministrationinogadenandhaud.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/britishmilitaryadministrationinogadenandhaud.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/britishmilitaryadministrationinsomaliland.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/britishmilitaryadministrationinsomaliland.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/colonyofmadagascar.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/colonyofmadagascar.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/colonyoftheriodeoro.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/colonyoftheriodeoro.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/conb.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/conb.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/frenchequatorialafrica.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/frenchequatorialafrica.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/gam2.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/gam2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/golc.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/golc.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/jammuandkashmir.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/jammuandkashmir.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/maw2.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/maw2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/militaryterritoryoffezzanghadames.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/militaryterritoryoffezzanghadames.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/nige3.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/nige3.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/northerncameroons.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/northerncameroons.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/northernterritories.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/northernterritories.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/protectorateofbasotholand.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/protectorateofbasotholand.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/ruan.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/ruan.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/somb.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/somb.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/southerncameroons.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/southerncameroons.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/spanishprotectorateinmorocco.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/spanishprotectorateinmorocco.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/sww.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/sww.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/tang.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/tang.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/tbuch.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/tbuch.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/territoryofcameroun.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/territoryofcameroun.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/tken.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/tken.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/transvoltatogoland.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/transvoltatogoland.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/trho.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/trho.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/tsie.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/tsie.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/tsor.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/tsor.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/tuga.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/civilizations/tuga.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/GameCivs/game/civilizations/ira.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/GameCivs/game/civilizations/soa.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/settings/Config.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/settings/Config.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/JS/localisation_basic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/localisation_basic.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,22 +30,30 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/AnalyticalEngine/AnalyticalEngine.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/AnalyticalEngine/Config/.config_backend.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/AnalyticalEngine/Config/console/map_commands.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/AnalyticalEngine/Config/console/province_commands.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/AnalyticalEngine/Debugger/console.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/AnalyticalEngine/Framework/Civilisations/Civilisations.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/AnalyticalEngine/Framework/Javascript.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/AnalyticalEngine/Framework/Provinces/Provinces.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/civilisations/civilisation_framework.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/console/console_framework.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/event_handler/event_handler_framework.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/event_handler/on_mapmode_change_handlers.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/event_handler/onclick_handlers.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/event_handler/page_handlers.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/map/map_data_framework.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/map/map_framework.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/map/scenario_framework.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/provinces/province_framework.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/provinces/province_name_framework.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/ui/menu_framework.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/ui/mouse_framework.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/ui/page_framework.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/optimisation_framework.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/startup.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/ui/editors/mod_editor/civilisation_editor.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/ui/editors/mod_editor/map_context_menus/map_context_menu.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/ui/editors/mod_editor/mod_editor.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/AnalyticalEngine/JS/arrays_basic.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/AnalyticalEngine/JS/arrays_dataframes.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/AnalyticalEngine/JS/arrays_maths.js" root0="SKIP_INSPECTION" />
@@ -92,6 +61,7 @@
     <setting file="file://$PROJECT_DIR$/src/AnalyticalEngine/JS/console_basic.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/AnalyticalEngine/JS/loops_basic.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/AnalyticalEngine/JS/strings_split.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/AnalyticalEngine/Java/GameCivsEdit.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/AnalyticalEngine/Java/LanguageManager.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/AnalyticalEngine/js_file_structure.json" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/AA_Game.java" root0="SKIP_INSPECTION" />
@@ -100,7 +70,9 @@
     <setting file="file://$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/Keyboard.class" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/LanguageManager.class" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/Renderer/Renderer.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/SaveLoad/SaveManager.class" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/Steam/SteamManager.class" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/Touch.class" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/desktop/DesktopLauncher.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/IdeologiesManager.class" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/allianceHRE/HREManager.class" root0="SKIP_INSPECTION" />
@@ -108,12 +80,24 @@
     <setting file="file://$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/civilization/CivilizationRegionsManager.class" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/map/Map.class" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/map/MapCoords.class" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/map/MapScenarios.class" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/map/MapScroll.class" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/map/MapTouchManager.class" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/aoc/kingdoms/lukasz/map/province/Province.class" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menu/Menu.class" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menu/MenuManager.class" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menu_element/button/ButtonStatsRect_Active.class" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menusEditor/CreateCiv.class" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menusEditor/GameCivs.class" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menusEditor/GameCivsEdit.class" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menusInGame/Civ/InGame_Civ.class" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menusInGame/DrawOver/InGameDrawOver_InvasionArmy.class" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menusInGame/RecruitArmy/InGame_RecruitArmy.class" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menusMapEditor/EditorMaps.class" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menusScenarioEditor/ScenarioAssign.class" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menusScenarioEditor/ScenarioCivilizations.class" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menusScenarioEditor/ScenarioCivilizationsList.class" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/aoc/kingdoms/lukasz/menusScenarioEditor/ScenariosList.class" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/com/badlogic/gdx/Files.class" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/com/badlogic/gdx/Gdx.class" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/com/badlogic/gdx/graphics/TextureData.class" root0="SKIP_INSPECTION" />
@@ -123,6 +107,7 @@
     <setting file="file://$PROJECT_DIR$/src/mods/11.59/game/Governments.json" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/mods/11.59/game/temp_notes.txt" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/mods/11.59/languages/Bundle.properties" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/mods/11.59/languages/civilisations/Bundle.properties" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/mods/11.59/map/Maps.json" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectColorInfo">{
@@ -154,7 +139,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.143695&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.22651222&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.JSON&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -219,7 +204,8 @@
       <workItem from="1732517435175" duration="135466000" />
       <workItem from="1733268013030" duration="140060000" />
       <workItem from="1734063049185" duration="6504000" />
-      <workItem from="1734101363418" duration="65451000" />
+      <workItem from="1734101363418" duration="73627000" />
+      <workItem from="1734466614497" duration="7301000" />
     </task>
     <servers />
   </component>

@@ -17,18 +17,31 @@
 
 		//Iterate over all scopes if they exist
 		if (options.scopes) {
-			var all_scopes = Object.keys(options.scopes);
+			var placeholder_regex = /\{([^{}]+)\}/gm;
 
-			for (var i = 0; i < all_scopes.length; i++) {
-				var local_regex = new RegExp("{" + all_scopes[i] + "}", "gm");
-				var local_value = options.scopes[all_scopes[i]];
+			string = string.replace(placeholder_regex, function (match, expression) {
+				try {
+					var scope_keys = [];
+					var scope_values = [];
 
-				if (!options.is_html) {
-					string = string.replace(local_regex, local_value);
-				} else {
-					string = string.replace(local_regex, "<span data-key = \"" + all_scopes[i] + "\">" + local_value + "</span>");
+					for (var key in options.scopes)
+						if (options.scopes.hasOwnProperty(key)) {
+							scope_keys.push(key);
+							scope_values.push(options.scopes[key]);
+						}
+
+					var local_function = new Function(scope_keys.join(","), "return " + expression + ";");
+					var local_result = local_function.apply(null, scope_values);
+
+					//Return result, optionally wrapped in HTML
+					if (options.is_html)
+						return "<span data-key = '" + expression + "'>" + local_result + "</span>";
+					return local_result;
+				} catch (e) {
+					console.error("Error parsing localisation: ", expression, " ", e);
+					return match;
 				}
-			}
+			});
 		}
 
 		//Return statement
