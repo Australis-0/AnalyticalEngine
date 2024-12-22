@@ -79,17 +79,19 @@
 		if (!interface_obj.menu_obj)
 			var mod_editor_menu = createContextMenu({
 				id: "mod_editor",
+				draggable: false,
 				name: "AnalyticalEngine - Mod Editor:",
 				no_title: false,
 				persistent: ["SCENARIO_WASTELAND_CONTINENTS", "SCENARIO_WASTELAND", "SCENARIO_CIVILIZATIONS", "SCENARIO_ASSIGN", "SCENARIO_SETTINGS"],
 				pinned: true,
+				resizeable: false,
 
 				anchor: "top_left",
 				can_close: false,
-				height: 400,
-				width: 6*CFG.BUTTON_WIDTH,
-				x: 100,
-				y: 100,
+				height: 500,
+				width: 3*CFG.BUTTON_WIDTH,
+				x: 0,
+				y: 0,
 
 				view_wasteland_continents_button: {
 					type: "button",
@@ -155,8 +157,8 @@
 					type: "button",
 					name: "View Mapmodes",
 					width: 3,
-					x: 1,
-					y: 0,
+					x: 0,
+					y: 5,
 
 					special_function: function (e) {
 						//Convert from parameters
@@ -170,8 +172,8 @@
 					type: "button",
 					name: "View Mod Editor Settings",
 					width: 3,
-					x: 1,
-					y: 1,
+					x: 0,
+					y: 6,
 
 					special_function: function (e) {
 						//Convert from parameters

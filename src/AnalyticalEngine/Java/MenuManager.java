@@ -1771,14 +1771,35 @@ public class MenuManager {
 
     public final void draw(SpriteBatch oSB, int menuID, int iTranslateX, int iTranslateY) {
         try {
-            for(int i = ((List)this.menus.get(menuID)).size() - 1; i >= 0; --i) {
-                try {
-                    if (((Menu)((List)this.menus.get(menuID)).get((Integer)((List)this.orderOfMenu.get(menuID)).get(i))).getVisible()) {
-                        ((Menu)((List)this.menus.get(menuID)).get((Integer)((List)this.orderOfMenu.get(menuID)).get(i))).draw(oSB, iTranslateX, iTranslateY, this.dialogMenu.getVisible() ? false : (Integer)((List)this.orderOfMenu.get(menuID)).get(i) == this.activeSliderMenuID, this.getTitleStatus(menuID, i));
-                        Renderer.clearUnclearedScissors(oSB);
+            List<Menu> menuList = (List<Menu>) this.menus.get(menuID);
+            List<Integer> menuOrder = (List<Integer>) this.orderOfMenu.get(menuID);
+
+            if (menuList != null && menuOrder != null) {
+                for (int i = menuOrder.size() - 1; i >= 0; --i) {
+                    try {
+                        if (i >= 0 && i < menuOrder.size()) {
+                            int menuIndex = menuOrder.get(i);
+
+                            if (menuIndex >= 0 && menuIndex < menuList.size()) {
+                                Menu currentMenu = menuList.get(menuIndex);
+                                boolean isActiveSliderMenu = menuIndex == this.activeSliderMenuID;
+                                boolean isDialogMenuVisible = this.dialogMenu.getVisible();
+
+                                if (currentMenu.getVisible()) {
+                                    currentMenu.draw(
+                                            oSB,
+                                            iTranslateX,
+                                            iTranslateY,
+                                            isDialogMenuVisible ? false : isActiveSliderMenu,
+                                            this.getTitleStatus(menuID, i)
+                                    );
+                                    Renderer.clearUnclearedScissors(oSB);
+                                }
+                            }
+                        }
+                    } catch (Exception ex) {
+                        CFG.exceptionStack(ex);
                     }
-                } catch (Exception ex) {
-                    CFG.exceptionStack(ex);
                 }
             }
         } catch (Exception ex) {
@@ -1788,10 +1809,19 @@ public class MenuManager {
         try {
             if (Game.hoverManager.hoverActiveSliderMenuID >= 0 && Game.hoverManager.hoverActiveMenuElementID >= 0) {
                 Game.hoverManager.updateElementHover_Animation();
-                ((Menu)this.getActiveMenu().get(Game.hoverManager.hoverActiveSliderMenuID)).drawHover(oSB, iTranslateX, 0, Game.hoverManager.hoverActiveMenuElementID);
+                List<Menu> activeMenuList = this.getActiveMenu();
+
+                if (Game.hoverManager.hoverActiveSliderMenuID < activeMenuList.size()) {
+                    Menu activeMenu = activeMenuList.get(Game.hoverManager.hoverActiveSliderMenuID);
+                    activeMenu.drawHover(oSB, iTranslateX, 0, Game.hoverManager.hoverActiveMenuElementID);
+                }
             } else if (Game.provinceHover_Informations != null) {
                 Game.hoverManager.updateElementHover_Animation();
-                Game.provinceHover_Informations.drawProvinceInfo(oSB, Touch.getMousePosX() + Renderer.getHover_ExtraPosX(), Touch.getMousePosY() + Renderer.getHover_ExtraPosY());
+                Game.provinceHover_Informations.drawProvinceInfo(
+                        oSB,
+                        Touch.getMousePosX() + Renderer.getHover_ExtraPosX(),
+                        Touch.getMousePosY() + Renderer.getHover_ExtraPosY()
+                );
             }
 
             if (this.colorPicker.getVisible()) {
@@ -1804,7 +1834,6 @@ public class MenuManager {
         } catch (Exception ex) {
             CFG.exceptionStack(ex);
         }
-
     }
 
     public final List<Menu> getActiveMenu() {

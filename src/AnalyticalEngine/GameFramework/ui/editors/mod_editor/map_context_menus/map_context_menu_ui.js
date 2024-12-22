@@ -11,7 +11,17 @@
 			main.interfaces.map_context_menu.menu_obj.setVisible(false);
 	}
 
-	function openMapContextMenu (arg0_province_id) { //[WIP] - This needs to be put into a Naissance style config
+	function openMapContextMenu (arg0_province_id, arg1_context_menu_id) {
+		//Convert from parameters
+		var province_id = arg0_province_id;
+		var context_menu_id = arg1_context_menu_id;
+
+		//Declare local instance variables
+		var current_page = getCurrentPage();
+
+	}
+
+	function openMapNavigationMenu (arg0_province_id) {
 		//Convert from parameters
 		var province_id = arg0_province_id;
 
@@ -70,12 +80,11 @@
 		}
 	}
 
-	function openMapSubcontextMenu (arg0_province_id, arg1_context_menu_id) {
-		//Convert from parameters
-		var province_id = arg0_province_id;
-		var context_menu_id = arg1_context_menu_id;
-
+	function refreshMapContextMenus () {
 		//Declare local instance variables
-			
+	}
+
+	function refreshMapContextMenuInputs () {
+		
 	}
 }
