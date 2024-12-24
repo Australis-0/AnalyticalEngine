@@ -5,25 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09b6f7f8-b868-43e9-b471-ac1dbd15fa3b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Java/ScenarioEditor/ScenarioAssign.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Java/ScenarioEditor/ScenarioAssignCivs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Java/ScenarioEditor/ScenarioAssignList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Java/ScenarioEditor/ScenarioCivilizations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Java/ScenarioEditor/ScenarioSettings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Java/ScenarioEditor/ScenarioWasteland.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Java/ScenarioEditor/ScenarioWastelandContinents.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/optimisation_framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/optimisation_framework.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/ui/editors/mod_editor/civilisation_editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/ui/editors/mod_editor/civilisation_editor_ui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/ui/editors/mod_editor/map_context_menus/map_context_menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/ui/editors/mod_editor/map_context_menus/map_context_menu_ui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/ui/editors/mod_editor/mod_editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/ui/editors/mod_editor/mod_editor_ui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Java/MenuManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Java/MenuManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/preview.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/preview.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/settings/Settings.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/settings/Settings.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/statistics/AoH.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/statistics/AoH.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menu/MenuManager$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menu/MenuManager$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menu/MenuManager$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menu/MenuManager$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menu/MenuManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menu/MenuManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/languages/civilisations/Bundle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/languages/civilisations/Bundle.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,7 +202,7 @@
       <workItem from="1734063049185" duration="6504000" />
       <workItem from="1734101363418" duration="73627000" />
       <workItem from="1734466614497" duration="11042000" />
-      <workItem from="1734809856493" duration="15888000" />
+      <workItem from="1734809856493" duration="24967000" />
     </task>
     <servers />
   </component>
