@@ -1,3 +1,4 @@
+//[WIP] - Consider moving .PopulationGrowth one decimal to the left and tweaking Urban Population Growth to be linear constants (10, 20, 30, 40, 50).
 {
 	Age_of_History: Data,
 		Data: [
