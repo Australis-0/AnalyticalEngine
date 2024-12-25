@@ -10,6 +10,6 @@
 				console.log("Clicked on Province: " + province_id);
 				config.console.province_commands.print_province.special_function([province_id, "false"]);
 			}
-		}
+		};
 	}
 }

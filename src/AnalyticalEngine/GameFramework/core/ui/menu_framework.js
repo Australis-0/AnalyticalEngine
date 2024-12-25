@@ -989,7 +989,7 @@
 				if (e == "left_click") {
 					closeMapContextMenu(hovered_province.getProvinceID());
 				} else if (e == "right_click") {
-					openMapContextMenu(hovered_province.getProvinceID());
+					openMapNavigationMenu(hovered_province.getProvinceID());
 				}
 
 		//Draw current menus

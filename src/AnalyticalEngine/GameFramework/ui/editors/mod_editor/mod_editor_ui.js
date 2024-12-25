@@ -194,6 +194,14 @@
 		return main.interfaces.mod_editor;
 	}
 
+	function isInModEditor () {
+		//Declare local instance variables
+		var current_page = getCurrentPage();
+
+		//Return statement
+		return ["SCENARIO_WASTELAND_CONTINENTS", "SCENARIO_WASTELAND", "SCENARIO_CIVILIZATIONS", "SCENARIO_ASSIGN", "SCENARIO_SETTINGS"].includes(current_page);
+	}
+
 	function openEditorWindow (arg0_window_id, arg1_window_function) {
 		//Convert from parameters
 		var window_id = arg0_window_id;
