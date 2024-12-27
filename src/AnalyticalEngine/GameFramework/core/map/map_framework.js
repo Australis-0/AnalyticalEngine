@@ -121,6 +121,8 @@
 	 * @param {Array<Object>} [arg1_options.all_provinces] - Optional. Optimisation parameter.
 	 */
 	function loadCustomMapmode (arg0_custom_mapmode_obj, arg1_options) {
+		//console.log("Custom mapmode called!");
+
 		//Convert from parameters
 		var custom_mapmode_obj = arg0_custom_mapmode_obj;
 		var options = (arg1_options) ? arg1_options : {};

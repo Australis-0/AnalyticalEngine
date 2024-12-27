@@ -43,6 +43,11 @@
 				initialiseSaveLoad();
 				initialisePostLoadingEventHandlers();
 			}
+			//Load Map Editors
+			//Terrain
+			if (current_page == "EDITOR_MAPS_EDIT_TERRAIN")
+				initialiseEditorViewMapmodes();
+
 			//Load Mod Editor
 			main.in_mod_editor = (mod_editor_pages.includes(current_page));
 			if (current_page == "SCENARIO_CIVILIZATIONS") {

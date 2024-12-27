@@ -5,12 +5,120 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09b6f7f8-b868-43e9-b471-ac1dbd15fa3b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Config/mapmodes/no_terrain.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/map/map_terrain_framework.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Java/MapEditor/EditorMapTerrainType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Java/MapEditor/EditorMapTerrainTypeList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/game/terrain/BackupTerrainTypes.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/event_handler/page_handlers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/event_handler/page_handlers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/map/map_framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/map/map_framework.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/provinces/province_framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/provinces/province_framework.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/cities/cities.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/cities/cities.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/map/11.59/data/ProvinceDetails.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/ProvinceDetails.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/Data.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/Data.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/preview.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/preview.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/TerrainTypes.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/terrain/TerrainTypes.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/statistics/AoH.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/statistics/AoH.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/statistics/usa_o.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/statistics/usa_o.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/H/desert.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/H/desert2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/H/desert3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/H/drylands.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/H/drylands2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/H/forest.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/H/forest2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/H/forest3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/H/forest4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/H/hills.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/H/hills2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/H/hills2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/H/hills3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/H/hills4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/H/jungle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/H/jungle2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/H/jungle3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/H/marsh.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/H/marsh.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/H/mountains.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/H/mountains2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/H/mountains3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/H/notFound.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/H/plains.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/H/plains.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/H/plains2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/H/plains3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/H/plains4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/H/plains5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/H/savanna.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/H/savanna.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/H/sea.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/H/sea.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/H/semidesert.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/H/semidesert2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/H/steppes.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/H/steppes2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/H/taiga.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/H/tundra.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/H/tundra.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XH/desert.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XH/desert2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XH/desert3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XH/drylands.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XH/drylands2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XH/forest.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XH/forest2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XH/forest3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XH/forest4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XH/hills.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XH/hills2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XH/hills3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XH/hills4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XH/jungle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XH/jungle2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XH/jungle3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XH/marsh.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XH/marsh.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XH/mountains.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XH/mountains2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XH/mountains3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XH/mountains3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XH/notFound.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XH/notFound.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XH/plains.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XH/plains.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XH/plains2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XH/plains3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XH/plains4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XH/plains5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XH/savanna.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XH/savanna.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XH/sea.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XH/semidesert.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XH/semidesert2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XH/steppes.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XH/steppes2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XH/taiga.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XH/taiga.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XH/tundra.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XH/tundra.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XXH/desert.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XXH/desert2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XXH/desert3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XXH/drylands.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XXH/drylands2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XXH/forest.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XXH/forest2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XXH/forest3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XXH/forest4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XXH/hills.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XXH/hills2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XXH/hills3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XXH/hills4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XXH/jungle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XXH/jungle2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XXH/jungle3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XXH/marsh.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XXH/marsh.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XXH/mountains.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XXH/mountains2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XXH/mountains3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XXH/plains.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XXH/plains.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XXH/plains2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XXH/plains3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XXH/plains4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XXH/plains5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XXH/savanna.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XXH/savanna.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XXH/sea.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XXH/semidesert.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XXH/semidesert2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XXH/taiga.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XXH/tundra.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XXH/tundra.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/languages/Bundle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/languages/Bundle.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,7 +314,7 @@
       <workItem from="1734063049185" duration="6504000" />
       <workItem from="1734101363418" duration="73627000" />
       <workItem from="1734466614497" duration="11042000" />
-      <workItem from="1734809856493" duration="40053000" />
+      <workItem from="1734809856493" duration="61816000" />
     </task>
     <servers />
   </component>

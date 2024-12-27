@@ -13,7 +13,7 @@
 			Defense: 2,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 53.71
+			PopulationGrowth: 5.371
 		},
 		{
 			Name: "Coline Subtropical",
@@ -25,7 +25,7 @@
 			Defense: 3,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 19.43
+			PopulationGrowth: 1.943
 		},
 		{
 			Name: "Montane Subtropical",
@@ -37,7 +37,7 @@
 			Defense: 4,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 3.18
+			PopulationGrowth: 0.318
 		},
 		{
 			Name: "Tropical Rainforest",
@@ -49,7 +49,7 @@
 			Defense: 4,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 27.21
+			PopulationGrowth: 2.721
 		},
 		{
 			Name: "Coline Tropical Rainforest",
@@ -61,7 +61,7 @@
 			Defense: 5,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 10.95
+			PopulationGrowth: 1.095
 		},
 		{
 			Name: "Montane Tropical Rainforest",
@@ -73,7 +73,7 @@
 			Defense: 6,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 2.47
+			PopulationGrowth: 0.247
 		},
 
 		//B (DRY)
@@ -87,7 +87,7 @@
 			Defense: 2,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 90.81
+			PopulationGrowth: 9.081
 		},
 		{
 			Name: "Coline Chaparral",
@@ -99,7 +99,7 @@
 			Defense: 3,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 27.92
+			PopulationGrowth: 2.792
 		},
 		{
 			Name: "Montane Chaparral",
@@ -111,7 +111,7 @@
 			Defense: 4,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 3.18
+			PopulationGrowth: 0.318
 		},
 		{
 			Name: "Cold Desert",
@@ -123,7 +123,7 @@
 			Defense: 1,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 67.14
+			PopulationGrowth: 6.714
 		},
 		{
 			Name: "Coline Cold Desert",
@@ -135,7 +135,7 @@
 			Defense: 2,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 22.97
+			PopulationGrowth: 2.297
 		},
 		{
 			Name: "Montane Cold Desert",
@@ -147,7 +147,7 @@
 			Defense: 3,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 3.18
+			PopulationGrowth: 0.318
 		},
 		{
 			Name: "Hot Desert",
@@ -159,7 +159,7 @@
 			Defense: 0,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 4.95
+			PopulationGrowth: 0.495
 		},
 		{
 			Name: "Coline Hot Desert",
@@ -171,7 +171,7 @@
 			Defense: 1,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 2.47
+			PopulationGrowth: 0.247
 		},
 		{
 			Name: "Montane Hot Desert",
@@ -195,7 +195,7 @@
 			Defense: 1,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 24.73
+			PopulationGrowth: 2.473
 		},
 		{
 			Name: "Coline Savanna",
@@ -207,7 +207,7 @@
 			Defense: 2,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 10.25
+			PopulationGrowth: 1.025
 		},
 		{
 			Name: "Montane Savanna",
@@ -219,7 +219,7 @@
 			Defense: 3,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 2.12
+			PopulationGrowth: 0.212
 		},
 		{
 			Name: "Semiarid",
@@ -231,7 +231,7 @@
 			Defense: 0,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 29.68
+			PopulationGrowth: 2.968
 		},
 		{
 			Name: "Coline Semiarid",
@@ -243,7 +243,7 @@
 			Defense: 1,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 11.66
+			PopulationGrowth: 1.166
 		},
 		{
 			Name: "Montane Semiarid",
@@ -255,7 +255,7 @@
 			Defense: 2,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 2.47
+			PopulationGrowth: 0.247
 		},
 		{
 			Name: "Steppe",
@@ -267,7 +267,7 @@
 			Defense: 0,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 85.87
+			PopulationGrowth: 8.587
 		},
 		{
 			Name: "Coline Steppe",
@@ -279,7 +279,7 @@
 			Defense: 1,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 21.2
+			PopulationGrowth: 2.12
 		},
 		{
 			Name: "Montane Steppe",
@@ -291,7 +291,7 @@
 			Defense: 2,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 1.41
+			PopulationGrowth: 0.141
 		},
 
 		//C (TEMPERATE)
@@ -305,7 +305,7 @@
 			Defense: 1,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 100
+			PopulationGrowth: 10
 		},
 		{
 			Name: "Coline Alpine Forest",
@@ -317,7 +317,7 @@
 			Defense: 2,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 27.92
+			PopulationGrowth: 2.792
 		},
 		{
 			Name: "Montane Alpine Forest",
@@ -329,7 +329,7 @@
 			Defense: 4,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 2.47
+			PopulationGrowth: 0.247
 		},
 		{
 			Name: "Coniferous Forest",
@@ -341,7 +341,7 @@
 			Defense: 1,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 2.12
+			PopulationGrowth: 0.212
 		},
 		{
 			Name: "Coline Coniferous Forest",
@@ -353,7 +353,7 @@
 			Defense: 2,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 0.35
+			PopulationGrowth: 0.035
 		},
 		{
 			Name: "Montane Coniferous Forest",
@@ -365,7 +365,7 @@
 			Defense: 3,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 0.35
+			PopulationGrowth: 0.035
 		},
 		{
 			Name: "Deciduous Forest",
@@ -377,7 +377,7 @@
 			Defense: 1,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 100
+			PopulationGrowth: 10
 		},
 		{
 			Name: "Coline Deciduous Forest",
@@ -389,7 +389,7 @@
 			Defense: 2,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 27.92
+			PopulationGrowth: 2.792
 		},
 		{
 			Name: "Montane Deciduous Forest",
@@ -401,7 +401,7 @@
 			Defense: 3,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 2.47
+			PopulationGrowth: 0.247
 		},
 		{
 			Name: "Estuary",
@@ -413,7 +413,7 @@
 			Defense: 2,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 92.93
+			PopulationGrowth: 9.293
 		},
 		{
 			Name: "Marsh",
@@ -425,7 +425,7 @@
 			Defense: 4,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 73.85
+			PopulationGrowth: 7.385
 		},
 		{
 			Name: "Mediterranean",
@@ -437,7 +437,7 @@
 			Defense: 1,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 53.71
+			PopulationGrowth: 5.371
 		},
 		{
 			Name: "Coline Mediterranean",
@@ -449,7 +449,7 @@
 			Defense: 2,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 19.43
+			PopulationGrowth: 1.943
 		},
 		{
 			Name: "Montane Mediterranean",
@@ -461,7 +461,7 @@
 			Defense: 3,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 3.18
+			PopulationGrowth: 0.318
 		},
 		{
 			Name: "Moors and Heaths",
@@ -473,7 +473,7 @@
 			Defense: 2,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 100
+			PopulationGrowth: 10
 		},
 		{
 			Name: "Temperate Rainforest",
@@ -485,7 +485,7 @@
 			Defense: 2,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 100
+			PopulationGrowth: 10
 		},
 		{
 			Name: "Coline Temperate Rainforest",
@@ -497,7 +497,7 @@
 			Defense: 3,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 27.92
+			PopulationGrowth: 2.792
 		},
 		{
 			Name: "Montane Temperate Rainforest",
@@ -509,7 +509,7 @@
 			Defense: 4,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 2.47
+			PopulationGrowth: 0.247
 		},
 		{
 			Name: "Wetlands",
@@ -521,7 +521,7 @@
 			Defense: 3,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 96.47
+			PopulationGrowth: 9.647
 		},
 
 		//D (CONTINENTAL)
@@ -535,7 +535,7 @@
 			Defense: 1,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 8.48
+			PopulationGrowth: 0.848
 		},
 		{
 			Name: "Coline Evergreen Forest",
@@ -547,7 +547,7 @@
 			Defense: 2,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 1.41
+			PopulationGrowth: 0.141
 		},
 		{
 			Name: "Montane Evergreen Forest",
@@ -559,7 +559,7 @@
 			Defense: 3,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 0.35
+			PopulationGrowth: 0.035
 		},
 		{
 			Name: "Plains",
@@ -571,7 +571,7 @@
 			Defense: 0,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 85.87
+			PopulationGrowth: 8.587
 		},
 		{
 			Name: "Taiga Forest",
@@ -583,7 +583,7 @@
 			Defense: 2,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 1.06
+			PopulationGrowth: 0.106
 		},
 		{
 			Name: "Coline Taiga Forest",
@@ -595,7 +595,7 @@
 			Defense: 3,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 0.35
+			PopulationGrowth: 0.035
 		},
 		{
 			Name: "Montane Taiga Forest",
@@ -607,7 +607,7 @@
 			Defense: 4,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 0.35
+			PopulationGrowth: 0.035
 		},
 
 		//E (POLAR)
@@ -621,7 +621,7 @@
 			Defense: 3,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 4.95
+			PopulationGrowth: 0.495
 		},
 		{
 			Name: "Coline Subarctic",
@@ -633,7 +633,7 @@
 			Defense: 4,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 1.06
+			PopulationGrowth: 0.106
 		},
 		{
 			Name: "Montane Subarctic",
@@ -645,7 +645,7 @@
 			Defense: 5,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 0.35
+			PopulationGrowth: 0.035
 		},
 		{
 			Name: "Tundra",
@@ -657,7 +657,7 @@
 			Defense: 2,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 1.77
+			PopulationGrowth: 0.177
 		},
 		{
 			Name: "Coline Tundra",
@@ -669,7 +669,7 @@
 			Defense: 3,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 0.35
+			PopulationGrowth: 0.035
 		},
 		{
 			Name: "Montane Tundra",
@@ -681,7 +681,7 @@
 			Defense: 4,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 0.35
+			PopulationGrowth: 0.035
 		},
 
 		//F (OCEANIC)
@@ -755,7 +755,7 @@
 			Defense: 2,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 13.43
+			PopulationGrowth: 1.343
 		},
 		{
 			Name: "Ocean Trench",
@@ -793,7 +793,7 @@
 			Defense: 6,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 3763.25
+			PopulationGrowth: 40
 		},
 		{
 			Name: "Metropolis",
@@ -805,7 +805,7 @@
 			Defense: 5,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 2773.85
+			PopulationGrowth: 30
 		},
 		{
 			Name: "Urban",
@@ -817,7 +817,7 @@
 			Defense: 4,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 2508.83
+			PopulationGrowth: 20
 		},
 		{
 			Name: "Semi-Urban",
@@ -829,7 +829,7 @@
 			Defense: 3,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 954.06
+			PopulationGrowth: 10
 		},
 		{
 			Name: "Farmland",
@@ -841,7 +841,7 @@
 			Defense: 2,
 			IncreaseGrowthRateCost: 100,
 			MovementSpeed: 0.4,
-			PopulationGrowth: 141.34
+			PopulationGrowth: 5
 		}
 	]
 }
