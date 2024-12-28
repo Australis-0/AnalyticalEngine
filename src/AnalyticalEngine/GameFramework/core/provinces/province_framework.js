@@ -29,7 +29,6 @@
 
 		//Set sea_provinces to tag 'neu'
 		setProvinceOwners(sea_provinces, "neu");
-		SaveManager.saveScenarioDetailsProvinces();
 	}
 
 	/**
