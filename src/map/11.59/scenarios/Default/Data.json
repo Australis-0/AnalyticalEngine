@@ -5,9 +5,7 @@
 	PCID: 1,
 	CPID: 1,
 	Population: 141388566,
-	TaxEff: 10,
-	NRL: 3,
-	Nukes: 7
+	TaxEff: 10
 },
 {
 	CivTAG: "dox_o",

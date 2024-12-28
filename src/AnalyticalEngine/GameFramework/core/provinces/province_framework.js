@@ -11,15 +11,25 @@
 	this.PixmapIO = Java.type("com.badlogic.gdx.graphics.PixmapIO");
 	this.ProvinceDrawDetails = Java.type("aoc.kingdoms.lukasz.map.province.ProvinceDrawDetails");
 	this.Random = Java.type("java.util.Random");
+	this.SaveManager = Java.type("aoc.kingdoms.lukasz.jakowski.SaveLoad.SaveManager");
 	this.Texture = Java.type("com.badlogic.gdx.graphics.Texture");
 }
 
 //Initialise functions
 {
-	function fixSeaProvinces () {
+	function fixSeaProvinces () { //[WIP] - Finish function
 		//Declare local instance variables
-		var all_provinces = [];
+		var all_provinces = getAllProvinces();
+		var sea_provinces = [];
 
+		//Iterate over all_provinces and detect whether it is a sea province or not
+		for (var i = 0; i < all_provinces.length; i++)
+			if (isSeaProvince(all_provinces[i]))
+				sea_provinces.push(all_provinces[i]);
+
+		//Set sea_provinces to tag 'neu'
+		setProvinceOwners(sea_provinces, "neu");
+		SaveManager.saveScenarioDetailsProvinces();
 	}
 
 	/**
@@ -162,6 +172,17 @@
 			getTerrain(province_terrain_id) : province_terrain_id;
 	}
 
+	function isSeaProvince (arg0_province_name) {
+		//Convert from parameters
+		var province_name = arg0_province_name;
+
+		//Declare local instance variables
+		var province_obj = getProvince(province_name);
+
+		//Return statement
+		return province_obj.getSeaProvince();
+	}
+
 	function setProvinceController (arg0_province_name, arg1_civ_name, arg2_options) {
 		//Convert from parameters
 		var province_name = arg0_province_name;
@@ -219,6 +240,7 @@
 		var province_obj = getProvince(province_name);
 
 		var from_civ_id = province_obj.getCivID();
+		var from_civ_obj = getCivilisation(province_obj.getCivID());
 		var province_id = province_obj.iProvinceID;
 		var to_civ_id = civ_obj.iCivID;
 
@@ -234,7 +256,7 @@
 					Game.updateProvincesInView = true;
 					CivilizationRegionsManager.updateRegionsInView = true;
 				}
-			});
+			}); //(Civilization).addProvince_LoadScenario
 			var update_task_obj = new UpdateTask("buildCivilizationsRegion" + from_civ_id, from_civ_id);
 			Game.gameThreadUpdate.addSimpleTask(update_task_obj);
 		}

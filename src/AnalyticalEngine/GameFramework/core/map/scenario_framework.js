@@ -18,6 +18,9 @@
 		//Declare local instance variables
 		var logic_loop_key = "scenario_" + scenario + "_logic_loop";
 
+		//Fix scenario-related bugs; override provinces using AnalyticalEngine structures
+		fixSeaProvinces();
+
 		//Initialise Scenario logic loop
 		if (main[logic_loop_key])
 			clearInterval(main[logic_loop_key]);
