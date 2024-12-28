@@ -4,6 +4,18 @@
 		Data: [
 		//A (TROPICAL)
 		{
+			Name: "No Terrain",
+			ImageFile: ["no_terrain.png"],
+			Color: [0, 0, 0],
+			BaseEconomy: 0,
+			BasePopulation: 0,
+			BattleOver: 1,
+			Defense: 0,
+			IncreaseGrowthRateCost: 0,
+			MovementSpeed: 0.4,
+			PopulationGrowth: 0
+		},
+		{
 			Name: "Subtropics",
 			ImageFile: ["subtropics.png"],
 			Color: [24, 82, 40],

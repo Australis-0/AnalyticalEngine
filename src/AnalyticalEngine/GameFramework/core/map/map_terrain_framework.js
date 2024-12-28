@@ -81,4 +81,65 @@
 			Math.round(terrain_obj.Color[1]*255),
 			Math.round(terrain_obj.Color[2]*255)];
 	}
+
+	function getTerrainID (arg0_terrain_name) {
+		//Convert from parameters
+		var terrain_name = arg0_terrain_name;
+
+		//Declare local instance variables
+		var all_terrains = getAllTerrains();
+		var terrain_obj = getTerrain(terrain_name);
+
+		//Iterate over all_terrains
+		for (var i = 0; i < all_terrains.length; i++)
+			if (all_terrains[i].Name == terrain_obj.Name)
+				//Return statement
+				return i;
+	}
+
+	function setProvinceTerrain (arg0_province_id, arg1_terrain_name) {
+		//Convert from parameters
+		var province_id = arg0_province_id;
+		var terrain_name = arg1_terrain_name;
+
+		//Declare local instance variables
+		var all_terrains = getAllTerrains();
+		var province_obj = getProvince(province_id);
+		var terrain_obj = getTerrain(terrain_name);
+
+		if (terrain_obj)
+			province_obj.setTerrainID(getTerrainID(terrain_obj));
+	}
+
+	/**
+	 * shiftMapTerrain() - Shifts all terrain for current map provinces by a specific TerrainID value.
+	 * @param {number} arg0_value - The value to shift all terrain by.
+	 * @param {Object} [arg1_options]
+	 * @param {Array<String>} [arg1_options.excluded_ids=[0, 1]] - The IDs to exclude from value shifts. [0, 1] by default due to game reservation.
+	 */
+	function shiftMapTerrain (arg0_value, arg1_options) {
+		//Convert from parameters
+		var shift_value = arg0_value;
+		var options = (arg1_options) ? arg1_options : {};
+
+		//Initialise options
+		options.excluded_ids = (options.excluded_ids != undefined) ? getList(options.excluded_ids) : [0, 1];
+
+		//Declare local instance variables
+		var all_provinces = getAllProvinces();
+		var all_terrains = getAllTerrains();
+
+		//Iterate over all_provinces and invoke .setTerrainID()
+		for (var i = 0; i < all_provinces.length; i++) {
+			var local_province_terrain_id = all_provinces[i].getTerrainID();
+
+			if (!options.excluded_ids.includes(local_province_terrain_id)) {
+				var new_terrain_id = local_province_terrain_id + shift_value;
+
+				//Normalise new_terrain_id; set new_terrain_id. This cycles terrain IDs such that it is lossless.
+				new_terrain_id = ((new_terrain_id % all_terrains.length) + all_terrains.length) % all_terrains.length;
+				all_provinces[i].setTerrainID(new_terrain_id);
+			}
+		}
+	}
 }

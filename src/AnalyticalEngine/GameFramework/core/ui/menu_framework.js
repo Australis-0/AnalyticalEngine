@@ -2,6 +2,7 @@
 {
 	this.AA_Game = Java.type("aoc.kingdoms.lukasz.jakowski.AA_Game");
 	this.ArrayList = Java.type("java.util.ArrayList");
+	this.ButtonFlag2_CivName = Java.type("aoc.kingdoms.lukasz.menu_element.button.ButtonFlag2_CivName");
 	this.ButtonMain = Java.type("aoc.kingdoms.lukasz.menu_element.button.ButtonMain");
 	this.ButtonStatsRect_Active = Java.type("aoc.kingdoms.lukasz.menu_element.button.ButtonStatsRect_Active");
 	this.CFG = Java.type("aoc.kingdoms.lukasz.jakowski.CFG");
@@ -18,12 +19,13 @@
 	this.Renderer = Java.type("aoc.kingdoms.lukasz.jakowski.Renderer.Renderer");
 	this.TextBG = Java.type("aoc.kingdoms.lukasz.menu_element.textStatic.TextBG");
 	this.Text_Static = Java.type("aoc.kingdoms.lukasz.menu_element.textStatic.Text_Static");
+	this.Text_StaticBG_ID_FlagCiv = Java.type("aoc.kingdoms.lukasz.menu_element.textStatic.Text_StaticBG_ID_FlagCiv");
 	this.Touch = Java.type("aoc.kingdoms.lukasz.jakowski.Touch");
 }
 
 //Initialise functions
 {
-	function addElements (arg0_interface_id, arg1_context_menu_obj) {
+	function addElements (arg0_interface_id, arg1_context_menu_obj) { //[WIP] - Finish function body
 		//Convert from parameters
 		var interface_id = arg0_interface_id;
 		var context_menu_obj = arg1_context_menu_obj;
@@ -146,7 +148,7 @@
 	 *
 	 * @param {Object} [arg0_options."input_key"]
 	 *  @param {String} [arg0_options."input_key".name]
-	 * 	@param {String} [arg0_options."input_key".type] - Either 'button'/'text'.
+	 * 	@param {String} [arg0_options."input_key".type] - Either 'button'/'flag_button'/'large_flag_button'/'text'.
 	 * 	@param {number} [arg0_options."input_key".raw_coords=false] - Whether to use raw specified coords instead of autoformatting.
 	 * 	@param {number} [arg0_options."input_key".raw_dimensions=false] - Whether to override default multiplication for .width.
 	 * 	@param {number} [arg0_options."input_key".height=2] - The height as multiplied by CFG.BUTTON_WIDTH.
@@ -251,6 +253,10 @@
 				//Parse type
 				if (local_value.type == "button") {
 					new_menu_element_obj = createButton(local_value);
+				} else if (local_value.type == "flag_button") {
+					new_menu_element_obj = createFlagButton(local_value);
+				} else if (local_value.type == "large_flag_button") {
+					new_menu_element_obj = createLargeFlagButton(local_value);
 				} else if (local_value.type == "text") {
 					new_menu_element_obj = createText(local_value);
 				}
@@ -390,6 +396,13 @@
 				raw_dimensions: true,
 				width: 400
 			},
+			neu_button: {
+				type: "flag_button",
+				civilisation: "neu",
+				raw_dimensions: true,
+				height: 40,
+				width: 400
+			},
 			left_align_button: {
 				type: "button",
 				name: "Left-aligned button",
@@ -428,6 +441,114 @@
 
 		//Return statement
 		return dummy_interface_obj.menu_obj;
+	}
+
+	/**
+	 * createFlagButton() - Creates a flag button for a context menu.
+	 * @param {Object} [arg0_options]
+	 * @param {String} [arg0_options.name] - The name of the civilisation by default.
+	 * @param {String} [arg0_options.align="centre"]
+	 * @param {String} [arg0_options.civilisation="neu"] - The civilisation to create the FlagButton for.
+	 * @param {boolean} [arg0_options.raw_dimensions=false]
+	 * @param {number} [arg0_options.height]
+	 * @param {number} [arg0_options.width=2]
+	 * @param {number} [arg0_options.x=0]
+	 * @param {number} [arg0_options.y=0]
+	 *
+	 * @returns {Object<MenuElement>}
+	 */
+	function createFlagButton (arg0_options) {
+		//Convert from parameters
+		var options = (arg0_options) ? arg0_options : {};
+
+		//Initialise options
+		if (!options.civilisation) options.civilisation = "neu";
+		options.height = returnSafeNumber(options.height);
+		options.width = returnSafeNumber(options.width, 2);
+
+		//Declare local instance variables
+		var actual_height = parseInt((!options.raw_dimensions) ?
+			CFG.BUTTON_WIDTH*options.height : options.height);
+		var actual_name = (options.name) ? options.name : getCivilisationName(options.civilisation);
+		var actual_width = parseInt((!options.raw_dimensions) ?
+			CFG.BUTTON_WIDTH*options.width : options.width);
+		var civilisation_id = getCivilisationID(options.civilisation);
+
+		var actual_text_position = -1;
+		//Adjust actual_text_position
+		if (options.align == "left")
+			actual_text_position = 25;
+		if (options.align == "right") {
+			//Create phantom dummy_flag_button_obj to calculate displayed text width from
+			var dummy_flag_button_obj = new Text_StaticBG_ID_FlagCiv(
+				null, //(sText) Initial string
+				0, //(fontID)
+				actual_text_position, //(iTextPositionX)
+				parseInt(options.x), //(iPosX)
+				parseInt(options.y), //(iPosY)
+				actual_width, //(nWidth)
+				actual_height, //(nHeight),
+				civilisation_id //(id)
+			);
+			dummy_flag_button_obj.setText(actual_name);
+			var dummy_flag_button_width = dummy_flag_button_obj.getTextWidth();
+
+			actual_text_position = actual_width - 25 - dummy_flag_button_width;
+		}
+
+		//Construct new_flag_button_obj
+		var new_flag_button_obj;
+
+		new_flag_button_obj = new Text_StaticBG_ID_FlagCiv(
+			null, //(sText) Initial string
+			0, //(fontID)
+			actual_text_position, //(iTextPositionX)
+			parseInt(options.x), //(iPosX)
+			parseInt(options.y), //(iPosY)
+			actual_width, //(nWidth)
+			actual_height, //(nHeight)
+			civilisation_id //(id)
+		);
+
+		//Post-process handling
+		//options.name
+		new_flag_button_obj.setText(actual_name);
+
+		//Return statement
+		return new_flag_button_obj;
+	}
+
+	/**
+	 * createLargeFlagButton() - Creates a large flag button for a context menu.
+	 * @param {Object} [arg0_options]
+	 * @param {String} [arg0_options.civilisation="neu"] - The civilisation to create the LargeFlagButton for.
+	 * @param {number} [arg0_options.x=0]
+	 * @param {number} [arg0_options.y=0]
+	 * @param {boolean} [arg0_options.is_clickable=true]
+	 *
+	 * @returns {Object<MenuElement>}
+	 */
+	function createLargeFlagButton (arg0_options) {
+		//Convert from parameters
+		var options = (arg0_options) ? arg0_options : {};
+
+		//Initialise options
+		if (!options.civilisation) options.civilisation = "neu";
+		if (options.is_clickable == undefined) options.is_clickable = true;
+		options.x = returnSafeNumber(options.x);
+		options.y = returnSafeNumber(options.y)
+
+		//Declare local instance variables
+		var civilisation_id = getCivilisationID(options.civilisation);
+		var new_button_obj = new ButtonFlag2_CivName(
+			civilisation_id, //(iCivID)
+			parseInt(options.x),
+			parseInt(options.y),
+			options.is_clickable
+		);
+
+		//Return statement
+		return new_button_obj;
 	}
 
 	/**

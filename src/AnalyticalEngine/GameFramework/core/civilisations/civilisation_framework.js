@@ -150,6 +150,17 @@
 			}
 	}
 
+	function getCivilisationID (arg0_civ_name) {
+		//Convert from parameters
+		var civ_name = arg0_civ_name;
+
+		//Declare local instance variables
+		var civ_obj = getCivilisation(civ_name);
+
+		//Return statement
+		return civ_obj.iCivID;
+	}
+
 	/**
 	 * getCivilisationName() - Returns the present civilisation name.
 	 * @param {number|Object|String} arg0_civ_name - The civilisation to pass to the function.
