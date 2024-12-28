@@ -5,12 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09b6f7f8-b868-43e9-b471-ac1dbd15fa3b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Java/ScenarioEditor/ScenarioCivilizationsList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/provinces/province_framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/provinces/province_framework.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_1.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/ui/menu_framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/ui/menu_framework.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Civilizations.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Civilizations.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/Data.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/Data.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/DataProvinces.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/DataProvinces.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/preview.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/preview.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/Earth3/scenarios/SouthAmerica/preview.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/Earth3/scenarios/SouthAmerica/preview.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/languages/civilisations/Bundle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/languages/civilisations/Bundle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/Default/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/Default/map/11.59/scenarios/Default/Alliances.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/Default/map/11.59/scenarios/Default/AlliancesSpecial.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/Default/map/11.59/scenarios/Default/Armies.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/Default/map/11.59/scenarios/Default/Buildings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/Default/map/11.59/scenarios/Default/Cores.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/Default/map/11.59/scenarios/Default/Data.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/Default/map/11.59/scenarios/Default/DataProvinces.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/Default/map/11.59/scenarios/Default/Defensive.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/Default/map/11.59/scenarios/Default/Details.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/Default/map/11.59/scenarios/Default/Guarantee.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/Default/map/11.59/scenarios/Default/MilitaryAccess.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/Default/map/11.59/scenarios/Default/NonAggression.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/Default/map/11.59/scenarios/Default/Relations.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/Default/map/11.59/scenarios/Default/Religions.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/Default/map/11.59/scenarios/Default/Truces.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/Default/map/11.59/scenarios/Default/Wasteland.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/Default/map/11.59/scenarios/Default/preview.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/Default/mod.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/GameCivs/game/civilizations/tmal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/GameCivs/game/civilizations/tmau.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/GameCivs/game/civilizations/ven.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,7 +231,7 @@
       <workItem from="1734063049185" duration="6504000" />
       <workItem from="1734101363418" duration="73627000" />
       <workItem from="1734466614497" duration="11042000" />
-      <workItem from="1734809856493" duration="81435000" />
+      <workItem from="1734809856493" duration="85341000" />
     </task>
     <servers />
   </component>

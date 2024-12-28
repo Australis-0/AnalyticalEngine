@@ -1114,7 +1114,9 @@
 				}
 
 		//Draw current menus
-		Game.menuManager.update();
-		Game.menuManager.setOrderOfMenu(current_view_id); //This is needed to refresh the menu order
+		Gdx.app.postRunnable(function(){
+			Game.menuManager.update();
+			Game.menuManager.setOrderOfMenu(current_view_id); //This is needed to refresh the menu order
+		});
 	}
 }
