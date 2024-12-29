@@ -22,15 +22,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Graph extends MenuElement {
-    protected static final Color GRAPH_BG_COLOR = new Color(0.17254902F, 0.14901961F, 0.13333334F, 1.0F);
-    protected static final Color GRAPH_BORDERS_COLOR = new Color(0.078431375F, 0.11764706F, 0.17254902F, 1.0F);
-    protected static final Color GRAPH_LINES_COLOR = new Color(0.9F, 0.9F, 0.9F, 0.1F);
-    protected static final Color GRAPH_LINES_DESC = new Color(0.9F, 0.9F, 0.9F, 0.15F);
-    protected static final Color GRAPH_LINE_COLOR = new Color(0.8235294F, 0.8235294F, 0.8235294F, 1.0F);
-    protected static final Color TEXT_COLOR = new Color(0.9F, 0.9F, 0.9F, 1.0F);
-    protected static final Color DATA_COLOR = new Color(0.6862745F, 0.6862745F, 0.6862745F, 1.0F);
-    protected static float POINTS_TEXT_SCALE = 0.8F;
-    protected List<GraphData> lData;
+    public static final Color GRAPH_BG_COLOR = new Color(0.17254902F, 0.14901961F, 0.13333334F, 1.0F);
+    public static final Color GRAPH_BORDERS_COLOR = new Color(0.078431375F, 0.11764706F, 0.17254902F, 1.0F);
+    public static final Color GRAPH_LINES_COLOR = new Color(0.9F, 0.9F, 0.9F, 0.1F);
+    public static final Color GRAPH_LINES_DESC = new Color(0.9F, 0.9F, 0.9F, 0.15F);
+    public static final Color GRAPH_LINE_COLOR = new Color(0.8235294F, 0.8235294F, 0.8235294F, 1.0F);
+    public static final Color TEXT_COLOR = new Color(0.9F, 0.9F, 0.9F, 1.0F);
+    public static final Color DATA_COLOR = new Color(0.6862745F, 0.6862745F, 0.6862745F, 1.0F);
+    public static float POINTS_TEXT_SCALE = 0.8F;
+    public List<GraphData> lData;
     public int iDataSize;
     public List<Integer> lSortedData;
     public List<Integer> lPointsPosX;
@@ -180,6 +180,7 @@ public class Graph extends MenuElement {
         if (this.lAuto_Move_Turn_Time + 1450L < CFG.currentTimeMillis) {
             this.incrementTurnDescInfo();
         }
+        //System.out.println("DRAW CALLED");
 
         oSB.setColor(Color.WHITE);
         oSB.setColor(new Color(0.06666667F, 0.07450981F, 0.09019608F, 1.0F));
@@ -241,8 +242,11 @@ public class Graph extends MenuElement {
 
     public final void drawGraphData(SpriteBatch oSB, int iTranslateX, int iTranslateY) {
         int i = 0;
+        //System.out.println("DRAWGRAPHDATA 1 CALLED");
 
         for(int tempFixPosY = this.getMinPoint() > 0 ? this.iFixPosY : this.iFixPosY; i < this.iDataSize; ++i) {
+            //System.out.println("GraphData[" + i + "].getDrawData(): " + ((GraphData)this.lData.get(i)).getDrawData());
+
             if (((GraphData)this.lData.get(i)).getDrawData()) {
                 ((GraphData)this.lData.get(i)).draw(oSB, this.getPosX() + (int)((float)CFG.TEXT_HEIGHT * 0.7F) + CFG.PADDING * 2 + iTranslateX, this.getPosY() + iTranslateY, this.getGraphWidth(), this.getHeight(), this.lPointsPosX, i, this.iActiveButtonID >= 0 ? (Integer)this.lSortedData.get(this.iActiveButtonID) == i : (this.iHoveredID >= 0 ? (Integer)this.lSortedData.get(this.iHoveredID) == i : false), tempFixPosY);
             } else if (((GraphData)this.lData.get(i)).getBackAnimation()) {
