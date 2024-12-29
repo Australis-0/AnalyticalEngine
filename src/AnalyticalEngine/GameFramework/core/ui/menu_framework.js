@@ -17,6 +17,7 @@
 	this.integer_class = Java.type("java.lang.Integer").TYPE;
 	this.list_class = Java.type("java.util.List");
 	this.Renderer = Java.type("aoc.kingdoms.lukasz.jakowski.Renderer.Renderer");
+	this.Text_Scrollable = Java.type("aoc.kingdoms.lukasz.menu_element.textStatic.Text_Scrollable");
 	this.TextBG = Java.type("aoc.kingdoms.lukasz.menu_element.textStatic.TextBG");
 	this.Text_Static = Java.type("aoc.kingdoms.lukasz.menu_element.textStatic.Text_Static");
 	this.Text_StaticBG_ID_FlagCiv = Java.type("aoc.kingdoms.lukasz.menu_element.textStatic.Text_StaticBG_ID_FlagCiv");
@@ -148,7 +149,7 @@
 	 *
 	 * @param {Object} [arg0_options."input_key"]
 	 *  @param {String} [arg0_options."input_key".name]
-	 * 	@param {String} [arg0_options."input_key".type] - Either 'button'/'flag_button'/'large_flag_button'/'text'.
+	 * 	@param {String} [arg0_options."input_key".type] - Either 'button'/'flag_button'/'large_flag_button'/'scroll_text'/'text'.
 	 * 	@param {number} [arg0_options."input_key".raw_coords=false] - Whether to use raw specified coords instead of autoformatting.
 	 * 	@param {number} [arg0_options."input_key".raw_dimensions=false] - Whether to override default multiplication for .width.
 	 * 	@param {number} [arg0_options."input_key".height=2] - The height as multiplied by CFG.BUTTON_WIDTH.
@@ -257,6 +258,8 @@
 					new_menu_element_obj = createFlagButton(local_value);
 				} else if (local_value.type == "large_flag_button") {
 					new_menu_element_obj = createLargeFlagButton(local_value);
+				} else if (local_value.type == "scroll_text") {
+					new_menu_element_obj = createScrollText(local_value);
 				} else if (local_value.type == "text") {
 					new_menu_element_obj = createText(local_value);
 				}
@@ -478,7 +481,7 @@
 		//Adjust actual_text_position
 		if (options.align == "left")
 			actual_text_position = 25;
-		if (options.align == "right") {
+		if (["centre", "right"].includes(options.align)) {
 			//Create phantom dummy_flag_button_obj to calculate displayed text width from
 			var dummy_flag_button_obj = new Text_StaticBG_ID_FlagCiv(
 				null, //(sText) Initial string
@@ -493,7 +496,10 @@
 			dummy_flag_button_obj.setText(actual_name);
 			var dummy_flag_button_width = dummy_flag_button_obj.getTextWidth();
 
-			actual_text_position = actual_width - 25 - dummy_flag_button_width;
+			if (options.align == "centre")
+				actual_text_position = parseInt(options.width - dummy_flag_button_width/2);
+			if (options.align == "right")
+				actual_text_position = parseInt(actual_width - 25 - dummy_flag_button_width);
 		}
 
 		//Construct new_flag_button_obj
@@ -591,6 +597,86 @@
 	}
 
 	/**
+	 * createScrollText() - Creates scrollable text and returns it as an Object for adding to menu_elements in createContextMenu().
+	 *
+	 * @param {Object} [arg0_options]
+	 * @param {Object} [arg0_options.name]
+	 * @param {boolean} [arg0_options.raw_dimensions=false]
+	 * @param {Object} [arg0_options.height=0.5]
+	 * @param {Object} [arg0_options.width=2]
+	 * @param {String} [arg0_options.align="left"] - Optional. Either 'left'/'centre'/'right'.
+	 * @param {Array<number, number, number>} [arg0_options.colour=[255, 255, 255, 1]]
+	 * @param {number} [arg0_options.font_size=11]
+	 *
+	 * @returns {Object<MenuElement>}
+	 */
+	function createScrollText (arg0_options) { //[WIP] - Finish function body
+		//Convert from parameters
+		var options = (arg0_options) ? arg0_options : {};
+
+		//Initialise options
+		if (!options.name) options.name = null;
+		if (options.raw_dimensions == undefined) options.raw_dimensions = false;
+		options.height = returnSafeNumber(options.height, 0.5);
+		options.width = returnSafeNumber(options.width, 2);
+		if (!options.align) options.align = "left";
+		if (!options.colour) options.colour = [255, 255, 255, 1];
+			if (options.colour.length == 3) options.colour[3] = 1;
+		if (!options.font_size) options.font_size = 11;
+
+		//Declare local instance variables
+		var actual_colour = convertRGBA(actual_colour);
+		var actual_height = parseInt((!options.raw_dimensions) ?
+			options.height*CFG.BUTTON_WIDTH : options.height);
+		var actual_font_size = options.font_size/11;
+		var actual_width = parseInt((!options.raw_dimensions) ?
+			options.width*CFG.BUTTON_WIDTH : options.width);
+
+		var actual_text_position = -1;
+		//Adjust actual_text_position
+		if (options.align == "left")
+			actual_text_position = 25;
+		if (["centre", "right"].includes(options.align)) {
+			//Create phantom dummy_scroll_text_obj to calculate displayed text width from
+			var dummy_scroll_text_obj = new Text_Scrollable(
+				null, //(sText) Initial string
+				parseInt(options.x), //(iPosX)
+				parseInt(options.y), //(iPosY)
+				actual_width, //(iWidth)
+				actual_height, //(iHeight)
+				new Color(convertRGBAToInt(actual_colour)), //(textColor)
+				actual_font_size, //(nTextScale)
+				actual_text_position //(iTextPosition)
+			);
+			dummy_scroll_text_obj.setText(options.name);
+			var dummy_scroll_text_width = dummy_scroll_text_obj.getTextWidth();
+
+			if (options.align == "centre")
+				actual_text_position = parseInt(options.width - dummy_scroll_text_width/2);
+			if (options.align == "right")
+				actual_text_position = parseInt(actual_width - 25 - dummy_scroll_text_width);
+		}
+
+		//Construct new_scroll_text_obj
+		var new_scroll_text_obj;
+
+		new_scroll_text_obj = new Text_Scrollable(
+			null, //(sText) Initial string
+			parseInt(options.x), //(iPosX)
+			parseInt(options.y), //(iPosY)
+			actual_width, //(iWidth)
+			actual_height, //(iHeight)
+			new Color(convertRGBAToInt(actual_colour)), //(textColor)
+			actual_font_size, //(nTextScale)
+			actual_text_position //(iTextPosition)
+		);
+		new_scroll_text_obj.setText(options.name);
+
+		//Return statement
+		return new_scroll_text_obj;
+	}
+
+	/**
 	 * createText() - Creates static text and returns it as an Object for adding to menu_elements in createContextMenu().
 	 * @param {Object} [arg0_options]
 	 * @param {String} [arg0_options.name]
@@ -631,7 +717,7 @@
 		//Adjust actual_text_position
 		if (options.align == "left")
 			actual_text_position = options.margin;
-		if (options.align == "right") {
+		if (["centre", "right"].includes(options.align)) {
 			//Create phantom dummy_button_obj to calculate displayed text width from
 			var dummy_text_obj = new Text_Static(
 				null, //(sText) Initial string
@@ -645,7 +731,10 @@
 			dummy_text_obj.setText(options.name);
 			var dummy_text_width = dummy_text_obj.getTextWidth();
 
-			actual_text_position = actual_width - options.margin - dummy_button_width;
+			if (options.align == "centre")
+				actual_text_position = parseInt(actual_width - options.margin - dummy_button_width/2);
+			if (options.align == "right")
+				actual_text_position = actual_width - options.margin - dummy_button_width;
 		}
 
 		//Construct new_text_obj

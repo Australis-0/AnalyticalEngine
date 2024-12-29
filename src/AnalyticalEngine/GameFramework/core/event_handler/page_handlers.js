@@ -50,9 +50,8 @@
 
 			//Load Mod Editor
 			main.in_mod_editor = (mod_editor_pages.includes(current_page));
-			if (current_page == "SCENARIO_CIVILIZATIONS") {
+			if (main.in_mod_editor)
 				initialiseModEditor();
-			}
 		};
 
 		global.on_page_change.scenario_handler = function (arg0_current_page) {

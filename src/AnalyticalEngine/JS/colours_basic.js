@@ -16,7 +16,7 @@
 
 	/**
 	 * convertIntToRGB() - Converts int back to [r, g, b].
-	 * @param {number} - The int to convert back to RGB/A.
+	 * @param {number} arg0_colour - The int to convert back to RGB/A.
 	 *
 	 * @returns {Array<number, number, number, number>}
 	 */
@@ -30,7 +30,7 @@
 
 	/**
 	 * convertIntToRGBA() - Converts int back to [r, g, b, a].
-	 * @param {number} - The int to convert back to RGBA.
+	 * @param {number} arg0_colour - The int to convert back to RGBA.
 	 *
 	 * @returns {Array<number, number, number, number>}
 	 */
