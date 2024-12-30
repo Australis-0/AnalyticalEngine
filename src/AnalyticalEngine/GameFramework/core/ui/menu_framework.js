@@ -539,11 +539,6 @@
 					console.log("Right-aligned dummy menu test button reporting for duty!");
 				}
 			},
-			/*minimap_element: {
-				type: "minimap",
-				x: 0,
-				y: 500
-			}*/
 			bar_chart_element: {
 				type: "bar_chart",
 				height: 400,
@@ -578,7 +573,6 @@
 						value: 2
 					}
 				]
-				//data: [1, 2, 3, 4, 5]
 			}
 			/*line_graph_element: {
 				type: "line_graph",
@@ -871,6 +865,14 @@
 
 		//Return statement
 		return extended_minimap_obj;
+	}
+
+	/**
+	 * createPieChart() - Creates a pie chart and returns it as an Object for ading to menu_elements in createContextMenu().
+	 * @param {Object} [arg0_options]
+	 */
+	function createPieChart (arg0_options) { //[WIP] - Finish function body
+
 	}
 
 	/**
