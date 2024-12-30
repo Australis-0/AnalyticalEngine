@@ -66,6 +66,8 @@ public class Graph_Vertical extends MenuElement {
     public DrawStatisticsData drawStatisticsData;
     public boolean allowStatisticsMode = true;
 
+    public String graph_name = "";
+
     public Graph_Vertical(Graph_Vertical_Data_Type nType, String sTextX, String sTextY, int iPosX, int iPosY, int iWidth, int iHeight, boolean visible) {
         this.GRAPH_DATA_TYPE = nType;
         this.sTotal = Game.lang.get("Total");
@@ -662,6 +664,11 @@ public class Graph_Vertical extends MenuElement {
 
                 nTexts.add(Game.lang.get("RegimentsLimit"));
                 nColors.add(Colors.TECH_BLUE);
+            } else if (this.GRAPH_DATA_TYPE == Graph_Vertical_Data_Type.CUSTOM) { //FIXED - This line is correct.
+                //[WIP] - Finish function body - we need to call .buildCustomData() somehow
+
+                nTexts.add(Game.lang.get(this.sTextX);
+                nColors.add(Colors.COLOR_TEXT_GOLD);
             }
 
             this.verticalInfo = new Graph_Vertical_Info(nTexts, nColors, this.getWidth() - ((int)((float)CFG.TEXT_HEIGHT * 0.7F) + CFG.PADDING * 2), true);

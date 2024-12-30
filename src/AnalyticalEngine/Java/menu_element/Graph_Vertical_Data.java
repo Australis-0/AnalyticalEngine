@@ -31,7 +31,28 @@ public class Graph_Vertical_Data {
     }
 
     //ANALYTICALENGINE START
+    public final void buildCustomData (List<Integer> arg0_data_values) { //Move List<Graph_Vertical_Data_Value> to List<Integer>
+        //Convert from parameters
+        List<Integer> data_values = arg0_data_values;
 
+        //Declare local instance variables
+        List<Graph_Vertical_Data_Value> temp_values = new ArrayList();
+
+        //Convert List<Integer> to List<Graph_Vertical_Data_Value>
+        for (int i = 0; i < data_values.size(); i++)
+            temp_values.add(new Graph_Vertical_Data_Value(data_values.get(i), i));
+
+        //While loop; populate this.lValues
+        while (temp_values.size() > 0) {
+            int temp_max_id = 0;
+
+            for (int i = 0; i < temp_values.size(); i++)
+                if (((Graph_Vertical_Data_Value) temp_values.get(temp_max_id)).getValue() < ((Graph_Vertical_Data_Value) temp_values.get(i)).getValue())
+                    temp_max_id = i;
+            this.lValues.add((Graph_Vertical_Data_Value) temp_values.get(temp_max_id));
+            temp_values.remove(temp_max_id);
+        }
+    }
     //ANALYTICALENGINE END
 
     public final void buildContinentData() {
@@ -538,7 +559,7 @@ public class Graph_Vertical_Data {
         try {
             for(int i = 0; i < numOfProvincesByContinents.size(); ++i) {
                 if ((Integer)numOfProvincesByContinents.get(i) > 0) {
-                    tempValues.add(new Graph_Vertical_Data_Value((Integer)numOfProvincesByContinents.get(i), i));
+                    tempValues.add(new Graph_Vertical_Data_Value((Integer) numOfProvincesByContinents.get(i), i));
                 }
             }
         } catch (Exception ex) {

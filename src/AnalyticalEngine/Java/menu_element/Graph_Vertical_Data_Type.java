@@ -21,7 +21,6 @@ public enum Graph_Vertical_Data_Type {
     RELIGION_CIVS_RIGHT,
     GOVERNMENTS_CIVS,
     GOVERNMENTS_CIVS_RIGHT,
-
     CUSTOM; //Used for CustomUIs
 
     private Graph_Vertical_Data_Type() {
