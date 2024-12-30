@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09b6f7f8-b868-43e9-b471-ac1dbd15fa3b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Java/menu_element/Minimap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/ui/menu_framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/ui/menu_framework.js" afterDir="false" />
     </list>
@@ -203,7 +204,7 @@
       <workItem from="1734063049185" duration="6504000" />
       <workItem from="1734101363418" duration="73627000" />
       <workItem from="1734466614497" duration="11042000" />
-      <workItem from="1734809856493" duration="129165000" />
+      <workItem from="1734809856493" duration="131263000" />
     </task>
     <servers />
   </component>

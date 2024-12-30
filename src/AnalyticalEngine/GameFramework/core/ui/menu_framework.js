@@ -16,6 +16,7 @@
 	//this.Menu = Java.type("aoc.kingdoms.lukasz.menu.Menu");
 	//this.MenuTitle = Java.type("aoc.kingdoms.lukasz.menu.menuTitle");
 	this.Method = Java.type("java.lang.reflect.Method");
+	this.Minimap = Java.type("aoc.kingdoms.lukasz.menu_element.Minimap");
 
 	this.boolean_class = Java.type("java.lang.Boolean").TYPE;
 	this.integer_class = Java.type("java.lang.Integer").TYPE;
@@ -241,7 +242,7 @@
 	 *
 	 * @param {Object} [arg0_options."input_key"]
 	 *  @param {String} [arg0_options."input_key".name]
-	 * 	@param {String} [arg0_options."input_key".type] - Either 'bar_chart'/'button'/'flag_button'/'large_flag_button'/'line_graph'/'scroll_text'/'text'.
+	 * 	@param {String} [arg0_options."input_key".type] - Either 'bar_chart'/'button'/'flag_button'/'large_flag_button'/'line_graph'/'minimap'/'scroll_text'/'text'.
 	 * 	@param {number} [arg0_options."input_key".raw_coords=false] - Whether to use raw specified coords instead of autoformatting.
 	 * 	@param {number} [arg0_options."input_key".raw_dimensions=false] - Whether to override default multiplication for .width.
 	 * 	@param {number} [arg0_options."input_key".height=2] - The height as multiplied by CFG.BUTTON_WIDTH.
@@ -354,6 +355,8 @@
 					new_menu_element_obj = createLargeFlagButton(local_value);
 				} else if (local_value.type == "line_graph") {
 					new_menu_element_obj = createLineGraph(local_value);
+				} else if (local_value.type == "minimap") {
+					new_menu_element_obj = createMinimap(local_value);
 				} else if (local_value.type == "scroll_text") {
 					new_menu_element_obj = createScrollText(local_value);
 				} else if (local_value.type == "text") {
@@ -536,6 +539,11 @@
 					console.log("Right-aligned dummy menu test button reporting for duty!");
 				}
 			},
+			/*minimap_element: {
+				type: "minimap",
+				x: 0,
+				y: 500
+			}*/
 			bar_chart_element: {
 				type: "bar_chart",
 				height: 400,
@@ -835,8 +843,38 @@
 	}
 
 	/**
-	 * createScrollText() - Creates scrollable text and returns it as an Object for adding to menu_elements in createContextMenu().
+	 * createMinimap() - Creates a minimap and returns it as an Object for adding to menu_elements in createContextMenu().
+	 * @param {Object} [arg0_options]
+	 * @param {number} [arg0_options.x=0]
+	 * @param {number} [arg0_options.y=0]
 	 *
+	 * @returns {Object<MenuElement>}
+	 */
+	function createMinimap (arg0_options) { //[WIP] - Finish function body
+		//Convert from parameters
+		var options = (arg0_options) ? arg0_options : {};
+
+		//Initialise options
+		options.x = returnSafeNumber(options.x);
+		options.y = returnSafeNumber(options.y);
+
+		//Declare local instance variables
+		var ExtendedMinimap = Java.extend(Minimap, {
+			getPosX: function () {
+				return (new Integer(options.x));
+			},
+			getPosY: function () {
+				return (new Integer(options.y));
+			}
+		});
+		var extended_minimap_obj = new ExtendedMinimap(new Integer(options.x), new Integer(options.y));
+
+		//Return statement
+		return extended_minimap_obj;
+	}
+
+	/**
+	 * createScrollText() - Creates scrollable text and returns it as an Object for adding to menu_elements in createContextMenu().
 	 * @param {Object} [arg0_options]
 	 * @param {Object} [arg0_options.name]
 	 * @param {boolean} [arg0_options.raw_dimensions=false]
