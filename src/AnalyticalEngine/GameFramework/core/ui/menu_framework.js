@@ -57,6 +57,7 @@
 		//Convert from parameters
 		var options = (arg0_options) ? arg0_options : {};
 
+		//1. JS-end try/catch clause
 		try {
 			//Initialise options
 			if (!options.data) options.data = [0];
@@ -74,6 +75,7 @@
 			var actual_width = parseInt((!options.raw_dimensions) ?
 				CFG.BUTTON_WIDTH*options.width : options.width);
 
+			//2. Java-end try/catch clause
 			try {
 				var new_graph_obj = new Graph_Vertical(
 					Graph_Vertical_Data_Type.CUSTOM, //(nType)
@@ -724,6 +726,7 @@
 		var options = (arg0_options) ? arg0_options : {};
 
 		//Initialise options
+		//1. JS-end try/catch clause
 		try {
 			if (!options.data) options.data = [];
 			if (options.display_float == undefined) options.display_float = false;

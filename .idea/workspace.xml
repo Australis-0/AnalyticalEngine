@@ -5,29 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09b6f7f8-b868-43e9-b471-ac1dbd15fa3b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/NOTEPAD.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Java/menu_element/Graph_Vertical_Info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/ui/menu_framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/ui/menu_framework.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Java/menu_element/Graph_Vertical.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Java/menu_element/Graph_Vertical.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Java/menu_element/Graph_Vertical_Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Java/menu_element/Graph_Vertical_Data.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menu_element/graph/Graph_Vertical$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menu_element/graph/Graph_Vertical$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menu_element/graph/Graph_Vertical$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menu_element/graph/Graph_Vertical$10.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menu_element/graph/Graph_Vertical$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menu_element/graph/Graph_Vertical$11.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menu_element/graph/Graph_Vertical$12.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menu_element/graph/Graph_Vertical$12.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menu_element/graph/Graph_Vertical$13.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menu_element/graph/Graph_Vertical$13.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menu_element/graph/Graph_Vertical$14.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menu_element/graph/Graph_Vertical$14.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menu_element/graph/Graph_Vertical$15.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menu_element/graph/Graph_Vertical$15.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menu_element/graph/Graph_Vertical$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menu_element/graph/Graph_Vertical$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menu_element/graph/Graph_Vertical$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menu_element/graph/Graph_Vertical$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menu_element/graph/Graph_Vertical$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menu_element/graph/Graph_Vertical$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menu_element/graph/Graph_Vertical$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menu_element/graph/Graph_Vertical$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menu_element/graph/Graph_Vertical$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menu_element/graph/Graph_Vertical$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menu_element/graph/Graph_Vertical$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menu_element/graph/Graph_Vertical$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menu_element/graph/Graph_Vertical$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menu_element/graph/Graph_Vertical$8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menu_element/graph/Graph_Vertical$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menu_element/graph/Graph_Vertical$9.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menu_element/graph/Graph_Vertical.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menu_element/graph/Graph_Vertical.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menu_element/graph/Graph_Vertical_Data.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menu_element/graph/Graph_Vertical_Data.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,7 +203,7 @@
       <workItem from="1734063049185" duration="6504000" />
       <workItem from="1734101363418" duration="73627000" />
       <workItem from="1734466614497" duration="11042000" />
-      <workItem from="1734809856493" duration="129115000" />
+      <workItem from="1734809856493" duration="129165000" />
     </task>
     <servers />
   </component>
