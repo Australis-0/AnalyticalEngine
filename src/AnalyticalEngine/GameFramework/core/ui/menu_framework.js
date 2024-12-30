@@ -844,7 +844,7 @@
 	 *
 	 * @returns {Object<MenuElement>}
 	 */
-	function createMinimap (arg0_options) { //[WIP] - Finish function body
+	function createMinimap (arg0_options) {
 		//Convert from parameters
 		var options = (arg0_options) ? arg0_options : {};
 
@@ -870,15 +870,52 @@
 	/**
 	 * createPieChart() - Creates a pie chart and returns it as an Object for ading to menu_elements in createContextMenu().
 	 * @param {Object} [arg0_options]
+	 * @param {String} [arg0_options.name]
+	 * @param {boolean} [arg0_options.raw_dimensions=false]
+	 *
+	 * @param {number} [arg0_options.height=2]
+	 * @param {number} [arg0_options.width=2]
+	 * @param {number} [arg0_options.x=0]
+	 * @param {number} [arg0_options.y=0]
+	 *
+	 * @param {Array<{}>} [arg0_options.data={ civilisation: "neu"|String, value: 0|number }]
+	 *
+	 * @returns {Object<MenuElement>}
 	 */
 	function createPieChart (arg0_options) { //[WIP] - Finish function body
+		//Convert from parameters
+		var options = (arg0_options) ? arg0_options : {};
 
+		//Initialise options
+		if (!options.data) options.data = {};
+		options.height = returnSafeNumber(options.height, 2);
+		options.x = returnSafeNumber(options.x);
+		options.width = returnSafeNumber(options.width, 2);
+		options.y = returnSafeNumber(options.y);
+		if (!options.name) options.name = "";
+		if (options.raw_dimensions == undefined) options.raw_dimensions = false;
+
+		//Declare local instance variables
+		var actual_height = parseInt((!options.raw_dimensions) ?
+			CFG.BUTTON_WIDTH*options.height : options.height);
+		var actual_width = parseInt((!options.raw_dimensions) ?
+			CFG.BUTTON_WIDTH*options.width : options.width);
+
+		//1. Regularise options.data
+
+		//2. Pre-build MenuElement_Hover for use in PieChart
+
+		//3. Build PieChart_Data nPieChartData
+
+		//4. Build and return PieChart
+
+		//Return statement
 	}
 
 	/**
 	 * createScrollText() - Creates scrollable text and returns it as an Object for adding to menu_elements in createContextMenu().
 	 * @param {Object} [arg0_options]
-	 * @param {Object} [arg0_options.name]
+	 * @param {String} [arg0_options.name]
 	 * @param {boolean} [arg0_options.raw_dimensions=false]
 	 * @param {Object} [arg0_options.height=0.5]
 	 * @param {Object} [arg0_options.width=2]
