@@ -30,31 +30,6 @@ public class Graph_Vertical_Data {
         this.iCivID = iCivID;
     }
 
-    //ANALYTICALENGINE START
-    public final void buildCustomData (List<Integer> arg0_data_values) { //Move List<Graph_Vertical_Data_Value> to List<Integer>
-        //Convert from parameters
-        List<Integer> data_values = arg0_data_values;
-
-        //Declare local instance variables
-        List<Graph_Vertical_Data_Value> temp_values = new ArrayList();
-
-        //Convert List<Integer> to List<Graph_Vertical_Data_Value>
-        for (int i = 0; i < data_values.size(); i++)
-            temp_values.add(new Graph_Vertical_Data_Value(data_values.get(i), i));
-
-        //While loop; populate this.lValues
-        while (temp_values.size() > 0) {
-            int temp_max_id = 0;
-
-            for (int i = 0; i < temp_values.size(); i++)
-                if (((Graph_Vertical_Data_Value) temp_values.get(temp_max_id)).getValue() < ((Graph_Vertical_Data_Value) temp_values.get(i)).getValue())
-                    temp_max_id = i;
-            this.lValues.add((Graph_Vertical_Data_Value) temp_values.get(temp_max_id));
-            temp_values.remove(temp_max_id);
-        }
-    }
-    //ANALYTICALENGINE END
-
     public final void buildContinentData() {
         this.lValues.clear();
         List<Integer> numOfProvincesByContinents = new ArrayList();
@@ -655,10 +630,8 @@ public class Graph_Vertical_Data {
     }
 
     public final void buildHeights(int nGraphHeight, int nMaxValue) {
-        for(int i = 0; i < this.lValues.size(); ++i) {
-            ((Graph_Vertical_Data_Value)this.lValues.get(i)).setHeight((int)((float)((Graph_Vertical_Data_Value)this.lValues.get(i)).getValue() / (float)nMaxValue * (float)nGraphHeight));
-        }
-
+        for (int i = 0; i < this.lValues.size(); ++i)
+            ((Graph_Vertical_Data_Value) this.lValues.get(i)).setHeight((int)((float)((Graph_Vertical_Data_Value)this.lValues.get(i)).getValue() / (float)nMaxValue * (float)nGraphHeight));
     }
 
     public final int getCivID() {

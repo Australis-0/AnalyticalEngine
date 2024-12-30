@@ -10,6 +10,8 @@
 	this.Float = Java.type("java.lang.Float");
 	this.Graph = Java.type("aoc.kingdoms.lukasz.menu_element.graph.Graph");
 	this.GraphData = Java.type("aoc.kingdoms.lukasz.menu_element.graph.GraphData");
+	this.Graph_Vertical = Java.type("aoc.kingdoms.lukasz.menu_element.graph.Graph_Vertical");
+	this.Graph_Vertical_Data_Type = Java.type("aoc.kingdoms.lukasz.menu_element.graph.Graph_Vertical_Data_Type");
 	this.Integer = Java.type("java.lang.Integer");
 	//this.Menu = Java.type("aoc.kingdoms.lukasz.menu.Menu");
 	//this.MenuTitle = Java.type("aoc.kingdoms.lukasz.menu.menuTitle");
@@ -39,10 +41,87 @@
 	/**
 	 * createBarChart() -  Creates a bar chart and returns it as an Object for adding to menu_elements in createContextMenu().
 	 * @param {Object} [arg0_options]
+	 * @param {String} [arg0_options.name=""]
+	 * @param {boolean} [arg0_options.raw_dimensions=false]
 	 *
+	 * @param {number} [arg0_options.height=3]
+	 * @param {number} [arg0_options.width=3]
+	 * @param {number} [arg0_options.x=0]
+	 * @param {String} [arg0_options.x_axis_name=""]
+	 * @param {number} [arg0_options.y=0]
+	 * @param {String} [arg0_options.y_axis_name=""]
+	 *
+	 * @param {Array<number>} [arg0_options.data=[0]]
 	 */
 	function createBarChart (arg0_options) {
+		//Convert from parameters
+		var options = (arg0_options) ? arg0_options : {};
 
+		try {
+			//Initialise options
+			if (!options.data) options.data = [0];
+			options.height = returnSafeNumber(options.height, 3);
+			options.width = returnSafeNumber(options.width, 3);
+			options.x = returnSafeNumber(options.x);
+			if (options.x_axis_name == undefined)
+				options.x_axis_name = (options.name) ? options.name : "";
+			options.y = returnSafeNumber(options.y);
+			if (options.y_axis_name == undefined) options.y_axis_name = "";
+
+			//Declare local instance variables
+			var actual_height = parseInt((!options.raw_dimensions) ?
+				CFG.BUTTON_WIDTH*options.height : options.height);
+			var actual_width = parseInt((!options.raw_dimensions) ?
+				CFG.BUTTON_WIDTH*options.width : options.width);
+
+			try {
+				var new_graph_obj = new Graph_Vertical(
+					Graph_Vertical_Data_Type.CUSTOM, //(nType)
+					options.x_axis_name, //(sTextX)
+					options.y_axis_name, //(sTextY)
+					parseInt(options.x), //(iPosX)
+					parseInt(options.y), //(iPosY)
+					actual_width, //(iWidth)
+					actual_height, //(iHeight)
+					true
+				);
+
+				//Call new_graph_obj.setData() after standardising List<Integer>
+				if (typeof options.data[0] != "object") {
+					var graph_data_list = new ArrayList();
+
+					for (var i = 0; i < options.data.length; i++) {
+						var local_data  = parseInt(options.data[i]);
+
+						//Add to graph_data_list
+						graph_data_list.add(new Integer(local_data));
+					}
+					new_graph_obj.setData(graph_data_list);
+					new_graph_obj.buildData();
+				} else {
+					var graph_labels_list = new ArrayList();
+					var graph_values_list = new ArrayList();
+
+					for (var i = 0; i < options.data.length; i++) {
+						var local_data = parseInt(options.data[i].value);
+
+						//Add to graph_labels_list; graph_values_list
+						graph_labels_list.add((options.data[i].label) ? options.data[i].label : "");
+						graph_values_list.add(new Integer(local_data));
+					}
+					new_graph_obj.setDataLabels(graph_labels_list);
+					new_graph_obj.setData(graph_values_list);
+					new_graph_obj.buildData();
+				}
+			} catch (e) {
+				print(e.stack);
+			}
+
+			//Return statement
+			return new_graph_obj;
+		} catch (e) {
+			console.log(e.stack);
+		}
 	}
 
 	/**
@@ -160,7 +239,7 @@
 	 *
 	 * @param {Object} [arg0_options."input_key"]
 	 *  @param {String} [arg0_options."input_key".name]
-	 * 	@param {String} [arg0_options."input_key".type] - Either 'button'/'flag_button'/'large_flag_button'/'line_graph'/'scroll_text'/'text'.
+	 * 	@param {String} [arg0_options."input_key".type] - Either 'bar_chart'/'button'/'flag_button'/'large_flag_button'/'line_graph'/'scroll_text'/'text'.
 	 * 	@param {number} [arg0_options."input_key".raw_coords=false] - Whether to use raw specified coords instead of autoformatting.
 	 * 	@param {number} [arg0_options."input_key".raw_dimensions=false] - Whether to override default multiplication for .width.
 	 * 	@param {number} [arg0_options."input_key".height=2] - The height as multiplied by CFG.BUTTON_WIDTH.
@@ -263,7 +342,9 @@
 				var new_menu_element_obj;
 
 				//Parse type
-				if (local_value.type == "button") {
+				if (local_value.type == "bar_chart") {
+					new_menu_element_obj = createBarChart(local_value);
+				} else if (local_value.type == "button") {
 					new_menu_element_obj = createButton(local_value);
 				} else if (local_value.type == "flag_button") {
 					new_menu_element_obj = createFlagButton(local_value);
@@ -453,7 +534,43 @@
 					console.log("Right-aligned dummy menu test button reporting for duty!");
 				}
 			},
-			line_graph_element: {
+			bar_chart_element: {
+				type: "bar_chart",
+				height: 400,
+				raw_dimensions: true,
+				width: 400,
+				x_axis_name: "Test",
+				y_axis_name: "Test",
+
+				data: [
+					{
+						label: "Test",
+						value: 1
+					},
+					{
+						label: "Help",
+						value: 2
+					},
+					{
+						label: "Test",
+						value: 1
+					},
+					{
+						label: "Help",
+						value: 2
+					},
+					{
+						label: "Test",
+						value: 1
+					},
+					{
+						label: "Help",
+						value: 2
+					}
+				]
+				//data: [1, 2, 3, 4, 5]
+			}
+			/*line_graph_element: {
 				type: "line_graph",
 				height: 400,
 				raw_dimensions: true,
@@ -469,7 +586,7 @@
 						values: [5, 4, 3, 2, 1]
 					}
 				]
-			}
+			}*/
 		});
 
 		//Return statement
@@ -728,7 +845,7 @@
 	 *
 	 * @returns {Object<MenuElement>}
 	 */
-	function createScrollText (arg0_options) { //[WIP] - Finish function body
+	function createScrollText (arg0_options) {
 		//Convert from parameters
 		var options = (arg0_options) ? arg0_options : {};
 

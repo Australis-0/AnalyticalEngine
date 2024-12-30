@@ -66,7 +66,7 @@ public class Graph_Vertical extends MenuElement {
     public DrawStatisticsData drawStatisticsData;
     public boolean allowStatisticsMode = true;
 
-    public String graph_name = "";
+    public List<String> graph_labels = new ArrayList();
 
     public Graph_Vertical(Graph_Vertical_Data_Type nType, String sTextX, String sTextY, int iPosX, int iPosY, int iWidth, int iHeight, boolean visible) {
         this.GRAPH_DATA_TYPE = nType;
@@ -526,6 +526,42 @@ public class Graph_Vertical extends MenuElement {
                     return ((Graph_Vertical_Data)Graph_Vertical.this.lValues.get(i)).getCivID();
                 }
             };
+        } else if (this.GRAPH_DATA_TYPE == Graph_Vertical_Data_Type.CUSTOM) {
+            for (int i = 0; i < this.lValues.size(); i++)
+                this.lValues.add(new Graph_Vertical_Data(0));
+
+            this.iValuesSize = this.lValues.size();
+            this.drawShort = true;
+            this.drawStatisticsData = new DrawStatisticsData() {
+                public void draw(SpriteBatch oSB, int i, int tempOffsetX, int iTranslateX, int iTranslateY) {
+                    for (int x = 0; x < ((Graph_Vertical_Data) Graph_Vertical.this.lValues.get(i)).getValuesSize(); x++)
+                        Graph_Vertical.this.drawStatisticsValue(
+                            oSB,
+                            "" + ((Graph_Vertical_Data) Graph_Vertical.this.lValues.get(x)).getValue(x),
+                            Graph_Vertical.this.getPosX() + CFG.PADDING*2 + Graph_Vertical.this.getStatisticsWidth()*2 + Graph_Vertical.this.getStatisticsWidth()*Graph_Vertical.this.verticalInfo.getSortedID(((Graph_Vertical_Data) Graph_Vertical.this.lValues.get(i)).getValueDataTypeID(x) + iTranslateX),
+                            Graph_Vertical.this.getPosY() + ((int) ((float) CFG.TEXT_HEIGHT*0.7F) + CFG.PADDING*2)*(i + 1) + iTranslateY
+                        );
+
+                    Graph_Vertical.this.drawStatisticsValue(
+                        oSB,
+                        "" + ((Graph_Vertical_Data) Graph_Vertical.this.lValues.get(i)).getValue(),
+                        Graph_Vertical.this.getPosX() + CFG.PADDING*2 + tempOffsetX + iTranslateX,
+                        Graph_Vertical.this.getPosY() + ((int) ((float) CFG.TEXT_HEIGHT*0.7F) + CFG.PADDING*2)*(i + 1) + iTranslateY
+                    );
+                }
+
+                public String getTotal() {
+                    return (Graph_Vertical.this.sTotal + " [" + Graph_Vertical.this.iValuesTotal + "]");
+                }
+
+                public String getStatsLP (int i) {
+                    return "Custom";
+                }
+
+                public int getStatsLPCivFlagID(int i) {
+                    return 0;
+                }
+            };
         }
 
         this.iDataWidth = CFG.CIV_FLAG_WIDTH;
@@ -665,9 +701,9 @@ public class Graph_Vertical extends MenuElement {
                 nTexts.add(Game.lang.get("RegimentsLimit"));
                 nColors.add(Colors.TECH_BLUE);
             } else if (this.GRAPH_DATA_TYPE == Graph_Vertical_Data_Type.CUSTOM) { //FIXED - This line is correct.
+                //There has
                 //[WIP] - Finish function body - we need to call .buildCustomData() somehow
-
-                nTexts.add(Game.lang.get(this.sTextX);
+                nTexts.add(Game.lang.get(this.sTextX));
                 nColors.add(Colors.COLOR_TEXT_GOLD);
             }
 
@@ -726,6 +762,83 @@ public class Graph_Vertical extends MenuElement {
             this.countValuesTotal();
         }
     }
+
+    //ANALYTICALENGINE START
+    public final void setData (List<Integer> arg0_data_values) { //[WIP] - Formalise function later after testing
+        //Convert from parameters
+        List<Integer> data_values = arg0_data_values;
+
+        // Clear existing lValues
+        this.lValues.clear();
+
+        // Populate lValues with Graph_Vertical_Data instances
+        for (int i = 0; i < data_values.size(); i++) {
+            System.out.println("Called setData() with value " + data_values.get(i));
+            // Create a new Graph_Vertical_Data instance for each value
+            Graph_Vertical_Data graphData = new Graph_Vertical_Data(0); //[WIP] - This can be specified as civilisation_id. 0 corresponds to 'neu'.
+
+            // Populate its internal lValues with a single Graph_Vertical_Data_Value
+            graphData.lValues.add(new Graph_Vertical_Data_Value(data_values.get(i), 0)); //This is a visual bug
+
+            // Add the Graph_Vertical_Data instance to this.lValues
+            this.lValues.add(graphData);
+        }
+
+        this.iValuesSize = this.lValues.size();
+        this.drawShort = true;
+        //Make sure to actually build heights
+        this.buildData(); //Build data to avoid divide by 0
+        this.buildValuesHeights();
+
+        this.drawStatisticsData = new DrawStatisticsData() {
+            public void draw(SpriteBatch oSB, int i, int tempOffsetX, int iTranslateX, int iTranslateY) {
+                try {
+                    for (int x = 0; x < ((Graph_Vertical_Data) Graph_Vertical.this.lValues.get(i)).getValuesSize(); x++)
+                        Graph_Vertical.this.drawStatisticsValue(
+                                oSB,
+                                "" + ((Graph_Vertical_Data) Graph_Vertical.this.lValues.get(x)).getValue(x),
+                                Graph_Vertical.this.getPosX() + CFG.PADDING*2 + Graph_Vertical.this.getStatisticsWidth()*2 + Graph_Vertical.this.getStatisticsWidth()*Graph_Vertical.this.verticalInfo.getSortedID(((Graph_Vertical_Data) Graph_Vertical.this.lValues.get(i)).getValueDataTypeID(x) + iTranslateX),
+                                Graph_Vertical.this.getPosY() + ((int) ((float) CFG.TEXT_HEIGHT*0.7F) + CFG.PADDING*2)*(i + 1) + iTranslateY
+                        );
+
+                    Graph_Vertical.this.drawStatisticsValue(
+                            oSB,
+                            "" + ((Graph_Vertical_Data) Graph_Vertical.this.lValues.get(i)).getValue(),
+                            Graph_Vertical.this.getPosX() + CFG.PADDING*2 + tempOffsetX + iTranslateX,
+                            Graph_Vertical.this.getPosY() + ((int) ((float) CFG.TEXT_HEIGHT*0.7F) + CFG.PADDING*2)*(i + 1) + iTranslateY
+                    );
+                } catch (Exception ex) {
+                    ex.printStackTrace();
+                }
+            }
+
+            public String getTotal() {
+                return (Graph_Vertical.this.sTotal + " [" + Graph_Vertical.this.iValuesTotal + "]");
+            }
+
+            public String getStatsLP (int i) {
+                try {
+                    return Graph_Vertical.this.graph_labels.get(i);
+                } catch (Exception ex) {
+                    return "Custom " + i;
+                }
+            }
+
+            public int getStatsLPCivFlagID(int i) {
+                return 0;
+            }
+        };
+    }
+
+    public final void setDataLabels (List<String> arg0_data_labels) {
+        //Convert from parameters
+        List<String> data_labels = arg0_data_labels;
+
+        //Set this.graph_labels
+        this.graph_labels = data_labels;
+    }
+
+    //ANALYTICALENGINE END
 
     public final void countValuesTotal() {
         this.iValuesTotal = 0;
