@@ -17,6 +17,11 @@
 	//this.MenuTitle = Java.type("aoc.kingdoms.lukasz.menu.menuTitle");
 	this.Method = Java.type("java.lang.reflect.Method");
 	this.Minimap = Java.type("aoc.kingdoms.lukasz.menu_element.Minimap");
+	this.PieChart = Java.type("aoc.kingdoms.lukasz.menu_element.pieChart.PieChart");
+	this.PieChart_Data = Java.type("aoc.kingdoms.lukasz.menu_element.pieChart.PieChart_Data");
+	this.PieChart_Value = Java.type("aoc.kingdoms.lukasz.menu_element.pieChart.PieChart_Value");
+	this.PieChart_WithStats = Java.type("aoc.kingdoms.lukasz.menu_element.pieChart.PieChart_WithStats");
+	this.Slider = Java.type("aoc.kingdoms.lukasz.menu_element.Slider");
 
 	this.boolean_class = Java.type("java.lang.Boolean").TYPE;
 	this.integer_class = Java.type("java.lang.Integer").TYPE;
@@ -242,7 +247,7 @@
 	 *
 	 * @param {Object} [arg0_options."input_key"]
 	 *  @param {String} [arg0_options."input_key".name]
-	 * 	@param {String} [arg0_options."input_key".type] - Either 'bar_chart'/'button'/'flag_button'/'large_flag_button'/'line_graph'/'minimap'/'scroll_text'/'text'.
+	 * 	@param {String} [arg0_options."input_key".type] - Either 'bar_chart'/'button'/'flag_button'/'large_flag_button'/'line_graph'/'minimap'/'pie_chart'/'pie_chart_with_stats'/'scroll_text'/'slider'/'text'.
 	 * 	@param {number} [arg0_options."input_key".raw_coords=false] - Whether to use raw specified coords instead of autoformatting.
 	 * 	@param {number} [arg0_options."input_key".raw_dimensions=false] - Whether to override default multiplication for .width.
 	 * 	@param {number} [arg0_options."input_key".height=2] - The height as multiplied by CFG.BUTTON_WIDTH.
@@ -357,8 +362,14 @@
 					new_menu_element_obj = createLineGraph(local_value);
 				} else if (local_value.type == "minimap") {
 					new_menu_element_obj = createMinimap(local_value);
+				} else if (local_value.type == "pie_chart") {
+					new_menu_element_obj = createPieChart(local_value);
+				} else if (local_value.type == "pie_chart_with_stats") {
+					new_menu_element_obj = createPieChartWithStats(local_value);
 				} else if (local_value.type == "scroll_text") {
 					new_menu_element_obj = createScrollText(local_value);
+				} else if (local_value.type == "slider") {
+					new_menu_element_obj = createSlider(local_value);
 				} else if (local_value.type == "text") {
 					new_menu_element_obj = createText(local_value);
 				}
@@ -872,6 +883,7 @@
 	 * @param {Object} [arg0_options]
 	 * @param {String} [arg0_options.name]
 	 * @param {boolean} [arg0_options.raw_dimensions=false]
+	 * @param {String} [arg0_options.type="pie_chart"] - Either 'pie_chart'/'pie_chart_with_stats'.
 	 *
 	 * @param {number} [arg0_options.height=2]
 	 * @param {number} [arg0_options.width=2]
@@ -882,7 +894,7 @@
 	 *
 	 * @returns {Object<MenuElement>}
 	 */
-	function createPieChart (arg0_options) { //[WIP] - Finish function body
+	function createPieChart (arg0_options) {
 		//Convert from parameters
 		var options = (arg0_options) ? arg0_options : {};
 
@@ -894,6 +906,7 @@
 		options.y = returnSafeNumber(options.y);
 		if (!options.name) options.name = "";
 		if (options.raw_dimensions == undefined) options.raw_dimensions = false;
+		if (!options.type) options.type = "pie_chart";
 
 		//Declare local instance variables
 		var actual_height = parseInt((!options.raw_dimensions) ?
@@ -924,10 +937,71 @@
 		var hover_menu_obj = createTooltip(hover_element_options);
 
 		//3. Build PieChart_Data nPieChartData
+		var pie_chart_data_obj = new PieChart_Data();
+
+		//Add pie chart values
+		for (var i = 0; i < options.data.length; i++) {
+			var local_value = options.data[i];
+
+			var local_pie_chart_value_obj = new PieChart_Value(local_value.civilisation, local_value.value);
+			pie_chart_data_obj.addPieChartValues(addPieChartValues);
+		}
 
 		//4. Build and return PieChart
+		var pie_chart_obj;
+
+		if (options.type == "pie_chart") {
+			pie_chart_obj = new PieChart(
+				parseInt(options.x), //(iPosX)
+				parseInt(options.y), //(iPosY)
+				parseInt(actual_width), //(iWidth)
+				parseInt(actual_height), //(iHeight)
+				pie_chart_data_obj, //(PieChart_Data)
+				hover_menu_obj.menu_obj //(menuElementHover)
+			);
+		} else {
+			pie_chart_obj = new PieChart_WithStats(
+				parseInt(options.x), //(iPosX)
+				parseInt(options.y), //(iPosY)
+				parseInt(actual_width), //(iWidth)
+				parseInt(actual_height), //(iHeight)
+				pie_chart_data_obj, //(PieChart_Data)
+				hover_menu_obj.menu_obj //(menuElementHover)
+			);
+		}
+
 
 		//Return statement
+		return pie_chart_obj;
+	}
+
+	/**
+	 * createPieChartWithStats() - Creates a pie chart with stats and returns it as an Object for ading to menu_elements in createContextMenu().
+	 * @param {Object} [arg0_options]
+	 * @param {String} [arg0_options.name]
+	 * @param {boolean} [arg0_options.raw_dimensions=false]
+	 *
+	 * @param {number} [arg0_options.height=2]
+	 * @param {number} [arg0_options.width=2]
+	 * @param {number} [arg0_options.x=0]
+	 * @param {number} [arg0_options.y=0]
+	 *
+	 * @param {Array<{civilisation: "neu"|String, value: 0|number}>} [arg0_options.data=[]]
+	 *
+	 * @returns {Object<MenuElement>}
+	 */
+	function createPieChartWithStats (arg0_options) {
+		//Convert from parameters
+		var options = (arg0_options) ? arg0_options : {};
+
+		//Initialise options
+		options.type = "pie_chart_with_stats";
+
+		//Declare local instance variables
+		var pie_chart_obj = createPieChart(options);
+
+		//Return statement
+		return pie_chart_obj;
 	}
 
 	/**
@@ -935,6 +1009,7 @@
 	 * @param {Object} [arg0_options]
 	 * @param {String} [arg0_options.name]
 	 * @param {boolean} [arg0_options.raw_dimensions=false]
+	 *
 	 * @param {Object} [arg0_options.height=0.5]
 	 * @param {Object} [arg0_options.width=2]
 	 * @param {String} [arg0_options.align="left"] - Optional. Either 'left'/'centre'/'right'.
@@ -1007,6 +1082,57 @@
 
 		//Return statement
 		return new_scroll_text_obj;
+	}
+
+	/**
+	 * createSlider() - Creates a slider and returns it as an Object for adding to menu_elements in createContextMenu().
+	 * @param {Object} [arg0_options]
+	 * @param {String} [arg0_options.name]
+	 * @param {boolean} [arg0_options.raw_dimensions=false]
+	 *
+	 * @param {number} [arg0_options.height=1]
+	 * @param {number} [arg0_options.max=100]
+	 * @param {number} [arg0_options.min=0]
+	 * @param {number} [arg0_options.placeholder=0]
+	 * @param {number} [arg0_options.width=2]
+	 * @param {number} [arg0_options.x=0]
+	 * @param {number} [arg0_options.y=0]
+	 */
+	function createSlider (arg0_options) {
+		//Convert from parameters
+		var options = (arg0_options) ? arg0_options : {};
+
+		//Initialise options
+		options.height = returnSafeNumber(options.height, 1);
+		options.max = returnSafeNumber(options.max, 100);
+		options.min = returnSafeNumber(options.min, 100);
+		options.placeholder = returnSafeNumber(options.placeholder);
+		options.width = returnSafeNumber(options.width, 2);
+		options.x = returnSafeNumber(options.x);
+		options.y = returnSafeNumber(options.y);
+
+		if (!options.name) options.name = "";
+		if (options.raw_dimensions == undefined) options.raw_dimensions = false;
+
+		//Declare local instance variables
+		var actual_height = parseInt((!options.raw_dimensions) ?
+			CFG.BUTTON_WIDTH*options.height : options.height);
+		var actual_width = parseInt((!options.raw_dimensions) ?
+			CFG.BUTTON_WIDTH*options.width : options.width);
+
+		var slider_obj = new Slider(
+			options.name, //(sText)
+			parseInt(options.x), //(iPosX)
+			parseInt(options.y), //(iPosY)
+			actual_width, //(iWidth)
+			actual_height, //(iHeight)
+			parseInt(options.min), //(iMin)
+			parseInt(options.max), //(iMax)
+			parseInt(options.placeholder) //(iCurrent)
+		);
+
+		//Return statement
+		return slider_obj;
 	}
 
 	/**
