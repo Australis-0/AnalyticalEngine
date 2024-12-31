@@ -878,7 +878,7 @@
 	 * @param {number} [arg0_options.x=0]
 	 * @param {number} [arg0_options.y=0]
 	 *
-	 * @param {Array<{}>} [arg0_options.data={ civilisation: "neu"|String, value: 0|number }]
+	 * @param {Array<{civilisation: "neu"|String, value: 0|number}>} [arg0_options.data=[]]
 	 *
 	 * @returns {Object<MenuElement>}
 	 */
@@ -887,7 +887,7 @@
 		var options = (arg0_options) ? arg0_options : {};
 
 		//Initialise options
-		if (!options.data) options.data = {};
+		if (!options.data) options.data = [];
 		options.height = returnSafeNumber(options.height, 2);
 		options.x = returnSafeNumber(options.x);
 		options.width = returnSafeNumber(options.width, 2);
@@ -902,8 +902,26 @@
 			CFG.BUTTON_WIDTH*options.width : options.width);
 
 		//1. Regularise options.data
+		for (var i = 0; i < options.data.length; i++) {
+			if (!options.data[i].civilisation) options.data[i].civilisation = "neu";
+			options.data[i].value = returnSafeNumber(options.data[i].value);
+
+			//Set options.data[i].civilisation to civilisation_id
+			var civilisation_id = getCivilisationID(options.data[i].civilisation);
+			options.data[i].civilisation = civilisation_id;
+		}
 
 		//2. Pre-build MenuElement_Hover for use in PieChart
+		var hover_element_options = {};
+
+		for (var i = 0; i < options.data.length; i++)
+			hover_element_options[i] = {
+				type: "text",
+				name: parseNumber(options.data[i].value, { display_float: true }).toString(),
+
+				civilisation: options.data[i].civilisation
+			};
+		var hover_menu_obj = createTooltip(hover_element_options);
 
 		//3. Build PieChart_Data nPieChartData
 

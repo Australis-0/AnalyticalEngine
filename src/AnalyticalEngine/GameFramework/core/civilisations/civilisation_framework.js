@@ -154,6 +154,9 @@
 		//Convert from parameters
 		var civ_name = arg0_civ_name;
 
+		//Guard clause if civ_name is already integer
+		if (typeof civ_name == "number") return civ_name;
+
 		//Declare local instance variables
 		var civ_obj = getCivilisation(civ_name);
 
