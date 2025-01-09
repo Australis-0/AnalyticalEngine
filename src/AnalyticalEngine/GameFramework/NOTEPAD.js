@@ -1,6 +1,7 @@
 //Notepad is reserved for internal note-taking within IDEs; typically used to cache deprecated/necessary code for reference.
 //This file was created due to the impossibility to split screens on the same file.
 
+//CONTEXT MENUS
 /*
 	function createLineGraph (arg0_options) {
 		//Convert from parameters
@@ -74,4 +75,66 @@
 			console.log(e.stack);
 		}
 	}
+ */
+
+//LOCALISATION
+/*
+Anarchy:
+Anarchy ()
+Anarcho-Communism (a)
+
+Left-wing Authoritarianism:
+Communism (b)
+Partial Communism (c)
+Titoism (d)
+Real Socialism (e)
+Marxism-Leninism (f)
+Maoism (g)
+Stalinism (h)
+Dengism (i)
+State Capitalism (j)
+
+Democracy:
+Eurocommunism (k)
+Left-wing Populism (l)
+Democratic Socialism (m)
+Social Democrat (n)
+Social Liberal (o)
+Centrism (p)
+Market Liberal (q)
+Conservative (r)
+Reactionary (s)
+Right-wing Populism (t)
+Illiberal Democracy (u)
+Authoritarian Democracy (v)
+
+Right-wing Authoritarianism:
+Dictatorship (w)
+Authoritarian Conservatism (x)
+Authoritarian Dictatorship (y)
+Military Junta (z)
+Falangism (0)
+Clerical Fascism (1)
+Fascism (2)
+National Socialism (3)
+
+Arabism/Islamism:
+Pan-Arabism (4)
+Islamic Republic (5)
+Islamism (6)
+Islamic Theocracy (7)
+Radical Islamism (8)
+
+Monarchy:
+Electoral Monarchy (9)
+Semi-constitutional Monarchy ([)
+Theocratic Monarchy (])
+Absolute Monarchy ({)
+Empire (})
+Theocracy (()
+
+Historical:
+Federal Republic ())
+Mercantile Republic (<)
+Republic (>)
  */
