@@ -90,13 +90,15 @@
 	CivTAG: "bra_n",
 	CivID: 13,
 	PCID: 13,
-	CPID: 4200
+	CPID: 4200,
+	Population: 45236315
 },
 {
 	CivTAG: "uru_o",
 	CivID: 14,
 	PCID: 14,
-	CPID: 4101
+	CPID: 4101,
+	Population: 2290000
 },
 {
 	CivTAG: "arg_l",
@@ -109,49 +111,57 @@
 	CivTAG: "chl_o",
 	CivID: 16,
 	PCID: 16,
-	CPID: 4009
+	CPID: 4009,
+	Population: 5760000
 },
 {
 	CivTAG: "par_w",
 	CivID: 17,
 	PCID: 17,
-	CPID: 3993
+	CPID: 3993,
+	Population: 1473000
 },
 {
 	CivTAG: "bol_l",
 	CivID: 18,
 	PCID: 18,
-	CPID: 3984
+	CPID: 3984,
+	Population: 2883000
 },
 {
 	CivTAG: "ecu_r",
 	CivID: 19,
 	PCID: 19,
-	CPID: 3942
+	CPID: 3942,
+	Population: 2980000
 },
 {
 	CivTAG: "per_n",
 	CivID: 20,
 	PCID: 20,
-	CPID: 3957
+	CPID: 3957,
+	Population: 7854000
 },
 {
 	CivTAG: "cub_l",
 	CivID: 21,
 	PCID: 21,
-	CPID: 1864
+	CPID: 1864,
+	Population: 5820000
 },
 {
 	CivTAG: "hai_l",
 	CivID: 22,
 	PCID: 22,
-	CPID: 1889
+	CPID: 1889,
+	Population: 3221000
 },
 {
 	CivTAG: "dom_y",
 	CivID: 23,
 	PCID: 23,
-	CPID: 1896
+	CPID: 1896,
+	Population: 2200000
 },
 {
 	CivTAG: "afg_[",
@@ -164,25 +174,29 @@
 	CivTAG: "nep_w",
 	CivID: 25,
 	PCID: 25,
-	CPID: 5994
+	CPID: 5994,
+	Population: 6283649
 },
 {
 	CivTAG: "bhu_[",
 	CivID: 26,
 	PCID: 26,
-	CPID: 5998
+	CPID: 5998,
+	Population: 184000
 },
 {
 	CivTAG: "tib_]",
 	CivID: 27,
 	PCID: 27,
-	CPID: 6443
+	CPID: 6443,
+	Population: 1000000
 },
 {
 	CivTAG: "ire_q",
 	CivID: 28,
 	PCID: 28,
-	CPID: 1109
+	CPID: 1109,
+	Population: 4290000
 },
 {
 	CivTAG: "uni_n",
@@ -202,169 +216,197 @@
 	CivTAG: "net_o",
 	CivID: 31,
 	PCID: 31,
-	CPID: 2060
+	CPID: 2060,
+	Population: 9300000
 },
 {
 	CivTAG: "bel_m",
 	CivID: 32,
 	PCID: 32,
-	CPID: 2067
+	CPID: 2067,
+	Population: 8510000
 },
 {
 	CivTAG: "spa_0",
 	CivID: 33,
 	PCID: 33,
-	CPID: 2252
+	CPID: 2252,
+	Population: 28000000
 },
 {
 	CivTAG: "por_y",
 	CivID: 34,
 	PCID: 34,
-	CPID: 2277
+	CPID: 2277,
+	Population: 8510240
 },
 {
 	CivTAG: "tcyp_)",
 	CivID: 35,
 	PCID: 35,
-	CPID: 3159
+	CPID: 3159,
+	Population: 435000
 },
 {
 	CivTAG: "tmal_)",
 	CivID: 36,
 	PCID: 36,
-	CPID: 3005
+	CPID: 3005,
+	Population: 283000
 },
 {
 	CivTAG: "ita_q",
 	CivID: 37,
 	PCID: 37,
-	CPID: 2638
+	CPID: 2638,
+	Population: 45500000
 },
 {
 	CivTAG: "swi_q",
 	CivID: 38,
 	PCID: 38,
-	CPID: 2324
+	CPID: 2324,
+	Population: 4400000
 },
 {
 	CivTAG: "lux_q",
 	CivID: 39,
 	PCID: 39,
-	CPID: 2072
+	CPID: 2072,
+	Population: 293000
 },
 {
 	CivTAG: "den_q",
 	CivID: 40,
 	PCID: 40,
-	CPID: 2040
+	CPID: 2040,
+	Population: 4100000
 },
 {
 	CivTAG: "hun_t",
 	CivID: 41,
 	PCID: 41,
-	CPID: 2807
+	CPID: 2807,
+	Population: 9280000
 },
 {
 	CivTAG: "yugo_d",
 	CivID: 42,
 	PCID: 42,
-	CPID: 2975
+	CPID: 2975,
+	Population: 16250000
 },
 {
 	CivTAG: "czsl_n",
 	CivID: 43,
 	PCID: 43,
-	CPID: 2520
+	CPID: 2520,
+	Population: 8800000
 },
 {
 	CivTAG: "lic_n",
 	CivID: 44,
 	PCID: 44,
-	CPID: 2311
+	CPID: 2311,
+	Population: 12300
 },
 {
 	CivTAG: "vat_(",
 	CivID: 45,
 	PCID: 45,
-	CPID: 2637
+	CPID: 2637,
+	Population: 764
 },
 {
 	CivTAG: "san_q",
 	CivID: 46,
 	PCID: 46,
-	CPID: 2622
+	CPID: 2622,
+	Population: 12100
 },
 {
 	CivTAG: "moc",
 	CivID: 47,
 	PCID: 47,
-	CPID: 2197
+	CPID: 2197,
+	Population: 21000
 },
 {
 	CivTAG: "and_[",
 	CivID: 48,
 	PCID: 48,
-	CPID: 2198
+	CPID: 2198,
+	Population: 149200
 },
 {
 	CivTAG: "pol_f",
 	CivID: 49,
 	PCID: 49,
-	CPID: 2763
+	CPID: 2763,
+	Population: 23900000
 },
 {
 	CivTAG: "bul_f",
 	CivID: 50,
 	PCID: 50,
-	CPID: 2869
+	CPID: 2869,
+	Population: 7029349
 },
 {
 	CivTAG: "alb_h",
 	CivID: 51,
 	PCID: 51,
-	CPID: 3008
+	CPID: 3008,
+	Population: 1122044
 },
 {
 	CivTAG: "gre_r",
 	CivID: 52,
 	PCID: 52,
-	CPID: 3027
+	CPID: 3027,
+	Population: 7530000
 },
 {
 	CivTAG: "tur_l",
 	CivID: 53,
 	PCID: 53,
-	CPID: 5161
+	CPID: 5161,
+	Population: 19400000
 },
 {
 	CivTAG: "swe_n",
 	CivID: 54,
 	PCID: 54,
-	CPID: 1975
+	CPID: 1975,
+	Population: 6763685
 },
 {
 	CivTAG: "nor_n",
 	CivID: 55,
 	PCID: 55,
-	CPID: 1945
+	CPID: 1945,
+	Population: 3150000
 },
 {
 	CivTAG: "fin_r",
 	CivID: 56,
 	PCID: 56,
-	CPID: 2031
+	CPID: 2031,
+	Population: 4029800
 },
 {
 	CivTAG: "ice_q",
 	CivID: 57,
 	PCID: 57,
-	CPID: 1662
+	CPID: 1662,
+	Population: 132000
 },
 {
 	CivTAG: "egy_[",
 	CivID: 58,
 	PCID: 58,
-	CPID: 4415
+	CPID: 4415,
+	Population: 19400000
 },
 {
 	CivTAG: "aneg_)",
@@ -377,31 +419,36 @@
 	CivTAG: "tpal_)",
 	CivID: 60,
 	PCID: 29,
-	CPID: 5222
+	CPID: 5222,
+	Population: 1764520
 },
 {
 	CivTAG: "ttra_[",
 	CivID: 61,
 	PCID: 29,
-	CPID: 5251
+	CPID: 5251,
+	Population: 325000
 },
 {
 	CivTAG: "irq_r",
 	CivID: 62,
 	PCID: 62,
-	CPID: 5321
+	CPID: 5321,
+	Population: 5120000
 },
 {
 	CivTAG: "sau_]",
 	CivID: 63,
 	PCID: 63,
-	CPID: 5363
+	CPID: 5363,
+	Population: 3040000
 },
 {
 	CivTAG: "yem_]",
 	CivID: 64,
 	PCID: 64,
-	CPID: 5375
+	CPID: 5375,
+	Population: 3000000
 },
 {
 	CivTAG: "ad2_)",
@@ -414,103 +461,120 @@
 	CivTAG: "tmus_{",
 	CivID: 66,
 	PCID: 29,
-	CPID: 5414
+	CPID: 5414,
+	Population: 1720000
 },
 {
 	CivTAG: "oma2_]",
 	CivID: 67,
 	PCID: 67,
-	CPID: 5411
+	CPID: 5411,
+	Population: 500000
 },
 {
 	CivTAG: "stru_)",
 	CivID: 68,
 	PCID: 29,
-	CPID: 5419
+	CPID: 5419,
+	Population: 180000
 },
 {
 	CivTAG: "kuw_[",
 	CivID: 69,
 	PCID: 29,
-	CPID: 5303
+	CPID: 5303,
+	Population: 152000
 },
 {
 	CivTAG: "ira_o",
 	CivID: 70,
 	PCID: 70,
-	CPID: 5457
+	CPID: 5457,
+	Population: 13833000
 },
 {
 	CivTAG: "soa_r",
 	CivID: 71,
 	PCID: 71,
-	CPID: 5083
+	CPID: 5083,
+	Population: 12500000
 },
 {
 	CivTAG: "tbuch_)",
 	CivID: 72,
 	PCID: 29,
-	CPID: 5037
+	CPID: 5037,
+	Population: 249842
 },
 {
 	CivTAG: "tsor_)",
 	CivID: 73,
 	PCID: 29,
-	CPID: 5023
+	CPID: 5023,
+	Population: 6679699
 },
 {
 	CivTAG: "trho_)",
 	CivID: 74,
 	PCID: 29,
-	CPID: 4975
+	CPID: 4975,
+	Population: 1600000
 },
 {
 	CivTAG: "tang_)",
 	CivID: 75,
 	PCID: 29,
-	CPID: 4939
+	CPID: 4939,
+	Population: 7330000
 },
 {
 	CivTAG: "zan_[",
 	CivID: 76,
 	PCID: 29,
-	CPID: 4879
+	CPID: 4879,
+	Population: 200000
 },
 {
 	CivTAG: "tken_)",
 	CivID: 77,
 	PCID: 29,
-	CPID: 4898
+	CPID: 4898,
+	Population: 4900000
 },
 {
 	CivTAG: "tuga_)",
 	CivID: 78,
 	PCID: 29,
-	CPID: 4887
+	CPID: 4887,
+	Population: 2888000
 },
 {
 	CivTAG: "maw2_)",
 	CivID: 79,
 	PCID: 29,
-	CPID: 4987
+	CPID: 4987,
+	Population: 2340000
 },
 {
 	CivTAG: "nige3_)",
 	CivID: 80,
 	PCID: 29,
-	CPID: 4588
+	CPID: 4588,
+	Population: 17278000
 },
 {
 	CivTAG: "tsie_)",
 	CivID: 81,
 	PCID: 29,
-	CPID: 4511
+	CPID: 4511,
+	Population: 1800000
 },
 {
 	CivTAG: "golc_)",
 	CivID: 82,
 	PCID: 29,
-	CPID: 4558
+	CPID: 4558,
+	Population: 2078000
 },
 {
 	CivTAG: "eth_}",
@@ -523,49 +587,57 @@
 	CivTAG: "lii_r",
 	CivID: 84,
 	PCID: 84,
-	CPID: 4520
+	CPID: 4520,
+	Population: 808000
 },
 {
 	CivTAG: "afra_)",
 	CivID: 85,
 	PCID: 30,
-	CPID: 4493
+	CPID: 4493,
+	Population: 15000000
 },
 {
 	CivTAG: "gam2_)",
 	CivID: 86,
 	PCID: 29,
-	CPID: 4474
+	CPID: 4474,
+	Population: 138000
 },
 {
 	CivTAG: "conb_)",
 	CivID: 87,
 	PCID: 32,
-	CPID: 4701
+	CPID: 4701,
+	Population: 11800000
 },
 {
 	CivTAG: "sww_{",
 	CivID: 88,
 	PCID: 29,
-	CPID: 5048
+	CPID: 5048,
+	Population: 185000
 },
 {
 	CivTAG: "ruan_)",
 	CivID: 89,
 	PCID: 32,
-	CPID: 4916
+	CPID: 4916,
+	Population: 4333000
 },
 {
 	CivTAG: "somb_)",
 	CivID: 90,
 	PCID: 29,
-	CPID: 4822
+	CPID: 4822,
+	Population: 153018
 },
 {
 	CivTAG: "estt_v",
 	CivID: 91,
 	PCID: 397,
-	CPID: 6428
+	CPID: 6428,
+	Population: 705168
 },
 {
 	CivTAG: "brra_[",
@@ -592,193 +664,225 @@
 	CivTAG: "aus_n",
 	CivID: 95,
 	PCID: 95,
-	CPID: 7311
+	CPID: 7311,
+	Population: 7391692
 },
 {
 	CivTAG: "tcey_)",
 	CivID: 96,
 	PCID: 96,
-	CPID: 6028
+	CPID: 6028,
+	Population: 6657339
 },
 {
 	CivTAG: "hyb_{",
 	CivID: 97,
 	PCID: 92,
-	CPID: 5751
+	CPID: 5751,
+	Population: 17000000
 },
 {
 	CivTAG: "bass_{",
 	CivID: 98,
 	PCID: 92,
-	CPID: 5772
+	CPID: 5772,
+	Population: 506501
 },
 {
 	CivTAG: "myso_n",
 	CivID: 99,
 	PCID: 92,
-	CPID: 5698
+	CPID: 5698,
+	Population: 236572
 },
 {
 	CivTAG: "trra_o",
 	CivID: 100,
 	PCID: 92,
-	CPID: 5686
+	CPID: 5686,
+	Population: 6070018
 },
 {
 	CivTAG: "gwal_[",
 	CivID: 101,
 	PCID: 92,
-	CPID: 5867
+	CPID: 5867,
+	Population: 4006159
 },
 {
 	CivTAG: "tcen_[",
 	CivID: 102,
 	PCID: 92,
-	CPID: 5775
+	CPID: 5775,
+	Population: 13000000
 },
 {
 	CivTAG: "tbho_[",
 	CivID: 103,
 	PCID: 92,
-	CPID: 5836
+	CPID: 5836,
+	Population: 865961
 },
 {
 	CivTAG: "tind_[",
 	CivID: 104,
 	PCID: 92,
-	CPID: 5799
+	CPID: 5799,
+	Population: 1325089
 },
 {
 	CivTAG: "tku_{",
 	CivID: 105,
 	PCID: 92,
-	CPID: 5603
+	CPID: 5603,
+	Population: 488022
 },
 {
 	CivTAG: "tjod_[",
 	CivID: 106,
 	PCID: 92,
-	CPID: 5844
+	CPID: 5844,
+	Population: 2125000
 },
 {
 	CivTAG: "mew_{",
 	CivID: 107,
 	PCID: 92,
-	CPID: 5808
+	CPID: 5808,
+	Population: 1926698
 },
 {
 	CivTAG: "jai_{",
 	CivID: 108,
 	PCID: 92,
-	CPID: 5620
+	CPID: 5620,
+	Population: 76255
 },
 {
 	CivTAG: "tbik_[",
 	CivID: 109,
 	PCID: 92,
-	CPID: 5842
+	CPID: 5842,
+	Population: 936218
 },
 {
 	CivTAG: "tija_[",
 	CivID: 110,
 	PCID: 92,
-	CPID: 5863
+	CPID: 5863,
+	Population: 307000
 },
 {
 	CivTAG: "tbar_o",
 	CivID: 111,
 	PCID: 92,
-	CPID: 5650
+	CPID: 5650,
+	Population: 3100000
 },
 {
 	CivTAG: "kala3_[",
 	CivID: 112,
 	PCID: 92,
-	CPID: 5550
+	CPID: 5550,
+	Population: 253305
 },
 {
 	CivTAG: "trri_[",
 	CivID: 113,
 	PCID: 92,
-	CPID: 6009
+	CPID: 6009,
+	Population: 513010
 },
 {
 	CivTAG: "mani_[",
 	CivID: 114,
 	PCID: 92,
-	CPID: 6014
+	CPID: 6014,
+	Population: 500000
 },
 {
 	CivTAG: "siki_{",
 	CivID: 115,
 	PCID: 92,
-	CPID: 5964
+	CPID: 5964,
+	Population: 137725
 },
 {
 	CivTAG: "tha_m",
 	CivID: 116,
 	PCID: 116,
-	CPID: 6165
+	CPID: 6165,
+	Population: 18100000
 },
 {
 	CivTAG: "infro_)",
 	CivID: 117,
 	PCID: 30,
-	CPID: 6292
+	CPID: 6292,
+	Population: 23000000
 },
 {
 	CivTAG: "phra_[",
 	CivID: 118,
 	PCID: 30,
-	CPID: 6228
+	CPID: 6228,
+	Population: 1685000
 },
 {
 	CivTAG: "kedd_[",
 	CivID: 119,
 	PCID: 29,
-	CPID: 6308
+	CPID: 6308,
+	Population: 754947
 },
 {
 	CivTAG: "kela3_)",
 	CivID: 120,
 	PCID: 29,
-	CPID: 6325
+	CPID: 6325,
+	Population: 484738
 },
 {
 	CivTAG: "joho_[",
 	CivID: 121,
 	PCID: 29,
-	CPID: 6320
+	CPID: 6320,
+	Population: 987180
 },
 {
 	CivTAG: "sara_[",
 	CivID: 122,
 	PCID: 29,
-	CPID: 6332
+	CPID: 6332,
+	Population: 564385
 },
 {
 	CivTAG: "borr_)",
 	CivID: 123,
 	PCID: 29,
-	CPID: 6343
+	CPID: 6343,
+	Population: 331000
 },
 {
 	CivTAG: "bru_{",
 	CivID: 124,
 	PCID: 29,
-	CPID: 6336
+	CPID: 6336,
+	Population: 39000
 },
 {
 	CivTAG: "pgui_)",
 	CivID: 125,
 	PCID: 34,
-	CPID: 4495
+	CPID: 4495,
+	Population: 500000
 },
 {
 	CivTAG: "spgu_)",
 	CivID: 126,
 	PCID: 33,
-	CPID: 4662
+	CPID: 4662,
+	Population: 300000
 },
 {
 	CivTAG: "qin_y",
@@ -791,43 +895,50 @@
 	CivTAG: "mon_f",
 	CivID: 128,
 	PCID: 128,
-	CPID: 6372
+	CPID: 6372,
+	Population: 750000
 },
 {
 	CivTAG: "nin_y",
 	CivID: 129,
 	PCID: 127,
-	CPID: 6774
+	CPID: 6774,
+	Population: 6800000
 },
 {
 	CivTAG: "ins_v",
 	CivID: 130,
 	PCID: 130,
-	CPID: 7216
+	CPID: 7216,
+	Population: 69973500
 },
 {
 	CivTAG: "jap_!",
 	CivID: 131,
 	PCID: 1,
-	CPID: 7072
+	CPID: 7072,
+	Population: 71900000
 },
 {
 	CivTAG: "nez_n",
 	CivID: 132,
 	PCID: 132,
-	CPID: 7387
+	CPID: 7387,
+	Population: 1781200
 },
 {
 	CivTAG: "tmau_)",
 	CivID: 133,
 	PCID: 133,
-	CPID: 5099
+	CPID: 5099,
+	Population: 420000
 },
 {
 	CivTAG: "mdd_[",
 	CivID: 134,
 	PCID: 134,
-	CPID: 5111
+	CPID: 5111,
+	Population: 82068
 },
 {
 	CivTAG: "guu2_)",
@@ -847,145 +958,169 @@
 	CivTAG: "mqu_)",
 	CivID: 137,
 	PCID: 30,
-	CPID: 1915
+	CPID: 1915,
+	Population: 26564
 },
 {
 	CivTAG: "guu_)",
 	CivID: 138,
 	PCID: 30,
-	CPID: 1913
+	CPID: 1913,
+	Population: 271300
 },
 {
 	CivTAG: "jami2_)",
 	CivID: 139,
 	PCID: 29,
-	CPID: 1879
+	CPID: 1879,
+	Population: 1266000
 },
 {
 	CivTAG: "twind_)",
 	CivID: 140,
 	PCID: 29,
-	CPID: 1919
+	CPID: 1919,
+	Population: 300000
 },
 {
 	CivTAG: "lee2_)",
 	CivID: 141,
 	PCID: 29,
-	CPID: 1908
+	CPID: 1908,
+	Population: 100000
 },
 {
 	CivTAG: "ida3_{",
 	CivID: 142,
 	PCID: 92,
-	CPID: 5670
+	CPID: 5670,
+	Population: 1946
 },
 {
 	CivTAG: "patn3_{",
 	CivID: 143,
 	PCID: 92,
-	CPID: 5916
+	CPID: 5916,
+	Population: 357959
 },
 {
 	CivTAG: "kalh3_{",
 	CivID: 144,
 	PCID: 92,
-	CPID: 5774
+	CPID: 5774,
+	Population: 324548
 },
 {
 	CivTAG: "asha2_)",
 	CivID: 145,
 	PCID: 29,
-	CPID: 4560
+	CPID: 4560,
+	Population: 2000000
 },
 {
 	CivTAG: "twes2_)",
 	CivID: 146,
 	PCID: 29,
-	CPID: 7407
+	CPID: 7407,
+	Population: 100000
 },
 {
 	CivTAG: "tangier_)",
 	CivID: 147,
 	PCID: 147,
-	CPID: 4243
+	CPID: 4243,
+	Population: 141000
 },
 {
 	CivTAG: "mazur_]",
 	CivID: 148,
 	PCID: 148,
-	CPID: 6478
+	CPID: 6478,
+	Population: 60000
 },
 {
 	CivTAG: "zhoukeji_9",
 	CivID: 149,
 	PCID: 149,
-	CPID: 6477
+	CPID: 6477,
+	Population: 30000
 },
 {
 	CivTAG: "songgang_{",
 	CivID: 150,
 	PCID: 150,
-	CPID: 6468
+	CPID: 6468,
+	Population: 42044
 },
 {
 	CivTAG: "trokyap_[",
 	CivID: 151,
 	PCID: 151,
-	CPID: 6469
+	CPID: 6469,
+	Population: 85000
 },
 {
 	CivTAG: "ninglang_]",
 	CivID: 152,
 	PCID: 152,
-	CPID: 6552
+	CPID: 6552,
+	Population: 124525
 },
 {
 	CivTAG: "garze_]",
 	CivID: 153,
 	PCID: 153,
-	CPID: 6465
+	CPID: 6465,
+	Population: 1000000
 },
 {
 	CivTAG: "muli_{",
 	CivID: 154,
 	PCID: 154,
-	CPID: 6554
+	CPID: 6554,
+	Population: 16390
 },
 {
 	CivTAG: "nangchen_]",
 	CivID: 155,
 	PCID: 155,
-	CPID: 6466
+	CPID: 6466,
+	Population: 90307
 },
 {
 	CivTAG: "sagya_]",
 	CivID: 156,
 	PCID: 156,
-	CPID: 6437
+	CPID: 6437,
+	Population: 25600
 },
 {
 	CivTAG: "britishmilitaryadministrationineritrea_!",
 	CivID: 157,
 	PCID: 29,
-	CPID: 4776
+	CPID: 4776,
+	Population: 870000
 },
 {
 	CivTAG: "crowncolonyofthebahamas_)",
 	CivID: 158,
 	PCID: 29,
-	CPID: 1857
+	CPID: 1857,
+	Population: 71000
 },
 {
 	CivTAG: "colonyofbarbados_)",
 	CivID: 159,
 	PCID: 29,
-	CPID: 1916
+	CPID: 1916,
+	Population: 187000
 },
 {
 	CivTAG: "colonyoftrinidadandtobago_)",
 	CivID: 160,
 	PCID: 29,
-	CPID: 1921
+	CPID: 1921,
+	Population: 547000
 },
 {
 	CivTAG: "colonyofsurinam_)",
@@ -998,31 +1133,36 @@
 	CivTAG: "colonyoftheriodeoro_)",
 	CivID: 162,
 	PCID: 33,
-	CPID: 4282
+	CPID: 4282,
+	Population: 10000
 },
 {
 	CivTAG: "spanishprotectorateinmorocco_)",
 	CivID: 163,
 	PCID: 33,
-	CPID: 4244
+	CPID: 4244,
+	Population: 1000000
 },
 {
 	CivTAG: "interalliedzone_!",
 	CivID: 164,
 	PCID: 164,
-	CPID: 2496
+	CPID: 2496,
+	Population: 45000
 },
 {
 	CivTAG: "britishforcesofoccupationinaustria_!",
 	CivID: 165,
 	PCID: 29,
-	CPID: 2510
+	CPID: 2510,
+	Population: 1617544
 },
 {
 	CivTAG: "sovietmilitaryadministrationinaustria_!",
 	CivID: 166,
 	PCID: 397,
-	CPID: 2502
+	CPID: 2502,
+	Population: 3292732
 },
 {
 	CivTAG: "unitedstatesforcesinaustria_!",
@@ -1034,133 +1174,155 @@
 	CivTAG: "frenchzone_!",
 	CivID: 168,
 	PCID: 30,
-	CPID: 2513
+	CPID: 2513,
+	Population: 621122
 },
 {
 	CivTAG: "officeofmilitarygovernmentunitedstates_!",
 	CivID: 169,
 	PCID: 1,
-	CPID: 2392
+	CPID: 2392,
+	Population: 16750000
 },
 {
 	CivTAG: "frenchforcesingermany_!",
 	CivID: 170,
 	PCID: 30,
-	CPID: 2419
+	CPID: 2419,
+	Population: 4950000
 },
 {
 	CivTAG: "britisharmyoftherhine_!",
 	CivID: 171,
 	PCID: 29,
-	CPID: 2389
+	CPID: 2389,
+	Population: 20800000
 },
 {
 	CivTAG: "sovietmilitaryadministrationingermany_!",
 	CivID: 172,
 	PCID: 397,
-	CPID: 2344
+	CPID: 2344,
+	Population: 65137274
 },
 {
 	CivTAG: "sovietoccupationofromania_h",
 	CivID: 173,
 	PCID: 397,
-	CPID: 2818
+	CPID: 2818,
+	Population: 15870000
 },
 {
 	CivTAG: "britishmilitaryadministrationinlibya_!",
 	CivID: 174,
 	PCID: 29,
-	CPID: 4379
+	CPID: 4379,
+	Population: 335876
 },
 {
 	CivTAG: "militaryterritoryoffezzanghadames_!",
 	CivID: 175,
 	PCID: 30,
-	CPID: 4361
+	CPID: 4361,
+	Population: 150000
 },
 {
 	CivTAG: "frenchequatorialafrica_)",
 	CivID: 176,
 	PCID: 30,
-	CPID: 4703
+	CPID: 4703,
+	Population: 10000000
 },
 {
 	CivTAG: "northerncameroons_)",
 	CivID: 177,
 	PCID: 29,
-	CPID: 4616
+	CPID: 4616,
+	Population: 1500000
 },
 {
 	CivTAG: "southerncameroons_)",
 	CivID: 178,
 	PCID: 29,
-	CPID: 4659
+	CPID: 4659,
+	Population: 300000
 },
 {
 	CivTAG: "territoryofcameroun_)",
 	CivID: 179,
 	PCID: 30,
-	CPID: 4675
+	CPID: 4675,
+	Population: 4316000
 },
 {
 	CivTAG: "portugueseangola_)",
 	CivID: 180,
 	PCID: 34,
-	CPID: 4950
+	CPID: 4950,
+	Population: 4148000
 },
 {
 	CivTAG: "colonyofmozambique_)",
 	CivID: 181,
 	PCID: 34,
-	CPID: 5005
+	CPID: 5005,
+	Population: 1845131
 },
 {
 	CivTAG: "protectorateofbasotholand_[",
 	CivID: 182,
 	PCID: 29,
-	CPID: 5055
+	CPID: 5055,
+	Population: 290000
 },
 {
 	CivTAG: "colonyofmadagascar_)",
 	CivID: 183,
 	PCID: 30,
-	CPID: 5098
+	CPID: 5098,
+	Population: 4084000
 },
 {
 	CivTAG: "britishmilitaryadministrationinsomaliland_!",
 	CivID: 184,
 	PCID: 29,
-	CPID: 4837
+	CPID: 4837,
+	Population: 700000
 },
 {
 	CivTAG: "frenchsomaliland_)",
 	CivID: 185,
 	PCID: 185,
-	CPID: 4786
+	CPID: 4786,
+	Population: 100000
 },
 {
 	CivTAG: "britishmilitaryadministrationinogadenandhaud_!",
 	CivID: 186,
 	PCID: 29,
-	CPID: 4814
+	CPID: 4814,
+	Population: 2500000
 },
 {
 	CivTAG: "liangmuclan_{",
 	CivID: 187,
 	PCID: 127,
-	CPID: 6462
+	CPID: 6462,
+	Population: 20000
 },
 {
 	CivTAG: "zhefangmangshi_{",
 	CivID: 188,
 	PCID: 127,
-	CPID: 6555
+	CPID: 6555,
+	Population: 40000
 },
 {
 	CivTAG: "chaungbianspecialregion_w",
 	CivID: 189,
 	PCID: 127,
-	CPID: 6556
+	CPID: 6556,
+	Population: 1800000
 },
 {
 	CivTAG: "peoplesliberationarmy_g",
@@ -1173,79 +1335,92 @@
 	CivTAG: "khosorutleague_[",
 	CivID: 191,
 	PCID: 127,
-	CPID: 6489
+	CPID: 6489,
+	Population: 230000
 },
 {
 	CivTAG: "yushutribes_[",
 	CivID: 192,
 	PCID: 192,
-	CPID: 6448
+	CPID: 6448,
+	Population: 45000
 },
 {
 	CivTAG: "songpangarrison_!",
 	CivID: 193,
 	PCID: 193,
-	CPID: 6573
+	CPID: 6573,
+	Population: 66937
 },
 {
 	CivTAG: "horconfederacy_(",
 	CivID: 194,
 	PCID: 194,
-	CPID: 6473
+	CPID: 6473,
+	Population: 300000
 },
 {
 	CivTAG: "ngolokrebellion_9",
 	CivID: 195,
 	PCID: 195,
-	CPID: 6480
+	CPID: 6480,
+	Population: 180000
 },
 {
 	CivTAG: "meukingdom_{",
 	CivID: 196,
 	PCID: 196,
-	CPID: 6479
+	CPID: 6479,
+	Population: 40000
 },
 {
 	CivTAG: "chiefdomofsomo_{",
 	CivID: 197,
 	PCID: 197,
-	CPID: 6476
+	CPID: 6476,
+	Population: 150000
 },
 {
 	CivTAG: "shimdroktribes_9",
 	CivID: 198,
 	PCID: 198,
-	CPID: 6492
+	CPID: 6492,
+	Population: 160000
 },
 {
 	CivTAG: "jonechiefdom_{",
 	CivID: 199,
 	PCID: 199,
-	CPID: 6503
+	CPID: 6503,
+	Population: 100000
 },
 {
 	CivTAG: "hequtribes_9",
 	CivID: 200,
 	PCID: 200,
-	CPID: 6494
+	CPID: 6494,
+	Population: 300000
 },
 {
 	CivTAG: "labrangmonastery_(",
 	CivID: 201,
 	PCID: 201,
-	CPID: 6501
+	CPID: 6501,
+	Population: 15000
 },
 {
 	CivTAG: "sogwoarigkingdom_{",
 	CivID: 202,
 	PCID: 202,
-	CPID: 6498
+	CPID: 6498,
+	Population: 40000
 },
 {
 	CivTAG: "yanxishan_r",
 	CivID: 203,
 	PCID: 127,
-	CPID: 6913
+	CPID: 6913,
+	Population: 5200000
 },
 {
 	CivTAG: "sovietoccupationofmanchuria_!",
@@ -1258,223 +1433,260 @@
 	CivTAG: "sovietciviladministrationinkorea_!",
 	CivID: 205,
 	PCID: 397,
-	CPID: 6968
+	CPID: 6968,
+	Population: 9260000
 },
 {
 	CivTAG: "unitedstatesarmymilitarygovernmentinkorea_!",
 	CivID: 206,
 	PCID: 1,
-	CPID: 6988
+	CPID: 6988,
+	Population: 18000000
 },
 {
 	CivTAG: "commonwealthofthephilippines_r",
 	CivID: 207,
 	PCID: 1,
-	CPID: 7102
+	CPID: 7102,
+	Population: 16100000
 },
 {
 	CivTAG: "mongmit_{",
 	CivID: 208,
 	PCID: 92,
-	CPID: 6131
+	CPID: 6131,
+	Population: 15000
 },
 {
 	CivTAG: "taupeng_{",
 	CivID: 209,
 	PCID: 92,
-	CPID: 6129
+	CPID: 6129,
+	Population: 20000
 },
 {
 	CivTAG: "mangshiconfederacy_{",
 	CivID: 210,
 	PCID: 127,
-	CPID: 6453
+	CPID: 6453,
+	Population: 204000
 },
 {
 	CivTAG: "wastates_{",
 	CivID: 211,
 	PCID: 92,
-	CPID: 6146
+	CPID: 6146,
+	Population: 100000
 },
 {
 	CivTAG: "manglon_{",
 	CivID: 212,
 	PCID: 92,
-	CPID: 6136
+	CPID: 6136,
+	Population: 40000
 },
 {
 	CivTAG: "mongsu_{",
 	CivID: 213,
 	PCID: 92,
-	CPID: 6138
+	CPID: 6138,
+	Population: 15000
 },
 {
 	CivTAG: "kehsi_{",
 	CivID: 214,
 	PCID: 92,
-	CPID: 6137
+	CPID: 6137,
+	Population: 30000
 },
 {
 	CivTAG: "hsi2_{",
 	CivID: 215,
 	PCID: 92,
-	CPID: 6127
+	CPID: 6127,
+	Population: 176158
 },
 {
 	CivTAG: "southhsenwi_{",
 	CivID: 216,
 	PCID: 92,
-	CPID: 6140
+	CPID: 6140,
+	Population: 67836
 },
 {
 	CivTAG: "northernshan_{",
 	CivID: 217,
 	PCID: 92,
-	CPID: 6144
+	CPID: 6144,
+	Population: 1000000
 },
 {
 	CivTAG: "keng3_{",
 	CivID: 218,
 	PCID: 92,
-	CPID: 6133
+	CPID: 6133,
+	Population: 190698
 },
 {
 	CivTAG: "mawkmai_{",
 	CivID: 219,
 	PCID: 92,
-	CPID: 6115
+	CPID: 6115,
+	Population: 29454
 },
 {
 	CivTAG: "mongpan_{",
 	CivID: 220,
 	PCID: 92,
-	CPID: 6119
+	CPID: 6119,
+	Population: 16629
 },
 {
 	CivTAG: "kantarawadi_{",
 	CivID: 221,
 	PCID: 92,
-	CPID: 6098
+	CPID: 6098,
+	Population: 23000
 },
 {
 	CivTAG: "bawlake_{",
 	CivID: 222,
 	PCID: 92,
-	CPID: 6065
+	CPID: 6065,
+	Population: 9867
 },
 {
 	CivTAG: "kyebogyi_{",
 	CivID: 223,
 	PCID: 92,
-	CPID: 6064
+	CPID: 6064,
+	Population: 9867
 },
 {
 	CivTAG: "mongpai_{",
 	CivID: 224,
 	PCID: 92,
-	CPID: 6097
+	CPID: 6097,
+	Population: 44208
 },
 {
 	CivTAG: "loilong_{",
 	CivID: 225,
 	PCID: 92,
-	CPID: 6095
+	CPID: 6095,
+	Population: 15000
 },
 {
 	CivTAG: "sakol_{",
 	CivID: 226,
 	PCID: 92,
-	CPID: 6096
+	CPID: 6096,
+	Population: 30000
 },
 {
 	CivTAG: "hsatung_{",
 	CivID: 227,
 	PCID: 92,
-	CPID: 6108
+	CPID: 6108,
+	Population: 15000
 },
 {
 	CivTAG: "wanyin_{",
 	CivID: 228,
 	PCID: 92,
-	CPID: 6110
+	CPID: 6110,
+	Population: 20000
 },
 {
 	CivTAG: "taunggyi_{",
 	CivID: 229,
 	PCID: 92,
-	CPID: 6100
+	CPID: 6100,
+	Population: 2000
 },
 {
 	CivTAG: "aungban_{",
 	CivID: 230,
 	PCID: 92,
-	CPID: 6101
+	CPID: 6101,
+	Population: 30615
 },
 {
 	CivTAG: "poila_{",
 	CivID: 231,
 	PCID: 92,
-	CPID: 6102
+	CPID: 6102,
+	Population: 24000
 },
 {
 	CivTAG: "yengnan_{",
 	CivID: 232,
 	PCID: 92,
-	CPID: 6103
+	CPID: 6103,
+	Population: 20000
 },
 {
 	CivTAG: "mongping_{",
 	CivID: 233,
 	PCID: 92,
-	CPID: 6113
+	CPID: 6113,
+	Population: 15000
 },
 {
 	CivTAG: "mongkung_{",
 	CivID: 234,
 	PCID: 92,
-	CPID: 6125
+	CPID: 6125,
+	Population: 20000
 },
 {
 	CivTAG: "laikha_{",
 	CivID: 235,
 	PCID: 92,
-	CPID: 6122
+	CPID: 6122,
+	Population: 25811
 },
 {
 	CivTAG: "namkhok_{",
 	CivID: 236,
 	PCID: 92,
-	CPID: 6109
+	CPID: 6109,
+	Population: 40000
 },
 {
 	CivTAG: "mongpawng_{",
 	CivID: 237,
 	PCID: 92,
-	CPID: 6112
+	CPID: 6112,
+	Population: 20000
 },
 {
 	CivTAG: "mongnawn_{",
 	CivID: 238,
 	PCID: 92,
-	CPID: 6124
+	CPID: 6124,
+	Population: 14000
 },
 {
 	CivTAG: "mongnai_{",
 	CivID: 239,
 	PCID: 92,
-	CPID: 6120
+	CPID: 6120,
+	Population: 21000
 },
 {
 	CivTAG: "mawstate_{",
 	CivID: 240,
 	PCID: 92,
-	CPID: 6106
+	CPID: 6106,
+	Population: 20000
 },
 {
 	CivTAG: "jammuandkashmir_{",
 	CivID: 241,
 	PCID: 92,
-	CPID: 5778
+	CPID: 5778,
+	Population: 3945000
 },
 {
 	CivTAG: "athazara_)",
@@ -1486,109 +1698,127 @@
 	CivTAG: "swat_)",
 	CivID: 243,
 	PCID: 92,
-	CPID: 5586
+	CPID: 5586,
+	Population: 283720
 },
 {
 	CivTAG: "atkohistan_)",
 	CivID: 244,
 	PCID: 92,
-	CPID: 5598
+	CPID: 5598,
+	Population: 18775
 },
 {
 	CivTAG: "chitral_)",
 	CivID: 245,
 	PCID: 92,
-	CPID: 5599
+	CPID: 5599,
+	Population: 49780
 },
 {
 	CivTAG: "dir_)",
 	CivID: 246,
 	PCID: 92,
-	CPID: 5597
+	CPID: 5597,
+	Population: 107000
 },
 {
 	CivTAG: "kurram_)",
 	CivID: 247,
 	PCID: 92,
-	CPID: 5569
+	CPID: 5569,
+	Population: 419553
 },
 {
 	CivTAG: "kharan_[",
 	CivID: 248,
 	PCID: 112,
-	CPID: 5549
+	CPID: 5549,
+	Population: 80000
 },
 {
 	CivTAG: "makaran_[",
 	CivID: 249,
 	PCID: 112,
-	CPID: 5548
+	CPID: 5548,
+	Population: 86651
 },
 {
 	CivTAG: "bela_[",
 	CivID: 250,
 	PCID: 112,
-	CPID: 5547
+	CPID: 5547,
+	Population: 20000
 },
 {
 	CivTAG: "khairpur_{",
 	CivID: 251,
 	PCID: 92,
-	CPID: 5561
+	CPID: 5561,
+	Population: 374068
 },
 {
 	CivTAG: "bahawalpur_{",
 	CivID: 252,
 	PCID: 92,
-	CPID: 5562
+	CPID: 5562,
+	Population: 42000
 },
 {
 	CivTAG: "northernterritories_)",
 	CivID: 253,
 	PCID: 29,
-	CPID: 9892
+	CPID: 9892,
+	Population: 345891
 },
 {
 	CivTAG: "transvoltatogoland_)",
 	CivID: 254,
 	PCID: 29,
-	CPID: 9893
+	CPID: 9893,
+	Population: 400000
 },
 {
 	CivTAG: "dvarka_{",
 	CivID: 255,
 	PCID: 92,
-	CPID: 5631
+	CPID: 5631,
+	Population: 28873
 },
 {
 	CivTAG: "navanagar_[",
 	CivID: 256,
 	PCID: 92,
-	CPID: 9890
+	CPID: 9890,
+	Population: 336779
 },
 {
 	CivTAG: "gondal_[",
 	CivID: 257,
 	PCID: 92,
-	CPID: 5628
+	CPID: 5628,
+	Population: 205840
 },
 {
 	CivTAG: "pord3_[",
 	CivID: 258,
 	PCID: 92,
-	CPID: 5630
+	CPID: 5630,
+	Population: 12160
 },
 {
 	CivTAG: "khht_{",
 	CivID: 259,
 	PCID: 92,
-	CPID: 5634
+	CPID: 5634,
+	Population: 20000
 },
 {
 	CivTAG: "kodinar_{",
 	CivID: 260,
 	PCID: 92,
-	CPID: 5632
+	CPID: 5632,
+	Population: 40000
 },
 {
 	CivTAG: "amreli_{",
@@ -1601,319 +1831,372 @@
 	CivTAG: "bantwa_{",
 	CivID: 262,
 	PCID: 92,
-	CPID: 5629
+	CPID: 5629,
+	Population: 20000
 },
 {
 	CivTAG: "rajkot_{",
 	CivID: 263,
 	PCID: 92,
-	CPID: 5626
+	CPID: 5626,
+	Population: 1400000
 },
 {
 	CivTAG: "bhavnagar_[",
 	CivID: 264,
 	PCID: 92,
-	CPID: 5636
+	CPID: 5636,
+	Population: 618429
 },
 {
 	CivTAG: "westkathiawaragency_)",
 	CivID: 265,
 	PCID: 92,
-	CPID: 5637
+	CPID: 5637,
+	Population: 65000
 },
 {
 	CivTAG: "chokdatha_{",
 	CivID: 266,
 	PCID: 92,
-	CPID: 5641
+	CPID: 5641,
+	Population: 30000
 },
 {
 	CivTAG: "morvi_[",
 	CivID: 267,
 	PCID: 92,
-	CPID: 5625
+	CPID: 5625,
+	Population: 42602
 },
 {
 	CivTAG: "dhrangadhra_[",
 	CivID: 268,
 	PCID: 92,
-	CPID: 5638
+	CPID: 5638,
+	Population: 94917
 },
 {
 	CivTAG: "wankaner_[",
 	CivID: 269,
 	PCID: 92,
-	CPID: 5639
+	CPID: 5639,
+	Population: 43881
 },
 {
 	CivTAG: "dangs_{",
 	CivID: 270,
 	PCID: 92,
-	CPID: 5659
+	CPID: 5659,
+	Population: 128291
 },
 {
 	CivTAG: "surgana_{",
 	CivID: 271,
 	PCID: 92,
-	CPID: 5657
+	CPID: 5657,
+	Population: 14912
 },
 {
 	CivTAG: "bansda_{",
 	CivID: 272,
 	PCID: 92,
-	CPID: 5655
+	CPID: 5655,
+	Population: 39526
 },
 {
 	CivTAG: "surat_)",
 	CivID: 273,
 	PCID: 92,
-	CPID: 5652
+	CPID: 5652,
+	Population: 48411
 },
 {
 	CivTAG: "dharampur_[",
 	CivID: 274,
 	PCID: 92,
-	CPID: 5654
+	CPID: 5654,
+	Population: 202000
 },
 {
 	CivTAG: "cambay_{",
 	CivID: 275,
 	PCID: 92,
-	CPID: 5647
+	CPID: 5647,
+	Population: 75122
 },
 {
 	CivTAG: "rajpipla_o",
 	CivID: 276,
 	PCID: 92,
-	CPID: 5666
+	CPID: 5666,
+	Population: 34923
 },
 {
 	CivTAG: "udaipur_{",
 	CivID: 277,
 	PCID: 92,
-	CPID: 5903
+	CPID: 5903,
+	Population: 1926968
 },
 {
 	CivTAG: "rajpur_{",
 	CivID: 278,
 	PCID: 92,
-	CPID: 5671
+	CPID: 5671,
+	Population: 181549
 },
 {
 	CivTAG: "bariya_{",
 	CivID: 279,
 	PCID: 92,
-	CPID: 5755
+	CPID: 5755,
+	Population: 197918
 },
 {
 	CivTAG: "dhar_{",
 	CivID: 280,
 	PCID: 92,
-	CPID: 5797
+	CPID: 5797,
+	Population: 253210
 },
 {
 	CivTAG: "nimkheda_{",
 	CivID: 281,
 	PCID: 92,
-	CPID: 5676
+	CPID: 5676,
+	Population: 8276
 },
 {
 	CivTAG: "jobat_{",
 	CivID: 282,
 	PCID: 92,
-	CPID: 5675
+	CPID: 5675,
+	Population: 9443
 },
 {
 	CivTAG: "chota_{",
 	CivID: 283,
 	PCID: 92,
-	CPID: 5669
+	CPID: 5669,
+	Population: 20000
 },
 {
 	CivTAG: "kusalgarh_{",
 	CivID: 284,
 	PCID: 92,
-	CPID: 5674
+	CPID: 5674,
+	Population: 10096
 },
 {
 	CivTAG: "jhabua_{",
 	CivID: 285,
 	PCID: 92,
-	CPID: 5677
+	CPID: 5677,
+	Population: 75000
 },
 {
 	CivTAG: "khandu_{",
 	CivID: 286,
 	PCID: 92,
-	CPID: 5678
+	CPID: 5678,
+	Population: 67400
 },
 {
 	CivTAG: "banswara_{",
 	CivID: 287,
 	PCID: 92,
-	CPID: 5803
+	CPID: 5803,
+	Population: 101017
 },
 {
 	CivTAG: "dungarpur_{",
 	CivID: 288,
 	PCID: 92,
-	CPID: 5679
+	CPID: 5679,
+	Population: 47706
 },
 {
 	CivTAG: "sadharkanthaagency_)",
 	CivID: 289,
 	PCID: 92,
-	CPID: 5623
+	CPID: 5623,
+	Population: 115000
 },
 {
 	CivTAG: "radhanpur_{",
 	CivID: 290,
 	PCID: 92,
-	CPID: 5622
+	CPID: 5622,
+	Population: 100644
 },
 {
 	CivTAG: "palanpur_{",
 	CivID: 291,
 	PCID: 92,
-	CPID: 5645
+	CPID: 5645,
+	Population: 141592
 },
 {
 	CivTAG: "sirohi_{",
 	CivID: 292,
 	PCID: 92,
-	CPID: 5646
+	CPID: 5646,
+	Population: 154544
 },
 {
 	CivTAG: "meshana_{",
 	CivID: 293,
 	PCID: 92,
-	CPID: 5644
+	CPID: 5644,
+	Population: 190753
 },
 {
 	CivTAG: "ratlam_[",
 	CivID: 294,
 	PCID: 92,
-	CPID: 5804
+	CPID: 5804,
+	Population: 36321
 },
 {
 	CivTAG: "partabgarh_{",
 	CivID: 295,
 	PCID: 92,
-	CPID: 5805
+	CPID: 5805,
+	Population: 110530
 },
 {
 	CivTAG: "tonk_{",
 	CivID: 296,
 	PCID: 92,
-	CPID: 5807
+	CPID: 5807,
+	Population: 273201
 },
 {
 	CivTAG: "nemawar_{",
 	CivID: 297,
 	PCID: 92,
-	CPID: 5809
+	CPID: 5809,
+	Population: 594397
 },
 {
 	CivTAG: "dewas_{",
 	CivID: 298,
 	PCID: 92,
-	CPID: 5800
+	CPID: 5800,
+	Population: 74904
 },
 {
 	CivTAG: "bundi_{",
 	CivID: 299,
 	PCID: 92,
-	CPID: 5838
+	CPID: 5838,
+	Population: 216722
 },
 {
 	CivTAG: "shahpura_{",
 	CivID: 300,
 	PCID: 92,
-	CPID: 5794
+	CPID: 5794,
+	Population: 30320
 },
 {
 	CivTAG: "kishangarh_{",
 	CivID: 301,
 	PCID: 92,
-	CPID: 5793
+	CPID: 5793,
+	Population: 154886
 },
 {
 	CivTAG: "jhalawar_{",
 	CivID: 302,
 	PCID: 92,
-	CPID: 5826
+	CPID: 5826,
+	Population: 90175
 },
 {
 	CivTAG: "kotah_{",
 	CivID: 303,
 	PCID: 92,
-	CPID: 5833
+	CPID: 5833,
+	Population: 685804
 },
 {
 	CivTAG: "rajgarh_{",
 	CivID: 304,
 	PCID: 92,
-	CPID: 5831
+	CPID: 5831,
+	Population: 29726
 },
 {
 	CivTAG: "kulchipur_{",
 	CivID: 305,
 	PCID: 92,
-	CPID: 5829
+	CPID: 5829,
+	Population: 18928
 },
 {
 	CivTAG: "karauli_{",
 	CivID: 306,
 	PCID: 92,
-	CPID: 5864
+	CPID: 5864,
+	Population: 140525
 },
 {
 	CivTAG: "dholpur_{",
 	CivID: 307,
 	PCID: 92,
-	CPID: 5868
+	CPID: 5868,
+	Population: 250000
 },
 {
 	CivTAG: "bharatpur_{",
 	CivID: 308,
 	PCID: 92,
-	CPID: 5866
+	CPID: 5866,
+	Population: 574192
 },
 {
 	CivTAG: "nabha_{",
 	CivID: 309,
 	PCID: 92,
-	CPID: 5849
+	CPID: 5849,
+	Population: 297949
 },
 {
 	CivTAG: "patiala_[",
 	CivID: 310,
 	PCID: 92,
-	CPID: 5851
+	CPID: 5851,
+	Population: 1467433
 },
 {
 	CivTAG: "loharu_{",
 	CivID: 311,
 	PCID: 92,
-	CPID: 5857
+	CPID: 5857,
+	Population: 15229
 },
 {
 	CivTAG: "malerkotla_{",
 	CivID: 312,
 	PCID: 92,
-	CPID: 5846
+	CPID: 5846,
+	Population: 77506
 },
 {
 	CivTAG: "chamba_{",
 	CivID: 313,
 	PCID: 92,
-	CPID: 5784
+	CPID: 5784,
+	Population: 215773
 },
 {
 	CivTAG: "datia_{",
 	CivID: 314,
 	PCID: 92,
-	CPID: 5869
+	CPID: 5869,
+	Population: 73759
 },
 {
 	CivTAG: "alwar_[",
@@ -1926,79 +2209,92 @@
 	CivTAG: "jindstate_{",
 	CivID: 316,
 	PCID: 92,
-	CPID: 5871
+	CPID: 5871,
+	Population: 324676
 },
 {
 	CivTAG: "simur_[",
 	CivID: 317,
 	PCID: 92,
-	CPID: 5876
+	CPID: 5876,
+	Population: 135626
 },
 {
 	CivTAG: "tehrigarhwal_{",
 	CivID: 318,
 	PCID: 92,
-	CPID: 5880
+	CPID: 5880,
+	Population: 500000
 },
 {
 	CivTAG: "suket_{",
 	CivID: 319,
 	PCID: 92,
-	CPID: 5877
+	CPID: 5877,
+	Population: 20000
 },
 {
 	CivTAG: "mandi_{",
 	CivID: 320,
 	PCID: 92,
-	CPID: 5787
+	CPID: 5787,
+	Population: 232598
 },
 {
 	CivTAG: "suni_{",
 	CivID: 321,
 	PCID: 92,
-	CPID: 5786
+	CPID: 5786,
+	Population: 15000
 },
 {
 	CivTAG: "bilaspur_{",
 	CivID: 322,
 	PCID: 92,
-	CPID: 5788
+	CPID: 5788,
+	Population: 331000
 },
 {
 	CivTAG: "nalagarh_{",
 	CivID: 323,
 	PCID: 92,
-	CPID: 5853
+	CPID: 5853,
+	Population: 9433
 },
 {
 	CivTAG: "bhor_[",
 	CivID: 324,
 	PCID: 92,
-	CPID: 5683
+	CPID: 5683,
+	Population: 137268
 },
 {
 	CivTAG: "phattan_{",
 	CivID: 325,
 	PCID: 92,
-	CPID: 5719
+	CPID: 5719,
+	Population: 15000
 },
 {
 	CivTAG: "aundh_o",
 	CivID: 326,
 	PCID: 92,
-	CPID: 5718
+	CPID: 5718,
+	Population: 88762
 },
 {
 	CivTAG: "jath_{",
 	CivID: 327,
 	PCID: 92,
-	CPID: 5742
+	CPID: 5742,
+	Population: 78665
 },
 {
 	CivTAG: "sang_[",
 	CivID: 328,
 	PCID: 92,
-	CPID: 5743
+	CPID: 5743,
+	Population: 14000
 },
 {
 	CivTAG: "akalkot_{",
@@ -2011,85 +2307,99 @@
 	CivTAG: "kolhapur_{",
 	CivID: 330,
 	PCID: 92,
-	CPID: 5709
+	CPID: 5709,
+	Population: 361489
 },
 {
 	CivTAG: "mudhol_[",
 	CivID: 331,
 	PCID: 92,
-	CPID: 5715
+	CPID: 5715,
+	Population: 52199
 },
 {
 	CivTAG: "jamkhandi_[",
 	CivID: 332,
 	PCID: 92,
-	CPID: 5717
+	CPID: 5717,
+	Population: 270176
 },
 {
 	CivTAG: "sangli_[",
 	CivID: 333,
 	PCID: 92,
-	CPID: 5710
+	CPID: 5710,
+	Population: 230000
 },
 {
 	CivTAG: "savantvadi_{",
 	CivID: 334,
 	PCID: 92,
-	CPID: 5705
+	CPID: 5705,
+	Population: 47921
 },
 {
 	CivTAG: "sandun_[",
 	CivID: 335,
 	PCID: 92,
-	CPID: 5733
+	CPID: 5733,
+	Population: 11200
 },
 {
 	CivTAG: "banganapalle_[",
 	CivID: 336,
 	PCID: 92,
-	CPID: 5736
+	CPID: 5736,
+	Population: 32279
 },
 {
 	CivTAG: "pudukkottai_[",
 	CivID: 337,
 	PCID: 92,
-	CPID: 5691
+	CPID: 5691,
+	Population: 400694
 },
 {
 	CivTAG: "kanker_{",
 	CivID: 338,
 	PCID: 92,
-	CPID: 5773
+	CPID: 5773,
+	Population: 167588
 },
 {
 	CivTAG: "nandgaon_{",
 	CivID: 339,
 	PCID: 92,
-	CPID: 5817
+	CPID: 5817,
+	Population: 9956
 },
 {
 	CivTAG: "khairgarh_{",
 	CivID: 340,
 	PCID: 92,
-	CPID: 5816
+	CPID: 5816,
+	Population: 15149
 },
 {
 	CivTAG: "kawardha_{",
 	CivID: 341,
 	PCID: 92,
-	CPID: 5818
+	CPID: 5818,
+	Population: 44205
 },
 {
 	CivTAG: "rewah_[",
 	CivID: 342,
 	PCID: 92,
-	CPID: 5906
+	CPID: 5906,
+	Population: 1327385
 },
 {
 	CivTAG: "orchha_{",
 	CivID: 343,
 	PCID: 92,
-	CPID: 5888
+	CPID: 5888,
+	Population: 10501
 },
 {
 	CivTAG: "alipura_{",
@@ -2102,13 +2412,15 @@
 	CivTAG: "charkhari_[",
 	CivID: 345,
 	PCID: 92,
-	CPID: 5895
+	CPID: 5895,
+	Population: 123254
 },
 {
 	CivTAG: "bijawar_{",
 	CivID: 346,
 	PCID: 92,
-	CPID: 5889
+	CPID: 5889,
+	Population: 110500
 },
 {
 	CivTAG: "ajaigarh_{",
@@ -2121,13 +2433,15 @@
 	CivTAG: "maihar_{",
 	CivID: 348,
 	PCID: 92,
-	CPID: 5892
+	CPID: 5892,
+	Population: 79558
 },
 {
 	CivTAG: "kothi_{",
 	CivID: 349,
 	PCID: 92,
-	CPID: 5893
+	CPID: 5893,
+	Population: 19112
 },
 {
 	CivTAG: "albb3_{",
@@ -2140,217 +2454,253 @@
 	CivTAG: "unchehra_{",
 	CivID: 351,
 	PCID: 92,
-	CPID: 5891
+	CPID: 5891,
+	Population: 16662
 },
 {
 	CivTAG: "changbhakar_{",
 	CivID: 352,
 	PCID: 92,
-	CPID: 5904
+	CPID: 5904,
+	Population: 21266
 },
 {
 	CivTAG: "koreya_{",
 	CivID: 353,
 	PCID: 92,
-	CPID: 5912
+	CPID: 5912,
+	Population: 126874
 },
 {
 	CivTAG: "sur2_{",
 	CivID: 354,
 	PCID: 92,
-	CPID: 5915
+	CPID: 5915,
+	Population: 351011
 },
 {
 	CivTAG: "jashpur_{",
 	CivID: 355,
 	PCID: 92,
-	CPID: 5913
+	CPID: 5913,
+	Population: 152114
 },
 {
 	CivTAG: "gangpur_{",
 	CivID: 356,
 	PCID: 92,
-	CPID: 5931
+	CPID: 5931,
+	Population: 398171
 },
 {
 	CivTAG: "sarangarh_{",
 	CivID: 357,
 	PCID: 92,
-	CPID: 5902
+	CPID: 5902,
+	Population: 79900
 },
 {
 	CivTAG: "sakti_{",
 	CivID: 358,
 	PCID: 92,
-	CPID: 5900
+	CPID: 5900,
+	Population: 32819
 },
 {
 	CivTAG: "raigarh_{",
 	CivID: 359,
 	PCID: 92,
-	CPID: 5901
+	CPID: 5901,
+	Population: 88376
 },
 {
 	CivTAG: "bonai_{",
 	CivID: 360,
 	PCID: 92,
-	CPID: 5943
+	CPID: 5943,
+	Population: 34026
 },
 {
 	CivTAG: "khondmals_)",
 	CivID: 361,
 	PCID: 92,
-	CPID: 5928
+	CPID: 5928,
+	Population: 740000
 },
 {
 	CivTAG: "athmallik_{",
 	CivID: 362,
 	PCID: 92,
-	CPID: 5927
+	CPID: 5927,
+	Population: 11383
 },
 {
 	CivTAG: "sonpur_{",
 	CivID: 363,
 	PCID: 92,
-	CPID: 5929
+	CPID: 5929,
+	Population: 169877
 },
 {
 	CivTAG: "ranpur_{",
 	CivID: 364,
 	PCID: 92,
-	CPID: 5918
+	CPID: 5918,
+	Population: 47711
 },
 {
 	CivTAG: "daspalla_{",
 	CivID: 365,
 	PCID: 92,
-	CPID: 5921
+	CPID: 5921,
+	Population: 81987
 },
 {
 	CivTAG: "baramba_{",
 	CivID: 366,
 	PCID: 92,
-	CPID: 5920
+	CPID: 5920,
+	Population: 25000
 },
 {
 	CivTAG: "tigria_{",
 	CivID: 367,
 	PCID: 92,
-	CPID: 5923
+	CPID: 5923,
+	Population: 10000
 },
 {
 	CivTAG: "athgarh_{",
 	CivID: 368,
 	PCID: 92,
-	CPID: 5925
+	CPID: 5925,
+	Population: 42351
 },
 {
 	CivTAG: "talcher_{",
 	CivID: 369,
 	PCID: 92,
-	CPID: 5924
+	CPID: 5924,
+	Population: 40000
 },
 {
 	CivTAG: "dhenkanal_{",
 	CivID: 370,
 	PCID: 92,
-	CPID: 5933
+	CPID: 5933,
+	Population: 303662
 },
 {
 	CivTAG: "bamra_{",
 	CivID: 371,
 	PCID: 92,
-	CPID: 5932
+	CPID: 5932,
+	Population: 123378
 },
 {
 	CivTAG: "keon3_{",
 	CivID: 372,
 	PCID: 92,
-	CPID: 5947
+	CPID: 5947,
+	Population: 209357
 },
 {
 	CivTAG: "nagagarh_{",
 	CivID: 373,
 	PCID: 92,
-	CPID: 5919
+	CPID: 5919,
+	Population: 17030
 },
 {
 	CivTAG: "hindol_{",
 	CivID: 374,
 	PCID: 92,
-	CPID: 5922
+	CPID: 5922,
+	Population: 67180
 },
 {
 	CivTAG: "magurbhanj_[",
 	CivID: 375,
 	PCID: 92,
-	CPID: 5950
+	CPID: 5950,
+	Population: 610383
 },
 {
 	CivTAG: "behar_[",
 	CivID: 376,
 	PCID: 92,
-	CPID: 5985
+	CPID: 5985,
+	Population: 1819086
 },
 {
 	CivTAG: "khasistate_)",
 	CivID: 377,
 	PCID: 92,
-	CPID: 6018
+	CPID: 6018,
+	Population: 1227711
 },
 {
 	CivTAG: "azerbaijanpeoplesgovernment_f",
 	CivID: 378,
 	PCID: 397,
-	CPID: 5437
+	CPID: 5437,
+	Population: 1500000
 },
 {
 	CivTAG: "crowncolonyoflabuan_)",
 	CivID: 379,
 	PCID: 379,
-	CPID: 9891
+	CPID: 9891,
+	Population: 8963
 },
 {
 	CivTAG: "federatedmalaystates_)",
 	CivID: 380,
 	PCID: 29,
-	CPID: 6316
+	CPID: 6316,
+	Population: 2500000
 },
 {
 	CivTAG: "perlis_[",
 	CivID: 381,
 	PCID: 29,
-	CPID: 6306
+	CPID: 6306,
+	Population: 200000
 },
 {
 	CivTAG: "straitssettlements_)",
 	CivID: 382,
 	PCID: 29,
-	CPID: 7158
+	CPID: 7158,
+	Population: 1600000
 },
 {
 	CivTAG: "terengganu_!",
 	CivID: 383,
 	PCID: 29,
-	CPID: 6331
+	CPID: 6331,
+	Population: 305368
 },
 {
 	CivTAG: "portuguesetimor_)",
 	CivID: 384,
 	PCID: 34,
-	CPID: 7264
+	CPID: 7264,
+	Population: 403232
 },
 {
 	CivTAG: "papb_)",
 	CivID: 385,
 	PCID: 95,
-	CPID: 7286
+	CPID: 7286,
+	Population: 300000
 },
 {
 	CivTAG: "guib_)",
 	CivID: 386,
 	PCID: 95,
-	CPID: 7280
+	CPID: 7280,
+	Population: 1000000
 },
 {
 	CivTAG: "anglofrenchcondominiumofthenewhebrides_)",
@@ -2363,72 +2713,84 @@
 	CivTAG: "leb_p",
 	CivID: 388,
 	PCID: 388,
-	CPID: 5252
+	CPID: 5252,
+	Population: 1349588
 },
 {
 	CivTAG: "syrianrepublic_)",
 	CivID: 389,
 	PCID: 389,
-	CPID: 5270
+	CPID: 5270,
+	Population: 3200000
 },
 {
 	CivTAG: "frenchprotectorateoftunisia_[",
 	CivID: 390,
 	PCID: 30,
-	CPID: 4346
+	CPID: 4346,
+	Population: 2920000
 },
 {
 	CivTAG: "frenchprotectorateinmorocco_[",
 	CivID: 391,
 	PCID: 30,
-	CPID: 4276
+	CPID: 4276,
+	Population: 8600000
 },
 {
 	CivTAG: "freecityoftriestezonea_!",
 	CivID: 392,
 	PCID: 392,
-	CPID: 2604
+	CPID: 2604,
+	Population: 262406
 },
 {
 	CivTAG: "freecityoftriestezoneb_!",
 	CivID: 393,
 	PCID: 393,
-	CPID: 2897
+	CPID: 2897,
+	Population: 67461
 },
 {
 	CivTAG: "khyber_)",
 	CivID: 394,
 	PCID: 92,
-	CPID: 5585
+	CPID: 5585,
+	Population: 194707
 },
 {
 	CivTAG: "northwaziristan_)",
 	CivID: 395,
 	PCID: 92,
-	CPID: 5568
+	CPID: 5568,
+	Population: 100000
 },
 {
 	CivTAG: "southwaziristan_)",
 	CivID: 396,
 	PCID: 92,
-	CPID: 5566
+	CPID: 5566,
+	Population: 178636
 },
 {
 	CivTAG: "sovietunion_h",
 	CivID: 397,
 	PCID: 397,
-	CPID: 3375
+	CPID: 3375,
+	Population: 170500000
 },
 {
 	CivTAG: "colonyofsaotomeandprincipe_)",
 	CivID: 398,
 	PCID: 398,
-	CPID: 4663
+	CPID: 4663,
+	Population: 50000
 },
 {
 	CivTAG: "colonyofcapeverde_)",
 	CivID: 399,
 	PCID: 34,
-	CPID: 4452
+	CPID: 4452,
+	Population: 150000
 }
 ]
