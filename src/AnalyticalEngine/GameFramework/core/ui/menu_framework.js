@@ -36,12 +36,38 @@
 
 //Initialise functions
 {
+	/**
+	 * addElements() - Add context menu elements to another context menu.
+	 * @param {String} arg0_interface_id - The interface ID to add menu elements to.
+	 * @param {Object<ContextMenu>} arg1_context_menu_obj - The ContextMenu Object to create elements for. Make sure to set do_not_display to true when creating ContextMenu Object.
+	 * @returns {{id: String, menu_elements: Array<MenuElement>, menu_flags: {}, menu_properties: {}, menu_obj: Menu}}
+	 */
 	function addElements (arg0_interface_id, arg1_context_menu_obj) { //[WIP] - Finish function body
 		//Convert from parameters
 		var interface_id = arg0_interface_id;
 		var context_menu_obj = arg1_context_menu_obj;
 
 		//Declare local instance variables
+		var interface_obj = main.interfaces[interface_id];
+		var menu_elements_size = context_menu_obj.menu_obj.getMenuElementsSize();
+
+		//Iterate over context_menu_obj.menu_elements
+		for (var i = 0; i < context_menu_obj.menu_elements.length; i++) {
+			//Push to current interface_obj
+			interface_obj.menu_elements.push(context_menu_obj.menu_elements[i]);
+			if (context_menu_obj.menu_flags[i])
+				interface_obj.menu_flags.push(context_menu_obj.menu_flags[i]);
+			interface_obj.menu_properties.push(context_menu_obj.menu_properties[i]);
+
+			//Add to actual interface_obj.menu_obj to be displayed
+			interface_obj.menu_obj.setMenuElement(menu_elements_size + i, context_menu_obj.menu_elements[i]);
+		}
+
+		//Update interface_obj.menu_obj
+		interface_obj.menu_obj.update();
+
+		//Return statement
+		return interface_obj;
 	}
 
 	/**
@@ -262,7 +288,6 @@
 	 *
 	 * @returns {{id: String, menu_elements: Array<MenuElement>, menu_flags: {}, menu_properties: {}, menu_obj: Menu}}
 	 */
-	//[WIP] - Finish function body
 	function createContextMenu (arg0_options) {
 		//Convert from parameters
 		var options = (arg0_options) ? arg0_options : {};
@@ -1223,6 +1248,13 @@
 		return local_menu_elements;
 	}
 
+	/**
+	 * deleteElements() - Deletes elements from a ContextMenu Object given their element IDs.
+	 * @param {String} arg0_interface_id - The interface ID to delete elements from.
+	 * @param {Array<String>|String} arg1_element_ids - The element IDs to delete.
+	 *
+	 * @returns {{id: String, menu_elements: Array<MenuElement>, menu_flags: {}, menu_properties: {}, menu_obj: Menu}}
+	 */
 	function deleteElements (arg0_interface_id, arg1_element_ids) {
 		//Convert from parameters
 		var interface_id = arg0_interface_id;
@@ -1265,6 +1297,9 @@
 
 		//Update menu_elements_size; field must be set manually instead of assigned.
 		menu_elements_size_field.set(interface_obj.menu_obj, menu_elements.size());
+
+		//Return statement
+		return interface_obj;
 	}
 
 	/**
@@ -1545,6 +1580,9 @@
 		return total_row_width;
 	}
 
+	/**
+	 * initialiseMenuLogic() - Internal helper function. Initialises menu logic upon game load.
+	 */
 	function initialiseMenuLogic () {
 		main.menu_logic_loop = setInterval(function(){
 			var all_interfaces = Object.keys(main.interfaces);
@@ -1573,7 +1611,6 @@
 	 *
 	 * @returns {Object}
 	 */
-	//[WIP] - Finish function body
 	function initInterface (arg0_interface_id) {
 		//Convert from parameters
 		var interface_id = (arg0_interface_id) ? arg0_interface_id : generateRandomID(main.interfaces);
@@ -1591,6 +1628,12 @@
 		return interface_obj;
 	}
 
+	/**
+	 * isCurrentlyPersistent() - Checks whether the current ContextMenu Object is currently persistent.
+	 * @param {String} arg0_interface_id - The interface ID to check for.
+	 *
+	 * @returns {boolean}
+	 */
 	function isCurrentlyPersistent (arg0_interface_id) {
 		//Convert from parameters
 		var interface_id = arg0_interface_id;
@@ -1666,5 +1709,21 @@
 			Game.menuManager.update();
 			Game.menuManager.setOrderOfMenu(current_view_id); //This is needed to refresh the menu order
 		});
+	}
+
+	/**
+	 * modifyElement() - Modifies an element in a currently rendered ContextMenu Object.
+	 * @param {String} arg0_interface_id - The interface ID to modify a MenuElement for.
+	 * @param {number|String} arg1_element - The array index/element ID name to fetch for replacement.
+	 * @param {Object} arg2_options - The context menu options for which to generate the new element. Note that only the first element will be accepted.
+	 */
+	function modifyElement (arg0_interface_id, arg1_element, arg2_options) { //[WIP] - Finish function body
+		//Convert from parameters
+		var interface_id = arg0_interface_id;
+		var element = arg1_element;
+		var options = (arg2_options) ? arg2_options : {};
+
+		//Declare local instance variables
+		
 	}
 }
