@@ -1724,6 +1724,6 @@
 		var options = (arg2_options) ? arg2_options : {};
 
 		//Declare local instance variables
-		
+
 	}
 }
