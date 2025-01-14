@@ -1,6 +1,8 @@
 var config = {};
 
 //Define sub-objects for config
+config.code_editor = {};
+    config.code_editor.draggable_blocks = {};
 config.console = {};
     config.console_reserved_keys = ["name", "order"];
 config.editor = {};

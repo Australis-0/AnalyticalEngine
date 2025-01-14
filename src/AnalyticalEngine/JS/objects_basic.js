@@ -173,6 +173,45 @@
 	}
 
 	/**
+	 * getAllObjectKeys() - Fetches all keys in an object recursively.
+	 * @param {Object} arg0_object
+	 * @param {Object} [arg1_options]
+	 * @param {boolean} [arg1_options.include_parent_keys=false]
+	 *
+	 * @returns {Array<String>}
+	 */
+	function getAllObjectKeys (arg0_object, arg1_options) {
+		//Convert from parameters
+		var object = arg0_object;
+		var options = (arg1_options) ? arg1_options : {};
+
+		//Initialise options
+		if (!options.current_key) options.current_key = "";
+
+		//Declare local instance variables
+		var all_object_keys = Object.keys(object);
+		var object_keys_array = [];
+
+		//Iterate over all_object_keys
+		for (var i = 0; i < all_object_keys.length; i++) {
+			var local_value = object[all_object_keys[i]];
+
+			if (typeof local_value != "object" || options.include_parent_keys)
+				object_keys_array.push(`${options.current_key}${all_object_keys[i]}`);
+			if (typeof local_value == "object" && !Array.isArray(local_value)) {
+				var new_options = JSON.parse(JSON.stringify(options));
+				new_options.current_key += `${all_object_keys[i]}.`;
+
+				var new_object_keys = getAllObjectKeys(local_value, new_options);
+				object_keys_array = object_keys_array.concat(new_object_keys);
+			}
+		}
+
+		//Return statement
+		return object_keys_array;
+	}
+
+	/**
 	 * getDepth() - Returns the maximal object depth as a number.
 	 * @param {Object} arg0_object - The object to fetch depth for.
 	 * @param {number} [arg1_depth=1] - Optimisation parameter used as an internal helper.
