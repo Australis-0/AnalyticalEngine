@@ -18,11 +18,49 @@
 
 			//Destructure local object first
 			if (local_split_key.length > 1) {
-				eval("if (!" + local_split_key[0] + ") var " + local_split_key[0] + " = {};"); //[WIP] - This needs to be moved to an iterative method
-				eval(all_option_keys[i] = local_value);
-			} else {
+				var define_string = [];
 
+				for (var x = 0; x < local_split_key.length - 1; x++)
+					if (x == 0) {
+						define_string.push("if (" + local_split_key[0] + " == undefined) var " + local_split_key[0] + " = {};");
+					} else {
+						var local_join_key = [];
+
+						for (var y = 0; y < x + 1; y++)
+							local_join_key.push(local_split_key[y]);
+						local_join_key = local_join_key.join(".");
+
+						define_string.push("if (" + local_join_key + " == undefined) " + local_join_key + " = {};");
+					}
+				eval(define_string.join("."));
+			} else {
+				eval("var " + all_option_keys[i] + " = local_value;");
 			}
 		}
+
+		var evaluated_string;
+		try {
+			//Iterate over options.regex_replace
+			var all_regex_replace_keys = Object.keys(options.regex_replace);
+
+			for (var i = 0; i < all_regex_replace_keys.length; i++) {
+				var local_value = options.regex_replace[all_regex_replace_keys[i]];
+				var local_regexp = new RegExp(all_regex_replace_keys[i], "gm");
+
+				try {
+					string = string.replace(local_regexp, local_value);
+				} catch {}
+			}
+		} catch (e) {
+			if (!options.ignore_errors) {
+				console.log("Options:", options);
+				console.log("String:", string);
+				console.log(e);
+			}
+			evaluated_string = string;
+		}
+
+		//Return statement
+		return evaluated_string;
 	}
 }
