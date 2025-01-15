@@ -1,5 +1,14 @@
 //Initialise functions
 {
+	/**
+	 * parseVariableString() - Parses a variable string and returns its resolved value.
+	 * @param {String} arg0_string - The string which to resolve.
+	 * @param {Object} [arg1_options]
+	 * @param {Object} [arg1_options."key_name"] - Key/value pairs to feed into the local environment for resolving.
+	 * @param {Object} [arg1_options.regex_replace={}] - Strings to replace in terms of localisation.
+	 *
+	 * @returns {*}
+	 */
 	function parseVariableString (arg0_string, arg1_options) { //[WIP] - Finish function body
 		//Convert from parameters
 		var string = arg0_string;
