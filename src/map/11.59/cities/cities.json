@@ -21834,7 +21834,7 @@
         p: 3269
     },
     {
-        Name: "Krasnoarmeyskoye",
+        Name: "Pokrovsk",
         x: 10715,
         y: 2495,
         p: 3263
@@ -21846,7 +21846,7 @@
         p: 3270
     },
     {
-        Name: "Krasnoarmeyskoye",
+        Name: "Dobropillya",
         x: 10709,
         y: 2473,
         p: 3261
@@ -22998,7 +22998,7 @@
         p: 3481
     },
     {
-        Name: "Tyumen",
+        Name: "Yekaterinburg",
         x: 12013,
         y: 1925,
         p: 3498
@@ -24462,7 +24462,7 @@
         p: 3730
     },
     {
-        Name: "Kustanay",
+        Name: "Presnovka",
         x: 12207,
         y: 2119,
         p: 3729
