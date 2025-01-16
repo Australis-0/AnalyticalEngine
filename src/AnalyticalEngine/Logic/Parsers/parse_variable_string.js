@@ -58,7 +58,7 @@
 
 				try {
 					string = string.replace(local_regexp, local_value);
-				} catch {}
+				} catch (e) {}
 			}
 		} catch (e) {
 			if (!options.ignore_errors) {

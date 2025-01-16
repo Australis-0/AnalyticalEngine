@@ -1,6 +1,6 @@
 //Initialise functions
 {
-	function initialiseProvinceNamesEditorEventHandlers () {
+	function initialiseProvinceNamesEditorEventHandlers () { //[WIP] - This is no longer working; figure out why
 		if (!global.on_page_change) global.on_page_change = {};
 		if (!global.on_province_click) global.on_province_click = {};
 
@@ -35,7 +35,7 @@
 
 						province_names_editor_text: {
 							type: "text",
-							name: "Placeholder",
+							name: "",
 
 							align: "left",
 							font_weight: 400,
@@ -143,17 +143,21 @@
 	function updateProvinceNamesEditor () {
 		//Return statement
 		return setInterval(function(){
-			//Declare local instance variables
-			var interface_obj = main.interfaces.province_names_editor;
+			try {
+				//Declare local instance variables
+				var interface_obj = main.interfaces.province_names_editor;
 
-			var current_province_name = interface_obj.current_province_name;
-			var display_text_el = getContextMenuElement(interface_obj, "province_names_editor_text");
+				var current_province_name = interface_obj.current_province_name;
+				var display_text_el = getElement(interface_obj, "province_names_editor_text");
 
-			//Refresh province names editor display
-			if (display_text_el.elements[0]) {
-				display_text_el.elements[0].setText(
-					"Province Name: " + current_province_name + "|" +
-					"\nEditing province names: " + interface_obj.edit_province_names + "");
+				//Refresh province names editor display
+				if (display_text_el.elements[0]) {
+					display_text_el.elements[0].setText(
+						"Province Name: " + current_province_name + "|" +
+						"\nEditing province names: " + interface_obj.edit_province_names + "");
+				}
+			} catch (e) {
+				console.error(e);
 			}
 		}, 100); //10FPS
 	}

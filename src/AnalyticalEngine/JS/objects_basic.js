@@ -197,10 +197,10 @@
 			var local_value = object[all_object_keys[i]];
 
 			if (typeof local_value != "object" || options.include_parent_keys)
-				object_keys_array.push(`${options.current_key}${all_object_keys[i]}`);
+				object_keys_array.push(options.current_key + all_object_keys[i]);
 			if (typeof local_value == "object" && !Array.isArray(local_value)) {
 				var new_options = JSON.parse(JSON.stringify(options));
-				new_options.current_key += `${all_object_keys[i]}.`;
+				new_options.current_key += all_object_keys[i] + ".";
 
 				var new_object_keys = getAllObjectKeys(local_value, new_options);
 				object_keys_array = object_keys_array.concat(new_object_keys);

@@ -1255,7 +1255,7 @@
 	 *
 	 * @returns {{id: String, menu_elements: Array<MenuElement>, menu_flags: {}, menu_properties: {}, menu_obj: Menu}}
 	 */
-	function deleteElements (arg0_interface_id, arg1_element_ids) {
+	function deleteElements (arg0_interface_id, arg1_element_ids) { //[WIP] - Modify to be compatible with new getElement()
 		//Convert from parameters
 		var interface_id = arg0_interface_id;
 		var element_ids = getList(arg1_element_ids);
@@ -1403,15 +1403,15 @@
 	 * @param {Object} [arg2_options]
 	 * @param {boolean} [arg2_options.return_indexes=false] - Whether to return indexes instead of objects.
 	 *
-	 * @returns {{element: MenuElement, index: number, properties: {}}}
+	 * @returns {{elements: Array<MenuElement>, indexes: Array<number>, properties: Array<Object>}}
 	 */
-	function getElement (arg0_interface_id, arg1_element_id) {
+	function getElement (arg0_interface_id, arg1_element_id) { //[WIP] - This function needs to be modified to accept elements with multiple menu_elements
 		//Convert from parameters
 		var interface_id = arg0_interface_id;
 		var element_id = arg1_element_id;
 
 		//Declare local instance variables
-		var element_exists = [false, -1]; //[element_exists, element_index];
+		var element_exists = [false, []]; //[element_exists, element_index];
 		var interface_obj = (typeof interface_id != "object") ?
 			main.interfaces[interface_id] : interface_id;
 		var search_name = (typeof element_id == "string") ?
@@ -1423,7 +1423,8 @@
 				if (interface_obj.menu_properties[i])
 					if (interface_obj.menu_properties[i].id.toLowerCase() == search_name) {
 						element_exists[0] = true;
-						element_exists[1] = i;
+						if (!element_exists[1].includes(i))
+							element_exists[1].push(i);
 					}
 		}
 
@@ -1431,20 +1432,31 @@
 		{
 			if (!isNaN(search_name))
 				if (interface_obj.menu_properties[search_name]) {
-					element_exists[0] = true;
-					element_exists[1] = search_name;
+					var local_id = interface_obj.menu_properties[search_name].id;
+
+					for (var i = 0; i < interface_obj.menu_elements.length; i++)
+						if (interface_obj.menu_properties[i].id.toLowerCase() == local_id) {
+							element_exists[0] = true;
+							if (!element_exists[1].includes(i))
+								element_exists[1].push(i);
+						}
 				}
 		}
 
 		//Declare return_element; return_property.
-		var return_element = (element_exists[0]) ?
-			interface_obj.menu_elements[element_exists[1]] : undefined;
-		var return_property = (element_exists[0]) ?
-			interface_obj.menu_properties[element_exists[1]] : undefined;
+		var return_elements = [];
+		var return_properties = [];
+
+		if (element_exists[0]) {
+			for (var i = 0; i < element_exists[1].length; i++) {
+				return_elements.push(interface_obj.menu_elements[element_exists[1][i]]);
+				return_properties.push(interface_obj.menu_properties[element_exists[1][i]]);
+			}
+		}
 
 		//Return statement
 		return (element_exists[0]) ?
-			{ element: return_element, index: element_exists[1], properties: return_property } : undefined;
+			{ elements: return_elements, indexes: element_exists[1], properties: return_properties } : undefined;
 	}
 
 	/**

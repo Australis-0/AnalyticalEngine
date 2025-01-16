@@ -72,7 +72,7 @@
 				if (local_element) {
 					//Call .setText() on any element encountered with .name
 					if (local_input.name)
-						local_element.element.setText(parseLocalisation(local_input.name, { scopes: {
+						local_element.elements[0].setText(parseLocalisation(local_input.name, { scopes: {
 							interface_obj: interface_obj
 						} }));
 
