@@ -575,6 +575,20 @@
 					console.log("Right-aligned dummy menu test button reporting for duty!");
 				}
 			},
+			slider_element: {
+				type: "slider",
+				name: "Test",
+				raw_dimensions: true,
+				height: 80,
+				width: 400,
+
+				min: 0,
+				max: 100,
+				placeholder: 50,
+				special_function: function (e) {
+
+				}
+			},
 			bar_chart_element: {
 				type: "bar_chart",
 				height: 400,
@@ -1405,7 +1419,7 @@
 	 *
 	 * @returns {{elements: Array<MenuElement>, indexes: Array<number>, properties: Array<Object>}}
 	 */
-	function getElement (arg0_interface_id, arg1_element_id) { //[WIP] - This function needs to be modified to accept elements with multiple menu_elements
+	function getElement (arg0_interface_id, arg1_element_id) {
 		//Convert from parameters
 		var interface_id = arg0_interface_id;
 		var element_id = arg1_element_id;

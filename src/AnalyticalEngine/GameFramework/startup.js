@@ -19,5 +19,6 @@ setTimeout(function(){
 
 		//Initialise Editor handlers
 		initialiseProvinceNamesEditorEventHandlers();
+		initialiseProvinceTerrainEditorEventHandlers();
 	}, 3000);
 }, 1);

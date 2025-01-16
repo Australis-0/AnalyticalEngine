@@ -2,6 +2,7 @@
 //This file was created due to the impossibility to split screens on the same file.
 
 //CONTEXT MENUS
+//LINE GRAPH
 /*
 	function createLineGraph (arg0_options) {
 		//Convert from parameters
@@ -75,6 +76,21 @@
 			console.log(e.stack);
 		}
 	}
+ */
+
+//RANGE
+/*
+@param {Object} [arg0_options]
+@param {String} [arg0_options.name]
+@param {boolean} [arg0_options.raw_dimensions=false]
+
+@param {number} [arg0_options.height=1]
+@param {number} [arg0_options.max=100]
+@param {number} [arg0_options.min=0]
+@param {number} [arg0_options.placeholder=0]
+@param {number} [arg0_options.width=2]
+@param {number} [arg0_options.x=0]
+@param {number} [arg0_options.y=0]
  */
 
 //LOCALISATION

@@ -1,6 +1,6 @@
 //Initialise functions
 {
-	function initialiseProvinceNamesEditorEventHandlers () { //[WIP] - This is no longer working; figure out why
+	function initialiseProvinceNamesEditorEventHandlers () {
 		if (!global.on_page_change) global.on_page_change = {};
 		if (!global.on_province_click) global.on_province_click = {};
 
@@ -8,10 +8,7 @@
 			//Convert from parameters
 			var current_page = arg0_current_page;
 
-			//Declare local instance variables
-
 			//Initialise EDITOR_MAPS_EDIT_PROVINCE_NAMES UI if it doesn't already exist
-			//console.log("Page changed to " + current_page);
 			if (current_page == "EDITOR_MAPS_EDIT_PROVINCE_NAMES")
 				if (!main.interfaces.province_names_editor) {
 					//Set initial interface settings
@@ -23,7 +20,7 @@
 
 					var province_names_editor_menu = createContextMenu({
 						id: "province_names_editor",
-						name: "AnalyticalEngine\nProvince Names Editor:",
+						name: "AnalyticalEngine - Province Names Editor:",
 						no_title: false,
 
 						anchor: "top_right",
@@ -87,8 +84,7 @@
 							special_function: function (e) {
 								saveCities();
 
-								Game.menuManager.addToast("[AnalyticalEngine] Saved province names.");
-								console.log("[Editor] Province Names Editor: Saved province names.");
+								printEditorAlert("Province Names Editor: Saved province names.");
 							}
 						}
 					});
@@ -151,11 +147,11 @@
 				var display_text_el = getElement(interface_obj, "province_names_editor_text");
 
 				//Refresh province names editor display
-				if (display_text_el.elements[0]) {
+				if (display_text_el.elements[0])
 					display_text_el.elements[0].setText(
 						"Province Name: " + current_province_name + "|" +
-						"\nEditing province names: " + interface_obj.edit_province_names + "");
-				}
+						"\nEditing province names: " + interface_obj.edit_province_names
+					);
 			} catch (e) {
 				console.error(e);
 			}
