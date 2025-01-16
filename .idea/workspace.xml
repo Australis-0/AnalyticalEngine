@@ -6,16 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="09b6f7f8-b868-43e9-b471-ac1dbd15fa3b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/ui/menu_framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/ui/menu_framework.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/ui/editors/mod_editor/map_context_menus/map_context_menu_ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/ui/editors/mod_editor/map_context_menus/map_context_menu_ui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/ui/editors/province_names_editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/ui/editors/province_names_editor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/JS/objects_basic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/objects_basic.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Parsers/parse_variable_string.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Parsers/parse_variable_string.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Java/ScenarioEditor/ScenarioAssign.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Java/ScenarioEditor/ScenarioAssign.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/cities/cities.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/cities/cities.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/map/11.59/data/ProvinceDetails.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/ProvinceDetails.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/H/coline_deciduous_forest.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/H/coline_deciduous_forest.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XH/coline_deciduous_forest.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XH/coline_deciduous_forest.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XXH/coline_deciduous_forest.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XXH/coline_deciduous_forest.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XXH/deciduous_forest.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/terrain/terrainImages/XXH/deciduous_forest.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/DataProvinces.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/DataProvinces.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/preview.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/preview.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/languages/Bundle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/languages/Bundle.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,7 +208,7 @@
       <workItem from="1734063049185" duration="6504000" />
       <workItem from="1734101363418" duration="73627000" />
       <workItem from="1734466614497" duration="11042000" />
-      <workItem from="1734809856493" duration="205834000" />
+      <workItem from="1734809856493" duration="208597000" />
     </task>
     <servers />
   </component>

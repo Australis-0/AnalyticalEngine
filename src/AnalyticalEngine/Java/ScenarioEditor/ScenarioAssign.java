@@ -81,7 +81,6 @@ public class ScenarioAssign extends Menu {
         });
 
         int flag_width = ImageManager.getImage((Integer) Images.flagMask.get(0)).getWidth();
-        System.out.println("Flag width: " + flag_width);
         menuElements.add(new ButtonTopFlag(CFG.GAME_WIDTH - (flag_width + CFG.PADDING*10 + Images.boxTitleBORDERWIDTH), CFG.PADDING * 2, true) {
             protected void drawBG(SpriteBatch oSB, int iTranslateX, int iTranslateY, boolean isActive) {
             }
