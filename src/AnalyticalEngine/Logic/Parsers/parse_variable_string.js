@@ -60,6 +60,8 @@
 					string = string.replace(local_regexp, local_value);
 				} catch (e) {}
 			}
+
+			evaluated_string = eval(string);
 		} catch (e) {
 			if (!options.ignore_errors) {
 				console.log("Options:", options);
