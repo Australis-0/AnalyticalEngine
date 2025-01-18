@@ -8,7 +8,7 @@
 	 *
 	 * @returns {Array<String>}
 	 */
-	function aStar (arg0_graph, arg1_start_key, arg2_end_key) {
+	function aStar(arg0_graph, arg1_start_key, arg2_end_key) {
 		//Convert from parameters
 		var graph = arg0_graph;
 		var start = arg1_start_key;
@@ -35,21 +35,23 @@
 			}
 
 			//Check sub-nodes
-			open_set = open_set.filter((node) => node != current);
+			open_set = open_set.filter(function(node) { return node != current; });
 
 			var neighbours = graph[current];
 
 			//Consider neighbours looking forwards
 			for (var neighbour in neighbours) {
-				var tentative_g_score = g_score[current] + neighbours[neighbour];
+				if (neighbours.hasOwnProperty(neighbour)) {
+					var tentative_g_score = g_score[current] + neighbours[neighbour];
 
-				if (!g_score.hasOwnProperty(neighbour) || tentative_g_score < g_score[neighbour]) {
-					came_from[neighbour] = current;
-					g_score[neighbour] = tentative_g_score;
-					f_score[neighbour] = g_score[neighbour] + aStarHeuristicCost(neighbour, goal);
+					if (!g_score.hasOwnProperty(neighbour) || tentative_g_score < g_score[neighbour]) {
+						came_from[neighbour] = current;
+						g_score[neighbour] = tentative_g_score;
+						f_score[neighbour] = g_score[neighbour] + aStarHeuristicCost(neighbour, goal);
 
-					if (!open_set.includes(neighbour))
-						open_set.push(neighbour);
+						if (open_set.indexOf(neighbour) === -1)
+							open_set.push(neighbour);
+					}
 				}
 			}
 
@@ -57,14 +59,17 @@
 			var reverse_neighbours = getReverseNeighbours(graph, current);
 
 			for (var reverse_neighbour in reverse_neighbours) {
-				var tentative_g_score_reverse = g_score[current] + reverse_neighbours[reverse_neighbour];
+				if (reverse_neighbours.hasOwnProperty(reverse_neighbour)) {
+					var tentative_g_score_reverse = g_score[current] + reverse_neighbours[reverse_neighbour];
 
-				if (!g_score.hasOwnProperty(reverse_neighbour) || tentative_g_score_reverse < g_score[reverse_neighbour]) {
-					came_from[reverse_neighbour] = current;
-					g_score[reverse_neighbour] = g_score[reverse_neighbour] + aStarHeuristicCost(reverse_neighbour, goal);
+					if (!g_score.hasOwnProperty(reverse_neighbour) || tentative_g_score_reverse < g_score[reverse_neighbour]) {
+						came_from[reverse_neighbour] = current;
+						g_score[reverse_neighbour] = tentative_g_score_reverse;
+						f_score[reverse_neighbour] = g_score[reverse_neighbour] + aStarHeuristicCost(reverse_neighbour, goal);
 
-					if (!open_set.includes(reverse_neighbour))
-						open_set.push(reverse_neighbour);
+						if (open_set.indexOf(reverse_neighbour) === -1)
+							open_set.push(reverse_neighbour);
+					}
 				}
 			}
 		}

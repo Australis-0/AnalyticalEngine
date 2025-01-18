@@ -5,7 +5,6 @@
 
 package aoc.kingdoms.lukasz.menu;
 
-import AnalyticalEngine.Debugger.console;
 import aoc.kingdoms.lukasz.events.Event;
 import aoc.kingdoms.lukasz.jakowski.AA_KeyManager;
 import aoc.kingdoms.lukasz.jakowski.CFG;
@@ -54,6 +53,10 @@ import aoc.kingdoms.lukasz.menus.LoadSave.Menu_LoadSavedGame;
 import aoc.kingdoms.lukasz.menus.LoadSave.Menu_LoadSavingGame;
 import aoc.kingdoms.lukasz.menus.LoadSave.Menu_LoadScenario;
 import aoc.kingdoms.lukasz.menus.LoadSave.Menu_Load_Workshop;
+import aoc.kingdoms.lukasz.menus.Multi.MultiGames;
+import aoc.kingdoms.lukasz.menus.Multi.MultiLobby;
+import aoc.kingdoms.lukasz.menus.Multi.MultiLobbyCreate;
+import aoc.kingdoms.lukasz.menus.Multi.MultiPassword;
 import aoc.kingdoms.lukasz.menus.NewGame.NewGame;
 import aoc.kingdoms.lukasz.menus.NewGame.NewGameCiv;
 import aoc.kingdoms.lukasz.menus.NewGame.NewGameFlags;
@@ -87,7 +90,6 @@ import aoc.kingdoms.lukasz.menusInGame.InGame_BattleTactics;
 import aoc.kingdoms.lukasz.menusInGame.InGame_CivBonuses;
 import aoc.kingdoms.lukasz.menusInGame.InGame_CivilizationAdvantages;
 import aoc.kingdoms.lukasz.menusInGame.InGame_CivilizationAdvantages2;
-import aoc.kingdoms.lukasz.menusInGame.InGame_Console;
 import aoc.kingdoms.lukasz.menusInGame.InGame_ConvertReligion;
 import aoc.kingdoms.lukasz.menusInGame.InGame_CurrentSituation;
 import aoc.kingdoms.lukasz.menusInGame.InGame_Disband;
@@ -116,7 +118,6 @@ import aoc.kingdoms.lukasz.menusInGame.InGame_Ranking;
 import aoc.kingdoms.lukasz.menusInGame.InGame_ReleaseAVassal;
 import aoc.kingdoms.lukasz.menusInGame.InGame_ReorganizeUnits;
 import aoc.kingdoms.lukasz.menusInGame.InGame_Revolutions;
-import aoc.kingdoms.lukasz.menusInGame.InGame_Sandbox;
 import aoc.kingdoms.lukasz.menusInGame.InGame_SaveGame;
 import aoc.kingdoms.lukasz.menusInGame.InGame_War;
 import aoc.kingdoms.lukasz.menusInGame.InGame_Wonder;
@@ -175,6 +176,7 @@ import aoc.kingdoms.lukasz.menusInGame.Court.InGame_Court_IncreaseTaxEfficiency;
 import aoc.kingdoms.lukasz.menusInGame.Court.InGame_Court_InvestInEconomy;
 import aoc.kingdoms.lukasz.menusInGame.Court.InGame_Court_Law;
 import aoc.kingdoms.lukasz.menusInGame.Court.InGame_Court_Missions;
+import aoc.kingdoms.lukasz.menusInGame.Court.InGame_Court_Multi;
 import aoc.kingdoms.lukasz.menusInGame.Court.InGame_Court_Provinces;
 import aoc.kingdoms.lukasz.menusInGame.Court.InGame_Court_Religion;
 import aoc.kingdoms.lukasz.menusInGame.Court.InGame_Court_Stats;
@@ -205,7 +207,6 @@ import aoc.kingdoms.lukasz.menusInGame.Diplomacy.InGame_OfferMilitaryAccess;
 import aoc.kingdoms.lukasz.menusInGame.Diplomacy.InGame_Rivals;
 import aoc.kingdoms.lukasz.menusInGame.Diplomacy.InGame_RivalsList;
 import aoc.kingdoms.lukasz.menusInGame.Diplomacy.InGame_Rivals_End;
-import aoc.kingdoms.lukasz.menusInGame.Diplomacy.InGame_SellProvince;
 import aoc.kingdoms.lukasz.menusInGame.Diplomacy.InGame_SendGift;
 import aoc.kingdoms.lukasz.menusInGame.Diplomacy.InGame_SendInsult;
 import aoc.kingdoms.lukasz.menusInGame.Diplomacy.InGame_SendSpy;
@@ -451,6 +452,11 @@ public class MenuManager {
     public int NEW_GAME_FLAGS = -1;
     public int SCENARIOS = -1;
     public int SCENARIOS_CAMPAIGN = -1;
+    public int MULTIPLAYER = -1;
+    public int MULTIPLAYER_LOBBY = -1;
+    public int MULTIPLAYER_LOBBY_CIV = -1;
+    public int MULTIPLAYER_CREATE_LOBBY = -1;
+    public int MULTIPLAYER_PASSWORD = -1;
     public int GAME_LOST = -1;
     public int EDITOR = -1;
     public int EDITOR_GAMECIVS = -1;
@@ -569,7 +575,7 @@ public class MenuManager {
 
         //Return statement
         return (current_order != null) ?
-            current_order.size() : 0;
+                current_order.size() : 0;
     }
 
     public final void setOrderOfMenu (int arg0_menu_id, int arg1_z_index) {
@@ -603,6 +609,7 @@ public class MenuManager {
     }
 
     //ANALYTICALENGINE END
+
     public final int getViewID(View eView) {
         try {
             switch (eView) {
@@ -696,6 +703,40 @@ public class MenuManager {
                     }
 
                     return this.LOAD_GAMES_LIST;
+                case MULTIPLAYER:
+                    if (this.MULTIPLAYER == -1) {
+                        this.MULTIPLAYER = this.addMenu(new MultiGames());
+                    } else {
+                        ((List)this.menus.get(this.MULTIPLAYER)).set(0, new MultiGames());
+                    }
+
+                    return this.MULTIPLAYER;
+                case MULTIPLAYER_CREATE_LOBBY:
+                    if (this.MULTIPLAYER_CREATE_LOBBY == -1) {
+                        this.MULTIPLAYER_CREATE_LOBBY = this.addMenu(new MultiLobbyCreate(true));
+                    } else {
+                        ((List)this.menus.get(this.MULTIPLAYER_CREATE_LOBBY)).set(0, new MultiLobbyCreate(true));
+                    }
+
+                    return this.MULTIPLAYER_CREATE_LOBBY;
+                case MULTIPLAYER_LOBBY:
+                    if (this.MULTIPLAYER_LOBBY == -1) {
+                        this.MULTIPLAYER_LOBBY = this.addMenu(new MultiLobby());
+                        this.MULTIPLAYER_LOBBY_CIV = this.addNextMenuToView(this.MULTIPLAYER_LOBBY, new NewGameCiv());
+                    } else {
+                        ((List)this.menus.get(this.MULTIPLAYER_LOBBY)).set(0, new MultiLobby());
+                        ((List)this.menus.get(this.MULTIPLAYER_LOBBY)).set(this.MULTIPLAYER_LOBBY_CIV, new NewGameCiv());
+                    }
+
+                    return this.MULTIPLAYER_LOBBY;
+                case MULTIPLAYER_PASSWORD:
+                    if (this.MULTIPLAYER_PASSWORD == -1) {
+                        this.MULTIPLAYER_PASSWORD = this.addMenu(new MultiPassword());
+                    } else {
+                        ((List)this.menus.get(this.MULTIPLAYER_PASSWORD)).set(0, new MultiPassword());
+                    }
+
+                    return this.MULTIPLAYER_PASSWORD;
                 case NEW_GAME:
                     if (this.NEW_GAME == -1) {
                         this.NEW_GAME = this.addMenu(new NewGame());
@@ -1771,35 +1812,14 @@ public class MenuManager {
 
     public final void draw(SpriteBatch oSB, int menuID, int iTranslateX, int iTranslateY) {
         try {
-            List<Menu> menuList = (List<Menu>) this.menus.get(menuID);
-            List<Integer> menuOrder = (List<Integer>) this.orderOfMenu.get(menuID);
-
-            if (menuList != null && menuOrder != null) {
-                for (int i = menuOrder.size() - 1; i >= 0; --i) {
-                    try {
-                        if (i >= 0 && i < menuOrder.size()) {
-                            int menuIndex = menuOrder.get(i);
-
-                            if (menuIndex >= 0 && menuIndex < menuList.size()) {
-                                Menu currentMenu = menuList.get(menuIndex);
-                                boolean isActiveSliderMenu = menuIndex == this.activeSliderMenuID;
-                                boolean isDialogMenuVisible = this.dialogMenu.getVisible();
-
-                                if (currentMenu.getVisible()) {
-                                    currentMenu.draw(
-                                            oSB,
-                                            iTranslateX,
-                                            iTranslateY,
-                                            isDialogMenuVisible ? false : isActiveSliderMenu,
-                                            this.getTitleStatus(menuID, i)
-                                    );
-                                    Renderer.clearUnclearedScissors(oSB);
-                                }
-                            }
-                        }
-                    } catch (Exception ex) {
-                        CFG.exceptionStack(ex);
+            for(int i = ((List)this.menus.get(menuID)).size() - 1; i >= 0; --i) {
+                try {
+                    if (((Menu)((List)this.menus.get(menuID)).get((Integer)((List)this.orderOfMenu.get(menuID)).get(i))).getVisible()) {
+                        ((Menu)((List)this.menus.get(menuID)).get((Integer)((List)this.orderOfMenu.get(menuID)).get(i))).draw(oSB, iTranslateX, iTranslateY, this.dialogMenu.getVisible() ? false : (Integer)((List)this.orderOfMenu.get(menuID)).get(i) == this.activeSliderMenuID, this.getTitleStatus(menuID, i));
+                        Renderer.clearUnclearedScissors(oSB);
                     }
+                } catch (Exception ex) {
+                    CFG.exceptionStack(ex);
                 }
             }
         } catch (Exception ex) {
@@ -1809,19 +1829,10 @@ public class MenuManager {
         try {
             if (Game.hoverManager.hoverActiveSliderMenuID >= 0 && Game.hoverManager.hoverActiveMenuElementID >= 0) {
                 Game.hoverManager.updateElementHover_Animation();
-                List<Menu> activeMenuList = this.getActiveMenu();
-
-                if (Game.hoverManager.hoverActiveSliderMenuID < activeMenuList.size()) {
-                    Menu activeMenu = activeMenuList.get(Game.hoverManager.hoverActiveSliderMenuID);
-                    activeMenu.drawHover(oSB, iTranslateX, 0, Game.hoverManager.hoverActiveMenuElementID);
-                }
+                ((Menu)this.getActiveMenu().get(Game.hoverManager.hoverActiveSliderMenuID)).drawHover(oSB, iTranslateX, 0, Game.hoverManager.hoverActiveMenuElementID);
             } else if (Game.provinceHover_Informations != null) {
                 Game.hoverManager.updateElementHover_Animation();
-                Game.provinceHover_Informations.drawProvinceInfo(
-                        oSB,
-                        Touch.getMousePosX() + Renderer.getHover_ExtraPosX(),
-                        Touch.getMousePosY() + Renderer.getHover_ExtraPosY()
-                );
+                Game.provinceHover_Informations.drawProvinceInfo(oSB, Touch.getMousePosX() + Renderer.getHover_ExtraPosX(), Touch.getMousePosY() + Renderer.getHover_ExtraPosY());
             }
 
             if (this.colorPicker.getVisible()) {
@@ -1834,6 +1845,7 @@ public class MenuManager {
         } catch (Exception ex) {
             CFG.exceptionStack(ex);
         }
+
     }
 
     public final List<Menu> getActiveMenu() {
@@ -2579,6 +2591,14 @@ public class MenuManager {
 
     public final boolean getInGame() {
         return this.viewID == this.IN_GAME || this.getInGameHideUI();
+    }
+
+    public final boolean getInMultiLobby() {
+        return this.viewID == this.MULTIPLAYER_LOBBY;
+    }
+
+    public final boolean getInMultiGames() {
+        return this.viewID == this.MULTIPLAYER;
     }
 
     public final boolean getInGameLegacies() {
@@ -3504,6 +3524,22 @@ public class MenuManager {
         ((List)this.menus.get(this.NEW_GAME)).set(this.NEW_GAME_CIV, new NewGameCiv());
     }
 
+    public final void rebuildMultiGames() {
+        ((List)this.menus.get(this.MULTIPLAYER)).set(0, new MultiGames());
+    }
+
+    public final void rebuildMultiCreateLobby() {
+        ((List)this.menus.get(this.MULTIPLAYER_CREATE_LOBBY)).set(0, new MultiLobbyCreate(false));
+    }
+
+    public final void rebuildMultiLobby() {
+        ((List)this.menus.get(this.MULTIPLAYER_LOBBY)).set(0, new MultiLobby());
+    }
+
+    public final void rebuildNewGameCiv_MultiLobby() {
+        ((List)this.menus.get(this.MULTIPLAYER_LOBBY)).set(this.MULTIPLAYER_LOBBY_CIV, new NewGameCiv());
+    }
+
     public final void rebuildNewGame_Settings() {
         ((List)this.menus.get(this.NEW_GAME)).set(this.NEW_GAME_SETTINGS, new NewGame_Settings());
         this.setVisible_NewGame_Settings(true);
@@ -3579,9 +3615,16 @@ public class MenuManager {
     }
 
     public final void rebuildInGame_Notifications() {
-        ((List)this.menus.get(this.IN_GAME)).set(this.IN_GAME_NOTIFICATION, new InGame_Notifications());
-        ((Menu)((List)this.menus.get(this.IN_GAME)).get(this.IN_GAME_NOTIFICATION)).setVisible(true);
-        this.setOrderOfMenu(this.IN_GAME_NOTIFICATION);
+        try {
+            if (this.IN_GAME >= 0 && this.IN_GAME_NOTIFICATION >= 0) {
+                ((List)this.menus.get(this.IN_GAME)).set(this.IN_GAME_NOTIFICATION, new InGame_Notifications());
+                ((Menu)((List)this.menus.get(this.IN_GAME)).get(this.IN_GAME_NOTIFICATION)).setVisible(true);
+                this.setOrderOfMenu(this.IN_GAME_NOTIFICATION);
+            }
+        } catch (Exception ex) {
+            CFG.exceptionStack(ex);
+        }
+
     }
 
     public final void rebuildInGame_Right() {
@@ -3775,6 +3818,10 @@ public class MenuManager {
 
     public final void rebuildInGame_LawsCourt() {
         ((List)this.menus.get(this.IN_GAME)).set(this.IN_GAME_COURT, new InGame_Court_Law());
+    }
+
+    public final void rebuildInGame_Court_Multi() {
+        ((List)this.menus.get(this.IN_GAME)).set(this.IN_GAME_COURT, new InGame_Court_Multi());
     }
 
     public final void rebuildInGame_CourtProvinces() {
@@ -4352,11 +4399,6 @@ public class MenuManager {
         this.setVisibleInGame_TakeLoan(true);
     }
 
-    public final void rebuildInGame_Console() {
-        ((List)this.menus.get(this.IN_GAME)).set(this.IN_GAME_CONSOLE, new InGame_Console(true));
-        this.setOrderOfMenu(this.IN_GAME_CONSOLE);
-    }
-
     public final void rebuildEditor() {
         ((List)this.menus.get(this.EDITOR)).set(0, new Editor());
     }
@@ -4468,18 +4510,7 @@ public class MenuManager {
         IN_GAME_POP_UP_MENU_ID = 43;
     }
 
-    public final void rebuildInGame_Sandbox() {
-        ((List)this.menus.get(this.IN_GAME)).set(this.IN_GAME_POP_UP, new InGame_Sandbox());
-        ((Menu)((List)this.menus.get(this.IN_GAME)).get(this.IN_GAME_POP_UP)).setVisible(true);
-        this.setOrderOfMenu(this.IN_GAME_POP_UP);
-        IN_GAME_POP_UP_MENU_ID = 42;
-    }
-
     public final void rebuildInGame_SellProvince(int sellToCivID) {
-        ((List)this.menus.get(this.IN_GAME)).set(this.IN_GAME_POP_UP, new InGame_SellProvince(sellToCivID));
-        ((Menu)((List)this.menus.get(this.IN_GAME)).get(this.IN_GAME_POP_UP)).setVisible(true);
-        this.setOrderOfMenu(this.IN_GAME_POP_UP);
-        IN_GAME_POP_UP_MENU_ID = 41;
     }
 
     public final boolean getVisibleSellProvince() {

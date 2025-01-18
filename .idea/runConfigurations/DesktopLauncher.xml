@@ -1,9 +1,10 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="DesktopLauncher" type="Application" factoryName="Application" nameIsGenerated="true">
-    <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/src/jre" />
+    <option name="ALTERNATIVE_JRE_PATH" value="BUNDLED" />
     <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
     <option name="MAIN_CLASS_NAME" value="aoc.kingdoms.lukasz.jakowski.desktop.DesktopLauncher" />
     <module name="AOC3-Source" />
+    <option name="PROGRAM_PARAMETERS" value="-agentlib:jdwp=transport=dt_socket,server=n,suspend=n" />
     <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
     <extension name="coverage">
       <pattern>

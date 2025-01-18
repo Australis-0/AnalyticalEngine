@@ -37,7 +37,6 @@ public class XmlReader {
 	private final Array<Element> elements = new Array(8);
 	private Element root, current;
 	private final StringBuilder textBuffer = new StringBuilder(64);
-	private String entitiesText;
 
 	public Element parse (String xml) {
 		char[] data = xml.toCharArray();
@@ -77,10 +76,13 @@ public class XmlReader {
 	}
 
 	public Element parse (FileHandle file) {
+		InputStream is = null;
 		try {
 			return parse(file.reader("UTF-8"));
 		} catch (Exception ex) {
 			throw new SerializationException("Error parsing file: " + file, ex);
+		} finally {
+			StreamUtils.closeQuietly(is);
 		}
 	}
 
@@ -139,7 +141,10 @@ public class XmlReader {
 		action attributeName {
 			attributeName = new String(data, s, p - s);
 		}
-		action entities {
+		action attribute {
+			attribute(attributeName, new String(data, s, p - s));
+		}
+		action text {
 			int end = p;
 			while (end != s) {
 				switch (data[end - 1]) {
@@ -170,30 +175,23 @@ public class XmlReader {
 			}
 			if (entityFound) {
 				if (s < end) textBuffer.append(data, s, end - s);
-				entitiesText = textBuffer.toString();
+				text(textBuffer.toString());
 				textBuffer.setLength(0);
 			} else
-				entitiesText = new String(data, s, end - s);
-		}
-		action attribute {
-			attribute(attributeName, entitiesText);
-		}
-		action text {
-			text(entitiesText);
+				text(new String(data, s, end - s));
 		}
 
 		attribute = ^(space | [/>=])+ >buffer %attributeName space* '=' space*
-			(('\'' ^'\''* >buffer %entities %attribute '\'') | ('"' ^'"'* >buffer %entities %attribute '"'));
+			(('\'' ^'\''* >buffer %attribute '\'') | ('"' ^'"'* >buffer %attribute '"'));
 		element = '<' space* ^(space | [/>])+ >buffer %elementStart (space+ attribute)*
 			:>> (space* ('/' %elementEndSingle)? space* '>' @element);
-		elementBody := space* <: ((^'<'+ >buffer %entities %text) <: space*)?
+		elementBody := space* <: ((^'<'+ >buffer %text) <: space*)?
 			element? :>> ('<' space* '/' ^'>'+ '>' @elementEnd);
 		main := space* element space*;
 
 		write init;
 		write exec;
 		}%%
-		entitiesText = null;
 
 		if (p < pe) {
 			int lineNumber = 1;
@@ -225,7 +223,7 @@ public class XmlReader {
 		current.setAttribute(name, value);
 	}
 
-	protected @Null String entity (String name) {
+	protected String entity (String name) {
 		if (name.equals("lt")) return "<";
 		if (name.equals("gt")) return ">";
 		if (name.equals("amp")) return "&";
@@ -374,7 +372,7 @@ public class XmlReader {
 
 		/** @param name the name of the child {@link Element}
 		 * @return the first child having the given name or null, does not recurse */
-		public @Null Element getChildByName (String name) {
+		public Element getChildByName (String name) {
 			if (children == null) return null;
 			for (int i = 0; i < children.size; i++) {
 				Element element = children.get(i);
@@ -390,7 +388,7 @@ public class XmlReader {
 
 		/** @param name the name of the child {@link Element}
 		 * @return the first child having the given name or null, recurses */
-		public @Null Element getChildByNameRecursive (String name) {
+		public Element getChildByNameRecursive (String name) {
 			if (children == null) return null;
 			for (int i = 0; i < children.size; i++) {
 				Element element = children.get(i);

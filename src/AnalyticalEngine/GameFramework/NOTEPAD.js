@@ -154,3 +154,49 @@ Federal Republic ())
 Mercantile Republic (<)
 Republic (>)
  */
+
+/* -- JAVA CODE -- */
+//MenuManager.java
+/*
+//ANALYTICALENGINE START
+public final int getNumberOfMenus () {
+	//Declare local instance variables
+	List<Integer> current_order = (List<Integer>) this.orderOfMenu.get(this.viewID);
+
+	//Return statement
+	return (current_order != null) ?
+		current_order.size() : 0;
+}
+
+public final void setOrderOfMenu (int arg0_menu_id, int arg1_z_index) {
+	//Convert from parameters
+	int menu_id = arg0_menu_id;
+	int z_index = arg1_z_index;
+
+	//Declare local instance variables
+	List<Integer> current_order = (List<Integer>) this.orderOfMenu.get(this.viewID);
+	int inverted_z_index = current_order.size() - z_index;
+	boolean menu_exists = current_order.contains(menu_id);
+
+	orderOfMenuInGame = false;
+
+	//Try/catch for error wrapping
+	try {
+		//If menu_exists, remove the menu_id from its current position and place it at the specified z_index
+		if (menu_exists)
+			current_order.remove((Integer) menu_id);
+
+		//Clamp inverted_z_index to valid bounds
+		if (inverted_z_index < 0) inverted_z_index = 0; //Place at start
+		if (inverted_z_index >= current_order.size()) inverted_z_index = current_order.size() - 1; //Place at end
+		current_order.add(inverted_z_index, menu_id);
+
+		//Update .orderOfMenu for the current view
+		this.orderOfMenu.set(this.viewID, current_order);
+	} catch (Exception e) {
+		CFG.exceptionStack(e);
+	}
+}
+
+//ANALYTICALENGINE END
+ */
