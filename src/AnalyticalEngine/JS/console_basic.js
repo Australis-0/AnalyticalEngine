@@ -114,6 +114,12 @@ var console = {
                 processed_string += console.convertArrayToString(arguments[i]);
             } else if (typeof arguments[i] == "object") {
                 processed_string += console.convertObjectToString(arguments[i]);
+            } else if (arguments[i] == NaN) {
+                processed_string += "NaN";
+            } else if (arguments[i] == null) {
+                processed_string += "null";
+            } else if (arguments[i] == undefined) {
+                processed_string += "undefined";
             } else {
                 processed_string += arguments[i].toString();
             }

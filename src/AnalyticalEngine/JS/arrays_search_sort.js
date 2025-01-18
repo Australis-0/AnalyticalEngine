@@ -167,7 +167,7 @@
 	 * sortArray() - Sorts an array. Can be based on subkey values (recursive, e.g. 'population.size').
 	 * @param {Array} arg0_array - The array to pass to the function.
 	 * @param {Object} [arg1_options]
-	 * @param {String} [arg1_options.sort_key=undefined] - The sort subkey to specify.
+	 * @param {String} [arg1_options.key=undefined] - The sort subkey to specify.
 	 * @param {String} [arg1_options.mode="descending"] - 'alphabetical'/'ascending'/'descending'. 'descending' by default.
 	 *
 	 * @returns {Array}
@@ -201,7 +201,7 @@
 		}
 
 		//Perform sorting
-		recursiveSort(array, options.sort_key);
+		recursiveSort(array, options.key);
 
 		//Return statement
 		return array;

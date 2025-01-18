@@ -1,11 +1,26 @@
 //Extend String type
 {
+
+	String.prototype.endsWith = function (arg0_string) {
+		//Convert from parameters
+		var string = arg0_string;
+
+		//Return statement
+		return (this.length >= string.length && this.substring(this.length - string.length) == string);
+	};
 	String.prototype.includes = function (arg0_string) {
 		//Convert from parameters
 		var string = arg0_string;
 
 		//Return statement
 		return (this.indexOf(string) != -1);
+	};
+	String.prototype.startsWith = function (arg0_string) {
+		//Convert from parameters
+		var string = arg0_string;
+
+		//Return statement
+		return (this.length >= string.length && this.substring(0, string.length) === string);
 	}
 }
 

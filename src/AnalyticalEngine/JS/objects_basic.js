@@ -517,7 +517,7 @@
 	 * sortObject() - Sorts an object based on its values.
 	 * @param arg0_object {Object} - The object to sort.
 	 * @param arg1_options {Object}
-	 *  @param {string} [arg1_options.type="descending"] - Either 'ascending' or 'descending'.
+	 *  @param {string} [arg1_options.mode="descending"] - Either 'ascending' or 'descending'.
 	 */
 	function sortObject (arg0_object, arg1_options) {
 		//Convert from parameters
@@ -527,7 +527,7 @@
 		//Declare local instance variables
 		var all_object_keys = Object.keys(object);
 		var entries = [];
-		var mode = (options.type) ? options.type : "descending";
+		var mode = (options.mode) ? options.mode : "descending";
 
 		//Iterate over all_object_keys; convert object to array of [key, value] pairs.
 		for (var i = 0; i < all_object_keys.length; i++)

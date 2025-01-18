@@ -20,5 +20,8 @@ setTimeout(function(){
 		//Initialise Editor handlers
 		initialiseProvinceNamesEditorEventHandlers();
 		initialiseProvinceTerrainEditorEventHandlers();
+
+		//Load Mods
+		loadMods();
 	}, 3000);
 }, 1);
