@@ -41,8 +41,11 @@ public class InGame_DeepscriptEvent extends Menu {
     public static long time = 0L;
 
     public static String description = "";
-    public static int mission_id = 0;
     public static String name = "MISSING_LOC";
+
+    boolean has_province_id = false;
+    public static int mission_id = 0;
+    public static int province_id = -1;
 
     List<MenuElement> menu_elements = new ArrayList();
     List<MenuElement> menu_options_elements = new ArrayList(); //Internal helper.
@@ -64,9 +67,14 @@ public class InGame_DeepscriptEvent extends Menu {
         String event_id = arg0_event_id;
         String event_type = arg1_event_type;
 
+        //1. Set metadata
         //Set .event_id, .event_type
         this.event_id = event_id;
         this.event_type = event_type;
+
+        //2. Set scope default
+        //Set .province_id default
+        this.province_id = Game.getCiv(Game.player.iCivID).eventProvinceID;
     }
 
     /**
@@ -87,12 +95,9 @@ public class InGame_DeepscriptEvent extends Menu {
         try {
             this.menu_options_elements.add(new ButtonGame_Value(Game.lang.get(option_name), CFG.FONT_REGULAR, -1, this.padding_left, this.button_y, this.menu_width - this.padding_left*2, true, this.menu_options_elements.size()) {
                 public void actionElement() {
-                    //[WIP] - Send message to Nashorn that this option has been successfully clicked
+                    //Send message to Nashorn that this option has been successfully clicked
                     try {
-                        invocable.invokeFunction("setGlobalVariable", "event_click_id", event_id);
-                        invocable.invokeFunction("setGlobalVariable", "event_click_option", option_id);
-                        System.out.println("Set setGlobalVariable event_click_id to: " + event_id);
-                        System.out.println("Set setGlobalVariable event_click_option to: " + option_id);
+                        invocable.invokeFunction("eventOptionHandler", event_id, option_id);
                     } catch (ScriptException | NoSuchMethodException e) {
                         e.printStackTrace();
                     }
@@ -118,7 +123,9 @@ public class InGame_DeepscriptEvent extends Menu {
                     //Parse tooltip_localisation_strings; iterate over all tooltip_localisation_strings
                     try {
                         for (int i = 0; i < tooltip_localisation_strings.size(); i++) {
-                            String[] local_split_tooltip = tooltip_localisation_strings.get(i).split("`");
+                            String[] local_split_tooltip = tooltip_localisation_strings.get(i)
+                                .trim()
+                                .split("`");
                             List<String> local_tooltip_elements = new ArrayList<>();
                             local_tooltip_elements.addAll(Arrays.asList(local_split_tooltip));
 
@@ -130,50 +137,64 @@ public class InGame_DeepscriptEvent extends Menu {
                                 boolean is_reserved = false;
                                 String local_value = local_tooltip_elements.get(x);
 
-                                //1. Colour Handling
-                                //Check if local_tooltip aligns with a known colour
-                                if (local_value.startsWith("COLOUR<") && local_value.endsWith(">")) {
-                                    String rgba_values = local_value.substring(local_value.indexOf("<") + 1, local_value.indexOf(">"));
-                                    String[] rgba_array = rgba_values.split(",\\s*");
+                                if (local_value.length() > 0) {
+                                    //1. Colour Handling
+                                    //Check if local_tooltip aligns with a known colour
+                                    if (local_value.startsWith("COLOUR<") && local_value.endsWith(">")) {
+                                        String rgba_values = local_value.substring(local_value.indexOf("<") + 1, local_value.indexOf(">"));
+                                        String[] rgba_array = rgba_values.split(",\\s*");
 
-                                    //Parse the RGB(A) values as floats
-                                    float r = Float.parseFloat(rgba_array[0])/255.0F;
-                                    float g = Float.parseFloat(rgba_array[1])/255.0F;
-                                    float b = Float.parseFloat(rgba_array[2])/255.0F;
-                                    float a = (rgba_array.length >= 4) ? Float.parseFloat(rgba_array[3]) : 1.0F;
+                                        //Parse the RGB(A) values as floats
+                                        float r = Float.parseFloat(rgba_array[0])/255.0F;
+                                        float g = Float.parseFloat(rgba_array[1])/255.0F;
+                                        float b = Float.parseFloat(rgba_array[2])/255.0F;
+                                        float a = (rgba_array.length >= 4) ? Float.parseFloat(rgba_array[3]) : 1.0F;
 
-                                    local_colour = new Color(r, g, b, a);
-                                    is_reserved = true;
-                                } else {
-                                    try {
-                                        Field local_colour_field = Color.class.getField(local_value.toUpperCase());
-                                        local_colour = (Color) local_colour_field.get(null); //Static field; so pass null as object
+                                        local_colour = new Color(r, g, b, a);
                                         is_reserved = true;
-                                    } catch (Exception ex) {}
-                                }
+                                    } else {
+                                        try {
+                                            Field local_colour_field = Color.class.getField(local_value.toUpperCase());
+                                            local_colour = (Color) local_colour_field.get(null); //Static field; so pass null as object
+                                            is_reserved = true;
+                                        } catch (Exception ex) {}
+                                    }
 
-                                //2. Font Weight Handling
-                                if (local_value == "BOLD") {
-                                    local_font_weight = CFG.FONT_BOLD_SMALL;
-                                    is_reserved = true;
-                                } else if (local_value == "NORMAL") {
-                                    local_font_weight = CFG.FONT_REGULAR_SMALL;
-                                    is_reserved = true;
-                                }
+                                    //2. Font Weight Handling
+                                    if (local_value.equalsIgnoreCase("BOLD")) {
+                                        local_font_weight = CFG.FONT_BOLD;
+                                        is_reserved = true;
+                                    } else if (local_value.equalsIgnoreCase("NORMAL")) {
+                                        local_font_weight = CFG.FONT_REGULAR_SMALL;
+                                        is_reserved = true;
+                                    }
 
-                                //3. Keyword handling
-                                if (local_value == "RESET") {
-                                    local_colour = Color.WHITE;
-                                    local_font_weight = CFG.FONT_REGULAR_SMALL;
-                                    is_reserved = true;
-                                }
+                                    //3. Keyword handling
+                                    if (local_value.equalsIgnoreCase("RESET")) {
+                                        local_colour = Color.WHITE;
+                                        local_font_weight = CFG.FONT_REGULAR_SMALL;
+                                        is_reserved = true;
+                                    }
 
-                                //4. Display Text if not reserved
-                                n_data.add(new MenuElement_HoverElement_Type_Text(
-                                        local_value,
-                                        local_font_weight,
-                                        local_colour
-                                ));
+                                    //4. Image handling
+                                    if (local_value.startsWith("IMAGE<") && local_value.endsWith(">")) {
+                                        String image_file_path = local_value.substring(local_value.indexOf("<") + 1, local_value.indexOf(">"));
+                                        n_data.add(new AnalyticalEngine_MenuElement_HoverElement_Type_Image(
+                                            image_file_path,
+                                            CFG.PADDING,
+                                            CFG.PADDING
+                                        ));
+                                        is_reserved = true;
+                                    }
+
+                                    //5. Display Text if not reserved
+                                    if (!is_reserved)
+                                        n_data.add(new MenuElement_HoverElement_Type_Text(
+                                            local_value,
+                                            local_font_weight,
+                                            local_colour
+                                        ));
+                                }
                             }
 
                             //Push n_data to n_elements
@@ -301,6 +322,15 @@ public class InGame_DeepscriptEvent extends Menu {
         this.name = name_string;
     }
 
+    public void setProvinceID (int arg0_province_id) {
+        //Convert from parameters
+        int province_id = arg0_province_id;
+
+        //Set .has_province_id, .province_id
+        this.has_province_id = true;
+        this.province_id = province_id;
+    }
+
     public void render () {
         //Declare local instance variables
         this.button_x = Images.boxTitleBORDERWIDTH;
@@ -350,14 +380,15 @@ public class InGame_DeepscriptEvent extends Menu {
 
         //Add Empty padding
         this.menu_elements.add(new Empty(0, 0, menu_width, Math.max(button_y, i)));
-        int province_id = Game.getCiv(Game.player.iCivID).eventProvinceID;
 
-        if (province_id < 0 && Game.getCiv(Game.player.iCivID).getCapitalProvinceID() >= 0) {
-            province_id = Game.getCiv(Game.player.iCivID).getCapitalProvinceID();
-        } else if (Game.getCiv(Game.player.iCivID).getNumOfProvinces() > 0) {
-            province_id = Game.getCiv(Game.player.iCivID).getProvinceID(Game.oR.nextInt(Game.getCiv(Game.player.iCivID).getNumOfProvinces()));
+        if (!this.has_province_id) {
+            if (province_id < 0 && Game.getCiv(Game.player.iCivID).getCapitalProvinceID() >= 0) {
+                province_id = Game.getCiv(Game.player.iCivID).getCapitalProvinceID();
+            } else if (Game.getCiv(Game.player.iCivID).getNumOfProvinces() > 0) {
+                province_id = Game.getCiv(Game.player.iCivID).getProvinceID(Game.oR.nextInt(Game.getCiv(Game.player.iCivID).getNumOfProvinces()));
+            }
+            province_id = Math.max(0, province_id);
         }
-        province_id = Math.max(0, province_id);
 
         //Init menu
         this.initMenu(new MenuTitleIMG_DoubleText(Game.lang.get(this.name), Game.lang.get("EventInX", Game.getProvince(province_id).getProvinceName()), true, false, Images.title600) {
