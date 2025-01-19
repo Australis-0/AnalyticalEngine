@@ -364,13 +364,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MenuManager {
-    private List<List<Menu>> menus = new ArrayList();
-    private List<List<Integer>> orderOfMenu = new ArrayList();
+    public List<List<Menu>> menus = new ArrayList();
+    public List<List<Integer>> orderOfMenu = new ArrayList();
     public Menu dialogMenu = new Dialog();
-    private List<Toast> lToast = new ArrayList();
-    private int iToastSize = 0;
-    private int viewID = 0;
-    private ColorPicker colorPicker;
+    public List<Toast> lToast = new ArrayList();
+    public int iToastSize = 0;
+    public int viewID = 0;
+    public ColorPicker colorPicker;
     public static SparksAnimation sparksAnimation = new SparksAnimation();
     public static SparksAnimation sparksAnimationHover = new SparksAnimation();
     public static SparksAnimation sparksAnimationSidebar = new SparksAnimation();

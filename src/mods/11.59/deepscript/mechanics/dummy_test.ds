@@ -1,5 +1,7 @@
 {
-	on_game_start: {
-		print: "Hello!"
+	events: {
+		print: {
+			name: "Hello!"
+		}
 	}
 }

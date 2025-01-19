@@ -34,6 +34,7 @@ var global = {
 
 	function initGlobal () {
 		this.main = {
+			events: {}, //Contains all Events instantiated via Nashorn in-game.
 			interfaces: {}, //Contains all Menus instantiated via Nashorn in-game.
 
 			//Map (Provinces and assoiated data structures)
