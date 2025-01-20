@@ -16,6 +16,7 @@ import aoc.kingdoms.lukasz.menu_element.Status;
 import aoc.kingdoms.lukasz.menu_element.button.ButtonGame_Value;
 import aoc.kingdoms.lukasz.menu_element.menuElementHover.*;
 import aoc.kingdoms.lukasz.menu_element.textStatic.Text_Desc;
+import aoc.kingdoms.lukasz.menu_element.textStatic.Text_Desc3;
 import aoc.kingdoms.lukasz.textures.Image;
 import aoc.kingdoms.lukasz.textures.ImageManager;
 import aoc.kingdoms.lukasz.textures.Images;
@@ -276,14 +277,21 @@ public class InGame_DeepscriptEvent extends Menu {
             CFG.exceptionStack(ex);
         }
 
-        //Add .description
-        this.menu_elements.add(new Text_Desc(
-            Game.lang.get(this.description),
-            padding_left,
-            button_y,
-            menu_width - padding_left*2
-        ));
-        button_y += ((MenuElement) menu_elements.get(menu_elements.size() - 1)).getHeight();
+        //Add .description; break by \n
+        String event_description = Game.lang.get(this.description);
+        String[] split_event_description = event_description.split("\n");
+
+        List<String> event_description_array = Arrays.asList(split_event_description);
+
+        for (int i = 0; i < event_description_array.size(); i++) {
+            this.menu_elements.add(new Text_Desc(
+                event_description_array.get(i),
+                padding_left,
+                button_y,
+                menu_width - padding_left*2
+            ));
+            button_y += ((MenuElement) menu_elements.get(menu_elements.size() - 1)).getHeight();
+        }
 
         //Iterate over menu_options_elements and add them to the present this.menu_elements.
         for (int i = 0; i < this.menu_options_elements.size(); i++) {
@@ -316,11 +324,13 @@ public class InGame_DeepscriptEvent extends Menu {
         }
 
         //Init menu
+        int menu_height = (int) ((i > CFG.GAME_HEIGHT*0.8) ? CFG.GAME_HEIGHT*0.8 : i);
+
         this.initMenu(new MenuTitleIMG_DoubleText(Game.lang.get(this.name), Game.lang.get("EventInX", Game.getProvince(province_id).getProvinceName()), true, false, Images.title600) {
             public long getTime () {
                 return InGame_DeepscriptEvent.time;
             }
-        }, CFG.GAME_WIDTH/2 - menu_width/2, CFG.GAME_HEIGHT/5, menu_width, i, menu_elements, false, true);
+        }, CFG.GAME_WIDTH/2 - menu_width/2, CFG.GAME_HEIGHT/5, menu_width, menu_height, menu_elements, false, true);
         this.drawScrollPositionAlways = false;
     }
 
