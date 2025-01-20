@@ -130,6 +130,15 @@ public class InGame_DeepscriptEvent extends Menu {
                 public void buildElementHover () {
                     AnalyticalEngine_MenuElement_Localisation localisation_element = new AnalyticalEngine_MenuElement_Localisation();
 
+                    //Add title if !disable_option
+                    if (!disable_option) {
+                        List<MenuElement_HoverElement_Type> n_data = new ArrayList();
+                            n_data.add(new MenuElement_HoverElement_Type_TextTitle_BG(this.getText(), CFG.FONT_BOLD, Colors.HOVER_GOLD));
+                        localisation_element.addElement(new MenuElement_HoverElement(n_data));
+                        n_data.clear();
+                    }
+
+                    //Append the rest of the description
                     localisation_element.addLocalisation(tooltip_localisation_strings);
                     this.menuElementHover = new MenuElement_Hover(localisation_element.processed_menu_elements, (localisation_element.processed_menu_elements.size() == 1));
                 }
@@ -330,7 +339,7 @@ public class InGame_DeepscriptEvent extends Menu {
             public long getTime () {
                 return InGame_DeepscriptEvent.time;
             }
-        }, CFG.GAME_WIDTH/2 - menu_width/2, CFG.GAME_HEIGHT/5, menu_width, menu_height, menu_elements, false, true);
+        }, CFG.GAME_WIDTH/2 - menu_width/2, CFG.GAME_HEIGHT/5, menu_width, menu_height, menu_elements, false, false);
         this.drawScrollPositionAlways = false;
     }
 

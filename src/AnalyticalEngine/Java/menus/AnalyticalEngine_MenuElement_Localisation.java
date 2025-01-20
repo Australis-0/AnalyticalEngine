@@ -37,6 +37,14 @@ public class AnalyticalEngine_MenuElement_Localisation {
         init(local_menu_elements, local_draw_element);
     }
 
+    public void addElement (MenuElement_HoverElement arg0_element) {
+        //Convert from parameters
+        MenuElement_HoverElement element = arg0_element;
+
+        //Declare local instance variables
+        this.processed_menu_elements.add(element);
+    }
+
     public void addLocalisation (List<String> arg0_localisation_array) {
         //Convert from parameters
         List<String> localisation_array = arg0_localisation_array;
