@@ -204,8 +204,6 @@
 		var event_obj = main.events[event_id];
 		var event_option = event_obj.options[option_id];
 
-		console.log("Working on Event ID: " + event_id + " Option ID: " + option_id);
-
 		//If event_option is defined, attempt to invoke event_option.special_function
 		if (event_option)
 			if (event_option.special_function)

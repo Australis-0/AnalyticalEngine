@@ -109,7 +109,6 @@ public class InGame_DeepscriptEvent extends Menu {
             this.menu_options_elements.add(new ButtonGame_Value(Game.lang.get(option_name), CFG.FONT_REGULAR, -1, this.padding_left, this.button_y, this.menu_width - this.padding_left*2, (!disable_option), this.menu_options_elements.size()) {
                 public void actionElement() {
                     //Send message to Nashorn that this option has been successfully clicked
-                    System.out.println("Attempting to call eventOptionHandler() " + event_id + " " + option_id);
                     try {
                         invocable.invokeFunction("eventOptionHandler", event_id, option_id);
                     } catch (ScriptException | NoSuchMethodException e) {
