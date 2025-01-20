@@ -34,19 +34,20 @@ import java.util.List;
 import static AnalyticalEngine.AnalyticalEngine.nashorn;
 
 public class InGame_DeepscriptEvent extends Menu {
-    public static int animation_time = 60;
-    public static String event_id = "default_event";
-    public static String event_type = "civ_event";
+    public int animation_time = 60;
+    public String event_id = "default_event";
+    public String event_type = "civ_event";
     public int image_height = 1;
     public int image_width = 1;
-    public static long time = 0L;
+    public int raw_menu_id = -1;
+    public long time = 0L;
 
-    public static String description = "";
-    public static String name = "MISSING_LOC";
+    public String description = "";
+    public String name = "MISSING_LOC";
 
     boolean has_province_id = false;
-    public static int mission_id = 0;
-    public static int province_id = -1;
+    public int mission_id = 0;
+    public int province_id = -1;
 
     List<MenuElement> menu_elements = new ArrayList();
     List<MenuElement> menu_options_elements = new ArrayList(); //Internal helper.
@@ -108,6 +109,7 @@ public class InGame_DeepscriptEvent extends Menu {
             this.menu_options_elements.add(new ButtonGame_Value(Game.lang.get(option_name), CFG.FONT_REGULAR, -1, this.padding_left, this.button_y, this.menu_width - this.padding_left*2, (!disable_option), this.menu_options_elements.size()) {
                 public void actionElement() {
                     //Send message to Nashorn that this option has been successfully clicked
+                    System.out.println("Attempting to call eventOptionHandler() " + event_id + " " + option_id);
                     try {
                         invocable.invokeFunction("eventOptionHandler", event_id, option_id);
                     } catch (ScriptException | NoSuchMethodException e) {
@@ -122,7 +124,8 @@ public class InGame_DeepscriptEvent extends Menu {
                         }
 
                         Game.menuManager.rebuildInGame_Right();
-                        Game.menuManager.setVisibleInGame_Event(false);
+                        InGame_DeepscriptEvent.this.dispose();
+                        InGame_DeepscriptEvent.this.setVisible(false);
                         SteamAchievementsManager.unlockAchievement(SteamAchievementsManager.EVENT_RES);
                     }
                 }
@@ -337,10 +340,17 @@ public class InGame_DeepscriptEvent extends Menu {
 
         this.initMenu(new MenuTitleIMG_DoubleText(Game.lang.get(this.name), Game.lang.get("EventInX", Game.getProvince(province_id).getProvinceName()), true, false, Images.title600) {
             public long getTime () {
-                return InGame_DeepscriptEvent.time;
+                return InGame_DeepscriptEvent.this.time;
             }
         }, CFG.GAME_WIDTH/2 - menu_width/2, CFG.GAME_HEIGHT/5, menu_width, menu_height, menu_elements, false, false);
         this.drawScrollPositionAlways = false;
+
+        //Add to Game.menuManager
+        int current_view_id = Game.menuManager.getViewID();
+
+        this.raw_menu_id = Game.menuManager.addNextMenuToView(current_view_id, this);
+        Game.menuManager.setOrderOfMenu(current_view_id);
+        this.setVisible(true);
     }
 
     public void setVisible (boolean arg0_visible) {

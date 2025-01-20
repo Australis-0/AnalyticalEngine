@@ -44,6 +44,7 @@
 		//Declare local instance variables
 		Gdx.app.postRunnable(function(){
 			try {
+				var current_view_id = Game.menuManager.viewID;
 				var event_obj = new InGame_DeepscriptEvent(options.event_id, options.event_type);
 
 				//1. .name, .description, .image, .mission_id handling
@@ -124,15 +125,6 @@
 				var menus_list = Game.menuManager.menus;
 				event_obj.render();
 
-				menus_list.get(Game.menuManager.IN_GAME)
-				.set(Game.menuManager.IN_GAME_EVENT, event_obj);
-				menus_list.get(Game.menuManager.IN_GAME)
-				.get(Game.menuManager.IN_GAME_EVENT)
-				.setVisible(true);
-
-				//Set menu order
-				Game.menuManager.setOrderOfMenu(Game.menuManager.IN_GAME_EVENT);
-
 				//4. Set main.events object
 				main.events[options.event_id] = {
 					id: options.event_id,
@@ -211,6 +203,8 @@
 		//Declare local instance variables
 		var event_obj = main.events[event_id];
 		var event_option = event_obj.options[option_id];
+
+		console.log("Working on Event ID: " + event_id + " Option ID: " + option_id);
 
 		//If event_option is defined, attempt to invoke event_option.special_function
 		if (event_option)
