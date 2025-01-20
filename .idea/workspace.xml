@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="09b6f7f8-b868-43e9-b471-ac1dbd15fa3b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/ui/deepscript_event_framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/ui/deepscript_event_framework.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/deepscript/mechanics/dummy_test.ds" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/deepscript/mechanics/dummy_test.ds" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +136,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.143695",
     "project.structure.side.proportion": "0.22651222",
-    "settings.editor.selected.configurable": "preferences.language.and.region",
+    "settings.editor.selected.configurable": "preferences.editor",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -205,7 +205,7 @@
       <workItem from="1734466614497" duration="11042000" />
       <workItem from="1734809856493" duration="231890000" />
       <workItem from="1737191569663" duration="7789000" />
-      <workItem from="1737200274429" duration="51052000" />
+      <workItem from="1737200274429" duration="52883000" />
     </task>
     <servers />
   </component>
