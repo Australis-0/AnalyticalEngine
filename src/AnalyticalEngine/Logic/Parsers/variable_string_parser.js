@@ -1,5 +1,9 @@
 //Initialise functions
 {
+	function parseDisplayLocalisationString (arg0_string, arg1_options) {
+
+	}
+
 	/**
 	 * parseVariableString() - Parses a variable string and returns its resolved value.
 	 * @param {String} arg0_string - The string which to resolve.
@@ -9,7 +13,7 @@
 	 *
 	 * @returns {*}
 	 */
-	function parseVariableString (arg0_string, arg1_options) { //[WIP] - Finish function body
+	function parseVariableString (arg0_string, arg1_options) {
 		//Convert from parameters
 		var string = arg0_string;
 		var options = (arg1_options) ? arg1_options : {};

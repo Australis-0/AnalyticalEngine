@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09b6f7f8-b868-43e9-b471-ac1dbd15fa3b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Java/menus/AnalyticalEngine_MenuElement_HoverElement_Type_Image.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Java/menus/AnalyticalEngine_MenuElement_Localisation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/ui/deepscript_event_framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/ui/deepscript_event_framework.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Java/menus/InGame_DeepscriptEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Java/menus/InGame_DeepscriptEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Parsers/variable_string_parser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Parsers/variable_string_parser.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Java/menus/InGame_DeepscriptEvent$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Java/menus/InGame_DeepscriptEvent$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Java/menus/InGame_DeepscriptEvent$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Java/menus/InGame_DeepscriptEvent$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Java/menus/InGame_DeepscriptEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Java/menus/InGame_DeepscriptEvent.class" afterDir="false" />
@@ -210,7 +211,7 @@
       <workItem from="1734466614497" duration="11042000" />
       <workItem from="1734809856493" duration="231890000" />
       <workItem from="1737191569663" duration="7789000" />
-      <workItem from="1737200274429" duration="33851000" />
+      <workItem from="1737200274429" duration="41513000" />
     </task>
     <servers />
   </component>

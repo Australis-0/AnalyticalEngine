@@ -154,12 +154,13 @@
 	 * createDummyEvent() - Used for internal testing to create a dummy event.
 	 */
 	function createDummyEvent () {
-		// Define dummy options for the event
-		var dummyEventOptions = {
+		//Declare local instance variables
+		var dummy_event_options = {
 			event_id: "test_event", // Custom event ID
 			event_type: "civ_event", // Event type
+			image: "game/events/images/H/0.png",
 			name: "Test Event", // Event name
-			description: "Hello! I'm an Event Description. You know basically nothing about me except that I'm really long. Lipsum Lorem Ipsum Dolor Sit Amet! Blah blah blah blah blah blah blah blah blah LOC TEST blah blah blah. By the way, here's a bunch of flavour.", // Event description
+			description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", // Event description
 			mission_id: 101, // Example mission ID
 			province_id: "Detroit",
 
@@ -177,8 +178,12 @@
 				option2: {
 					name: "Option 2",
 					tooltip: [
-						{ raw_string: "This is a tooltip for Option 2." },
-						{ colour: [0, 255, 0], font_weight: 400, image: "ui/interface/H/icons/plunder.png", name: "This option is green." }
+						{ raw_string: "Custom tooltips have been added to AnalyticalEngine!" },
+						{ raw_string: "`YELLOW`This`RESET` is a `GREEN`multicoloured`RESET` raw string `YELLOW`test`RESET`."},
+						{ raw_string: "- You can even do inline `BOLD`bold`RESET`." },
+						{ colour: [240, 60, 60], font_weight: 400, image: "ui/interface/H/icons/plunder.png", name: "This option is salmon with a custom image." },
+						{ raw_string: " " },
+						{ raw_string: "- After a short line break, try having an inline flag: `IMAGE<gfx/flagsXH/uni_m.png>` United Kingdom" }
 					],
 					special_function: function (e) {
 						console.log("You clicked Option 2!");
@@ -187,9 +192,9 @@
 			}
 		};
 
-		// Invoke the createEvent() function with the dummy event options
+		//Invoke createEvent() function with dummy event options
 		try {
-			createEvent(dummyEventOptions);
+			createEvent(dummy_event_options);
 		} catch (e) {
 			console.error(e.stack);
 		}

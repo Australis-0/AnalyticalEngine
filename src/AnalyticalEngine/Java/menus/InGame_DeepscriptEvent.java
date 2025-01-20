@@ -114,98 +114,11 @@ public class InGame_DeepscriptEvent extends Menu {
                 }
 
                 public void buildElementHover () {
-                    List<MenuElement_HoverElement_Type> n_data = new ArrayList();
-                    n_data.add(new MenuElement_HoverElement_Type_TextTitle_BG(this.getText(), CFG.FONT_BOLD, Colors.HOVER_GOLD));
-                    List<MenuElement_HoverElement> n_elements = new ArrayList();
-                    n_elements.add(new MenuElement_HoverElement(n_data));
-                    n_data.clear();
+                    AnalyticalEngine_MenuElement_Localisation localisation_element = new AnalyticalEngine_MenuElement_Localisation();
 
-                    //Parse tooltip_localisation_strings; iterate over all tooltip_localisation_strings
-                    try {
-                        for (int i = 0; i < tooltip_localisation_strings.size(); i++) {
-                            String[] local_split_tooltip = tooltip_localisation_strings.get(i)
-                                .trim()
-                                .split("`");
-                            List<String> local_tooltip_elements = new ArrayList<>();
-                            local_tooltip_elements.addAll(Arrays.asList(local_split_tooltip));
-
-                            //Text formatting trackers
-                            Color local_colour = Color.WHITE;
-                            int local_font_weight = CFG.FONT_REGULAR_SMALL;
-
-                            for (int x = 0; x < local_tooltip_elements.size(); x++) {
-                                boolean is_reserved = false;
-                                String local_value = local_tooltip_elements.get(x);
-
-                                if (local_value.length() > 0) {
-                                    //1. Colour Handling
-                                    //Check if local_tooltip aligns with a known colour
-                                    if (local_value.startsWith("COLOUR<") && local_value.endsWith(">")) {
-                                        String rgba_values = local_value.substring(local_value.indexOf("<") + 1, local_value.indexOf(">"));
-                                        String[] rgba_array = rgba_values.split(",\\s*");
-
-                                        //Parse the RGB(A) values as floats
-                                        float r = Float.parseFloat(rgba_array[0])/255.0F;
-                                        float g = Float.parseFloat(rgba_array[1])/255.0F;
-                                        float b = Float.parseFloat(rgba_array[2])/255.0F;
-                                        float a = (rgba_array.length >= 4) ? Float.parseFloat(rgba_array[3]) : 1.0F;
-
-                                        local_colour = new Color(r, g, b, a);
-                                        is_reserved = true;
-                                    } else {
-                                        try {
-                                            Field local_colour_field = Color.class.getField(local_value.toUpperCase());
-                                            local_colour = (Color) local_colour_field.get(null); //Static field; so pass null as object
-                                            is_reserved = true;
-                                        } catch (Exception ex) {}
-                                    }
-
-                                    //2. Font Weight Handling
-                                    if (local_value.equalsIgnoreCase("BOLD")) {
-                                        local_font_weight = CFG.FONT_BOLD;
-                                        is_reserved = true;
-                                    } else if (local_value.equalsIgnoreCase("NORMAL")) {
-                                        local_font_weight = CFG.FONT_REGULAR_SMALL;
-                                        is_reserved = true;
-                                    }
-
-                                    //3. Keyword handling
-                                    if (local_value.equalsIgnoreCase("RESET")) {
-                                        local_colour = Color.WHITE;
-                                        local_font_weight = CFG.FONT_REGULAR_SMALL;
-                                        is_reserved = true;
-                                    }
-
-                                    //4. Image handling
-                                    if (local_value.startsWith("IMAGE<") && local_value.endsWith(">")) {
-                                        String image_file_path = local_value.substring(local_value.indexOf("<") + 1, local_value.indexOf(">"));
-                                        n_data.add(new AnalyticalEngine_MenuElement_HoverElement_Type_Image(
-                                            image_file_path,
-                                            CFG.PADDING,
-                                            CFG.PADDING
-                                        ));
-                                        is_reserved = true;
-                                    }
-
-                                    //5. Display Text if not reserved
-                                    if (!is_reserved)
-                                        n_data.add(new MenuElement_HoverElement_Type_Text(
-                                            local_value,
-                                            local_font_weight,
-                                            local_colour
-                                        ));
-                                }
-                            }
-
-                            //Push n_data to n_elements
-                            n_elements.add(new MenuElement_HoverElement(n_data));
-                            n_data.clear();
-                        }
-                    } catch (Exception ex) {
-                        CFG.exceptionStack(ex);
-                    }
-
-                    this.menuElementHover = new MenuElement_Hover(n_elements, (n_elements.size() == 1));
+                    localisation_element.addLocalisation(tooltip_localisation_strings);
+                    System.out.println(localisation_element.processed_menu_elements.size());
+                    this.menuElementHover = new MenuElement_Hover(localisation_element.processed_menu_elements, (localisation_element.processed_menu_elements.size() == 1));
                 }
             });
             this.button_y += ((MenuElement) menu_options_elements.get(menu_options_elements.size() - 1)).getHeight() + CFG.PADDING;
