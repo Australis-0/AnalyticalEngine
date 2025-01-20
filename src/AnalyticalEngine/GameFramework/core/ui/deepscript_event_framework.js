@@ -110,7 +110,9 @@
 
 						//Call event_obj.addOption()
 						try {
-							event_obj.addOption(local_option_id, local_option_name, processed_tooltip_array_list);
+							(!local_option.disable_click) ?
+								event_obj.addOption(local_option_id, local_option_name, processed_tooltip_array_list) :
+								event_obj.addOption(local_option_id, local_option_name, processed_tooltip_array_list, true);
 						} catch (e) {
 							console.error("Invoking event_obj.addOption() caused an error: " + e.message);
 						}
@@ -177,6 +179,7 @@
 				},
 				option2: {
 					name: "Option 2",
+					disable_click: true,
 					tooltip: [
 						{ raw_string: "Custom tooltips have been added to AnalyticalEngine!" },
 						{ raw_string: "`YELLOW`This`RESET` is a `GREEN`multicoloured`RESET` raw string `YELLOW`test`RESET`."},
@@ -215,6 +218,7 @@
 				event_option.special_function(event_obj);
 
 		//Clear event_obj
-		delete main.events[event_id];
+		if (!event_option.disable_click)
+			delete main.events[event_id];
 	}
 }

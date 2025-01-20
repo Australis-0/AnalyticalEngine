@@ -77,23 +77,34 @@ public class InGame_DeepscriptEvent extends Menu {
         this.province_id = Game.getCiv(Game.player.iCivID).eventProvinceID;
     }
 
-    /**
-     * addOption() - Adds an option to the event prior to rendering. Does not render the interface. Fires setGlobalVariable() for global.event_click_id: (String) and global.event_click_option: (String)
-     * @param {String} arg0_option_id
-     * @param {String} arg1_name
-     * @param {List<String>} arg2_tooltip_localisation_strings
-     */
     public void addOption (String arg0_option_id, String arg1_name, List<String> arg2_tooltip_localisation_strings) {
         //Convert from parameters
         String option_id = arg0_option_id;
         String option_name = arg1_name;
         List<String> tooltip_localisation_strings = arg2_tooltip_localisation_strings;
 
+        //Invoke addOption()
+        addOption(option_id, option_name, tooltip_localisation_strings, false);
+    }
+
+    /**
+     * addOption() - Adds an option to the event prior to rendering. Does not render the interface. Fires setGlobalVariable() for global.event_click_id: (String) and global.event_click_option: (String)
+     * @param {String} arg0_option_id
+     * @param {String} arg1_name
+     * @param {List<String>} arg2_tooltip_localisation_strings
+     */
+    public void addOption (String arg0_option_id, String arg1_name, List<String> arg2_tooltip_localisation_strings, boolean arg3_disable_option) {
+        //Convert from parameters
+        String option_id = arg0_option_id;
+        String option_name = arg1_name;
+        List<String> tooltip_localisation_strings = arg2_tooltip_localisation_strings;
+        boolean disable_option = arg3_disable_option;
+
         //Declare local instance variables
         Invocable invocable = (Invocable) nashorn;
 
         try {
-            this.menu_options_elements.add(new ButtonGame_Value(Game.lang.get(option_name), CFG.FONT_REGULAR, -1, this.padding_left, this.button_y, this.menu_width - this.padding_left*2, true, this.menu_options_elements.size()) {
+            this.menu_options_elements.add(new ButtonGame_Value(Game.lang.get(option_name), CFG.FONT_REGULAR, -1, this.padding_left, this.button_y, this.menu_width - this.padding_left*2, (!disable_option), this.menu_options_elements.size()) {
                 public void actionElement() {
                     //Send message to Nashorn that this option has been successfully clicked
                     try {
@@ -102,22 +113,23 @@ public class InGame_DeepscriptEvent extends Menu {
                         e.printStackTrace();
                     }
 
-                    if (event_type == "mission_event") {
-                        MissionTree.takeMissionDecision(Game.player.iCivID, mission_id, this.getCurrent());
-                    } else {
-                        Game.player.currSituation.updateCurrentSituation();
-                    }
+                    if (!disable_option) {
+                        if (event_type == "mission_event") {
+                            MissionTree.takeMissionDecision(Game.player.iCivID, mission_id, this.getCurrent());
+                        } else {
+                            Game.player.currSituation.updateCurrentSituation();
+                        }
 
-                    Game.menuManager.rebuildInGame_Right();
-                    Game.menuManager.setVisibleInGame_Event(false);
-                    SteamAchievementsManager.unlockAchievement(SteamAchievementsManager.EVENT_RES);
+                        Game.menuManager.rebuildInGame_Right();
+                        Game.menuManager.setVisibleInGame_Event(false);
+                        SteamAchievementsManager.unlockAchievement(SteamAchievementsManager.EVENT_RES);
+                    }
                 }
 
                 public void buildElementHover () {
                     AnalyticalEngine_MenuElement_Localisation localisation_element = new AnalyticalEngine_MenuElement_Localisation();
 
                     localisation_element.addLocalisation(tooltip_localisation_strings);
-                    System.out.println(localisation_element.processed_menu_elements.size());
                     this.menuElementHover = new MenuElement_Hover(localisation_element.processed_menu_elements, (localisation_element.processed_menu_elements.size() == 1));
                 }
             });
