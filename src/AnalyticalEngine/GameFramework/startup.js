@@ -20,6 +20,7 @@ setTimeout(function(){
 
 		//Initialise Editor handlers
 		initialiseProvinceNamesEditorEventHandlers();
+		initialiseProvinceResourceEditorEventHandlers();
 		initialiseProvinceTerrainEditorEventHandlers();
 
 		//Load Mods

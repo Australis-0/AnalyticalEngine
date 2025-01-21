@@ -513,6 +513,35 @@
 		return object;
 	}
 
+	function setObjectKey (arg0_object, arg1_key, arg2_value) {
+		//Convert from parameters
+		var object = arg0_object;
+		var key = arg1_key;
+		var value = arg2_value;
+
+		//Declare local instance variables
+		var current = object;
+		var split_key = key.split(".");
+
+		//Iterate over split_key and set each key if not defined
+		for (var i = 0; i < split_key.length; i++) {
+			var local_key = split_key[i];
+
+			//If it's the last key, set the value
+			if (i == split_key.length - 1) {
+				current[local_key] = value;
+			} else {
+				if (!current[local_key] || typeof current[local_key] != "object")
+					current[local_key] = {};
+				//Move top the next level
+				current = current[local_key];
+			}
+		}
+
+		//Return statement
+		return object;
+	}
+
 	/**
 	 * sortObject() - Sorts an object based on its values.
 	 * @param arg0_object {Object} - The object to sort.

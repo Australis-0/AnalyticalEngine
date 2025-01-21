@@ -9,7 +9,8 @@
 	/**
 	 * getAllTerrains() - Returns all terrain types.
 	 * @param {Object} [arg0_options]
-	 * @param {boolean} [arg0_options.return_object=false]
+	 *  @param {boolean} [arg0_options.return_keys=false]
+	 *  @param {boolean} [arg0_options.return_object=false]
 	 *
 	 * @returns {Array<Object>|Object}
 	 */
@@ -18,6 +19,7 @@
 		var options = (arg0_options) ? arg0_options : {};
 
 		//Declare local isntance variables
+		var all_terrain_keys = [];
 		var all_terrains = [];
 		var return_obj = {};
 		var terrains_list = Game.terrainManager.terrains;
@@ -26,11 +28,13 @@
 		for (var i = 0; i < terrains_list.size(); i++) {
 			var local_terrain = terrains_list.get(i);
 
+			all_terrain_keys.push(local_terrain.Name);
 			all_terrains.push(local_terrain);
 			return_obj[i] = local_terrain;
 		}
 
 		//Return statement
+		if (options.return_keys) return all_terrain_keys;
 		return (!options.return_object) ?
 			all_terrains : return_obj;
 	}
@@ -43,7 +47,7 @@
 		var terrain_exists = [false, ""]; //[terrain_exists, terrain_obj];
 		var terrains_list = Game.terrainManager.terrains;
 
-		//Guard clause if terrains_list matches ID; or is object
+		//Guard clause if name matches ID; or is object
 		if (typeof name == "object") return name;
 		if (!isNaN(name)) return terrains_list.get(name);
 

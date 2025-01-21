@@ -99,7 +99,7 @@
 						interface_obj.logic_loop = updateProvinceTerrainEditor();
 				}
 		};
-		global.on_province_click.EDITOR_MAPS_EDIT_TERRAIN = function (arg0_province_id) { //[WIP] - Finish function body
+		global.on_province_click.EDITOR_MAPS_EDIT_TERRAIN = function (arg0_province_id) {
 			//Convert from parameters
 			var province_id = arg0_province_id;
 
@@ -132,13 +132,12 @@
 				var display_text_el = getElement(interface_obj, "province_terrain_editor_text");
 
 				//Refresh province terrain editor display
-				if (display_text_el.elements[0]) {
+				if (display_text_el.elements[0])
 					display_text_el.elements[0].setText(
 						"Province Name: " + current_province_name +
 						"\nProvince Terrain: " + current_terrain_name +
 						"\nTotal Session Terrain Offset: " + interface_obj.total_session_offset + "/" + interface_obj.all_terrains.length
 					);
-				}
 			} catch (e) {
 				console.error(e);
 			}

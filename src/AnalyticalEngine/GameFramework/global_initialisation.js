@@ -35,7 +35,9 @@ var global = {
 	function initGlobal () {
 		this.main = {
 			events: {}, //Contains all Events instantiated via Nashorn in-game.
-			gamestate: {}, //Contains the current Gamestate, i.e. all variables for this particular savegame.
+			gamestate: {
+				global: {} //Contains all Global-scope variables declared for this particular savegame.
+			}, //Contains the current Gamestate, i.e. all variables for this particular savegame.
 			interfaces: {}, //Contains all Menus instantiated via Nashorn in-game.
 
 			//Map (Provinces and assoiated data structures)

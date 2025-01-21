@@ -25,7 +25,6 @@
 			var old_date_obj = date_obj.old_date_obj;
 			var new_date_obj = date_obj.new_date_obj;
 
-			//console.log(old_date_obj, new_date_obj);
 			//Hour handler
 			if (old_date_obj.hour != new_date_obj.hour) {
 				//console.log("New hour: ", new_date_obj.hour);
@@ -34,6 +33,7 @@
 			//Day handler
 			if (old_date_obj.day != new_date_obj.day) {
 				//console.log("New day: ", new_date_obj.day);
+				parseOnGameDailyInterval();
 			}
 
 			//Month handler

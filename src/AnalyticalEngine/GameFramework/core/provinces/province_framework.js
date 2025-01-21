@@ -157,6 +157,20 @@
 			province_owner.getCivTag() : province_owner;
 	}
 
+	function getProvinceResource (arg0_province_name, arg1_options) {
+		//Convert from parameters
+		var province_name = arg0_province_name;
+		var options = (arg1_options) ? arg1_options : {};
+
+		//Declare local instance variables
+		var province_obj = getProvince(province_name);
+		var province_resource_id = province_obj.getResourceID();
+
+		//Return statement
+		return (!options.return_key) ?
+			getResource(province_resource_id) : province_resource_id;
+	}
+
 	function getProvinceTerrain (arg0_province_name, arg1_options) {
 		//Convert from parameters
 		var province_name = arg0_province_name;
