@@ -33,7 +33,11 @@
 			options.event_id + "-" + generateRandomID(main.events) :
 			"default_event-" + generateRandomID(main.events);
 		if (!options.event_type) options.event_type = "civ_event";
-		if (!options.options) options.options = {};
+		if (!options.options) options.options = {
+			okay: {
+				name: "Okay"
+			}
+		};
 		if (options.province_id != undefined) {
 			var province_obj = getProvince(options.province_id);
 
@@ -195,6 +199,11 @@
 		}
 	}
 
+	/**
+	 * eventOptionHandler() - Handles any events on option click.
+	 * @param {String} arg0_event_id - The event ID that is passed to the handler. The original event can be found by truncating characters after the '-'.
+	 * @param {String} arg1_option_id - The option ID passed to the handler.
+	 */
 	function eventOptionHandler (arg0_event_id, arg1_option_id) {
 		//Convert from parameters
 		var event_id = arg0_event_id;
