@@ -8,6 +8,7 @@ setTimeout(function(){
 
 	setTimeout(function(){
 		//Initialise individual EventHandlers
+		initialiseOnDateChangeHandler();
 		initialiseOnPageChangeHandler();
 		initialiseOnclickHandler();
 		initialiseOnMapmodeChangeHandler();

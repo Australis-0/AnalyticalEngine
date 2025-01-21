@@ -102,6 +102,36 @@
 	 * initialisePostLoadingEventHandlers() - Initialises event handlers after the game is loaded.
 	 */
 	function initialisePostLoadingEventHandlers () {
+		//Date handler
+		declareEventHandler("on_date_change", {
+			conditional_function: function () {
+				//Declare local instance variables
+				var current_date_obj = getCurrentDate();
+
+				var current_date = JSON.stringify(current_date_obj);
+
+				if (current_date)
+					try {
+						var date_change = false;
+
+						if (!global.cache.current_date) global.cache.current_date = current_date;
+						if (global.cache.current_date != current_date) {
+							var old_cache_date = JSON.parse(global.cache.current_date);
+							date_change = true;
+						}
+						global.cache.current_date = current_date;
+
+						//Return statement
+						if (date_change)
+							return {
+								old_date_obj: old_cache_date,
+								new_date_obj: current_date_obj
+							};
+					} catch (e) {
+						console.error(e.message);
+					}
+			}
+		});
 		//Map handler
 		declareEventHandler("on_mapmode_change", {
 			conditional_function: function () {
