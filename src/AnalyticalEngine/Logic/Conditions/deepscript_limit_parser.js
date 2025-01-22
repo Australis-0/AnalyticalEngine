@@ -17,6 +17,8 @@
 	 * @param {Object} [arg1_options]
 	 *  @param {number} [arg1_options.depth=0] - Optimisation parameter. The current recursive depth.
 	 *  @param {Array<Object>} [arg1_options.scopes]
+	 *
+	 * @returns {Object<{boolean: boolean, scopes: Array<Object> }>}
 	 */
 	function parseLimit (arg0_scope, arg1_options) { //[WIP] - Finish function body
 		//Convert from parameters
@@ -32,7 +34,7 @@
 		//Declare local instance variables
 		var all_recursive_scope_keys = getAllObjectKeys(scope, { include_parent_keys: true });
 		var all_scope_keys = Object.keys(scope);
-		var last_scope_obj = options.scopes[options.scopes.length - 1];
+		var last_scope_obj = JSON.parse(JSON.stringify(options.scopes[options.scopes.length - 1]));
 		var local_checks = 0;
 
 		for (var i = 0; i < all_recursive_scope_keys.length; i++) {
@@ -66,7 +68,7 @@
 		for (var i = 0; i < all_scope_keys.length; i++) {
 			var local_value = getList(scope[all_scope_keys[i]]);
 
-			//Recursive parsers/scoping
+			//Recursive parsers/scoping - [WIP] - Rework to handle object returns
 			{
 				if (all_scope_keys[i] == "limit" || all_scope_keys[i].startsWith("limit_")) {
 					var new_options = JSON.parse(JSON.stringify(options));
@@ -160,19 +162,94 @@
 
 		//1.1. International Organisation Scope Conditions
 		//1.2. Resource Scope Conditions; check for all last_scope_obj.resource_types
-		if (last_scope_obj.scope_type == "resource")
+		if (last_scope_obj.scope_type == "resource") {
+			var resource_checks = [];
+			var total_resource_checks = 0;
+			var valid_resources = [];
+
+			for (var i = 0; i < last_scope_obj.resource_types.length; i++)
+				resource_checks.push(0);
+
+			//1. Iterate over all_scope_keys and fetch resource_checks
 			for (var i = 0; i < all_scope_keys.length; i++) {
+				var local_value = getList(scope[all_scope_keys[i]]);
+
+				if (all_scope_keys[i] == "price_is" || all_scope_keys[i] == "price_is_equal_to") {
+					total_resource_checks++;
+					for (var x = 0; x < last_scope_obj.resource_types.length; x++)
+						if (priceIs(last_scope_obj.resource_types[x], local_value[0]))
+							resource_checks[x]++;
+				}
+				if (all_scope_keys[i] == "price_is_geq") {
+					total_resource_checks++;
+					for (var x = 0; x < last_scope_obj.resource_types.length; x++)
+						if (priceIsGEQ(last_scope_obj.resource_types[x], local_value[0]))
+							resource_checks[x]++;
+				}
+				if (all_scope_keys[i] == "price_is_greater_than") {
+					total_resource_checks++;
+					for (var x = 0; x < last_scope_obj.resource_types.length; x++)
+						if (priceIsGreaterThan(last_scope_obj.resource_types[x], local_value[0]))
+							resource_checks[x]++;
+				}
+				if (all_scope_keys[i] == "price_is_leq") {
+					total_resource_checks++;
+					for (var x = 0; x < last_scope_obj.resource_types.length; x++)
+						if (priceIsLEQ(last_scope_obj.resource_types[x], local_value[0]))
+							resource_checks[x]++;
+				}
+				if (all_scope_keys[i] == "price_is_less_than") {
+					total_resource_checks++;
+					for (var x = 0; x < last_scope_obj.resource_types.length; x++)
+						if (priceIsLessThan(last_scope_obj.resource_types[x], local_value[0]))
+							resource_checks[x]++;
+				}
+
 
 			}
 
+			//KEEP AT BOTTOM OF LOCAL SCOPE!
+			//2. Iterate over all resource_checks to append valid checks to valid_resources
+			for (var i = 0; i < resource_checks.length; i++) {
+				var local_resource_name = last_scope_obj.resource_types[i];
+				var local_return_true = false;
+
+				if (options.operator == "and")
+					if (resource_checks[i] >= total_resource_checks) local_return_true = true;
+				if (options.operator == "not")
+					if (resource_checks[i] == 0) local_return_true = true;
+				if (options.operator == "or")
+					if (resource_checks[i] > 0) local_return_true = true;
+				if (options.operator == "xor")
+					if (resource_checks[i] == 1) local_return_true = true;
+
+				if (local_return_true)
+					valid_resources.push(local_resource_name);
+			}
+
+			//3. Append to options.scopes
+			scopes.push({
+				scope_type: "resource",
+				resource_types: valid_resources
+			});
+		}
+
 		//Return statement; AND/NOT/OR/XOR handler
+		var return_true = false;
+
 		if (options.operator == "and")
-			if (local_checks >= all_scope_keys.length) return true;
+			if (local_checks >= all_scope_keys.length) return_true = true;
 		if (options.operator == "not")
-			if (local_checks == 0) return true;
+			if (local_checks == 0) return_true = true;
 		if (options.operator == "or")
-			if (local_checks > 0) return true;
+			if (local_checks > 0) return_true = true;
 		if (options.operator == "xor")
-			if (local_checks == 1) return true;
+			if (local_checks == 1) return_true = true;
+
+		if (return_true)
+			return {
+				boolean: true,
+				scopes: options.scopes
+			};
 	}
 }

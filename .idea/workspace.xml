@@ -5,20 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09b6f7f8-b868-43e9-b471-ac1dbd15fa3b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/map/map_resources_framework.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/ui/editors/mod_editor/province_resources_editor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Conditions/deepscript_conditions_global_scope.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Conditions/deepscript_limit_parser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Effects/deepscript_effect_parser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Scopes/deepscript_scope_parser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Conditions/deepscript_conditions_global_scope_resources.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/map/map_terrain_framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/map/map_terrain_framework.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/provinces/province_framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/provinces/province_framework.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/global_initialisation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/global_initialisation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/startup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/startup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/ui/editors/province_terrain_editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/ui/editors/province_terrain_editor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/JS/objects_basic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/objects_basic.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Parsers/deepscript_logic_loop.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Parsers/deepscript_logic_loop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Conditions/deepscript_limit_parser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Conditions/deepscript_limit_parser.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,7 +207,7 @@
       <workItem from="1734466614497" duration="11042000" />
       <workItem from="1734809856493" duration="231890000" />
       <workItem from="1737191569663" duration="7789000" />
-      <workItem from="1737200274429" duration="72165000" />
+      <workItem from="1737200274429" duration="75336000" />
     </task>
     <servers />
   </component>
