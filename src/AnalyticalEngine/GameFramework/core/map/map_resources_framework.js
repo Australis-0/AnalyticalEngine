@@ -37,6 +37,28 @@
 			all_resources : return_obj;
 	}
 
+	function getGlobalResourceProduction (arg0_resource_name, arg1_options) {
+		//Convert from parameters
+		var resource_name = arg0_resource_name;
+		var options = (arg1_options) ? arg1_options : {};
+
+		//Initialise options
+		if (!options.all_provinces) options.all_provinces = getAllProvinces();
+
+		//Declare local instance variables
+		var resource_id = getResourceID(resource_name);
+		var sum_goods_production = 0;
+
+		for (var i = 0; i < options.all_provinces.length; i++)
+			if (options.all_provinces[i].getResourceID() == resource_id)
+				sum_goods_production += returnSafeNumber(
+					ResourcesManager.getProducedGoods(options.all_provinces[i].getProvinceID())
+				);
+
+		//Return statement
+		return sum_goods_production;
+	}
+
 	function getResource (arg0_resource_name) {
 		//Convert from parameters
 		var name = arg0_resource_name;

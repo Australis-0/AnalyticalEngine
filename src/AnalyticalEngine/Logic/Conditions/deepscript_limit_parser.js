@@ -174,6 +174,7 @@
 			for (var i = 0; i < all_scope_keys.length; i++) {
 				var local_value = getList(scope[all_scope_keys[i]]);
 
+				//price_is
 				if (all_scope_keys[i] == "price_is" || all_scope_keys[i] == "price_is_equal_to") {
 					total_resource_checks++;
 					for (var x = 0; x < last_scope_obj.resource_types.length; x++)
@@ -205,7 +206,99 @@
 							resource_checks[x]++;
 				}
 
-
+				//civilisations_have_market_share
+				if (all_scope_keys[i] == "civilisations_have_market_share" || all_scope_keys[i] == "civilisations_have_market_share_equal_to") {
+					total_resource_checks++;
+					for (var x = 0; x < last_scope_obj.resource_types.length; x++)
+						if (civilisationsHaveMarketShare(local_value[0].civilisations, last_scope_obj.resource_types[x], local_value[0].value))
+							resource_checks[x]++;
+				}
+				if (all_scope_keys[i] == "civilisations_have_market_share_geq") {
+					total_resource_checks++;
+					for (var x = 0; x < last_scope_obj.resource_types.length; x++)
+						if (civilisationsHaveMarketShareGEQ(local_value[0].civilisations, last_scope_obj.resource_types[x], local_value[0].value))
+							resource_checks[x]++;
+				}
+				if (all_scope_keys[i] == "civilisations_have_market_share_greater_than") {
+					total_resource_checks++;
+					for (var x = 0; x < last_scope_obj.resource_types.length; x++)
+						if (civilisationsHaveMarketShareGreaterThan(local_value[0].civilisations, last_scope_obj.resource_types[x], local_value[0].value))
+							resource_checks[x]++;
+				}
+				if (all_scope_keys[i] == "civilisations_have_market_share_leq") {
+					total_resource_checks++;
+					for (var x = 0; x < last_scope_obj.resource_types.length; x++)
+						if (civilisationsHaveMarketShareLEQ(local_value[0].civilisations, last_scope_obj.resource_types[x], local_value[0].value))
+							resource_checks[x]++;
+				}
+				if (all_scope_keys[i] == "civilisations_have_market_share_less_than") {
+					total_resource_checks++;
+					for (var x = 0; x < last_scope_obj.resource_types.length; x++)
+						if (civilisationsHaveMarketShareLessThan(local_value[0].civilisations, last_scope_obj.resource_types[x], local_value[0].value))
+							resource_checks[x]++;
+				}
+				//global_production_is
+				if (all_scope_keys[i] == "global_production_is" || all_scope_keys[i] == "global_production_is_equal_to") {
+					total_resource_checks++;
+					for (var x = 0; x < last_scope_obj.resource_types.length; x++)
+						if (globalProductionIs(last_scope_obj.resource_types[x], local_value[0]))
+							resource_checks[x]++;
+				}
+				if (all_scope_keys[i] == "global_production_is_geq") {
+					total_resource_checks++;
+					for (var x = 0; x < last_scope_obj.resource_types.length; x++)
+						if (globalProductionIsGEQ(last_scope_obj.resource_types[x], local_value[0]))
+							resource_checks[x]++;
+				}
+				if (all_scope_keys[i] == "global_production_is_greater_than") {
+					total_resource_checks++;
+					for (var x = 0; x < last_scope_obj.resource_types.length; x++)
+						if (globalProductionIsGreaterThan(last_scope_obj.resource_types[x], local_value[0]))
+							resource_checks[x]++;
+				}
+				if (all_scope_keys[i] == "global_production_is_leq") {
+					total_resource_checks++;
+					for (var x = 0; x < last_scope_obj.resource_types.length; x++)
+						if (globalProductionIsLEQ(last_scope_obj.resource_types[x], local_value[0]))
+							resource_checks[x]++;
+				}
+				if (all_scope_keys[i] == "global_production_is_less_than") {
+					total_resource_checks++;
+					for (var x = 0; x < last_scope_obj.resource_types.length; x++)
+						if (globalProductionIsLessThan(last_scope_obj.resource_types[x], local_value[0]))
+							resource_checks[x]++;
+				}
+				//production_is
+				if (all_scope_keys[i] == "production_is" || all_scope_keys[i] == "production_is_equal_to") {
+					total_resource_checks++;
+					for (var x = 0; x < last_scope_obj.resource_types.length; x++)
+						if (productionIs(local_value[0].civilisations, last_scope_obj.resource_types[x], local_value[0].value))
+							resource_checks[x]++;
+				}
+				if (all_scope_keys[i] == "production_is_geq") {
+					total_resource_checks++;
+					for (var x = 0; x < last_scope_obj.resource_types.length; x++)
+						if (productionIsGEQ(local_value[0].civilisations, last_scope_obj.resource_types[x], local_value[0].value))
+							resource_checks[x]++;
+				}
+				if (all_scope_keys[i] == "production_is_greater_than") {
+					total_resource_checks++;
+					for (var x = 0; x < last_scope_obj.resource_types.length; x++)
+						if (productionIsGreaterThan(local_value[0].civilisations, last_scope_obj.resource_types[x], local_value[0].value))
+							resource_checks[x]++;
+				}
+				if (all_scope_keys[i] == "production_is_leq") {
+					total_resource_checks++;
+					for (var x = 0; x < last_scope_obj.resource_types.length; x++)
+						if (productionIsLEQ(local_value[0].civilisations, last_scope_obj.resource_types[x], local_value[0].value))
+							resource_checks[x]++;
+				}
+				if (all_scope_keys[i] == "production_is_less_than") {
+					total_resource_checks++;
+					for (var x = 0; x < last_scope_obj.resource_types.length; x++)
+						if (productionIsLessThan(local_value[0].civilisations, last_scope_obj.resource_types[x], local_value[0].value))
+							resource_checks[x]++;
+				}
 			}
 
 			//KEEP AT BOTTOM OF LOCAL SCOPE!
@@ -232,6 +325,20 @@
 				scope_type: "resource",
 				resource_types: valid_resources
 			});
+		}
+
+		//2. Civilisation Scope Conditions; check for all last_scope_obj.civ_tags
+		if (last_scope_obj.scope_type == "civilisation") {
+			var civilisation_checks = [];
+			var total_civilisation_checks = 0;
+			var valid_civ_tags = [];
+
+			for (var i = 0; i < last_scope_obj.civ_tags.length; i++)
+				civilisation_checks.push(0);
+
+			//1. Iterate over all_scope_keys and fetch civilisation_checks
+			//KEEP AT BOTTOM OF LOCAL SCOPE!
+			//2. Iterate over all civilisation_checks to append valid checks to valid_civ_tags
 		}
 
 		//Return statement; AND/NOT/OR/XOR handler
