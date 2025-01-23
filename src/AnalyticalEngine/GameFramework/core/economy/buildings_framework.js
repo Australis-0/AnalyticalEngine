@@ -159,12 +159,33 @@
 		return province_buildings_obj;
 	}
 
+	/**
+	 * getTotalBuildings() - Fetches the total number of buildings a Civilisation owns.
+	 * @param {String} arg0_civ_name
+	 * @param {Object} arg1_options
+	 *  @param {Object} [arg1_options.all_buildings=getAllBuildings()] - Optimisation parameter.
+	 *  @param {boolean} [arg1_options.exclude_occupied_provinces=false]
+	 *  @param {boolean} [arg1_options.return_max_value=false]
+	 * @returns {{}}
+	 */
 	function getTotalBuildings (arg0_civ_name, arg1_options) {
 		//Convert from parameters
 		var civ_name = arg0_civ_name;
 		var options = (arg1_options) ? arg1_options : {};
 
+		if (!options.all_buildings) options.all_buildings = getAllBuildings();
+
 		//Declare local instance variables
+		var all_civ_provinces = getCivilisationProvinces(civ_name, options);
+		var civ_buildings_obj = {};
+
+		//Iterate over all_civ_provinces and merge civ_buildings_obj
+		for (var i = 0; i < all_civ_provinces.length; i++)
+			civ_buildings_obj = mergeObjects(civ_buildings_obj,
+				getProvinceBuildings(all_civ_provinces[i], options));
+
+		//Return statement
+		return civ_buildings_obj;
 	}
 
 	/**
