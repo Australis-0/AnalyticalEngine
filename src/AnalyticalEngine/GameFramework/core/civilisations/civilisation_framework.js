@@ -132,6 +132,14 @@
 		return localisation_value;
 	}
 
+	function getCivilisationBuildings (arg0_civ_name) { //[WIP] - Finish function body
+		//Convert from parameters
+		var civ_name = arg0_civ_name;
+
+		//Declare local instance variables#
+		var civilisation_obj = getCivilisation(civ_name);
+	}
+
 	function getCivilisationCapital (arg0_civ_name) {
 		//Convert from parameters
 		var civ_name = arg0_civ_name;
@@ -198,6 +206,51 @@
 		}
 	}
 
+	/**
+	 * getCivilisationProvinces() - Returns all provinces belonging to a given civilisation.
+	 * @param {String} arg0_civ_name
+	 * @param {Object} [arg1_options]
+	 *  @param {boolean} [arg1_options.exclude_occupied_provinces=false]
+	 *  @param {boolean} [arg1_options.return_keys=false]
+	 *
+	 * @returns {Array<Object>|Array<String>}
+	 */
+	function getCivilisationProvinces (arg0_civ_name, arg1_options) {
+		//Convert from parameters
+		var civ_name = arg0_civ_name;
+		var options = (arg1_options) ? arg1_options : {};
+
+		//Declare local instance variables
+		var all_civ_province_ids = [];
+		var all_civ_provinces = [];
+		var all_provinces = getAllProvinces();
+		var civ_tag = getCurrentTag(civ_name);
+
+		//Iterate over all_provinces
+		for (var i = 0; i < all_provinces.length; i++)
+			if (getProvinceOwner(all_provinces[i]) == civ_tag) {
+				var include_province = true;
+
+				if (options.exclude_occupied_provinces)
+					if (all_provinces[i].isOccupied())
+						include_province = false;
+
+				if (include_province) {
+					all_civ_province_ids.push(all_provinces[i].getProvinceID());
+					all_civ_provinces.push(all_provinces[i]);
+				}
+			}
+
+		//Return statement
+		return (!options.return_keys) ? all_civ_provinces : all_civ_province_ids;
+	}
+
+	/**
+	 * getCurrentTag() - Fetches the current CivTag of a given civilisation.
+	 * @param {String} arg0_civ_name
+	 *
+	 * @returns {string}
+	 */
 	function getCurrentTag (arg0_civ_name) {
 		//Convert from parameters
 		var civ_name = arg0_civ_name;
@@ -210,6 +263,13 @@
 			return civ_obj.civData.t;
 	}
 
+	/**
+	 * setCivilisationName() - Changes the name of a civilisation within a given savegame.
+	 * @param {String} arg0_civ_name
+	 * @param {String} arg1_new_civ_name
+	 * @param {Object} [arg2_options]
+	 *  @param {boolean} [arg2_options.do_not_reload=false]
+	 */
 	function setCivilisationName (arg0_civ_name, arg1_new_civ_name, arg2_options) {
 		//Convert from parameters
 		var civ_name = arg0_civ_name;

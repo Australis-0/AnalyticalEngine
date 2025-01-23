@@ -74,7 +74,9 @@
 					var new_options = JSON.parse(JSON.stringify(options));
 					var parsed_limit = parseLimit(local_value[0], new_options);
 
-					if (parsed_limit) local_checks++;
+					if (parsed_limit)
+						if (parsed_limit.boolean)
+							local_checks++;
 				}
 
 				//And/Not/Or/Xor parser
@@ -84,7 +86,9 @@
 						new_options.operator = local_boolean_type;
 					var parsed_limit = parseLimit(local_value[0], new_options);
 
-					if (parsed_limit) local_checks++;
+					if (parsed_limit)
+						if (parsed_limit.boolean)
+							local_checks++;
 				}
 
 				//1. Global-Scope Conditions.
@@ -95,7 +99,9 @@
 							new_options.scopes.push({ scope_type: "global" });
 						var parsed_limit = parseLimit(local_value[0], new_options);
 
-						if (parsed_limit) local_checks++;
+						if (parsed_limit)
+							if (parsed_limit.boolean)
+								local_checks++;
 					}
 
 					if (all_scope_keys[i] == "all_resources" || all_scope_keys[i].startsWith("all_resources_")) {
@@ -104,7 +110,9 @@
 							new_options.scopes.push({ scope_type: "resource", resource_types: getAllResources({ return_keys: true }) });
 						var parsed_limit = parseLimit(local_value[0], new_options);
 
-						if (parsed_limit) local_checks++;
+						if (parsed_limit)
+							if (parsed_limit.boolean)
+								local_checks++;
 					}
 				}
 			}
@@ -321,14 +329,14 @@
 			}
 
 			//3. Append to options.scopes
-			scopes.push({
+			options.scopes.push({
 				scope_type: "resource",
 				resource_types: valid_resources
 			});
 		}
 
 		//2. Civilisation Scope Conditions; check for all last_scope_obj.civ_tags
-		if (last_scope_obj.scope_type == "civilisation") {
+		if (last_scope_obj.scope_type == "civilisation") { //[WIP] - Finish function body
 			var civilisation_checks = [];
 			var total_civilisation_checks = 0;
 			var valid_civ_tags = [];
@@ -337,8 +345,37 @@
 				civilisation_checks.push(0);
 
 			//1. Iterate over all_scope_keys and fetch civilisation_checks
+			for (var i = 0; i < all_scope_keys.length; i++) {
+				var local_value = getList(scope[all_scope_keys[i]]);
+
+				//<building_category_key>_buildings_constructed
+
+			}
+
 			//KEEP AT BOTTOM OF LOCAL SCOPE!
 			//2. Iterate over all civilisation_checks to append valid checks to valid_civ_tags
+			for (var i = 0; i < civilisation_checks.length; i++) {
+				var local_civ_tag = last_scope_obj.civ_tags[i];
+				var local_return_true = false;
+
+				if (options.operator == "and")
+					if (civilisation_checks[i] >= total_civilisation_checks) local_return_true = true;
+				if (options.operator == "not")
+					if (civilisation_checks[i] == 0) local_return_true = true;
+				if (options.operator == "or")
+					if (civilisation_checks[i] > 0) local_return_true = true;
+				if (options.operator == "xor")
+					if (civilisation_checks[i] == 1) local_return_true = true;
+
+				if (local_return_true)
+					valid_civ_tags.push(local_civ_tag);
+			}
+
+			//3. Append to options.scopes
+			options.scopes.push({
+				scope_type: "civilisation",
+				resource_types: valid_civ_tags
+			});
 		}
 
 		//Return statement; AND/NOT/OR/XOR handler
