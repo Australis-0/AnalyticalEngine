@@ -345,12 +345,224 @@
 				civilisation_checks.push(0);
 
 			//1. Iterate over all_scope_keys and fetch civilisation_checks
-			for (var i = 0; i < all_scope_keys.length; i++) {
+			for (var i = 0; i < all_scope_keys.length; i++) { //[WIP] - Add List<String, CivTag> parsing; check typeof local_value[0]
 				var local_value = getList(scope[all_scope_keys[i]]);
 
 				//<building_category_key>_buildings_constructed
+				if (all_scope_keys[i].endsWith("_buildings_constructed") || all_scope_keys[i].endsWith("_constructed_is_equal_to")) {
+					var local_building_category_key = all_scope_keys[i].replace("_buildings_constructed", "")
+						.replace("_constructed_is_equal_to", "");
+					var old_local_value;
 
-			}
+					total_civilisation_checks++;
+
+					if (Array.isArray(local_value[0])) {
+						old_local_value = JSON.parse(JSON.stringify(local_value));
+						local_value[0] = getCivilisationsBuildingCategoryValue(last_scope_obj.civ_tags, local_building_category_key);
+					}
+					if (civilisationBuildingCategoryConstructedIs(last_scope_obj.civ_tags, local_building_category_key, local_value[0]))
+						civilisation_checks[x]++;
+					if (old_local_value != undefined)
+						local_value = old_local_value;
+				}
+				if (all_scope_keys[i].endsWith("_constructed_is_geq")) {
+					var local_building_category_key = all_scope_keys[i].replace("_constructed_is_geq", "");
+
+					total_civilisation_checks++;
+
+					if (Array.isArray(local_value[0])) {
+						old_local_value = JSON.parse(JSON.stringify(local_value));
+						local_value[0] = getCivilisationsBuildingCategoryValue(last_scope_obj.civ_tags, local_building_category_key);
+					}
+					if (civilisationBuildingCategoryConstructedIsGEQ(last_scope_obj.civ_tags, local_building_category_key, local_value[0]))
+						civilisation_checks[x]++;
+					if (old_local_value != undefined)
+						local_value = old_local_value;
+				}
+				if (all_scope_keys[i].endsWith("_constructed_is_greater_than")) {
+					var local_building_category_key = all_scope_keys[i].replace("_constructed_is_greater_than", "");
+
+					total_civilisation_checks++;
+
+					if (Array.isArray(local_value[0])) {
+						old_local_value = JSON.parse(JSON.stringify(local_value));
+						local_value[0] = getCivilisationsBuildingCategoryValue(last_scope_obj.civ_tags, local_building_category_key);
+					}
+					if (civilisationBuildingCategoryConstructedIsGreaterThan(last_scope_obj.civ_tags, local_building_category_key, local_value[0]))
+						civilisation_checks[x]++;
+					if (old_local_value != undefined)
+						local_value = old_local_value;
+
+				}
+				if (all_scope_keys[i].endsWith("_constructed_is_leq")) {
+					var local_building_category_key = all_scope_keys[i].replace("_constructed_is_leq", "");
+
+					total_civilisation_checks++;
+
+					if (Array.isArray(local_value[0])) {
+						old_local_value = JSON.parse(JSON.stringify(local_value));
+						local_value[0] = getCivilisationsBuildingCategoryValue(last_scope_obj.civ_tags, local_building_category_key);
+					}
+					if (civilisationBuildingCategoryConstructedIsLEQ(last_scope_obj.civ_tags, local_building_category_key, local_value[0]))
+						civilisation_checks[x]++;
+					if (old_local_value != undefined)
+						local_value = old_local_value;
+
+				}
+				if (all_scope_keys[i].endsWith("_constructed_is_less_than")) {
+					var local_building_category_key = all_scope_keys[i].replace("_constructed_is_less_than", "");
+
+					total_civilisation_checks++;
+
+					if (Array.isArray(local_value[0])) {
+						old_local_value = JSON.parse(JSON.stringify(local_value));
+						local_value[0] = getCivilisationsBuildingCategoryValue(last_scope_obj.civ_tags, local_building_category_key);
+					}
+					if (civilisationBuildingCategoryConstructedIsLessThan(last_scope_obj.civ_tags, local_building_category_key, local_value[0]))
+						civilisation_checks[x]++;
+					if (old_local_value != undefined)
+						local_value = old_local_value;
+
+				}
+
+				//<building_key>_constructed
+				if (all_scope_keys[i].endsWith("_constructed") || all_scope_keys[i].endsWith("_constructed_is_equal_to")) {
+					var local_building_key = all_scope_keys[i].replace("_constructed", "")
+						.replace("_constructed_is_equal_to", "");
+
+					total_civilisation_checks++;
+
+					if (Array.isArray(local_value[0])) {
+						old_local_value = JSON.parse(JSON.stringify(local_value));
+						local_value[0] = getCivilisationsBuildingValue(last_scope_obj.civ_tags, local_building_key);
+					}
+					if (civilisationBuildingConstructedIs(last_scope_obj.civ_tags, local_building_key, local_value[0]))
+						civilisation_checks[x]++;
+					if (old_local_value != undefined)
+						local_value = old_local_value;
+				}
+				if (all_scope_keys[i].endsWith("_constructed_is_geq")) {
+					var local_building_key = all_scope_keys[i].replace("_constructed_is_geq", "");
+
+					total_civilisation_checks++;
+
+					if (Array.isArray(local_value[0])) {
+						old_local_value = JSON.parse(JSON.stringify(local_value));
+						local_value[0] = getCivilisationsBuildingValue(last_scope_obj.civ_tags, local_building_key);
+					}
+					if (civilisationBuildingConstructedIsGEQ(last_scope_obj.civ_tags, local_building_key, local_value[0]))
+						civilisation_checks[x]++;
+					if (old_local_value != undefined)
+						local_value = old_local_value;
+				}
+				if (all_scope_keys[i].endsWith("_constructed_is_greater_than")) {
+					var local_building_key = all_scope_keys[i].replace("_constructed_is_greater_than", "");
+
+					total_civilisation_checks++;
+
+					if (Array.isArray(local_value[0])) {
+						old_local_value = JSON.parse(JSON.stringify(local_value));
+						local_value[0] = getCivilisationsBuildingValue(last_scope_obj.civ_tags, local_building_key);
+					}
+					if (civilisationBuildingConstructedIsGreaterThan(last_scope_obj.civ_tags, local_building_key, local_value[0]))
+						civilisation_checks[x]++;
+					if (old_local_value != undefined)
+						local_value = old_local_value;
+				}
+				if (all_scope_keys[i].endsWith("_constructed_is_leq")) {
+					var local_building_key = all_scope_keys[i].replace("_constructed_is_leq", "");
+
+					total_civilisation_checks++;
+
+					if (Array.isArray(local_value[0])) {
+						old_local_value = JSON.parse(JSON.stringify(local_value));
+						local_value[0] = getCivilisationsBuildingValue(last_scope_obj.civ_tags, local_building_key);
+					}
+					if (civilisationBuildingConstructedIsLEQ(last_scope_obj.civ_tags, local_building_key, local_value[0]))
+						civilisation_checks[x]++;
+					if (old_local_value != undefined)
+						local_value = old_local_value;
+				}
+				if (all_scope_keys[i].endsWith("_constructed_is_less_than")) {
+					var local_building_key = all_scope_keys[i].replace("_constructed_is_less_than", "");
+
+					total_civilisation_checks++;
+
+					if (Array.isArray(local_value[0])) {
+						old_local_value = JSON.parse(JSON.stringify(local_value));
+						local_value[0] = getCivilisationsBuildingValue(last_scope_obj.civ_tags, local_building_key);
+					}
+					if (civilisationBuildingConstructedIsLessThan(last_scope_obj.civ_tags, local_building_key, local_value[0]))
+						civilisation_checks[x]++;
+					if (old_local_value != undefined)
+						local_value = old_local_value;
+				}
+
+				//unique_capital_buildings_constructed
+				if (all_scope_keys[i] == "unique_capital_buildings_constructed" || all_scope_keys[i] == "unique_capital_buildings_constructed_is_equal_to") {
+					total_civilisation_checks++;
+
+					if (Array.isArray(local_value[0])) {
+						old_local_value = JSON.parse(JSON.stringify(local_value));
+						local_value[0] = getCivilisationsUniqueCapitalBuildingsValue(last_scope_obj.civ_tags);
+					}
+					if (uniqueCapitalBuildingsConstructedIs(last_scope_obj.civ_tags, local_value[0]))
+						civilisation_checks[x]++;
+					if (old_local_value != undefined)
+						local_value = old_local_value;
+				}
+				if (all_scope_keys[i] == "unique_capital_buildings_constructed_is_geq") {
+					total_civilisation_checks++;
+
+					if (Array.isArray(local_value[0])) {
+						old_local_value = JSON.parse(JSON.stringify(local_value));
+						local_value[0] = getCivilisationsUniqueCapitalBuildingsValue(last_scope_obj.civ_tags);
+					}
+					if (uniqueCapitalBuildingsConstructedIsGEQ(last_scope_obj.civ_tags, local_value[0]))
+						civilisation_checks[x]++;
+					if (old_local_value != undefined)
+						local_value = old_local_value;
+				}
+				if (all_scope_keys[i] == "unique_capital_buildings_constructed_is_greater_than") {
+					total_civilisation_checks++;
+
+					if (Array.isArray(local_value[0])) {
+						old_local_value = JSON.parse(JSON.stringify(local_value));
+						local_value[0] = getCivilisationsUniqueCapitalBuildingsValue(last_scope_obj.civ_tags);
+					}
+					if (uniqueCapitalBuildingsConstructedIsGreaterThan(last_scope_obj.civ_tags, local_value[0]))
+						civilisation_checks[x]++;
+					if (old_local_value != undefined)
+						local_value = old_local_value;
+				}
+				if (all_scope_keys[i] == "unique_capital_buildings_constructed_is_leq") {
+					total_civilisation_checks++;
+
+					if (Array.isArray(local_value[0])) {
+						old_local_value = JSON.parse(JSON.stringify(local_value));
+						local_value[0] = getCivilisationsUniqueCapitalBuildingsValue(last_scope_obj.civ_tags);
+					}
+					if (uniqueCapitalBuildingsConstructedIsLEQ(last_scope_obj.civ_tags, local_value[0]))
+						civilisation_checks[x]++;
+					if (old_local_value != undefined)
+						local_value = old_local_value;
+				}
+				if (all_scope_keys[i] == "unique_capital_buildings_constructed_is_less_than") {
+					total_civilisation_checks++;
+
+					if (Array.isArray(local_value[0])) {
+						old_local_value = JSON.parse(JSON.stringify(local_value));
+						local_value[0] = getCivilisationsUniqueCapitalBuildingsValue(last_scope_obj.civ_tags);
+					}
+					if (uniqueCapitalBuildingsConstructedIsLessThan(last_scope_obj.civ_tags, local_value[0]))
+						civilisation_checks[x]++;
+					if (old_local_value != undefined)
+						local_value = old_local_value;
+				}
+
+				//economy_income_is
+
+ 			}
 
 			//KEEP AT BOTTOM OF LOCAL SCOPE!
 			//2. Iterate over all civilisation_checks to append valid checks to valid_civ_tags
@@ -374,7 +586,7 @@
 			//3. Append to options.scopes
 			options.scopes.push({
 				scope_type: "civilisation",
-				resource_types: valid_civ_tags
+				civ_tags: valid_civ_tags
 			});
 		}
 

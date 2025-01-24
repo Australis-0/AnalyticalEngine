@@ -119,6 +119,18 @@
 		return (building_exists[0]) ? building_exists[1] : undefined;
 	}
 
+	function getBuildingKey (arg0_building_name) {
+		//Convert from parameters
+		var building_name = arg0_building_name;
+
+		//Declare local instance variables
+		var building_obj = getBuilding(building_name, { return_object: true });
+
+		//Return statement
+		if (building_obj)
+			return building_obj.building_obj.Name[building_obj.index];
+	}
+
 	/**
 	 * getProvinceBuildings() - Returns an object of all buildings built in a province.
 	 * @param {String} arg0_province_name
@@ -166,7 +178,7 @@
 	 *  @param {Object} [arg1_options.all_buildings=getAllBuildings()] - Optimisation parameter.
 	 *  @param {boolean} [arg1_options.exclude_occupied_provinces=false]
 	 *  @param {boolean} [arg1_options.return_max_value=false]
-	 * @returns {{}}
+	 * @returns {Object}
 	 */
 	function getTotalBuildings (arg0_civ_name, arg1_options) {
 		//Convert from parameters
@@ -186,6 +198,45 @@
 
 		//Return statement
 		return civ_buildings_obj;
+	}
+
+	/**
+	 * getUniqueCapitalBuildingsConstructed() - Returns the number of unique capital buildings constructed
+	 * @param {String} arg0_civ_name
+	 * @param {Object} [arg1_options]
+	 *  @param {boolean} [arg1_options.capital_city_only=false]
+	 *  @param {boolean} [arg1_options.military_academy_only=false]
+	 *  @param {boolean} [arg1_options.military_academy_for_generals_only=false]
+	 *  @param {boolean} [arg1_options.supreme_court_only=false]
+	 *
+	 * @returns {number}
+	 */
+	function getUniqueCapitalBuildingsConstructed (arg0_civ_name, arg1_options) {
+		//Convert from parameters
+		var civ_name = arg0_civ_name;
+		var options = (arg1_options) ? arg1_options : {};
+
+		//Declare local instance variables
+		var capital_buildings_constructed = 0;
+		var civ_obj = getCivilisation(civ_name);
+
+		if (civ_obj) {
+			if (options.capital_city_only)
+				return civ_obj.getCapitalLevel();
+			capital_buildings_constructed += civ_obj.getCapitalLevel();
+			if (options.military_academy_only)
+				return civ_obj.getMilitaryAcademyLevel();
+			capital_buildings_constructed += civ_obj.getMilitaryAcademyLevel();
+			if (options.military_academy_for_generals_only)
+				return civ_obj.getMilitaryAcademyForGeneralsLevel();
+			capital_buildings_constructed += civ_obj.getMilitaryAcademyForGeneralsLevel();
+			if (options.supreme_court_only)
+				return civ_obj.getSupremeCourtLevel();
+			capital_buildings_constructed += civ_obj.getSupremeCourtLevel();
+		}
+
+		//Return statement
+		return capital_buildings_constructed;
 	}
 
 	/**

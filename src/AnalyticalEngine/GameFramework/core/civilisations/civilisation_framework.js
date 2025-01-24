@@ -132,14 +132,6 @@
 		return localisation_value;
 	}
 
-	function getCivilisationBuildings (arg0_civ_name) { //[WIP] - Finish function body
-		//Convert from parameters
-		var civ_name = arg0_civ_name;
-
-		//Declare local instance variables#
-		var civilisation_obj = getCivilisation(civ_name);
-	}
-
 	function getCivilisationCapital (arg0_civ_name) {
 		//Convert from parameters
 		var civ_name = arg0_civ_name;
