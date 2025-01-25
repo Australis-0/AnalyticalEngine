@@ -344,6 +344,278 @@
 			if (value < comparison_value)
 				return true;
 		}
+
+		function civilisationEconomyProductionIs (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(arg1_value);
+
+			//Declare local instance variables
+			var comparison_value = getCivilisationsProductionValue(civ_tags);
+
+			//Return statement
+			if (value == comparison_value)
+				return true;
+		}
+
+		function civilisationEconomyProductionIsLEQ (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(arg1_value);
+
+			//Declare local instance variables
+			var comparison_value = getCivilisationsProductionValue(civ_tags);
+
+			//Return statement
+			if (value <= comparison_value)
+				return true;
+		}
+
+		function civilisationEconomyProductionIsLessThan (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(arg1_value);
+
+			//Declare local instance variables
+			var comparison_value = getCivilisationsProductionValue(civ_tags);
+
+			//Return statement
+			if (value < comparison_value)
+				return true;
+		}
+
+		function civilisationEconomyProductionIsGEQ (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(arg1_value);
+
+			//Declare local instance variables
+			var comparison_value = getCivilisationsProductionValue(civ_tags);
+
+			//Return statement
+			if (value >= comparison_value)
+				return true;
+		}
+
+		function civilisationEconomyProductionIsGreaterThan (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(arg1_value);
+
+			//Declare local instance variables
+			var comparison_value = getCivilisationsProductionValue(civ_tags);
+
+			//Return statement
+			if (value > comparison_value)
+				return true;
+		}
+
+		function civilisationEconomyTaxationIs (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(arg1_value);
+
+			//Declare local instance variables
+			var comparison_value = getCivilisationsTaxationValue(civ_tags);
+
+			//Return statement
+			if (value == comparison_value)
+				return true;
+		}
+
+		function civilisationEconomyTaxationIsGEQ (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(arg1_value);
+
+			//Declare local instance variables
+			var comparison_value = getCivilisationsTaxationValue(civ_tags);
+
+			//Return statement
+			if (value >= comparison_value)
+				return true;
+		}
+
+		function civilisationEconomyTaxationIsGreaterThan (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(arg1_value);
+
+			//Declare local instance variables
+			var comparison_value = getCivilisationsTaxationValue(civ_tags);
+
+			//Return statement
+			if (value > comparison_value)
+				return true;
+		}
+
+		function civilisationEconomyTaxationIsLEQ (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(arg1_value);
+
+			//Declare local instance variables
+			var comparison_value = getCivilisationsTaxationValue(civ_tags);
+
+			//Return statement
+			if (value <= comparison_value)
+				return true;
+		}
+
+		function civilisationEconomyTaxationIsLessThan (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(arg1_value);
+
+			//Declare local instance variables
+			var comparison_value = getCivilisationsTaxationValue(civ_tags);
+
+			//Return statement
+			if (value < comparison_value)
+				return true;
+		}
+
+		function civilisationEconomyTotalIncomeIs (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(arg1_value);
+
+			//Declare local instance variables
+			var comparison_value = getCivilisationsTotalIncomeValue(civ_tags);
+
+			//Return statement
+			if (value == comparison_value)
+				return true;
+		}
+
+		function civilisationEconomyTotalIncomeIsGEQ (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(arg1_value);
+
+			//Declare local instance variables
+			var comparison_value = getCivilisationsTotalIncomeValue(civ_tags);
+
+			//Return statement
+			if (value >= comparison_value)
+				return true;
+		}
+
+		function civilisationEconomyTotalIncomeIsGreaterThan (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(arg1_value);
+
+			//Declare local instance variables
+			var comparison_value = getCivilisationsTotalIncomeValue(civ_tags);
+
+			//Return statement
+			if (value > comparison_value)
+				return true;
+		}
+
+		function civilisationEconomyTotalIncomeIsLEQ (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(arg1_value);
+
+			//Declare local instance variables
+			var comparison_value = getCivilisationsTotalIncomeValue(civ_tags);
+
+			//Return statement
+			if (value <= comparison_value)
+				return true;
+		}
+
+		function civilisationEconomyTotalIncomeIsLessThan (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(arg1_value);
+
+			//Declare local instance variables
+			var comparison_value = getCivilisationsTotalIncomeValue(civ_tags);
+
+			//Return statement
+			if (value < comparison_value)
+				return true;
+		}
+
+		function civilisationMoneyIs (arg0_civ_tags) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(arg1_value);
+
+			//Declare local instance variables
+			var comparison_value = getCivilisationsMoneyValue(civ_tags);
+
+			//Return statement
+			if (value == comparison_value)
+				return true;
+		}
+
+		function civilisationMoneyIsGEQ (arg0_civ_tags) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(arg1_value);
+
+			//Declare local instance variables
+			var comparison_value = getCivilisationsMoneyValue(civ_tags);
+
+			//Return statement
+			if (value >= comparison_value)
+				return true;
+		}
+
+		function civilisationMoneyIsGreaterThan (arg0_civ_tags) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(arg1_value);
+
+			//Declare local instance variables
+			var comparison_value = getCivilisationsMoneyValue(civ_tags);
+
+			//Return statement
+			if (value > comparison_value)
+				return true;
+		}
+
+		function civilisationMoneyIsLEQ (arg0_civ_tags) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(arg1_value);
+
+			//Declare local instance variables
+			var comparison_value = getCivilisationsMoneyValue(civ_tags);
+
+			//Return statement
+			if (value <= comparison_value)
+				return true;
+		}
+
+		function civilisationMoneyIsLessThan (arg0_civ_tags) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(arg1_value);
+
+			//Declare local instance variables
+			var comparison_value = getCivilisationsMoneyValue(civ_tags);
+
+			//Return statement
+			if (value < comparison_value)
+				return true;
+		}
+	}
+
+	//Economy (Goods/Resources).
+	{
+		function civilisationHasResource (arg0_civ_tags, arg1_resource_types) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var resource_types = arg1_resource_types;
+
+			//Declare local instance variables
+			
+		}
 	}
 }
 

@@ -356,9 +356,9 @@
 
 					total_civilisation_checks++;
 
-					if (Array.isArray(local_value[0])) {
+					if (typeof local_value[0] == "string") { //This logic needs to be changed because if an array of CivTags is already provided, it will be local_value that is an array
 						old_local_value = JSON.parse(JSON.stringify(local_value));
-						local_value[0] = getCivilisationsBuildingCategoryValue(last_scope_obj.civ_tags, local_building_category_key);
+						local_value[0] = getCivilisationsBuildingCategoryValue(local_value, local_building_category_key);
 					}
 					if (civilisationBuildingCategoryConstructedIs(last_scope_obj.civ_tags, local_building_category_key, local_value[0]))
 						civilisation_checks[x]++;
@@ -370,9 +370,9 @@
 
 					total_civilisation_checks++;
 
-					if (Array.isArray(local_value[0])) {
+					if (typeof local_value[0] == "string") {
 						old_local_value = JSON.parse(JSON.stringify(local_value));
-						local_value[0] = getCivilisationsBuildingCategoryValue(last_scope_obj.civ_tags, local_building_category_key);
+						local_value[0] = getCivilisationsBuildingCategoryValue(local_value, local_building_category_key);
 					}
 					if (civilisationBuildingCategoryConstructedIsGEQ(last_scope_obj.civ_tags, local_building_category_key, local_value[0]))
 						civilisation_checks[x]++;
@@ -384,9 +384,9 @@
 
 					total_civilisation_checks++;
 
-					if (Array.isArray(local_value[0])) {
+					if (typeof local_value[0] == "string") {
 						old_local_value = JSON.parse(JSON.stringify(local_value));
-						local_value[0] = getCivilisationsBuildingCategoryValue(last_scope_obj.civ_tags, local_building_category_key);
+						local_value[0] = getCivilisationsBuildingCategoryValue(local_value, local_building_category_key);
 					}
 					if (civilisationBuildingCategoryConstructedIsGreaterThan(last_scope_obj.civ_tags, local_building_category_key, local_value[0]))
 						civilisation_checks[x]++;
@@ -399,9 +399,9 @@
 
 					total_civilisation_checks++;
 
-					if (Array.isArray(local_value[0])) {
+					if (typeof local_value[0] == "string") {
 						old_local_value = JSON.parse(JSON.stringify(local_value));
-						local_value[0] = getCivilisationsBuildingCategoryValue(last_scope_obj.civ_tags, local_building_category_key);
+						local_value[0] = getCivilisationsBuildingCategoryValue(local_value, local_building_category_key);
 					}
 					if (civilisationBuildingCategoryConstructedIsLEQ(last_scope_obj.civ_tags, local_building_category_key, local_value[0]))
 						civilisation_checks[x]++;
@@ -414,9 +414,9 @@
 
 					total_civilisation_checks++;
 
-					if (Array.isArray(local_value[0])) {
+					if (typeof local_value[0] == "string") {
 						old_local_value = JSON.parse(JSON.stringify(local_value));
-						local_value[0] = getCivilisationsBuildingCategoryValue(last_scope_obj.civ_tags, local_building_category_key);
+						local_value[0] = getCivilisationsBuildingCategoryValue(local_value, local_building_category_key);
 					}
 					if (civilisationBuildingCategoryConstructedIsLessThan(last_scope_obj.civ_tags, local_building_category_key, local_value[0]))
 						civilisation_checks[x]++;
@@ -432,9 +432,9 @@
 
 					total_civilisation_checks++;
 
-					if (Array.isArray(local_value[0])) {
+					if (typeof local_value[0] == "string") {
 						old_local_value = JSON.parse(JSON.stringify(local_value));
-						local_value[0] = getCivilisationsBuildingValue(last_scope_obj.civ_tags, local_building_key);
+						local_value[0] = getCivilisationsBuildingValue(local_values, local_building_key);
 					}
 					if (civilisationBuildingConstructedIs(last_scope_obj.civ_tags, local_building_key, local_value[0]))
 						civilisation_checks[x]++;
@@ -446,9 +446,9 @@
 
 					total_civilisation_checks++;
 
-					if (Array.isArray(local_value[0])) {
+					if (typeof local_value[0] == "string") {
 						old_local_value = JSON.parse(JSON.stringify(local_value));
-						local_value[0] = getCivilisationsBuildingValue(last_scope_obj.civ_tags, local_building_key);
+						local_value[0] = getCivilisationsBuildingValue(local_value, local_building_key);
 					}
 					if (civilisationBuildingConstructedIsGEQ(last_scope_obj.civ_tags, local_building_key, local_value[0]))
 						civilisation_checks[x]++;
@@ -460,9 +460,9 @@
 
 					total_civilisation_checks++;
 
-					if (Array.isArray(local_value[0])) {
+					if (typeof local_value[0] == "string") {
 						old_local_value = JSON.parse(JSON.stringify(local_value));
-						local_value[0] = getCivilisationsBuildingValue(last_scope_obj.civ_tags, local_building_key);
+						local_value[0] = getCivilisationsBuildingValue(local_value, local_building_key);
 					}
 					if (civilisationBuildingConstructedIsGreaterThan(last_scope_obj.civ_tags, local_building_key, local_value[0]))
 						civilisation_checks[x]++;
@@ -474,9 +474,9 @@
 
 					total_civilisation_checks++;
 
-					if (Array.isArray(local_value[0])) {
+					if (typeof local_value[0] == "string") {
 						old_local_value = JSON.parse(JSON.stringify(local_value));
-						local_value[0] = getCivilisationsBuildingValue(last_scope_obj.civ_tags, local_building_key);
+						local_value[0] = getCivilisationsBuildingValue(local_value, local_building_key);
 					}
 					if (civilisationBuildingConstructedIsLEQ(last_scope_obj.civ_tags, local_building_key, local_value[0]))
 						civilisation_checks[x]++;
@@ -488,9 +488,9 @@
 
 					total_civilisation_checks++;
 
-					if (Array.isArray(local_value[0])) {
+					if (typeof local_value[0] == "string") {
 						old_local_value = JSON.parse(JSON.stringify(local_value));
-						local_value[0] = getCivilisationsBuildingValue(last_scope_obj.civ_tags, local_building_key);
+						local_value[0] = getCivilisationsBuildingValue(local_value, local_building_key);
 					}
 					if (civilisationBuildingConstructedIsLessThan(last_scope_obj.civ_tags, local_building_key, local_value[0]))
 						civilisation_checks[x]++;
@@ -502,9 +502,9 @@
 				if (all_scope_keys[i] == "unique_capital_buildings_constructed" || all_scope_keys[i] == "unique_capital_buildings_constructed_is_equal_to") {
 					total_civilisation_checks++;
 
-					if (Array.isArray(local_value[0])) {
+					if (typeof local_value[0] == "string") {
 						old_local_value = JSON.parse(JSON.stringify(local_value));
-						local_value[0] = getCivilisationsUniqueCapitalBuildingsValue(last_scope_obj.civ_tags);
+						local_value[0] = getCivilisationsUniqueCapitalBuildingsValue(local_value);
 					}
 					if (uniqueCapitalBuildingsConstructedIs(last_scope_obj.civ_tags, local_value[0]))
 						civilisation_checks[x]++;
@@ -514,9 +514,9 @@
 				if (all_scope_keys[i] == "unique_capital_buildings_constructed_is_geq") {
 					total_civilisation_checks++;
 
-					if (Array.isArray(local_value[0])) {
+					if (typeof local_value[0] == "string") {
 						old_local_value = JSON.parse(JSON.stringify(local_value));
-						local_value[0] = getCivilisationsUniqueCapitalBuildingsValue(last_scope_obj.civ_tags);
+						local_value[0] = getCivilisationsUniqueCapitalBuildingsValue(local_value);
 					}
 					if (uniqueCapitalBuildingsConstructedIsGEQ(last_scope_obj.civ_tags, local_value[0]))
 						civilisation_checks[x]++;
@@ -526,9 +526,9 @@
 				if (all_scope_keys[i] == "unique_capital_buildings_constructed_is_greater_than") {
 					total_civilisation_checks++;
 
-					if (Array.isArray(local_value[0])) {
+					if (typeof local_value[0] == "string") {
 						old_local_value = JSON.parse(JSON.stringify(local_value));
-						local_value[0] = getCivilisationsUniqueCapitalBuildingsValue(last_scope_obj.civ_tags);
+						local_value[0] = getCivilisationsUniqueCapitalBuildingsValue(local_value);
 					}
 					if (uniqueCapitalBuildingsConstructedIsGreaterThan(last_scope_obj.civ_tags, local_value[0]))
 						civilisation_checks[x]++;
@@ -538,9 +538,9 @@
 				if (all_scope_keys[i] == "unique_capital_buildings_constructed_is_leq") {
 					total_civilisation_checks++;
 
-					if (Array.isArray(local_value[0])) {
+					if (typeof local_value[0] == "string") {
 						old_local_value = JSON.parse(JSON.stringify(local_value));
-						local_value[0] = getCivilisationsUniqueCapitalBuildingsValue(last_scope_obj.civ_tags);
+						local_value[0] = getCivilisationsUniqueCapitalBuildingsValue(local_value);
 					}
 					if (uniqueCapitalBuildingsConstructedIsLEQ(last_scope_obj.civ_tags, local_value[0]))
 						civilisation_checks[x]++;
@@ -550,9 +550,9 @@
 				if (all_scope_keys[i] == "unique_capital_buildings_constructed_is_less_than") {
 					total_civilisation_checks++;
 
-					if (Array.isArray(local_value[0])) {
+					if (typeof local_value[0] == "string") {
 						old_local_value = JSON.parse(JSON.stringify(local_value));
-						local_value[0] = getCivilisationsUniqueCapitalBuildingsValue(last_scope_obj.civ_tags);
+						local_value[0] = getCivilisationsUniqueCapitalBuildingsValue(local_value);
 					}
 					if (uniqueCapitalBuildingsConstructedIsLessThan(last_scope_obj.civ_tags, local_value[0]))
 						civilisation_checks[x]++;
@@ -561,7 +561,376 @@
 				}
 
 				//economy_income_is
+				if (all_scope_keys[i] == "economy_income_is" || all_scope_keys[i] == "economy_income_is_equal_to") {
+					total_civilisation_checks++;
 
+					if (typeof local_value[0] == "string") {
+						old_local_value = JSON.parse(JSON.stringify(local_value));
+						local_value[0] = getCivilisationsEconomyIncomeValue(local_value);
+					}
+					if (civilisationEconomyIncomeIs(last_scope_obj.civ_tags, local_value[0]))
+						civilisation_checks[x]++;
+					if (old_local_value != undefined)
+						local_value = old_local_value;
+				}
+				if (all_scope_keys[i] == "economy_income_is_geq") {
+					total_civilisation_checks++;
+
+					if (typeof local_value[0] == "string") {
+						old_local_value = JSON.parse(JSON.stringify(local_value));
+						local_value[0] = getCivilisationsEconomyIncomeValue(local_value);
+					}
+					if (civilisationEconomyIncomeIsGEQ(last_scope_obj.civ_tags, local_value[0]))
+						civilisation_checks[x]++;
+					if (old_local_value != undefined)
+						local_value = old_local_value;
+				}
+				if (all_scope_keys[i] == "economy_income_is_greater_than") {
+					total_civilisation_checks++;
+
+					if (typeof local_value[0] == "string") {
+						old_local_value = JSON.parse(JSON.stringify(local_value));
+						local_value[0] = getCivilisationsEconomyIncomeValue(local_value);
+					}
+					if (civilisationEconomyIncomeIsGreaterThan(last_scope_obj.civ_tags, local_value[0]))
+						civilisation_checks[x]++;
+					if (old_local_value != undefined)
+						local_value = old_local_value;
+				}
+				if (all_scope_keys[i] == "economy_income_is_leq") {
+					total_civilisation_checks++;
+
+					if (typeof local_value[0] == "string") {
+						old_local_value = JSON.parse(JSON.stringify(local_value));
+						local_value[0] = getCivilisationsEconomyIncomeValue(local_value);
+					}
+					if (civilisationEconomyIncomeIsLEQ(last_scope_obj.civ_tags, local_value[0]))
+						civilisation_checks[x]++;
+					if (old_local_value != undefined)
+						local_value = old_local_value;
+				}
+				if (all_scope_keys[i] == "economy_income_is_less_than") {
+					total_civilisation_checks++;
+
+					if (typeof local_value[0] == "string") {
+						old_local_value = JSON.parse(JSON.stringify(local_value));
+						local_value[0] = getCivilisationsEconomyIncomeValue(local_value);
+					}
+					if (civilisationEconomyIncomeIsLessThan(last_scope_obj.civ_tags, local_value[0]))
+						civilisation_checks[x]++;
+					if (old_local_value != undefined)
+						local_value = old_local_value;
+				}
+
+				//economy_is
+				if (all_scope_keys[i] == "economy_is" || all_scope_keys[i] == "economy_is_equal_to") {
+					total_civilisation_checks++;
+
+					if (typeof local_value[0] == "string") {
+						old_local_value = JSON.parse(JSON.stringify(local_value));
+						local_value[0] = getCivilisationsEconomyIncomeValue(local_value);
+					}
+					if (civilisationEconomyIs(last_scope_obj.civ_tags, local_value[0]))
+						civilisation_checks[x]++;
+					if (old_local_value != undefined)
+						local_value = old_local_value;
+				}
+				if (all_scope_keys[i] == "economy_is_geq") {
+					total_civilisation_checks++;
+
+					if (typeof local_value[0] == "string") {
+						old_local_value = JSON.parse(JSON.stringify(local_value));
+						local_value[0] = getCivilisationsEconomyIncomeValue(local_value);
+					}
+					if (civilisationEconomyIsGEQ(last_scope_obj.civ_tags, local_value[0]))
+						civilisation_checks[x]++;
+					if (old_local_value != undefined)
+						local_value = old_local_value;
+				}
+				if (all_scope_keys[i] == "economy_is_greater_than") {
+					total_civilisation_checks++;
+
+					if (typeof local_value[0] == "string") {
+						old_local_value = JSON.parse(JSON.stringify(local_value));
+						local_value[0] = getCivilisationsEconomyIncomeValue(local_value);
+					}
+					if (civilisationEconomyIsGreaterThan(last_scope_obj.civ_tags, local_value[0]))
+						civilisation_checks[x]++;
+					if (old_local_value != undefined)
+						local_value = old_local_value;
+				}
+				if (all_scope_keys[i] == "economy_is_leq") {
+					total_civilisation_checks++;
+
+					if (typeof local_value[0] == "string") {
+						old_local_value = JSON.parse(JSON.stringify(local_value));
+						local_value[0] = getCivilisationsEconomyIncomeValue(local_value);
+					}
+					if (civilisationEconomyIsLEQ(last_scope_obj.civ_tags, local_value[0]))
+						civilisation_checks[x]++;
+					if (old_local_value != undefined)
+						local_value = old_local_value;
+				}
+				if (all_scope_keys[i] == "economy_is_less_than") {
+					total_civilisation_checks++;
+
+					if (typeof local_value[0] == "string") {
+						old_local_value = JSON.parse(JSON.stringify(local_value));
+						local_value[0] = getCivilisationsEconomyIncomeValue(local_value);
+					}
+					if (civilisationEconomyIsLessThan(last_scope_obj.civ_tags, local_value[0]))
+						civilisation_checks[x]++;
+					if (old_local_value != undefined)
+						local_value = old_local_value;
+				}
+
+				//economy_production_is
+				if (all_scope_keys[i] == "economy_production_is" || all_scope_keys[i] == "economy_production_is_equal_to") {
+					total_civilisation_checks++;
+
+					if (typeof local_value[0] == "string") {
+						old_local_value = JSON.parse(JSON.stringify(local_value));
+						local_value[0] = getCivilisationsProductionValue(local_value);
+					}
+					if (civilisationEconomyProductionIs(last_scope_obj.civ_tags, local_value[0]))
+						civilisation_checks[x]++;
+					if (old_local_value != undefined)
+						local_value = old_local_value;
+				}
+				if (all_scope_keys[i] == "economy_production_is_geq") {
+					total_civilisation_checks++;
+
+					if (typeof local_value[0] == "string") {
+						old_local_value = JSON.parse(JSON.stringify(local_value));
+						local_value[0] = getCivilisationsProductionValue(local_value);
+					}
+					if (civilisationEconomyProductionIsGEQ(last_scope_obj.civ_tags, local_value[0]))
+						civilisation_checks[x]++;
+					if (old_local_value != undefined)
+						local_value = old_local_value;
+				}
+				if (all_scope_keys[i] == "economy_production_is_greater_than") {
+					total_civilisation_checks++;
+
+					if (typeof local_value[0] == "string") {
+						old_local_value = JSON.parse(JSON.stringify(local_value));
+						local_value[0] = getCivilisationsProductionValue(local_value);
+					}
+					if (civilisationEconomyProductionIsGreaterThan(last_scope_obj.civ_tags, local_value[0]))
+						civilisation_checks[x]++;
+					if (old_local_value != undefined)
+						local_value = old_local_value;
+				}
+				if (all_scope_keys[i] == "economy_production_is_leq") {
+					total_civilisation_checks++;
+
+					if (typeof local_value[0] == "string") {
+						old_local_value = JSON.parse(JSON.stringify(local_value));
+						local_value[0] = getCivilisationsProductionValue(local_value);
+					}
+					if (civilisationEconomyProductionIsLEQ(last_scope_obj.civ_tags, local_value[0]))
+						civilisation_checks[x]++;
+					if (old_local_value != undefined)
+						local_value = old_local_value;
+				}
+				if (all_scope_keys[i] == "economy_production_is_less_than") {
+					total_civilisation_checks++;
+
+					if (typeof local_value[0] == "string") {
+						old_local_value = JSON.parse(JSON.stringify(local_value));
+						local_value[0] = getCivilisationsProductionValue(local_value);
+					}
+					if (civilisationEconomyProductionIsLessThan(last_scope_obj.civ_tags, local_value[0]))
+						civilisation_checks[x]++;
+					if (old_local_value != undefined)
+						local_value = old_local_value;
+				}
+
+				//economy_taxation_is
+				if (all_scope_keys[i] == "economy_taxation_is" || all_scope_keys[i] == "economy_taxation_is_equal_to") {
+					total_civilisation_checks++;
+
+					if (typeof local_value[0] == "string") {
+						old_local_value = JSON.parse(JSON.stringify(local_value));
+						local_value[0] = getCivilisationsTaxationValue(local_value);
+					}
+					if (civilisationEconomyTaxationIs(last_scope_obj.civ_tags, local_value[0]))
+						civilisation_checks[x]++;
+					if (old_local_value != undefined)
+						local_value = old_local_value;
+				}
+				if (all_scope_keys[i] == "economy_taxation_is_geq") {
+					total_civilisation_checks++;
+
+					if (typeof local_value[0] == "string") {
+						old_local_value = JSON.parse(JSON.stringify(local_value));
+						local_value[0] = getCivilisationsTaxationValue(local_value);
+					}
+					if (civilisationEconomyTaxationIsGEQ(last_scope_obj.civ_tags, local_value[0]))
+						civilisation_checks[x]++;
+					if (old_local_value != undefined)
+						local_value = old_local_value;
+				}
+				if (all_scope_keys[i] == "economy_taxation_is_greater_than") {
+					total_civilisation_checks++;
+
+					if (typeof local_value[0] == "string") {
+						old_local_value = JSON.parse(JSON.stringify(local_value));
+						local_value[0] = getCivilisationsTaxationValue(local_value);
+					}
+					if (civilisationEconomyTaxationIsGreaterThan(last_scope_obj.civ_tags, local_value[0]))
+						civilisation_checks[x]++;
+					if (old_local_value != undefined)
+						local_value = old_local_value;
+				}
+				if (all_scope_keys[i] == "economy_taxation_is_leq") {
+					total_civilisation_checks++;
+
+					if (typeof local_value[0] == "string") {
+						old_local_value = JSON.parse(JSON.stringify(local_value));
+						local_value[0] = getCivilisationsTaxationValue(local_value);
+					}
+					if (civilisationEconomyTaxationIsLEQ(last_scope_obj.civ_tags, local_value[0]))
+						civilisation_checks[x]++;
+					if (old_local_value != undefined)
+						local_value = old_local_value;
+				}
+				if (all_scope_keys[i] == "economy_taxation_is_less_than") {
+					total_civilisation_checks++;
+
+					if (typeof local_value[0] == "string") {
+						old_local_value = JSON.parse(JSON.stringify(local_value));
+						local_value[0] = getCivilisationsTaxationValue(local_value);
+					}
+					if (civilisationEconomyTaxationIsLessThan(last_scope_obj.civ_tags, local_value[0]))
+						civilisation_checks[x]++;
+					if (old_local_value != undefined)
+						local_value = old_local_value;
+				}
+
+				//economy_total_income_is
+				if (all_scope_keys[i] == "economy_total_income_is" || all_scope_keys[i] == "economy_total_income__is_equal_to") {
+					total_civilisation_checks++;
+
+					if (typeof local_value[0] == "string") {
+						old_local_value = JSON.parse(JSON.stringify(local_value));
+						local_value[0] = getCivilisationsTotalIncomeValue(local_value);
+					}
+					if (civilisationEconomyTotalIncomeIs(last_scope_obj.civ_tags, local_value[0]))
+						civilisation_checks[x]++;
+					if (old_local_value != undefined)
+						local_value = old_local_value;
+				}
+				if (all_scope_keys[i] == "economy_total_income__is_geq") {
+					total_civilisation_checks++;
+
+					if (typeof local_value[0] == "string") {
+						old_local_value = JSON.parse(JSON.stringify(local_value));
+						local_value[0] = getCivilisationsTotalIncomeValue(local_value);
+					}
+					if (civilisationEconomyTotalIncomeIsGEQ(last_scope_obj.civ_tags, local_value[0]))
+						civilisation_checks[x]++;
+					if (old_local_value != undefined)
+						local_value = old_local_value;
+				}
+				if (all_scope_keys[i] == "economy_total_income__is_greater_than") {
+					total_civilisation_checks++;
+
+					if (typeof local_value[0] == "string") {
+						old_local_value = JSON.parse(JSON.stringify(local_value));
+						local_value[0] = getCivilisationsTotalIncomeValue(local_value);
+					}
+					if (civilisationEconomyTotalIncomeIsGreaterThan(last_scope_obj.civ_tags, local_value[0]))
+						civilisation_checks[x]++;
+					if (old_local_value != undefined)
+						local_value = old_local_value;
+				}
+				if (all_scope_keys[i] == "economy_total_income__is_leq") {
+					total_civilisation_checks++;
+
+					if (typeof local_value[0] == "string") {
+						old_local_value = JSON.parse(JSON.stringify(local_value));
+						local_value[0] = getCivilisationsTotalIncomeValue(local_value);
+					}
+					if (civilisationEconomyTotalIncomeIsLEQ(last_scope_obj.civ_tags, local_value[0]))
+						civilisation_checks[x]++;
+					if (old_local_value != undefined)
+						local_value = old_local_value;
+				}
+				if (all_scope_keys[i] == "economy_total_income__is_less_than") {
+					total_civilisation_checks++;
+
+					if (typeof local_value[0] == "string") {
+						old_local_value = JSON.parse(JSON.stringify(local_value));
+						local_value[0] = getCivilisationsTotalIncomeValue(local_value);
+					}
+					if (civilisationEconomyTotalIncomeIsLessThan(last_scope_obj.civ_tags, local_value[0]))
+						civilisation_checks[x]++;
+					if (old_local_value != undefined)
+						local_value = old_local_value;
+				}
+
+				//money_is
+				if (all_scope_keys[i] == "money_is" || all_scope_keys[i] == "money_is_equal_to") {
+					total_civilisation_checks++;
+
+					if (typeof local_value[0] == "string") {
+						old_local_value = JSON.parse(JSON.stringify(local_value));
+						local_value[0] = getCivilisationsMoneyValue(local_value);
+					}
+					if (civilisationMoneyIs(last_scope_obj.civ_tags, local_value[0]))
+						civilisation_checks[x]++;
+					if (old_local_value != undefined)
+						local_value = old_local_value;
+				}
+				if (all_scope_keys[i] == "money_is_geq") {
+					total_civilisation_checks++;
+
+					if (typeof local_value[0] == "string") {
+						old_local_value = JSON.parse(JSON.stringify(local_value));
+						local_value[0] = getCivilisationsMoneyValue(local_value);
+					}
+					if (civilisationMoneyIsGEQ(last_scope_obj.civ_tags, local_value[0]))
+						civilisation_checks[x]++;
+					if (old_local_value != undefined)
+						local_value = old_local_value;
+				}
+				if (all_scope_keys[i] == "money_is_greater_than") {
+					total_civilisation_checks++;
+
+					if (typeof local_value[0] == "string") {
+						old_local_value = JSON.parse(JSON.stringify(local_value));
+						local_value[0] = getCivilisationsMoneyValue(local_value);
+					}
+					if (civilisationMoneyIsGreaterThan(last_scope_obj.civ_tags, local_value[0]))
+						civilisation_checks[x]++;
+					if (old_local_value != undefined)
+						local_value = old_local_value;
+				}
+				if (all_scope_keys[i] == "money_is_leq") {
+					total_civilisation_checks++;
+
+					if (typeof local_value[0] == "string") {
+						old_local_value = JSON.parse(JSON.stringify(local_value));
+						local_value[0] = getCivilisationsMoneyValue(local_value);
+					}
+					if (civilisationMoneyIsLEQ(last_scope_obj.civ_tags, local_value[0]))
+						civilisation_checks[x]++;
+					if (old_local_value != undefined)
+						local_value = old_local_value;
+				}
+				if (all_scope_keys[i] == "money_is_less_than") {
+					total_civilisation_checks++;
+
+					if (typeof local_value[0] == "string") {
+						old_local_value = JSON.parse(JSON.stringify(local_value));
+						local_value[0] = getCivilisationsMoneyValue(local_value);
+					}
+					if (civilisationMoneyIsLessThan(last_scope_obj.civ_tags, local_value[0]))
+						civilisation_checks[x]++;
+					if (old_local_value != undefined)
+						local_value = old_local_value;
+				}
  			}
 
 			//KEEP AT BOTTOM OF LOCAL SCOPE!
