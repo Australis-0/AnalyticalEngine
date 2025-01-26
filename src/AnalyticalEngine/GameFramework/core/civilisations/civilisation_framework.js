@@ -150,6 +150,33 @@
 			}
 	}
 
+	/**
+	 * getCivilisationFromExactTag() - Fetches a civilisation only from its exact tag.
+	 * @param {String} arg0_civ_tag
+	 * @param {Object} [arg1_options]
+	 *  @param {boolean} [arg1_options.return_key=false]
+	 *
+	 * @returns {Object|String}
+	 */
+	function getCivilisationFromExactTag (arg0_civ_tag, arg1_options) {
+		//Convert from parameters
+		var civ_tag = arg0_civ_tag;
+		var options = (arg1_options) ? arg1_options : {};
+
+		//Declare local instance variables
+		var split_civ_tag = civ_tag.split("_");
+		var civ_obj = getCivilisation(civ_tag);
+
+		//Return statement
+		if (split_civ_tag.length > 1) {
+			if (civ_tag == civ_obj.civData.t)
+				return (!options.return_key) ? civ_obj : civ_obj.civData.t;
+		} else {
+			if (civ_tag == civ_obj.realTag)
+				return (!options.return_key) ? civ_obj : civ_obj.realTag;
+		}
+	}
+
 	function getCivilisationID (arg0_civ_name) {
 		//Convert from parameters
 		var civ_name = arg0_civ_name;
@@ -202,6 +229,7 @@
 	 * getCivilisationProvinces() - Returns all provinces belonging to a given civilisation.
 	 * @param {String} arg0_civ_name
 	 * @param {Object} [arg1_options]
+	 *  @param {Array<Object>} [arg1_options.all_provinces=getAllProvinces()] - Optimisation parameter.
 	 *  @param {boolean} [arg1_options.exclude_occupied_provinces=false]
 	 *  @param {boolean} [arg1_options.return_keys=false]
 	 *
@@ -215,7 +243,7 @@
 		//Declare local instance variables
 		var all_civ_province_ids = [];
 		var all_civ_provinces = [];
-		var all_provinces = getAllProvinces();
+		var all_provinces = (options.all_provinces) ? options.all_provinces : getAllProvinces();
 		var civ_tag = getCurrentTag(civ_name);
 
 		//Iterate over all_provinces

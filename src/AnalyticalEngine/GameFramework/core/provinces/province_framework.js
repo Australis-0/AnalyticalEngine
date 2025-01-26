@@ -157,18 +157,25 @@
 			province_owner.getCivTag() : province_owner;
 	}
 
-	function getProvinceResource (arg0_province_name, arg1_options) {
+	function getProvinceResource (arg0_province_id) {
 		//Convert from parameters
-		var province_name = arg0_province_name;
-		var options = (arg1_options) ? arg1_options : {};
+		var province_id = arg0_province_id;
 
 		//Declare local instance variables
-		var province_obj = getProvince(province_name);
-		var province_resource_id = province_obj.getResourceID();
+		var province_obj = getProvince(province_id);
+		var resource_type;
+
+		if (province_obj) {
+			var resource_id = province_obj.getResourceID();
+
+			//Handle 'None' resource
+			if (resource_id < 0) return "None";
+			resource_type = getResource(resource_id).Name;
+		}
 
 		//Return statement
-		return (!options.return_key) ?
-			getResource(province_resource_id) : province_resource_id;
+		if (resource_type != undefined)
+			return resource_type;
 	}
 
 	function getProvinceTerrain (arg0_province_name, arg1_options) {

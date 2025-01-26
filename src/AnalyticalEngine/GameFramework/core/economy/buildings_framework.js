@@ -64,6 +64,38 @@
 			all_buildings : return_obj;
 	}
 
+	function getAllBuildingsInGroup (arg0_group_id, arg1_options) {
+		//Convert from parameters
+		var group_id = returnSafeNumber(arg0_group_id);
+		var options = (arg1_options) ? arg1_options : {};
+
+		//Initialise options
+		if (!options.all_buildings) options.all_buildings = getAllBuildings();
+
+		//Declare local instance variables
+		var all_building_keys = Object.keys(options.all_buildings);
+		var all_buildings = [];
+		var return_obj = {};
+		var return_keys = [];
+
+		//Iterate over all_building_keys
+		for (var i = 0; i < all_building_keys.length; i++) {
+			var local_building = options.all_buildings[all_building_keys[i]];
+
+			if (local_building.GroupID == group_id) {
+				all_buildings.push(local_building);
+				for (var x = 0; x < local_building.Name.length; x++)
+					return_keys.push(local_building.Name[x]);
+				return_obj[i] = local_building;
+			}
+		}
+
+		//Return statement
+		if (options.return_keys) return return_keys;
+		return (!options.return_object) ?
+			all_buildings : return_obj;
+	}
+
 	/**
 	 * getBuilding() - Fetches the relevant building category object and/or index for it.
 	 * @param {String} arg0_building_name
