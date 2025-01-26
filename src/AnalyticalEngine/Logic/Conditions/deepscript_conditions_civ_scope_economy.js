@@ -289,7 +289,7 @@
 			var comparison_value = getCivilisationsEconomyIncomeValue(civ_tags);
 
 			//Return statement
-			if (value == comparison_value)
+			if (comparison_value == value)
 				return true;
 		}
 
@@ -302,7 +302,7 @@
 			var comparison_value = getCivilisationsEconomyIncomeValue(civ_tags);
 
 			//Return statement
-			if (value >= comparison_value)
+			if (comparison_value >= value)
 				return true;
 		}
 
@@ -315,7 +315,7 @@
 			var comparison_value = getCivilisationsEconomyIncomeValue(civ_tags);
 
 			//Return statement
-			if (value > comparison_value)
+			if (comparison_value > value)
 				return true;
 		}
 
@@ -328,7 +328,7 @@
 			var comparison_value = getCivilisationsEconomyIncomeValue(civ_tags);
 
 			//Return statement
-			if (value <= comparison_value)
+			if (comparison_value <= value)
 				return true;
 		}
 
@@ -341,7 +341,7 @@
 			var comparison_value = getCivilisationsEconomyIncomeValue(civ_tags);
 
 			//Return statement
-			if (value < comparison_value)
+			if (comparison_value < value)
 				return true;
 		}
 
@@ -354,7 +354,7 @@
 			var comparison_value = getCivilisationsEconomyValue(civ_tags);
 
 			//Return statement
-			if (value == comparison_value)
+			if (comparison_value == value)
 				return true;
 		}
 
@@ -367,7 +367,7 @@
 			var comparison_value = getCivilisationsEconomyValue(civ_tags);
 
 			//Return statement
-			if (value >= comparison_value)
+			if (comparison_value >= value)
 				return true;
 		}
 
@@ -380,7 +380,7 @@
 			var comparison_value = getCivilisationsEconomyValue(civ_tags);
 
 			//Return statement
-			if (value > comparison_value)
+			if (comparison_value > value)
 				return true;
 		}
 
@@ -393,7 +393,7 @@
 			var comparison_value = getCivilisationsEconomyValue(civ_tags);
 
 			//Return statement
-			if (value <= comparison_value)
+			if (comparison_value <= value)
 				return true;
 		}
 
@@ -406,7 +406,7 @@
 			var comparison_value = getCivilisationsEconomyValue(civ_tags);
 
 			//Return statement
-			if (value < comparison_value)
+			if (comparison_value < value)
 				return true;
 		}
 
@@ -419,7 +419,7 @@
 			var comparison_value = getCivilisationsProductionValue(civ_tags);
 
 			//Return statement
-			if (value == comparison_value)
+			if (comparison_value == value)
 				return true;
 		}
 
@@ -432,7 +432,7 @@
 			var comparison_value = getCivilisationsProductionValue(civ_tags);
 
 			//Return statement
-			if (value <= comparison_value)
+			if (comparison_value <= value)
 				return true;
 		}
 
@@ -445,7 +445,7 @@
 			var comparison_value = getCivilisationsProductionValue(civ_tags);
 
 			//Return statement
-			if (value < comparison_value)
+			if (comparison_value < value)
 				return true;
 		}
 
@@ -458,7 +458,7 @@
 			var comparison_value = getCivilisationsProductionValue(civ_tags);
 
 			//Return statement
-			if (value >= comparison_value)
+			if (comparison_value >= value)
 				return true;
 		}
 
@@ -471,7 +471,7 @@
 			var comparison_value = getCivilisationsProductionValue(civ_tags);
 
 			//Return statement
-			if (value > comparison_value)
+			if (comparison_value > value)
 				return true;
 		}
 
@@ -484,7 +484,7 @@
 			var comparison_value = getCivilisationsTaxationValue(civ_tags);
 
 			//Return statement
-			if (value == comparison_value)
+			if (comparison_value == value)
 				return true;
 		}
 
@@ -497,7 +497,7 @@
 			var comparison_value = getCivilisationsTaxationValue(civ_tags);
 
 			//Return statement
-			if (value >= comparison_value)
+			if (comparison_value >= value)
 				return true;
 		}
 
@@ -510,7 +510,7 @@
 			var comparison_value = getCivilisationsTaxationValue(civ_tags);
 
 			//Return statement
-			if (value > comparison_value)
+			if (comparison_value > value)
 				return true;
 		}
 
@@ -523,7 +523,7 @@
 			var comparison_value = getCivilisationsTaxationValue(civ_tags);
 
 			//Return statement
-			if (value <= comparison_value)
+			if (comparison_value <= value)
 				return true;
 		}
 
@@ -536,7 +536,7 @@
 			var comparison_value = getCivilisationsTaxationValue(civ_tags);
 
 			//Return statement
-			if (value < comparison_value)
+			if (comparison_value < value)
 				return true;
 		}
 
@@ -549,7 +549,7 @@
 			var comparison_value = getCivilisationsTotalIncomeValue(civ_tags);
 
 			//Return statement
-			if (value == comparison_value)
+			if (comparison_value == value)
 				return true;
 		}
 
@@ -562,7 +562,7 @@
 			var comparison_value = getCivilisationsTotalIncomeValue(civ_tags);
 
 			//Return statement
-			if (value >= comparison_value)
+			if (comparison_value >= value)
 				return true;
 		}
 
@@ -575,7 +575,7 @@
 			var comparison_value = getCivilisationsTotalIncomeValue(civ_tags);
 
 			//Return statement
-			if (value > comparison_value)
+			if (comparison_value > value)
 				return true;
 		}
 
@@ -588,7 +588,7 @@
 			var comparison_value = getCivilisationsTotalIncomeValue(civ_tags);
 
 			//Return statement
-			if (value <= comparison_value)
+			if (comparison_value <= value)
 				return true;
 		}
 
@@ -601,7 +601,7 @@
 			var comparison_value = getCivilisationsTotalIncomeValue(civ_tags);
 
 			//Return statement
-			if (value < comparison_value)
+			if (comparison_value < value)
 				return true;
 		}
 
@@ -614,7 +614,7 @@
 			var comparison_value = getCivilisationsMoneyValue(civ_tags);
 
 			//Return statement
-			if (value == comparison_value)
+			if (comparison_value == value)
 				return true;
 		}
 
@@ -627,7 +627,7 @@
 			var comparison_value = getCivilisationsMoneyValue(civ_tags);
 
 			//Return statement
-			if (value >= comparison_value)
+			if (comparison_value >= value)
 				return true;
 		}
 
@@ -640,7 +640,7 @@
 			var comparison_value = getCivilisationsMoneyValue(civ_tags);
 
 			//Return statement
-			if (value > comparison_value)
+			if (comparison_value > value)
 				return true;
 		}
 
@@ -653,7 +653,7 @@
 			var comparison_value = getCivilisationsMoneyValue(civ_tags);
 
 			//Return statement
-			if (value <= comparison_value)
+			if (comparison_value <= value)
 				return true;
 		}
 
@@ -666,7 +666,7 @@
 			var comparison_value = getCivilisationsMoneyValue(civ_tags);
 
 			//Return statement
-			if (value < comparison_value)
+			if (comparison_value < value)
 				return true;
 		}
 	}
@@ -1079,7 +1079,7 @@
 			var comparison_value = getCivilisationsDevelopedInfrastructureValue(civ_tags);
 
 			//Return statement
-			if (value == comparison_value)
+			if (comparison_value == value)
 				return true;
 		}
 
@@ -1092,7 +1092,7 @@
 			var comparison_value = getCivilisationsDevelopedInfrastructureValue(civ_tags);
 
 			//Return statement
-			if (value >= comparison_value)
+			if (comparison_value >= value)
 				return true;
 		}
 
@@ -1105,7 +1105,7 @@
 			var comparison_value = getCivilisationsDevelopedInfrastructureValue(civ_tags);
 
 			//Return statement
-			if (value > comparison_value)
+			if (comparison_value > value)
 				return true;
 		}
 
@@ -1118,7 +1118,7 @@
 			var comparison_value = getCivilisationsDevelopedInfrastructureValue(civ_tags);
 
 			//Return statement
-			if (value <= comparison_value)
+			if (comparison_value <= value)
 				return true;
 		}
 
@@ -1131,7 +1131,7 @@
 			var comparison_value = getCivilisationsDevelopedInfrastructureValue(civ_tags);
 
 			//Return statement
-			if (value < comparison_value)
+			if (comparison_value < value)
 				return true;
 		}
 
@@ -1144,7 +1144,7 @@
 			var comparison_value = getCivilisationsIncreasedManpowerValue(civ_tags);
 
 			//Return statement
-			if (value == comparison_value)
+			if (comparison_value == value)
 				return true;
 		}
 
@@ -1157,7 +1157,7 @@
 			var comparison_value = getCivilisationsIncreasedManpowerValue(civ_tags);
 
 			//Return statement
-			if (value >= comparison_value)
+			if (comparison_value >= value)
 				return true;
 		}
 
@@ -1170,7 +1170,7 @@
 			var comparison_value = getCivilisationsIncreasedManpowerValue(civ_tags);
 
 			//Return statement
-			if (value > comparison_value)
+			if (comparison_value > value)
 				return true;
 		}
 
@@ -1183,7 +1183,7 @@
 			var comparison_value = getCivilisationsIncreasedManpowerValue(civ_tags);
 
 			//Return statement
-			if (value <= comparison_value)
+			if (comparison_value <= value)
 				return true;
 		}
 
@@ -1196,7 +1196,7 @@
 			var comparison_value = getCivilisationsIncreasedManpowerValue(civ_tags);
 
 			//Return statement
-			if (value < comparison_value)
+			if (comparison_value < value)
 				return true;
 		}
 
@@ -1209,7 +1209,7 @@
 			var comparison_value = getCivilisationsIncreasedTaxEfficiencyValue(civ_tags);
 
 			//Return statement
-			if (value == comparison_value)
+			if (comparison_value == value)
 				return true;
 		}
 
@@ -1222,7 +1222,7 @@
 			var comparison_value = getCivilisationsIncreasedTaxEfficiencyValue(civ_tags);
 
 			//Return statement
-			if (value >= comparison_value)
+			if (comparison_value >= value)
 				return true;
 		}
 
@@ -1235,7 +1235,7 @@
 			var comparison_value = getCivilisationsIncreasedTaxEfficiencyValue(civ_tags);
 
 			//Return statement
-			if (value > comparison_value)
+			if (comparison_value > value)
 				return true;
 		}
 
@@ -1248,7 +1248,7 @@
 			var comparison_value = getCivilisationsIncreasedTaxEfficiencyValue(civ_tags);
 
 			//Return statement
-			if (value <= comparison_value)
+			if (comparison_value <= value)
 				return true;
 		}
 
@@ -1261,7 +1261,7 @@
 			var comparison_value = getCivilisationsIncreasedTaxEfficiencyValue(civ_tags);
 
 			//Return statement
-			if (value < comparison_value)
+			if (comparison_value < value)
 				return true;
 		}
 
@@ -1274,7 +1274,7 @@
 			var comparison_value = getCivilisationsInvestedInEconomyValue(civ_tags);
 
 			//Return statement
-			if (value == comparison_value)
+			if (comparison_value == value)
 				return true;
 		}
 
@@ -1287,7 +1287,7 @@
 			var comparison_value = getCivilisationsInvestedInEconomyValue(civ_tags);
 
 			//Return statement
-			if (value >= comparison_value)
+			if (comparison_value >= value)
 				return true;
 		}
 
@@ -1313,7 +1313,7 @@
 			var comparison_value = getCivilisationsInvestedInEconomyValue(civ_tags);
 
 			//Return statement
-			if (value <= comparison_value)
+			if (comparison_value <= value)
 				return true;
 		}
 
@@ -1326,14 +1326,215 @@
 			var comparison_value = getCivilisationsInvestedInEconomyValue(civ_tags);
 
 			//Return statement
-			if (value < comparison_value)
+			if (comparison_value < value)
 				return true;
 		}
 	}
 
 	//Economy (Technology).
 	{
+		function civilisationResearchedTechnologiesIs (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = getList(arg1_value);
 
+			//Iterate over civ_tags
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ = getCivilisation(civ_tags[i]);
+				var local_civ_researched_technologies = getCivilisationResearchedTechnologies(local_civ).length;
+
+				if (local_civ_researched_technologies != value)
+					return false;
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function civilisationResearchedTechnologiesIsGEQ (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = getList(arg1_value);
+
+			//Iterate over civ_tags
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ = getCivilisation(civ_tags[i]);
+				var local_civ_researched_technologies = getCivilisationResearchedTechnologies(local_civ).length;
+
+				if (local_civ_researched_technologies < value)
+					return false;
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function civilisationResearchedTechnologiesIsGreaterThan (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = getList(arg1_value);
+
+			//Iterate over civ_tags
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ = getCivilisation(civ_tags[i]);
+				var local_civ_researched_technologies = getCivilisationResearchedTechnologies(local_civ).length;
+
+				if (local_civ_researched_technologies <- value)
+					return false;
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function civilisationResearchedTechnologiesIsLEQ (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = getList(arg1_value);
+
+			//Iterate over civ_tags
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ = getCivilisation(civ_tags[i]);
+				var local_civ_researched_technologies = getCivilisationResearchedTechnologies(local_civ).length;
+
+				if (local_civ_researched_technologies >= value)
+					return false;
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function civilisationResearchedTechnologiesIsLessThan (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = getList(arg1_value);
+
+			//Iterate over civ_tags
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ = getCivilisation(civ_tags[i]);
+				var local_civ_researched_technologies = getCivilisationResearchedTechnologies(local_civ).length;
+
+				if (local_civ_researched_technologies > value)
+					return false;
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function civilisationResearchPerMonthIs (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = getList(arg1_value);
+
+			//Iterate over civ_tags
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ = getCivilisation(civ_tags[i]);
+				var local_civ_research_per_month = getCivilisationResearchPerMonth(local_civ);
+
+				if (local_civ_research_per_month != value)
+					return false;
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function civilisationResearchPerMonthIsGEQ (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = getList(arg1_value);
+
+			//Iterate over civ_tags
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ = getCivilisation(civ_tags[i]);
+				var local_civ_research_per_month = getCivilisationResearchPerMonth(local_civ);
+
+				if (local_civ_research_per_month < value)
+					return false;
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function civilisationResearchPerMonthIsGreaterThan (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = getList(arg1_value);
+
+			//Iterate over civ_tags
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ = getCivilisation(civ_tags[i]);
+				var local_civ_research_per_month = getCivilisationResearchPerMonth(local_civ);
+
+				if (local_civ_research_per_month <= value)
+					return false;
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function civilisationResearchPerMonthIsLEQ (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = getList(arg1_value);
+
+			//Iterate over civ_tags
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ = getCivilisation(civ_tags[i]);
+				var local_civ_research_per_month = getCivilisationResearchPerMonth(local_civ);
+
+				if (local_civ_research_per_month > value)
+					return false;
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function civilisationResearchPerMonthIsLessThan (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = getList(arg1_value);
+
+			//Iterate over civ_tags
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ = getCivilisation(civ_tags[i]);
+				var local_civ_research_per_month = getCivilisationResearchPerMonth(local_civ);
+
+				if (local_civ_research_per_month >= value)
+					return false;
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function civilisationTechnologyIsResearched (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = getList(arg1_value);
+
+			//Iterate over civ_tags
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ = getCivilisation(civ_tags[i]);
+				var local_technologies_researched = getCivilisationResearchedTechnologies(local_civ);
+
+				for (var x = 0; x < value.length; x++) {
+					var local_technology = getTechnology(value[x]);
+
+					if (!local_technologies_researched.includes(local_technology.Name))
+						//Return statement
+						return false;
+				}
+			}
+
+			//Return statement
+			return true;
+		}
 	}
 }
 
@@ -1761,6 +1962,50 @@
 
 		//Return statement
 		return comparison_value;
+	}
+
+	function getCivilisationsResearchPerMonthValue (arg0_civ_tags) {
+		//Convert from parameters
+		var civ_tags = getList(arg0_civ_tags);
+
+		//Declare local instance variables
+		var comparison_sum = 0;
+
+		try {
+			for (var i = 0; i < civ_tags.length; i++) {
+				var civ_obj = getCivilisation(civ_tags[i]);
+
+				comparison_sum += getCivilisationResearchPerMonth(civ_obj);
+			}
+		} catch (e) {
+			console.log(e.message);
+			console.log(e.stack);
+		}
+
+		//Return statement
+		return comparison_sum;
+	}
+
+	function getCivilisationsResearchedTechnologiesValue (arg0_civ_tags) {
+		//Convert from parameters
+		var civ_tags = getList(arg0_civ_tags);
+
+		//Declare local instance variables
+		var comparison_sum = 0;
+
+		try {
+			for (var i = 0; i < civ_tags.length; i++) {
+				var civ_obj = getCivilisation(civ_tags[i]);
+
+				comparison_sum += getCivilisationResearchedTechnologies(civ_obj).length;
+			}
+		} catch (e) {
+			console.log(e.message);
+			console.log(e.stack);
+		}
+
+		//Return statement
+		return comparison_sum/civ_tags.length;
 	}
 
 	function getCivilisationsTaxationValue (arg0_civ_tags) {

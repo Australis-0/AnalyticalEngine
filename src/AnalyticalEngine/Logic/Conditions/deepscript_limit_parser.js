@@ -1521,6 +1521,141 @@
 							local_value = old_local_value;
 					}
 				}
+
+				//Economy (Technology).
+				{
+					//researched_technologies_is
+					if (all_scope_keys[i] == "researched_technologies_is" || all_scope_keys[i] == "researched_technologies_is_equal_to") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsResearchedTechnologiesValue(local_value);
+						}
+						if (civilisationResearchedTechnologiesIs(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "researched_technologies_is_geq") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsResearchedTechnologiesValue(local_value);
+						}
+						if (civilisationResearchedTechnologiesIsGEQ(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "researched_technologies_is_greater_than") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsResearchedTechnologiesValue(local_value);
+						}
+						if (civilisationResearchedTechnologiesIsGreaterThan(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "researched_technologies_is_leq") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsResearchedTechnologiesValue(local_value);
+						}
+						if (civilisationResearchedTechnologiesIsLEQ(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "researched_technologies_is_less_than") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsResearchedTechnologiesValue(local_value);
+						}
+						if (civilisationResearchedTechnologiesIsLessThan(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+
+					//research_per_month_is
+					if (all_scope_keys[i] == "research_per_month_is" || all_scope_keys[i] == "research_per_month_is_equal_to") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsResearchPerMonthValue(local_value);
+						}
+						if (civilisationResearchPerMonthIs(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "research_per_month_is_geq") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsResearchPerMonthValue(local_value);
+						}
+						if (civilisationResearchPerMonthIsGEQ(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "research_per_month_is_greater_than") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsResearchPerMonthValue(local_value);
+						}
+						if (civilisationResearchPerMonthIsGreaterThan(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "research_per_month_is_leq") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsResearchPerMonthValue(local_value);
+						}
+						if (civilisationResearchPerMonthIsLEQ(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "research_per_month_is_less_than") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsResearchPerMonthValue(local_value);
+						}
+						if (civilisationResearchPerMonthIsLessThan(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+
+					//technology_is_researched
+					if (all_scope_keys[i] == "technology_is_researched") {
+						total_civilisation_checks++;
+
+						if (civilisationTechnologyIsResearched(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+					}
+				}
  			}
 
 			//KEEP AT BOTTOM OF LOCAL SCOPE!
