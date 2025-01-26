@@ -1656,6 +1656,17 @@
 							civilisation_checks[x]++;
 					}
 				}
+
+				//Military.
+				{
+
+				}
+
+				//Politics (Internal).
+
+				//Politics (External [Diplomacy]).
+
+				//Provinces.
  			}
 
 			//KEEP AT BOTTOM OF LOCAL SCOPE!
