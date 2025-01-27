@@ -1659,7 +1659,439 @@
 
 				//Military.
 				{
+					//battle_width_is
+					if (all_scope_keys[i] == "battle_width_is" || all_scope_keys[i] == "battle_width_is_equal_to") {
+						total_civilisation_checks++;
 
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsBattleWidthValue(local_value);
+						}
+						if (civilisationBattleWidthIs(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "battle_width_is_geq") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsBattleWidthValue(local_value);
+						}
+						if (civilisationBattleWidthIsGEQ(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "battle_width_is_greater_than") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsBattleWidthValue(local_value);
+						}
+						if (civilisationBattleWidthIsGreaterThan(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "battle_width_is_leq") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsBattleWidthValue(local_value);
+						}
+						if (civilisationBattleWidthIsLEQ(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "battle_width_is_less_than") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsBattleWidthValue(local_value);
+						}
+						if (civilisationBattleWidthIsLessThan(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+
+					//manpower_is
+					if (all_scope_keys[i] == "manpower_is" || all_scope_keys[i] == "manpower_is_equal_to") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsManpowerValue(local_value);
+						}
+						if (civilisationManpowerIs(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "manpower_is_geq") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsManpowerValue(local_value);
+						}
+						if (civilisationManpowerIsGEQ(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "manpower_is_greater_than") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsManpowerValue(local_value);
+						}
+						if (civilisationManpowerIsGreaterThan(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "manpower_is_leq") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsManpowerValue(local_value);
+						}
+						if (civilisationManpowerIsLEQ(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "manpower_is_less_than") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsManpowerValue(local_value);
+						}
+						if (civilisationManpowerIsLessThan(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+
+					//manpower_percentage_is
+					if (all_scope_keys[i] == "manpower_percentage_is" || all_scope_keys[i] == "manpower_percentage_is_equal_to") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsManpowerPercentageValue(local_value);
+						}
+						if (civilisationManpowerPercentageIs(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "manpower_percentage_is_geq") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsManpowerPercentageValue(local_value);
+						}
+						if (civilisationManpowerPercentageIsGEQ(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "manpower_percentage_is_greater_than") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsManpowerPercentageValue(local_value);
+						}
+						if (civilisationManpowerPercentageIsGreaterThan(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "manpower_percentage_is_leq") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsManpowerPercentageValue(local_value);
+						}
+						if (civilisationManpowerPercentageIsLEQ(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "manpower_percentage_is_less_than") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsManpowerPercentageValue(local_value);
+						}
+						if (civilisationManpowerPercentageIsLessThan(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+
+					//max_manpower_is
+					if (all_scope_keys[i] == "max_manpower_is" || all_scope_keys[i] == "max_manpower_is_equal_to") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsMaximumManpowerValue(local_value);
+						}
+						if (civilisationMaxManpowerIs(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "max_manpower_is_geq") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsMaximumManpowerValue(local_value);
+						}
+						if (civilisationMaxManpowerIsGEQ(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "max_manpower_is_greater_than") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsMaximumManpowerValue(local_value);
+						}
+						if (civilisationMaxManpowerIsGreaterThan(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "max_manpower_is_leq") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsMaximumManpowerValue(local_value);
+						}
+						if (civilisationMaxManpowerIsLEQ(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "max_manpower_is_less_than") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsMaximumManpowerValue(local_value);
+						}
+						if (civilisationMaxManpowerIsLessThan(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+
+					//regiments_is
+					if (all_scope_keys[i] == "regiments_is" || all_scope_keys[i] == "regiments_is_equal_to") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsRegimentsValue(local_value);
+						}
+						if (civilisationRegimentsIs(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "regiments_is_geq") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsRegimentsValue(local_value);
+						}
+						if (civilisationRegimentsIsGEQ(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "regiments_is_greater_than") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsRegimentsValue(local_value);
+						}
+						if (civilisationRegimentsIsGreaterThan(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "regiments_is_leq") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsRegimentsValue(local_value);
+						}
+						if (civilisationRegimentsIsLEQ(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "regiments_is_less_than") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsRegimentsValue(local_value);
+						}
+						if (civilisationRegimentsIsLessThan(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+
+					//regiments_limit_is
+					if (all_scope_keys[i] == "regiments_limit_is" || all_scope_keys[i] == "regiments_limit_is_equal_to") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsRegimentsLimitValue(local_value);
+						}
+						if (civilisationRegimentsLimitIs(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "regiments_limit_is_geq") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsRegimentsLimitValue(local_value);
+						}
+						if (civilisationRegimentsLimitIsGEQ(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "regiments_limit_is_greater_than") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsRegimentsLimitValue(local_value);
+						}
+						if (civilisationRegimentsLimitIsGreaterThan(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "regiments_limit_is_leq") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsRegimentsLimitValue(local_value);
+						}
+						if (civilisationRegimentsLimitIsLEQ(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "regiments_limit_is_less_than") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsRegimentsLimitValue(local_value);
+						}
+						if (civilisationRegimentsLimitIsLessThan(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+
+					//regiments_over_limit_is
+					if (all_scope_keys[i] == "regiments_over_limit_is" || all_scope_keys[i] == "regiments_over_limit_is_equal_to") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsRegimentsOverLimitValue(local_value);
+						}
+						if (civilisationRegimentsOverLimitIs(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "regiments_over_limit_is_geq") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsRegimentsOverLimitValue(local_value);
+						}
+						if (civilisationRegimentsOverLimitIsGEQ(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "regiments_over_limit_is_greater_than") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsRegimentsOverLimitValue(local_value);
+						}
+						if (civilisationRegimentsOverLimitIsGreaterThan(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "regiments_over_limit_is_leq") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsRegimentsOverLimitValue(local_value);
+						}
+						if (civilisationRegimentsOverLimitIsLEQ(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "regiments_over_limit_is_less_than") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsRegimentsOverLimitValue(local_value);
+						}
+						if (civilisationRegimentsOverLimitIsLessThan(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
 				}
 
 				//Politics (Internal).
