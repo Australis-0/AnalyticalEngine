@@ -485,7 +485,7 @@
 	}
 }
 
-//Initialise internal helper functions.
+//Initialise internal helper functions
 {
 	function getCivilisationsBattleWidthValue (arg0_civ_tags) {
 		//Convert from parameters
