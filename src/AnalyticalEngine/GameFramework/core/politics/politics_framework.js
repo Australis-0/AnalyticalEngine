@@ -44,6 +44,49 @@
 		return (!options.return_key) ? getIdeology(civ_ideology_id) : getIdeology(civ_ideology_id).Name;
 	}
 
+	function getCivilisationLegacy (arg0_civ_tag) {
+		//Convert from parameters
+		var civ_tag = arg0_civ_tag;
+
+		//Declare local instance variables
+		var civ_obj = getCivilisation(civ_tag);
+
+		//Return statement
+		return civ_obj.fLegacy;
+	}
+
+	function getCivilisationLegacyPerMonth (arg0_civ_tag) {
+		//Convert from parameters
+		var civ_tag = arg0_civ_tag;
+
+		//Declare local instance variables
+		var civ_obj = getCivilisation(civ_tag);
+
+		//Return statement
+		return civ_obj.getLegacyPerMonth();
+	}
+
+	function getCivilisationPrestige (arg0_civ_tag) {
+		//Convert from parameters
+		var civ_tag = arg0_civ_tag;
+
+		//Declare local instance variables
+		var civ_obj = getCivilisation(civ_tag);
+
+		//Return statement
+		return civ_obj.iCivRankScore;
+	}
+
+	function getCivilisationRank (arg0_civ_tag) {
+		var civ_tag = arg0_civ_tag;
+
+		//Declare local instance variables
+		var civ_obj = getCivilisation(civ_tag);
+
+		//Return statement
+		return civ_obj.iCivRankPosition;
+	}
+
 	function getIdeology (arg0_ideology_name, arg1_options) {
 		//Convert from parameters
 		var name = arg0_ideology_name;

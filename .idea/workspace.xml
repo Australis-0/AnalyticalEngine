@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09b6f7f8-b868-43e9-b471-ac1dbd15fa3b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/demographics/religion_framework.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/politics/advantages_framework.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/politics/advisors_framework.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/politics/legacies_framework.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/economy/pops_framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/demographics/pops_framework.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/politics/politics_framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/politics/politics_framework.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Conditions/deepscript_conditions_civ_scope_internal_politics.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Conditions/deepscript_conditions_civ_scope_internal_politics.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/map/11.59/cities/cities.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/cities/cities.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,11 +148,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Project 1159 - 11.59 - AOC3\Age of History 3\AOC3 Source\src\AnalyticalEngine\GameFramework\core\demographics" />
       <recent name="D:\Project 1159 - 11.59 - AOC3\Age of History 3\AOC3 Source\src\AnalyticalEngine\Logic\Scopes" />
       <recent name="D:\Project 1159 - 11.59 - AOC3\Age of History 3\AOC3 Source\src\AnalyticalEngine\GameFramework\ui\editors\mod_editor" />
       <recent name="D:\Project 1159 - 11.59 - AOC3\Age of History 3\AOC3 Source\src\AnalyticalEngine\GameFramework\core" />
       <recent name="D:\Project 1159 - 11.59 - AOC3\Age of History 3\AOC3 Source\src\AnalyticalEngine\GameFramework\map" />
-      <recent name="D:\Project 1159 - 11.59 - AOC3\Age of History 3\AOC3 Source\src\AnalyticalEngine\GameFramework" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="AnalyticalEngine.Framework.Provinces" />
@@ -209,7 +213,7 @@
       <workItem from="1734809856493" duration="231890000" />
       <workItem from="1737191569663" duration="7789000" />
       <workItem from="1737200274429" duration="101911000" />
-      <workItem from="1737726277969" duration="52955000" />
+      <workItem from="1737726277969" duration="71975000" />
     </task>
     <servers />
   </component>
