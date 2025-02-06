@@ -97,3 +97,24 @@
 	this.Text_StaticBG_ID_FlagCiv = Java.type("aoc.kingdoms.lukasz.menu_element.textStatic.Text_StaticBG_ID_FlagCiv");
 	this.Touch = Java.type("aoc.kingdoms.lukasz.jakowski.Touch");
 }
+
+//Import classes - Dynamic Imports
+{
+	function importDynamicClasses () {
+		Object.defineProperty(this, "Game", {
+			get: function () {
+				return Java.type('aoc.kingdoms.lukasz.jakowski.Game');
+			}
+		});
+		Object.defineProperty(this, "Menu", {
+			get: function () {
+				return Java.type('aoc.kingdoms.lukasz.menu.Menu');
+			}
+		});
+		Object.defineProperty(this, "MenuTitle", {
+			get: function () {
+				return Java.type('aoc.kingdoms.lukasz.menu.menuTitle.MenuTitle');
+			}
+		});
+	}
+}
