@@ -1,6 +1,7 @@
 {
   files: [
-    "/AnalyticalEngine/Config/.config_backend.js"
+    "/AnalyticalEngine/Config/.config_backend.js",
+    "/AnalyticalEngine/GameFramework/startup_imports.js"
   ],
 
   directories: [

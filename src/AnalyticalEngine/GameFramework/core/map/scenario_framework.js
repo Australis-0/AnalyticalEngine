@@ -1,9 +1,3 @@
-//Import classes
-{
-	this.Civilization = Java.type("aoc.kingdoms.lukasz.map.civilization.Civilization");
-	//this.Game = "aoc.kingdoms.lukasz.jakowski.Game"; - Dynamically loaded
-}
-
 //Initialise functions
 {
 	function getCurrentScenario () {

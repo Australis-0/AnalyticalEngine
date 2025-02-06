@@ -1,13 +1,3 @@
-//Import classes
-{
-	this.classLoader = classLoader;
-	this.CFG = Java.type("aoc.kingdoms.lukasz.jakowski.CFG");
-	//this.Game = "aoc.kingdoms.lukasz.jakowski.Game"; - Dynamically loaded
-	this.Gdx = Java.type("com.badlogic.gdx.Gdx");
-	this.OnscreenKeyboardType = Java.type("com.badlogic.gdx.Input.OnscreenKeyboardType");
-	this.Keyboard = Java.type("aoc.kingdoms.lukasz.jakowski.Keyboard");
-}
-
 //Initialise functions
 {
 	/**

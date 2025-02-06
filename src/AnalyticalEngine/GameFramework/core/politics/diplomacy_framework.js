@@ -1,10 +1,3 @@
-//Import classes
-{
-	this.DiplomacyManager = Java.type("aoc.kingdoms.lukasz.map.diplomacy.DiplomacyManager");
-	this.Game_Calendar = Java.type("aoc.kingdoms.lukasz.jakowski.Game_Calendar");
-	this.WarManager = Java.type("aoc.kingdoms.lukasz.map.war.WarManager")
-}
-
 //Initialise functions
 {
 	function getAggressiveExpansion (arg0_civ_tag) {

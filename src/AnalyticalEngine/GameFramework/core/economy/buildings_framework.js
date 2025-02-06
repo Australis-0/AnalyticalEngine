@@ -1,9 +1,3 @@
-//Import classes
-{
-	this.BuildingsManager = Java.type("aoc.kingdoms.lukasz.map.BuildingsManager");
-	this.ProvinceConstructedBuilding = Java.type("aoc.kingdoms.lukasz.map.province.ProvinceConstructedBuilding");
-}
-
 //Initialise functions
 {
 	function addBuildingConstruction (arg0_province_name, arg1_building_name) {

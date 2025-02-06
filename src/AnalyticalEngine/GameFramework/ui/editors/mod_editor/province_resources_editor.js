@@ -115,7 +115,7 @@
 
 					var current_province_name = province_obj.getProvinceName();
 					interface_obj.current_province_name = current_province_name;
-					interface_obj.current_resource_name = province_resource_obj.Name;
+					interface_obj.current_resource_name = province_resource_obj;
 				}
 		}
 	}

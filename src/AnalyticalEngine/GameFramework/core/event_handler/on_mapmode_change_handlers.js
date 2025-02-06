@@ -1,10 +1,3 @@
-//Import classes
-{
-	this.Color = Java.type("com.badlogic.gdx.graphics.Color");
-	//this.Game = "aoc.kingdoms.lukasz.jakowski.Game"; - Dynamically loaded
-	this.ProvinceDraw = Java.type("aoc.kingdoms.lukasz.map.province.ProvinceDraw");
-}
-
 //Initialise functions
 {
 	function initialiseOnMapmodeChangeHandler () {

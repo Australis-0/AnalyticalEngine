@@ -1,12 +1,3 @@
-//Import classes
-{
-	this.BufferedReader = Java.type("java.io.BufferedReader");
-	this.File = Java.type("java.io.File");
-	this.FileReader = Java.type("java.io.FileReader");
-	this.FileWriter = Java.type("java.io.FileWriter");
-	this.PrintWriter = Java.type("java.io.PrintWriter");
-}
-
 //Initialise functions
 {
 	function getAllFilesInFolder (arg0_file_path) {

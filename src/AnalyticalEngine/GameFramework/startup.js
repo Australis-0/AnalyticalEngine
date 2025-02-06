@@ -1,6 +1,27 @@
-//Load function
-initGlobal();
+//Import classes - Dynamic Imports
+{
+	Object.defineProperty(this, "Game", {
+		get: function () {
+			return Java.type('aoc.kingdoms.lukasz.jakowski.Game');
+		}
+	});
+	Object.defineProperty(this, "Menu", {
+		get: function () {
+			return Java.type('aoc.kingdoms.lukasz.menu.Menu');
+		}
+	});
+	Object.defineProperty(this, "MenuTitle", {
+		get: function () {
+			return Java.type('aoc.kingdoms.lukasz.menu.menuTitle.MenuTitle');
+		}
+	});
+}
+
+//Load functions
 setTimeout(function(){
+	//Initialise global
+	initGlobal();
+
 	//Initialise optimisation
 	initOptimisation();
 

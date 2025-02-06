@@ -1,11 +1,3 @@
-//Import classes
-{
-	this.ArrayList = Java.type("java.util.ArrayList");
-	this.MenuElement_Hover = Java.type("aoc.kingdoms.lukasz.menu_element.menuElementHover.MenuElement_Hover");
-	this.MenuElement_HoverElement_Type_Text = Java.type("aoc.kingdoms.lukasz.menu_element.menuElementHover.MenuElement_HoverElement_Type_Text");
-	this.MenuElement_HoverElement_Type_FlagCiv_Title = Java.type("aoc.kingdoms.lukasz.menu_element.menuElementHover.MenuElement_HoverElement_Type_FlagCiv_Title");
-}
-
 //Initialise functions
 {
 	/**

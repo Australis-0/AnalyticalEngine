@@ -1,8 +1,3 @@
-//Import classes
-{
-	this.ResourcesManager = Java.type("aoc.kingdoms.lukasz.map.ResourcesManager");
-}
-
 //Initialise functions
 {
 	/**

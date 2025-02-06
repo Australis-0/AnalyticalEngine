@@ -1,8 +1,3 @@
-//Import classes
-{
-	this.View = Java.type("aoc.kingdoms.lukasz.menu.View");
-}
-
 config.console.ui_commands = {
 	name: "UI Commands",
 	order: 4,

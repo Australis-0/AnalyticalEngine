@@ -1,8 +1,3 @@
-//Import classes
-{
-	this.TechnologyTree = Java.type("aoc.kingdoms.lukasz.map.technology.TechnologyTree");
-}
-
 //Initialise functions
 {
 	function getAllTechnologies (arg0_options) {

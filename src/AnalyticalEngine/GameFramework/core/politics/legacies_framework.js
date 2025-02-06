@@ -1,8 +1,3 @@
-//Import classes
-{
-	this.LegacyManager = Java.type("aoc.kingdoms.lukasz.map.LegacyManager");
-}
-
 //Initialise functions
 {
 	function getAllLegacies (arg0_options) {

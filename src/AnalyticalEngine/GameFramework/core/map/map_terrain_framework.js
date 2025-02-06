@@ -1,9 +1,3 @@
-//Import classes
-{
-	//this.Game = Java.type("aoc.kingdoms.lukasz.jakowski.Game");
-	this.Terrain = Java.type("aoc.kingdoms.lukasz.map.terrain.Terrain");
-}
-
 //Initialise functions
 {
 	/**

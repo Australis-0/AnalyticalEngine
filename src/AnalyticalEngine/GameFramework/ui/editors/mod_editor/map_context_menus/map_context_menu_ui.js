@@ -1,8 +1,3 @@
-//Import classes
-{
-	this.GameCivsEdit = Java.type("aoc.kingdoms.lukasz.menusEditor.GameCivsEdit");
-}
-
 //Initialise functions
 {
 	//[WIP] - Map context menu is closed with left-click on map

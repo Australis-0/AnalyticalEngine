@@ -1,8 +1,3 @@
-//Import classes
-{
-	this.InGame_DeepscriptEvent = Java.type("AnalyticalEngine.Java.menus.InGame_DeepscriptEvent");
-}
-
 //Initialise functions
 {
 	/**

@@ -1,20 +1,3 @@
-//Declare imports
-{
-	//this.Game = "aoc.kingdoms.lukasz.jakowski.Game"; - Dynamically loaded
-	this.BufferedImage = Java.type("java.awt.image.BufferedImage");
-	this.CivilizationRegionsManager = Java.type("aoc.kingdoms.lukasz.map.civilization.CivilizationRegionsManager");
-	this.File = Java.type("java.io.File");
-	this.Graphics2D = Java.type("java.awt.Graphics2D");
-	this.FileHandle = Java.type("com.badlogic.gdx.files.FileHandle");
-	this.ImageIO = Java.type("javax.imageio.ImageIO")
-	this.Pixmap = Java.type("com.badlogic.gdx.graphics.Pixmap");
-	this.PixmapIO = Java.type("com.badlogic.gdx.graphics.PixmapIO");
-	this.ProvinceDrawDetails = Java.type("aoc.kingdoms.lukasz.map.province.ProvinceDrawDetails");
-	this.Random = Java.type("java.util.Random");
-	this.SaveManager = Java.type("aoc.kingdoms.lukasz.jakowski.SaveLoad.SaveManager");
-	this.Texture = Java.type("com.badlogic.gdx.graphics.Texture");
-}
-
 //Initialise functions
 {
 	function fixSeaProvinces () { //[WIP] - Finish function

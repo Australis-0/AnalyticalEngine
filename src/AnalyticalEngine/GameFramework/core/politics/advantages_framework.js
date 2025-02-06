@@ -1,8 +1,3 @@
-//Import classes
-{
-	this.AdvantagesManager = Java.type("aoc.kingdoms.lukasz.map.AdvantagesManager");
-}
-
 //Initialise functions
 {
 	function getAllAdvantages (arg0_options) {

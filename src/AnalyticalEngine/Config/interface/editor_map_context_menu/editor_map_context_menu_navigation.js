@@ -1,8 +1,3 @@
-//Import classes
-{
-	this.CFG = Java.type("aoc.kingdoms.lukasz.jakowski.CFG");
-}
-
 config.editor_map_context_menu.navigation = {
 	name: "Editor Map Context Menu",
 	scope_type: ["mod_editor"],

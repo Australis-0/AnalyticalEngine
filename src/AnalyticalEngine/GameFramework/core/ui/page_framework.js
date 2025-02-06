@@ -1,12 +1,3 @@
-//Import classes
-{
-	//this.Game = "aoc.kingdoms.lukasz.jakowski.Game"; - Dynamically loaded
-	this.GameCivs = Java.type("aoc.kingdoms.lukasz.menusEditor.GameCivs");
-	this.Menu_LoadScenario = Java.type("aoc.kingdoms.lukasz.menus.LoadSave.Menu_LoadScenario");
-	this.ScenarioWasteland = Java.type("aoc.kingdoms.lukasz.menusScenarioEditor.Wasteland.ScenarioWasteland");
-	this.View = Java.type("aoc.kingdoms.lukasz.menu.View");
-}
-
 //Initialise functions
 {
 	function getAllPageKeys () {

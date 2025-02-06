@@ -1,8 +1,3 @@
-//Import classes
-{
-	this.ReligionManager = Java.type("aoc.kingdoms.lukasz.map.ReligionManager");
-}
-
 //Initialise functions
 {
 	function getAllReligions (arg0_options) {

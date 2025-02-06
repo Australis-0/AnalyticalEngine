@@ -1,8 +1,3 @@
-//Import classes
-{
-	this.IdeologiesManager = Java.type("aoc.kingdoms.lukasz.map.IdeologiesManager");
-}
-
 //Initialise functions
 {
 	function getAllIdeologies (arg0_options) {

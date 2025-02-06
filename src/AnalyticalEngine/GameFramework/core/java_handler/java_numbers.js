@@ -1,9 +1,3 @@
-//Import classes
-{
-	this.Float = Java.type("java.lang.Float");
-	this.Integer = Java.type("java.lang.Integer");
-}
-
 //Initialise functions
 {
 	function getJavaFloat (arg0_java_number) {

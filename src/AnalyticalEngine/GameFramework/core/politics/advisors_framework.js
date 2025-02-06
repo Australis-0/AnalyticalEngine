@@ -1,9 +1,3 @@
-//Import classes
-{
-	this.Advisor = Java.type("aoc.kingdoms.lukasz.map.advisors.Advisor");
-	this.AdvisorManager = Java.type("aoc.kingdoms.lukasz.map.advisors.AdvisorManager");
-}
-
 //Initialise functions
 {
 	/**

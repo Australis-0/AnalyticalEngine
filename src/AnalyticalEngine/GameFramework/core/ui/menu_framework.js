@@ -1,39 +1,3 @@
-//Import classes
-{
-	this.AA_Game = Java.type("aoc.kingdoms.lukasz.jakowski.AA_Game");
-	this.ArrayList = Java.type("java.util.ArrayList");
-	this.ButtonFlag2_CivName = Java.type("aoc.kingdoms.lukasz.menu_element.button.ButtonFlag2_CivName");
-	this.ButtonMain = Java.type("aoc.kingdoms.lukasz.menu_element.button.ButtonMain");
-	this.ButtonStatsRect_Active = Java.type("aoc.kingdoms.lukasz.menu_element.button.ButtonStatsRect_Active");
-	this.CFG = Java.type("aoc.kingdoms.lukasz.jakowski.CFG");
-	this.DesktopLauncher = Java.type("aoc.kingdoms.lukasz.jakowski.desktop.DesktopLauncher");
-	this.Float = Java.type("java.lang.Float");
-	this.Graph = Java.type("aoc.kingdoms.lukasz.menu_element.graph.Graph");
-	this.GraphData = Java.type("aoc.kingdoms.lukasz.menu_element.graph.GraphData");
-	this.Graph_Vertical = Java.type("aoc.kingdoms.lukasz.menu_element.graph.Graph_Vertical");
-	this.Graph_Vertical_Data_Type = Java.type("aoc.kingdoms.lukasz.menu_element.graph.Graph_Vertical_Data_Type");
-	this.Integer = Java.type("java.lang.Integer");
-	//this.Menu = Java.type("aoc.kingdoms.lukasz.menu.Menu");
-	//this.MenuTitle = Java.type("aoc.kingdoms.lukasz.menu.menuTitle");
-	this.Method = Java.type("java.lang.reflect.Method");
-	this.Minimap = Java.type("aoc.kingdoms.lukasz.menu_element.Minimap");
-	this.PieChart = Java.type("aoc.kingdoms.lukasz.menu_element.pieChart.PieChart");
-	this.PieChart_Data = Java.type("aoc.kingdoms.lukasz.menu_element.pieChart.PieChart_Data");
-	this.PieChart_Value = Java.type("aoc.kingdoms.lukasz.menu_element.pieChart.PieChart_Value");
-	this.PieChart_WithStats = Java.type("aoc.kingdoms.lukasz.menu_element.pieChart.PieChart_WithStats");
-	this.Slider = Java.type("aoc.kingdoms.lukasz.menu_element.Slider");
-
-	this.boolean_class = Java.type("java.lang.Boolean").TYPE;
-	this.integer_class = Java.type("java.lang.Integer").TYPE;
-	this.list_class = Java.type("java.util.List");
-	this.Renderer = Java.type("aoc.kingdoms.lukasz.jakowski.Renderer.Renderer");
-	this.Text_Scrollable = Java.type("aoc.kingdoms.lukasz.menu_element.textStatic.Text_Scrollable");
-	this.TextBG = Java.type("aoc.kingdoms.lukasz.menu_element.textStatic.TextBG");
-	this.Text_Static = Java.type("aoc.kingdoms.lukasz.menu_element.textStatic.Text_Static");
-	this.Text_StaticBG_ID_FlagCiv = Java.type("aoc.kingdoms.lukasz.menu_element.textStatic.Text_StaticBG_ID_FlagCiv");
-	this.Touch = Java.type("aoc.kingdoms.lukasz.jakowski.Touch");
-}
-
 //Initialise functions
 {
 	/**

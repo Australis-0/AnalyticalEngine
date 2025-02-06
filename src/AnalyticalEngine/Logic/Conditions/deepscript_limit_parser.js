@@ -2585,17 +2585,804 @@
 					}
 
 					//aggressive_expansion_is
+					if (all_scope_keys[i] == "aggressive_expansion_is" || all_scope_keys[i] == "aggressive_expansion_is_equal_to") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsAggressiveExpansionValue(local_value);
+						}
+						if (civilisationAggressiveExpansionIs(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "aggressive_expansion_is_geq") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsAggressiveExpansionValue(local_value);
+						}
+						if (civilisationAggressiveExpansionIsGEQ(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "aggressive_expansion_is_greater_than") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsAggressiveExpansionValue(local_value);
+						}
+						if (civilisationAggressiveExpansionIsGreaterThan(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "aggressive_expansion_is_leq") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsAggressiveExpansionValue(local_value);
+						}
+						if (civilisationAggressiveExpansionIsLEQ(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "aggressive_expansion_is_less_than") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsAggressiveExpansionValue(local_value);
+						}
+						if (civilisationAggressiveExpansionIsLessThan(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+
 					//at_war
+					if (all_scope_keys[i] == "at_war") {
+						total_civilisation_checks++;
+
+						if (civilisationAtWar(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+					}
+
 					//at_war_days_is
+					if (all_scope_keys[i] == "at_war_days_is" || all_scope_keys[i] == "at_war_days_is_equal_to") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsAtWarDaysValue(local_value);
+						}
+						if (civilisationAtWarDaysIs(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "at_war_days_geq") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsAtWarDaysValue(local_value);
+						}
+						if (civilisationAtWarDaysIsGEQ(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "at_war_days_greater_than") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsAtWarDaysValue(local_value);
+						}
+						if (civilisationAtWarDaysIsGreaterThan(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "at_war_days_leq") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsAtWarDaysValue(local_value);
+						}
+						if (civilisationAtWarDaysIsLEQ(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "at_war_days_less_than") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsAtWarDaysValue(local_value);
+						}
+						if (civilisationAtWarDaysIsLessThan(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+
 					//has_alliance
+					if (all_scope_keys[i] == "has_alliance") {
+						total_civilisation_checks++;
+
+						if (hasAlliance(last_scope_obj.civ_tags, local_value))
+							civilisation_checks[x]++;
+					}
 					//has_defensive_pact
+					if (all_scope_keys[i] == "has_defensive_pact") {
+						total_civilisation_checks++;
+
+						if (hasDefensivePact(last_scope_obj.civ_tags, local_value))
+							civilisation_checks[x]++;
+					}
 					//has_guarantee
-					
+					if (all_scope_keys[i] == "has_guarantee") {
+						total_civilisation_checks++;
+
+						if (hasGuarantee(last_scope_obj.civ_tags, local_value))
+							civilisation_checks[x]++;
+					}
+					//has_military_access
+					if (all_scope_keys[i] == "has_military_access") {
+						total_civilisation_checks++;
+
+						if (hasMilitaryAccess(last_scope_obj.civ_tags, local_value))
+							civilisation_checks[x]++;
+					}
+					//has_no_allies
+					if (all_scope_keys[i] == "has_no_allies") {
+						total_civilisation_checks++;
+
+						if (local_value[0]) {
+							if (hasNoAllies(last_scope_obj.civ_tags))
+								civilisation_checks[x]++;
+						} else {
+							if (!hasNoAllies(last_scope_obj.civ_tags))
+								civilisation_checks[x]++;
+						}
+					}
+					//has_no_defensive_pacts
+					if (all_scope_keys[i] == "has_no_defensive_pacts") {
+						total_civilisation_checks++;
+
+						if (local_value[0]) {
+							if (hasNoDefensivePact(last_scope_obj.civ_tags))
+								civilisation_checks[x]++;
+						} else {
+							if (!hasNoDefensivePact(last_scope_obj.civ_tags))
+								civilisation_checks[x]++;
+						}
+					}
+					//has_no_guarantors
+					if (all_scope_keys[i] == "has_no_guarantors") {
+						total_civilisation_checks++;
+
+						if (local_value[0]) {
+							if (hasNoGuarantors(last_scope_obj.civ_tags))
+								civilisation_checks[x]++;
+						} else {
+							if (!hasNoGuarantors(last_scope_obj.civ_tags))
+								civilisation_checks[x]++;
+						}
+					}
+					//has_no_non_aggression_pacts
+					if (all_scope_keys[i] == "has_no_non_aggression_pacts") {
+						total_civilisation_checks++;
+
+						if (local_value[0]) {
+							if (hasNoNonAggressionPacts(last_scope_obj.civ_tags))
+								civilisation_checks[x]++;
+						} else {
+							if (!hasNoNonAggressionPacts(last_scope_obj.civ_tags))
+								civilisation_checks[x]++;
+						}
+					}
+					//has_no_truces
+					if (all_scope_keys[i] == "has_no_truces") {
+						total_civilisation_checks++;
+
+						if (local_value[0]) {
+							if (hasNoTruces(last_scope_obj.civ_tags))
+								civilisation_checks[x]++;
+						} else {
+							if (!hasNoTruces(last_scope_obj.civ_tags))
+								civilisation_checks[x]++;
+						}
+					}
+					//has_truce
+					if (all_scope_keys[i] == "has_truce") {
+						total_civilisation_checks++;
+
+						if (hasTruce(last_scope_obj.civ_tags, local_value))
+							civilisation_checks[x]++;
+					}
+					//is_at_war_with
+					if (all_scope_keys[i] == "is_at_war_with") {
+						total_civilisation_checks++;
+
+						if (isAtWarWith(last_scope_obj.civ_tags, local_value))
+							civilisation_checks[x]++;
+					}
+					//is_guaranteeing
+					if (all_scope_keys[i] == "is_guaranteeing") {
+						total_civilisation_checks++;
+
+						if (isGuaranteeing(last_scope_obj.civ_tags, local_value))
+							civilisation_checks[x]++;
+					}
+					//is_not_allied
+					if (all_scope_keys[i] == "is_not_allied") {
+						total_civilisation_checks++;
+
+						if (local_value[0]) {
+							if (isNotAllied(last_scope_obj.civ_tags))
+								civilisation_checks[x]++;
+						} else {
+							if (!isNotAllied(last_scope_obj.civ_tags))
+								civilisation_checks[x]++;
+						}
+					}
+					//is_not_at_war
+					if (all_scope_keys[i] == "is_not_at_war") {
+						total_civilisation_checks++;
+
+						if (local_value[0]) {
+							if (isNotAtWar(last_scope_obj.civ_tags))
+								civilisation_checks[x]++;
+						} else {
+							if (!isNotAtWar(last_scope_obj.civ_tags))
+								civilisation_checks[x]++;
+						}
+					}
+					//is_not_rival
+					if (all_scope_keys[i] == "is_not_rival") {
+						total_civilisation_checks++;
+
+						if (local_value[0]) {
+							if (isNotRival(last_scope_obj.civ_tags))
+								civilisation_checks[x]++;
+						} else {
+							if (!isNotRival(last_scope_obj.civ_tags))
+								civilisation_checks[x]++;
+						}
+					}
+					//is_rival
+					if (all_scope_keys[i] == "is_rival") {
+						total_civilisation_checks++;
+
+						if (local_value[0]) {
+							if (isNotAtWar(last_scope_obj.civ_tags))
+								civilisation_checks[x]++;
+						} else {
+							if (!isNotAtWar(last_scope_obj.civ_tags))
+								civilisation_checks[x]++;
+						}
+					}
+					//is_vassal
+					if (all_scope_keys[i] == "is_vassal") {
+						total_civilisation_checks++;
+
+						if (local_value[0]) {
+							if (isVassal(last_scope_obj.civ_tags))
+								civilisation_checks[x]++;
+						} else {
+							if (!isVassal(last_scope_obj.civ_tags))
+								civilisation_checks[x]++;
+						}
+					}
+					//is_vassal_of
+					if (all_scope_keys[i] == "is_vassal_of") {
+						total_civilisation_checks++;
+
+						if (isVassalOf(last_scope_obj.civ_tags, local_value))
+							civilisation_checks[x]++;
+					}
+
+					//has_allies_equal_to
+					if (all_scope_keys[i] == "has_allies_equal_to") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsHasAlliesValue(local_value);
+						}
+						if (hasAlliesEqualTo(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "has_allies_geq") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsHasAlliesValue(local_value);
+						}
+						if (hasAlliesGEQ(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "has_allies_greater_than") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsHasAlliesValue(local_value);
+						}
+						if (hasAlliesGreaterThan(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "has_allies_leq") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsHasAlliesValue(local_value);
+						}
+						if (hasAlliesLEQ(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "has_allies_less_than") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsHasAlliesValue(local_value);
+						}
+						if (hasAlliesLessThan(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+
+					//has_defensive_pacts_equal_to
+					if (all_scope_keys[i] == "has_defensive_pacts_equal_to") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsHasDefensivePactsValue(local_value);
+						}
+						if (hasDefensivePactsEqualTo(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "has_defensive_pacts_geq") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsHasDefensivePactsValue(local_value);
+						}
+						if (hasDefensivePactsGEQ(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "has_defensive_pacts_greater_than") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsHasDefensivePactsValue(local_value);
+						}
+						if (hasDefensivePactsGreaterThan(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "has_defensive_pacts_leq") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsHasDefensivePactsValue(local_value);
+						}
+						if (hasDefensivePactsLEQ(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "has_defensive_pacts_less_than") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsHasDefensivePactsValue(local_value);
+						}
+						if (hasDefensivePactsLessThan(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+
+					//has_neighbours_equal_to
+					if (all_scope_keys[i] == "has_neighbours_equal_to") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsHasNeighboursValue(local_value);
+						}
+						if (hasNeighboursEqualTo(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "has_neighbours_geq") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsHasNeighboursValue(local_value);
+						}
+						if (hasNeighboursGEQ(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "has_neighbours_greater_than") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsHasNeighboursValue(local_value);
+						}
+						if (hasNeighboursGreaterThan(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "has_neighbours_leq") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsHasNeighboursValue(local_value);
+						}
+						if (hasNeighboursLEQ(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "has_neighbours_less_than") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsHasNeighboursValue(local_value);
+						}
+						if (hasNeighboursLessThan(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+
+					//has_non_aggression_pacts_equal_to
+					if (all_scope_keys[i] == "has_non_aggression_pacts_equal_to") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsHasNonAggressionPactsValue(local_value);
+						}
+						if (hasNonAggressionPactsEqualTo(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "has_non_aggression_pacts_geq") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsHasNonAggressionPactsValue(local_value);
+						}
+						if (hasNonAggressionPactsGEQ(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "has_non_aggression_pacts_greater_than") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsHasNonAggressionPactsValue(local_value);
+						}
+						if (hasNonAggressionPactsGreaterThan(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "has_non_aggression_pacts_leq") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsHasNonAggressionPactsValue(local_value);
+						}
+						if (hasNonAggressionPactsLEQ(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "has_non_aggression_pacts_less_than") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsHasNonAggressionPactsValue(local_value);
+						}
+						if (hasNonAggressionPactsLessThan(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+
+					//has_total_wars_equal_to
+					if (all_scope_keys[i] == "has_total_wars_equal_to") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsHasTotalWars(local_value);
+						}
+						if (hasTotalWarsEqualTo(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "has_total_wars_geq") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsHasTotalWars(local_value);
+						}
+						if (hasTotalWarsGEQ(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "has_total_wars_greater_than") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsHasTotalWars(local_value);
+						}
+						if (hasTotalWarsGreaterThan(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "has_total_wars_leq") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsHasTotalWars(local_value);
+						}
+						if (hasTotalWarsLEQ(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "has_total_wars_less_than") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsHasTotalWars(local_value);
+						}
+						if (hasTotalWarsLessThan(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+
+					//has_vassals_equal_to
+					if (all_scope_keys[i] == "has_vassals_equal_to") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsHasVassals(local_value);
+						}
+						if (hasVassalsEqualTo(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "has_vassals_geq") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsHasVassals(local_value);
+						}
+						if (hasVassalsGEQ(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "has_vassals_greater_than") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsHasVassals(local_value);
+						}
+						if (hasVassalsGreaterThan(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "has_vassals_leq") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsHasVassals(local_value);
+						}
+						if (hasVassalsLEQ(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "has_vassals_less_than") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsHasVassals(local_value);
+						}
+						if (hasVassalsLessThan(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+
+					//opinion_is
+					if (all_scope_keys[i] == "opinion_is" || all_scope_keys[i] == "opinion_is_equal_to") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "object")
+							if (opinionIs(last_scope_obj.civ_tags, local_value[0].tag, local_value[0].value))
+								civilisation_checks[x]++;
+					}
+					if (all_scope_keys[i] == "opinion_is_geq") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "object")
+							if (opinionIsGEQ(last_scope_obj.civ_tags, local_value[0].tag, local_value[0].value))
+								civilisation_checks[x]++;
+					}
+					if (all_scope_keys[i] == "opinion_is_greater_than") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "object")
+							if (opinionIsGreaterThan(last_scope_obj.civ_tags, local_value[0].tag, local_value[0].value))
+								civilisation_checks[x]++;
+					}
+					if (all_scope_keys[i] == "opinion_is_leq") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "object")
+							if (opinionIsLEQ(last_scope_obj.civ_tags, local_value[0].tag, local_value[0].value))
+								civilisation_checks[x]++;
+					}
+					if (all_scope_keys[i] == "opinion_is_less_than") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "object")
+							if (opinionIsLessThan(last_scope_obj.civ_tags, local_value[0].tag, local_value[0].value))
+								civilisation_checks[x]++;
+					}
+
+					//ranking_is
+					if (all_scope_keys[i] == "ranking_is" || all_scope_keys[i] == "ranking_is_equal_to") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsRanking(local_value);
+						}
+						if (rankingIs(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "ranking_is" || all_scope_keys[i] == "ranking_is_equal_to") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsRanking(local_value);
+						}
+						if (rankingIs(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "ranking_is_geq") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsRanking(local_value);
+						}
+						if (rankingIsGEQ(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "ranking_is_greater_than") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsRanking(local_value);
+						}
+						if (rankingIsGreaterThan(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "ranking_is_leq") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsRanking(local_value);
+						}
+						if (rankingIsLEQ(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
+					if (all_scope_keys[i] == "ranking_is_less_than") {
+						total_civilisation_checks++;
+
+						if (typeof local_value[0] == "string") {
+							old_local_value = JSON.parse(JSON.stringify(local_value));
+							local_value[0] = getCivilisationsRanking(local_value);
+						}
+						if (rankingIsLessThan(last_scope_obj.civ_tags, local_value[0]))
+							civilisation_checks[x]++;
+						if (old_local_value != undefined)
+							local_value = old_local_value;
+					}
 				}
 
 				//Provinces.
 				{
+					//provinces_is
 
+					//<capital_building_key>_is
+					//conquered_provinces_is
 				}
  			}
 

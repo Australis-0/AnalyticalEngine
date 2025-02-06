@@ -1,8 +1,3 @@
-//Import classes
-{
-	this.File = Java.type("java.io.File");
-}
-
 //Initialise functions
 {
 	/**

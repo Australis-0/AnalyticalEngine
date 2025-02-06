@@ -1,7 +1,6 @@
 //Import classes
 {
-	this.Civilization = Java.type("aoc.kingdoms.lukasz.map.civilization.Civilization");
-	this.ResourcesManager = Java.type("aoc.kingdoms.lukasz.map.ResourcesManager");
+
 }
 
 config.console.province_commands = {

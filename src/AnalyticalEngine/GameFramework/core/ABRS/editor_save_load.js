@@ -1,9 +1,3 @@
-//Import classes
-this.BufferedReader = Java.type("java.io.BufferedReader");
-this.FileReader = Java.type("java.io.FileReader");
-this.FileWriter = Java.type("java.io.FileWriter");
-this.PrintWriter = Java.type("java.io.PrintWriter");
-
 //Initialise functions
 {
 	function initialiseSaveLoad () {

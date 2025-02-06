@@ -1,8 +1,3 @@
-//Import classes
-{
-	this.Game_Calendar = Java.type("aoc.kingdoms.lukasz.jakowski.Game_Calendar");
-}
-
 //Initialise functions
 {
 	function getCurrentDate () {

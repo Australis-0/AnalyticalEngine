@@ -1,8 +1,3 @@
-//Import classes
-{
-	this.SteamManager = Java.type("aoc.kingdoms.lukasz.jakowski.Steam.SteamManager");
-}
-
 //Initialise functions
 {
 	/**

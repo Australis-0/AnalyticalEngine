@@ -1,13 +1,3 @@
-//Import classes
-{
-	this.BufferedReader = Java.type("java.io.BufferedReader");
-	this.BufferedWriter = Java.type("java.io.BufferedWriter");
-	this.File = Java.type("java.io.File");
-	this.FileReader = Java.type("java.io.FileReader");
-	this.FileWriter = Java.type("java.io.FileWriter");
-	this.StringBuilder = Java.type("java.lang.StringBuilder");
-}
-
 //Initialise functions
 {
 	/**
