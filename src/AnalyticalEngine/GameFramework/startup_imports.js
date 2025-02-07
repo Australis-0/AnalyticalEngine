@@ -18,6 +18,7 @@
 	this.File = Java.type("java.io.File");
 	this.FileHandle = Java.type("com.badlogic.gdx.files.FileHandle");
 	this.FileReader = Java.type("java.io.FileReader");
+	this.Files = Java.type("java.nio.file.Files");
 	this.FileWriter = Java.type("java.io.FileWriter");
 	this.Float = Java.type("java.lang.Float");
 	this.Game_Calendar = Java.type("aoc.kingdoms.lukasz.jakowski.Game_Calendar");
@@ -38,6 +39,7 @@
 	this.MenuElement_HoverElement_Type_FlagCiv_Title = Java.type("aoc.kingdoms.lukasz.menu_element.menuElementHover.MenuElement_HoverElement_Type_FlagCiv_Title");
 	this.Menu_LoadScenario = Java.type("aoc.kingdoms.lukasz.menus.LoadSave.Menu_LoadScenario");
 	this.OnscreenKeyboardType = Java.type("com.badlogic.gdx.Input.OnscreenKeyboardType");
+	this.Paths = Java.type("java.nio.file.Paths");
 	this.Pixmap = Java.type("com.badlogic.gdx.graphics.Pixmap");
 	this.PixmapIO = Java.type("com.badlogic.gdx.graphics.PixmapIO");
 	this.PrintWriter = Java.type("java.io.PrintWriter");

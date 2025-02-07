@@ -1,4 +1,4 @@
-{
+main.test = {
 	on_game_daily_interval: {
 		event_dummy: {
 			id: "test_event",

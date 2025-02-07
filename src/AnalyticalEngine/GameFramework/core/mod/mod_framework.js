@@ -148,7 +148,7 @@
 
 						if (is_deepscript_file)
 							try {
-								config.deepscript[options.mod_folder][local_file_path] = loadFileAsObject(local_file_path);
+								loadModJavascript(local_file_path);
 							} catch (e) {
 								console.error(e.message);
 							}
@@ -161,6 +161,18 @@
 		} catch (e) {
 			console.error(e.message);
 		}
+	}
+
+	function loadModJavascript (arg0_file_path) {
+		//Convert from parameters
+		var file_path = arg0_file_path;
+
+		//Declare local instance variables
+		var script_content = new java.lang.String(Files.readAllBytes(Paths.get(file_path)));
+
+		//Evaluate any content found in script_content
+		if (script_content)
+			eval(script_content);
 	}
 
 	/**
