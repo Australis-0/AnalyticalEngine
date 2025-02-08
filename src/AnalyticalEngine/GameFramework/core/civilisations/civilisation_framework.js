@@ -144,6 +144,17 @@
 			}
 	}
 
+	function getCivilisationConqueredProvincesAmount (arg0_civ_name) {
+		//Convert from parameters
+		var civ_name = arg0_civ_name;
+
+		//Declare local instance variables
+		var civ_obj = getCivilisation(civ_name);
+
+		//Return statement
+		return civ_obj.CivData3.getConqueredProvinces();
+	}
+
 	/**
 	 * getCivilisationFromExactTag() - Fetches a civilisation only from its exact tag.
 	 * @param {String} arg0_civ_tag
@@ -257,6 +268,56 @@
 
 		//Return statement
 		return (!options.return_keys) ? all_civ_provinces : all_civ_province_ids;
+	}
+
+	function getCivilisationProvincesAmount (arg0_civ_name) {
+		//Convert from parameters
+		var civ_name = arg0_civ_name;
+
+		//Declare local instance variables
+		var civ_obj = getCivilisation(civ_name);
+
+		//Return statement
+		return civ_obj.getProvinces().size();
+	}
+
+	function getCivilisationUniqueCapitalBuildingAmount (arg0_civ_name, arg1_capital_building_type, arg2_options) {
+		//Convert from parameters
+		var civ_name = arg0_civ_name;
+		var capital_building_type = arg1_capital_building_type;
+		var options = (arg2_options) ? arg2_options : {};
+
+		//Declare local instance variables
+		var civ_obj = getCivilisation(civ_name);
+
+		//Return statement
+		if (capital_building_type == "capital") {
+			//Return statement
+			return civ_obj.getCapitalLevel();
+		} else if (capital_building_type == "military_academy") {
+			//Return statement
+			return civ_obj.getMilitaryAcademyLevel();
+		} else if (capital_building_type == "military_academy_for_generals") {
+			//Return statement
+			return civ_obj.getMilitaryAcademyForGeneralsLevel();
+		} else if (capital_building_type == "supreme_court") {
+			//Return statement
+			return civ_obj.getSupremeCourtLevel();
+		} else if (capital_building_type == "nuclear_reactor") {
+			//Return statement
+			return civ_obj.getNuclearReactorLevel();
+		} else {
+			var all_buildings = getAllBuildings();
+			var capital_province_buildings = getProvinceBuildings(capital_province_obj);
+			var capital_province_obj = getCivilisationCapital(civ_obj);
+
+			if (!options.all_buildings) options.all_buildings = getAllBuildings();
+			for (var i = 0; i < all_buildings.length; i++)
+				for (var x = 0; x < all_buildings[i].Name.length; x++)
+					if (all_buildings[i].Name[x].toLowerCase() == capital_building_type)
+						//Return statement
+						return returnSafeNumber(capital_province_obj[all_buildings[i].Name[x]]);
+		}
 	}
 
 	/**
