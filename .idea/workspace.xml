@@ -5,10 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09b6f7f8-b868-43e9-b471-ac1dbd15fa3b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Conditions/deepscript_conditions_civ_scope_economy_buildings.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Conditions/deepscript_conditions_civ_scope_economy_pops.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Conditions/deepscript_conditions_civ_scope_economy_provinces.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Conditions/deepscript_conditions_civ_scope_economy_resources.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Conditions/deepscript_conditions_civ_scope_economy_technology.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/mod/mod_framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/mod/mod_framework.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/startup_imports.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/startup_imports.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/deepscript/mechanics/dummy_test.ds" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/deepscript/mechanics/dummy_test.ds" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Conditions/deepscript_conditions_civ_scope_economy.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Conditions/deepscript_conditions_civ_scope_economy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Conditions/deepscript_conditions_civ_scope_external_politics.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Conditions/deepscript_conditions_civ_scope_external_politics.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Conditions/deepscript_conditions_civ_scope_internal_politics.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Conditions/deepscript_conditions_civ_scope_internal_politics.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Conditions/deepscript_conditions_civ_scope_military.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Conditions/deepscript_conditions_civ_scope_military.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Conditions/deepscript_conditions_global_scope.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Conditions/deepscript_conditions_global_scope.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Conditions/deepscript_conditions_global_scope_resources.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Conditions/deepscript_conditions_global_scope_resources.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Conditions/deepscript_limit_parser.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,7 +220,7 @@
       <workItem from="1737191569663" duration="7789000" />
       <workItem from="1737200274429" duration="101911000" />
       <workItem from="1737726277969" duration="115573000" />
-      <workItem from="1738769995531" duration="13174000" />
+      <workItem from="1738769995531" duration="26879000" />
     </task>
     <servers />
   </component>

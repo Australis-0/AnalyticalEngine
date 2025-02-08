@@ -1,5 +1,40 @@
 //Initialise functions
 {
+	//Politics (External [Diplomacy] - AI).
+	{
+		function civilisationIsAI (arg0_civ_tags) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+
+			//Declare local instance variables
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ_id = getCivilisationID(civ_tags[i]);
+
+				if (M_Players.isPlayer(local_civ_id))
+					return false;
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function civilisationIsPlayer (arg0_civ_tags) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+
+			//Iterate over civ_tags
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ_id = getCivilisationID(civ_tags[i]);
+
+				if (!M_Players.isPlayer(local_civ_id))
+					return false;
+			}
+
+			//Return statement
+			return true;
+		}
+	}
+
 	//Politics (External [Diplomacy]).
 	{
 		function civilisationAggressiveExpansionIs (arg0_civ_tags, arg1_value) {
@@ -86,28 +121,6 @@
 
 				if (local_civ_aggressive_expansion >= value)
 					return false;
-			}
-
-			//Return statement
-			return true;
-		}
-
-		function civilisationAtWar (arg0_civ_tags, arg1_value) {
-			//Convert from parameters
-			var civ_tags = getList(arg0_civ_tags);
-			var value = arg1_value;
-
-			//Iterate over civ_tags
-			for (var i = 0; i < civ_tags.length; i++) {
-				var local_civ = getCivilisation(civ_tags[i]);
-				var local_civ_at_war = isAtWar(local_civ);
-
-				if (value)
-					if (!local_civ_at_war)
-						return false;
-				if (!value)
-					if (local_civ_at_war)
-						return false;
 			}
 
 			//Return statement
@@ -204,217 +217,7 @@
 			return true;
 		}
 
-		function hasAlliance (arg0_civ_tags, arg1_civ_tags) {
-			//Convert from parameters
-			var civ_tags = getList(arg0_civ_tags);
-			var ot_civ_tags = getList(arg1_civ_tags);
-
-			//Iterate over civ_tags
-			for (var i = 0; i < civ_tags.length; i++) {
-				var local_civ = getCivilisation(civ_tags[i]);
-				var local_civ_allies = getAllies(local_civ);
-
-				//Iterate over ot_civ_tags
-				for (var x = 0; x < ot_civ_tags.length; x++)
-					if (!local_civ_allies.includes(ot_civ_tags[x]))
-						return false;
-			}
-
-			//Return statement
-			return true;
-		}
-
-		function hasAlliesEqualTo (arg0_civ_tags, arg1_value) {
-			//Convert from parameters
-			var civ_tags = getList(arg0_civ_tags);
-			var value = returnSafeNumber(arg1_value);
-
-			//Iterate over civ_tags
-			for (var i = 0; i < civ_tags.length; i++) {
-				var local_civ = getCivilisation(civ_tags[i]);
-
-				if (getAllies(local_civ).length != value)
-					return false;
-			}
-
-			//Return statement
-			return true;
-		}
-
-		function hasAlliesGEQ (arg0_civ_tags, arg1_value) {
-			//Convert from parameters
-			var civ_tags = getList(arg0_civ_tags);
-			var value = returnSafeNumber(arg1_value);
-
-			//Iterate over civ_tags
-			for (var i = 0; i < civ_tags.length; i++) {
-				var local_civ = getCivilisation(civ_tags[i]);
-
-				if (getAllies(local_civ).length < value)
-					return false;
-			}
-
-			//Return statement
-			return true;
-		}
-
-		function hasAlliesGreaterThan (arg0_civ_tags, arg1_value) {
-			//Convert from parameters
-			var civ_tags = getList(arg0_civ_tags);
-			var value = returnSafeNumber(arg1_value);
-
-			//Iterate over civ_tags
-			for (var i = 0; i < civ_tags.length; i++) {
-				var local_civ = getCivilisation(civ_tags[i]);
-
-				if (getAllies(local_civ).length <= value)
-					return false;
-			}
-
-			//Return statement
-			return true;
-		}
-
-		function hasAlliesLEQ (arg0_civ_tags, arg1_value) {
-			//Convert from parameters
-			var civ_tags = getList(arg0_civ_tags);
-			var value = returnSafeNumber(arg1_value);
-
-			//Iterate over civ_tags
-			for (var i = 0; i < civ_tags.length; i++) {
-				var local_civ = getCivilisation(civ_tags[i]);
-
-				if (getAllies(local_civ).length > value)
-					return false;
-			}
-
-			//Return statement
-			return true;
-		}
-
-		function hasAlliesLessThan (arg0_civ_tags, arg1_value) {
-			//Convert from parameters
-			var civ_tags = getList(arg0_civ_tags);
-			var value = returnSafeNumber(arg1_value);
-
-			//Iterate over civ_tags
-			for (var i = 0; i < civ_tags.length; i++) {
-				var local_civ = getCivilisation(civ_tags[i]);
-
-				if (getAllies(local_civ).length >= value)
-					return false;
-			}
-
-			//Return statement
-			return true;
-		}
-
-		function hasDefensivePact (arg0_civ_tags, arg1_civ_tags) {
-			//Convert from parameters
-			var civ_tags = getList(arg0_civ_tags);
-			var ot_civ_tags = getList(arg1_civ_tags);
-
-			//Iterate over civ_tags
-			for (var i = 0; i < civ_tags.length; i++) {
-				var local_civ = getCivilisation(civ_tags[i]);
-				var local_civ_defensive_pacts = getDefensivePacts(local_civ);
-
-				//Iterate over ot_civ_tags
-				for (var x = 0; x < ot_civ_tags.length; x++)
-					if (!local_civ_defensive_pacts.includes(ot_civ_tags[x]))
-						return false;
-			}
-
-			//Return statement
-			return true;
-		}
-
-		function hasDefensivePactsEqualTo (arg0_civ_tags, arg1_value) {
-			//Convert from parameters
-			var civ_tags = getList(arg0_civ_tags);
-			var value = returnSafeNumber(artg1_value);
-
-			//Iterate over civ_tags
-			for (var i = 0; i < civ_tags.length; i++) {
-				var local_civ = getCivilisation(civ_tags[i]);
-
-				if (getDefensivePacts(local_civ).length != value)
-					return false;
-			}
-
-			//Return statement
-			return true;
-		}
-
-		function hasDefensivePactsGEQ (arg0_civ_tags, arg1_value) {
-			//Convert from parameters
-			var civ_tags = getList(arg0_civ_tags);
-			var value = returnSafeNumber(artg1_value);
-
-			//Iterate over civ_tags
-			for (var i = 0; i < civ_tags.length; i++) {
-				var local_civ = getCivilisation(civ_tags[i]);
-
-				if (getDefensivePacts(local_civ).length < value)
-					return false;
-			}
-
-			//Return statement
-			return true;
-		}
-
-		function hasDefensivePactsGreaterThan (arg0_civ_tags, arg1_value) {
-			//Convert from parameters
-			var civ_tags = getList(arg0_civ_tags);
-			var value = returnSafeNumber(artg1_value);
-
-			//Iterate over civ_tags
-			for (var i = 0; i < civ_tags.length; i++) {
-				var local_civ = getCivilisation(civ_tags[i]);
-
-				if (getDefensivePacts(local_civ).length <= value)
-					return false;
-			}
-
-			//Return statement
-			return true;
-		}
-
-		function hasDefensivePactsLEQ (arg0_civ_tags, arg1_value) {
-			//Convert from parameters
-			var civ_tags = getList(arg0_civ_tags);
-			var value = returnSafeNumber(artg1_value);
-
-			//Iterate over civ_tags
-			for (var i = 0; i < civ_tags.length; i++) {
-				var local_civ = getCivilisation(civ_tags[i]);
-
-				if (getDefensivePacts(local_civ).length > value)
-					return false;
-			}
-
-			//Return statement
-			return true;
-		}
-
-		function hasDefensivePactsLessThan (arg0_civ_tags, arg1_value) {
-			//Convert from parameters
-			var civ_tags = getList(arg0_civ_tags);
-			var value = returnSafeNumber(artg1_value);
-
-			//Iterate over civ_tags
-			for (var i = 0; i < civ_tags.length; i++) {
-				var local_civ = getCivilisation(civ_tags[i]);
-
-				if (getDefensivePacts(local_civ).length >= value)
-					return false;
-			}
-
-			//Return statement
-			return true;
-		}
-
-		function hasGuarantee (arg0_civ_tags, arg1_civ_tags) {
+		function civilisationGuarantorsAre (arg0_civ_tags, arg1_civ_tags) {
 			//Convert from parameters
 			var civ_tags = getList(arg0_civ_tags);
 			var ot_civ_tags = getList(arg1_civ_tags);
@@ -434,7 +237,66 @@
 			return true;
 		}
 
-		function hasMilitaryAccess (arg0_civ_tags, arg1_civ_tags) {
+		function civilisationGuarantorsAreNot (arg0_civ_tags) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+
+			//Iterate over civ_tags
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ = getCivilisation(civ_tags[i]);
+				var local_civ_guarantors = getGuarantors(local_civ);
+
+				//Iterate over ot_civ_tags
+				for (var x = 0; x < ot_civ_tags.length; x++)
+					if (local_civ_guarantors.includes(ot_civ_tags[x]))
+						return false;
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function civilisationHasAlliancesWith (arg0_civ_tags, arg1_civ_tags) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var ot_civ_tags = getList(arg1_civ_tags);
+
+			//Iterate over civ_tags
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ = getCivilisation(civ_tags[i]);
+				var local_civ_allies = getAllies(local_civ);
+
+				//Iterate over ot_civ_tags
+				for (var x = 0; x < ot_civ_tags.length; x++)
+					if (!local_civ_allies.includes(ot_civ_tags[x]))
+						return false;
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function civilisationHasDefensivePactsWith (arg0_civ_tags, arg1_civ_tags) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var ot_civ_tags = getList(arg1_civ_tags);
+
+			//Iterate over civ_tags
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ = getCivilisation(civ_tags[i]);
+				var local_civ_defensive_pacts = getDefensivePacts(local_civ);
+
+				//Iterate over ot_civ_tags
+				for (var x = 0; x < ot_civ_tags.length; x++)
+					if (!local_civ_defensive_pacts.includes(ot_civ_tags[x]))
+						return false;
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function civilisationHasMilitaryAccessWith (arg0_civ_tags, arg1_civ_tags) {
 			//Convert from parameters
 			var civ_tags = getList(arg0_civ_tags);
 			var ot_civ_tags = getList(arg1_civ_tags);
@@ -454,92 +316,7 @@
 			return true;
 		}
 
-		function hasNeighboursEqualTo (arg0_civ_tags, arg1_value) {
-			//Convert from parameters
-			var civ_tags = getList(arg0_civ_tags);
-			var value = returnSafeNumber(artg1_value);
-
-			//Iterate over civ_tags
-			for (var i = 0; i < civ_tags.length; i++) {
-				var local_civ = getCivilisation(civ_tags[i]);
-
-				if (getNeighbours(local_civ).length != value)
-					return false;
-			}
-
-			//Return statement
-			return true;
-		}
-
-		function hasNeighboursGEQ (arg0_civ_tags, arg1_value) {
-			//Convert from parameters
-			var civ_tags = getList(arg0_civ_tags);
-			var value = returnSafeNumber(artg1_value);
-
-			//Iterate over civ_tags
-			for (var i = 0; i < civ_tags.length; i++) {
-				var local_civ = getCivilisation(civ_tags[i]);
-
-				if (getNeighbours(local_civ).length < value)
-					return false;
-			}
-
-			//Return statement
-			return true;
-		}
-
-		function hasNeighboursGreaterThan (arg0_civ_tags, arg1_value) {
-			//Convert from parameters
-			var civ_tags = getList(arg0_civ_tags);
-			var value = returnSafeNumber(artg1_value);
-
-			//Iterate over civ_tags
-			for (var i = 0; i < civ_tags.length; i++) {
-				var local_civ = getCivilisation(civ_tags[i]);
-
-				if (getNeighbours(local_civ).length <= value)
-					return false;
-			}
-
-			//Return statement
-			return true;
-		}
-
-		function hasNeighboursLEQ (arg0_civ_tags, arg1_value) {
-			//Convert from parameters
-			var civ_tags = getList(arg0_civ_tags);
-			var value = returnSafeNumber(artg1_value);
-
-			//Iterate over civ_tags
-			for (var i = 0; i < civ_tags.length; i++) {
-				var local_civ = getCivilisation(civ_tags[i]);
-
-				if (getNeighbours(local_civ).length > value)
-					return false;
-			}
-
-			//Return statement
-			return true;
-		}
-
-		function hasNeighboursLessThan (arg0_civ_tags, arg1_value) {
-			//Convert from parameters
-			var civ_tags = getList(arg0_civ_tags);
-			var value = returnSafeNumber(artg1_value);
-
-			//Iterate over civ_tags
-			for (var i = 0; i < civ_tags.length; i++) {
-				var local_civ = getCivilisation(civ_tags[i]);
-
-				if (getNeighbours(local_civ).length >= value)
-					return false;
-			}
-
-			//Return statement
-			return true;
-		}
-
-		function hasNoAllies (arg0_civ_tags) {
+		function civilisationHasNoAllies (arg0_civ_tags) {
 			//Convert from parameters
 			var civ_tags = getList(arg0_civ_tags);
 
@@ -548,17 +325,16 @@
 				var local_civ = getCivilisation(civ_tags[i]);
 				var local_civ_allies = getAllies(local_civ);
 
-				//Iterate over ot_civ_tags
-				for (var x = 0; x < ot_civ_tags.length; x++)
-					if (local_civ_allies.includes(ot_civ_tags[x]))
-						return false;
+				//Return statement
+				if (local_civ_allies.length > 0)
+					return false;
 			}
 
 			//Return statement
 			return true;
 		}
 
-		function hasNoDefensivePact (arg0_civ_tags) {
+		function civilisationHasNoDefensivePacts (arg0_civ_tags) {
 			//Convert from parameters
 			var civ_tags = getList(arg0_civ_tags);
 
@@ -569,7 +345,7 @@
 
 				//Iterate over ot_civ_tags
 				for (var x = 0; x < ot_civ_tags.length; x++)
-					if (local_civ_defensive_pacts.includes(ot_civ_tags[x]))
+					if (local_civ_defensive_pacts.length > 0)
 						return false;
 			}
 
@@ -577,7 +353,25 @@
 			return true;
 		}
 
-		function hasNoGuarantors (arg0_civ_tags) {
+		function civilisationHasNoGuarantees (arg0_civ_tags) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+
+			//Iterate over civ_tags
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ = getCivilisation(civ_tags[i]);
+				var local_civ_guarantees = getGuarantees(local_civ);
+
+				//Iterate over ot_civ_tags
+				if (local_civ_guarantees.length > 0)
+					return false;
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function civilisationHasNoGuarantors (arg0_civ_tags) {
 			//Convert from parameters
 			var civ_tags = getList(arg0_civ_tags);
 
@@ -586,17 +380,15 @@
 				var local_civ = getCivilisation(civ_tags[i]);
 				var local_civ_guarantors = getGuarantors(local_civ);
 
-				//Iterate over ot_civ_tags
-				for (var x = 0; x < ot_civ_tags.length; x++)
-					if (local_civ_guarantors.includes(ot_civ_tags[x]))
-						return false;
+				if (local_civ_guarantors.length > 0)
+					return false;
 			}
 
 			//Return statement
 			return true;
 		}
 
-		function hasNoMilitaryAccess (arg0_civ_tags) {
+		function civilisationHasNoMilitaryAccess (arg0_civ_tags) {
 			//Convert from parameters
 			var civ_tags = getList(arg0_civ_tags);
 
@@ -605,26 +397,7 @@
 				var local_civ = getCivilisation(civ_tags[i]);
 				var local_civ_military_access = getMilitaryAccess(local_civ);
 
-				//Iterate over ot_civ_tags
-				for (var x = 0; x < ot_civ_tags.length; x++)
-					if (local_civ_military_access.includes(ot_civ_tags[x]))
-						return false;
-			}
-
-			//Return statement
-			return true;
-		}
-
-		function hasNonAggressionPactsEqualTo (arg0_civ_tags, arg1_value) {
-			//Convert from parameters
-			var civ_tags = getList(arg0_civ_tags);
-			var value = returnSafeNumber(artg1_value);
-
-			//Iterate over civ_tags
-			for (var i = 0; i < civ_tags.length; i++) {
-				var local_civ = getCivilisation(civ_tags[i]);
-
-				if (getNonAggressionPacts(local_civ).length != value)
+				if (local_civ_military_access.length > 0)
 					return false;
 			}
 
@@ -632,132 +405,7 @@
 			return true;
 		}
 
-		function hasNonAggressionPactsGEQ (arg0_civ_tags, arg1_value) {
-			//Convert from parameters
-			var civ_tags = getList(arg0_civ_tags);
-			var value = returnSafeNumber(artg1_value);
-
-			//Iterate over civ_tags
-			for (var i = 0; i < civ_tags.length; i++) {
-				var local_civ = getCivilisation(civ_tags[i]);
-
-				if (getNonAggressionPacts(local_civ).length < value)
-					return false;
-			}
-
-			//Return statement
-			return true;
-		}
-
-		function hasNonAggressionPactsGreaterThan (arg0_civ_tags, arg1_value) {
-			//Convert from parameters
-			var civ_tags = getList(arg0_civ_tags);
-			var value = returnSafeNumber(artg1_value);
-
-			//Iterate over civ_tags
-			for (var i = 0; i < civ_tags.length; i++) {
-				var local_civ = getCivilisation(civ_tags[i]);
-
-				if (getNonAggressionPacts(local_civ).length <= value)
-					return false;
-			}
-
-			//Return statement
-			return true;
-		}
-
-		function hasNonAggressionPactsLEQ (arg0_civ_tags, arg1_value) {
-			//Convert from parameters
-			var civ_tags = getList(arg0_civ_tags);
-			var value = returnSafeNumber(artg1_value);
-
-			//Iterate over civ_tags
-			for (var i = 0; i < civ_tags.length; i++) {
-				var local_civ = getCivilisation(civ_tags[i]);
-
-				if (getNonAggressionPacts(local_civ).length > value)
-					return false;
-			}
-
-			//Return statement
-			return true;
-		}
-
-		function hasNonAggressionPactsLessThan (arg0_civ_tags, arg1_value) {
-			//Convert from parameters
-			var civ_tags = getList(arg0_civ_tags);
-			var value = returnSafeNumber(artg1_value);
-
-			//Iterate over civ_tags
-			for (var i = 0; i < civ_tags.length; i++) {
-				var local_civ = getCivilisation(civ_tags[i]);
-
-				if (getNonAggressionPacts(local_civ).length >= value)
-					return false;
-			}
-
-			//Return statement
-			return true;
-		}
-
-		function hasNoNeighbours (arg0_civ_tags) {
-			//Convert from parameters
-			var civ_tags = getList(arg0_civ_tags);
-
-			//Iterate over civ_tags
-			for (var i = 0; i < civ_tags.length; i++) {
-				var local_civ = getCivilisation(civ_tags[i]);
-				var local_civ_neighbours = getNeighbours(local_civ);
-
-				//Iterate over ot_civ_tags
-				for (var x = 0; x < ot_civ_tags.length; x++)
-					if (local_civ_neighbours.includes(ot_civ_tags[x]))
-						return false;
-			}
-
-			//Return statement
-			return true;
-		}
-
-		function hasNoNonAggressionPacts (arg0_civ_tags) {
-			//Convert from parameters
-			var civ_tags = getList(arg0_civ_tags);
-
-			//Iterate over civ_tags
-			for (var i = 0; i < civ_tags.length; i++) {
-				var local_civ = getCivilisation(civ_tags[i]);
-				var local_civ_non_aggression_pacts = getNonAggressionPacts(local_civ);
-
-				//Iterate over ot_civ_tags
-				for (var x = 0; x < ot_civ_tags.length; x++)
-					if (local_civ_non_aggression_pacts.includes(ot_civ_tags[x]))
-						return false;
-			}
-
-			//Return statement
-			return true;
-		}
-
-		function hasNoTruces (arg0_civ_tags) {
-			//Convert from parameters
-			var civ_tags = getList(arg0_civ_tags);
-
-			//Iterate over civ_tags
-			for (var i = 0; i < civ_tags.length; i++) {
-				var local_civ = getCivilisation(civ_tags[i]);
-				var local_civ_truces = getTruces(local_civ);
-
-				//Iterate over ot_civ_tags
-				for (var x = 0; x < ot_civ_tags.length; x++)
-					if (local_civ_truces.includes(ot_civ_tags[x]))
-						return false;
-			}
-
-			//Return statement
-			return true;
-		}
-
-		function hasNonAggressionPacts (arg0_civ_tags, arg1_civ_tags) {
+		function civilisationHasNonAggressionPacts (arg0_civ_tags, arg1_civ_tags) {
 			//Convert from parameters
 			var civ_tags = getList(arg0_civ_tags);
 			var ot_civ_tags = getList(arg1_civ_tags);
@@ -777,7 +425,7 @@
 			return true;
 		}
 
-		function hasTotalWarsEqualTo (arg0_civ_tags, arg1_value) {
+		function civilisationHasNoNeighbours (arg0_civ_tags, arg1_value) {
 			//Convert from parameters
 			var civ_tags = getList(arg0_civ_tags);
 			var value = returnSafeNumber(artg1_value);
@@ -786,7 +434,7 @@
 			for (var i = 0; i < civ_tags.length; i++) {
 				var local_civ = getCivilisation(civ_tags[i]);
 
-				if (getTotalWars(local_civ) != value)
+				if (getNeighbours(local_civ).length > 0)
 					return false;
 			}
 
@@ -794,16 +442,16 @@
 			return true;
 		}
 
-		function hasTotalWarsGEQ (arg0_civ_tags, arg1_value) {
+		function civilisationHasNoNonAggressionPacts (arg0_civ_tags) {
 			//Convert from parameters
 			var civ_tags = getList(arg0_civ_tags);
-			var value = returnSafeNumber(artg1_value);
 
 			//Iterate over civ_tags
 			for (var i = 0; i < civ_tags.length; i++) {
 				var local_civ = getCivilisation(civ_tags[i]);
+				var local_civ_non_aggression_pacts = getNonAggressionPacts(local_civ);
 
-				if (getTotalWars(local_civ) < value)
+				if (local_civ_non_aggression_pacts.length > 0)
 					return false;
 			}
 
@@ -811,16 +459,16 @@
 			return true;
 		}
 
-		function hasTotalWarsGreaterThan (arg0_civ_tags, arg1_value) {
+		function civilisationHasNoRivals (arg0_civ_tags) {
 			//Convert from parameters
 			var civ_tags = getList(arg0_civ_tags);
-			var value = returnSafeNumber(artg1_value);
 
 			//Iterate over civ_tags
 			for (var i = 0; i < civ_tags.length; i++) {
 				var local_civ = getCivilisation(civ_tags[i]);
+				var local_civ_rivals = getRivals(local_civ);
 
-				if (getTotalWars(local_civ) <= value)
+				if (local_civ_rivals.length > 0)
 					return false;
 			}
 
@@ -828,16 +476,16 @@
 			return true;
 		}
 
-		function hasTotalWarsLEQ (arg0_civ_tags, arg1_value) {
+		function civilisationHasNoTruces (arg0_civ_tags) {
 			//Convert from parameters
 			var civ_tags = getList(arg0_civ_tags);
-			var value = returnSafeNumber(artg1_value);
 
 			//Iterate over civ_tags
 			for (var i = 0; i < civ_tags.length; i++) {
 				var local_civ = getCivilisation(civ_tags[i]);
+				var local_civ_truces = getTruces(local_civ);
 
-				if (getTotalWars(local_civ) > value)
+				if (local_civ_truces.length > 0)
 					return false;
 			}
 
@@ -845,24 +493,7 @@
 			return true;
 		}
 
-		function hasTotalWarsLessThan (arg0_civ_tags, arg1_value) {
-			//Convert from parameters
-			var civ_tags = getList(arg0_civ_tags);
-			var value = returnSafeNumber(artg1_value);
-
-			//Iterate over civ_tags
-			for (var i = 0; i < civ_tags.length; i++) {
-				var local_civ = getCivilisation(civ_tags[i]);
-
-				if (getTotalWars(local_civ) >= value)
-					return false;
-			}
-
-			//Return statement
-			return true;
-		}
-
-		function hasTruce (arg0_civ_tags, arg1_civ_tags) {
+		function civilisationHasTruces (arg0_civ_tags, arg1_civ_tags) {
 			//Convert from parameters
 			var civ_tags = getList(arg0_civ_tags);
 			var ot_civ_tags = getList(arg1_civ_tags);
@@ -882,16 +513,16 @@
 			return true;
 		}
 
-		function hasVassalsEqualTo (arg0_civ_tags, arg1_value) {
+		function civilisationIsAtWar (arg0_civ_tags) {
 			//Convert from parameters
 			var civ_tags = getList(arg0_civ_tags);
-			var value = returnSafeNumber(artg1_value);
 
 			//Iterate over civ_tags
 			for (var i = 0; i < civ_tags.length; i++) {
 				var local_civ = getCivilisation(civ_tags[i]);
+				var local_civ_at_war = isAtWar(local_civ);
 
-				if (getVassals(local_civ).length != value)
+				if (!local_civ_at_war)
 					return false;
 			}
 
@@ -899,91 +530,7 @@
 			return true;
 		}
 
-		function hasVassalsGEQ (arg0_civ_tags, arg1_value) {
-			//Convert from parameters
-			var civ_tags = getList(arg0_civ_tags);
-			var value = returnSafeNumber(artg1_value);
-
-			//Iterate over civ_tags
-			for (var i = 0; i < civ_tags.length; i++) {
-				var local_civ = getCivilisation(civ_tags[i]);
-
-				if (getVassals(local_civ).length < value)
-					return false;
-			}
-
-			//Return statement
-			return true;
-		}
-
-		function hasVassalsGreaterThan (arg0_civ_tags, arg1_value) {
-			//Convert from parameters
-			var civ_tags = getList(arg0_civ_tags);
-			var value = returnSafeNumber(artg1_value);
-
-			//Iterate over civ_tags
-			for (var i = 0; i < civ_tags.length; i++) {
-				var local_civ = getCivilisation(civ_tags[i]);
-
-				if (getVassals(local_civ).length <= value)
-					return false;
-			}
-
-			//Return statement
-			return true;
-		}
-
-		function hasVassalsLEQ (arg0_civ_tags, arg1_value) {
-			//Convert from parameters
-			var civ_tags = getList(arg0_civ_tags);
-			var value = returnSafeNumber(artg1_value);
-
-			//Iterate over civ_tags
-			for (var i = 0; i < civ_tags.length; i++) {
-				var local_civ = getCivilisation(civ_tags[i]);
-
-				if (getVassals(local_civ).length > value)
-					return false;
-			}
-
-			//Return statement
-			return true;
-		}
-
-		function hasVassalsLessThan (arg0_civ_tags, arg1_value) {
-			//Convert from parameters
-			var civ_tags = getList(arg0_civ_tags);
-			var value = returnSafeNumber(artg1_value);
-
-			//Iterate over civ_tags
-			for (var i = 0; i < civ_tags.length; i++) {
-				var local_civ = getCivilisation(civ_tags[i]);
-
-				if (getVassals(local_civ).length >= value)
-					return false;
-			}
-
-			//Return statement
-			return true;
-		}
-
-		function isAI (arg0_civ_tags) {
-			//Convert from parameters
-			var civ_tags = getList(arg0_civ_tags);
-
-			//Declare local instance variables
-			for (var i = 0; i < civ_tags.length; i++) {
-				var local_civ_id = getCivilisationID(civ_tags[i]);
-
-				if (M_Players.isPlayer(local_civ_id))
-					return false;
-			}
-
-			//Return statement
-			return true;
-		}
-
-		function isAtWarWith (arg0_civ_tags, arg1_civ_tags) {
+		function civilisationIsAtWarWith (arg0_civ_tags, arg1_civ_tags) {
 			//Convert from parameters
 			var civ_tags = getList(arg0_civ_tags);
 			var ot_civ_tags = getList(arg1_civ_tags);
@@ -1003,27 +550,7 @@
 			return true;
 		}
 
-		function isCiv (arg0_civ_tags) {
-			//Convert from parameters
-			var civ_tags = getList(arg0_civ_tags);
-
-			//Declare local instance variables
-			for (var i = 0; i < civ_tags.length; i++) {
-				var local_civ = getCivilisation(civ_tags[i]);
-
-				if (local_civ) {
-					if (local_civ.getProvinces().size() < 1)
-						return false;
-				} else {
-					return false;
-				}
-			}
-
-			//Return statement
-			return true;
-		}
-
-		function isGuaranteeing (arg0_civ_tags, arg1_civ_tags) {
+		function civilisationIsGuaranteeing (arg0_civ_tags, arg1_civ_tags) {
 			//Convert from parameters
 			var civ_tags = getList(arg0_civ_tags);
 			var ot_civ_tags = getList(arg1_civ_tags);
@@ -1040,25 +567,47 @@
 			}
 		}
 
-		function isNotAllied (arg0_civ_tags) {
+		function civilisationIsNeighboursWith (arg0_civ_tags, arg1_civ_tags) {
 			//Convert from parameters
 			var civ_tags = getList(arg0_civ_tags);
+			var ot_civ_tags = getList(arg1_civ_tags);
 
 			//Iterate over civ_tags
 			for (var i = 0; i < civ_tags.length; i++) {
 				var local_civ = getCivilisation(civ_tags[i]);
-				var local_civ_allies = getAllies(local_civ);
+				var local_civ_neighbours = getNeighbours(local_civ);
 
-				//Return statement
-				if (local_civ_allies.length > 0)
-					return false;
+				//Iterate over ot_civ_tags
+				for (var x = 0; x < ot_civ_tags.length; x++)
+					if (!local_civ_neighbours.includes(ot_civ_tags[x]))
+						return false;
 			}
 
 			//Return statement
 			return true;
 		}
 
-		function isNotAtWar (arg0_civ_tags) {
+		function civilisationIsNotAlliedWith (arg0_civ_tags, arg1_civ_tags) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var ot_civ_tags = getList(arg1_civ_tags);
+
+			//Iterate over civ_tags
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ = getCivilisation(civ_tags[i]);
+				var local_civ_allies = getAllies(local_civ);
+
+				//Iterate over ot_civ_tags
+				for (var x = 0; x < ot_civ_tags.length; x++)
+					if (local_civ_allies.includes(ot_civ_tags[x]))
+						return false;
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function civilisationIsNotAtWar (arg0_civ_tags) {
 			//Convert from parameters
 			var civ_tags = getList(arg0_civ_tags);
 
@@ -1076,7 +625,27 @@
 			return true;
 		}
 
-		function isNotRival (arg0_civ_tags) {
+		function civilisationIsNotAtWarWith (arg0_civ_tags, arg1_civ_tags) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var ot_civ_tags = getList(arg1_civ_tags);
+
+			//Iterate over civ_tags
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ = getCivilisation(civ_tags[i]);
+				var local_civ_enemies = getEnemies(local_civ);
+
+				//Iterate over ot_civ_tags
+				for (var x = 0; x < ot_civ_tags.length; x++)
+					if (local_civ_enemies.includes(ot_civ_tags[x]))
+						return false;
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function civilisationIsNotRivalsWith (arg0_civ_tags) {
 			//Convert from parameters
 			var civ_tags = getList(arg0_civ_tags);
 
@@ -1094,23 +663,7 @@
 			return true;
 		}
 
-		function isPlayer (arg0_civ_tags) {
-			//Convert from parameters
-			var civ_tags = getList(arg0_civ_tags);
-
-			//Iterate over civ_tags
-			for (var i = 0; i < civ_tags.length; i++) {
-				var local_civ_id = getCivilisationID(civ_tags[i]);
-
-				if (!M_Players.isPlayer(local_civ_id))
-					return false;
-			}
-
-			//Return statement
-			return true;
-		}
-
-		function isRival (arg0_civ_tags, arg1_civ_tags) {
+		function civilisationIsRivalWith (arg0_civ_tags, arg1_civ_tags) {
 			//Convert from parameters
 			var civ_tags = getList(arg0_civ_tags);
 			var ot_civ_tags = getList(arg1_civ_tags);
@@ -1139,7 +692,7 @@
 			return true;
 		}
 
-		function isVassal (arg0_civ_tags) {
+		function civilisationIsVassal (arg0_civ_tags) {
 			//Convert from parameters
 			var civ_tags = getList(arg0_civ_tags);
 
@@ -1155,7 +708,7 @@
 			return true;
 		}
 
-		function isVassalOf (arg0_civ_tags, arg1_civ_tags) {
+		function civilisationIsVassalOf (arg0_civ_tags, arg1_civ_tags) {
 			//Convert from parameters
 			var civ_tags = getList(arg0_civ_tags);
 			var ot_civ_tags = getList(arg1_civ_tags);
@@ -1179,8 +732,609 @@
 			//Return statement
 			return true;
 		}
+	}
 
-		function opinionIs (arg0_civ_tags, arg1_civ_tags, arg2_value) {
+	//Politics (External [Diplomacy] - Relation Comparisons).
+	{
+		function civilisationHasAlliesEqualTo (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(arg1_value);
+
+			//Iterate over civ_tags
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ = getCivilisation(civ_tags[i]);
+
+				if (getAllies(local_civ).length != value)
+					return false;
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function civilisationHasAlliesGEQ (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(arg1_value);
+
+			//Iterate over civ_tags
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ = getCivilisation(civ_tags[i]);
+
+				if (getAllies(local_civ).length < value)
+					return false;
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function civilisationHasAlliesGreaterThan (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(arg1_value);
+
+			//Iterate over civ_tags
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ = getCivilisation(civ_tags[i]);
+
+				if (getAllies(local_civ).length <= value)
+					return false;
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function civilisationHasAlliesLEQ (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(arg1_value);
+
+			//Iterate over civ_tags
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ = getCivilisation(civ_tags[i]);
+
+				if (getAllies(local_civ).length > value)
+					return false;
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function civilisationHasAlliesLessThan (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(arg1_value);
+
+			//Iterate over civ_tags
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ = getCivilisation(civ_tags[i]);
+
+				if (getAllies(local_civ).length >= value)
+					return false;
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function civilisationHasDefensivePactsEqualTo (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(artg1_value);
+
+			//Iterate over civ_tags
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ = getCivilisation(civ_tags[i]);
+
+				if (getDefensivePacts(local_civ).length != value)
+					return false;
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function civilisationHasDefensivePactsGEQ (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(artg1_value);
+
+			//Iterate over civ_tags
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ = getCivilisation(civ_tags[i]);
+
+				if (getDefensivePacts(local_civ).length < value)
+					return false;
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function civilisationHasDefensivePactsGreaterThan (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(artg1_value);
+
+			//Iterate over civ_tags
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ = getCivilisation(civ_tags[i]);
+
+				if (getDefensivePacts(local_civ).length <= value)
+					return false;
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function civilisationHasDefensivePactsLEQ (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(artg1_value);
+
+			//Iterate over civ_tags
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ = getCivilisation(civ_tags[i]);
+
+				if (getDefensivePacts(local_civ).length > value)
+					return false;
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function civilisationHasDefensivePactsLessThan (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(artg1_value);
+
+			//Iterate over civ_tags
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ = getCivilisation(civ_tags[i]);
+
+				if (getDefensivePacts(local_civ).length >= value)
+					return false;
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function civilisationHasNeighboursEqualTo (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(artg1_value);
+
+			//Iterate over civ_tags
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ = getCivilisation(civ_tags[i]);
+
+				if (getNeighbours(local_civ).length != value)
+					return false;
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function civilisationHasNeighboursGEQ (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(artg1_value);
+
+			//Iterate over civ_tags
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ = getCivilisation(civ_tags[i]);
+
+				if (getNeighbours(local_civ).length < value)
+					return false;
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function civilisationHasNeighboursGreaterThan (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(artg1_value);
+
+			//Iterate over civ_tags
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ = getCivilisation(civ_tags[i]);
+
+				if (getNeighbours(local_civ).length <= value)
+					return false;
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function civilisationHasNeighboursLEQ (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(artg1_value);
+
+			//Iterate over civ_tags
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ = getCivilisation(civ_tags[i]);
+
+				if (getNeighbours(local_civ).length > value)
+					return false;
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function civilisationHasNeighboursLessThan (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(artg1_value);
+
+			//Iterate over civ_tags
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ = getCivilisation(civ_tags[i]);
+
+				if (getNeighbours(local_civ).length >= value)
+					return false;
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function civilisationHasNonAggressionPactsEqualTo (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(artg1_value);
+
+			//Iterate over civ_tags
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ = getCivilisation(civ_tags[i]);
+
+				if (getNonAggressionPacts(local_civ).length != value)
+					return false;
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function civilisationHasNonAggressionPactsGEQ (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(artg1_value);
+
+			//Iterate over civ_tags
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ = getCivilisation(civ_tags[i]);
+
+				if (getNonAggressionPacts(local_civ).length < value)
+					return false;
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function civilisationHasNonAggressionPactsGreaterThan (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(artg1_value);
+
+			//Iterate over civ_tags
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ = getCivilisation(civ_tags[i]);
+
+				if (getNonAggressionPacts(local_civ).length <= value)
+					return false;
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function civilisationHasNonAggressionPactsLEQ (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(artg1_value);
+
+			//Iterate over civ_tags
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ = getCivilisation(civ_tags[i]);
+
+				if (getNonAggressionPacts(local_civ).length > value)
+					return false;
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function civilisationHasNonAggressionPactsLessThan (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(artg1_value);
+
+			//Iterate over civ_tags
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ = getCivilisation(civ_tags[i]);
+
+				if (getNonAggressionPacts(local_civ).length >= value)
+					return false;
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function civilisationHasTotalWarsEqualTo (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(artg1_value);
+
+			//Iterate over civ_tags
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ = getCivilisation(civ_tags[i]);
+
+				if (getTotalWars(local_civ) != value)
+					return false;
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function civilisationHasTotalWarsGEQ (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(artg1_value);
+
+			//Iterate over civ_tags
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ = getCivilisation(civ_tags[i]);
+
+				if (getTotalWars(local_civ) < value)
+					return false;
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function civilisationHasTotalWarsGreaterThan (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(artg1_value);
+
+			//Iterate over civ_tags
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ = getCivilisation(civ_tags[i]);
+
+				if (getTotalWars(local_civ) <= value)
+					return false;
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function civilisationHasTotalWarsLEQ (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(artg1_value);
+
+			//Iterate over civ_tags
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ = getCivilisation(civ_tags[i]);
+
+				if (getTotalWars(local_civ) > value)
+					return false;
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function civilisationHasTotalWarsLessThan (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(artg1_value);
+
+			//Iterate over civ_tags
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ = getCivilisation(civ_tags[i]);
+
+				if (getTotalWars(local_civ) >= value)
+					return false;
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function civilisationHasVassalsEqualTo (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(artg1_value);
+
+			//Iterate over civ_tags
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ = getCivilisation(civ_tags[i]);
+
+				if (getVassals(local_civ).length != value)
+					return false;
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function civilisationHasVassalsGEQ (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(artg1_value);
+
+			//Iterate over civ_tags
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ = getCivilisation(civ_tags[i]);
+
+				if (getVassals(local_civ).length < value)
+					return false;
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function civilisationHasVassalsGreaterThan (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(artg1_value);
+
+			//Iterate over civ_tags
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ = getCivilisation(civ_tags[i]);
+
+				if (getVassals(local_civ).length <= value)
+					return false;
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function civilisationHasVassalsLEQ (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(artg1_value);
+
+			//Iterate over civ_tags
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ = getCivilisation(civ_tags[i]);
+
+				if (getVassals(local_civ).length > value)
+					return false;
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function civilisationHasVassalsLessThan (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(artg1_value);
+
+			//Iterate over civ_tags
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ = getCivilisation(civ_tags[i]);
+
+				if (getVassals(local_civ).length >= value)
+					return false;
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function civilisationRankingIs (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(arg1_value);
+
+			//Declare local instance variables
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ = getCivilisation(civ_tags[i]);
+
+				if (getCivilisationRank(local_civ) != value)
+					return false;
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function civilisationRankingIsGEQ (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(arg1_value);
+
+			//Declare local instance variables
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ = getCivilisation(civ_tags[i]);
+
+				if (getCivilisationRank(local_civ) < value)
+					return false;
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function civilisationRankingIsGreaterThan (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(arg1_value);
+
+			//Declare local instance variables
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ = getCivilisation(civ_tags[i]);
+
+				if (getCivilisationRank(local_civ) <= value)
+					return false;
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function civilisationRankingIsLEQ (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(arg1_value);
+
+			//Declare local instance variables
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ = getCivilisation(civ_tags[i]);
+
+				if (getCivilisationRank(local_civ) > value)
+					return false;
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function civilisationRankingIsLessThan (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(arg1_value);
+
+			//Declare local instance variables
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ = getCivilisation(civ_tags[i]);
+
+				if (getCivilisationRank(local_civ) >= value)
+					return false;
+			}
+
+			//Return statement
+			return true;
+		}
+	}
+
+	//Politics (External [Diplomacy] - Opinion).
+	{
+		function civilisationOpinionIs (arg0_civ_tags, arg1_civ_tags, arg2_value) {
 			//Convert from parameters
 			var civ_tags = getList(arg0_civ_tags);
 			var ot_civ_tags = getList(arg1_civ_tags);
@@ -1204,7 +1358,7 @@
 			return true;
 		}
 
-		function opinionIs (arg0_civ_tags, arg1_civ_tags, arg2_value) {
+		function civilisationOpinionIs (arg0_civ_tags, arg1_civ_tags, arg2_value) {
 			//Convert from parameters
 			var civ_tags = getList(arg0_civ_tags);
 			var ot_civ_tags = getList(arg1_civ_tags);
@@ -1228,7 +1382,7 @@
 			return true;
 		}
 
-		function opinionIsGEQ (arg0_civ_tags, arg1_civ_tags, arg2_value) {
+		function civilisationOpinionIsGEQ (arg0_civ_tags, arg1_civ_tags, arg2_value) {
 			//Convert from parameters
 			var civ_tags = getList(arg0_civ_tags);
 			var ot_civ_tags = getList(arg1_civ_tags);
@@ -1252,7 +1406,7 @@
 			return true;
 		}
 
-		function opinionIsGreaterThan (arg0_civ_tags, arg1_civ_tags, arg2_value) {
+		function civilisationOpinionIsGreaterThan (arg0_civ_tags, arg1_civ_tags, arg2_value) {
 			//Convert from parameters
 			var civ_tags = getList(arg0_civ_tags);
 			var ot_civ_tags = getList(arg1_civ_tags);
@@ -1276,7 +1430,7 @@
 			return true;
 		}
 
-		function opinionIsLEQ (arg0_civ_tags, arg1_civ_tags, arg2_value) {
+		function civilisationOpinionIsLEQ (arg0_civ_tags, arg1_civ_tags, arg2_value) {
 			//Convert from parameters
 			var civ_tags = getList(arg0_civ_tags);
 			var ot_civ_tags = getList(arg1_civ_tags);
@@ -1300,7 +1454,7 @@
 			return true;
 		}
 
-		function opinionIsLessThan (arg0_civ_tags, arg1_civ_tags, arg2_value) {
+		function civilisationOpinionIsLessThan (arg0_civ_tags, arg1_civ_tags, arg2_value) {
 			//Convert from parameters
 			var civ_tags = getList(arg0_civ_tags);
 			var ot_civ_tags = getList(arg1_civ_tags);
@@ -1318,91 +1472,6 @@
 					if (local_opinion_obj.value >= value)
 						return false;
 				}
-			}
-
-			//Return statement
-			return true;
-		}
-
-		function rankingIs (arg0_civ_tags, arg1_value) {
-			//Convert from parameters
-			var civ_tags = getList(arg0_civ_tags);
-			var value = returnSafeNumber(arg1_value);
-
-			//Declare local instance variables
-			for (var i = 0; i < civ_tags.length; i++) {
-				var local_civ = getCivilisation(civ_tags[i]);
-
-				if (getCivilisationRank(local_civ) != value)
-					return false;
-			}
-
-			//Return statement
-			return true;
-		}
-
-		function rankingIsGEQ (arg0_civ_tags, arg1_value) {
-			//Convert from parameters
-			var civ_tags = getList(arg0_civ_tags);
-			var value = returnSafeNumber(arg1_value);
-
-			//Declare local instance variables
-			for (var i = 0; i < civ_tags.length; i++) {
-				var local_civ = getCivilisation(civ_tags[i]);
-
-				if (getCivilisationRank(local_civ) < value)
-					return false;
-			}
-
-			//Return statement
-			return true;
-		}
-
-		function rankingIsGreaterThan (arg0_civ_tags, arg1_value) {
-			//Convert from parameters
-			var civ_tags = getList(arg0_civ_tags);
-			var value = returnSafeNumber(arg1_value);
-
-			//Declare local instance variables
-			for (var i = 0; i < civ_tags.length; i++) {
-				var local_civ = getCivilisation(civ_tags[i]);
-
-				if (getCivilisationRank(local_civ) <= value)
-					return false;
-			}
-
-			//Return statement
-			return true;
-		}
-
-		function rankingIsLEQ (arg0_civ_tags, arg1_value) {
-			//Convert from parameters
-			var civ_tags = getList(arg0_civ_tags);
-			var value = returnSafeNumber(arg1_value);
-
-			//Declare local instance variables
-			for (var i = 0; i < civ_tags.length; i++) {
-				var local_civ = getCivilisation(civ_tags[i]);
-
-				if (getCivilisationRank(local_civ) > value)
-					return false;
-			}
-
-			//Return statement
-			return true;
-		}
-
-		function rankingIsLessThan (arg0_civ_tags, arg1_value) {
-			//Convert from parameters
-			var civ_tags = getList(arg0_civ_tags);
-			var value = returnSafeNumber(arg1_value);
-
-			//Declare local instance variables
-			for (var i = 0; i < civ_tags.length; i++) {
-				var local_civ = getCivilisation(civ_tags[i]);
-
-				if (getCivilisationRank(local_civ) >= value)
-					return false;
 			}
 
 			//Return statement

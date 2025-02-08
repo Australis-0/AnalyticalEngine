@@ -119,7 +119,7 @@
 
 		//Initialise options
 		if (!options.depth) options.depth = 0;
-		if (!options.deepscript_file_extensions) options.deepscript_file_extensions = [".ds"];
+		if (!options.deepscript_file_extensions) options.deepscript_file_extensions = [".ds", ".js"];
 
 		//Check if the file_path given is a folder
 		try {

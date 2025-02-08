@@ -2,7 +2,6 @@
 {
 	//Military.
 	{
-		//[WIP] - Finish limit functions.
 		function civilisationBattleWidthIs (arg0_civ_tags, arg1_value) {
 			//Convert from parameters
 			var civ_tags = getList(arg0_civ_tags);
@@ -223,7 +222,7 @@
 			return true;
 		}
 
-		function civilisationMaxManpowerIs (arg0_civ_tags, arg1_value) {
+		function civilisationMaximumManpowerIs (arg0_civ_tags, arg1_value) {
 			//Convert from parameters
 			var civ_tags = getList(arg0_civ_tags);
 			var value = returnSafeNumber(arg1_value);
@@ -236,7 +235,7 @@
 				return true;
 		}
 
-		function civilisationMaxManpowerIsGEQ (arg0_civ_tags, arg1_value) {
+		function civilisationMaximumManpowerIsGEQ (arg0_civ_tags, arg1_value) {
 			//Convert from parameters
 			var civ_tags = getList(arg0_civ_tags);
 			var value = returnSafeNumber(arg1_value);
@@ -249,7 +248,7 @@
 				return true;
 		}
 
-		function civilisationMaxManpowerIsGreaterThan (arg0_civ_tags, arg1_value) {
+		function civilisationMaximumManpowerIsGreaterThan (arg0_civ_tags, arg1_value) {
 			//Convert from parameters
 			var civ_tags = getList(arg0_civ_tags);
 			var value = returnSafeNumber(arg1_value);
@@ -262,7 +261,7 @@
 				return true;
 		}
 
-		function civilisationMaxManpowerIsLEQ (arg0_civ_tags, arg1_value) {
+		function civilisationMaximumManpowerIsLEQ (arg0_civ_tags, arg1_value) {
 			//Convert from parameters
 			var civ_tags = getList(arg0_civ_tags);
 			var value = returnSafeNumber(arg1_value);
@@ -275,7 +274,7 @@
 				return true;
 		}
 
-		function civilisationMaxManpowerIsLessThan (arg0_civ_tags, arg1_value) {
+		function civilisationMaximumManpowerIsLessThan (arg0_civ_tags, arg1_value) {
 			//Convert from parameters
 			var civ_tags = getList(arg0_civ_tags);
 			var value = returnSafeNumber(arg1_value);
@@ -353,71 +352,6 @@
 				return true;
 		}
 
-		function civilisationRegimentsOverLimitIs (arg0_civ_tags, arg1_value) {
-			//Convert from parameters
-			var civ_tags = getList(arg0_civ_tags);
-			var value = returnSafeNumber(arg1_value);
-
-			//Declare local instance variable
-			var comparison_value = getCivilisationsRegimentsOverLimitValue(civ_tags);
-
-			//Return statement
-			if (comparison_value == value)
-				return true;
-		}
-
-		function civilisationRegimentsOverLimitIsGEQ (arg0_civ_tags, arg1_value) {
-			//Convert from parameters
-			var civ_tags = getList(arg0_civ_tags);
-			var value = returnSafeNumber(arg1_value);
-
-			//Declare local instance variable
-			var comparison_value = getCivilisationsRegimentsOverLimitValue(civ_tags);
-
-			//Return statement
-			if (comparison_value >= value)
-				return true;
-		}
-
-		function civilisationRegimentsOverLimitIsGreaterThan (arg0_civ_tags, arg1_value) {
-			//Convert from parameters
-			var civ_tags = getList(arg0_civ_tags);
-			var value = returnSafeNumber(arg1_value);
-
-			//Declare local instance variable
-			var comparison_value = getCivilisationsRegimentsOverLimitValue(civ_tags);
-
-			//Return statement
-			if (comparison_value > value)
-				return true;
-		}
-
-		function civilisationRegimentsOverLimitIsLEQ (arg0_civ_tags, arg1_value) {
-			//Convert from parameters
-			var civ_tags = getList(arg0_civ_tags);
-			var value = returnSafeNumber(arg1_value);
-
-			//Declare local instance variable
-			var comparison_value = getCivilisationsRegimentsOverLimitValue(civ_tags);
-
-			//Return statement
-			if (comparison_value <= value)
-				return true;
-		}
-
-		function civilisationRegimentsOverLimitIsLessThan (arg0_civ_tags, arg1_value) {
-			//Convert from parameters
-			var civ_tags = getList(arg0_civ_tags);
-			var value = returnSafeNumber(arg1_value);
-
-			//Declare local instance variable
-			var comparison_value = getCivilisationsRegimentsOverLimitValue(civ_tags);
-
-			//Return statement
-			if (comparison_value < value)
-				return true;
-		}
-
 		function civilisationRegimentsLimitIs (arg0_civ_tags, arg1_value) {
 			//Convert from parameters
 			var civ_tags = getList(arg0_civ_tags);
@@ -477,6 +411,71 @@
 
 			//Declare local instance variable
 			var comparison_value = getCivilisationRegimentsLimit(civ_tags);
+
+			//Return statement
+			if (comparison_value < value)
+				return true;
+		}
+
+		function civilisationRegimentsOverLimitIs (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(arg1_value);
+
+			//Declare local instance variable
+			var comparison_value = getCivilisationsRegimentsOverLimitValue(civ_tags);
+
+			//Return statement
+			if (comparison_value == value)
+				return true;
+		}
+
+		function civilisationRegimentsOverLimitIsGEQ (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(arg1_value);
+
+			//Declare local instance variable
+			var comparison_value = getCivilisationsRegimentsOverLimitValue(civ_tags);
+
+			//Return statement
+			if (comparison_value >= value)
+				return true;
+		}
+
+		function civilisationRegimentsOverLimitIsGreaterThan (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(arg1_value);
+
+			//Declare local instance variable
+			var comparison_value = getCivilisationsRegimentsOverLimitValue(civ_tags);
+
+			//Return statement
+			if (comparison_value > value)
+				return true;
+		}
+
+		function civilisationRegimentsOverLimitIsLEQ (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(arg1_value);
+
+			//Declare local instance variable
+			var comparison_value = getCivilisationsRegimentsOverLimitValue(civ_tags);
+
+			//Return statement
+			if (comparison_value <= value)
+				return true;
+		}
+
+		function civilisationRegimentsOverLimitIsLessThan (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(arg1_value);
+
+			//Declare local instance variable
+			var comparison_value = getCivilisationsRegimentsOverLimitValue(civ_tags);
 
 			//Return statement
 			if (comparison_value < value)

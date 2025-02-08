@@ -1,5 +1,108 @@
 //Initialise functions
 {
+	//Politics (Internal - Meta).
+	{
+		function civilisationDoesNotHaveGovernmentType (arg0_civ_tags, arg1_government_names) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var government_types = getList(arg1_government_names);
+
+			//Declare local instance variables
+			var comparison_government_keys = [];
+
+			//Iterate over government_types
+			for (var i = 0; i < government_types.length; i++)
+				comparison_government_keys.push(getIdeology(government_types[i], { return_key: true }));
+
+			//Iterate over all civ_tags
+			for (var i = 0; i < civ_tags.length; i++) {
+				var civ_obj = getCivilisation(civ_tags[i]);
+				var local_government_type = getCivilisationIdeology(civ_obj, { return_key: true });
+
+				if (comparison_government_keys.includes(local_government_type))
+					return false;
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function civilisationDoesNotHaveReligion (arg0_civ_tags, arg1_religion_names) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var religion_types = getList(arg1_religion_names);
+
+			//Declare local instance variables
+			var comparison_religion_keys = [];
+
+			//Iterate over religion_types
+			for (var i = 0; i < religion_types.length; i++)
+				comparison_religion_keys.push(getReligion(religion_types[i], { return_key: true }));
+
+			//Iterate over all civ_tags
+			for (var i = 0; i < civ_tags.length; i++) {
+				var civ_obj = getCivilisation(civ_tags[i]);
+				var local_religion_type = getCivilisationReligion(civ_obj, { return_key: true });
+
+				if (!comparison_religion_keys.includes(local_religion_type))
+					return false;
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function civilisationHasGovernmentType (arg0_civ_tags, arg1_government_names) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var government_types = getList(arg1_government_names);
+
+			//Declare local instance variables
+			var comparison_government_keys = [];
+
+			//Iterate over government_types
+			for (var i = 0; i < government_types.length; i++)
+				comparison_government_keys.push(getIdeology(government_types[i], { return_key: true }));
+
+			//Iterate over all civ_tags
+			for (var i = 0; i < civ_tags.length; i++) {
+				var civ_obj = getCivilisation(civ_tags[i]);
+				var local_government_type = getCivilisationIdeology(civ_obj, { return_key: true });
+
+				if (!comparison_government_keys.includes(local_government_type))
+					return false;
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function civilisationHasReligion (arg0_civ_tags, arg1_religion_names) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var religion_types = getList(arg1_religion_names);
+
+			//Declare local instance variables
+			var comparison_religion_keys = [];
+
+			//Iterate over religion_types
+			for (var i = 0; i < religion_types.length; i++)
+				comparison_religion_keys.push(getReligion(religion_types[i], { return_key: true }));
+
+			//Iterate over all civ_tags
+			for (var i = 0; i < civ_tags.length; i++) {
+				var civ_obj = getCivilisation(civ_tags[i]);
+				var local_religion_type = getCivilisationReligion(civ_obj, { return_key: true });
+
+				if (!comparison_religion_keys.includes(local_religion_type))
+					return false;
+			}
+
+			//Return statement
+			return true;
+		}
+	}
+
 	//Politics (Internal).
 	{
 		function civilisationAdvisorSkillIs (arg0_civ_tags, arg1_value) {
@@ -625,131 +728,6 @@
 				var local_civ_recruited_advisors = getCivilisationLegaciesValue(local_civ);
 
 				if (local_civ_recruited_advisors >= value)
-					return false;
-			}
-
-			//Return statement
-			return true;
-		}
-
-		function hasGovernmentType (arg0_civ_tags, arg1_government_types) {
-			//Convert from parameters
-			var civ_tags = getList(arg0_civ_tags);
-			var government_types = getList(arg1_government_types);
-
-			//Declare local instance variables
-			var comparison_government_keys = [];
-
-			//Iterate over government_types
-			for (var i = 0; i < government_types.length; i++)
-				comparison_government_keys.push(getIdeology(government_types[i], { return_key: true }));
-
-			//Iterate over all civ_tags
-			for (var i = 0; i < civ_tags.length; i++) {
-				var civ_obj = getCivilisation(civ_tags[i]);
-				var local_government_type = getCivilisationIdeology(civ_obj, { return_key: true });
-
-				if (!comparison_government_keys.includes(local_government_type))
-					return false;
-			}
-
-			//Return statement
-			return true;
-		}
-
-		function hasReligion (arg0_civ_tags, arg1_religion_types) {
-			//Convert from parameters
-			var civ_tags = getList(arg0_civ_tags);
-			var religion_types = getList(arg1_religion_types);
-
-			//Declare local instance variables
-			var comparison_religion_keys = [];
-
-			//Iterate over religion_types
-			for (var i = 0; i < religion_types.length; i++)
-				comparison_religion_keys.push(getReligion(religion_types[i], { return_key: true }));
-
-			//Iterate over all civ_tags
-			for (var i = 0; i < civ_tags.length; i++) {
-				var civ_obj = getCivilisation(civ_tags[i]);
-				var local_religion_type = getCivilisationReligion(civ_obj, { return_key: true });
-
-				if (!comparison_religion_keys.includes(local_religion_type))
-					return false;
-			}
-
-			//Return statement
-			return true;
-		}
-
-		function isNotGovernmentType (arg0_civ_tags, arg1_government_types) {
-			//Convert from parameters
-			var civ_tags = getList(arg0_civ_tags);
-			var government_types = getList(arg1_government_types);
-
-			//Declare local instance variables
-			var comparison_government_keys = [];
-
-			//Iterate over government_types
-			for (var i = 0; i < government_types.length; i++)
-				comparison_government_keys.push(getIdeology(government_types[i], { return_key: true }));
-
-			//Iterate over all civ_tags
-			for (var i = 0; i < civ_tags.length; i++) {
-				var civ_obj = getCivilisation(civ_tags[i]);
-				var local_government_type = getCivilisationIdeology(civ_obj, { return_key: true });
-
-				if (comparison_government_keys.includes(local_government_type))
-					return false;
-			}
-
-			//Return statement
-			return true;
-		}
-
-		function isReligion (arg0_civ_tags, arg1_religion_types) {
-			//Convert from parameters
-			var civ_tags = getList(arg0_civ_tags);
-			var religion_types = getList(arg1_religion_types);
-
-			//Declare local instance variables
-			var comparison_religion_keys = [];
-
-			//Iterate over religion_types
-			for (var i = 0; i < religion_types.length; i++)
-				comparison_religion_keys.push(getReligion(religion_types[i], { return_key: true }));
-
-			//Iterate over all civ_tags
-			for (var i = 0; i < civ_tags.length; i++) {
-				var civ_obj = getCivilisation(civ_tags[i]);
-				var local_religion_type = getCivilisationReligion(civ_obj, { return_key: true });
-
-				if (comparison_religion_keys.includes(local_religion_type))
-					return false;
-			}
-
-			//Return statement
-			return true;
-		}
-
-		function isNotReligion (arg0_civ_tags, arg1_religion_types) {
-			//Convert from parameters
-			var civ_tags = getList(arg0_civ_tags);
-			var religion_types = getList(arg1_religion_types);
-
-			//Declare local instance variables
-			var comparison_religion_keys = [];
-
-			//Iterate over religion_types
-			for (var i = 0; i < religion_types.length; i++)
-				comparison_religion_keys.push(getReligion(religion_types[i], { return_key: true }));
-
-			//Iterate over all civ_tags
-			for (var i = 0; i < civ_tags.length; i++) {
-				var civ_obj = getCivilisation(civ_tags[i]);
-				var local_religion_type = getCivilisationReligion(civ_obj, { return_key: true });
-
-				if (!comparison_religion_keys.includes(local_religion_type))
 					return false;
 			}
 

@@ -44,9 +44,9 @@
 		return (!anyCivilisationDoesNotExist(civ_tags));
 	}
 
-	function isDate (arg0_string) {
+	function dateIs (arg0_date_string) {
 		//Convert from parameters
-		var string = arg0_string;
+		var string = arg0_date_string;
 
 		//Declare local instance variables
 		var current_date = getCurrentDate();
@@ -61,9 +61,9 @@
 			return true;
 	}
 
-	function isDateGreaterThan (arg0_string) {
+	function dateIsGreaterThan (arg0_date_string) {
 		//Convert from parameters
-		var string = arg0_string;
+		var string = arg0_date_string;
 
 		//Ddeclare local instance variables
 		var current_date = getCurrentDate();
@@ -80,9 +80,9 @@
 			return true;
 	}
 
-	function isDateGEQ (arg0_string) {
+	function dateIsGEQ (arg0_date_string) {
 		//Convert from parameters
-		var string = arg0_string;
+		var string = arg0_date_string;
 
 		//Ddeclare local instance variables
 		var current_date = getCurrentDate();
@@ -99,9 +99,9 @@
 			return true;
 	}
 
-	function isDateLEQ (arg0_string) {
+	function dateIsLEQ (arg0_date_string) {
 		//Convert from parameters
-		var string = arg0_string;
+		var string = arg0_date_string;
 
 		//Ddeclare local instance variables
 		var current_date = getCurrentDate();
@@ -118,9 +118,9 @@
 			return true;
 	}
 
-	function isDateLessThan (arg0_string) {
+	function dateIsLessThan (arg0_date_string) {
 		//Convert from parameters
-		var string = arg0_string;
+		var string = arg0_date_string;
 
 		//Ddeclare local instance variables
 		var current_date = getCurrentDate();
@@ -137,7 +137,7 @@
 			return true;
 	}
 
-	function isHour (arg0_number) {
+	function hourIs (arg0_number) {
 		//Convert from parameters
 		var number = arg0_number;
 
@@ -149,19 +149,7 @@
 			return true;
 	}
 
-	function isHourGreaterThan (arg0_number) {
-		//Convert from parameters
-		var number = arg0_number;
-
-		//Declare local instance variables
-		var current_date = getCurrentDate();
-
-		//Return statement
-		if (current_date.hour > number)
-			return true;
-	}
-
-	function isHourGEQ (arg0_number) {
+	function hourIsGEQ (arg0_number) {
 		//Convert from parameters
 		var number = arg0_number;
 
@@ -173,7 +161,19 @@
 			return true;
 	}
 
-	function isHourLEQ (arg0_number) {
+	function hourIsGreaterThan (arg0_number) {
+		//Convert from parameters
+		var number = arg0_number;
+
+		//Declare local instance variables
+		var current_date = getCurrentDate();
+
+		//Return statement
+		if (current_date.hour > number)
+			return true;
+	}
+
+	function hourIsLEQ (arg0_number) {
 		//Convert from parameters
 		var number = arg0_number;
 
@@ -185,7 +185,7 @@
 			return true;
 	}
 
-	function isHourLessThan (arg0_number) {
+	function hourIsLessThan (arg0_number) {
 		//Convert from parameters
 		var number = arg0_number;
 

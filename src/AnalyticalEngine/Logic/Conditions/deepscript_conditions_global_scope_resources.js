@@ -1,317 +1,443 @@
 //Initialise functions
 {
-	function civilisationsHaveMarketShare (arg0_civ_tags, arg1_resource_name, arg2_value) {
+	function resourceCivilisationsHaveMarketShare (arg0_resource_names, arg1_options) {
 		//Convert from parameters
-		var civ_tags = getList(arg0_civ_tags);
-		var resource_name = arg1_resource_name;
-		var value = returnSafeNumber(arg2_value);
+		var resource_names = getList(arg0_resource_names);
+		var options = (arg1_options) ? arg1_options : {};
 
-		//Declare local instance variables
-		var resource_id = getResourceID(resource_name);
+		//Initialise options
+		options.civilisations = (options.civilisations) ? getList(options.civilisations) : [];
+		options.value = returnSafeNumber(options.value, 1);
+
+		//Iterate over all resource_names
+		for (var i = 0; i < resource_names.length; i++) {
+			var local_resource_id = getResourceID(resource_names[i]);
+
+			for (var x = 0; x < options.civilisations.length; x++) {
+				var local_civ = getCivilisation(options.civilisations[x]);
+
+				if (local_civ.getGoodsProduced(local_resource_id) != options.value)
+					return false;
+			}
+		}
 
 		//Return statement
-		for (var i = 0; i < civ_tags.length; i++) {
-			var civ_obj = getCivilisation(civ_tags[i]);
-
-			if (civ_obj.getGoodsProduced(resource_id) != value)
-				return false;
-		}
 		return true;
 	}
 
-	function civilisationsHaveMarketShareGEQ (arg0_civ_tags, arg1_resource_name, arg2_value) {
+	function resourceCivilisationsHaveMarketShareGEQ (arg0_resource_names, arg1_options) {
 		//Convert from parameters
-		var civ_tags = getList(arg0_civ_tags);
-		var resource_name = arg1_resource_name;
-		var value = returnSafeNumber(arg2_value);
+		var resource_names = getList(arg0_resource_names);
+		var options = (arg1_options) ? arg1_options : {};
 
-		//Declare local instance variables
-		var resource_id = getResourceID(resource_name);
+		//Initialise options
+		options.civilisations = (options.civilisations) ? getList(options.civilisations) : [];
+		options.value = returnSafeNumber(options.value, 1);
+
+		//Iterate over all resource_names
+		for (var i = 0; i < resource_names.length; i++) {
+			var local_resource_id = getResourceID(resource_names[i]);
+
+			for (var x = 0; x < options.civilisations.length; x++) {
+				var local_civ = getCivilisation(options.civilisations[x]);
+
+				if (local_civ.getGoodsProduced(local_resource_id) < options.value)
+					return false;
+			}
+		}
 
 		//Return statement
-		for (var i = 0; i < civ_tags.length; i++) {
-			var civ_obj = getCivilisation(civ_tags[i]);
-
-			if (civ_obj.getGoodsProduced(resource_id) < value)
-				return false;
-		}
 		return true;
 	}
 
-	function civilisationsHaveMarketShareGreaterThan (arg0_civ_tags, arg1_resource_name, arg2_value) {
+	function resourceCivilisationsHaveMarketShareGreaterThan (arg0_resource_names, arg1_options) {
 		//Convert from parameters
-		var civ_tags = getList(arg0_civ_tags);
-		var resource_name = arg1_resource_name;
-		var value = returnSafeNumber(arg2_value);
+		var resource_names = getList(arg0_resource_names);
+		var options = (arg1_options) ? arg1_options : {};
 
-		//Declare local instance variables
-		var resource_id = getResourceID(resource_name);
+		//Initialise options
+		options.civilisations = (options.civilisations) ? getList(options.civilisations) : [];
+		options.value = returnSafeNumber(options.value, 1);
+
+		//Iterate over all resource_names
+		for (var i = 0; i < resource_names.length; i++) {
+			var local_resource_id = getResourceID(resource_names[i]);
+
+			for (var x = 0; x < options.civilisations.length; x++) {
+				var local_civ = getCivilisation(options.civilisations[x]);
+
+				if (local_civ.getGoodsProduced(local_resource_id) <= options.value)
+					return false;
+			}
+		}
 
 		//Return statement
-		for (var i = 0; i < civ_tags.length; i++) {
-			var civ_obj = getCivilisation(civ_tags[i]);
-
-			if (civ_obj.getGoodsProduced(resource_id) <= value)
-				return false;
-		}
 		return true;
 	}
 
-	function civilisationsHaveMarketShareLEQ (arg0_civ_tags, arg1_resource_name, arg2_value) {
+	function resourceCivilisationsHaveMarketShareLEQ (arg0_resource_names, arg1_options) {
 		//Convert from parameters
-		var civ_tags = getList(arg0_civ_tags);
-		var resource_name = arg1_resource_name;
-		var value = returnSafeNumber(arg2_value);
+		var resource_names = getList(arg0_resource_names);
+		var options = (arg1_options) ? arg1_options : {};
 
-		//Declare local instance variables
-		var resource_id = getResourceID(resource_name);
+		//Initialise options
+		options.civilisations = (options.civilisations) ? getList(options.civilisations) : [];
+		options.value = returnSafeNumber(options.value, 1);
+
+		//Iterate over all resource_names
+		for (var i = 0; i < resource_names.length; i++) {
+			var local_resource_id = getResourceID(resource_names[i]);
+
+			for (var x = 0; x < options.civilisations.length; x++) {
+				var local_civ = getCivilisation(options.civilisations[x]);
+
+				if (local_civ.getGoodsProduced(local_resource_id) > options.value)
+					return false;
+			}
+		}
 
 		//Return statement
-		for (var i = 0; i < civ_tags.length; i++) {
-			var civ_obj = getCivilisation(civ_tags[i]);
-
-			if (civ_obj.getGoodsProduced(resource_id) > value)
-				return false;
-		}
 		return true;
 	}
 
-	function civilisationsHaveMarketShareLessThan (arg0_civ_tags, arg1_resource_name, arg2_value) {
+	function resourceCivilisationsHaveMarketShareLessThan (arg0_resource_names, arg1_options) {
 		//Convert from parameters
-		var civ_tags = getList(arg0_civ_tags);
-		var resource_name = arg1_resource_name;
-		var value = returnSafeNumber(arg2_value);
+		var resource_names = getList(arg0_resource_names);
+		var options = (arg1_options) ? arg1_options : {};
 
-		//Declare local instance variables
-		var resource_id = getResourceID(resource_name);
+		//Initialise options
+		options.civilisations = (options.civilisations) ? getList(options.civilisations) : [];
+		options.value = returnSafeNumber(options.value, 1);
+
+		//Iterate over all resource_names
+		for (var i = 0; i < resource_names.length; i++) {
+			var local_resource_id = getResourceID(resource_names[i]);
+
+			for (var x = 0; x < options.civilisations.length; x++) {
+				var local_civ = getCivilisation(options.civilisations[x]);
+
+				if (local_civ.getGoodsProduced(local_resource_id) >= options.value)
+					return false;
+			}
+		}
 
 		//Return statement
-		for (var i = 0; i < civ_tags.length; i++) {
-			var civ_obj = getCivilisation(civ_tags[i]);
-
-			if (civ_obj.getGoodsProduced(resource_id) >= value)
-				return false;
-		}
 		return true;
 	}
 
-	function globalProductionIs (arg0_resource_name, arg1_value, arg2_options) {
+	function resourceGlobalProductionIs (arg0_resource_names, arg1_value) {
 		//Convert from parameters
-		var resource_name = arg0_resource_name;
-		var value = returnSafeNumber(arg1_value);
-		var options = (arg2_options) ? arg2_options : {};
-
-		//Declare local instance variables
-		var global_resource_production  = getGlobalResourceProduction(resource_name, options);
-
-		//Return statement
-		if (global_resource_production == value)
-			return true;
-	}
-
-	function globalProductionIsGEQ (arg0_resource_name, arg1_value, arg2_options) {
-		//Convert from parameters
-		var resource_name = arg0_resource_name;
-		var value = returnSafeNumber(arg1_value);
-		var options = (arg2_options) ? arg2_options : {};
-
-		//Declare local instance variables
-		var global_resource_production  = getGlobalResourceProduction(resource_name, options);
-
-		//Return statement
-		if (global_resource_production >= value)
-			return true;
-	}
-
-	function globalProductionIsGreaterThan (arg0_resource_name, arg1_value, arg2_options) {
-		//Convert from parameters
-		var resource_name = arg0_resource_name;
-		var value = returnSafeNumber(arg1_value);
-		var options = (arg2_options) ? arg2_options : {};
-
-		//Declare local instance variables
-		var global_resource_production  = getGlobalResourceProduction(resource_name, options);
-
-		//Return statement
-		if (global_resource_production > value)
-			return true;
-	}
-
-	function globalProductionIsLEQ (arg0_resource_name, arg1_value, arg2_options) {
-		//Convert from parameters
-		var resource_name = arg0_resource_name;
-		var value = returnSafeNumber(arg1_value);
-		var options = (arg2_options) ? arg2_options : {};
-
-		//Declare local instance variables
-		var global_resource_production  = getGlobalResourceProduction(resource_name, options);
-
-		//Return statement
-		if (global_resource_production <= value)
-			return true;
-	}
-
-	function globalProductionIsLessThan (arg0_resource_name, arg1_value, arg2_options) {
-		//Convert from parameters
-		var resource_name = arg0_resource_name;
-		var value = returnSafeNumber(arg1_value);
-		var options = (arg2_options) ? arg2_options : {};
-
-		//Declare local instance variables
-		var global_resource_production  = getGlobalResourceProduction(resource_name, options);
-
-		//Return statement
-		if (global_resource_production < value)
-			return true;
-	}
-
-	function priceIs (arg0_resource_name, arg1_value) {
-		//Convert from parameters
-		var resource_name = arg0_resource_name;
+		var resource_names = getList(arg0_resource_names);
 		var value = returnSafeNumber(arg1_value);
 
-		//Return statement
-		if (resource_obj)
-			if (ResourcesManager.getPrice(getResourceID(resource_name)) == value)
-				return true;
-	}
+		//Iterate over resource_names
+		for (var i = 0; i < resource_names.length; i++) {
+			var local_global_resource_production = getGlobalResourceProduction(resource_names[i]);
 
-	function priceIsGEQ (arg0_resource_name, arg1_value) {
-		//Convert from parameters
-		var resource_name = arg0_resource_name;
-		var value = returnSafeNumber(arg1_value);
-
-		//Return statement
-		if (resource_obj)
-			if (ResourcesManager.getPrice(getResourceID(resource_name)) >= value)
-				return true;
-	}
-
-	function priceIsGreaterThan (arg0_resource_name, arg1_value) {
-		//Convert from parameters
-		var resource_name = arg0_resource_name;
-		var value = returnSafeNumber(arg1_value);
-
-		//Return statement
-		if (resource_obj)
-			if (ResourcesManager.getPrice(getResourceID(resource_name)) > value)
-				return true;
-	}
-
-	function priceIsLEQ (arg0_resource_name, arg1_value) {
-		//Convert from parameters
-		var resource_name = arg0_resource_name;
-		var value = returnSafeNumber(arg1_value);
-
-		//Return statement
-		if (resource_obj)
-			if (ResourcesManager.getPrice(getResourceID(resource_name)) <= value)
-				return true;
-	}
-
-	function priceIsLessThan (arg0_resource_name, arg1_value) {
-		//Convert from parameters
-		var resource_name = arg0_resource_name;
-		var value = returnSafeNumber(arg1_value);
-
-		//Return statement
-		if (resource_obj)
-			if (ResourcesManager.getPrice(getResourceID(resource_name)) < value)
-				return true;
-	}
-
-	function productionIs (arg0_civ_tags, arg1_resource_name, arg2_value) {
-		//Convert from parameters
-		var civ_tags = getList(arg0_civ_tags);
-		var resource_name = arg1_resource_name;
-		var value = returnSafeNumber(arg2_value);
-
-		//Declare local instance variables
-		var resource_id = getResourceID(resource_name);
-
-		//Return statement
-		for (var i = 0; i < civ_tags.length; i++) {
-			var local_civ_id = getCivilisationID(civ_tags[i]);
-
-			if (ResourcesManager.getProducedGoods_ResourceCiv(local_civ_id, resource_id) != value)
+			if (local_global_resource_production != value)
 				return false;
 		}
+
+		//Return statement
 		return true;
 	}
 
-	function productionIsGEQ (arg0_civ_tags, arg1_resource_name, arg2_value) {
+	function resourceGlobalProductionIsGEQ (arg0_resource_names, arg1_value) {
 		//Convert from parameters
-		var civ_tags = getList(arg0_civ_tags);
-		var resource_name = arg1_resource_name;
-		var value = returnSafeNumber(arg2_value);
+		var resource_names = getList(arg0_resource_names);
+		var value = returnSafeNumber(arg1_value);
 
-		//Declare local instance variables
-		var resource_id = getResourceID(resource_name);
+		//Iterate over resource_names
+		for (var i = 0; i < resource_names.length; i++) {
+			var local_global_resource_production = getGlobalResourceProduction(resource_names[i]);
 
-		//Return statement
-		for (var i = 0; i < civ_tags.length; i++) {
-			var local_civ_id = getCivilisationID(civ_tags[i]);
-
-			if (ResourcesManager.getProducedGoods_ResourceCiv(local_civ_id, resource_id) < value)
+			if (local_global_resource_production < value)
 				return false;
 		}
+
+		//Return statement
 		return true;
 	}
 
-	function productionIsGreaterThan (arg0_civ_tags, arg1_resource_name, arg2_value) {
+	function resourceGlobalProductionIsGreaterThan (arg0_resource_names, arg1_value) {
 		//Convert from parameters
-		var civ_tags = getList(arg0_civ_tags);
-		var resource_name = arg1_resource_name;
-		var value = returnSafeNumber(arg2_value);
+		var resource_names = getList(arg0_resource_names);
+		var value = returnSafeNumber(arg1_value);
 
-		//Declare local instance variables
-		var resource_id = getResourceID(resource_name);
+		//Iterate over resource_names
+		for (var i = 0; i < resource_names.length; i++) {
+			var local_global_resource_production = getGlobalResourceProduction(resource_names[i]);
 
-		//Return statement
-		for (var i = 0; i < civ_tags.length; i++) {
-			var local_civ_id = getCivilisationID(civ_tags[i]);
-
-			if (ResourcesManager.getProducedGoods_ResourceCiv(local_civ_id, resource_id) <= value)
+			if (local_global_resource_production <= value)
 				return false;
 		}
+
+		//Return statement
 		return true;
 	}
 
-	function productionIsLEQ (arg0_civ_tags, arg1_resource_name, arg2_value) {
+	function resourceGlobalProductionIsLEQ (arg0_resource_names, arg1_value) {
 		//Convert from parameters
-		var civ_tags = getList(arg0_civ_tags);
-		var resource_name = arg1_resource_name;
-		var value = returnSafeNumber(arg2_value);
+		var resource_names = getList(arg0_resource_names);
+		var value = returnSafeNumber(arg1_value);
 
-		//Declare local instance variables
-		var resource_id = getResourceID(resource_name);
+		//Iterate over resource_names
+		for (var i = 0; i < resource_names.length; i++) {
+			var local_global_resource_production = getGlobalResourceProduction(resource_names[i]);
 
-		//Return statement
-		for (var i = 0; i < civ_tags.length; i++) {
-			var local_civ_id = getCivilisationID(civ_tags[i]);
-
-			if (ResourcesManager.getProducedGoods_ResourceCiv(local_civ_id, resource_id) > value)
+			if (local_global_resource_production > value)
 				return false;
 		}
+
+		//Return statement
 		return true;
 	}
 
-	function productionIsLessThan (arg0_civ_tags, arg1_resource_name, arg2_value) {
+	function resourceGlobalProductionIsLessThan (arg0_resource_names, arg1_value) {
 		//Convert from parameters
-		var civ_tags = getList(arg0_civ_tags);
-		var resource_name = arg1_resource_name;
-		var value = returnSafeNumber(arg2_value);
+		var resource_names = getList(arg0_resource_names);
+		var value = returnSafeNumber(arg1_value);
 
-		//Declare local instance variables
-		var resource_id = getResourceID(resource_name);
+		//Iterate over resource_names
+		for (var i = 0; i < resource_names.length; i++) {
+			var local_global_resource_production = getGlobalResourceProduction(resource_names[i]);
 
-		//Return statement
-		for (var i = 0; i < civ_tags.length; i++) {
-			var local_civ_id = getCivilisationID(civ_tags[i]);
-
-			if (ResourcesManager.getProducedGoods_ResourceCiv(local_civ_id, resource_id) >= value)
+			if (local_global_resource_production >= value)
 				return false;
 		}
+
+		//Return statement
+		return true;
+	}
+
+	function resourceIs (arg0_resource_names, arg1_resource_names) {
+		//Convert from parameters
+		var resource_names = getList(arg0_resource_names);
+		var ot_resource_names = getList(arg1_resource_names);
+
+		//Declare local instance variables
+		var ot_resource_ids = [];
+		var resource_ids = [];
+
+		for (var i = 0; i < resource_names.length; i++)
+			resource_ids.push(getResourceID(resource_names[i]));
+		for (var i = 0; i < ot_resource_names.length; i++)
+			ot_resource_ids.push(getResourceID(ot_resource_names[i]));
+
+		//Check to see if all of resource_ids are contained in ot_resource_ids
+		for (var i = 0; i < resource_ids.length; i++)
+			if (!ot_resource_ids.includes(resource_ids[i]))
+				//Return statement
+				return false;
+		return true;
+	}
+
+	function resourceIsNot (arg0_resource_names, arg1_resource_names) {
+		//Convert from parameters
+		var resource_names = getList(arg0_resource_names);
+		var ot_resource_names = getList(arg1_resource_names);
+
+		//Return statement
+		return (!resourceIs(resource_names, ot_resource_names));
+	}
+
+	function resourcePriceIs (arg0_resource_names, arg1_value) {
+		//Convert from parameters
+		var resource_names = getList(arg0_resource_names);
+		var value = returnSafeNumber(arg1_value);
+
+		//Iterate over all resource_names
+		for (var i = 0; i < resource_names.length; i++)
+			if (ResourcesManager.getPrice(getResourceID(resource_names[i])) != value)
+				//Return statement
+				return false;
+		return true;
+	}
+
+	function resourcePriceIsGEQ (arg0_resource_names, arg1_value) {
+		//Convert from parameters
+		var resource_names = getList(arg0_resource_names);
+		var value = returnSafeNumber(arg1_value);
+
+		//Iterate over all resource_names
+		for (var i = 0; i < resource_names.length; i++)
+			if (ResourcesManager.getPrice(getResourceID(resource_names[i])) < value)
+				//Return statement
+				return false;
+		return true;
+	}
+
+	function resourcePriceIsGreaterThan (arg0_resource_names, arg1_value) {
+		//Convert from parameters
+		var resource_names = getList(arg0_resource_names);
+		var value = returnSafeNumber(arg1_value);
+
+		//Iterate over all resource_names
+		for (var i = 0; i < resource_names.length; i++)
+			if (ResourcesManager.getPrice(getResourceID(resource_names[i])) <= value)
+				//Return statement
+				return false;
+		return true;
+	}
+
+	function resourcePriceIsLEQ (arg0_resource_names, arg1_value) {
+		//Convert from parameters
+		var resource_names = getList(arg0_resource_names);
+		var value = returnSafeNumber(arg1_value);
+
+		//Iterate over all resource_names
+		for (var i = 0; i < resource_names.length; i++)
+			if (ResourcesManager.getPrice(getResourceID(resource_names[i])) > value)
+				//Return statement
+				return false;
+		return true;
+	}
+
+	function resourcePriceIsLessThan (arg0_resource_names, arg1_value) {
+		//Convert from parameters
+		var resource_names = getList(arg0_resource_names);
+		var value = returnSafeNumber(arg1_value);
+
+		//Iterate over all resource_names
+		for (var i = 0; i < resource_names.length; i++)
+			if (ResourcesManager.getPrice(getResourceID(resource_names[i])) >= value)
+				//Return statement
+				return false;
+		return true;
+	}
+
+	function resourceProductionIs (arg0_resource_names, arg1_options) {
+		//Convert from parameters
+		var resource_names = getList(arg0_resource_names);
+		var options = (arg1_options) ? arg1_options : {};
+
+		//Initialise options
+		options.civilisations = (options.civilisations) ? getList(options.civilisations) : [];
+		options.value = returnSafeNumber(options.value);
+
+		//Iterate over all resource_names
+		for (var i = 0; i < resource_names.length; i++) {
+			var local_resource_id = getResourceID(resource_names[i]);
+
+			//Iterate over all options.civilisations
+			for (var x = 0; x < options.civilisations.length; x++) {
+				var local_civ_id = getCivilisationID(options.civilisations[x]);
+
+				if (ResourcesManager.getProducedGoods_ResourceCiv(local_civ_id, local_resource_id) != value)
+					//Return statement
+					return false;
+			}
+		}
+
+		//Return statement
+		return true;
+	}
+
+	function resourceProductionIsGEQ (arg0_resource_names, arg1_options) {
+		//Convert from parameters
+		var resource_names = getList(arg0_resource_names);
+		var options = (arg1_options) ? arg1_options : {};
+
+		//Initialise options
+		options.civilisations = (options.civilisations) ? getList(options.civilisations) : [];
+		options.value = returnSafeNumber(options.value);
+
+		//Iterate over all resource_names
+		for (var i = 0; i < resource_names.length; i++) {
+			var local_resource_id = getResourceID(resource_names[i]);
+
+			//Iterate over all options.civilisations
+			for (var x = 0; x < options.civilisations.length; x++) {
+				var local_civ_id = getCivilisationID(options.civilisations[x]);
+
+				if (ResourcesManager.getProducedGoods_ResourceCiv(local_civ_id, local_resource_id) < value)
+					//Return statement
+					return false;
+			}
+		}
+
+		//Return statement
+		return true;
+	}
+
+	function resourceProductionIsGreaterThan (arg0_resource_names, arg1_options) {
+		//Convert from parameters
+		var resource_names = getList(arg0_resource_names);
+		var options = (arg1_options) ? arg1_options : {};
+
+		//Initialise options
+		options.civilisations = (options.civilisations) ? getList(options.civilisations) : [];
+		options.value = returnSafeNumber(options.value);
+
+		//Iterate over all resource_names
+		for (var i = 0; i < resource_names.length; i++) {
+			var local_resource_id = getResourceID(resource_names[i]);
+
+			//Iterate over all options.civilisations
+			for (var x = 0; x < options.civilisations.length; x++) {
+				var local_civ_id = getCivilisationID(options.civilisations[x]);
+
+				if (ResourcesManager.getProducedGoods_ResourceCiv(local_civ_id, local_resource_id) <= value)
+					//Return statement
+					return false;
+			}
+		}
+
+		//Return statement
+		return true;
+	}
+
+	function resourceProductionIsLEQ (arg0_resource_names, arg1_options) {
+		//Convert from parameters
+		var resource_names = getList(arg0_resource_names);
+		var options = (arg1_options) ? arg1_options : {};
+
+		//Initialise options
+		options.civilisations = (options.civilisations) ? getList(options.civilisations) : [];
+		options.value = returnSafeNumber(options.value);
+
+		//Iterate over all resource_names
+		for (var i = 0; i < resource_names.length; i++) {
+			var local_resource_id = getResourceID(resource_names[i]);
+
+			//Iterate over all options.civilisations
+			for (var x = 0; x < options.civilisations.length; x++) {
+				var local_civ_id = getCivilisationID(options.civilisations[x]);
+
+				if (ResourcesManager.getProducedGoods_ResourceCiv(local_civ_id, local_resource_id) > value)
+					//Return statement
+					return false;
+			}
+		}
+
+		//Return statement
+		return true;
+	}
+
+	function resourceProductionIsLessThan (arg0_resource_names, arg1_options) {
+		//Convert from parameters
+		var resource_names = getList(arg0_resource_names);
+		var options = (arg1_options) ? arg1_options : {};
+
+		//Initialise options
+		options.civilisations = (options.civilisations) ? getList(options.civilisations) : [];
+		options.value = returnSafeNumber(options.value);
+
+		//Iterate over all resource_names
+		for (var i = 0; i < resource_names.length; i++) {
+			var local_resource_id = getResourceID(resource_names[i]);
+
+			//Iterate over all options.civilisations
+			for (var x = 0; x < options.civilisations.length; x++) {
+				var local_civ_id = getCivilisationID(options.civilisations[x]);
+
+				if (ResourcesManager.getProducedGoods_ResourceCiv(local_civ_id, local_resource_id) >= value)
+					//Return statement
+					return false;
+			}
+		}
+
+		//Return statement
 		return true;
 	}
 }
