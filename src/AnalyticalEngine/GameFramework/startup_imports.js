@@ -52,6 +52,7 @@
 	this.Runnable = Java.type("java.lang.Runnable");
 	this.SaveManager = Java.type("aoc.kingdoms.lukasz.jakowski.SaveLoad.SaveManager");
 	this.ScenarioWasteland = Java.type("aoc.kingdoms.lukasz.menusScenarioEditor.Wasteland.ScenarioWasteland");
+	this.SiegeManager = Java.type("aoc.kingdoms.lukasz.map.SiegeManager");
 	this.SteamManager = Java.type("aoc.kingdoms.lukasz.jakowski.Steam.SteamManager");
 	this.StringBuilder = Java.type("java.lang.StringBuilder");
 	this.System = Java.type("java.lang.System");

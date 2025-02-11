@@ -14,6 +14,7 @@
 
 		//Fix scenario-related bugs; override provinces using AnalyticalEngine structures
 		fixSeaProvinces();
+		loadGenerals(); //Load generals
 
 		//Initialise Scenario logic loop
 		if (main[logic_loop_key])

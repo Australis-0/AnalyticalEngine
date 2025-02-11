@@ -32,4 +32,26 @@
 		//Return statement
 		return civ_obj.getPopulationTotal();
 	}
+
+	function getProvinceGrowthRate (arg0_province_id) {
+		//Convert from parameters
+		var province_id = arg0_province_id;
+
+		//Declare local instance variables
+		var province_obj = getProvince(province_id);
+
+		//Return statement
+		return province_obj.getGrowthRate();
+	}
+
+	function getProvincePopulation (arg0_province_id) {
+		//Convert from parameters
+		var province_id = arg0_province_id;
+
+		//Declare local instance variables
+		var province_obj = getProvince(province_id);
+
+		//Return statement
+		return province_obj.getPopulationTotal();
+	}
 }

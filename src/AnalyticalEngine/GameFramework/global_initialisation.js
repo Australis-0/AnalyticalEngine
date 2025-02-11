@@ -23,7 +23,10 @@ var global = {
 			}, //Contains the current Gamestate, i.e. all variables for this particular savegame.
 			interfaces: {}, //Contains all Menus instantiated via Nashorn in-game.
 
-			//Map (Provinces and assoiated data structures)
+			//Config
+			generals: {},
+
+			//Map (Provinces and associated data structures)
 			map: {
 				//Mapmode renderer
 				custom_mapmode: undefined,

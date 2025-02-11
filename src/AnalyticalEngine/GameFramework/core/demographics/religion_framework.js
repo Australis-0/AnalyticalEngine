@@ -38,6 +38,18 @@
 		return (!options.return_key) ? getReligion(civ_religion_id) : getReligion(civ_religion_id).Name;
 	}
 
+	function getProvinceReligion (arg0_province_id) {
+		//Convert from parameters
+		var province = arg0_province_id;
+
+		//Declare local instance variables
+		var province_obj = getProvince(province);
+		var province_religion_id = province_obj.getReligion();
+
+		//Return statement
+		return (!options.return_key) ? getReligion(province_religion_id) : getReligion(province_religion_id).Name;
+	}
+
 	function getReligion (arg0_religion_name, arg1_options) {
 		//Convert from parameters
 		var name = arg0_religion_name;

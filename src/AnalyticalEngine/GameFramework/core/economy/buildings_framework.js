@@ -157,6 +157,17 @@
 			return building_obj.building_obj.Name[building_obj.index];
 	}
 
+	function getProvinceBuildingLimit (arg0_province_name) {
+		//Convert from parameters
+		var province_name = arg0_province_name;
+
+		//Declare local instance variables
+		var province_obj = getProvince(province_name);
+
+		//Return statement
+		return province_obj.iBuildingsLimit;
+	}
+
 	/**
 	 * getProvinceBuildings() - Returns an object of all buildings built in a province.
 	 * @param {String} arg0_province_name
@@ -195,6 +206,17 @@
 
 		//Return statement
 		return province_buildings_obj;
+	}
+
+	function getProvinceTotalBuildings (arg0_province_name) {
+		//Convert from parameters
+		var province_name = arg0_province_name;
+
+		//Declare local instance variables
+		var province_obj = getProvince(province_name);
+
+		//Return statement
+		return province_obj.iBuildingsSize;
 	}
 
 	/**

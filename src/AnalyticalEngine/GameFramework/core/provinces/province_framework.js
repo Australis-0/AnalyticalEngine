@@ -78,6 +78,21 @@
 		return (!options.return_key) ? province_obj : province_id;
 	}
 
+	function getProvinceArmies (arg0_province_name) {
+		//Convert from parameters
+		var province_name = arg0_province_name;
+
+		//Declare local instance variables
+		var province_armies = [];
+
+		//Iterate over all armies in province_obj
+		for (var i = 0; i < province_obj.getArmySize(); i++)
+			province_armies.push(province_obj.getArmy(i));
+
+		//Return statement
+		return province_armies;
+	}
+
 	/**
 	 * getProvinceCentre() - Returns the centrepoint of a province.
 	 * @param {String} arg0_province_name - The province name to fetch the centrepoint for.
@@ -90,6 +105,25 @@
 
 		//Return statement
 		return [province_obj.getCenterX(), province_obj.getCenterY()];
+	}
+
+	function getProvinceController (arg0_province_name, arg1_options) {
+		//Convert from parameters
+		var province_name = arg0_province_name;
+		var options = (arg1_options) ? arg1_options : {};
+
+		//Declare local instance variables
+		var province_obj = getProvince(province_name);
+		var province_id = province_obj.getProvinceID();
+
+		var occupying_civ_id = Game.getProvinceData(province_id).getOccupiedByCivID();
+
+		if (occupying_civ_id == 0)
+			occupying_civ_id = province_obj.getCivID();
+
+		//Return statement
+		return (!options.return_object) ?
+			getCurrentTag(occupying_civ_id) : getCivilisation(occupying_civ_id);
 	}
 
 	/**
@@ -118,6 +152,39 @@
 		return core_tags;
 	}
 
+	function getProvinceEconomy (arg0_province_name) {
+		//Convert from parameters
+		var province_name = arg0_province_name;
+
+		//Declare local instance variables
+		var province_obj = getProvince(province_name);
+
+		//Return statement
+		return province_obj.getEconomy();
+	}
+
+	function getProvinceIncome (arg0_province_name) {
+		//Convert from parameters
+		var province_name = arg0_province_name;
+
+		//Declare local instance variables
+		var province_obj = getProvince(province_name);
+
+		//Return statement
+		return province_obj.getProvinceIncome();
+	}
+
+	function getProvinceInfrastructure (arg0_province_name) {
+		//Convert from parameters
+		var province_name = arg0_province_name;
+
+		//Declare local instance variables
+		var province_obj = getProvince(province_name);
+
+		//Return statement
+		return province_obj.getInfrastructure();
+	}
+
 	/**
 	 * getProvinceOwner() - Returns the province owner's CivTag.
 	 * @param {String} arg0_province_name - The province name to fetch the province owner for.
@@ -140,12 +207,12 @@
 			province_owner.getCivTag() : province_owner;
 	}
 
-	function getProvinceResource (arg0_province_id) {
+	function getProvinceResource (arg0_province_name) {
 		//Convert from parameters
-		var province_id = arg0_province_id;
+		var province_name = arg0_province_name;
 
 		//Declare local instance variables
-		var province_obj = getProvince(province_id);
+		var province_obj = getProvince(province_name);
 		var resource_type;
 
 		if (province_obj) {
@@ -159,6 +226,40 @@
 		//Return statement
 		if (resource_type != undefined)
 			return resource_type;
+	}
+
+	function getProvinceSiegeOccupier (arg0_province_name) {
+		//Convert from parameters
+		var province_name = arg0_province_name;
+
+		//Declare local instance variables
+		var best_army_id = 0;
+		var best_civ_id = 0;
+		var province_obj = getProvince(province_name);
+
+		//Iterate over all armies in province_obj
+		for (var i = 0; i < province_obj.getArmySize(); i++)
+			if (DiplomacyManager.isAtWar(province_obj.getCivID(), province_obj.getArmy(i).civID))
+				if (province_obj.getArmy(i).iArmy > best_army_id) {
+					best_army_id = province_obj.getArmy(i).iArmy;
+					best_civ_id = province_obj.getArmy(i).civID;
+				}
+
+		//Return statement
+		if (best_civ_id != 0)
+			return (!options.return_object) ?
+				getCurrentTag(best_civ_id) : getCivilisation(best_civ_id);
+	}
+
+	function getProvinceTaxEfficiency (arg0_province_name) {
+		//Convert from parameters
+		var province_name = arg0_province_name;
+
+		//Declare local instance variables
+		var province_obj = getProvince(province_name);
+
+		//Return statement
+		return province_obj.getTaxEfficiency();
 	}
 
 	function getProvinceTerrain (arg0_province_name, arg1_options) {
@@ -175,6 +276,17 @@
 			getTerrain(province_terrain_id) : province_terrain_id;
 	}
 
+	function isOccupied (arg0_province_name) {
+		//Convert from parameters
+		var province_name = arg0_province_name;
+
+		//Declare local instance variables
+		var province_obj = getProvince(province_name);
+
+		//Return statement
+		return province_obj.isOccupied();
+	}
+
 	function isSeaProvince (arg0_province_name) {
 		//Convert from parameters
 		var province_name = arg0_province_name;
@@ -184,6 +296,17 @@
 
 		//Return statement
 		return province_obj.getSeaProvince();
+	}
+
+	function isUnderSiege (arg0_province_name) {
+		//Convert from parameters
+		var province_name = arg0_province_name;
+
+		//Declare local instance variables
+		var province_obj = getProvince(province_name);
+
+		//Return statement
+		return SiegeManager.isProvinceUnderSiege(province_obj.getProvinceID());
 	}
 
 	function setProvinceController (arg0_province_name, arg1_civ_name, arg2_options) {
@@ -305,7 +428,6 @@
 		//Return statement
 		return value;
 	}
-
 	/**
 	 * updateProvinces() - Fixes all bugs related to province status changes (e.g. sea province assignment).
 	 */
