@@ -44,6 +44,7 @@
 
 		//Fetch current scenario civs
 		var all_civilisations = getAllCurrentCivTags();
+		var all_provinces = getAllProvinces();
 
 		//Iterate over all_civilisations
 		for (var i = 0; i < all_civilisations.length; i++) {
@@ -52,6 +53,20 @@
 			for (var x = 0; x < local_civ.getGeneralsNotAssignedSize(); x++) {
 				var local_general = local_civ.getGeneralNotAssigned(x);
 				main.generals[local_general.n] = local_general;
+			}
+		}
+
+		//Iterate over all_provinces
+		for (var i = 0; i < all_provinces.length; i++) {
+			var local_province = getProvince(all_provinces[i]);
+			var local_province_armies = getProvinceArmies(all_provinces[i]);
+
+			//Iterate over local_province_armies
+			for (var x = 0; x < local_province_armies.length; x++) {
+				var local_army_general = local_province_armies[x].armyGeneral;
+
+				if (local_army_general)
+					main.generals[local_army_general.n] = local_army_general;
 			}
 		}
 	}

@@ -14,7 +14,6 @@
 
 		//Fix scenario-related bugs; override provinces using AnalyticalEngine structures
 		fixSeaProvinces();
-		loadGenerals(); //Load generals
 
 		//Initialise Scenario logic loop
 		if (main[logic_loop_key])
@@ -22,6 +21,9 @@
 
 		//Set main[logic_loop_key]
 		main[logic_loop_key] = setInterval(function(){
+			//Refresh scenario data
+			loadGenerals(); //Load generals
+
 			//Scenario thread editor loop
 		}, 100);
 	}
