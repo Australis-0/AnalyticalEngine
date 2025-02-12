@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09b6f7f8-b868-43e9-b471-ac1dbd15fa3b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Java/Game_Calendar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/ui/deepscript_event_framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/ui/deepscript_event_framework.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/JS/objects_basic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/objects_basic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/event_handler/event_handler_framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/event_handler/event_handler_framework.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Parsers/deepscript_logic_loop.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Parsers/deepscript_logic_loop.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Parsers/variable_string_parser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Parsers/variable_string_parser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Scopes/deepscript_scope_parser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Scopes/deepscript_scope_parser.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mods/11.59/deepscript/mechanics/dummy_test.ds" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/deepscript/mechanics/dummy_test.ds" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -213,7 +211,7 @@
       <workItem from="1737191569663" duration="7789000" />
       <workItem from="1737200274429" duration="101911000" />
       <workItem from="1737726277969" duration="115573000" />
-      <workItem from="1738769995531" duration="86512000" />
+      <workItem from="1738769995531" duration="89016000" />
     </task>
     <servers />
   </component>

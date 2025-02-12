@@ -28,7 +28,6 @@
 			//Day handler
 			if (old_date_obj.day != new_date_obj.day) {
 				//console.log("New day: ", new_date_obj.day);
-				parseEvents();
 			}
 
 			//Month handler
@@ -41,6 +40,14 @@
 				//console.log("New year: ", new_date_obj.year);
 			}
 		}
+	}
+
+	function onDateChangeLogicHandler (arg0_date_obj) {
+		//Convert from parameters
+		var date_obj = (arg0_date_obj) ? arg0_date_obj : getCurrentDate();
+
+		//Parse events on daily tick
+		parseEvents();
 	}
 
 	function parseEventAIChances (arg0_options) {

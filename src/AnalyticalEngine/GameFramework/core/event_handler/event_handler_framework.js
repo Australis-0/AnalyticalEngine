@@ -18,7 +18,7 @@
 		var options = (arg1_options) ? arg1_options : {};
 
 		//Initialise options
-		if (!options.interval) options.interval = 100;
+		if (options.interval == undefined) options.interval = 100;
 
 		//Declare global event handler namespace
 		global[key] = (global[key]) ? global[key] : {};
@@ -130,7 +130,8 @@
 					} catch (e) {
 						console.error(e.message);
 					}
-			}
+			},
+			interval: 1
 		});
 		//Map handler
 		declareEventHandler("on_mapmode_change", {

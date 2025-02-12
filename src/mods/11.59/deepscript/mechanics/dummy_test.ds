@@ -7,7 +7,7 @@ addEvent({
 	limit: function (e) {
 		if (
 			getCurrentTag("usa") == getCurrentTag(e) &&
-			dateIsGEQ("02.01.1946")
+			dateIs("02.01.1946")
 		) {
 			console.log("USA - test_event attempting to fire!");
 
