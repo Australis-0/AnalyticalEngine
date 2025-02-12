@@ -30,12 +30,50 @@ var global = {
 				on_game_start: {},
 
 				//3. OnAction Scopes.
+				//Game Interactions - Game.
 				on_army_disband: {},
 				on_army_recruitment: {},
+				on_building_construction: {},
+				on_rival: {},
+				on_siege_end: {},
+				on_war: {},
+				on_war_end: {},
+
+				//Game Interactions - Map.
+				on_civilisation_click: {},
+				on_province_click: {},
+
+				//Game Interactions - Province.
+				on_province_rename: {},
+
+				on_province_build_click: {},
+				on_province_bonus_modifiers_click: {},
+				on_province_cores_click: {},
+				on_province_defence_level_click: {},
+				on_province_devastation_click: {},
+				on_province_economy_click: {},
+				on_province_infrastructure_click: {},
+				on_province_loot_click: {},
+				on_province_manpower_click: {},
+				on_province_monthly_income_click: {},
+				on_province_population_chart_click: {},
+				on_province_religion_click: {},
+				on_province_resource_click: {},
+				on_province_tax_efficiency_click: {},
+				on_province_terrain_picture_click: {},
+				on_province_unrest_click: {},
+				on_province_value_click: {},
 
 				//4. Gamestate Loops.
+				on_game_tick: {},
+
+				on_game_daily_interval: {},
+				on_game_monthly_interval: {},
+				on_game_yearly_interval: {},
 
 				//5. Menu Interactions.
+				on_editor_click: {},
+				on_new_scenario: {}
 			},
 
 			//Config

@@ -28,7 +28,7 @@
 			//Day handler
 			if (old_date_obj.day != new_date_obj.day) {
 				//console.log("New day: ", new_date_obj.day);
-				parseOnGameDailyInterval();
+				parseEvents();
 			}
 
 			//Month handler
@@ -41,6 +41,188 @@
 				//console.log("New year: ", new_date_obj.year);
 			}
 		}
+	}
 
+	function parseEventAIChances (arg0_options) {
+		//Convert from parameters
+		var options = (arg0_options) ? arg0_options : {};
+
+		//Declare local instance variables
+		var ai_chances = {};
+		var all_options_keys = Object.keys(options);
+		var total_buttons = 0;
+
+		//Iterate over all_options_keys
+		for (var i = 0; i < all_options_keys.length; i++)
+			if (all_options_keys.startsWith("btn_"))
+				total_buttons++;
+
+		//Iterate over all_options_keys
+		for (var i = 0; i < all_options_keys.length; i++)
+			if (all_options_keys[i].startsWith("btn_")) {
+				var local_ai_chance = 0;
+				var local_btn = options[all_options_keys[i]];
+
+				local_ai_chance = (local_btn.ai_chance) ?
+					local_btn.ai_chance : 100/total_buttons;
+				if (typeof local_ai_chance == "function")
+					local_ai_chance = returnSafeNumber(
+						local_ai_chance.apply(null, Array.prototype.slice.call(arguments, 1))
+					);
+
+				ai_chances[all_options_keys[i]] = local_ai_chance;
+			}
+
+		//Return statement
+		return standardisePercentage(ai_chances);
+	}
+
+	function parseEvents () {
+		//Declare local instance variables
+		var all_civilisations = getAllCivilisations();
+		var all_events = Object.keys(main.scopes.events);
+		var all_provinces = getAllProvinces();
+
+		//Iterate over all_events
+		for (var i = 0; i < all_events.length; i++) {
+			var local_event = main.scopes.events[all_events[i]];
+
+			if (local_event.type == "civ_event" || local_event.type == "mission_event") {
+				if (local_event.limit)
+					for (var x = 0; x < all_civilisations.length; x++)
+						if (local_event.limit(all_civilisations[x])) {
+							//Fire event - Player handler
+							if (civilisationIsPlayer(all_civilisations[x])) {
+								//Format event for player display
+								var all_local_event_keys = Object.keys(local_event);
+								var actual_options = {};
+								var localisation_variables = {
+									FROM: all_civilisations[x],
+									FROM_TAG: getCurrentTag(all_civilisations[x])
+								};
+
+								actual_options.event_type = local_event.type;
+								actual_options.province_id = getCivilisationCapital(all_civilisations[x]).getProvinceID();
+
+								if (local_event.effect)
+									local_event.effect(localisation_variables);
+								if (local_event.immediate)
+									local_event.immediate(localisation_variables);
+								if (local_event.name)
+									actual_options.name = parseDisplayLocalisationString(local_event.name, localisation_variables);
+								if (local_event.description)
+									actual_options.description = parseDisplayLocalisationString(local_event.description, localisation_variables);
+
+								//Iterate over all_local_event_keys
+								for (var y = 0; y < all_local_event_keys.length; y++)
+									if (all_local_event_keys[y].startsWith("btn_")) {
+										var local_option = local_event[all_local_event_keys[y]];
+
+										if (local_option.name)
+											local_option.name = parseDisplayLocalisationString(local_option.name, localisation_variables);
+										if (local_option.description)
+											local_option.description = parseDisplayLocalisationString(local_option.description, localisation_variables);
+										actual_options[all_local_event_keys[y]] = local_option;
+									}
+
+								//Display event to player
+								createEvent(actual_options);
+							}
+							//Fire event - AI handler; sort through all btn_<key>s and distribute AI chances
+							else {
+								var local_ai_chances = parseEventAIChances(local_event);
+								var local_current_chance = 0;
+								var local_seed = Math.random();
+
+								var all_local_ai_chances = Object.keys(local_ai_chances);
+
+								for (var y = 0; y < all_local_ai_chances.length; y++) {
+									var local_ai_chance = local_ai_chances[all_local_ai_chances[y]];
+
+									if (
+										local_seed > local_current_chance &&
+										local_seed <= (local_current_chance + local_ai_chance)
+									) {
+										if (local_event[all_local_ai_chances[y]].effect)
+											local_event[all_local_ai_chances[y]].effect(all_civilisations[x]);
+										break;
+									}
+
+									local_current_chance += local_ai_chance;
+								}
+							}
+						}
+			} else if (local_event.type == "province_event") {
+				if (local_event.limit)
+					for (var x = 0; x < all_provinces.length; x++)
+						if (local_event.limit(all_provinces[x])) {
+							var province_civilisation = getProvinceOwner(all_provinces[x], { return_object: true });
+
+							//Fire event - Player handler
+							if (civilisationIsPlayer(province_civilisation)) {
+								//Format event for player display
+								var all_local_event_keys = Object.keys(local_event);
+								var actual_options = {};
+								var localisation_vairables = {
+									FROM: all_provinces[x],
+									CIV_OBJ: province_civilisation,
+									CIV_TAG: getCurrentTag(province_civilisation),
+									PROVINCE_ID: all_provinces[x].getProvinceID(),
+									PROVINCE_NAME: all_provinces[x].getProvinceName()
+								};
+
+								actual_options.event_type = local_event.type;
+								actual_options.province_id = all_provinces[x].getProvinceID();
+
+								if (local_event.effect)
+									local_event.effect(localisation_variables);
+								if (local_event.immediate)
+									local_event.immediate(localisation_variables);
+								if (local_event.name)
+									actual_options.name = parseDisplayLocalisationString(local_event.name, localisation_variables);
+								if (local_event.description)
+									actual_options.description = parseDisplayLocalisationString(local_event.description, localisation_variables);
+
+								//Iterate over all_local_event_keys
+								for (var y = 0; y < all_local_event_keys.length; y++)
+									if (all_local_event_keys[y].startsWith("btn_")) {
+										var local_option = local_event[all_local_event_keys[y]];
+
+										if (local_option.name)
+											local_option.name = parseDisplayLocalisationString(local_option.name, localisation_variables);
+										if (local_option.description)
+											local_option.description = parseDisplayLocalisationString(local_option.description, localisation_variables);
+										actual_options[all_local_event_keys[y]] = local_option;
+									}
+
+								//Display event to player
+								createEvent(actual_options);
+							}
+							//Fire event - AI handler; sort through all btn_<key>s and distribute AI chances
+							else {
+								var local_ai_chances = parseEventAIChances(local_event);
+								var local_current_chance = 0;
+								var local_seed = Math.random();
+
+								var all_local_ai_chances = Object.keys(local_ai_chances);
+
+								for (var y = 0; y < all_local_ai_chances.length; y++) {
+									var local_ai_chance = local_ai_chances[all_local_ai_chances[y]];
+
+									if (
+										local_seed > local_current_chance &&
+										local_seed <= (local_current_chance + local_ai_chance)
+									) {
+										if (local_event[all_local_ai_chances[y]].effect)
+											local_event[all_local_ai_chances[y]].effect(all_provinces[x]);
+										break;
+									}
+
+									local_current_chance += local_ai_chance;
+								}
+							}
+						}
+			}
+		}
 	}
 }

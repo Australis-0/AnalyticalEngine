@@ -1,5 +1,17 @@
 //Initialise functions
 {
+	function getAllCivilisations () {
+		//Declare local instance variables
+		var all_civilisations = [];
+
+		//Iterate over Game.getCivilizationsInGame()
+		for (var i = 0; i < Game.getCivilizationsInGame(); i++)
+			all_civilisations.push(getCivilisation(i));
+
+		//Return statement
+		return all_civilisations;
+	}
+
 	function getAllCurrentCivTags () {
 		//Declare local instance variables
 		var all_provinces = getAllProvinces();
