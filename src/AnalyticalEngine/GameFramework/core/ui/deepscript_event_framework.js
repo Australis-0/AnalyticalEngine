@@ -68,6 +68,14 @@
 						var processed_tooltip_array = [];
 
 						//Iterate over local_option.tooltip if available to format local_tooltip_strings
+						if (local_option.description) {
+							local_option.tooltip = [];
+							var split_description = local_option.description.split("\n");
+
+							//Iterate over all split_description
+							for (var x = 0; x < split_description.length; x++)
+								local_option.tooltip.push({ raw_string: split_description[x] });
+						}
 						if (local_option.tooltip)
 							try {
 								var local_tooltip = getList(local_option.tooltip);

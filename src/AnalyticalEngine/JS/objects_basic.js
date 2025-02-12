@@ -186,6 +186,7 @@
 		var options = (arg1_options) ? arg1_options : {};
 
 		//Initialise options
+		if (Java.isJavaObject(object)) return [];
 		if (!options.current_key) options.current_key = "";
 
 		//Declare local instance variables

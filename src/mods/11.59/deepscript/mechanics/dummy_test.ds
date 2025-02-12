@@ -1,34 +1,41 @@
-main.test = {
-	on_game_daily_interval: {
-		event_dummy: {
-			id: "test_event",
-			image: "game/events/images/H/0.png",
-			type: "civ_event",
+//Add dummy test event
+addEvent({
+	id: "test_event",
+	image: "game/events/images/H/0.png",
+	type: "civ_event",
 
-			mission_id: 101,
+	limit: function (e) {
+		if (
+			getCurrentTag("usa") == getCurrentTag(e) &&
+			dateIsGEQ("02.01.1946")
+		) {
+			console.log("USA - test_event attempting to fire!");
 
-			name: "Test Event",
-			description: "The Charge in the Soviet Union (Kennan) to the Secretary of State\nSECRET\nMoscow, February 22, 1946--9 p.m. [Received February 22--3: 52 p.m.]\n511. Answer to Dept's 284, Feb 3 [13] involves questions so intricate, so delicate, so strange to our form of thought, and so important to analysis of our international environment that I cannot compress answers into single brief message without yielding to what I feel would be dangerous degree of over-simplification. I hope, therefore, Dept will bear with me if I submit in answer to this question five parts, subjects of which will be roughly as follows: \n(1) Basic features of post-war Soviet outlook.\n(2) Background of this outlook\n(3) Its projection in practical policy on official level.\n(4) Its projection on unofficial level.\n(5) Practical deductions from standpoint of US policy.\nI apologize in advance for this burdening of telegraphic channel; but questions involved are of such urgent importance, particularly in view of recent events, that our answers to them, if they deserve attention at all, seem to me to deserve it at once. There follows:\nPart 1: Basic Features of Post War Soviet Outlook, as Put Forward by Official Propaganda Machine\nAre as Follows:\n(a) USSR still lives in antagonistic \"capitalist encirclement\" with which in the long run there can be no permanent peaceful coexistence. As stated by Stalin in 1927 to a delegation of American workers:\n\"In course of further development of international revolution there will emerge two centers of world significance: a socialist center, drawing to itself the countries which tend toward socialism, and a capitalist center, drawing to itself the countries that incline toward capitalism. Battle between these two centers for command of world economy will decide fate of capitalism and of communism in entire world.\"\n(b) Capitalist world is beset with internal conflicts, inherent in nature of capitalist society. These conflicts are insoluble by means of peaceful compromise. Greatest of them is that between England and US.\n(c) Internal conflicts of capitalism inevitably generate wars. Wars thus generated may be of two kinds: intra-capitalist wars between two capitalist states, and wars of intervention against socialist world. Smart capitalists, vainly seeking escape from inner conflicts of capitalism, incline toward latter.\n(d) Intervention against USSR, while it would be disastrous to those who undertook it, would cause renewed delay in progress of Soviet socialism and must therefore be forestalled at all costs.\n(e) Conflicts between capitalist states, though likewise fraught with danger for USSR, nevertheless hold out great possibilities for advancement of socialist cause, particularly if USSR remains militarily powerful, ideologically monolithic and faithful to its present brilliant leadership.\n(f) It must be borne in mind that capitalist world is not all bad. In addition to hopelessly reactionary and bourgeois elements, it includes (1) certain wholly enlightened and positive elements united in acceptable communistic parties and (2) certain other elements (now described for tactical reasons as progressive or democratic) whose reactions, aspirations and activities happen to be \"objectively\" favorable to interests of USSR. These last must be encouraged and utilized for Soviet purposes.\n(g) Among negative elements of bourgeois-capitalist society, most dangerous of all are those whom Lenin called false friends of the people, namely moderate-socialist or social-democratic leaders (in other words, non-Communist left-wing). These are more dangerous than out-and-out reactionaries, for latter at least march under their true colors, whereas moderate left-wing leaders confuse people by employing devices of socialism to seine interests of reactionary capital.\nSo much for premises. To what deductions do they lead from standpoint of Soviet policy? To following:\n(a) Everything must be done to advance relative strength of USSR as factor in international society. Conversely, no opportunity most be missed to reduce strength and influence, collectively as well as individually, of capitalist powers.\n(b) Soviet efforts, and those of Russia's friends abroad, must be directed toward deepening and exploiting of differences and conflicts between capitalist powers. If these eventually deepen into an \"imperialist\" war, this war must be turned into revolutionary upheavals within the various capitalist countries.\n(c) \"Democratic-progressive\" elements abroad are to be utilized to maximum to bring pressure to bear on capitalist governments along lines agreeable to Soviet interests.\n(d) Relentless battle must be waged against socialist and social-democratic leaders abroad.",
+			//Return statement
+			return true;
+		}
+	},
 
-            btn_option_one: {
-                name: "Option 1",
-                description: "This is a tooltip for Option 1.\n`COLOUR<255, 0, 0>`BOLD`This option is bold and red!",
+	name: "Test Event",
+	description: "The Charge in the Soviet Union (Kennan) to the Secretary of State\nSECRET\nMoscow, February 22, 1946--9 p.m. [Received February 22--3: 52 p.m.]\n511. Answer to Dept's 284, Feb 3 [13] involves questions so intricate, so delicate, so strange to our form of thought, and so important to analysis of our international environment that I cannot compress answers into single brief message without yielding to what I feel would be dangerous degree of over-simplification. I hope, therefore, Dept will bear with me if I submit in answer to this question five parts, subjects of which will be roughly as follows: \n(1) Basic features of post-war Soviet outlook.\n(2) Background of this outlook\n(3) Its projection in practical policy on official level.\n(4) Its projection on unofficial level.\n(5) Practical deductions from standpoint of US policy.\nI apologize in advance for this burdening of telegraphic channel; but questions involved are of such urgent importance, particularly in view of recent events, that our answers to them, if they deserve attention at all, seem to me to deserve it at once. There follows:\nPart 1: Basic Features of Post War Soviet Outlook, as Put Forward by Official Propaganda Machine\nAre as Follows:\n(a) USSR still lives in antagonistic \"capitalist encirclement\" with which in the long run there can be no permanent peaceful coexistence. As stated by Stalin in 1927 to a delegation of American workers:\n\"In course of further development of international revolution there will emerge two centers of world significance: a socialist center, drawing to itself the countries which tend toward socialism, and a capitalist center, drawing to itself the countries that incline toward capitalism. Battle between these two centers for command of world economy will decide fate of capitalism and of communism in entire world.\"\n(b) Capitalist world is beset with internal conflicts, inherent in nature of capitalist society. These conflicts are insoluble by means of peaceful compromise. Greatest of them is that between England and US.\n(c) Internal conflicts of capitalism inevitably generate wars. Wars thus generated may be of two kinds: intra-capitalist wars between two capitalist states, and wars of intervention against socialist world. Smart capitalists, vainly seeking escape from inner conflicts of capitalism, incline toward latter.\n(d) Intervention against USSR, while it would be disastrous to those who undertook it, would cause renewed delay in progress of Soviet socialism and must therefore be forestalled at all costs.\n(e) Conflicts between capitalist states, though likewise fraught with danger for USSR, nevertheless hold out great possibilities for advancement of socialist cause, particularly if USSR remains militarily powerful, ideologically monolithic and faithful to its present brilliant leadership.\n(f) It must be borne in mind that capitalist world is not all bad. In addition to hopelessly reactionary and bourgeois elements, it includes (1) certain wholly enlightened and positive elements united in acceptable communistic parties and (2) certain other elements (now described for tactical reasons as progressive or democratic) whose reactions, aspirations and activities happen to be \"objectively\" favorable to interests of USSR. These last must be encouraged and utilized for Soviet purposes.\n(g) Among negative elements of bourgeois-capitalist society, most dangerous of all are those whom Lenin called false friends of the people, namely moderate-socialist or social-democratic leaders (in other words, non-Communist left-wing). These are more dangerous than out-and-out reactionaries, for latter at least march under their true colors, whereas moderate left-wing leaders confuse people by employing devices of socialism to seine interests of reactionary capital.\nSo much for premises. To what deductions do they lead from standpoint of Soviet policy? To following:\n(a) Everything must be done to advance relative strength of USSR as factor in international society. Conversely, no opportunity most be missed to reduce strength and influence, collectively as well as individually, of capitalist powers.\n(b) Soviet efforts, and those of Russia's friends abroad, must be directed toward deepening and exploiting of differences and conflicts between capitalist powers. If these eventually deepen into an \"imperialist\" war, this war must be turned into revolutionary upheavals within the various capitalist countries.\n(c) \"Democratic-progressive\" elements abroad are to be utilized to maximum to bring pressure to bear on capitalist governments along lines agreeable to Soviet interests.\n(d) Relentless battle must be waged against socialist and social-democratic leaders abroad.",
 
-                ai_chance: 50,
-                effect: {
-                    print: "You clicked Option 1!"
-                }
-            },
-            btn_option_two: {
-                name: "Option 2",
-                description: "Custom tooltips have been added to AnalyticalEngine!\n`YELLOW`This`RESET` is a `GREEN`multicoloured`RESET` raw string `YELLOW`test`RESET`.\n- You can even do inline `BOLD`bold`RESET`.\n`COLOUR<240, 60, 60>`NORMAL`IMAGE<ui/interface/H/icons/plunder.png>`This option is salmon with a custom image.\n\n- After a short line break, try having an inline flag: `IMAGE<gfx/flagsXH/uni_m.png>` United Kingdom",
+	btn_option_one: {
+		name: "Our name is the {FROM.getCivName()}!",
+		description: "This is a tooltip for Option 1.\n`COLOUR<255, 0, 0>`BOLD`This option is bold and red!",
 
-                ai_chance: 50,
-                disabled: true,
-                effect: {
-                    print: "You clicked Option 2!"
-                }
-            }
+		ai_chance: 50,
+		effect: function (e) {
+			console.log("You clicked Option 1!");
+		}
+	},
+	btn_option_two: {
+		name: "Option 2",
+		description: "Custom tooltips have been added to AnalyticalEngine!\n`YELLOW`This`RESET` is a `GREEN`multicoloured`RESET` raw string `YELLOW`test`RESET`.\n- You can even do inline `BOLD`bold`RESET`.\n`COLOUR<240, 60, 60>`NORMAL`IMAGE<ui/interface/H/icons/plunder.png>`This option is salmon with a custom image.\n\n- After a short line break, try having an inline flag: `IMAGE<gfx/flagsXH/uni_m.png>` United Kingdom",
+
+		ai_chance: 50,
+		disabled: true,
+		effect: function (e) {
+			console.log("You clicked Option 2!");
 		}
 	}
-}
+});

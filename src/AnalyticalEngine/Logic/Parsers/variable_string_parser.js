@@ -95,25 +95,27 @@
 
 		var evaluated_string;
 		try {
-			//Iterate over options.regex_replace
-			var all_regex_replace_keys = Object.keys(options.regex_replace);
+			try {
+				//Iterate over options.regex_replace
+				var all_regex_replace_keys = Object.keys(options.regex_replace);
 
-			for (var i = 0; i < all_regex_replace_keys.length; i++) {
-				var local_value = options.regex_replace[all_regex_replace_keys[i]];
-				var local_regexp = new RegExp(all_regex_replace_keys[i], "gm");
+				for (var i = 0; i < all_regex_replace_keys.length; i++) {
+					var local_value = options.regex_replace[all_regex_replace_keys[i]];
+					var local_regexp = new RegExp(all_regex_replace_keys[i], "gm");
 
-				try {
-					string = string.replace(local_regexp, local_value);
-				} catch (e) {}
-			}
+					try {
+						string = string.replace(local_regexp, local_value);
+					} catch (e) {}
+				}
+			} catch (e) {}
 
 			evaluated_string = eval(string);
 		} catch (e) {
-			if (!options.ignore_errors) {
+			if (!options.ignore_errors) try {
 				console.log("Options:", options);
 				console.log("String:", string);
 				console.log(e);
-			}
+			} catch (e) {}
 			evaluated_string = string;
 		}
 
