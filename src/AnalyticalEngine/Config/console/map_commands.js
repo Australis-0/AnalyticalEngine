@@ -113,6 +113,14 @@ config.console.map_commands = {
 			console.log("Cities: " + main_map_cities.length + "/" + Game.getProvincesSize() + " Provinces");
 		}
 	},
+	toggle_civilisation_info: {
+		name: "toggle-civilisation-info",
+		description: "Prints on_civilisation_click change information when the event fires.",
+		special_function: function (args) {
+			global.debug.log_civilisation_info = (!global.debug.log_civilisation_info);
+			console.log("Set global.debug.log_civilisation_info to " + global.debug.log_civilisation_info);
+		}
+	},
 	toggle_mapmode_info: {
 		name: "toggle-mapmode-info",
 		description: "Prints information on different mapmodes when the event fires.",

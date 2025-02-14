@@ -68,6 +68,10 @@
 		var civ_obj = getCivilisation(army_obj.civID);
 		var civ_tag = getCurrentTag(civ_obj);
 
+		//Debug statement
+		if (global.debug.log_scopes_info)
+			console.log("onArmyDisband() fired.");
+
 		//Iterate over all_on_army_disband_keys
 		for (var i = 0; i < all_on_army_disband_keys.length; i++) {
 			var local_function = main.scopes.on_army_disband[all_on_army_disband_keys[i]];
@@ -91,6 +95,10 @@
 		var civ_obj = getCivilisation(getProvinceOwner(target_province_id, { return_object: true }));
 		var civ_tag = getCurrentTag(civ_obj);
 		var province_obj = getProvince(target_province_id);
+
+		//Debug statement
+		if (global.debug.log_scopes_info)
+			console.log("onArmyRecruitment() fired.");
 
 		//Iterate over all_on_army_recruitment_keys
 		for (var i = 0; i < all_on_army_recruitment_keys.length; i++) {
@@ -118,6 +126,10 @@
 		var civ_tag = getCurrentTag(civ_obj);
 		var province_building_category_index = province_construction_building.getBuilding();
 		var province_building_index = province_construction_building.getBuildingID();
+
+		//Debug statement
+		if (global.debug.log_scopes_info)
+			console.log("onBuildingConstruction() fired.");
 
 		try {
 			var all_on_building_construction_keys = Object.keys(main.scopes.on_building_construction);
@@ -155,6 +167,10 @@
 
 		var all_on_rival_keys = Object.keys(main.scopes.on_rival);
 
+		//Debug statement
+		if (global.debug.log_scopes_info)
+			console.log("onRival() fired.");
+
 		//Iterate over all_on_rival_keys
 		for (var i = 0; i < all_on_rival_keys.length; i++) {
 			var local_function = main.scopes.on_rival[all_on_rival_keys[i]];
@@ -184,6 +200,10 @@
 
 			var all_on_siege_end_keys = Object.keys(main.scopes.on_siege_end);
 
+			//Debug statement
+			if (global.debug.log_scopes_info)
+				console.log("onSiege() fired.");
+
 			//Iterate over all_on_siege_keys
 			for (var i = 0; i < all_on_siege_end_keys.length; i++) {
 				var local_function = main.scopes.on_siege_end[all_on_siege_end_keys[i]];
@@ -208,6 +228,10 @@
 		var all_on_war_keys = Object.keys(main.scopes.on_war);
 		var attackers = [];
 		var defenders = [];
+
+		//Debug statement
+		if (global.debug.log_scopes_info)
+			console.log("onWar() fired.");
 
 		//Iterate over lAggressors
 		for (var i = 0; i < war_obj.lAggressors.size(); i++)
@@ -237,6 +261,10 @@
 		var all_on_war_end_keys = Object.keys(main.scopes.on_war_end);
 		var attackers = [];
 		var defenders = [];
+
+		//Debug statement
+		if (global.debug.log_scopes_info)
+			console.log("onWarEnd() fired.");
 
 		//Iterate over lAggressors
 		for (var i = 0; i < war_obj.lAggressors.size(); i++)

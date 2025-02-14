@@ -44,5 +44,13 @@ config.console.meta_commands = {
         special_function: function (args) {
             console.log(Object.keys(main));
         }
+    },
+    toggle_scopes_info: {
+        name: "toggle-scopes-info",
+        description: "Prints scopes trigger information when different scope parsing handlers are fired.",
+        special_function: function (args) {
+            global.debug.log_scopes_info = (!global.debug.log_scopes_info);
+            console.log("Set global.debug.log_scopes_info to " + global.debug.log_scopes_info);
+        }
     }
 };

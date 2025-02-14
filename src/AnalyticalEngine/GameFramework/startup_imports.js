@@ -27,7 +27,8 @@
 	this.Gdx = Java.type("com.badlogic.gdx.Gdx");
 	this.Graphics2D = Java.type("java.awt.Graphics2D");
 	this.IdeologiesManager = Java.type("aoc.kingdoms.lukasz.map.IdeologiesManager");
-	this.ImageIO = Java.type("javax.imageio.ImageIO")
+	this.ImageIO = Java.type("javax.imageio.ImageIO");
+	this.InGame_Civ = Java.type("aoc.kingdoms.lukasz.menusInGame.Civ.InGame_Civ");
 	this.InGame_DeepscriptEvent = Java.type("AnalyticalEngine.Java.menus.InGame_DeepscriptEvent");
 	this.InputStreamReader = Java.type("java.io.InputStreamReader");
 	this.Integer = Java.type("java.lang.Integer");

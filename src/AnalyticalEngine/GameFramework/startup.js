@@ -14,6 +14,8 @@ setTimeout(function(){
 	setTimeout(function(){
 		//Initialise individual EventHandlers
 		initialiseOnPageChangeHandler();
+
+		initialiseOnCivilisationClickHandler();
 		initialiseOnclickHandler();
 		initialiseOnMapmodeChangeHandler();
 		initialiseOnProvinceClickHandler();

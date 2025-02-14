@@ -134,6 +134,29 @@
 			interval: 1
 		});
 		//Map handler
+		declareEventHandler("on_civilisation_click", {
+			conditional_function: function () {
+				//Declare local instance variables
+				var current_civ_tag = getCurrentTag(InGame_Civ.iActiveCivID);
+
+				if (current_civ_tag) {
+					var civ_tag_change = false;
+					var is_diplomacy_menu_open = isDiplomacyMenuOpen();
+
+					if (global.cache.is_diplomacy_menu_open != is_diplomacy_menu_open)
+						if (is_diplomacy_menu_open)
+							civ_tag_change = true;
+					if (global.cache.selected_civ_tag != current_civ_tag)
+						civ_tag_change = true;
+					global.cache.is_diplomacy_menu_open = is_diplomacy_menu_open;
+					global.cache.selected_civ_tag = current_civ_tag;
+
+					//Return statement
+					if (civ_tag_change)
+						return current_civ_tag;
+				}
+			}
+		})
 		declareEventHandler("on_mapmode_change", {
 			conditional_function: function () {
 				//Declare local instance variables
@@ -169,6 +192,7 @@
 
 					if (global.cache.selected_province_id != current_province)
 						province_change = true;
+					//Disable right-click interactions when diplomacy menu is already open
 					global.cache.selected_province_id = current_province;
 
 					//Return statement
