@@ -10,15 +10,23 @@
 		};
 	}
 
-	function initialiseOnDateChangeHandler () {
-		if (!global.on_date_change) global.on_date_change = {};
-		global.on_date_change.logic_loop = function (arg0_date_obj) {
-			//Convert from parameters
-			var date_obj = arg0_date_obj;
+	function onDateChangeLogicHandler (arg0_date_obj) {
+		//Convert from parameters
+		var new_date_obj = (arg0_date_obj) ? arg0_date_obj : getCurrentDate();
 
-			//Declare local instance variables
-			var old_date_obj = date_obj.old_date_obj;
-			var new_date_obj = date_obj.new_date_obj;
+		//Declare local instance variables
+		var date_change = false;
+
+		if (!global.cache.old_date_obj) {
+			global.cache.old_date_obj = new_date_obj;
+			date_change = true;
+		}
+		if (JSON.stringify(global.cache.old_date_obj) != JSON.stringify(new_date_obj))
+			date_change = true;
+
+
+		if (date_change) {
+			var old_date_obj = global.cache.old_date_obj;
 
 			//Hour handler
 			if (old_date_obj.hour != new_date_obj.hour) {
@@ -27,7 +35,8 @@
 
 			//Day handler
 			if (old_date_obj.day != new_date_obj.day) {
-				//console.log("New day: ", new_date_obj.day);
+				//Parse events on daily tick
+				parseEvents();
 			}
 
 			//Month handler
@@ -39,15 +48,9 @@
 			if (old_date_obj.year != new_date_obj.year) {
 				//console.log("New year: ", new_date_obj.year);
 			}
+
+			global.cache.old_date_obj = new_date_obj;
 		}
-	}
-
-	function onDateChangeLogicHandler (arg0_date_obj) {
-		//Convert from parameters
-		var date_obj = (arg0_date_obj) ? arg0_date_obj : getCurrentDate();
-
-		//Parse events on daily tick
-		parseEvents();
 	}
 
 	function parseEventAIChances (arg0_options) {

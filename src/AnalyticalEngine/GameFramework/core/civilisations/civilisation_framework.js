@@ -1,5 +1,10 @@
 //Initialise functions
 {
+	/**
+	 * getAllCivilisations() - Returns an array housing all civilisations.
+	 *
+	 * @returns {Array<Object>}
+	 */
 	function getAllCivilisations () {
 		//Declare local instance variables
 		var all_civilisations = [];
@@ -12,6 +17,11 @@
 		return all_civilisations;
 	}
 
+	/**
+	 * getAllCurrentCivTags() - Returns an Array<String> housing all current CivTags.
+	 *
+	 * @returns {Array<String>}
+	 */
 	function getAllCurrentCivTags () {
 		//Declare local instance variables
 		var all_provinces = getAllProvinces();
@@ -119,6 +129,12 @@
 		return (!options.return_key) ? civ_obj : civ_id;
 	}
 
+	/**
+	 * getCivilisationActualName() - Fetches the display localisation name of a given civilisation.
+	 * @param {String} arg0_civ_name - The civilisation to fetch the name for.
+	 *
+	 * @returns {String}
+	 */
 	function getCivilisationActualName (arg0_civ_name) {
 		//Convert from parameters
 		var civ_name = arg0_civ_name;
@@ -138,6 +154,12 @@
 		return localisation_value;
 	}
 
+	/**
+	 * getCivilisationCapital() - Fetches the capital Province of a given civilisation. Returns the province object.
+	 * @param {String} arg0_civ_name - The civilisation to fetch the name for.
+	 *
+	 * @returns {Object}
+	 */
 	function getCivilisationCapital (arg0_civ_name) {
 		//Convert from parameters
 		var civ_name = arg0_civ_name;
@@ -156,6 +178,12 @@
 			}
 	}
 
+	/**
+	 * getCivilisationConqueredProvincesAmount - Returns the number of provinces conquered by a civilisation since the beginning of the game.
+	 * @param {String} arg0_civ_name
+	 *
+	 * @returns {number}
+	 */
 	function getCivilisationConqueredProvincesAmount (arg0_civ_name) {
 		//Convert from parameters
 		var civ_name = arg0_civ_name;
@@ -194,6 +222,12 @@
 		}
 	}
 
+	/**
+	 * getCivilisationID() - Returns the current civilisation ID for a given CivTag. Keep in mind that assigned CivIDs are dynamically generated and not static.
+	 * @param {String} arg0_civ_name - The civilisation to fetch the ID for.
+	 *
+	 * @returns {number}
+	 */
 	function getCivilisationID (arg0_civ_name) {
 		//Convert from parameters
 		var civ_name = arg0_civ_name;
@@ -282,6 +316,12 @@
 		return (!options.return_keys) ? all_civ_provinces : all_civ_province_ids;
 	}
 
+	/**
+	 * getCivilisationProvincesAmount() - Returns the number of provinces held by a civilisation.
+	 * @param {String} arg0_civ_name
+	 *
+	 * @returns {number}
+	 */
 	function getCivilisationProvincesAmount (arg0_civ_name) {
 		//Convert from parameters
 		var civ_name = arg0_civ_name;
@@ -293,6 +333,15 @@
 		return civ_obj.getProvinces().size();
 	}
 
+	/**
+	 * getCivilisationUniqueCapitalBuildingAmount() - Returns the current designated capital building level for a civilisation.
+	 * @param {String} arg0_civ_name
+	 * @param {String} arg1_capital_building_type
+	 * @param {Object} [arg2_options]
+	 *  @param {Array<Object>} [arg2_options.all_buildings=getAllBuiildings()] - Optimisation parameter.
+	 *
+	 * @returns {number}
+	 */
 	function getCivilisationUniqueCapitalBuildingAmount (arg0_civ_name, arg1_capital_building_type, arg2_options) {
 		//Convert from parameters
 		var civ_name = arg0_civ_name;
@@ -319,11 +368,10 @@
 			//Return statement
 			return civ_obj.getNuclearReactorLevel();
 		} else {
-			var all_buildings = getAllBuildings();
+			var all_buildings = (!options.all_buildings) ? getAllBuildings() : options.all_buildings;
 			var capital_province_buildings = getProvinceBuildings(capital_province_obj);
 			var capital_province_obj = getCivilisationCapital(civ_obj);
 
-			if (!options.all_buildings) options.all_buildings = getAllBuildings();
 			for (var i = 0; i < all_buildings.length; i++)
 				for (var x = 0; x < all_buildings[i].Name.length; x++)
 					if (all_buildings[i].Name[x].toLowerCase() == capital_building_type)

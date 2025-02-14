@@ -44,4 +44,92 @@
 		//Add options to main.scopes.events
 		main.scopes.events[options.id] = options;
 	}
+
+	function allCivilisationsScope (arg0_function) {
+		//Convert from parameters
+		var local_function = arg0_function;
+
+		//Declare local instance variables
+		var all_civilisations = getAllCivilisations();
+
+		//Iterate over all_civilisations
+		for (var i = 0; i < all_civilisations.length; i++)
+			local_function(all_civilisations[i]);
+	}
+
+	function allProvincesScope (arg0_function) {
+		//Convert from parameters
+		var local_function = arg0_function;
+
+		//Declare local instance variables
+		var all_provinces = getAllProvinces();
+
+		//Iterate over all_provinces
+		for (var i = 0; i < all_provinces.length; i++)
+			local_function(all_provinces[i]);
+	}
+
+	function anyCivilisationScope (arg0_limit_function, arg1_function) {
+		//Convert from parameters
+		var limit_function = arg0_limit_function;
+		var local_function = arg1_function;
+
+		//Declare local instance variables
+		var all_civilisations = getAllCivilisations();
+
+		//Iterate over all_civilisations
+		for (var i = 0; i < all_civilisations.length; i++)
+			if (limit_function(all_civilisations[i]))
+				local_function(all_civilisations[i]);
+	}
+
+	function anyProvinceScope (arg0_limit_function, arg1_function) {
+		//Convert from parameters
+		var limit_function = arg0_limit_function;
+		var local_function = arg1_function;
+
+		//Declare local instance variables
+		var all_provinces = getAllProvinces();
+
+		//Iterate over all_provinces
+		for (var i = 0; i < all_provinces.length; i++)
+			if (limit_function(all_provinces[i]))
+				local_function(all_provinces[i]);
+	}
+
+	function civilisationScope (arg0_civ_tags, arg1_function) {
+		//Convert from parameters
+		var civ_tags = getList(arg0_civ_tags);
+		var local_function = arg1_function;
+
+		//Iterate over all civ_tags
+		for (var i = 0; i < civ_tags.length; i++)
+			local_function(getCivilisation(civ_tags[i]));
+	}
+
+	function globalScope (arg0_function) {
+		//Convert from parameters
+		var local_function = arg0_function;
+
+		//Immediately invoke function
+		local_function();
+	}
+
+	function onGameStart (arg0_function) {
+		//Convert from parameters
+		var local_function = arg0_function;
+
+		//Add local_function to main.scopes.on_game_start
+		main.scopes.on_game_start[generateRandomID(main.scopes.on_game_start)] = local_function;
+	}
+
+	function provinceScope (arg0_provinces, arg1_function) {
+		//Convert from parameters
+		var provinces = getList(arg0_provinces);
+		var local_function = arg1_function;
+
+		//Iterate over all provinces
+		for (var i = 0; i < provinces.length; i++)
+			local_function(getProvince(provinces[i]));
+	}
 }

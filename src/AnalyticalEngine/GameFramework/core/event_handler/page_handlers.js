@@ -62,6 +62,8 @@
 			if (current_page == "NEW_GAME") {
 				console.log("Scenario loaded: " + getCurrentScenario());
 				loadScenario(getCurrentScenario());
+			} else if (current_page == "IN_GAME") {
+				loadScenarioStart(getCurrentScenario());
 			}
 		}
 	}

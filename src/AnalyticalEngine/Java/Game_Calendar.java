@@ -307,7 +307,6 @@ public class Game_Calendar {
             } catch (ScriptException | NoSuchMethodException e) {
                 e.printStackTrace();
             }
-
             //ANALYTICALENGINE END
         } catch (Exception var2) {
             currentMonth = 1;
