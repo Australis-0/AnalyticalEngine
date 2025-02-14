@@ -201,6 +201,45 @@
 				}
 			}
 		});
+		declareEventHandler("on_province_rename", {
+			conditional_function: function () {
+				//Declare local instance variables
+				var current_province = Game.iActiveProvince;
+
+				if (current_province >= 0) try {
+					var current_province_obj = getSelectedProvince();
+					var province_is_undefined = false;
+					var province_name_change = false;
+
+					if (!global.cache.selected_province_name) {
+						global.cache.selected_province_name = [current_province, current_province_obj.getProvinceName()];
+						console.log("Attempting to define global.cache.selected_province_name!");
+						province_is_undefined = true;
+					}
+					if (!province_is_undefined) {
+						if (
+							global.cache.selected_province_name[0] == current_province &&
+							global.cache.selected_province_name[1] != current_province_obj.getProvinceName()
+						)
+							province_name_change = true;
+						var province_old_name = global.cache.selected_province_name[1];
+						global.cache.selected_province_name = [current_province, current_province_obj.getProvinceName()];
+
+						//Return statement
+						if (province_name_change)
+							return {
+								province_id: current_province,
+
+								old_name: province_old_name,
+								new_name: global.cache.selected_province_name[1]
+							};
+					}
+				} catch (e) {
+					console.log("Error in on_province_rename:");
+					console.log(e.stack);
+				}
+			}
+		});
 	}
 
 	/**

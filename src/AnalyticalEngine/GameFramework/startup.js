@@ -19,6 +19,7 @@ setTimeout(function(){
 		initialiseOnclickHandler();
 		initialiseOnMapmodeChangeHandler();
 		initialiseOnProvinceClickHandler();
+		initialiseOnProvinceRenameHandler();
 
 		//Initialise EventHandler logic
 		initialiseEventHandlers();

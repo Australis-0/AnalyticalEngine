@@ -47,6 +47,7 @@ var global = {
 				on_province_rename: {},
 
 				on_province_build_click: {},
+				on_province_building_click: {},
 				on_province_bonus_modifiers_click: {},
 				on_province_cores_click: {},
 				on_province_defence_level_click: {},
