@@ -29,25 +29,23 @@
 			var old_date_obj = global.cache.old_date_obj;
 
 			//Hour handler
-			if (old_date_obj.hour != new_date_obj.hour) {
-				//console.log("New hour: ", new_date_obj.hour);
-			}
+			if (old_date_obj.hour != new_date_obj.hour)
+				parseOnGameTick();
 
 			//Day handler
 			if (old_date_obj.day != new_date_obj.day) {
 				//Parse events on daily tick
+				parseOnGameDailyInterval();
 				parseEvents();
 			}
 
 			//Month handler
-			if (old_date_obj.month != new_date_obj.month) {
-				//console.log("New month: ", new_date_obj.month);
-			}
+			if (old_date_obj.month != new_date_obj.month)
+				parseOnGameMonthlyInterval();
 
 			//Year handler
-			if (old_date_obj.year != new_date_obj.year) {
-				//console.log("New year: ", new_date_obj.year);
-			}
+			if (old_date_obj.year != new_date_obj.year)
+				parseOnGameYearlyInterval();
 
 			global.cache.old_date_obj = new_date_obj;
 		}
