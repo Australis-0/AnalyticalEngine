@@ -53,7 +53,26 @@
 			if (main.in_mod_editor)
 				initialiseModEditor();
 		};
+		global.on_page_change.handler = function (arg0_current_page) {
+			//Convert from parameters
+			var current_page = arg0_current_page;
 
+			//Declare local instance variables
+			var mod_editor_pages = ["SCENARIO_WASTELAND_CONTINENTS", "SCENARIO_WASTELAND", "SCENARIO_CIVILIZATIONS", "SCENARIO_ASSIGN", "SCENARIO_SETTINGS"];
+
+			//Page handling OnAction scopes
+			if (current_page == "EDITOR") {
+				parseOnEditorClick();
+			} else if (current_page == "IN_GAME") {
+				global.cache.in_game = true;
+			} else if (current_page == "MAINMENU") {
+				if (global.cache.in_game)
+					parseOnGameExit();
+				delete global.cache.in_game;
+			} else if (mod_editor_pages.includes(current_page)) {
+				parseOnNewScenario();
+			}
+		}
 		global.on_page_change.scenario_handler = function (arg0_current_page) {
 			//Convert from parameters
 			var current_page = arg0_current_page;

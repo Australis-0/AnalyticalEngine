@@ -74,6 +74,7 @@ var global = {
 
 				//5. Menu Interactions.
 				on_editor_click: {},
+				on_game_exit: {},
 				on_new_scenario: {}
 			},
 
