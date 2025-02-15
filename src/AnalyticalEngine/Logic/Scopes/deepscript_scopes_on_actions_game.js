@@ -89,28 +89,46 @@
 		var army_obj = arg0_army_obj;
 
 		//Declare local instance variables
-		var target_province_id = Game.getCiv(Game.getProvince(army_obj.provinceID).getCivID()).lCreateNewArmy.get(army_obj.toArmyKey);
+		try {
+			var target_province_id = Game.findArmy_FullCheck(
+				Game.getProvince(army_obj.provinceID).getCivID(),
+				army_obj.toArmyKey
+			).iProvinceID;
 
-		var all_on_army_recruitment_keys = Object.keys(main.scopes.on_army_recruitment);
-		var civ_obj = getCivilisation(getProvinceOwner(target_province_id, { return_object: true }));
-		var civ_tag = getCurrentTag(civ_obj);
-		var province_obj = getProvince(target_province_id);
+			var all_on_army_recruitment_keys = Object.keys(main.scopes.on_army_recruitment);
+			var civ_obj = getCivilisation(getProvinceOwner(target_province_id, { return_object: true }));
+			var civ_tag = getCurrentTag(civ_obj);
+			var province_obj = getProvince(target_province_id);
 
-		//Debug statement
-		if (global.debug.log_scopes_info)
-			console.log("onArmyRecruitment() fired.");
+			//Debug statement
+			if (global.debug.log_scopes_info)
+				console.log("onArmyRecruitment() fired: target_province_id: " + target_province_id + ", civ_tag: " + civ_tag);
 
-		//Iterate over all_on_army_recruitment_keys
-		for (var i = 0; i < all_on_army_recruitment_keys.length; i++) {
-			var local_function = main.scopes.on_army_recruitment[all_on_army_recruitment_keys[i]];
+			//Iterate over all_on_army_recruitment_keys
+			for (var i = 0; i < all_on_army_recruitment_keys.length; i++) {
+				var local_function = main.scopes.on_army_recruitment[all_on_army_recruitment_keys[i]];
 
-			local_function({
-				army_obj: army_obj,
-				civ_obj: civ_obj,
-				civ_tag: civ_tag,
-				province_id: target_province_id,
-				province_obj: province_obj
-			});
+				local_function({
+					army_obj: army_obj,
+					civ_obj: civ_obj,
+					civ_tag: civ_tag,
+					province_id: target_province_id,
+					province_obj: province_obj
+				});
+			}
+		} catch (e) {
+			console.log("onArmyRecruitment() errored: Province ID - " + army_obj.provinceID);
+
+			try {
+				console.log("onArmyRecruitment() errored: Civ ID - " + Game.getProvince(army_obj.provinceID).getCivID());
+
+				try {
+					console.log("onArmyRecruitment() errored: Goal Province ID: " + Game.findArmy_FullCheck(
+						Game.getProvince(army_obj.provinceID).getCivID(),
+						army_obj.toArmyKey
+					).iProvinceID);
+				} catch (e) {}
+			} catch (e) {}
 		}
 	}
 

@@ -39,10 +39,12 @@
 	this.MenuElement_HoverElement_Type_Text = Java.type("aoc.kingdoms.lukasz.menu_element.menuElementHover.MenuElement_HoverElement_Type_Text");
 	this.MenuElement_HoverElement_Type_FlagCiv_Title = Java.type("aoc.kingdoms.lukasz.menu_element.menuElementHover.MenuElement_HoverElement_Type_FlagCiv_Title");
 	this.Menu_LoadScenario = Java.type("aoc.kingdoms.lukasz.menus.LoadSave.Menu_LoadScenario");
+	this.NewGame = Java.type("aoc.kingdoms.lukasz.menus.NewGame.NewGame");
 	this.OnscreenKeyboardType = Java.type("com.badlogic.gdx.Input.OnscreenKeyboardType");
 	this.Paths = Java.type("java.nio.file.Paths");
 	this.Pixmap = Java.type("com.badlogic.gdx.graphics.Pixmap");
 	this.PixmapIO = Java.type("com.badlogic.gdx.graphics.PixmapIO");
+	this.Player = Java.type("aoc.kingdoms.lukasz.jakowski.Player.Player");
 	this.PrintWriter = Java.type("java.io.PrintWriter");
 	this.ProvinceConstructedBuilding = Java.type("aoc.kingdoms.lukasz.map.province.ProvinceConstructedBuilding");
 	this.ProvinceDraw = Java.type("aoc.kingdoms.lukasz.map.province.ProvinceDraw");
