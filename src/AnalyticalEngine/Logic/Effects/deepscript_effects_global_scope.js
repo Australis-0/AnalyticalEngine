@@ -28,7 +28,24 @@
 		var event_id = arg0_event_id;
 		var options = (arg1_options) ? arg1_options : {};
 
+		//Initialise options
+		options.civ_tags = getList(options.civ_tags);
+		options.provinces = getList(options.provinces);
+
 		//Declare local instance variables
+		var event_obj = getEvent(event_id);
+
+		if (event_obj) {
+			if (event_obj.type == "civ_event" || event_obj.type == "mission_event") {
+				for (var i = 0; i < options.civ_tags.length; i++)
+					fireCivilisationEvent(options.civ_tags[i], event_obj);
+			} else if (event_obj.type == "province_event") {
+				for (var i = 0; i < options.provinces.length; i++)
+					fireProvinceEvent(options.provinces[i], event_obj);
+			}
+		} else {
+			console.error("Event ID: " + event_id + " could not be found.");
+		}
 	}
 }
 
@@ -43,12 +60,42 @@
 
 		//Declare local instance variables
 		var all_events_keys = Object.keys(main.scopes.events);
+		var event_exists = [false, ""]; //[event_exists, event_obj];
+		var search_name = event_name.trim().toLowerCase();
 
-		//Iterate over all_events_keys
+		//.id search - soft search 1st, hard search 2nd
 		for (var i = 0; i < all_events_keys.length; i++) {
 			var local_event = main.scopes.events[all_events_keys[i]];
 
-
+			if (all_events_keys[i].indexOf(search_name) != -1)
+				event_exists = [true, local_event];
 		}
+		for (var i = 0; i < all_events_keys.length; i++) {
+			var local_event = main.scopes.events[all_events_keys[i]];
+
+			if (all_events_keys[i] == search_name)
+				event_exists = [true, local_event];
+		}
+
+		//.name search - soft search 1st, hard search 2nd
+		if (!event_exists[0]) {
+			for (var i = 0; i < all_events_keys.length; i++) {
+				var local_event = main.scopes.events[all_events_keys[i]];
+
+				if (local_event.name)
+					if (local_event.name.trim().toLowerCase().indexOf(search_name) != -1)
+						event_exists = [true, local_event];
+			}
+			for (var i = 0; i < all_events_keys.length; i++) {
+				var local_event = main.scopes.events[all_events_keys[i]];
+
+				if (local_event.name)
+					if (local_event.name.trim().toLowerCase() == search_name)
+						event_exists = [true, local_event];
+			}
+		}
+
+		//Return statement
+		return (event_exists[0]) ? event_exists[1] : undefined;
 	}
 }
