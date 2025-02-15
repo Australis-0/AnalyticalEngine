@@ -36,12 +36,8 @@
 //Initialise internal helper functions
 {
 	function parseOnGameDailyInterval () {
-		//Convert from parameters
-		var province_id = arg0_province_id;
-
 		//Declare local instance variables
 		var all_on_game_daily_interval_keys = Object.keys(main.scopes.on_game_daily_interval);
-		var local_options = getInternalProvinceOptionsObject(province_id);
 
 		//Debug statement
 		if (global.debug.log_scopes_info)
@@ -51,14 +47,13 @@
 		for (var i = 0; i < all_on_game_daily_interval_keys.length; i++) {
 			var local_function = main.scopes.on_game_daily_interval[all_on_game_daily_interval_keys[i]];
 
-			local_function(local_options);
+			local_function();
 		}
 	}
 
 	function parseOnGameTick () {
 		//Declare local instance variables
 		var all_on_game_tick_keys = Object.keys(main.scopes.on_game_tick);
-		var local_options = {}; // Assuming no province-specific options are needed
 
 		//Debug statement
 		if (global.debug.log_scopes_info)
@@ -68,14 +63,13 @@
 		for (var i = 0; i < all_on_game_tick_keys.length; i++) {
 			var local_function = main.scopes.on_game_tick[all_on_game_tick_keys[i]];
 
-			local_function(local_options);
+			local_function();
 		}
 	}
 
 	function parseOnGameMonthlyInterval () {
 		//Declare local instance variables
 		var all_on_game_monthly_interval_keys = Object.keys(main.scopes.on_game_monthly_interval);
-		var local_options = {}; // No province-specific options assumed
 
 		//Debug statement
 		if (global.debug.log_scopes_info)
@@ -85,14 +79,13 @@
 		for (var i = 0; i < all_on_game_monthly_interval_keys.length; i++) {
 			var local_function = main.scopes.on_game_monthly_interval[all_on_game_monthly_interval_keys[i]];
 
-			local_function(local_options);
+			local_function();
 		}
 	}
 
 	function parseOnGameYearlyInterval () {
 		//Declare local instance variables
 		var all_on_game_yearly_interval_keys = Object.keys(main.scopes.on_game_yearly_interval);
-		var local_options = {}; // No province-specific options assumed
 
 		//Debug statement
 		if (global.debug.log_scopes_info)
@@ -102,7 +95,7 @@
 		for (var i = 0; i < all_on_game_yearly_interval_keys.length; i++) {
 			var local_function = main.scopes.on_game_yearly_interval[all_on_game_yearly_interval_keys[i]];
 
-			local_function(local_options);
+			local_function();
 		}
 	}
 }
