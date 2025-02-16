@@ -77,12 +77,47 @@
 
 	//3. Diplomacy.
 	{
+		function createWar (arg0_options) {
+			//Convert from parameters
+			var options = (arg0_options) ? arg0_options : {};
 
+			//Initialise options
+			options.attackers = (options.attackers) ? getList(options.attackers) : [];
+			options.defenders = (options.defenders) ? getList(options.defenders) : [];
+
+			options.conquer_vassal = (options.conquer_vassal) ? true : false;
+			options.is_coalition = (options.is_coalition) ? true : false;
+
+			//Declare local instance variables
+			var attacker_id = getCivilisationID(options.attackers[0]);
+			var defender_id = getCivilisationID(options.defenders[0]);
+			var war_key = WarManager.addWar(attacker_id, defender_id, options.conquer_vassal, options.is_coalition, null);
+			var war_obj = WarManager.lWars.get(war_key);
+
+			if (options.name)
+				war_obj.name = options.name;
+			if (options.attackers.length > 1)
+				for (var i = 1; i < options.attackers.length; i++) {
+					var local_attacker_id = getCivilisationID(options.attackers[i]);
+
+					if (local_attacker_id)
+						war_obj.addAggressor(local_attacker_id);
+				}
+			if (options.defenders.length > 1)
+				for (var i = 1; i < options.defenders.length; i++) {
+					var local_defender_id = getCivilisationID(options.defenders[i]);
+
+					if (local_defender_id)
+						war_obj.addDefender(local_defender_id);
+				}
+
+			war_obj.loadSave_AddInWar();
+		}
 	}
 
 	//4. Player.
 	{
-		function switchTag (arg0_civ_tag) { //[WIP] - Needs to be adapted to multiplayer by synchronising tag switch states across players.
+		function switchTag (arg0_civ_tag) { //[WIP] - Needs to be adapted to multiplayer by synchronising tag switch states across players. Test in MP. Doesn't work immediately after game start.
 			//Convert from parameters
 			var civ_tag = arg0_civ_tag;
 
@@ -99,7 +134,11 @@
 				Game.player.fog.initFogOfWar();
 				Game.player.loadFormableCivs();
 
-				M_Players.updateHostCiv();
+				if (SteamMultiManager.isHost()) {
+					M_Players.updateCivToHost();
+				} else {
+					M_Players.updateHostCiv();
+				}
 				NewGame.play();
 			}
 		}
@@ -107,8 +146,18 @@
 
 	//5. Pops.
 	{
+		function createDisease (arg0_options) {
+			//Convert from parameters
+			var options = (arg0_options) ? arg0_options : {};
 
+			//Declare local instance variables
+			
+		}
 	}
+
+	//6. International Organisation Scope Effects.
+
+	//7. Resource Scope Effects.
 }
 
 //Initialise internal helper functions

@@ -44,6 +44,7 @@
 	this.Paths = Java.type("java.nio.file.Paths");
 	this.Pixmap = Java.type("com.badlogic.gdx.graphics.Pixmap");
 	this.PixmapIO = Java.type("com.badlogic.gdx.graphics.PixmapIO");
+	this.PlagueManager = Java.type("aoc.kingdoms.lukasz.map.plague.PlagueManager");
 	this.Player = Java.type("aoc.kingdoms.lukasz.jakowski.Player.Player");
 	this.PrintWriter = Java.type("java.io.PrintWriter");
 	this.ProvinceConstructedBuilding = Java.type("aoc.kingdoms.lukasz.map.province.ProvinceConstructedBuilding");

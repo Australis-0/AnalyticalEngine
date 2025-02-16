@@ -303,8 +303,16 @@ public class WarManager {
 
     public static String getWarName(String key) {
         try {
-            int warNameID = key.charAt(0) % GameValues.war.WAR_NAMES.length;
-            return Game.lang.get(GameValues.war.WAR_NAMES[warNameID]);
+            //ANALYTICALENGINE START
+            War war_obj = lWars.get(key);
+
+            if (war_obj.name != null) {
+                return Game.lang.get(war_obj.name);
+            } else {
+                int war_name_id = key.charAt(0) % GameValues.war.WAR_NAMES.length;
+                return Game.lang.get(GameValues.war.WAR_NAMES[war_name_id]);
+            }
+            //ANALYTICALENGINE END
         } catch (Exception var2) {
             return Game.lang.get("WarOverview");
         }

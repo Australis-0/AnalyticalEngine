@@ -33,6 +33,10 @@ public class War {
     public boolean conquerVassal = false;
     public boolean isCoalition = false;
 
+    //ANALYTICALENGINE START
+    public String name = null;
+    //ANALYTICALENGINE END
+
     public War() {
     }
 

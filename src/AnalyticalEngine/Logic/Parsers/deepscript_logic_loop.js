@@ -62,7 +62,7 @@
 
 		//Iterate over all_options_keys
 		for (var i = 0; i < all_options_keys.length; i++)
-			if (all_options_keys.startsWith("btn_"))
+			if (all_options_keys[i].startsWith("btn_"))
 				total_buttons++;
 
 		//Iterate over all_options_keys
