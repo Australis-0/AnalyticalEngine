@@ -1,0 +1,1 @@
+booming_demand_for_beef.txt;coffe_popularity.txt;crop_failure.txt;exceptional_harvest.txt;fishy_business.txt;fish_are_everywhere.txt;luxurious_furs.txt;shifting_tastes.txt;tea_time.txt;timber_rush.txt;volatile_market.txt;

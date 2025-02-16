@@ -199,7 +199,7 @@ province_infrastructure_capital=1
 province_infrastructure_all=1
 province_infrastructure_id=332=1
 
-province_add_core_civ=332=pol # STOPPED HERE
+province_add_core_civ=332=pol
 # Province id 332 add core for Poland
 province_remove_core_civ=332=pol
 

@@ -279,7 +279,7 @@ public class War {
         //ANALYTICALENGINE START
         Invocable invocable = (Invocable) AnalyticalEngine.AnalyticalEngine.nashorn;
         try {
-            invocable.invokeFunction("parseOnWar", this);
+            invocable.invokeFunction("parseOnWarEnd", this);
         } catch (ScriptException | NoSuchMethodException e) {
             e.printStackTrace();
         }
