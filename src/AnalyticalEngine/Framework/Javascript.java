@@ -74,9 +74,8 @@ public class Javascript {
         try {
             URL resourceUrl = Javascript.class.getClassLoader().getResource(file_path);
 
-            if (resourceUrl == null) {
+            if (resourceUrl == null)
                 throw new FileNotFoundException("ERROR: Resource not found -> " + file_path);
-            }
 
             //Print debugging info
             //Open the input stream correctly based on JAR or FileSystem
@@ -85,7 +84,6 @@ public class Javascript {
 
                 String script_content = reader.lines().collect(Collectors.joining("\n"));
                 executeJS(engine, file_path, script_content);
-                System.out.println("Successfully loaded JS file: " + file_path);
             }
         } catch (Exception e) {
             e.printStackTrace();

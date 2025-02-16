@@ -10,13 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09b6f7f8-b868-43e9-b471-ac1dbd15fa3b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/AOC3_Source_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AOC3-Source.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/AOC3_Source_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/AOC3_Source_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Framework/Javascript.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Framework/Javascript.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/settings/ModsOff.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/settings/ModsOff.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,13 +134,13 @@
     "Shell Script.Autorun.executor": "Run",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Project 1159 - 11.59 - AOC3/Age of History 3/AOC3 Source/src/jre/nashorn/dependencies",
+    "last_opened_file_path": "D:/Project 1159 - 11.59 - AOC3/Age of History 3/AOC3 Source/src/META-INF",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "SDKs",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.143695",
     "project.structure.side.proportion": "0.22651222",
     "settings.editor.selected.configurable": "preferences.editor",
@@ -229,7 +225,7 @@
       <workItem from="1737191569663" duration="7789000" />
       <workItem from="1737200274429" duration="101911000" />
       <workItem from="1737726277969" duration="115573000" />
-      <workItem from="1738769995531" duration="140671000" />
+      <workItem from="1738769995531" duration="141373000" />
     </task>
     <servers />
   </component>
