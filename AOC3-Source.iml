@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="4">
+  <component name="AdditionalModuleElements">
+    <content url="file://$MODULE_DIR$" dumb="true">
+      <excludeFolder url="file://$MODULE_DIR$/src/audio" />
+      <excludeFolder url="file://$MODULE_DIR$/src/game" />
+      <excludeFolder url="file://$MODULE_DIR$/src/gfx" />
+      <excludeFolder url="file://$MODULE_DIR$/src/map" />
+      <excludeFolder url="file://$MODULE_DIR$/src/mods" />
+      <excludeFolder url="file://$MODULE_DIR$/src/modsExamples" />
+      <excludeFolder url="file://$MODULE_DIR$/src/saves" />
+      <excludeFolder url="file://$MODULE_DIR$/src/settings" />
+      <excludeFolder url="file://$MODULE_DIR$/src/statistics" />
+      <excludeFolder url="file://$MODULE_DIR$/src/ui" />
+    </content>
+  </component>
+</module>

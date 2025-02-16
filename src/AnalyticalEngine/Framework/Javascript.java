@@ -61,20 +61,35 @@ public class Javascript {
 
     public static void executeJSFile (String arg0_file) {
         executeJSFile(arg0_file, AnalyticalEngine().nashorn); }
-    public static void executeJSFile (String arg0_file, ScriptEngine arg1_nashorn) {
+    public static void executeJSFile(String arg0_file, ScriptEngine arg1_nashorn) {
         //Convert from parameters
         String file_path = arg0_file;
         ScriptEngine engine = arg1_nashorn;
 
-        //Declare local instance variables
-        try (
-            InputStream input_stream = Javascript.class.getResourceAsStream(file_path);
-            BufferedReader reader = new BufferedReader(new InputStreamReader(input_stream));
-        ) {
-            String script_content = reader.lines().collect(Collectors.joining("\n"));
-            executeJS(engine, file_path, script_content);
-        } catch (IOException e) {
+        //Ensure file_path does not start with a leading
+        if (file_path.startsWith("/"))
+            file_path = file_path.substring(1);
+
+        // Declare local instance variables
+        try {
+            URL resourceUrl = Javascript.class.getClassLoader().getResource(file_path);
+
+            if (resourceUrl == null) {
+                throw new FileNotFoundException("ERROR: Resource not found -> " + file_path);
+            }
+
+            //Print debugging info
+            //Open the input stream correctly based on JAR or FileSystem
+            try (InputStream input_stream = resourceUrl.openStream();
+                 BufferedReader reader = new BufferedReader(new InputStreamReader(input_stream))) {
+
+                String script_content = reader.lines().collect(Collectors.joining("\n"));
+                executeJS(engine, file_path, script_content);
+                System.out.println("Successfully loaded JS file: " + file_path);
+            }
+        } catch (Exception e) {
             e.printStackTrace();
+            System.out.println("[JAVA] [AnalyticalEngine] " + file_path + " could not be loaded.");
         }
     }
 
