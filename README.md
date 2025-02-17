@@ -28,8 +28,8 @@ Discord: https://discord.gg/89kQY2KFQz<br>
 YouTube: https://www.youtube.com/@Confoederatio
 
 **Developers.**
-- Aust Kätzchen (Confoederatio) - @vistacitus
-- Vis Tacitus (Confoederatio) - @australis_
+- Aust Kätzchen (Confoederatio) - @australis_
+- Vis Tacitus (Confoederatio) - @vistacitus
 
 ## Documentation.
 Documentation is currently a WIP. Consider joining the Discord if you need technical support.
