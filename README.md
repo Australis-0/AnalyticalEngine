@@ -22,7 +22,7 @@ Completed builds are available as the current `src/AOC3-Source.jar`. This may be
 
 [![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/89kQY2KFQz) [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:vf.confoederatio@gmail.com) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)](https://www.youtube.com/@Confoederatio) 
 
-AOC3 Forums: http://www.ageofcivilizationsgame.com/profile/6277-1159-development-team/
+AOC3 Forums: http://www.ageofcivilizationsgame.com/profile/6277-1159-development-team/<br>
 Email: `vf.confoederatio@gmail.com`<br>
 Discord: https://discord.gg/89kQY2KFQz<br>
 YouTube: https://www.youtube.com/@Confoederatio
