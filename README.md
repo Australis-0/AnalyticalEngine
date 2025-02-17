@@ -2,27 +2,32 @@
 <div id = "toc">
   <ul>
     <summary>
-      <h1>AnalyticalEngine.</h1><br><ins>AOC3, Open Sourced.</ins>
+      <h1>AnalyticalEngine.</h1><br>AOC3, Open Sourced.
     </summary>
   </ul>
 </div>
-<h1>Abstract.</h1>
 
+## Abstract.
 [![Join our community!](https://img.shields.io/discord/548994743925997570?label=Discord&style=for-the-badge)](https://discord.gg/89kQY2KFQz) ![](https://img.shields.io/github/languages/code-size/Australis-0/AnalyticalEngine?style=for-the-badge) ![](https://img.shields.io/github/downloads/Australis-0/AnalyticalEngine/total?style=for-the-badge)
 
 > [!WARNING]
 > AnalyticalEngine is currently in **beta.**
 > This means that certain features such as custom mapmodes and Event Effects are supported, but only partially implemented - with MP support still in testing.
 
-AnalyticalEngine (Project Orion) is a development effort to open-source the core binary code of AOC3 and improve moddability by allowing for custom <a href = "https://github.com/openjdk/nashorn">NashornJS</a> scripts in mods, providing an API for Event Conditions, Effects, and Game Scopes, modded Multiplayer (MP) support, as well as custom mapmodes and custom UIs. Completed builds are available as the current src/AOC3-Source.jar. This may be downloaded dropped into any basegame AOC3 directory to gain access to the current stable version of AnalyticalEngine.
+AnalyticalEngine (Project Orion) is a development effort to open-source the core binary code of AOC3 and improve moddability by allowing for custom <a href = "https://github.com/openjdk/nashorn">NashornJS</a> scripts in mods, providing an API for Event Conditions, Effects, and Game Scopes, modded Multiplayer (MP) support, as well as custom mapmodes and custom UIs. 
+
+Completed builds are available as the current `src/AOC3-Source.jar`. This may be downloaded dropped into any basegame AOC3 directory to gain access to the current stable version of AnalyticalEngine. You may either run it normally as a Java binary or via the command line in the extracted folder if you wish to access AnalyticalEngine's console: `java -jar src/AOC3-Source.jar`.
 
 **Developers.**
 - Aust Kätzchen (Confoederatio)
 - Vis Tacitus (Confoederatio)
 
-<h2>Contacts.</h2>
-<h2>Documentation.</h2>
-<h2>Installation (Custom Build).</h2>
+## Contacts.
+## Documentation.
+## Installation (Custom Build, AnalyticalEngine).
+> [!NOTE]
+> These instructions are only for users that want to decompile and recompile AnalyticalEngine themselves.
 
 
-<h1>Roadmap.</h1>
+
+## Roadmap.
