@@ -1,4 +1,4 @@
-<img src = "https://holocron.so/uploads/e3319d5c-image.png" width = 128 height = 128 align = "left">
+<img src = "https://i.postimg.cc/Xvh25St6/analytical-engine-icon-monochrome.png" width = 128 height = 128 align = "left">
 <div id = "toc">
   <ul>
     <summary>
@@ -7,6 +7,8 @@
   </ul>
 </div>
 <h1>Abstract.</h1>
+
+[![Join our community!](https://img.shields.io/discord/548994743925997570?label=Discord&style=for-the-badge)](https://discord.gg/89kQY2KFQz) ![](https://img.shields.io/github/languages/code-size/Australis-0/AnalyticalEngine?style=for-the-badge) ![](https://img.shields.io/github/downloads/Australis-0/AnalyticalEngine/total?style=for-the-badge)
 
 > [!WARNING]
 > AnalyticalEngine is currently in **beta.**
