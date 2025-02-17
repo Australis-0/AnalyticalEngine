@@ -18,12 +18,26 @@ AnalyticalEngine (Project Orion) is a development effort to open-source the core
 
 Completed builds are available as the current `src/AOC3-Source.jar`. This may be downloaded dropped into any basegame AOC3 directory to gain access to the current stable version of AnalyticalEngine. You may either run it normally as a Java binary or via the command line in the extracted folder if you wish to access AnalyticalEngine's console: `java -jar src/AOC3-Source.jar`.
 
-**Developers.**
-- Aust Kätzchen (Confoederatio)
-- Vis Tacitus (Confoederatio)
-
 ## Contacts.
+
+[![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/89kQY2KFQz) [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:vf.confoederatio@gmail.com) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)](https://www.youtube.com/@Confoederatio) 
+
+AOC3 Forums: http://www.ageofcivilizationsgame.com/profile/6277-1159-development-team/
+Email: `vf.confoederatio@gmail.com`<br>
+Discord: https://discord.gg/89kQY2KFQz<br>
+YouTube: https://www.youtube.com/@Confoederatio
+
+**Developers.**
+- Aust Kätzchen (Confoederatio) - @vistacitus
+- Vis Tacitus (Confoederatio) - @australis_
+
 ## Documentation.
+Documentation is currently a WIP. Consider joining the Discord if you need technical support.
+
+- [Custom Mapmodes](https://docs.google.com/document/d/1BiNkR2viT5-brjBGan3dNHYvwu2Qn-TWQEktjVsJ-44/edit?usp=sharing) - ⚠️ Not yet fully supported.
+- [Deepscript (Event Conditions, Effects, Loops, Scopes, Variables)](https://docs.google.com/document/d/1cgZIJyXivPmHRlPZBEmlv65Aypafa_xPVOjqJDaS6Sg/edit?usp=sharing).
+- [Map Data Scripting Information](https://docs.google.com/document/d/1zXPs4nmJdrDUInwI-_gfCVnCAFQaagksDPb1qgpR9uA/edit?usp=sharing) - ⚠️ Not yet fully supported.
+
 ## Installing a Custom Build.
 
 **AnalyticalEngine, Dev Build.**
