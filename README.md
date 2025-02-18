@@ -18,7 +18,11 @@ AnalyticalEngine (Project Orion) is a development effort to open-source the core
 
 **Installation.**
 
-Completed builds are available as the current `src/AOC3-Source.jar`. Install [Java SDK 23](https://www.oracle.com/uk/java/technologies/downloads/) first. You may now download `src/AOC3-Source.jar` into any basegame AOC3 directory to gain access to the current stable version of AnalyticalEngine. You may either run it normally as a Java binary or via the command line in the extracted folder if you wish to access AnalyticalEngine's console: `java -jar src/AOC3-Source.jar`.
+Completed builds are available as the current `src/AOC3-Source.jar`. 
+
+1. Install [Java SDK 23](https://www.oracle.com/uk/java/technologies/downloads/).
+2. Download the current `src/AOC3-Source.jar` into any basegame AOC3 directory.
+3. You may now either run it normally as a Java binary or via the command line in the extracted folder if you wish to access AnalyticalEngine's console: `java -jar src/AOC3-Source.jar`.
 
 ## Contacts.
 
