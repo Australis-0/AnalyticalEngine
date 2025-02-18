@@ -16,7 +16,9 @@
 
 AnalyticalEngine (Project Orion) is a development effort to open-source the core binary code of AOC3 and improve moddability by allowing for custom <a href = "https://github.com/openjdk/nashorn">NashornJS</a> scripts in mods, providing an API for Event Conditions, Effects, and Game Scopes, modded Multiplayer (MP) support, as well as custom mapmodes and custom UIs. 
 
-Completed builds are available as the current `src/AOC3-Source.jar`. This may be downloaded dropped into any basegame AOC3 directory to gain access to the current stable version of AnalyticalEngine. You may either run it normally as a Java binary or via the command line in the extracted folder if you wish to access AnalyticalEngine's console: `java -jar src/AOC3-Source.jar`.
+**Installation.**
+
+Completed builds are available as the current `src/AOC3-Source.jar`. Install [Java SDK 23](https://www.oracle.com/uk/java/technologies/downloads/) first. You may now download `src/AOC3-Source.jar` into any basegame AOC3 directory to gain access to the current stable version of AnalyticalEngine. You may either run it normally as a Java binary or via the command line in the extracted folder if you wish to access AnalyticalEngine's console: `java -jar src/AOC3-Source.jar`.
 
 ## Contacts.
 
