@@ -1748,6 +1748,6 @@
 
 		//Initialise colour picker
 		colour_picker_obj.setVisible(true, null);
-		colour_picker_obj.setActiveRGBColor(colour[0], colour[1], colour[2]);
+		colour_picker_obj.setActiveRGBColor(new Integer(colour[0]), new Integer(colour[1]), new Integer(colour[2]));
 	}
 }

@@ -10,21 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09b6f7f8-b868-43e9-b471-ac1dbd15fa3b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/map/map_regions_framework.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/ui/editors/province_regions_editor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Java/MapEditor/EditorMapGeoRegions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/ABRS/abrs_framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/ABRS/abrs_framework.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/ABRS/editor_save_load.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/ABRS/editor_save_load.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/event_handler/event_handler_framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/event_handler/event_handler_framework.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/mod/mod_framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/mod/mod_framework.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/provinces/province_name_framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/provinces/province_name_framework.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/map/map_regions_framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/map/map_regions_framework.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/ui/menu_framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/ui/menu_framework.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/startup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/startup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/startup_imports.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/startup_imports.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/ui/editors/mod_editor/province_resources_editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/ui/editors/province_resources_editor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/ui/editors/province_regions_editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/ui/editors/province_regions_editor.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/map/11.59/GeographicalRegions.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/GeographicalRegions.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/deepscript/mechanics/dummy_test.ds" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/deepscript/mechanics/dummy_test.ds" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/ProvinceDetails.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/ProvinceDetails.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -237,7 +228,7 @@
       <workItem from="1737191569663" duration="7789000" />
       <workItem from="1737200274429" duration="101911000" />
       <workItem from="1737726277969" duration="115573000" />
-      <workItem from="1738769995531" duration="170820000" />
+      <workItem from="1738769995531" duration="177769000" />
     </task>
     <servers />
   </component>
