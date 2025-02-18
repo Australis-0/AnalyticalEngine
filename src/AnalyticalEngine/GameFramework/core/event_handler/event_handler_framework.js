@@ -213,7 +213,6 @@
 
 					if (!global.cache.selected_province_name) {
 						global.cache.selected_province_name = [current_province, current_province_obj.getProvinceName()];
-						console.log("Attempting to define global.cache.selected_province_name!");
 						province_is_undefined = true;
 					}
 					if (!province_is_undefined) {

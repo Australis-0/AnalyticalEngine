@@ -96,7 +96,7 @@
 		//Declare local instance variables
 		var city_index = getCity(province_id, { return_index: true });
 
-		//If city_obj exists, modify that. Otherwise, create a new city
+		//If city_index exists, modify that. Otherwise, create a new city
 		if (city_index != undefined) {
 			main.map.cities[city_index] = {
 				Name: city_name,

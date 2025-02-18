@@ -32,6 +32,7 @@
 	this.InGame_DeepscriptEvent = Java.type("AnalyticalEngine.Java.menus.InGame_DeepscriptEvent");
 	this.InputStreamReader = Java.type("java.io.InputStreamReader");
 	this.Integer = Java.type("java.lang.Integer");
+	this.Json = Java.type("com.badlogic.gdx.utils.Json");
 	this.Keyboard = Java.type("aoc.kingdoms.lukasz.jakowski.Keyboard");
 	this.LegacyManager = Java.type("aoc.kingdoms.lukasz.map.LegacyManager");
 	this.M_Players = Java.type("aoc.kingdoms.lukasz.jakowski.Steam.Multi.M_Players");
@@ -42,6 +43,7 @@
 	this.NewGame = Java.type("aoc.kingdoms.lukasz.menus.NewGame.NewGame");
 	this.OnscreenKeyboardType = Java.type("com.badlogic.gdx.Input.OnscreenKeyboardType");
 	this.Paths = Java.type("java.nio.file.Paths");
+	this.Pattern = Java.type("java.util.regex.Pattern");
 	this.Pixmap = Java.type("com.badlogic.gdx.graphics.Pixmap");
 	this.PixmapIO = Java.type("com.badlogic.gdx.graphics.PixmapIO");
 	this.PlagueManager = Java.type("aoc.kingdoms.lukasz.map.plague.PlagueManager");
@@ -71,6 +73,7 @@
 
 //Menu Classes
 {
+	//General Menu Classes
 	this.AA_Game = Java.type("aoc.kingdoms.lukasz.jakowski.AA_Game");
 	this.ArrayList = Java.type("java.util.ArrayList");
 	this.ButtonFlag2_CivName = Java.type("aoc.kingdoms.lukasz.menu_element.button.ButtonFlag2_CivName");
@@ -103,6 +106,10 @@
 	this.Text_Static = Java.type("aoc.kingdoms.lukasz.menu_element.textStatic.Text_Static");
 	this.Text_StaticBG_ID_FlagCiv = Java.type("aoc.kingdoms.lukasz.menu_element.textStatic.Text_StaticBG_ID_FlagCiv");
 	this.Touch = Java.type("aoc.kingdoms.lukasz.jakowski.Touch");
+
+	//Specific Menu Classes
+	this.EditorMapGeoRegions = Java.type("aoc.kingdoms.lukasz.menusMapEditor.EditorMapGeoRegions");
+	this.EditorMapGeoRegionsList = Java.type("aoc.kingdoms.lukasz.menusMapEditor.EditorMapGeoRegionsList");
 }
 
 //Import classes - Dynamic Imports
