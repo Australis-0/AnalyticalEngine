@@ -1317,6 +1317,19 @@
 		}
 	}
 
+	function getColourPickerValue () {
+		//Declare local instance variables
+		var colour_picker_obj = Game.menuManager.colorPicker;
+		var colour_picker_value = colour_picker_obj.getActiveColor();
+
+		//Return statement
+		return [
+			parseInt(colour_picker_value.r*255),
+			parseInt(colour_picker_value.g*255),
+			parseInt(colour_picker_value.b*255)
+		];
+	}
+
 	/**
 	 * getColumnsInRow() - Fetches the total number of columns in a row.
 	 * @param {Object} arg0_context_menu_obj - The context menu to input.
@@ -1570,6 +1583,14 @@
 		return total_row_width;
 	}
 
+	function hideColourPicker () {
+		//Declare local instance variables
+		var colour_picker_obj = Game.menuManager.colorPicker;
+
+		//Hide colour picker
+		colour_picker_obj.setVisible(false, null);
+	}
+
 	/**
 	 * initialiseMenuLogic() - Internal helper function. Initialises menu logic upon game load.
 	 */
@@ -1715,5 +1736,18 @@
 
 		//Declare local instance variables
 
+	}
+
+	function openColourPicker (arg0_colour) {
+		//Convert from parameters
+		var colour = (arg0_colour) ? getList(arg0_colour) : [255, 255, 255];
+
+		//Declare local instance variables
+		Game.menuManager.initColorPicker();
+		var colour_picker_obj = Game.menuManager.colorPicker;
+
+		//Initialise colour picker
+		colour_picker_obj.setVisible(true, null);
+		colour_picker_obj.setActiveRGBColor(colour[0], colour[1], colour[2]);
 	}
 }

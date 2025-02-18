@@ -22,10 +22,17 @@
 		//Convert from parameters
 		var json_string = arg0_json_string;
 
-		//1. Lack of double inverted commas fix
-		json_string = json_string.replace(/([{,])\s*([\w\-]+)\s*:/g, '$1"$2":');
-		//2. Trailing comma fix
-		json_string = json_string.replace(/,\s*(?=[}\]])/g, '');
+		//1. Fix missing quotes aroundd object keys
+		var key_pattern = Pattern.compile("(?m)(\\s*)([A-Za-z_][A-Za-z_0-9]*)\\s*:");
+		json_string = key_pattern.matcher(json_string).replaceAll("$1\"$2\":");
+
+		//2. Fix unquoted string values (optional, if necessary)
+		var value_pattern = Pattern.compile(":\\s*([A-Za-z_][A-Za-z_0-9]*)(?=,|\\s*\\})");
+		json_string = value_pattern.matcher(json_string).replaceAll(": \"$1\"");
+
+		//3. Fix trailing commas
+		var trailing_comma_pattern = Pattern.compile(",(\\s*[}\\]])");
+		json_string = trailing_comma_pattern.matcher(json_string).replaceAll("$1");
 
 		//Return statement
 		return json_string;
@@ -91,19 +98,32 @@
 	 * writeObjectToFile() - Writes a given object to a relative/absolute file path.
 	 * @param {Object} arg0_object
 	 * @param {String} arg1_file_path
+	 * @param {Object} [arg2_options]
+	 *  @param {boolean} [arg2_options.return_string=false] - Whether to return the string instead of immediately writing to file.
+	 *
+	 * @return {String|undefined}
 	 */
-	function writeObjectToFile (arg0_object, arg1_file_path) {
+	function writeObjectToFile (arg0_object, arg1_file_path, arg2_options) {
 		//Convert from parameters
 		var object = arg0_object;
 		var file_path = arg1_file_path;
+		var options = (arg2_options) ? arg2_options : {};
 
-		//Declare local instance variables
-		var json_string = JSON.stringify(object, null, 4)
+		try {
+			//Declare local instance variables
+			var json_string = JSON.stringify(object, null, 4)
 			.replace(/"(\w+)":/g, '$1:');
 
-		//Create a FileWriter and PrintWriter to write to a file
-		var writer = new PrintWriter(new FileWriter(file_path));
-		writer.println(json_string);
-		writer.close();
+			//Guard clause if options.return_string is enabled
+			if (options.return_string)
+				return json_string;
+
+			//Create a FileWriter and PrintWriter to write to a file
+			var writer = new PrintWriter(new FileWriter(file_path));
+			writer.println(json_string);
+			writer.close();
+		} catch (e) {
+			console.error(e.stack);
+		}
 	}
 }

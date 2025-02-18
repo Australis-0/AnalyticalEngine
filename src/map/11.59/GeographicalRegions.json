@@ -1,413 +1,413 @@
 {
-	Age_of_History: Data,
-		Data: [
-		{
-			sName: "Iberia",
-			iR: 229,
-			iG: 142,
-			iB: 170,
-		},
-		{
-			sName: "Galia",
-			iR: 39,
-			iG: 70,
-			iB: 159,
-		},
-		{
-			sName: "WestMediterranean",
-			iR: 181,
-			iG: 230,
-			iB: 29,
-		},
-		{
-			sName: "EastMediterranean",
-			iR: 136,
-			iG: 0,
-			iB: 21,
-		},
-		{
-			sName: "AdriaticCoast",
-			iR: 255,
-			iG: 174,
-			iB: 201,
-		},
-		{
-			sName: "Anatolia",
-			iR: 112,
-			iG: 146,
-			iB: 190,
-		},
-		{
-			sName: "FertileCrescent",
-			iR: 163,
-			iG: 73,
-			iB: 164,
-		},
-		{
-			sName: "Arabia",
-			iR: 34,
-			iG: 177,
-			iB: 76,
-		},
-		{
-			sName: "Germania",
-			iR: 127,
-			iG: 127,
-			iB: 127,
-		},
-		{
-			sName: "Benelux",
-			iR: 255,
-			iG: 127,
-			iB: 39,
-		},
-		{
-			sName: "BritishIsles",
-			iR: 237,
-			iG: 28,
-			iB: 36,
-		},
-		{
-			sName: "NorthIslands",
-			iR: 185,
-			iG: 122,
-			iB: 87,
-		},
-		{
-			sName: "WestScandinavia",
-			iR: 0,
-			iG: 162,
-			iB: 232,
-		},
-		{
-			sName: "EastScandinavia",
-			iR: 255,
-			iG: 201,
-			iB: 14,
-		},
-		{
-			sName: "CentralEurope",
-			iR: 239,
-			iG: 228,
-			iB: 176,
-		},
-		{
-			sName: "Dacia",
-			iR: 185,
-			iG: 122,
-			iB: 87,
-		},
-		{
-			sName: "EasternEurope",
-			iR: 255,
-			iG: 127,
-			iB: 39,
-		},
-		{
-			sName: "Karelia",
-			iR: 153,
-			iG: 217,
-			iB: 234,
-		},
-		{
-			sName: "Rus",
-			iR: 63,
-			iG: 72,
-			iB: 204,
-		},
-		{
-			sName: "Caucasus",
-			iR: 34,
-			iG: 177,
-			iB: 76,
-		},
-		{
-			sName: "Siberia",
-			iR: 185,
-			iG: 122,
-			iB: 87,
-		},
-		{
-			sName: "Kamchatka",
-			iR: 20,
-			iG: 74,
-			iB: 121,
-		},
-		{
-			sName: "WesternSteppes",
-			iR: 163,
-			iG: 73,
-			iB: 164,
-		},
-		{
-			sName: "EasternSteppes",
-			iR: 0,
-			iG: 162,
-			iB: 232,
-		},
-		{
-			sName: "EasternIslands",
-			iR: 237,
-			iG: 28,
-			iB: 36,
-		},
-		{
-			sName: "NorthChina",
-			iR: 239,
-			iG: 228,
-			iB: 176,
-		},
-		{
-			sName: "Xinjiang",
-			iR: 102,
-			iG: 102,
-			iB: 102,
-		},
-		{
-			sName: "CentralAsia",
-			iR: 255,
-			iG: 174,
-			iB: 201,
-		},
-		{
-			sName: "Persia",
-			iR: 255,
-			iG: 201,
-			iB: 14,
-		},
-		{
-			sName: "India",
-			iR: 181,
-			iG: 230,
-			iB: 29,
-		},
-		{
-			sName: "SoutheastAsia",
-			iR: 255,
-			iG: 242,
-			iB: 0,
-		},
-		{
-			sName: "SouthChina",
-			iR: 112,
-			iG: 146,
-			iB: 190,
-		},
-		{
-			sName: "Indonesia",
-			iR: 55,
-			iG: 40,
-			iB: 107,
-		},
-		{
-			sName: "Australia",
-			iR: 136,
-			iG: 0,
-			iB: 21,
-		},
-		{
-			sName: "Mauretania",
-			iR: 163,
-			iG: 73,
-			iB: 164,
-		},
-		{
-			sName: "SouthMediterranean",
-			iR: 112,
-			iG: 146,
-			iB: 190,
-		},
-		{
-			sName: "SaharaDesert",
-			iR: 136,
-			iG: 0,
-			iB: 21,
-		},
-		{
-			sName: "WestAfricanCoast",
-			iR: 181,
-			iG: 230,
-			iB: 29,
-		},
-		{
-			sName: "GoldCoast",
-			iR: 153,
-			iG: 217,
-			iB: 234,
-		},
-		{
-			sName: "CentralAfrica",
-			iR: 175,
-			iG: 175,
-			iB: 174,
-		},
-		{
-			sName: "UpperNile",
-			iR: 185,
-			iG: 122,
-			iB: 87,
-		},
-		{
-			sName: "LowerNile",
-			iR: 255,
-			iG: 242,
-			iB: 0,
-		},
-		{
-			sName: "HornOfAfrica",
-			iR: 34,
-			iG: 177,
-			iB: 76,
-		},
-		{
-			sName: "EastAfrica",
-			iR: 239,
-			iG: 228,
-			iB: 176,
-		},
-		{
-			sName: "InnerAfrica",
-			iR: 200,
-			iG: 191,
-			iB: 231,
-		},
-		{
-			sName: "SouthAtlanticCoast",
-			iR: 0,
-			iG: 162,
-			iB: 232,
-		},
-		{
-			sName: "CapeOfGoodHope",
-			iR: 255,
-			iG: 127,
-			iB: 39,
-		},
-		{
-			sName: "Madagascar",
-			iR: 237,
-			iG: 28,
-			iB: 36,
-		},
-		{
-			sName: "NorthernTerritories",
-			iR: 255,
-			iG: 201,
-			iB: 14,
-		},
-		{
-			sName: "Quebec",
-			iR: 153,
-			iG: 217,
-			iB: 234,
-		},
-		{
-			sName: "GreatLakes",
-			iR: 163,
-			iG: 73,
-			iB: 164,
-		},
-		{
-			sName: "GreatPlains",
-			iR: 239,
-			iG: 228,
-			iB: 176,
-		},
-		{
-			sName: "PacificNorthwest",
-			iR: 34,
-			iG: 177,
-			iB: 76,
-		},
-		{
-			sName: "AtlanticSeaboard",
-			iR: 63,
-			iG: 72,
-			iB: 204,
-		},
-		{
-			sName: "CentralAmerica",
-			iR: 185,
-			iG: 122,
-			iB: 87,
-		},
-		{
-			sName: "Caribbean",
-			iR: 237,
-			iG: 28,
-			iB: 36,
-		},
-		{
-			sName: "GranColombia",
-			iR: 255,
-			iG: 174,
-			iB: 201,
-		},
-		{
-			sName: "NorthAmazonas",
-			iR: 136,
-			iG: 0,
-			iB: 21,
-		},
-		{
-			sName: "SouthAmazonas",
-			iR: 112,
-			iG: 146,
-			iB: 190,
-		},
-		{
-			sName: "Andes",
-			iR: 181,
-			iG: 230,
-			iB: 29,
-		},
-		{
-			sName: "SouthernPeninsula",
-			iR: 0,
-			iG: 162,
-			iB: 232,
-		},
-		{
-			sName: "California",
-			iR: 69,
-			iG: 45,
-			iB: 15,
-		},
-		{
-			sName: "Brazil",
-			iR: 228,
-			iG: 230,
-			iB: 16,
-		},
-		{
-			sName: "Crimea",
-			iR: 54,
-			iG: 107,
-			iB: 214,
-		},
-		{
-			sName: "Baltics",
-			iR: 26,
-			iG: 113,
-			iB: 123,
-		},
-		{
-			sName: "SouthGermania",
-			iR: 181,
-			iG: 73,
-			iB: 34,
-		},
-		{
-			sName: "Ireland",
-			iR: 34,
-			iG: 146,
-			iB: 39,
-		},
-		{
-			sName: "Japan",
-			iR: 255,
-			iG: 73,
-			iB: 107,
-		},
-	]
+    Age_of_History: "Data",
+    Data: [
+        {
+            sName: "Iberia",
+            iR: 229,
+            iG: 142,
+            iB: 170
+        },
+        {
+            sName: "Galia",
+            iR: 39,
+            iG: 70,
+            iB: 159
+        },
+        {
+            sName: "WestMediterranean",
+            iR: 181,
+            iG: 230,
+            iB: 29
+        },
+        {
+            sName: "EastMediterranean",
+            iR: 136,
+            iG: 0,
+            iB: 21
+        },
+        {
+            sName: "AdriaticCoast",
+            iR: 255,
+            iG: 174,
+            iB: 201
+        },
+        {
+            sName: "Anatolia",
+            iR: 112,
+            iG: 146,
+            iB: 190
+        },
+        {
+            sName: "FertileCrescent",
+            iR: 163,
+            iG: 73,
+            iB: 164
+        },
+        {
+            sName: "Arabia",
+            iR: 34,
+            iG: 177,
+            iB: 76
+        },
+        {
+            sName: "Germania",
+            iR: 127,
+            iG: 127,
+            iB: 127
+        },
+        {
+            sName: "Benelux",
+            iR: 255,
+            iG: 127,
+            iB: 39
+        },
+        {
+            sName: "BritishIsles",
+            iR: 237,
+            iG: 28,
+            iB: 36
+        },
+        {
+            sName: "NorthIslands",
+            iR: 185,
+            iG: 122,
+            iB: 87
+        },
+        {
+            sName: "WestScandinavia",
+            iR: 0,
+            iG: 162,
+            iB: 232
+        },
+        {
+            sName: "EastScandinavia",
+            iR: 255,
+            iG: 201,
+            iB: 14
+        },
+        {
+            sName: "CentralEurope",
+            iR: 239,
+            iG: 228,
+            iB: 176
+        },
+        {
+            sName: "Dacia",
+            iR: 185,
+            iG: 122,
+            iB: 87
+        },
+        {
+            sName: "EasternEurope",
+            iR: 255,
+            iG: 127,
+            iB: 39
+        },
+        {
+            sName: "Karelia",
+            iR: 153,
+            iG: 217,
+            iB: 234
+        },
+        {
+            sName: "Rus",
+            iR: 63,
+            iG: 72,
+            iB: 204
+        },
+        {
+            sName: "Caucasus",
+            iR: 34,
+            iG: 177,
+            iB: 76
+        },
+        {
+            sName: "Siberia",
+            iR: 185,
+            iG: 122,
+            iB: 87
+        },
+        {
+            sName: "Kamchatka",
+            iR: 20,
+            iG: 74,
+            iB: 121
+        },
+        {
+            sName: "WesternSteppes",
+            iR: 163,
+            iG: 73,
+            iB: 164
+        },
+        {
+            sName: "EasternSteppes",
+            iR: 0,
+            iG: 162,
+            iB: 232
+        },
+        {
+            sName: "EasternIslands",
+            iR: 237,
+            iG: 28,
+            iB: 36
+        },
+        {
+            sName: "NorthChina",
+            iR: 239,
+            iG: 228,
+            iB: 176
+        },
+        {
+            sName: "Xinjiang",
+            iR: 102,
+            iG: 102,
+            iB: 102
+        },
+        {
+            sName: "CentralAsia",
+            iR: 255,
+            iG: 174,
+            iB: 201
+        },
+        {
+            sName: "Persia",
+            iR: 255,
+            iG: 201,
+            iB: 14
+        },
+        {
+            sName: "India",
+            iR: 181,
+            iG: 230,
+            iB: 29
+        },
+        {
+            sName: "SoutheastAsia",
+            iR: 255,
+            iG: 242,
+            iB: 0
+        },
+        {
+            sName: "SouthChina",
+            iR: 112,
+            iG: 146,
+            iB: 190
+        },
+        {
+            sName: "Indonesia",
+            iR: 55,
+            iG: 40,
+            iB: 107
+        },
+        {
+            sName: "Australia",
+            iR: 136,
+            iG: 0,
+            iB: 21
+        },
+        {
+            sName: "Mauretania",
+            iR: 163,
+            iG: 73,
+            iB: 164
+        },
+        {
+            sName: "SouthMediterranean",
+            iR: 112,
+            iG: 146,
+            iB: 190
+        },
+        {
+            sName: "SaharaDesert",
+            iR: 136,
+            iG: 0,
+            iB: 21
+        },
+        {
+            sName: "WestAfricanCoast",
+            iR: 181,
+            iG: 230,
+            iB: 29
+        },
+        {
+            sName: "GoldCoast",
+            iR: 153,
+            iG: 217,
+            iB: 234
+        },
+        {
+            sName: "CentralAfrica",
+            iR: 175,
+            iG: 175,
+            iB: 174
+        },
+        {
+            sName: "UpperNile",
+            iR: 185,
+            iG: 122,
+            iB: 87
+        },
+        {
+            sName: "LowerNile",
+            iR: 255,
+            iG: 242,
+            iB: 0
+        },
+        {
+            sName: "HornOfAfrica",
+            iR: 34,
+            iG: 177,
+            iB: 76
+        },
+        {
+            sName: "EastAfrica",
+            iR: 239,
+            iG: 228,
+            iB: 176
+        },
+        {
+            sName: "InnerAfrica",
+            iR: 200,
+            iG: 191,
+            iB: 231
+        },
+        {
+            sName: "SouthAtlanticCoast",
+            iR: 0,
+            iG: 162,
+            iB: 232
+        },
+        {
+            sName: "CapeOfGoodHope",
+            iR: 255,
+            iG: 127,
+            iB: 39
+        },
+        {
+            sName: "Madagascar",
+            iR: 237,
+            iG: 28,
+            iB: 36
+        },
+        {
+            sName: "NorthernTerritories",
+            iR: 255,
+            iG: 201,
+            iB: 14
+        },
+        {
+            sName: "Quebec",
+            iR: 153,
+            iG: 217,
+            iB: 234
+        },
+        {
+            sName: "GreatLakes",
+            iR: 163,
+            iG: 73,
+            iB: 164
+        },
+        {
+            sName: "GreatPlains",
+            iR: 239,
+            iG: 228,
+            iB: 176
+        },
+        {
+            sName: "PacificNorthwest",
+            iR: 34,
+            iG: 177,
+            iB: 76
+        },
+        {
+            sName: "AtlanticSeaboard",
+            iR: 63,
+            iG: 72,
+            iB: 204
+        },
+        {
+            sName: "CentralAmerica",
+            iR: 185,
+            iG: 122,
+            iB: 87
+        },
+        {
+            sName: "Caribbean",
+            iR: 237,
+            iG: 28,
+            iB: 36
+        },
+        {
+            sName: "GranColombia",
+            iR: 255,
+            iG: 174,
+            iB: 201
+        },
+        {
+            sName: "NorthAmazonas",
+            iR: 136,
+            iG: 0,
+            iB: 21
+        },
+        {
+            sName: "SouthAmazonas",
+            iR: 112,
+            iG: 146,
+            iB: 190
+        },
+        {
+            sName: "Andes",
+            iR: 181,
+            iG: 230,
+            iB: 29
+        },
+        {
+            sName: "SouthernPeninsula",
+            iR: 0,
+            iG: 162,
+            iB: 232
+        },
+        {
+            sName: "California",
+            iR: 69,
+            iG: 45,
+            iB: 15
+        },
+        {
+            sName: "Brazil",
+            iR: 228,
+            iG: 230,
+            iB: 16
+        },
+        {
+            sName: "Crimea",
+            iR: 54,
+            iG: 107,
+            iB: 214
+        },
+        {
+            sName: "Baltics",
+            iR: 26,
+            iG: 113,
+            iB: 123
+        },
+        {
+            sName: "SouthGermania",
+            iR: 181,
+            iG: 73,
+            iB: 34
+        },
+        {
+            sName: "Ireland",
+            iR: 34,
+            iG: 146,
+            iB: 39
+        },
+        {
+            sName: "Japan",
+            iR: 255,
+            iG: 73,
+            iB: 107
+        }
+    ]
 }

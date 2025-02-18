@@ -54,6 +54,7 @@
 						has_mod_file = true;
 					} catch (e) {
 						console.error(e);
+						console.error(e.stack);
 					}
 			if (!has_mod_file)
 				sorted_mod_directories[all_mod_directories[i]] = {

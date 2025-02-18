@@ -68,7 +68,7 @@
 							name: "Shift all resource types up",
 							width: 4,
 
-							special_function: function  (e) {
+							special_function: function (e) {
 								var button_el = e.element;
 								var interface_obj = e.interface_obj;
 

@@ -27,6 +27,7 @@ setTimeout(function(){
 
 		//Initialise Editor handlers
 		initialiseProvinceNamesEditorEventHandlers();
+		initialiseProvinceRegionEditorEventHandlers();
 		initialiseProvinceResourceEditorEventHandlers();
 		initialiseProvinceTerrainEditorEventHandlers();
 
