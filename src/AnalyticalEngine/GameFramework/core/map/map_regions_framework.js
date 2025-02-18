@@ -16,7 +16,35 @@
 			iB: options.colour[2]
 		};
 
-		main.map.regions.Data.push(new_region_obj);
+		(!options.index) ?
+			main.map.regions.Data.push(new_region_obj) :
+			main.map.regions.Data.splice(options.index + 1, 0, new_region_obj);
+
+		try {
+			var all_provinces = getAllProvinces();
+
+			// **Step 1: Track original GeoRegion assignments**
+			var province_assignments = {};
+			for (var x = 0; x < all_provinces.length; x++) {
+				var region_id = all_provinces[x].getGeoRegion();
+				if (!province_assignments[region_id]) {
+					province_assignments[region_id] = [];
+				}
+				province_assignments[region_id].push(all_provinces[x]);
+			}
+
+			// **Step 2: Shift affected GeoRegion() values UP**
+			for (var i = main.map.regions.Data.length - 1; i > options.index; i--) {
+				if (province_assignments[i - 1]) { // Only shift valid regions
+					for (var j = 0; j < province_assignments[i - 1].length; j++) {
+						province_assignments[i - 1][j].setGeoRegion(i);
+					}
+				}
+			}
+
+		} catch (e) {
+			console.error("Error updating province regions:", e.stack);
+		}
 
 		//Reload in-game menus
 		reloadRegions();
@@ -78,7 +106,7 @@
 
 		//Guard clauses if name matches ID; or is object
 		if (typeof region_name == "object") return region_name;
-		if (!isNaN(region_name)) return main_regions[region_name];
+		if (!isNaN(region_name)) return (!options.return_index) ? main_regions[region_name] : region_name;
 
 		//.sName search - soft search 1st, hard search 2nd
 		var search_name = region_name.trim().toLowerCase();
@@ -132,6 +160,57 @@
 				region_obj.iG = options.colour[1];
 				region_obj.iB = options.colour[2];
 			}
+
+			if (options.index) {
+				var old_index = region_index;
+				var new_index = options.index;
+
+				main.map.regions.Data = moveElement(main.map.regions.Data, region_index, options.index);
+
+				try {
+					var all_provinces = getAllProvinces();
+
+					// **Step 1: Track province assignments BEFORE shifting**
+					var province_assignments = {};
+					for (var x = 0; x < all_provinces.length; x++) {
+						var region_id = all_provinces[x].getGeoRegion();
+						if (!province_assignments[region_id]) {
+							province_assignments[region_id] = [];
+						}
+						province_assignments[region_id].push(all_provinces[x]);
+					}
+
+					// **Step 2: Shift affected regions' `GeoRegion()` values correctly**
+					if (old_index < new_index) {
+						// Moving Down: Shift all regions in range UP
+						for (var i = old_index + 1; i <= new_index; i++) {
+							if (province_assignments[i]) {
+								for (var j = 0; j < province_assignments[i].length; j++) {
+									province_assignments[i][j].setGeoRegion(i - 1);
+								}
+							}
+						}
+					} else {
+						// Moving Up: Shift all regions in range DOWN
+						for (var i = old_index - 1; i >= new_index; i--) {
+							if (province_assignments[i]) {
+								for (var j = 0; j < province_assignments[i].length; j++) {
+									province_assignments[i][j].setGeoRegion(i + 1);
+								}
+							}
+						}
+					}
+
+					// **Step 3: Assign the moved region to its new index**
+					if (province_assignments[old_index]) {
+						for (var j = 0; j < province_assignments[old_index].length; j++) {
+							province_assignments[old_index][j].setGeoRegion(new_index);
+						}
+					}
+				} catch (e) {
+					console.error(e.stack);
+				}
+			}
 		} else {
 			createRegion(options);
 		}
@@ -159,6 +238,24 @@
 			geo_region_lists.get(1).updateMenuPosY(current_scroll_y);
 		} catch (e) {
 			console.error(e.stack);
+		}
+	}
+
+	function shiftMapRegions (arg0_value, arg1_options) { //[WIP] - Finish function body
+		//Convert from parameters
+		var shift_value = arg0_value;
+		var options = (arg1_options) ? arg1_options : {};
+
+		//Initialise options
+		options.excluded_ids = (options.excluded_ids != undefined) ? getList(options.excluded_ids) : [0];
+
+		//Declare local instance variables
+		var all_provinces = getAllProvinces();
+		var all_regions = getAllRegions();
+
+		//Iterate over all_provinces and invoke .setGeoRegion()
+		for (var i = 0; i < all_provinces.length; i++) {
+
 		}
 	}
 }
