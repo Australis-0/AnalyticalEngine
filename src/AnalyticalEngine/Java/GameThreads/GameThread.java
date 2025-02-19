@@ -233,6 +233,8 @@ public class GameThread extends Thread {
                                         this.checkGameOver();
 
                                         if (Game_Calendar.HOUR >= 24) {
+                                            Game_Calendar.HOUR %= 24;
+
                                             ++Game_Calendar.TURN_ID;
                                             Game_Calendar.TURN_ID_HOST = Game_Calendar.TURN_ID;
                                             ++Game.stats.civStats.tr;

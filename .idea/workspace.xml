@@ -10,51 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09b6f7f8-b868-43e9-b471-ac1dbd15fa3b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Java/GameThreads/GameThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Java/GameThreads/GameThread_Events.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Java/MPCompatibility/MapScenarios.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Java/MPCompatibility/NewGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Java/menus/NewGame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Civilizations.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Civilizations.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/map/11.59/Scenarios.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/Scenarios.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/advisors_research_breakthrough.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/age_of_craftsmanship.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/agricultural_breakthrough.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/an_unprecedented_harvest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/army_expansion.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/beer_production_soars.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/boost_in_production_efficiency.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/breakthrough_in_construction.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/capital_city_economic_development.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/clothing_revolution.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/economys_golden_milestone.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/expanding_the_battle_front.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/famous_vintage.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/fruit_mania.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/gold_rush.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/gold_surplus_dilemma.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/invest_in_the_capital.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/largest_producer.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/maximizing_tax_efficiency.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/military_academy_upgrade_opportunity.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/military_expansion.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/military_mobilization_crisis.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/prosperous_times.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/quality_furniture.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/reformation_of_the_army.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/remarkable_talent.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/remarkable_talent2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/remarkable_talent3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/remarkable_talent4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/rich_harvest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/rich_harvest_2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/rising_cost_of_construction.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/sudden_death_of_advisor.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/the_capitals_transformation.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/the_council_of_many.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/list_common.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/events/list_common.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/settings/ModsOff.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/settings/ModsOff.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Java/GameThreads/GameThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Java/GameThreads/GameThread.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -267,7 +223,7 @@
       <workItem from="1737191569663" duration="7789000" />
       <workItem from="1737200274429" duration="101911000" />
       <workItem from="1737726277969" duration="115573000" />
-      <workItem from="1738769995531" duration="193763000" />
+      <workItem from="1738769995531" duration="193826000" />
     </task>
     <servers />
   </component>
