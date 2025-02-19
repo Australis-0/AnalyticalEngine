@@ -43,7 +43,13 @@
 				initialiseSaveLoad();
 				initialisePostLoadingEventHandlers();
 			}
+
 			//Load Map Editors
+			//Map Editors Menu
+			if (current_page == "EDITOR_MAPS_EDIT") {
+				//Hide colour picker
+				hideColourPicker();
+			}
 			//Terrain
 			if (current_page == "EDITOR_MAPS_EDIT_TERRAIN")
 				initialiseEditorViewMapmodes();

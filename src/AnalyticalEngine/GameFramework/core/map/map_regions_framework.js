@@ -70,9 +70,31 @@
 			//Set all provinces previously a part of this region to have a region ID of 0
 			var all_provinces = getAllProvinces();
 
-			for (var i = 0; i < all_provinces.length; i++)
-				if (all_provinces[i].getGeoRegion() == region_index)
-					all_provinces[i].setGeoRegion(0);
+			// **Step 1: Track province assignments BEFORE deletion**
+			var province_assignments = {};
+			for (var i = 0; i < all_provinces.length; i++) {
+				var region_id = all_provinces[i].getGeoRegion();
+				if (!province_assignments[region_id]) {
+					province_assignments[region_id] = [];
+				}
+				province_assignments[region_id].push(all_provinces[i]);
+			}
+
+			// **Step 2: Reset deleted region's provinces to GeoRegion(0)**
+			if (province_assignments[region_index]) {
+				for (var j = 0; j < province_assignments[region_index].length; j++) {
+					province_assignments[region_index][j].setGeoRegion(0);
+				}
+			}
+
+			// **Step 3: Shift remaining GeoRegion() indices DOWN**
+			for (var i = region_index + 1; i <= main.map.regions.Data.length; i++) {
+				if (province_assignments[i]) {
+					for (var j = 0; j < province_assignments[i].length; j++) {
+						province_assignments[i][j].setGeoRegion(i - 1);
+					}
+				}
+			}
 
 			//Reload in-game menus
 			reloadRegions();
@@ -255,7 +277,16 @@
 
 		//Iterate over all_provinces and invoke .setGeoRegion()
 		for (var i = 0; i < all_provinces.length; i++) {
+			var local_province_region_id = all_provinces[i].getGeoRegion();
 
+			if (!options.excluded_ids.includes(local_province_region_id)) {
+				var new_region_id = local_province_region_id + shift_value;
+
+				//Normalise new_region_id; set new_resource_id. This cycles resource IDs such that it is lossless.
+				new_region_id = ((new_region_id % all_regions.length) + all_regions.length) % all_regions.length;
+				if (!isSeaProvince(all_provinces[i]))
+					all_provinces[i].setGeoRegion(new_region_id);
+			}
 		}
 	}
 }

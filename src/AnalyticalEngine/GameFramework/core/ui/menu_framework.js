@@ -343,6 +343,8 @@
 					new_menu_element_obj = createBarChart(local_value);
 				} else if (local_value.type == "button") {
 					new_menu_element_obj = createButton(local_value);
+				} else if (local_value.type == "empty" || local_value.type == "margin") {
+					new_menu_element_obj = createMargin(local_value);
 				} else if (local_value.type == "flag_button") {
 					new_menu_element_obj = createFlagButton(local_value);
 				} else if (local_value.type == "large_flag_button") {
@@ -809,6 +811,46 @@
 		} catch (e) {
 			console.log(e.stack);
 		}
+	}
+
+	/**
+	 * createMargin() - Creates an empty margin block.
+	 * @param {Object} [arg0_options]
+	 *  @param {number} [arg0_options.height=0]
+	 *  @param {number} [arg0_options.width=2]
+	 *  @param {number} [arg0_options.x=0]
+	 *  @param {number} [arg0_options.y=0]
+	 *
+	 *  @param {boolean} [arg0_options.raw_dimensions=false]
+	 *
+	 * @returns {Object<MenuElement>}
+	 */
+	function createMargin (arg0_options) {
+		//Convert from parameters
+		var options = (arg0_options) ? arg0_options : {};
+
+		//Initialise options
+		options.height = returnSafeNumber(options.height);
+		options.width = returnSafeNumber(options.width, 2);
+
+		//Declare local instance variables
+		var actual_height = parseInt((!options.raw_dimensions) ?
+			CFG.BUTTON_WIDTH*options.height : options.height);
+		var actual_width = parseInt((!options.raw_dimensions) ?
+			CFG.BUTTON_WIDTH*options.width : options.width);
+
+		//Construct new_blank_obj
+		var new_blank_obj;
+
+		new_blank_obj = new Empty(
+			parseInt(options.x),
+			parseInt(options.y),
+			actual_width,
+			actual_height
+		);
+
+		//Return statement
+		return new_blank_obj;
 	}
 
 	/**

@@ -81,6 +81,7 @@
 	this.ButtonStatsRect_Active = Java.type("aoc.kingdoms.lukasz.menu_element.button.ButtonStatsRect_Active");
 	this.CFG = Java.type("aoc.kingdoms.lukasz.jakowski.CFG");
 	this.DesktopLauncher = Java.type("aoc.kingdoms.lukasz.jakowski.desktop.DesktopLauncher");
+	this.Empty = Java.type("aoc.kingdoms.lukasz.menu_element.Empty");
 	this.Float = Java.type("java.lang.Float");
 	this.Graph = Java.type("aoc.kingdoms.lukasz.menu_element.graph.Graph");
 	this.GraphData = Java.type("aoc.kingdoms.lukasz.menu_element.graph.GraphData");

@@ -15,6 +15,7 @@
 					if (!main.interfaces.province_region_editor)
 						main.interfaces.province_region_editor = {};
 					var interface_obj = main.interfaces.province_region_editor;
+					interface_obj.colour_picker_open = true;
 					interface_obj.current_region_colour = [255, 255, 255];
 					interface_obj.current_region_index = 1;
 					interface_obj.current_region_name = "";
@@ -33,7 +34,7 @@
 						anchor: "top_right",
 						can_close: false,
 						height: 400,
-						width: 4*CFG.BUTTON_WIDTH,
+						width: 4*CFG.BUTTON_WIDTH + 2*CFG.PADDING,
 						x: 800,
 						y: 150,
 
@@ -49,6 +50,7 @@
 						create_region_button: {
 							type: "button",
 							name: "Create Region",
+							height: 0.5,
 							width: 4,
 
 							special_function: function (e) {
@@ -59,6 +61,7 @@
 						rename_region_button: {
 							type: "button",
 							name: "Rename Region",
+							height: 0.5,
 							width: 4,
 							special_function: function (e) {
 								//Convert from parameters
@@ -78,18 +81,32 @@
 						},
 						open_colour_picker_button: {
 							type: "button",
-							name: "Open Colour Picker",
+							name: "Close Colour Picker",
+							height: 0.5,
 							width: 4,
 
 							special_function: function (e) {
+								//Convert from parameters
+								var button_el = e.element;
+								var interface_obj = e.interface_obj;
 								var region_obj = getAllRegions()[interface_obj.current_region_index];
 
-								openColourPicker(interface_obj.current_region_colour);
+								interface_obj.colour_picker_open = (!interface_obj.colour_picker_open);
+								(!interface_obj.colour_picker_open) ?
+									button_el.setText("Close Colour Picker") :
+									button_el.setText("Open Colour Picker");
+
+								if (interface_obj.colour_picker_open) {
+									openColourPicker(interface_obj.current_region_colour);
+								} else {
+									hideColourPicker();
+								}
 							}
 						},
 						set_region_colour_button: {
 							type: "button",
 							name: "Set Region Colour",
+							height: 0.5,
 							width: 4,
 
 							special_function: function (e) {
@@ -112,7 +129,6 @@
 							placeholder: 1,
 
 							special_function: function (e) {
-
 								//Declare local tracker variables
 								var slider_el = e.element;
 									slider_el.setMax(getAllRegions().length);
@@ -126,6 +142,7 @@
 						region_move_up_button: {
 							type: "button",
 							name: "Move Region Up",
+							height: 0.5,
 							width: 4,
 
 							special_function: function (e) {
@@ -149,6 +166,7 @@
 						region_move_down_button: {
 							type: "button",
 							name: "Move Region Down",
+							height: 0.5,
 							width: 4,
 
 							special_function: function (e) {
@@ -173,19 +191,85 @@
 						delete_region_button: {
 							type: "button",
 							name: "Delete Region",
+							height: 0.5,
 							width: 4,
 
 							special_function: function (e) {
 								if (interface_obj.current_region_index > 1) {
-									//console.log("Deleting region index: " + interface_obj.current_region_index + "/" + getAllRegions().length);
+									printEditorAlert("Province Region Editor: Deleting region index: " + interface_obj.current_region_index + "/" + getAllRegions().length + " (" + getAllRegions()[interface_obj.current_region_index] + ")");
 									deleteRegion(interface_obj.current_region_index);
 								}
+							}
+						},
+						margin_one: {
+							type: "empty",
+							name: "",
+
+							height: 0.25,
+							width: 4
+						},
+						region_shift_value: {
+							type: "slider",
+							name: "Region Shift Value: ",
+							height: 0.5,
+							width: 4,
+
+							min: 0,
+							max: getAllRegions().length,
+							placeholder: 1,
+
+							special_function: function (e) {
+								var slider_el = e.element;
+								var interface_obj = e.interface_obj;
+								var local_value = slider_el.getCurrent();
+
+								//Make sure new_index is clamped before moving region up/down
+								if (new_index >= getAllRegions().length)
+									new_index = getAllRegions().length - 1;
+								if (new_index <= 0)
+									new_index = 1;
+
+								interface_obj.region_shift_value = local_value;
+								printEditorAlert("Province Region Editor: Region Shift Value set to " + local_value);
+							}
+						},
+						shift_province_regions_up_button: {
+							type: "button",
+							name: "Shift all regions up",
+							height: 0.5,
+							width: 4,
+
+							special_function: function (e) {
+								var button_el = e.element;
+								var interface_obj = e.interface_obj;
+
+								interface_obj.total_session_offset += interface_obj.region_shift_value;
+								interface_obj.total_session_offset = interface_obj.total_session_offset % getAllRegions().length;
+								shiftMapRegions(interface_obj.region_shift_value, { excluded_ids: [] });
+								printEditorAlert("Province Region Editor: Shifted all province regions up by " + interface_obj.region_shift_value + ".");
+							}
+						},
+						shift_province_regions_down_button: {
+							type: "button",
+							name: "Shift all regions down",
+							height: 0.5,
+							width: 4,
+
+							special_function: function (e) {
+								var button_el = e.element;
+								var interface_obj = e.interface_obj;
+
+								interface_obj.total_session_offset += interface_obj.region_shift_value;
+								interface_obj.total_session_offset = interface_obj.total_session_offset % getAllRegions().length;
+								shiftMapRegions(interface_obj.region_shift_value*-1, { excluded_ids: [] });
+								printEditorAlert("Province Region Editor: Shifted all province regions down by " + interface_obj.region_shift_value + ".");
 							}
 						}
 					});
 
 					if (!interface_obj.logic_loop)
 						interface_obj.logic_loop = updateProvinceRegionEditor();
+					openColourPicker(interface_obj.current_region_colour);
 				}
 
 			//NOTE - LOGIC LOOP needs to detect EditorMapGeoRegions.currentGeoRegionID changes.
@@ -217,6 +301,8 @@
 				//Refresh colour picker
 				if (open_colour_picker)
 					openColourPicker(interface_obj.current_region_colour);
+				if (!interface_obj.colour_picker_open)
+					hideColourPicker();
 			} catch (e) {
 				console.error(e.stack);
 			}
