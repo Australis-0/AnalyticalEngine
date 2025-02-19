@@ -1,6 +1,0 @@
-id=J_abre
-title=advisors_research_breakthrough_disabled.t
-desc=advisors_research_breakthrough_disabled.d
-mission_desc=advisors_research_breakthrough_disabled.m
-
-show_in_missions=true

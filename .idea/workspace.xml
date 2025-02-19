@@ -10,13 +10,50 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09b6f7f8-b868-43e9-b471-ac1dbd15fa3b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/map/map_continents_framework.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Java/GameThreads/GameThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Java/GameThreads/GameThread_Events.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Java/MPCompatibility/MapScenarios.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Java/MPCompatibility/NewGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/map/map_regions_framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/map/map_regions_framework.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/startup_imports.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/startup_imports.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Conditions/deepscript_conditions_civ_scope_external_politics.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Conditions/deepscript_conditions_civ_scope_external_politics.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Parsers/deepscript_logic_loop.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Parsers/deepscript_logic_loop.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/deepscript/mechanics/dummy_test.ds" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/deepscript/mechanics/dummy_test.ds" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Java/menus/NewGame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Civilizations.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Civilizations.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/Scenarios.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/Scenarios.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/advisors_research_breakthrough.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/age_of_craftsmanship.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/agricultural_breakthrough.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/an_unprecedented_harvest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/army_expansion.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/beer_production_soars.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/boost_in_production_efficiency.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/breakthrough_in_construction.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/capital_city_economic_development.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/clothing_revolution.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/economys_golden_milestone.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/expanding_the_battle_front.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/famous_vintage.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/fruit_mania.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/gold_rush.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/gold_surplus_dilemma.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/invest_in_the_capital.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/largest_producer.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/maximizing_tax_efficiency.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/military_academy_upgrade_opportunity.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/military_expansion.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/military_mobilization_crisis.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/prosperous_times.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/quality_furniture.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/reformation_of_the_army.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/remarkable_talent.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/remarkable_talent2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/remarkable_talent3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/remarkable_talent4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/rich_harvest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/rich_harvest_2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/rising_cost_of_construction.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/sudden_death_of_advisor.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/the_capitals_transformation.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/common/the_council_of_many.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/game/events/list_common.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/game/events/list_common.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/settings/ModsOff.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/settings/ModsOff.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -129,29 +166,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.DesktopLauncher.executor": "Run",
-    "JAR Application.AOC3-Source.jar.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Shell Script.Autorun.executor": "Run",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Project 1159 - 11.59 - AOC3/Age of History 3/AOC3 Source/src/META-INF",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.143695",
-    "project.structure.side.proportion": "0.22651222",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.uml",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.DesktopLauncher.executor&quot;: &quot;Run&quot;,
+    &quot;JAR Application.AOC3-Source.jar.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Shell Script.Autorun.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Project 1159 - 11.59 - AOC3/Age of History 3/AOC3 Source/src/META-INF&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.143695&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.22651222&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.uml&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Project 1159 - 11.59 - AOC3\Age of History 3\AOC3 Source\src\AnalyticalEngine\GameFramework\ui\editors" />
@@ -230,7 +267,7 @@
       <workItem from="1737191569663" duration="7789000" />
       <workItem from="1737200274429" duration="101911000" />
       <workItem from="1737726277969" duration="115573000" />
-      <workItem from="1738769995531" duration="190038000" />
+      <workItem from="1738769995531" duration="193763000" />
     </task>
     <servers />
   </component>
