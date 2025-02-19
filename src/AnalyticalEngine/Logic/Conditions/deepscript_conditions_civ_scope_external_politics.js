@@ -2,6 +2,27 @@
 {
 	//Politics (External [Diplomacy] - AI).
 	{
+		function civilisationIs (arg0_civ_tags, arg1_civ_tags) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var ot_civ_tags = getList(arg1_civ_tags);
+
+			//Iterate over civ_tags; ot_civ_tags
+			for (var i = 0; i < civ_tags.length; i++)
+				civ_tags[i] = getCurrentTag(civ_tags[i]);
+			for (var i = 0; i < ot_civ_tags.length; i++)
+				ot_civ_tags[i] = getCurrentTag(ot_civ_tags[i]);
+
+			//CHECKING!
+			//console.log("Checking: ", civ_tags, " against ", ot_civ_tags);
+
+			//Iterate over civ_tags to check
+			for (var i = 0; i < civ_tags.length; i++)
+				if (ot_civ_tags.includes(civ_tags[i]))
+					//Return statement
+					return true;
+		}
+
 		function civilisationIsAI (arg0_civ_tags) {
 			//Convert from parameters
 			var civ_tags = getList(arg0_civ_tags);

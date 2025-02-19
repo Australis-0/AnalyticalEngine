@@ -9,12 +9,14 @@
 	this.BufferedReader = Java.type("java.io.BufferedReader");
 	this.BufferedWriter = Java.type("java.io.BufferedWriter");
 	this.BuildingsManager = Java.type("aoc.kingdoms.lukasz.map.BuildingsManager");
+	this.Callable = Java.type("java.util.concurrent.Executor");
 	this.CFG = Java.type("aoc.kingdoms.lukasz.jakowski.CFG");
 	this.Civilization = Java.type("aoc.kingdoms.lukasz.map.civilization.Civilization");
 	this.CivilizationRegionsManager = Java.type("aoc.kingdoms.lukasz.map.civilization.CivilizationRegionsManager");
 	this.classLoader = classLoader;
 	this.Color = Java.type("com.badlogic.gdx.graphics.Color");
 	this.DiplomacyManager = Java.type("aoc.kingdoms.lukasz.map.diplomacy.DiplomacyManager");
+	this.Executors = Java.type("java.util.concurrent.Executors");
 	this.File = Java.type("java.io.File");
 	this.FileHandle = Java.type("com.badlogic.gdx.files.FileHandle");
 	this.FileReader = Java.type("java.io.FileReader");

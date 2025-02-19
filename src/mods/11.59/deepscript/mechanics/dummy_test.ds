@@ -5,15 +5,10 @@ addEvent({
 	type: "civ_event",
 
 	limit: function (e) {
-		if (
-			getCurrentTag("usa") == getCurrentTag(e) &&
-			dateIs("02.01.1946")
-		) {
-			console.log("USA - test_event attempting to fire!");
-
-			//Return statement
-			return true;
-		}
+		//Guard clause-style limits
+		if (!(dateIs("02.01.1946"))) return;
+		if (!(civilisationIs(e, "usa"))) return;
+		return true;
 	},
 
 	name: "Test Event",

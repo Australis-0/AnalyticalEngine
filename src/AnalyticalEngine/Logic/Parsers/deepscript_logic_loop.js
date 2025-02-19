@@ -36,7 +36,7 @@
 			if (old_date_obj.day != new_date_obj.day) {
 				//Parse events on daily tick
 				parseOnGameDailyInterval();
-				parseEvents();
+				parseEvents(); //This function causes massive slowdowns
 			}
 
 			//Month handler
@@ -90,7 +90,10 @@
 		//Return statement
 		return standardisePercentage(ai_chances);
 	}
+}
 
+//Internal helper functions
+{
 	function parseEvents () {
 		//Declare local instance variables
 		var all_civilisations = getAllCivilisations();

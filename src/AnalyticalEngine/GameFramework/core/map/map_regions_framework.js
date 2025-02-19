@@ -22,9 +22,9 @@
 
 		try {
 			var all_provinces = getAllProvinces();
-
-			// **Step 1: Track original GeoRegion assignments**
 			var province_assignments = {};
+
+			//1. Track all .geoRegion() assignments
 			for (var x = 0; x < all_provinces.length; x++) {
 				var region_id = all_provinces[x].getGeoRegion();
 				if (!province_assignments[region_id]) {
