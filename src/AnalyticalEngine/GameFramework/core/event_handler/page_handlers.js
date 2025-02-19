@@ -50,6 +50,14 @@
 				//Hide colour picker
 				hideColourPicker();
 			}
+			//Regions
+			if (current_page == "EDITOR_MAPS_EDIT_GEO_REGION") {
+				var interface_obj = main.interfaces.province_region_editor;
+
+				if (interface_obj)
+					if (interface_obj.colour_picker_open)
+						openColourPicker(interface_obj.current_region_colour);
+			}
 			//Terrain
 			if (current_page == "EDITOR_MAPS_EDIT_TERRAIN")
 				initialiseEditorViewMapmodes();

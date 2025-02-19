@@ -117,7 +117,7 @@
 					interface_obj.current_province_name = current_province_name;
 					interface_obj.current_resource_name = province_resource_obj;
 				}
-		}
+		};
 	}
 
 	function updateProvinceResourceEditor () {

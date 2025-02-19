@@ -9,7 +9,7 @@
 			var current_page = arg0_current_page;
 
 			//Initialise EDITOR_MAPS_EDIT_GEO_REGION UI if it doesn't already exist
-			if (current_page == "EDITOR_MAPS_EDIT_GEO_REGION")
+			if (current_page == "EDITOR_MAPS_EDIT_GEO_REGION") {
 				if (!main.interfaces.province_region_editor) {
 					//Set initial interface settings
 					if (!main.interfaces.province_region_editor)
@@ -34,7 +34,7 @@
 						anchor: "top_right",
 						can_close: false,
 						height: 400,
-						width: 4*CFG.BUTTON_WIDTH + 2*CFG.PADDING,
+						width: 4 * CFG.BUTTON_WIDTH + 2 * CFG.PADDING,
 						x: 800,
 						y: 150,
 
@@ -54,7 +54,7 @@
 							width: 4,
 
 							special_function: function (e) {
-								createRegion({ index: interface_obj.current_region_index });
+								createRegion({index: interface_obj.current_region_index});
 								EditorMapGeoRegions.currentGeoRegionID++;
 							}
 						},
@@ -131,7 +131,7 @@
 							special_function: function (e) {
 								//Declare local tracker variables
 								var slider_el = e.element;
-									slider_el.setMax(getAllRegions().length);
+								slider_el.setMax(getAllRegions().length);
 								var interface_obj = e.interface_obj;
 								var local_value = slider_el.getCurrent();
 
@@ -196,7 +196,7 @@
 
 							special_function: function (e) {
 								if (interface_obj.current_region_index > 1) {
-									printEditorAlert("Province Region Editor: Deleting region index: " + interface_obj.current_region_index + "/" + getAllRegions().length + " (" + getAllRegions()[interface_obj.current_region_index] + ")");
+									printEditorAlert("Province Region Editor: Deleting region index: " + interface_obj.current_region_index + "/" + getAllRegions().length + " (" + getAllRegions()[interface_obj.current_region_index].sName + ")");
 									deleteRegion(interface_obj.current_region_index);
 								}
 							}
@@ -245,7 +245,7 @@
 
 								interface_obj.total_session_offset += interface_obj.region_shift_value;
 								interface_obj.total_session_offset = interface_obj.total_session_offset % getAllRegions().length;
-								shiftMapRegions(interface_obj.region_shift_value, { excluded_ids: [] });
+								shiftMapRegions(interface_obj.region_shift_value, {excluded_ids: []});
 								printEditorAlert("Province Region Editor: Shifted all province regions up by " + interface_obj.region_shift_value + ".");
 							}
 						},
@@ -261,7 +261,7 @@
 
 								interface_obj.total_session_offset += interface_obj.region_shift_value;
 								interface_obj.total_session_offset = interface_obj.total_session_offset % getAllRegions().length;
-								shiftMapRegions(interface_obj.region_shift_value*-1, { excluded_ids: [] });
+								shiftMapRegions(interface_obj.region_shift_value * -1, {excluded_ids: []});
 								printEditorAlert("Province Region Editor: Shifted all province regions down by " + interface_obj.region_shift_value + ".");
 							}
 						}
@@ -269,12 +269,15 @@
 
 					if (!interface_obj.logic_loop)
 						interface_obj.logic_loop = updateProvinceRegionEditor();
+
+					//Open colour picker
+					var all_regions = getAllRegions();
+					var region_obj = all_regions[interface_obj.current_region_index];
+
+					interface_obj.current_region_colour = [region_obj.iR, region_obj.iG, region_obj.iB];
 					openColourPicker(interface_obj.current_region_colour);
 				}
-
-			//NOTE - LOGIC LOOP needs to detect EditorMapGeoRegions.currentGeoRegionID changes.
-			//When a change is detected, the colour picker should be refreshed - hideColourPicker(); openColourPicker([...]); and interface_obj.current_region_colour = [255, 255, 255] changed.
-			//interface_obj.current_region_index = 1; also needs such updating
+			}
 		};
 	}
 
@@ -297,6 +300,17 @@
 
 				interface_obj.current_region_colour = [region_obj.iR, region_obj.iG, region_obj.iB];
 				interface_obj.current_region_name = region_obj.sName;
+
+				//Refresh province region editor display
+				var display_text_el = getElement(interface_obj, "province_region_editor_text");
+
+				if (display_text_el.elements[0])
+					display_text_el.elements[0].setText(
+						"Region Name: " + interface_obj.current_region_name +
+						"\nRegion Colour: " + interface_obj.current_region_colour.join(", ") +
+						"\nSelected Region ID: " + interface_obj.current_region_index +
+						"\nTotal Session Region Offset: " + interface_obj.total_session_offset + "/" + all_regions.length
+					);
 
 				//Refresh colour picker
 				if (open_colour_picker)
