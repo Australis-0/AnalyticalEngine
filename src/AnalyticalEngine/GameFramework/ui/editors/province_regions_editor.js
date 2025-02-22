@@ -259,9 +259,9 @@
 								var button_el = e.element;
 								var interface_obj = e.interface_obj;
 
-								interface_obj.total_session_offset += interface_obj.region_shift_value;
+								interface_obj.total_session_offset -= interface_obj.region_shift_value;
 								interface_obj.total_session_offset = interface_obj.total_session_offset % getAllRegions().length;
-								shiftMapRegions(interface_obj.region_shift_value * -1, {excluded_ids: []});
+								shiftMapRegions(interface_obj.region_shift_value*-1, {excluded_ids: []});
 								printEditorAlert("Province Region Editor: Shifted all province regions down by " + interface_obj.region_shift_value + ".");
 							}
 						}

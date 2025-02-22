@@ -1,413 +1,1517 @@
 {
-    Age_of_History: Data,
+    Age_of_History: "Data",
     Data: [
         {
             sName: "Iberia",
             iR: 229,
             iG: 142,
-            iB: 170,
-        },
-        {
-            sName: "Galia",
-            iR: 39,
-            iG: 70,
-            iB: 159,
-        },
-        {
-            sName: "WestMediterranean",
-            iR: 181,
-            iG: 230,
-            iB: 29,
-        },
-        {
-            sName: "EastMediterranean",
-            iR: 136,
-            iG: 0,
-            iB: 21,
-        },
-        {
-            sName: "AdriaticCoast",
-            iR: 255,
-            iG: 174,
-            iB: 201,
-        },
-        {
-            sName: "Anatolia",
-            iR: 112,
-            iG: 146,
-            iB: 190,
-        },
-        {
-            sName: "FertileCrescent",
-            iR: 163,
-            iG: 73,
-            iB: 164,
-        },
-        {
-            sName: "Arabia",
-            iR: 34,
-            iG: 177,
-            iB: 76,
-        },
-        {
-            sName: "Germania",
-            iR: 127,
-            iG: 127,
-            iB: 127,
-        },
-        {
-            sName: "Benelux",
-            iR: 255,
-            iG: 127,
-            iB: 39,
-        },
-        {
-            sName: "BritishIsles",
-            iR: 237,
-            iG: 28,
-            iB: 36,
-        },
-        {
-            sName: "NorthIslands",
-            iR: 185,
-            iG: 122,
-            iB: 87,
-        },
-        {
-            sName: "WestScandinavia",
-            iR: 0,
-            iG: 162,
-            iB: 232,
-        },
-        {
-            sName: "EastScandinavia",
-            iR: 255,
-            iG: 201,
-            iB: 14,
-        },
-        {
-            sName: "CentralEurope",
-            iR: 239,
-            iG: 228,
-            iB: 176,
-        },
-        {
-            sName: "Dacia",
-            iR: 185,
-            iG: 122,
-            iB: 87,
-        },
-        {
-            sName: "EasternEurope",
-            iR: 255,
-            iG: 127,
-            iB: 39,
-        },
-        {
-            sName: "Karelia",
-            iR: 153,
-            iG: 217,
-            iB: 234,
-        },
-        {
-            sName: "Rus",
-            iR: 63,
-            iG: 72,
-            iB: 204,
-        },
-        {
-            sName: "Caucasus",
-            iR: 34,
-            iG: 177,
-            iB: 76,
-        },
-        {
-            sName: "Siberia",
-            iR: 185,
-            iG: 122,
-            iB: 87,
-        },
-        {
-            sName: "Kamchatka",
-            iR: 20,
-            iG: 74,
-            iB: 121,
-        },
-        {
-            sName: "WesternSteppes",
-            iR: 163,
-            iG: 73,
-            iB: 164,
-        },
-        {
-            sName: "EasternSteppes",
-            iR: 0,
-            iG: 162,
-            iB: 232,
-        },
-        {
-            sName: "EasternIslands",
-            iR: 237,
-            iG: 28,
-            iB: 36,
-        },
-        {
-            sName: "NorthChina",
-            iR: 239,
-            iG: 228,
-            iB: 176,
-        },
-        {
-            sName: "Xinjiang",
-            iR: 102,
-            iG: 102,
-            iB: 102,
-        },
-        {
-            sName: "CentralAsia",
-            iR: 255,
-            iG: 174,
-            iB: 201,
-        },
-        {
-            sName: "Persia",
-            iR: 255,
-            iG: 201,
-            iB: 14,
-        },
-        {
-            sName: "India",
-            iR: 181,
-            iG: 230,
-            iB: 29,
-        },
-        {
-            sName: "SoutheastAsia",
-            iR: 255,
-            iG: 242,
-            iB: 0,
-        },
-        {
-            sName: "SouthChina",
-            iR: 112,
-            iG: 146,
-            iB: 190,
-        },
-        {
-            sName: "Indonesia",
-            iR: 55,
-            iG: 40,
-            iB: 107,
-        },
-        {
-            sName: "Australia",
-            iR: 136,
-            iG: 0,
-            iB: 21,
-        },
-        {
-            sName: "Mauretania",
-            iR: 163,
-            iG: 73,
-            iB: 164,
-        },
-        {
-            sName: "SouthMediterranean",
-            iR: 112,
-            iG: 146,
-            iB: 190,
-        },
-        {
-            sName: "SaharaDesert",
-            iR: 136,
-            iG: 0,
-            iB: 21,
-        },
-        {
-            sName: "WestAfricanCoast",
-            iR: 181,
-            iG: 230,
-            iB: 29,
-        },
-        {
-            sName: "GoldCoast",
-            iR: 153,
-            iG: 217,
-            iB: 234,
-        },
-        {
-            sName: "CentralAfrica",
-            iR: 175,
-            iG: 175,
-            iB: 174,
-        },
-        {
-            sName: "UpperNile",
-            iR: 185,
-            iG: 122,
-            iB: 87,
-        },
-        {
-            sName: "LowerNile",
-            iR: 255,
-            iG: 242,
-            iB: 0,
-        },
-        {
-            sName: "HornOfAfrica",
-            iR: 34,
-            iG: 177,
-            iB: 76,
-        },
-        {
-            sName: "EastAfrica",
-            iR: 239,
-            iG: 228,
-            iB: 176,
-        },
-        {
-            sName: "InnerAfrica",
-            iR: 200,
-            iG: 191,
-            iB: 231,
-        },
-        {
-            sName: "SouthAtlanticCoast",
-            iR: 0,
-            iG: 162,
-            iB: 232,
-        },
-        {
-            sName: "CapeOfGoodHope",
-            iR: 255,
-            iG: 127,
-            iB: 39,
-        },
-        {
-            sName: "Madagascar",
-            iR: 237,
-            iG: 28,
-            iB: 36,
-        },
-        {
-            sName: "NorthernTerritories",
-            iR: 255,
-            iG: 201,
-            iB: 14,
-        },
-        {
-            sName: "Quebec",
-            iR: 153,
-            iG: 217,
-            iB: 234,
-        },
-        {
-            sName: "GreatLakes",
-            iR: 163,
-            iG: 73,
-            iB: 164,
-        },
-        {
-            sName: "GreatPlains",
-            iR: 239,
-            iG: 228,
-            iB: 176,
-        },
-        {
-            sName: "PacificNorthwest",
-            iR: 34,
-            iG: 177,
-            iB: 76,
-        },
-        {
-            sName: "AtlanticSeaboard",
-            iR: 63,
-            iG: 72,
-            iB: 204,
-        },
-        {
-            sName: "CentralAmerica",
-            iR: 185,
-            iG: 122,
-            iB: 87,
-        },
-        {
-            sName: "Caribbean",
-            iR: 237,
-            iG: 28,
-            iB: 36,
-        },
-        {
-            sName: "GranColombia",
-            iR: 255,
-            iG: 174,
-            iB: 201,
-        },
-        {
-            sName: "NorthAmazonas",
-            iR: 136,
-            iG: 0,
-            iB: 21,
-        },
-        {
-            sName: "SouthAmazonas",
-            iR: 112,
-            iG: 146,
-            iB: 190,
-        },
-        {
-            sName: "Andes",
-            iR: 181,
-            iG: 230,
-            iB: 29,
-        },
-        {
-            sName: "SouthernPeninsula",
-            iR: 0,
-            iG: 162,
-            iB: 232,
+            iB: 170
         },
         {
             sName: "California",
-            iR: 69,
-            iG: 45,
-            iB: 15,
-        },
-        {
-            sName: "Brazil",
-            iR: 228,
-            iG: 230,
-            iB: 16,
-        },
-        {
-            sName: "Crimea",
-            iR: 54,
-            iG: 107,
-            iB: 214,
-        },
-        {
-            sName: "Baltics",
-            iR: 26,
+            iR: 171,
             iG: 113,
-            iB: 123,
+            iB: 38
         },
         {
-            sName: "SouthGermania",
-            iR: 181,
-            iG: 73,
-            iB: 34,
+            sName: "Oregon",
+            iR: 26,
+            iG: 93,
+            iB: 31
         },
         {
-            sName: "Ireland",
-            iR: 34,
+            sName: "Washington",
+            iR: 65,
+            iG: 63,
+            iB: 108
+        },
+        {
+            sName: "Nevada",
+            iR: 184,
+            iG: 200,
+            iB: 77
+        },
+        {
+            sName: "Arizona",
+            iR: 227,
+            iG: 103,
+            iB: 30
+        },
+        {
+            sName: "Utah",
+            iR: 229,
+            iG: 70,
+            iB: 110
+        },
+        {
+            sName: "Idaho",
+            iR: 247,
+            iG: 21,
+            iB: 227
+        },
+        {
+            sName: "Montana",
+            iR: 150,
+            iG: 98,
+            iB: 109
+        },
+        {
+            sName: "Wyoming",
+            iR: 211,
+            iG: 143,
+            iB: 104
+        },
+        {
+            sName: "Colorado",
+            iR: 150,
+            iG: 215,
+            iB: 174
+        },
+        {
+            sName: "New Mexico",
+            iR: 191,
+            iG: 6,
+            iB: 54
+        },
+        {
+            sName: "Texas",
+            iR: 25,
+            iG: 53,
+            iB: 121
+        },
+        {
+            sName: "Oklahoma",
+            iR: 32,
+            iG: 138,
+            iB: 23
+        },
+        {
+            sName: "Kansas",
+            iR: 180,
+            iG: 94,
+            iB: 108
+        },
+        {
+            sName: "Nebraska",
+            iR: 140,
+            iG: 155,
+            iB: 50
+        },
+        {
+            sName: "South Dakota",
+            iR: 92,
+            iG: 179,
+            iB: 178
+        },
+        {
+            sName: "North Dakota",
+            iR: 114,
+            iG: 65,
+            iB: 163
+        },
+        {
+            sName: "Minnesota",
+            iR: 85,
+            iG: 254,
+            iB: 245
+        },
+        {
+            sName: "Iowa",
+            iR: 244,
+            iG: 109,
+            iB: 251
+        },
+        {
+            sName: "Missouri",
+            iR: 35,
+            iG: 97,
+            iB: 150
+        },
+        {
+            sName: "Wisconsin",
+            iR: 248,
+            iG: 172,
+            iB: 18
+        },
+        {
+            sName: "Illinois",
+            iR: 21,
+            iG: 12,
+            iB: 242
+        },
+        {
+            sName: "Michigan",
+            iR: 59,
+            iG: 166,
+            iB: 60
+        },
+        {
+            sName: "Indiana",
+            iR: 101,
+            iG: 252,
+            iB: 193
+        },
+        {
+            sName: "Ohio",
+            iR: 152,
+            iG: 2,
+            iB: 26
+        },
+        {
+            sName: "Kentucky",
+            iR: 147,
+            iG: 115,
+            iB: 65
+        },
+        {
+            sName: "West Virginia",
+            iR: 107,
+            iG: 174,
+            iB: 37
+        },
+        {
+            sName: "Virginia",
+            iR: 161,
+            iG: 22,
+            iB: 254
+        },
+        {
+            sName: "Washington D.C.",
+            iR: 156,
+            iG: 195,
+            iB: 231
+        },
+        {
+            sName: "Maryland",
+            iR: 0,
+            iG: 78,
+            iB: 204
+        },
+        {
+            sName: "Delaware",
+            iR: 155,
             iG: 146,
-            iB: 39,
+            iB: 217
         },
         {
-            sName: "Japan",
-            iR: 255,
-            iG: 73,
-            iB: 107,
+            sName: "Pennsylvania",
+            iR: 251,
+            iG: 192,
+            iB: 170
         },
+        {
+            sName: "New Jersey",
+            iR: 119,
+            iG: 80,
+            iB: 213
+        },
+        {
+            sName: "New York",
+            iR: 31,
+            iG: 15,
+            iB: 153
+        },
+        {
+            sName: "Connecticut",
+            iR: 14,
+            iG: 241,
+            iB: 93
+        },
+        {
+            sName: "Rhode Island",
+            iR: 47,
+            iG: 198,
+            iB: 146
+        },
+        {
+            sName: "Massachusetts",
+            iR: 223,
+            iG: 103,
+            iB: 239
+        },
+        {
+            sName: "Vermont",
+            iR: 146,
+            iG: 8,
+            iB: 47
+        },
+        {
+            sName: "New Hampshire",
+            iR: 38,
+            iG: 49,
+            iB: 24
+        },
+        {
+            sName: "Maine",
+            iR: 139,
+            iG: 136,
+            iB: 67
+        },
+        {
+            sName: "Arkansas",
+            iR: 44,
+            iG: 36,
+            iB: 211
+        },
+        {
+            sName: "Louisiana",
+            iR: 24,
+            iG: 93,
+            iB: 210
+        },
+        {
+            sName: "Mississippi",
+            iR: 71,
+            iG: 37,
+            iB: 45
+        },
+        {
+            sName: "Alabama",
+            iR: 140,
+            iG: 166,
+            iB: 76
+        },
+        {
+            sName: "Florida",
+            iR: 215,
+            iG: 48,
+            iB: 21
+        },
+        {
+            sName: "Georgia",
+            iR: 237,
+            iG: 208,
+            iB: 96
+        },
+        {
+            sName: "Tennessee",
+            iR: 113,
+            iG: 103,
+            iB: 137
+        },
+        {
+            sName: "South Carolina",
+            iR: 167,
+            iG: 166,
+            iB: 182
+        },
+        {
+            sName: "North Carolina",
+            iR: 55,
+            iG: 157,
+            iB: 152
+        },
+        {
+            sName: "Hawaii",
+            iR: 153,
+            iG: 88,
+            iB: 153
+        },
+        {
+            sName: "Alaska",
+            iR: 121,
+            iG: 136,
+            iB: 234
+        },
+        {
+            sName: "Yukon",
+            iR: 40,
+            iG: 51,
+            iB: 56
+        },
+        {
+            sName: "Northwest Territories",
+            iR: 111,
+            iG: 198,
+            iB: 12
+        },
+        {
+            sName: "British Columbia",
+            iR: 89,
+            iG: 198,
+            iB: 234
+        },
+        {
+            sName: "Alberta",
+            iR: 132,
+            iG: 163,
+            iB: 167
+        },
+        {
+            sName: "Saskatchewan",
+            iR: 206,
+            iG: 140,
+            iB: 224
+        },
+        {
+            sName: "Manitoba",
+            iR: 197,
+            iG: 26,
+            iB: 198
+        },
+        {
+            sName: "Ontario",
+            iR: 134,
+            iG: 84,
+            iB: 44
+        },
+        {
+            sName: "Quebec",
+            iR: 18,
+            iG: 61,
+            iB: 228
+        },
+        {
+            sName: "Newfoundland and Labrador",
+            iR: 202,
+            iG: 49,
+            iB: 206
+        },
+        {
+            sName: "New Brunswick",
+            iR: 211,
+            iG: 71,
+            iB: 157
+        },
+        {
+            sName: "Prince Edward Island",
+            iR: 203,
+            iG: 242,
+            iB: 134
+        },
+        {
+            sName: "Nova Scotia",
+            iR: 71,
+            iG: 7,
+            iB: 245
+        },
+        {
+            sName: "Saint-Pierre-et-Miquelon",
+            iR: 40,
+            iG: 68,
+            iB: 238
+        },
+        {
+            sName: "Greenland",
+            iR: 182,
+            iG: 213,
+            iB: 188
+        },
+        {
+            sName: "Baja California Sur",
+            iR: 64,
+            iG: 15,
+            iB: 41
+        },
+        {
+            sName: "Baja California",
+            iR: 176,
+            iG: 169,
+            iB: 225
+        },
+        {
+            sName: "Sonora",
+            iR: 209,
+            iG: 198,
+            iB: 83
+        },
+        {
+            sName: "Sinaloa",
+            iR: 146,
+            iG: 224,
+            iB: 222
+        },
+        {
+            sName: "Nayarit",
+            iR: 148,
+            iG: 170,
+            iB: 91
+        },
+        {
+            sName: "Chihuahua",
+            iR: 206,
+            iG: 193,
+            iB: 135
+        },
+        {
+            sName: "Durango",
+            iR: 28,
+            iG: 221,
+            iB: 245
+        },
+        {
+            sName: "Coahuila",
+            iR: 238,
+            iG: 69,
+            iB: 50
+        },
+        {
+            sName: "Nuevo León",
+            iR: 52,
+            iG: 225,
+            iB: 98
+        },
+        {
+            sName: "Tamaulipas",
+            iR: 195,
+            iG: 39,
+            iB: 214
+        },
+        {
+            sName: "Zacatecas",
+            iR: 23,
+            iG: 118,
+            iB: 240
+        },
+        {
+            sName: "San Luis Potosí",
+            iR: 229,
+            iG: 181,
+            iB: 172
+        },
+        {
+            sName: "Jalisco",
+            iR: 47,
+            iG: 60,
+            iB: 133
+        },
+        {
+            sName: "Aguascalientes",
+            iR: 175,
+            iG: 104,
+            iB: 237
+        },
+        {
+            sName: "Colima",
+            iR: 70,
+            iG: 163,
+            iB: 138
+        },
+        {
+            sName: "Michoacán",
+            iR: 177,
+            iG: 217,
+            iB: 109
+        },
+        {
+            sName: "Guanajuato",
+            iR: 82,
+            iG: 246,
+            iB: 29
+        },
+        {
+            sName: "Querétaro",
+            iR: 234,
+            iG: 46,
+            iB: 203
+        },
+        {
+            sName: "Hidalgo",
+            iR: 63,
+            iG: 157,
+            iB: 77
+        },
+        {
+            sName: "México",
+            iR: 82,
+            iG: 251,
+            iB: 99
+        },
+        {
+            sName: "México D.F.",
+            iR: 103,
+            iG: 216,
+            iB: 212
+        },
+        {
+            sName: "Puebla",
+            iR: 120,
+            iG: 70,
+            iB: 82
+        },
+        {
+            sName: "Tlaxcala",
+            iR: 162,
+            iG: 147,
+            iB: 145
+        },
+        {
+            sName: "Veracruz",
+            iR: 76,
+            iG: 26,
+            iB: 38
+        },
+        {
+            sName: "Guerrero",
+            iR: 14,
+            iG: 23,
+            iB: 158
+        },
+        {
+            sName: "Morelos",
+            iR: 251,
+            iG: 181,
+            iB: 245
+        },
+        {
+            sName: "Tabasco",
+            iR: 121,
+            iG: 94,
+            iB: 221
+        },
+        {
+            sName: "Chiapas",
+            iR: 184,
+            iG: 183,
+            iB: 209
+        },
+        {
+            sName: "Campeche",
+            iR: 146,
+            iG: 78,
+            iB: 132
+        },
+        {
+            sName: "Yucatán",
+            iR: 252,
+            iG: 26,
+            iB: 78
+        },
+        {
+            sName: "Quintana Roo",
+            iR: 82,
+            iG: 131,
+            iB: 195
+        },
+        {
+            sName: "Guatemala",
+            iR: 78,
+            iG: 3,
+            iB: 1
+        },
+        {
+            sName: "Belize",
+            iR: 78,
+            iG: 66,
+            iB: 208
+        },
+        {
+            sName: "El Salvador",
+            iR: 158,
+            iG: 218,
+            iB: 124
+        },
+        {
+            sName: "Honduras",
+            iR: 52,
+            iG: 155,
+            iB: 169
+        },
+        {
+            sName: "Nicaragua",
+            iR: 230,
+            iG: 128,
+            iB: 253
+        },
+        {
+            sName: "Costa Rica",
+            iR: 110,
+            iG: 73,
+            iB: 65
+        },
+        {
+            sName: "Panama",
+            iR: 158,
+            iG: 9,
+            iB: 188
+        },
+        {
+            sName: "Panama Canal Zone",
+            iR: 50,
+            iG: 204,
+            iB: 27
+        },
+        {
+            sName: "Oaxaca",
+            iR: 66,
+            iG: 218,
+            iB: 23
+        },
+        {
+            sName: "Bahamas",
+            iR: 141,
+            iG: 171,
+            iB: 140
+        },
+        {
+            sName: "Cuba",
+            iR: 132,
+            iG: 117,
+            iB: 201
+        },
+        {
+            sName: "Cayman Islands",
+            iR: 226,
+            iG: 245,
+            iB: 87
+        },
+        {
+            sName: "Guantanamo Bay",
+            iR: 226,
+            iG: 69,
+            iB: 190
+        },
+        {
+            sName: "Jamaica",
+            iR: 57,
+            iG: 204,
+            iB: 28
+        },
+        {
+            sName: "Haiti",
+            iR: 166,
+            iG: 237,
+            iB: 6
+        },
+        {
+            sName: "Dominican Republic",
+            iR: 249,
+            iG: 114,
+            iB: 106
+        },
+        {
+            sName: "Puerto Rico",
+            iR: 130,
+            iG: 123,
+            iB: 121
+        },
+        {
+            sName: "Virgin Islands",
+            iR: 254,
+            iG: 173,
+            iB: 101
+        },
+        {
+            sName: "Leeward Islands",
+            iR: 4,
+            iG: 136,
+            iB: 32
+        },
+        {
+            sName: "Windward Islands",
+            iR: 226,
+            iG: 219,
+            iB: 25
+        },
+        {
+            sName: "Curacao",
+            iR: 217,
+            iG: 72,
+            iB: 117
+        },
+        {
+            sName: "Pacific",
+            iR: 71,
+            iG: 230,
+            iB: 251
+        },
+        {
+            sName: "Andes",
+            iR: 174,
+            iG: 210,
+            iB: 12
+        },
+        {
+            sName: "Caribbean",
+            iR: 208,
+            iG: 2,
+            iB: 105
+        },
+        {
+            sName: "Orinoco",
+            iR: 182,
+            iG: 193,
+            iB: 159
+        },
+        {
+            sName: "Amazon",
+            iR: 56,
+            iG: 129,
+            iB: 50
+        },
+        {
+            sName: "Pacific Coastal Region",
+            iR: 44,
+            iG: 95,
+            iB: 158
+        },
+        {
+            sName: "Andes Region",
+            iR: 194,
+            iG: 119,
+            iB: 41
+        },
+        {
+            sName: "Amazon Region",
+            iR: 132,
+            iG: 195,
+            iB: 130
+        },
+        {
+            sName: "San Martín",
+            iR: 147,
+            iG: 54,
+            iB: 93
+        },
+        {
+            sName: "Northern Sierra",
+            iR: 73,
+            iG: 100,
+            iB: 3
+        },
+        {
+            sName: "Amazonas",
+            iR: 119,
+            iG: 179,
+            iB: 23
+        },
+        {
+            sName: "Northern Coast",
+            iR: 170,
+            iG: 45,
+            iB: 31
+        },
+        {
+            sName: "Central Sierra",
+            iR: 223,
+            iG: 11,
+            iB: 44
+        },
+        {
+            sName: "Central Coast",
+            iR: 131,
+            iG: 42,
+            iB: 160
+        },
+        {
+            sName: "Souuthern Sierra",
+            iR: 160,
+            iG: 68,
+            iB: 109
+        },
+        {
+            sName: "Madre de Dios",
+            iR: 17,
+            iG: 251,
+            iB: 127
+        },
+        {
+            sName: "Altiplano",
+            iR: 242,
+            iG: 200,
+            iB: 106
+        },
+        {
+            sName: "Southern Coast",
+            iR: 211,
+            iG: 159,
+            iB: 131
+        },
+        {
+            sName: "Pando",
+            iR: 212,
+            iG: 91,
+            iB: 204
+        },
+        {
+            sName: "La Paz",
+            iR: 191,
+            iG: 179,
+            iB: 207
+        },
+        {
+            sName: "El Beni",
+            iR: 156,
+            iG: 216,
+            iB: 244
+        },
+        {
+            sName: "Santa Cruz",
+            iR: 241,
+            iG: 253,
+            iB: 242
+        },
+        {
+            sName: "Cochabamba",
+            iR: 156,
+            iG: 155,
+            iB: 207
+        },
+        {
+            sName: "Oruro",
+            iR: 80,
+            iG: 81,
+            iB: 146
+        },
+        {
+            sName: "Potosí",
+            iR: 115,
+            iG: 38,
+            iB: 91
+        },
+        {
+            sName: "Chuquisaca",
+            iR: 186,
+            iG: 21,
+            iB: 221
+        },
+        {
+            sName: "Tarija",
+            iR: 22,
+            iG: 178,
+            iB: 98
+        },
+        {
+            sName: "Gran Chaco",
+            iR: 187,
+            iG: 9,
+            iB: 56
+        },
+        {
+            sName: "Northern Paranena",
+            iR: 238,
+            iG: 161,
+            iB: 76
+        },
+        {
+            sName: "Southern Paranena",
+            iR: 220,
+            iG: 28,
+            iB: 230
+        },
+        {
+            sName: "Parana Plateau",
+            iR: 70,
+            iG: 176,
+            iB: 227
+        },
+        {
+            sName: "Arica y Parinacota",
+            iR: 11,
+            iG: 79,
+            iB: 173
+        },
+        {
+            sName: "Tarapacá",
+            iR: 135,
+            iG: 48,
+            iB: 21
+        },
+        {
+            sName: "Antofagasta",
+            iR: 174,
+            iG: 21,
+            iB: 150
+        },
+        {
+            sName: "Atacama",
+            iR: 44,
+            iG: 161,
+            iB: 31
+        },
+        {
+            sName: "Coquimbo",
+            iR: 106,
+            iG: 166,
+            iB: 94
+        },
+        {
+            sName: "Valparaíso",
+            iR: 81,
+            iG: 127,
+            iB: 174
+        },
+        {
+            sName: "Región Metropolitana",
+            iR: 157,
+            iG: 43,
+            iB: 67
+        },
+        {
+            sName: "Libertador General Bernardo O'Higgins",
+            iR: 72,
+            iG: 6,
+            iB: 210
+        },
+        {
+            sName: "Maule",
+            iR: 28,
+            iG: 187,
+            iB: 34
+        },
+        {
+            sName: "Nuble",
+            iR: 158,
+            iG: 72,
+            iB: 223
+        },
+        {
+            sName: "Bío-Bío",
+            iR: 194,
+            iG: 160,
+            iB: 43
+        },
+        {
+            sName: "Araucanía",
+            iR: 114,
+            iG: 243,
+            iB: 137
+        },
+        {
+            sName: "Ríos",
+            iR: 203,
+            iG: 69,
+            iB: 156
+        },
+        {
+            sName: "Lagos",
+            iR: 28,
+            iG: 116,
+            iB: 237
+        },
+        {
+            sName: "Aysén",
+            iR: 23,
+            iG: 201,
+            iB: 61
+        },
+        {
+            sName: "Magallanes y e la Antártica Chilena",
+            iR: 102,
+            iG: 107,
+            iB: 67
+        },
+        {
+            sName: "Buenos Aires",
+            iR: 194,
+            iG: 48,
+            iB: 147
+        },
+        {
+            sName: "Entre Ríos",
+            iR: 246,
+            iG: 176,
+            iB: 97
+        },
+        {
+            sName: "Corrientes",
+            iR: 200,
+            iG: 136,
+            iB: 19
+        },
+        {
+            sName: "Misiones",
+            iR: 150,
+            iG: 69,
+            iB: 111
+        },
+        {
+            sName: "Formosa",
+            iR: 128,
+            iG: 149,
+            iB: 175
+        },
+        {
+            sName: "Chaco",
+            iR: 121,
+            iG: 232,
+            iB: 83
+        },
+        {
+            sName: "Santa Fe",
+            iR: 51,
+            iG: 214,
+            iB: 158
+        },
+        {
+            sName: "Córdoba",
+            iR: 190,
+            iG: 84,
+            iB: 187
+        },
+        {
+            sName: "Santiago del Estero",
+            iR: 45,
+            iG: 242,
+            iB: 47
+        },
+        {
+            sName: "Tucumán",
+            iR: 181,
+            iG: 42,
+            iB: 217
+        },
+        {
+            sName: "Catamarca",
+            iR: 242,
+            iG: 218,
+            iB: 3
+        },
+        {
+            sName: "Jujuy",
+            iR: 185,
+            iG: 48,
+            iB: 45
+        },
+        {
+            sName: "Salta",
+            iR: 120,
+            iG: 55,
+            iB: 14
+        },
+        {
+            sName: "La Rioja",
+            iR: 161,
+            iG: 110,
+            iB: 244
+        },
+        {
+            sName: "San Juan",
+            iR: 161,
+            iG: 250,
+            iB: 39
+        },
+        {
+            sName: "San Luis",
+            iR: 19,
+            iG: 35,
+            iB: 19
+        },
+        {
+            sName: "Mendoza",
+            iR: 75,
+            iG: 13,
+            iB: 25
+        },
+        {
+            sName: "Neuquén",
+            iR: 64,
+            iG: 211,
+            iB: 155
+        },
+        {
+            sName: "La Pampa",
+            iR: 174,
+            iG: 136,
+            iB: 111
+        },
+        {
+            sName: "Río Negro",
+            iR: 221,
+            iG: 197,
+            iB: 63
+        },
+        {
+            sName: "Chubut",
+            iR: 229,
+            iG: 244,
+            iB: 118
+        },
+        {
+            sName: "Santa Cruz",
+            iR: 74,
+            iG: 186,
+            iB: 79
+        },
+        {
+            sName: "Tierra del Fuego, Antártida e Islas del Atlántico Sur",
+            iR: 215,
+            iG: 107,
+            iB: 47
+        },
+        {
+            sName: "Gran Buenos Aires",
+            iR: 75,
+            iG: 190,
+            iB: 26
+        },
+        {
+            sName: "Ciudad de Buenos Aires",
+            iR: 217,
+            iG: 165,
+            iB: 31
+        },
+        {
+            sName: "Río de la Plata",
+            iR: 206,
+            iG: 77,
+            iB: 198
+        },
+        {
+            sName: "Atlantic Coast",
+            iR: 197,
+            iG: 82,
+            iB: 75
+        },
+        {
+            sName: "Northern Interior",
+            iR: 132,
+            iG: 53,
+            iB: 4
+        },
+        {
+            sName: "Rio Grande do Sul",
+            iR: 100,
+            iG: 54,
+            iB: 196
+        },
+        {
+            sName: "Santa Catarina",
+            iR: 97,
+            iG: 238,
+            iB: 36
+        },
+        {
+            sName: "Paraná",
+            iR: 75,
+            iG: 247,
+            iB: 136
+        },
+        {
+            sName: "Sao Paulo",
+            iR: 64,
+            iG: 94,
+            iB: 131
+        },
+        {
+            sName: "Rio de Janeiro",
+            iR: 174,
+            iG: 149,
+            iB: 172
+        },
+        {
+            sName: "Espírito Santo",
+            iR: 65,
+            iG: 24,
+            iB: 67
+        },
+        {
+            sName: "Bahia",
+            iR: 188,
+            iG: 232,
+            iB: 15
+        },
+        {
+            sName: "Minas Gerais",
+            iR: 157,
+            iG: 192,
+            iB: 203
+        },
+        {
+            sName: "Federal District",
+            iR: 106,
+            iG: 190,
+            iB: 254
+        },
+        {
+            sName: "Goiás",
+            iR: 3,
+            iG: 20,
+            iB: 145
+        },
+        {
+            sName: "Tocantins",
+            iR: 242,
+            iG: 81,
+            iB: 160
+        },
+        {
+            sName: "Mato Grosso do Sul",
+            iR: 190,
+            iG: 153,
+            iB: 14
+        },
+        {
+            sName: "Mato Grosso",
+            iR: 79,
+            iG: 68,
+            iB: 252
+        },
+        {
+            sName: "Rondonia",
+            iR: 59,
+            iG: 176,
+            iB: 145
+        },
+        {
+            sName: "Acre",
+            iR: 107,
+            iG: 92,
+            iB: 248
+        },
+        {
+            sName: "Amazonas",
+            iR: 164,
+            iG: 237,
+            iB: 33
+        },
+        {
+            sName: "Pará",
+            iR: 250,
+            iG: 158,
+            iB: 175
+        },
+        {
+            sName: "Amapá",
+            iR: 173,
+            iG: 216,
+            iB: 106
+        },
+        {
+            sName: "Roraima",
+            iR: 6,
+            iG: 145,
+            iB: 229
+        },
+        {
+            sName: "Maranhao",
+            iR: 205,
+            iG: 191,
+            iB: 243
+        },
+        {
+            sName: "Piauí",
+            iR: 179,
+            iG: 191,
+            iB: 138
+        },
+        {
+            sName: "Sergipe",
+            iR: 118,
+            iG: 254,
+            iB: 83
+        },
+        {
+            sName: "Alagoas",
+            iR: 228,
+            iG: 194,
+            iB: 141
+        },
+        {
+            sName: "Pernambuco",
+            iR: 15,
+            iG: 243,
+            iB: 84
+        },
+        {
+            sName: "Paraíba",
+            iR: 139,
+            iG: 116,
+            iB: 114
+        },
+        {
+            sName: "Rio Grande do Norte",
+            iR: 185,
+            iG: 152,
+            iB: 212
+        },
+        {
+            sName: "Ceará",
+            iR: 244,
+            iG: 3,
+            iB: 101
+        },
+        {
+            sName: "French Guyana",
+            iR: 54,
+            iG: 93,
+            iB: 140
+        },
+        {
+            sName: "Suriname",
+            iR: 94,
+            iG: 16,
+            iB: 197
+        },
+        {
+            sName: "Essequibo",
+            iR: 86,
+            iG: 95,
+            iB: 231
+        },
+        {
+            sName: "Guyana",
+            iR: 139,
+            iG: 30,
+            iB: 93
+        },
+        {
+            sName: "Zulian Region",
+            iR: 233,
+            iG: 109,
+            iB: 67
+        },
+        {
+            sName: "Andean Region",
+            iR: 59,
+            iG: 219,
+            iB: 198
+        },
+        {
+            sName: "Llanos Region",
+            iR: 16,
+            iG: 147,
+            iB: 34
+        },
+        {
+            sName: "Central-Western Region",
+            iR: 175,
+            iG: 40,
+            iB: 178
+        },
+        {
+            sName: "Central Region",
+            iR: 73,
+            iG: 21,
+            iB: 62
+        },
+        {
+            sName: "Capital Region",
+            iR: 165,
+            iG: 212,
+            iB: 3
+        },
+        {
+            sName: "Eastern Region",
+            iR: 197,
+            iG: 22,
+            iB: 134
+        },
+        {
+            sName: "Insular Region",
+            iR: 120,
+            iG: 133,
+            iB: 3
+        },
+        {
+            sName: "Guayana Region",
+            iR: 202,
+            iG: 72,
+            iB: 101
+        },
+        {
+            sName: "Iceland",
+            iR: 216,
+            iG: 205,
+            iB: 198
+        },
+        {
+            sName: "Ulster",
+            iR: 227,
+            iG: 232,
+            iB: 32
+        },
+        {
+            sName: "Connaught",
+            iR: 117,
+            iG: 210,
+            iB: 233
+        },
+        {
+            sName: "Leinster",
+            iR: 24,
+            iG: 117,
+            iB: 37
+        },
+        {
+            sName: "Munster",
+            iR: 81,
+            iG: 126,
+            iB: 211
+        },
+        {
+            sName: "Northern Ireland",
+            iR: 70,
+            iG: 102,
+            iB: 101
+        },
+        {
+            sName: "Scotland",
+            iR: 162,
+            iG: 74,
+            iB: 189
+        },
+        {
+            sName: "North East",
+            iR: 234,
+            iG: 245,
+            iB: 21
+        },
+        {
+            sName: "North West",
+            iR: 130,
+            iG: 113,
+            iB: 73
+        },
+        {
+            sName: "Yorkshire and the Humber",
+            iR: 19,
+            iG: 21,
+            iB: 96
+        },
+        {
+            sName: "East Midlands",
+            iR: 218,
+            iG: 179,
+            iB: 150
+        },
+        {
+            sName: "West Midlands",
+            iR: 185,
+            iG: 94,
+            iB: 251
+        },
+        {
+            sName: "London",
+            iR: 30,
+            iG: 120,
+            iB: 198
+        },
+        {
+            sName: "East of England",
+            iR: 72,
+            iG: 246,
+            iB: 161
+        },
+        {
+            sName: "South East",
+            iR: 237,
+            iG: 247,
+            iB: 80
+        },
+        {
+            sName: "South West",
+            iR: 150,
+            iG: 217,
+            iB: 27
+        },
+        {
+            sName: "Wales",
+            iR: 178,
+            iG: 155,
+            iB: 211
+        },
+        {
+            sName: "Isle of Man",
+            iR: 72,
+            iG: 111,
+            iB: 248
+        },
+        {
+            sName: "Channel Islands",
+            iR: 64,
+            iG: 11,
+            iB: 85
+        }
     ]
 }

@@ -34,7 +34,7 @@
 			}
 
 			// **Step 2: Shift affected GeoRegion() values UP**
-			for (var i = main.map.regions.Data.length - 1; i > options.index; i--) {
+			for (var i = main.map.regions.Data.length - 1; i > options.index + 1; i--) {
 				if (province_assignments[i - 1]) { // Only shift valid regions
 					for (var j = 0; j < province_assignments[i - 1].length; j++) {
 						province_assignments[i - 1][j].setGeoRegion(i);

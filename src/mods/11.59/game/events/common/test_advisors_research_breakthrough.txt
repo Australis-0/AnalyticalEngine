@@ -13,7 +13,9 @@ popUp=true
 
 trigger_and
 next_and
-is_player=usa
+is_civ=usa
+next_and
+province_is_occupied=1889
 trigger_and_end
 
 option_btn
