@@ -1512,6 +1512,702 @@
             iR: 64,
             iG: 11,
             iB: 85
+        },
+        {
+            sName: "Nord-Pas de Calais",
+            iR: 141,
+            iG: 42,
+            iB: 63
+        },
+        {
+            sName: "Picardie",
+            iR: 101,
+            iG: 245,
+            iB: 219
+        },
+        {
+            sName: "Champagne-Ardenne",
+            iR: 145,
+            iG: 86,
+            iB: 183
+        },
+        {
+            sName: "Lorraine",
+            iR: 195,
+            iG: 207,
+            iB: 96
+        },
+        {
+            sName: "Alsace",
+            iR: 221,
+            iG: 103,
+            iB: 80
+        },
+        {
+            sName: "Franche-Comte",
+            iR: 64,
+            iG: 15,
+            iB: 102
+        },
+        {
+            sName: "Bourgogne",
+            iR: 123,
+            iG: 112,
+            iB: 83
+        },
+        {
+            sName: "Rhone-Alpes",
+            iR: 130,
+            iG: 192,
+            iB: 95
+        },
+        {
+            sName: "Provence-Alpes-Cote d'Azur",
+            iR: 148,
+            iG: 224,
+            iB: 225
+        },
+        {
+            sName: "Monaco",
+            iR: 208,
+            iG: 193,
+            iB: 139
+        },
+        {
+            sName: "Languedoc-Roussillon",
+            iR: 25,
+            iG: 166,
+            iB: 204
+        },
+        {
+            sName: "Midi-Pyrenees",
+            iR: 46,
+            iG: 251,
+            iB: 161
+        },
+        {
+            sName: "Aquitaine",
+            iR: 91,
+            iG: 209,
+            iB: 57
+        },
+        {
+            sName: "Auvergne",
+            iR: 135,
+            iG: 12,
+            iB: 193
+        },
+        {
+            sName: "Limousin",
+            iR: 177,
+            iG: 223,
+            iB: 149
+        },
+        {
+            sName: "Poitou-Charentes",
+            iR: 83,
+            iG: 145,
+            iB: 30
+        },
+        {
+            sName: "Ile-de-France",
+            iR: 63,
+            iG: 60,
+            iB: 242
+        },
+        {
+            sName: "Centre",
+            iR: 15,
+            iG: 240,
+            iB: 224
+        },
+        {
+            sName: "Haute-Normandie",
+            iR: 234,
+            iG: 86,
+            iB: 130
+        },
+        {
+            sName: "Basse-Normandie",
+            iR: 242,
+            iG: 9,
+            iB: 71
+        },
+        {
+            sName: "Pays de la Loire",
+            iR: 32,
+            iG: 179,
+            iB: 193
+        },
+        {
+            sName: "Bretagne",
+            iR: 202,
+            iG: 200,
+            iB: 248
+        },
+        {
+            sName: "Andorra",
+            iR: 158,
+            iG: 14,
+            iB: 83
+        },
+        {
+            sName: "Cataluna",
+            iR: 65,
+            iG: 57,
+            iB: 86
+        },
+        {
+            sName: "Valencia",
+            iR: 123,
+            iG: 6,
+            iB: 30
+        },
+        {
+            sName: "Baleares",
+            iR: 76,
+            iG: 29,
+            iB: 209
+        },
+        {
+            sName: "Castilla-La Mancha",
+            iR: 107,
+            iG: 42,
+            iB: 10
+        },
+        {
+            sName: "Madrid",
+            iR: 229,
+            iG: 146,
+            iB: 126
+        },
+        {
+            sName: "Aragon",
+            iR: 186,
+            iG: 51,
+            iB: 172
+        },
+        {
+            sName: "Navarra",
+            iR: 20,
+            iG: 204,
+            iB: 196
+        },
+        {
+            sName: "Pais Vasco",
+            iR: 158,
+            iG: 122,
+            iB: 113
+        },
+        {
+            sName: "La Rioja",
+            iR: 243,
+            iG: 32,
+            iB: 58
+        },
+        {
+            sName: "Castilla y Leon",
+            iR: 27,
+            iG: 22,
+            iB: 203
+        },
+        {
+            sName: "Cantabria",
+            iR: 38,
+            iG: 219,
+            iB: 131
+        },
+        {
+            sName: "Asturias",
+            iR: 120,
+            iG: 163,
+            iB: 56
+        },
+        {
+            sName: "Galicia",
+            iR: 175,
+            iG: 196,
+            iB: 2
+        },
+        {
+            sName: "Murcia",
+            iR: 26,
+            iG: 77,
+            iB: 217
+        },
+        {
+            sName: "Extremadura",
+            iR: 238,
+            iG: 131,
+            iB: 48
+        },
+        {
+            sName: "Andalucia",
+            iR: 56,
+            iG: 159,
+            iB: 207
+        },
+        {
+            sName: "Gibraltar",
+            iR: 72,
+            iG: 211,
+            iB: 206
+        },
+        {
+            sName: "Ceuta and Melilla",
+            iR: 56,
+            iG: 30,
+            iB: 106
+        },
+        {
+            sName: "Entre-Douro-e-Minho",
+            iR: 248,
+            iG: 249,
+            iB: 96
+        },
+        {
+            sName: "Tras-os-Montes",
+            iR: 146,
+            iG: 177,
+            iB: 228
+        },
+        {
+            sName: "Beira",
+            iR: 254,
+            iG: 157,
+            iB: 128
+        },
+        {
+            sName: "Estremadura",
+            iR: 133,
+            iG: 81,
+            iB: 102
+        },
+        {
+            sName: "Alentejo",
+            iR: 243,
+            iG: 110,
+            iB: 130
+        },
+        {
+            sName: "Algarve",
+            iR: 12,
+            iG: 136,
+            iB: 70
+        },
+        {
+            sName: "Corse",
+            iR: 141,
+            iG: 69,
+            iB: 125
+        },
+        {
+            sName: "Valle d'Aosta",
+            iR: 212,
+            iG: 184,
+            iB: 236
+        },
+        {
+            sName: "Piemonte",
+            iR: 139,
+            iG: 202,
+            iB: 30
+        },
+        {
+            sName: "Liguria",
+            iR: 47,
+            iG: 60,
+            iB: 213
+        },
+        {
+            sName: "Sardegna",
+            iR: 44,
+            iG: 237,
+            iB: 4
+        },
+        {
+            sName: "Emilia-Romagna",
+            iR: 37,
+            iG: 195,
+            iB: 113
+        },
+        {
+            sName: "Lombardia",
+            iR: 236,
+            iG: 192,
+            iB: 25
+        },
+        {
+            sName: "Tretino-Alto Adige",
+            iR: 68,
+            iG: 158,
+            iB: 252
+        },
+        {
+            sName: "Veneto",
+            iR: 147,
+            iG: 121,
+            iB: 172
+        },
+        {
+            sName: "Friuli-Venezia Giulia",
+            iR: 189,
+            iG: 178,
+            iB: 153
+        },
+        {
+            sName: "Toscana",
+            iR: 198,
+            iG: 101,
+            iB: 30
+        },
+        {
+            sName: "Umbria",
+            iR: 239,
+            iG: 107,
+            iB: 26
+        },
+        {
+            sName: "San Marino",
+            iR: 13,
+            iG: 64,
+            iB: 19
+        },
+        {
+            sName: "Marche",
+            iR: 164,
+            iG: 214,
+            iB: 157
+        },
+        {
+            sName: "Lazio",
+            iR: 24,
+            iG: 82,
+            iB: 155
+        },
+        {
+            sName: "Vatican City",
+            iR: 73,
+            iG: 208,
+            iB: 112
+        },
+        {
+            sName: "Abruzzo",
+            iR: 26,
+            iG: 62,
+            iB: 25
+        },
+        {
+            sName: "Molise",
+            iR: 175,
+            iG: 151,
+            iB: 11
+        },
+        {
+            sName: "Campania",
+            iR: 213,
+            iG: 61,
+            iB: 181
+        },
+        {
+            sName: "Apulia",
+            iR: 217,
+            iG: 198,
+            iB: 33
+        },
+        {
+            sName: "Basilicata",
+            iR: 39,
+            iG: 65,
+            iB: 78
+        },
+        {
+            sName: "Calabria",
+            iR: 136,
+            iG: 48,
+            iB: 32
+        },
+        {
+            sName: "Sicilia",
+            iR: 5,
+            iG: 22,
+            iB: 19
+        },
+        {
+            sName: "Malta",
+            iR: 23,
+            iG: 208,
+            iB: 156
+        },
+        {
+            sName: "Schweiz",
+            iR: 234,
+            iG: 54,
+            iB: 76
+        },
+        {
+            sName: "Romandie",
+            iR: 90,
+            iG: 120,
+            iB: 198
+        },
+        {
+            sName: "Lugano",
+            iR: 169,
+            iG: 171,
+            iB: 134
+        },
+        {
+            sName: "Wallonie",
+            iR: 51,
+            iG: 61,
+            iB: 180
+        },
+        {
+            sName: "Bruxelles",
+            iR: 148,
+            iG: 134,
+            iB: 93
+        },
+        {
+            sName: "Vlaanderen",
+            iR: 225,
+            iG: 210,
+            iB: 36
+        },
+        {
+            sName: "Holland",
+            iR: 136,
+            iG: 204,
+            iB: 112
+        },
+        {
+            sName: "Friesland",
+            iR: 215,
+            iG: 62,
+            iB: 16
+        },
+        {
+            sName: "Gelderland",
+            iR: 200,
+            iG: 27,
+            iB: 59
+        },
+        {
+            sName: "Luxembourg",
+            iR: 133,
+            iG: 204,
+            iB: 2
+        },
+        {
+            sName: "Brabant",
+            iR: 200,
+            iG: 145,
+            iB: 121
+        },
+        {
+            sName: "Saarland",
+            iR: 4,
+            iG: 74,
+            iB: 107
+        },
+        {
+            sName: "Württemberg-Hohenzollern",
+            iR: 189,
+            iG: 187,
+            iB: 180
+        },
+        {
+            sName: "Baden",
+            iR: 130,
+            iG: 116,
+            iB: 48
+        },
+        {
+            sName: "Württemberg-Baden",
+            iR: 85,
+            iG: 57,
+            iB: 240
+        },
+        {
+            sName: "Rheinland-Pfalz",
+            iR: 116,
+            iG: 253,
+            iB: 178
+        },
+        {
+            sName: "Nordrhein-Westfalen",
+            iR: 199,
+            iG: 153,
+            iB: 53
+        },
+        {
+            sName: "Niedersachsen",
+            iR: 191,
+            iG: 251,
+            iB: 147
+        },
+        {
+            sName: "Bremen",
+            iR: 221,
+            iG: 80,
+            iB: 169
+        },
+        {
+            sName: "Hamburg",
+            iR: 111,
+            iG: 202,
+            iB: 189
+        },
+        {
+            sName: "Hessen",
+            iR: 155,
+            iG: 216,
+            iB: 39
+        },
+        {
+            sName: "Bayern",
+            iR: 22,
+            iG: 238,
+            iB: 242
+        },
+        {
+            sName: "Thüringen",
+            iR: 165,
+            iG: 175,
+            iB: 230
+        },
+        {
+            sName: "Sachsenßß-Anhalt",
+            iR: 52,
+            iG: 248,
+            iB: 150
+        },
+        {
+            sName: "Brandenburg",
+            iR: 123,
+            iG: 135,
+            iB: 85
+        },
+        {
+            sName: "Sachsen",
+            iR: 44,
+            iG: 124,
+            iB: 66
+        },
+        {
+            sName: "Berlin",
+            iR: 240,
+            iG: 21,
+            iB: 25
+        },
+        {
+            sName: "MecklenburgßVorpommern",
+            iR: 126,
+            iG: 29,
+            iB: 224
+        },
+        {
+            sName: "Schleswigß-Holstein",
+            iR: 224,
+            iG: 232,
+            iB: 89
+        },
+        {
+            sName: "Liechtenstein",
+            iR: 139,
+            iG: 8,
+            iB: 103
+        },
+        {
+            sName: "Vorarlberg",
+            iR: 2,
+            iG: 211,
+            iB: 194
+        },
+        {
+            sName: "Tirol",
+            iR: 125,
+            iG: 153,
+            iB: 85
+        },
+        {
+            sName: "Salzburg",
+            iR: 20,
+            iG: 62,
+            iB: 15
+        },
+        {
+            sName: "Kärnten",
+            iR: 199,
+            iG: 222,
+            iB: 254
+        },
+        {
+            sName: "Steiermark",
+            iR: 171,
+            iG: 45,
+            iB: 15
+        },
+        {
+            sName: "Oberösterreich",
+            iR: 199,
+            iG: 251,
+            iB: 59
+        },
+        {
+            sName: "Wien",
+            iR: 131,
+            iG: 194,
+            iB: 228
+        },
+        {
+            sName: "Burgenland",
+            iR: 53,
+            iG: 95,
+            iB: 164
+        },
+        {
+            sName: "Niederösterreich",
+            iR: 116,
+            iG: 210,
+            iB: 55
+        },
+        {
+            sName: "Kopenhagen",
+            iR: 179,
+            iG: 167,
+            iB: 111
+        },
+        {
+            sName: "Zealand",
+            iR: 110,
+            iG: 174,
+            iB: 134
+        },
+        {
+            sName: "South Denmark",
+            iR: 22,
+            iG: 170,
+            iB: 152
+        },
+        {
+            sName: "Middle Jutland",
+            iR: 53,
+            iG: 65,
+            iB: 187
+        },
+        {
+            sName: "North Jutland",
+            iR: 173,
+            iG: 105,
+            iB: 88
+        },
+        {
+            sName: "Faroe Islands",
+            iR: 243,
+            iG: 120,
+            iB: 150
         }
     ]
 }
