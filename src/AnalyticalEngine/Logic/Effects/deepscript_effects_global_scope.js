@@ -210,7 +210,13 @@
 
 	//7. Resource Scope Effects.
 	{
+		function resourceChangePrice (arg0_options) {
 
+		}
+
+		function resourceChangePriceGroup (arg0_options) {
+
+		}
 	}
 }
 
