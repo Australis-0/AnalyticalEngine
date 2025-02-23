@@ -31,6 +31,7 @@
 	this.IdeologiesManager = Java.type("aoc.kingdoms.lukasz.map.IdeologiesManager");
 	this.ImageIO = Java.type("javax.imageio.ImageIO");
 	this.InGame_Civ = Java.type("aoc.kingdoms.lukasz.menusInGame.Civ.InGame_Civ");
+	this.InGame_Court_Government = Java.type("aoc.kingdoms.lukasz.menusInGame.Court.InGame_Court_Government");
 	this.InGame_DeepscriptEvent = Java.type("AnalyticalEngine.Java.menus.InGame_DeepscriptEvent");
 	this.InputStreamReader = Java.type("java.io.InputStreamReader");
 	this.Integer = Java.type("java.lang.Integer");
@@ -48,11 +49,14 @@
 	this.Pattern = Java.type("java.util.regex.Pattern");
 	this.Pixmap = Java.type("com.badlogic.gdx.graphics.Pixmap");
 	this.PixmapIO = Java.type("com.badlogic.gdx.graphics.PixmapIO");
+	this.Plague = Java.type("aoc.kingdoms.lukasz.map.plague.Plague");
 	this.PlagueManager = Java.type("aoc.kingdoms.lukasz.map.plague.PlagueManager");
 	this.Player = Java.type("aoc.kingdoms.lukasz.jakowski.Player.Player");
 	this.PrintWriter = Java.type("java.io.PrintWriter");
+	this.ProvinceBorderManager = Java.type("aoc.kingdoms.lukasz.map.province.ProvinceBorderManager");
 	this.ProvinceConstructedBuilding = Java.type("aoc.kingdoms.lukasz.map.province.ProvinceConstructedBuilding");
 	this.ProvinceDraw = Java.type("aoc.kingdoms.lukasz.map.province.ProvinceDraw");
+	this.ProvinceDrawArmy = Java.type("aoc.kingdoms.lukasz.map.province.ProvinceDrawArmy");
 	this.ProvinceDrawDetails = Java.type("aoc.kingdoms.lukasz.map.province.ProvinceDrawDetails");
 	this.Random = Java.type("java.util.Random");
 	this.ReligionManager = Java.type("aoc.kingdoms.lukasz.map.ReligionManager");

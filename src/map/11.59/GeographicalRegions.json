@@ -2151,9 +2151,9 @@
         },
         {
             sName: "Oberösterreich",
-            iR: 199,
-            iG: 251,
-            iB: 59
+            iR: 212,
+            iG: 225,
+            iB: 180
         },
         {
             sName: "Wien",
@@ -2208,6 +2208,390 @@
             iR: 243,
             iG: 120,
             iB: 150
+        },
+        {
+            sName: "Bohemia",
+            iR: 219,
+            iG: 231,
+            iB: 41
+        },
+        {
+            sName: "Moravia-Silesia",
+            iR: 58,
+            iG: 108,
+            iB: 184
+        },
+        {
+            sName: "Slovakia",
+            iR: 66,
+            iG: 176,
+            iB: 158
+        },
+        {
+            sName: "Szczecin",
+            iR: 66,
+            iG: 169,
+            iB: 34
+        },
+        {
+            sName: "Koszalin",
+            iR: 141,
+            iG: 31,
+            iB: 118
+        },
+        {
+            sName: "Zielona Gora",
+            iR: 84,
+            iG: 137,
+            iB: 193
+        },
+        {
+            sName: "Wroclaw",
+            iR: 165,
+            iG: 190,
+            iB: 223
+        },
+        {
+            sName: "Opole",
+            iR: 177,
+            iG: 27,
+            iB: 184
+        },
+        {
+            sName: "Katowice",
+            iR: 226,
+            iG: 152,
+            iB: 174
+        },
+        {
+            sName: "Krakow",
+            iR: 55,
+            iG: 62,
+            iB: 230
+        },
+        {
+            sName: "Rzeszow",
+            iR: 99,
+            iG: 127,
+            iB: 176
+        },
+        {
+            sName: "Kielce",
+            iR: 69,
+            iG: 29,
+            iB: 196
+        },
+        {
+            sName: "Lodz",
+            iR: 50,
+            iG: 142,
+            iB: 21
+        },
+        {
+            sName: "Poznan",
+            iR: 206,
+            iG: 188,
+            iB: 19
+        },
+        {
+            sName: "Lublin",
+            iR: 240,
+            iG: 135,
+            iB: 56
+        },
+        {
+            sName: "Warsaw",
+            iR: 134,
+            iG: 254,
+            iB: 208
+        },
+        {
+            sName: "Bydgoszcz",
+            iR: 124,
+            iG: 167,
+            iB: 57
+        },
+        {
+            sName: "Gdansk",
+            iR: 140,
+            iG: 161,
+            iB: 146
+        },
+        {
+            sName: "Olsztyn",
+            iR: 172,
+            iG: 214,
+            iB: 193
+        },
+        {
+            sName: "Bialystok",
+            iR: 120,
+            iG: 50,
+            iB: 122
+        },
+        {
+            sName: "Transdanubia",
+            iR: 217,
+            iG: 254,
+            iB: 221
+        },
+        {
+            sName: "Pest",
+            iR: 152,
+            iG: 1,
+            iB: 83
+        },
+        {
+            sName: "Budapest",
+            iR: 102,
+            iG: 115,
+            iB: 147
+        },
+        {
+            sName: "Southern Great Plain",
+            iR: 180,
+            iG: 138,
+            iB: 171
+        },
+        {
+            sName: "Northern Great Plain",
+            iR: 21,
+            iG: 121,
+            iB: 121
+        },
+        {
+            sName: "Northern Hungary",
+            iR: 191,
+            iG: 224,
+            iB: 228
+        },
+        {
+            sName: "Slovenia",
+            iR: 80,
+            iG: 37,
+            iB: 24
+        },
+        {
+            sName: "Croatia",
+            iR: 59,
+            iG: 17,
+            iB: 142
+        },
+        {
+            sName: "Bosnia and Herzegovina",
+            iR: 31,
+            iG: 218,
+            iB: 140
+        },
+        {
+            sName: "Vojvodina",
+            iR: 65,
+            iG: 137,
+            iB: 136
+        },
+        {
+            sName: "Montenegro",
+            iR: 147,
+            iG: 167,
+            iB: 93
+        },
+        {
+            sName: "Kosovo",
+            iR: 111,
+            iG: 248,
+            iB: 198
+        },
+        {
+            sName: "Serbia",
+            iR: 205,
+            iG: 11,
+            iB: 97
+        },
+        {
+            sName: "Macedonia",
+            iR: 35,
+            iG: 56,
+            iB: 175
+        },
+        {
+            sName: "Albania",
+            iR: 39,
+            iG: 248,
+            iB: 239
+        },
+        {
+            sName: "Crete",
+            iR: 208,
+            iG: 38,
+            iB: 104
+        },
+        {
+            sName: "South Aegean",
+            iR: 110,
+            iG: 29,
+            iB: 166
+        },
+        {
+            sName: "North Aegean",
+            iR: 98,
+            iG: 157,
+            iB: 142
+        },
+        {
+            sName: "Ionian Islands",
+            iR: 53,
+            iG: 142,
+            iB: 142
+        },
+        {
+            sName: "Peloponnese",
+            iR: 214,
+            iG: 206,
+            iB: 52
+        },
+        {
+            sName: "Attica",
+            iR: 166,
+            iG: 137,
+            iB: 109
+        },
+        {
+            sName: "Western Greece",
+            iR: 195,
+            iG: 202,
+            iB: 162
+        },
+        {
+            sName: "Central Greece",
+            iR: 91,
+            iG: 222,
+            iB: 130
+        },
+        {
+            sName: "Thessaly",
+            iR: 238,
+            iG: 181,
+            iB: 88
+        },
+        {
+            sName: "Epirus",
+            iR: 42,
+            iG: 37,
+            iB: 7
+        },
+        {
+            sName: "Western Macedonia",
+            iR: 205,
+            iG: 177,
+            iB: 46
+        },
+        {
+            sName: "Central Macedonia",
+            iR: 242,
+            iG: 228,
+            iB: 37
+        },
+        {
+            sName: "Eastern Macedonia and Thrace",
+            iR: 59,
+            iG: 123,
+            iB: 195
+        },
+        {
+            sName: "Southwestern",
+            iR: 194,
+            iG: 76,
+            iB: 74
+        },
+        {
+            sName: "Southern Central",
+            iR: 24,
+            iG: 162,
+            iB: 235
+        },
+        {
+            sName: "Southeastern",
+            iR: 243,
+            iG: 24,
+            iB: 253
+        },
+        {
+            sName: "Northwestern",
+            iR: 176,
+            iG: 204,
+            iB: 225
+        },
+        {
+            sName: "Northern Central",
+            iR: 29,
+            iG: 203,
+            iB: 173
+        },
+        {
+            sName: "Northeastern",
+            iR: 7,
+            iG: 200,
+            iB: 114
+        },
+        {
+            sName: "Dobrudja",
+            iR: 221,
+            iG: 97,
+            iB: 3
+        },
+        {
+            sName: "Wallachia",
+            iR: 165,
+            iG: 78,
+            iB: 100
+        },
+        {
+            sName: "Oltenia",
+            iR: 247,
+            iG: 2,
+            iB: 204
+        },
+        {
+            sName: "Dobrogea",
+            iR: 217,
+            iG: 161,
+            iB: 216
+        },
+        {
+            sName: "Moldavia",
+            iR: 57,
+            iG: 134,
+            iB: 124
+        },
+        {
+            sName: "Bucovina",
+            iR: 65,
+            iG: 90,
+            iB: 113
+        },
+        {
+            sName: "Transylvania",
+            iR: 25,
+            iG: 182,
+            iB: 203
+        },
+        {
+            sName: "Banat",
+            iR: 237,
+            iG: 13,
+            iB: 64
+        },
+        {
+            sName: "Maramures",
+            iR: 40,
+            iG: 146,
+            iB: 8
+        },
+        {
+            sName: "Crisana",
+            iR: 143,
+            iG: 160,
+            iB: 209
         }
     ]
 }

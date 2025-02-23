@@ -10,7 +10,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09b6f7f8-b868-43e9-b471-ac1dbd15fa3b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Java/effects/Plague.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/provinces/province_framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/provinces/province_framework.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/startup_imports.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/startup_imports.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Java/MPCompatibility/NewGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Java/MPCompatibility/NewGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Effects/deepscript_effects_global_scope.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Effects/deepscript_effects_global_scope.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/GeographicalRegions.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/GeographicalRegions.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/cities/cities.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/cities/cities.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/ProvinceDetails.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/ProvinceDetails.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,7 +232,7 @@
       <workItem from="1737200274429" duration="101911000" />
       <workItem from="1737726277969" duration="115573000" />
       <workItem from="1738769995531" duration="204780000" />
-      <workItem from="1740050015199" duration="7756000" />
+      <workItem from="1740050015199" duration="13574000" />
     </task>
     <servers />
   </component>

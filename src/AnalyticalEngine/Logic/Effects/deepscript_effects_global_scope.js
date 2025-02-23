@@ -117,7 +117,7 @@
 
 	//4. Player.
 	{
-		function switchTag (arg0_civ_tag) { //[WIP] - Needs to be adapted to multiplayer by synchronising tag switch states across players. Test in MP. Doesn't work immediately after game start.
+		function switchTag (arg0_civ_tag) { //[WIP] - Needs to be adapted to multiplayer by synchronising tag switch states across players. Test in MP.
 			//Convert from parameters
 			var civ_tag = arg0_civ_tag;
 
@@ -125,39 +125,93 @@
 			var actual_civ_id = getCivilisationID(civ_tag);
 
 			if (actual_civ_id) {
+				setTimeout(function(){
+					console.log("Switched player to " + civ_tag);
+					NewGame.play();
+				}, 50);
+
 				for (var i = 0; i < M_Players.players.size(); i++)
 					if (M_Players.players.get(i).civID == Game.player.iCivID)
 						M_Players.players.get(i).civID = actual_civ_id;
 
 				Game.player = new Player();
 				Game.player.iCivID = actual_civ_id;
-				Game.player.fog.initFogOfWar();
+
+				ProvinceBorderManager.clearProvinceBorder();
+				Game.player.currSituation.buildPlayerLegaciesLVL();
+				Game.player.currSituation.updateCurrentSituation();
+				ProvinceDrawArmy.updateArmyImgID();
+				Game.menuManager.rebuildInGame();
+
+				for (var i = 0; i < Game.getCivsSize(); i++)
+					Game.getCiv(i).updateArmyRegimentSize();
+
 				Game.player.loadFormableCivs();
+				InGame_Court_Government.reloadFlags = true;
 
 				if (SteamMultiManager.isHost()) {
 					M_Players.updateCivToHost();
 				} else {
 					M_Players.updateHostCiv();
 				}
-				NewGame.play();
+
+				NewGame.updateArmiesText();
 			}
 		}
 	}
 
 	//5. Pops.
 	{
+		/**
+		 * createDisease() - Spawns in a new disease in the targets given.
+		 *
+		 * @param {Object} [arg0_options]
+		 *  @param {String} [arg0_options.disease_type]
+		 *  @param {Array<String>} [arg0_options.provinces=[]]
+		 */
 		function createDisease (arg0_options) {
 			//Convert from parameters
 			var options = (arg0_options) ? arg0_options : {};
 
+			//Initialise options
+			if (options.disease_type == undefined) options.disease_type = 0;
+			if (!options.provinces) options.provinces = [getRandomProvince()];
+
 			//Declare local instance variables
-			
+			var actual_outbreak_province_id = getProvince(options.provinces[0]).getProvinceID();
+			var disease_obj = getDisease(options.disease_type);
+			var new_disease_obj = new Plague(
+				actual_outbreak_province_id, //(outbreakProvince)
+				disease_obj.Name, //(sName)
+				disease_obj.R, //(fR)
+				disease_obj.G, //(fG)
+				disease_obj.B, //(fB)
+				PlagueManager.activePlagues.size(), //(nPlagueID_InGame)
+				disease_obj.DEATH_RATE_MIN + disease_obj.DEATH_RATE_EXTRA*Math.random(), //(fDdeathRate)
+				new Integer(disease_obj.DURATION_TURNS_MIN + randomNumber(0, disease_obj.DURATION_TURNS_EXTRA)), //(iDurationTurnsLeft)
+				disease_obj.EXPANSION_MODIFIER + disease_obj.EXPANSION_MODIFIER_EXTRA*Math.random(), //(EXPANSION_MODIFIER)
+				disease_obj.ImageID, //(iImageID)
+				disease_obj.DEVASTATION //(fDevastation)
+			);
+
+			if (options.provinces.length > 1)
+				for (var i = 1; i < options.provinces.length; i++) {
+					var local_province_id = getProvince(options.provinces[i]).getProvinceID();
+
+					new_disease_obj.addProvince(local_province_id);
+				}
+
+			//Add new disease and run addProvince() for each extra province not yet added
+			PlagueManager.activePlagues.add(new_disease_obj);
 		}
 	}
 
 	//6. International Organisation Scope Effects.
 
 	//7. Resource Scope Effects.
+	{
+
+	}
 }
 
 //Initialise internal helper functions

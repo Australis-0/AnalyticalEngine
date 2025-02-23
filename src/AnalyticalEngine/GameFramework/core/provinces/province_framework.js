@@ -276,6 +276,15 @@
 			getTerrain(province_terrain_id) : province_terrain_id;
 	}
 
+	function getRandomProvince () {
+		//Declare local instance variables
+		var random_province_id = randomNumber(0, Game.iProvincesSize);
+		var random_province_obj = getProvince(random_province_id);
+
+		//Return statement
+		return random_province_obj;
+	}
+
 	function isOccupied (arg0_province_name) {
 		//Convert from parameters
 		var province_name = arg0_province_name;

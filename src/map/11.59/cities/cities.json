@@ -17520,7 +17520,7 @@
         p: 2453
     },
     {
-        Name: "Delitzsch",
+        Name: "Leipzig",
         x: 9504,
         y: 2310,
         p: 2460
@@ -19074,7 +19074,7 @@
         p: 2737
     },
     {
-        Name: "Rawa Mazowiecka",
+        Name: "Lodz",
         x: 9837,
         y: 2282,
         p: 2740
@@ -19092,13 +19092,13 @@
         p: 2704
     },
     {
-        Name: "Lodz",
+        Name: "Konin",
         x: 9785,
         y: 2260,
         p: 2712
     },
     {
-        Name: "Kolo",
+        Name: "Gniezo",
         x: 9739,
         y: 2249,
         p: 2706
@@ -19152,7 +19152,7 @@
         p: 2772
     },
     {
-        Name: "Lowicz",
+        Name: "Kutno",
         x: 9840,
         y: 2260,
         p: 2741

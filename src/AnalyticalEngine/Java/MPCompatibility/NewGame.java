@@ -231,7 +231,7 @@ public class NewGame extends Menu {
 
     }
 
-    public static final void initNewGame() {
+    public static final void initNewGame() { //[WIP] - Use this as reference for switchTag()
         Game.setActiveProvinceID(-1);
         Game.gameThread.play = false;
         ProvinceBorderManager.clearProvinceBorder();
