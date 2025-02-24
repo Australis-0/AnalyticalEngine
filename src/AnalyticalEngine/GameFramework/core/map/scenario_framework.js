@@ -5,6 +5,15 @@
 		return Game.mapScenarios.sActiveScenarioTag;
 	}
 
+	function initCivilisation (arg0_civ_tag) {
+		//Convert from parameters
+		var civ_tag = getCurrentTag(arg0_civ_tag);
+
+		//Initialise in main.gamestate.civilisations[civ_tag];
+		if (!main.gamestate.civilisations[civ_tag])
+			main.gamestate.civilisations[civ_tag] = {};
+	}
+
 	function loadScenario (arg0_scenario) {
 		//Convert from parameters
 		var scenario = arg0_scenario;
@@ -41,7 +50,20 @@
 				//1. Startup functions
 				parseEvents();
 
-				//2. onGameStart() scope parsing
+				//2. Load main.gamestate
+				main.gamestate = {
+					global: {},
+					civilisations: {},
+					provinces: {}
+				};
+
+				//Iterate over all_current_tags
+				var all_current_tags = getAllCurrentCivTags();
+
+				for (var i = 0; i < all_current_tags.length; i++)
+					initCivilisation(all_current_tags[i]);
+
+				//3. onGameStart() scope parsing
 				var all_on_game_start_keys = Object.keys(main.scopes.on_game_start);
 
 				for (var i = 0; i < all_on_game_start_keys.length; i++) {

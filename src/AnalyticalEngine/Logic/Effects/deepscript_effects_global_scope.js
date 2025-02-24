@@ -1,5 +1,160 @@
 //Initialise functions
 {
+	//0.1. Variables - (Civilisation).
+	{
+		function getCivilisationFlag (arg0_civ_tag, arg1_flag_key, arg2_options) {
+			//Convert from parameters
+			var civ_tag = arg0_civ_tag;
+			var flag_key = arg1_flag_key;
+			var options = (arg2_options) ? arg2_options : {};
+
+			//Declare local instance variables
+			var current_tag = getCurrentTag(civ_tag);
+			var return_index = [];
+			var return_value;
+
+			if (main.gamestate.civilisations[current_tag])
+				if (main.gamestate.civilisations[current_tag][flag_key]) {
+					return_index = [current_tag, flag_key];
+					return_value = main.gamestate.civilisations[current_tag][flag_key];
+				}
+			if (return_value == undefined)
+				if (typeof civ_tag == "string")
+					if (!civ_tag.includes("_")) {
+						var base_tag = current_tag.split("_")[0];
+
+						if (main.gamestate.civilisations[base_tag])
+							if (main.gamestate.civilisations[base_tag][flag_key]) {
+								return_index = [base_tag, flag_key];
+								return_value = main.gamestate.civilisations[base_tag][flag_key];
+							}
+					}
+
+			//Return statement
+			return (!options.return_index) ? return_value : return_index;
+		}
+
+		function getCivilisationVariable (arg0_civ_tag, arg1_variable_key, arg2_options) {
+			//Convert from parameters
+			var civ_tag = arg0_civ_tag;
+			var variable_key = arg1_variable_key;
+			var options = (arg2_options) ? arg2_options : {};
+
+			//Declare local instance variables
+			var current_tag = getCurrentTag(civ_tag);
+			var return_index = [];
+			var return_value;
+
+			if (main.gamestate.civilisations[current_tag])
+				if (main.gamestate.civilisations[current_tag][variable_key]) {
+					return_index = [current_tag, variable_key];
+					return_value = main.gamestate.civilisations[current_tag][variable_key];
+				}
+			if (return_value == undefined)
+				if (typeof civ_tag == "string")
+					if (!civ_tag.includes("_")) {
+						var base_tag = current_tag.split("_")[0];
+
+						if (main.gamestate.civilisations[base_tag])
+							if (main.gamestate.civilisations[base_tag][variable_key]) {
+								return_index = [base_tag, variable_key];
+								return_value = main.gamestate.civilisations[base_tag][variable_key];
+							}
+					}
+
+			//Return statement
+			return (!options.return_index) ? return_value : return_index;
+		}
+
+		function setCivilisationFlag (arg0_civ_tag, arg1_flag_key) {
+			//Convert from parameters
+			var civ_tag = arg0_civ_tag;
+			var flag_key = arg1_flag_key;
+
+			//Declare local instance variables
+			var flag_index = getCivilisationFlag(civ_tag, { return_index: true });
+
+			//Set flag index
+			if (flag_index) {
+				main.gamestate.civilisations[flag_index[0]][flag_index[1]] = true;
+			} else {
+				if (typeof civ_tag == "string")
+					if (civ_tag.includes("_")) {
+						initCivilisation(civ_tag);
+						main.gamestate.civilisations[civ_tag][flag_key] = true;
+					} else {
+						var current_tag = getCurrentTag(civ_tag);
+
+						initCivilisation(current_tag);
+						main.gamestate.civilisations[current_tag][flag_key] = true;
+					}
+			}
+
+			//Return statement
+			return true;
+		}
+
+		function setCivilisationVariable (arg0_civ_tag, arg1_variable_key, arg2_value) {
+			//Convert from parameters
+			var civ_tag = arg0_civ_tag;
+			var variable_key = arg1_variable_key;
+			var value = arg2_value;
+
+			//Declare local instance variables
+			var variable_index = getCivilisationVariable(civ_tag, { return_index: true });
+
+			//Set civilisation variable
+			if (variable_index) {
+				main.gamestate.civilisations[variable_index[0]][variable_index[1]] = value;
+			} else {
+				if (typeof civ_tag == "string")
+					if (civ_tag.includes("_")) {
+						initCivilisation(civ_tag);
+						main.gamestate.civilisations[civ_tag][variable_key] = value;
+					} else {
+						var current_tag = getCurrentTag(civ_tag);
+
+						initCivilisation(current_tag);
+						main.gamestate.civilisations[civ_tag][variable_key] = value;
+					}
+			}
+
+			//Return statement
+			return value;
+		}
+
+		function removeCivilisationFlag (arg0_civ_tag, arg1_flag_key) {
+			//Convert from parameters
+			var civ_tag = arg0_civ_tag;
+			var flag_key = arg1_flag_key;
+
+			//Declare local instance variables
+			var flag_index = getCivilisationFlag(civ_tag, { return_index: true });
+
+			//Delete flag index if it exists
+			if (flag_index)
+				if (main.gamestate.civilisations[flag_index[0]])
+					delete main.gamestate.civilisations[flag_index[0]][flag_index[1]];
+
+			//Return statement
+			return false;
+		}
+
+		function removeCivilisationVariable (arg0_civ_tag, arg1_variable_key) {
+			//Convert from parameters
+			var civ_tag = arg0_civ_tag;
+			var variable_key = arg1_variable_key;
+
+			//Declare local instance variables
+			var variable_index = getCivilisationVariable(civ_tag, { return_index: true });
+
+			//Delete variable index if it exists
+			if (variable_index)
+				if (main.gamestate.civilisations[variable_index[0]])
+					delete main.gamestate.civilisations[variable_index[0]][variable_index[1]];
+		}
+	}
+
 	//1. Meta.
 	{
 		function playMusic (arg0_file_path) {
@@ -211,11 +366,42 @@
 	//7. Resource Scope Effects.
 	{
 		function resourceChangePrice (arg0_options) {
+			//Convert from parameters
+			var options = (arg0_options) ? arg0_options : {};
 
+			//Iterate over options.resource_type
+			if (!options.resource_type) options.resource_type = [];
+			for (var i = 0; i < options.resource_type.length; i++)
+				options.resource_type[i] = getResourceID(options.resource_type[i]);
+
+			options.duration = returnSafeNumber(options.duration, 1);
+			options.value = returnSafeNumber(options.value, 1);
+
+			//Execute effect from ResourcesManager
+			for (var i = 0; i < options.resource_type.length; i++)
+				ResourcesManager.setPriceChangePerc(options.resource_type[i], options.value, Game_Calendar.TURN_ID + 31*options.duration);
 		}
 
 		function resourceChangePriceGroup (arg0_options) {
+			//Convert from parameters
+			var options = (arg0_options) ? arg0_options : {};
 
+			//Initialise options
+			if (!options.resource_group) options.resource_group = [];
+
+			//Declare local instance variables
+			var resource_types = [];
+
+			//Iterate over options.resource_group
+			for (var i = 0; i < options.resource_group.length; i++)
+				resource_types = resource_types.concat(getResourceGroup(options.resource_group[i], { return_indexes: true }));
+
+			resourceChangePrice({
+				resource_type: resource_types,
+
+				duration: options.duration,
+				value: options.value
+			});
 		}
 	}
 }

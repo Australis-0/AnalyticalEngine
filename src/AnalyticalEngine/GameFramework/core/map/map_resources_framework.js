@@ -256,6 +256,35 @@
 			Math.round(resource_obj.Color[2]*255)];
 	}
 
+	/**
+	 * getResourceGroup() - Fetches all resources in a given GroupID and returns it as an array.
+	 * @param {number} arg0_resource_group_id
+	 * @param {Object} [arg1_options]
+	 *  @param {boolean} [arg1_options.return_indexes=false] - Whether to return indices instead of objects.
+	 *
+	 * @returns {Object}
+	 */
+	function getResourceGroup (arg0_resource_group_id, arg1_options) {
+		//Convert from parameters
+		var resource_group_id = returnSafeNumber(arg0_resource_group_id);
+		var options = (arg1_options) ? arg1_options : {};
+
+		//Declare local instance variables
+		var all_resources = getAllResources();
+		var resources_in_group = [];
+
+		//Iterate over all_resources
+		for (var i = 0; i < all_resources.length; i++) {
+			var local_resource = all_resources[i];
+
+			if (local_resource.GroupID == resource_group_id)
+				resources_in_group.push((!options.return_indexes) ? local_resource : i);
+		}
+
+		//Return statement
+		return resources_in_group;
+	}
+
 	function getResourceID (arg0_resource_name) {
 		//Convert from parameters
 		var resource_name = arg0_resource_name;
@@ -268,7 +297,7 @@
 		for (var i = 0; i < all_resources.length; i++)
 			if (all_resources[i].Name == resource_obj.Name)
 				//Return statement
-				return  i;
+				return i;
 	}
 
 	function setProvinceResource (arg0_province_id, arg1_resource_name) {
