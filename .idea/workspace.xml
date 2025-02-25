@@ -10,7 +10,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09b6f7f8-b868-43e9-b471-ac1dbd15fa3b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/AOC3-Source.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/AOC3-Source.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Java/MPCompatibility/AnalyticalEngine_MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Java/MPCompatibility/AnalyticalEngine_MainMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu$10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu$11.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu$12.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu$12.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu$13.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu$13.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu$9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

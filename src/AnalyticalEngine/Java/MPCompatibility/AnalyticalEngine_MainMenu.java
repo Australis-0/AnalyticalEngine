@@ -9,6 +9,7 @@ import aoc.kingdoms.lukasz.jakowski.Game_Calendar;
 import aoc.kingdoms.lukasz.jakowski.Renderer.Renderer;
 import aoc.kingdoms.lukasz.jakowski.SaveLoad.LoadSavedGameManager;
 import aoc.kingdoms.lukasz.jakowski.SaveLoad.SaveGameManager;
+import aoc.kingdoms.lukasz.jakowski.Steam.SteamManager;
 import aoc.kingdoms.lukasz.map.map.MapScenarios;
 import aoc.kingdoms.lukasz.menu.Colors;
 import aoc.kingdoms.lukasz.menu.Menu;
@@ -79,15 +80,6 @@ public class AnalyticalEngine_MainMenu extends Menu {
         menuElements.add(new ButtonMainTitle( "", 0, -1, this.iXPos, this.iYPos, this.iWidth, true) {
             public void buildElementHover () {
                 this.menuElementHover = getHoverAbout();
-                /*if (CFG.isDesktop()) {
-                    List<MenuElement_HoverElement> nElements = new ArrayList();
-                    List<MenuElement_HoverElement_Type> nData = new ArrayList();
-                    nData.add(new MenuElement_HoverElement_Type_Button_TextBonus("CTRL + " + Game.lang.get("ChooseAProvince"), "", Images.council, CFG.FONT_BOLD_SMALL, CFG.FONT_BOLD_SMALL, Colors.HOVER_GOLD, Colors.HOVER_GOLD));
-                    nElements.add(new MenuElement_HoverElement(nData));
-                    nData.clear();
-                } else {
-                    this.menuElementHover = null;
-                }*/
             }
         });
         int buttonY = this.iYPos + ImageManager.getImage(Images.mainTitle).getHeight() + paddingTopBot;
@@ -189,6 +181,20 @@ public class AnalyticalEngine_MainMenu extends Menu {
             public void actionElement () {
                 Game.menuManager.setViewID(View.EDITOR);
             }
+
+            public void buildElementHover () {
+                if (CFG.isDesktop()) {
+                    List<MenuElement_HoverElement> nElements = new ArrayList();
+                    List<MenuElement_HoverElement_Type> nData = new ArrayList();
+                    nData.add(new MenuElement_HoverElement_Type_Button_TextBonus(Game.lang.get("InstalledMods") + ": ", Integer.toString(SteamManager.modsFoldersSize), Images.technology2, CFG.FONT_REGULAR_SMALL, CFG.FONT_BOLD_SMALL, Colors.COLOR_TEXT_DESC, Colors.HOVER_GOLD));
+                    nElements.add(new MenuElement_HoverElement(nData));
+                    nData.clear();
+
+                    this.menuElementHover = new MenuElement_Hover(nElements);
+                } else {
+                    this.menuElementHover = null;
+                }
+            }
         });
         menuElements.add(new ButtonGame2(Game.lang.get("Settings"), 1, -1, this.iXPos + paddingLeft + (this.iWidth - paddingLeft * 2 - CFG.PADDING) / 2 + CFG.PADDING, buttonY, (this.iWidth - paddingLeft * 2 - CFG.PADDING) / 2, true) {
             public void actionElement () {
@@ -205,6 +211,20 @@ public class AnalyticalEngine_MainMenu extends Menu {
         menuElements.add(new ButtonGame_Image((String) null, 1, -1, this.iXPos + paddingLeft + this.iWidth - paddingLeft * 2 - statsW, buttonY, statsW, true, Images.development) {
             public void actionElement () {
                 Game.menuManager.setViewID(View.MAINMENU_STATS);
+            }
+
+            public void buildElementHover () {
+                if (CFG.isDesktop()) {
+                    List<MenuElement_HoverElement> nElements = new ArrayList();
+                    List<MenuElement_HoverElement_Type> nData = new ArrayList();
+                    nData.add(new MenuElement_HoverElement_Type_Button_TextBonus(Game.lang.get("Civilizations") + ": ", "Hall of Fame", Images.development, CFG.FONT_REGULAR_SMALL, CFG.FONT_BOLD_SMALL, Colors.COLOR_TEXT_DESC, Colors.HOVER_GOLD));
+                    nElements.add(new MenuElement_HoverElement(nData));
+                    nData.clear();
+
+                    this.menuElementHover = new MenuElement_Hover(nElements);
+                } else {
+                    this.menuElementHover = null;
+                }
             }
         });
         ((MenuElement) menuElements.get(menuElements.size() - 1)).setHeight(((MenuElement)menuElements.get(menuElements.size() - 1)).getHeight() + CFG.PADDING * 2);
