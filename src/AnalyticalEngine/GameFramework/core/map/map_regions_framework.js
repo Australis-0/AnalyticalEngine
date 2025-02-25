@@ -24,24 +24,22 @@
 			var all_provinces = getAllProvinces();
 			var province_assignments = {};
 
-			//1. Track all .geoRegion() assignments
+			//1. Track all .geoRegion assignments
 			for (var x = 0; x < all_provinces.length; x++) {
 				var region_id = all_provinces[x].getGeoRegion();
-				if (!province_assignments[region_id]) {
+
+				if (!province_assignments[region_id])
 					province_assignments[region_id] = [];
-				}
 				province_assignments[region_id].push(all_provinces[x]);
 			}
 
-			// **Step 2: Shift affected GeoRegion() values UP**
+			//2. Shift affected .geoRegion values up
 			for (var i = main.map.regions.Data.length - 1; i > options.index + 1; i--) {
-				if (province_assignments[i - 1]) { // Only shift valid regions
-					for (var j = 0; j < province_assignments[i - 1].length; j++) {
-						province_assignments[i - 1][j].setGeoRegion(i);
-					}
-				}
+				//Only shift valid regions
+				if (province_assignments[i - 1])
+					for (var x = 0; x < province_assignments[i - 1].length; x++)
+						province_assignments[i - 1][x].setGeoRegion(i);
 			}
-
 		} catch (e) {
 			console.error("Error updating province regions:", e.stack);
 		}
@@ -67,34 +65,30 @@
 			if (EditorMapGeoRegions.currentGeoRegionID < 0)
 				EditorMapGeoRegions.currentGeoRegionID = 0;
 
-			//Set all provinces previously a part of this region to have a region ID of 0
+			//Fix all provinces
 			var all_provinces = getAllProvinces();
 
-			// **Step 1: Track province assignments BEFORE deletion**
+			//1. Track all .geoRegion assignments
 			var province_assignments = {};
+
 			for (var i = 0; i < all_provinces.length; i++) {
 				var region_id = all_provinces[i].getGeoRegion();
-				if (!province_assignments[region_id]) {
+
+				if (!province_assignments[region_id])
 					province_assignments[region_id] = [];
-				}
 				province_assignments[region_id].push(all_provinces[i]);
 			}
 
-			// **Step 2: Reset deleted region's provinces to GeoRegion(0)**
-			if (province_assignments[region_index]) {
-				for (var j = 0; j < province_assignments[region_index].length; j++) {
-					province_assignments[region_index][j].setGeoRegion(0);
-				}
-			}
+			//2. Set all provinces previously a part of this region to have a region ID of 0
+			if (province_assignments[region_index])
+				for (var x = 0; x < province_assignments[region_index].length; x++)
+					province_assignments[region_index][x].setGeoRegion(0);
 
-			// **Step 3: Shift remaining GeoRegion() indices DOWN**
-			for (var i = region_index + 1; i <= main.map.regions.Data.length; i++) {
-				if (province_assignments[i]) {
-					for (var j = 0; j < province_assignments[i].length; j++) {
-						province_assignments[i][j].setGeoRegion(i - 1);
-					}
-				}
-			}
+			//3. Shift remaining .geoRegion indices down
+			for (var i = region_index + 1; i <= main.map.regions.Data.length; i++)
+				if (province_assignments[i])
+					for (var x = 0; x < province_assignments[i].length; x++)
+						province_assignments[i][x].setGeoRegion(i - 1);
 
 			//Reload in-game menus
 			reloadRegions();
@@ -190,9 +184,10 @@
 				main.map.regions.Data = moveElement(main.map.regions.Data, region_index, options.index);
 
 				try {
+					//Fix all provinces
 					var all_provinces = getAllProvinces();
 
-					// **Step 1: Track province assignments BEFORE shifting**
+					//1. Track all province assignments
 					var province_assignments = {};
 					for (var x = 0; x < all_provinces.length; x++) {
 						var region_id = all_provinces[x].getGeoRegion();
@@ -202,33 +197,25 @@
 						province_assignments[region_id].push(all_provinces[x]);
 					}
 
-					// **Step 2: Shift affected regions' `GeoRegion()` values correctly**
+					//2. Shift affected regions' .geoRegion values correctly
 					if (old_index < new_index) {
-						// Moving Down: Shift all regions in range UP
-						for (var i = old_index + 1; i <= new_index; i++) {
-							if (province_assignments[i]) {
-								for (var j = 0; j < province_assignments[i].length; j++) {
-									province_assignments[i][j].setGeoRegion(i - 1);
-								}
-							}
-						}
+						//Moving Down: Shift all regions in range up
+						for (var i = old_index + 1; i <= new_index; i++)
+							if (province_assignments[i])
+								for (var x = 0; x < province_assignments[i].length; x++)
+									province_assignments[i][x].setGeoRegion(i - 1);
 					} else {
-						// Moving Up: Shift all regions in range DOWN
-						for (var i = old_index - 1; i >= new_index; i--) {
-							if (province_assignments[i]) {
-								for (var j = 0; j < province_assignments[i].length; j++) {
-									province_assignments[i][j].setGeoRegion(i + 1);
-								}
-							}
-						}
+						//Moving Up: Shift all regions in range down
+						for (var i = old_index - 1; i >= new_index; i--)
+							if (province_assignments[i])
+								for (var x = 0; x < province_assignments[i].length; x++)
+									province_assignments[i][x].setGeoRegion(i + 1);
 					}
 
-					// **Step 3: Assign the moved region to its new index**
-					if (province_assignments[old_index]) {
-						for (var j = 0; j < province_assignments[old_index].length; j++) {
-							province_assignments[old_index][j].setGeoRegion(new_index);
-						}
-					}
+					//3. Assign the moved region to its new index
+					if (province_assignments[old_index])
+						for (var x = 0; x < province_assignments[old_index].length; x++)
+							province_assignments[old_index][x].setGeoRegion(new_index);
 				} catch (e) {
 					console.error(e.stack);
 				}
