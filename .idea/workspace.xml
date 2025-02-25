@@ -11,6 +11,7 @@
   <component name="ChangeListManager">
     <list default="true" id="09b6f7f8-b868-43e9-b471-ac1dbd15fa3b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/map/map_resources_framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/map/map_resources_framework.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/map/scenario_framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/map/scenario_framework.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Effects/deepscript_effects_global_scope.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Effects/deepscript_effects_global_scope.js" afterDir="false" />
     </list>
@@ -227,7 +228,7 @@
       <workItem from="1737726277969" duration="115573000" />
       <workItem from="1738769995531" duration="204780000" />
       <workItem from="1740050015199" duration="18824000" />
-      <workItem from="1740394083536" duration="6646000" />
+      <workItem from="1740394083536" duration="5056000" />
     </task>
     <servers />
   </component>
