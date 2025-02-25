@@ -155,6 +155,152 @@
 		}
 	}
 
+	//0.2. Variables - (Global).
+	{
+		function getGlobalFlag (arg0_flag_key) {
+			//Convert from parameters
+			var flag_key = arg0_flag_key;
+
+			//Return statement
+			return main.gamestate.global[flag_key];
+		}
+
+		function getGlobalVariable (arg0_variable_key) {
+			//Convert from parameters
+			var variable_key = arg0_variable_key;
+
+			//Return statement
+			return main.gamestate.global[variable_key];
+		}
+
+		function setGlobalFlag (arg0_flag_key) {
+			//Convert from parameters
+			var flag_key = arg0_flag_key;
+
+			//Set flag
+			main.gamestate.global[flag_key] = true;
+
+			//Return statement
+			return true;
+		}
+
+		function setGlobalVariable (arg0_variable_key, arg1_value) {
+			//Convert from parameters
+			var variable_key = arg0_variable_key;
+			var value = arg1_value;
+
+			//Set variable
+			main.gamestate.global[variable_key] = value;
+
+			//Return statement
+			return value;
+		}
+
+		function removeGlobalFlag (arg0_flag_key) {
+			//Convert from parameters
+			var flag_key = arg0_flag_key;
+
+			//Delete flag
+			delete main.gamestate.global[flag_key];
+		}
+
+		function removeGlobalVariable (arg0_variable_key) {
+			//Convert from parameters
+			var variable_key = arg0_variable_key;
+
+			//Delete flag
+			delete main.gamestate.global[variable_key];
+		}
+	}
+
+	//0.3. Variables - (Province).
+	{
+		function getProvinceFlag (arg0_province, arg1_flag_key) {
+			//Convert from parameters
+			var province = arg0_province;
+			var flag_key = arg1_flag_key;
+
+			//Declare local instance variables
+			var province_id = getProvince(province).getProvinceID();
+			var province_obj = main.gamestate.provinces[province_id];
+
+			//Return statement
+			return province_obj[flag_key];
+		}
+
+		function getProvinceVariable (arg0_province, arg1_variable_key) {
+			//Convert from parameters
+			var province = arg0_province;
+			var variable_key = arg1_variable_key;
+
+			//Declare local instance variables
+			var province_id = getProvince(province).getProvinceID();
+			var province_obj = main.gamestate.provinces[province_id];
+
+			//Return statement
+			return province_obj[variable_key];
+		}
+
+		function removeProvinceFlag (arg0_province, arg1_flag_key) {
+			//Convert from parameters
+			var province = arg0_province;
+			var flag_key = arg1_flag_key;
+
+			//Declare local instance variables
+			var province_id = getProvince(province).getProvinceID();
+			var province_obj = main.gamestate.provinces[province_id];
+
+			//Delete flag
+			delete province_obj[flag_key];
+		}
+
+		function removeProvinceVariable (arg0_province, arg1_variable_key) {
+			//Convert from parameters
+			var province = arg0_province;
+			var variable_key = arg1_variable_key;
+
+			//Declare local instance variables
+			var province_id = getProvince(province).getProvinceID();
+			var province_obj = main.gamestate.provinces[province_id];
+
+			//Delete variable
+			delete province_obj[variable_key];
+		}
+
+		function setProvinceFlag (arg0_province, arg1_flag_key) {
+			//Convert from parameters
+			var province = arg0_province;
+			var flag_key = arg1_flag_key;
+
+			//Declare local instance variables
+			var province_id = getProvince(province).getProvinceID();
+			var province_obj = main.gamestate.provinces[province_id];
+
+			//Set flag
+			province_obj[flag_key] = true;
+
+			//Return statement
+			return true;
+		}
+
+		function setProvinceVariable (arg0_province, arg1_variable_key, arg2_value) {
+			//Convert from parameters
+			var province = arg0_province;
+			var variable_key = arg1_variable_key;
+			var value = arg2_value;
+
+			//Declare local instance variables
+			var province_id = getProvince(province).getProvinceID();
+			var province_obj = main.gamestate.provinces[province_id];
+
+			//Set variable
+			province_obj[variable_key] = value;
+
+			//Return statement
+			return value;
+		}
+	}
+
 	//1. Meta.
 	{
 		function playMusic (arg0_file_path) {

@@ -57,11 +57,16 @@
 					provinces: {}
 				};
 
+				//Civilisations Scope
 				//Iterate over all_current_tags
 				var all_current_tags = getAllCurrentCivTags();
 
 				for (var i = 0; i < all_current_tags.length; i++)
 					initCivilisation(all_current_tags[i]);
+
+				//Provinces Scope
+				for (var i = 0; i < Game.iNumOfProvinces; i++)
+					main.gamestate.provinces[getProvince(i).getProvinceID()] = {};
 
 				//3. onGameStart() scope parsing
 				var all_on_game_start_keys = Object.keys(main.scopes.on_game_start);
