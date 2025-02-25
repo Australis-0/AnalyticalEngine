@@ -68,12 +68,14 @@ public class SiegeManager {
                 iProvincesSize = lProvinces.size();
                 Game.getProvinceData4(nProvinceID).setIsUnderSiege_Just(false);
 
+                //ANALYTICALENGINE START
                 Invocable invocable = (Invocable) AnalyticalEngine.AnalyticalEngine.nashorn;
                 try {
                     invocable.invokeFunction("parseOnSiege", nProvinceID);
                 } catch (ScriptException | NoSuchMethodException e) {
                     e.printStackTrace();
                 }
+                //ANALYTICALENGINE END
 
                 return;
             }

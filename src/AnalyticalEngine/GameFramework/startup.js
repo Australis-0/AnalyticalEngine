@@ -31,6 +31,9 @@ setTimeout(function(){
 		initialiseProvinceResourceEditorEventHandlers();
 		initialiseProvinceTerrainEditorEventHandlers();
 
+		//Initialise Save/Load functionality
+		initialiseGameSaveLoad();
+
 		//Load Mods
 		loadMods();
 	}, 3000);

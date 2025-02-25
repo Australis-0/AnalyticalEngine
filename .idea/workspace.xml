@@ -10,22 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09b6f7f8-b868-43e9-b471-ac1dbd15fa3b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/ABRS/game_save_load.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Java/OnActions/LoadSavedGameManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Java/OnActions/SaveGameManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Java/MPCompatibility/AnalyticalEngine_MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Java/MPCompatibility/AnalyticalEngine_MainMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu$10.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu$11.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu$12.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu$12.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu$13.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu$13.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu$8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu$9.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/AnalyticalEngine_MainMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/global_initialisation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/global_initialisation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/startup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/startup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Java/OnActions/SiegeManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Java/OnActions/SiegeManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Scopes/deepscript_scopes_on_actions_menu_interactions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Scopes/deepscript_scopes_on_actions_menu_interactions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mods/11.59/languages/Bundle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/languages/Bundle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/statistics/usa_o.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/statistics/usa_o.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/map/SiegeManager$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/map/SiegeManager$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/map/SiegeManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/map/SiegeManager.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
