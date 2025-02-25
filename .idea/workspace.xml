@@ -10,10 +10,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09b6f7f8-b868-43e9-b471-ac1dbd15fa3b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Java/MPCompatibility/AnalyticalEngine_Button_LoadGame_MainMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Java/MPCompatibility/AnalyticalEngine_MainMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/map/map_resources_framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/map/map_resources_framework.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/map/scenario_framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/map/scenario_framework.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Effects/deepscript_effects_global_scope.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Effects/deepscript_effects_global_scope.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Java/MPCompatibility/MapScenarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Java/MPCompatibility/MapScenarios.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Java/MenuManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Java/MenuManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/statistics/usa_o.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/statistics/usa_o.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/map/map/MapScenarios.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/map/map/MapScenarios.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menu/MenuManager$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menu/MenuManager$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menu/MenuManager$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menu/MenuManager$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menu/MenuManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menu/MenuManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusScenarioEditor/ScenarioAssign$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusScenarioEditor/ScenarioAssign$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusScenarioEditor/ScenarioCivilizations$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusScenarioEditor/ScenarioCivilizations$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusScenarioEditor/Wasteland/ScenarioWasteland$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusScenarioEditor/Wasteland/ScenarioWasteland$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusScenarioEditor/Wasteland/ScenarioWastelandContinents$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/menusScenarioEditor/Wasteland/ScenarioWastelandContinents$1.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

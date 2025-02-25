@@ -732,7 +732,7 @@ public class MapScenarios {
         scenarioEditorDetails.ProvinceDefault_TaxEfficiency = ((Details)this.details.get(Game.scenarioID)).ProvinceDefault_TaxEfficiency;
         scenarioEditorDetails.ProvinceDefault_Manpower = ((Details)this.details.get(Game.scenarioID)).ProvinceDefault_Manpower;
         Game.SCENARIO_EVENTS = true;
-        Game.HOURS_PER_TURN = Math.max(1, Math.min(24, ((Details)this.details.get(Game.scenarioID)).HoursPerTurn));
+        Game.HOURS_PER_TURN = ((Details) this.details.get(Game.scenarioID)).HoursPerTurn;
     }
 
     public final void loadScenario_2() {

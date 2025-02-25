@@ -5,6 +5,7 @@
 
 package aoc.kingdoms.lukasz.menu;
 
+import AnalyticalEngine.AnalyticalEngine_MainMenu;
 import aoc.kingdoms.lukasz.events.Event;
 import aoc.kingdoms.lukasz.jakowski.AA_KeyManager;
 import aoc.kingdoms.lukasz.jakowski.CFG;
@@ -677,10 +678,10 @@ public class MenuManager {
                     return this.LOAD_STUFF;
                 case MAINMENU:
                     if (this.MAINMENU == -1) {
-                        this.MAINMENU = this.addMenu(new MainMenu());
+                        this.MAINMENU = this.addMenu(new AnalyticalEngine_MainMenu());
                     } else {
                         ((Menu)((List)this.menus.get(this.MAINMENU)).get(0)).setVisible(false);
-                        ((List)this.menus.get(this.MAINMENU)).set(0, new MainMenu());
+                        ((List)this.menus.get(this.MAINMENU)).set(0, new AnalyticalEngine_MainMenu());
                     }
 
                     return this.MAINMENU;
