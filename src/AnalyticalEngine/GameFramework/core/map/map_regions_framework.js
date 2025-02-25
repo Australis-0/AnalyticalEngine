@@ -97,6 +97,11 @@
 		}
 	}
 
+	/**
+	 * getAllRegions()  - Returns an Object Array of all regions currently loaded into the game.
+	 *
+	 * @returns {Array<Object>}
+	 */
 	function getAllRegions () {
 		//Return statement
 		return main.map.regions.Data;

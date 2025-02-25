@@ -1,0 +1,41 @@
+{
+  Army: [
+    {
+      File: "Warior.json",
+      ID: 0,
+
+      Line: 0,
+    },
+    {
+      File: "Spearmen.json",
+      ID: 1,
+
+      Line: 0,
+    },
+    {
+      File: "Cavalry.json",
+      ID: 2,
+
+      Line: 1,
+    },
+    {
+      File: "Archer.json",
+      ID: 3,
+
+      Line: 2,
+    },
+    {
+      File: "Canon.json",
+      ID: 4,
+
+      Line: 2,
+    },
+    {
+      File: "Fighter.json",
+      ID: 5,
+
+      Line: 1,
+    }
+  ],
+  Age_of_History: Army
+}
