@@ -34,6 +34,27 @@
 			return (!options.return_index) ? return_value : return_index;
 		}
 
+		function getCivilisationFlags (arg0_civ_tags, arg1_flag_key, arg2_options) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var flag_key = arg1_flag_key;
+			var options = (arg2_options) ? arg2_options : {};
+
+			//Declare local instance variables
+			var return_array = [];
+
+			//Iterate over civ_tags
+			for (var i = 0; i < civ_tags.length; i++)
+				civ_tags[i] = getCurrentTag(civ_tags[i]);
+
+			//Populate return_array; iterate over all civ_tags
+			for (var i = 0; i < civ_tags.length; i++)
+				return_array.push(getCivilisationFlag(civ_tags[i], flag_key, options));
+
+			//Return statement
+			return return_array;
+		}
+
 		function getCivilisationVariable (arg0_civ_tag, arg1_variable_key, arg2_options) {
 			//Convert from parameters
 			var civ_tag = arg0_civ_tag;
@@ -66,6 +87,27 @@
 			return (!options.return_index) ? return_value : return_index;
 		}
 
+		function getCivilisationVariables (arg0_civ_tags, arg1_variable_key, arg2_options) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var variable_key = arg1_variable_key;
+			var options = (arg2_options) ? arg2_options : {};
+
+			//Declare local instance variables
+			var return_array = [];
+
+			//Iterate over civ_tags
+			for (var i = 0; i < civ_tags.length; i++)
+				civ_tags[i] = getCurrentTag(civ_tags[i]);
+
+			//Populate return_array; iterate over all civ_tags
+			for (var i = 0; i < civ_tags.length; i++)
+				return_array.push(getCivilisationVariable(civ_tags[i], variable_key, options));
+
+			//Return statement
+			return return_array;
+		}
+
 		function setCivilisationFlag (arg0_civ_tag, arg1_flag_key) {
 			//Convert from parameters
 			var civ_tag = arg0_civ_tag;
@@ -89,6 +131,23 @@
 						main.gamestate.civilisations[current_tag][flag_key] = true;
 					}
 			}
+
+			//Return statement
+			return true;
+		}
+
+		function setCivilisationFlags (arg0_civ_tags, arg1_flag_key) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var flag_key = arg1_flag_key;
+
+			//Iterate over all civ_tags
+			for (var i = 0; i < civ_tags.length; i++)
+				civ_tags[i] = getCurrentTag(civ_tags[i]);
+
+			//Set flag
+			for (var i = 0; i < civ_tags.length; i++)
+				setCivilisationFlag(civ_tags[i], flag_key);
 
 			//Return statement
 			return true;
@@ -123,6 +182,24 @@
 			return value;
 		}
 
+		function setCivilisationVariables (arg0_civ_tags, arg1_variable_key, arg2_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var variable_key = arg1_variable_key;
+			var value = getList(arg2_value);
+
+			//Iterate over all civ_tags
+			for (var i = 0; i < civ_tags.length; i++)
+				civ_tags[i] = getCurrentTag(civ_tags[i]);
+
+			//Set variables
+			for (var i = 0; i < civ_tags.length; i++)
+				setCivilisationVariable(civ_tags[i], variable_key, value);
+
+			//Return statement
+			return value;
+		}
+
 		function removeCivilisationFlag (arg0_civ_tag, arg1_flag_key) {
 			//Convert from parameters
 			var civ_tag = arg0_civ_tag;
@@ -140,6 +217,23 @@
 			return false;
 		}
 
+		function removeCivilisationFlags (arg0_civ_tags, arg1_flag_key) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var flag_key = arg1_flag_key;
+
+			//Iterate over civ_tags
+			for (var i = 0; i < civ_tags.length; i++)
+				civ_tags[i] = getCurrentTag(civ_tags[i]);
+
+			//Remove flags
+			for (var i = 0; i < civ_tags.length; i++)
+				removeCivilisationFlag(civ_tags[i], flag_key);
+
+			//Return statement
+			return false;
+		}
+
 		function removeCivilisationVariable (arg0_civ_tag, arg1_variable_key) {
 			//Convert from parameters
 			var civ_tag = arg0_civ_tag;
@@ -152,6 +246,315 @@
 			if (variable_index)
 				if (main.gamestate.civilisations[variable_index[0]])
 					delete main.gamestate.civilisations[variable_index[0]][variable_index[1]];
+		}
+
+		function removeCivilisationVariables (arg0_civ_tags, arg1_variable_key) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var variable_key = arg1_variable_key;
+
+			//Iterate over civ_tags
+			for (var i = 0; i < civ_tags.length; i++)
+				civ_tags[i] = getCurrentTag(civ_tags[i]);
+
+			//Remove variables
+			for (var i = 0; i < civ_tags.length; i++)
+				removeCivilisationVariable(civ_tags[i], variable_key);
+
+			//Return statement
+			return false;
+		}
+	}
+
+	//0.2. Variables - (Global).
+	{
+		function getGlobalFlag (arg0_flag_key) {
+			//Convert from parameters
+			var flag_key = arg0_flag_key;
+
+			//Return statement
+			return main.gamestate.global[flag_key];
+		}
+
+		function getGlobalFlags (arg0_flag_keys) {
+			//Convert from parameters
+			var flag_keys = getList(arg0_flag_keys);
+
+			//Declare local instance variables
+			var return_array = [];
+
+			//Iterate over all flag_keys
+			for (var i = 0; i < flag_keys.length; i++)
+				return_array.push(getGlobalFlag(flag_keys[i]));
+
+			//Return statement
+			return return_array;
+		}
+
+		function getGlobalVariable (arg0_variable_key) {
+			//Convert from parameters
+			var variable_key = arg0_variable_key;
+
+			//Return statement
+			return main.gamestate.global[variable_key];
+		}
+
+		function getGlobalVariables (arg0_variable_keys) {
+			//Convert from variables
+			var variable_keys = getList(arg0_variable_keys);
+
+			//Declare local instance variables
+			var return_array = [];
+
+			//Iterate over all variable_keys
+			for (var i = 0; i < variable_keys.length; i++)
+				return_array.push(getGlobalVariable(variable_keys[i]));
+
+			//Return statement
+			return return_array;
+		}
+
+		function setGlobalFlag (arg0_flag_key) {
+			//Convert from parameters
+			var flag_key = arg0_flag_key;
+
+			//Set flag
+			main.gamestate.global[flag_key] = true;
+
+			//Return statement
+			return true;
+		}
+
+		function setGlobalFlags (arg0_flag_keys) {
+			//Convert from parameters
+			var flag_keys = getList(arg0_flag_keys);
+
+			//Set flags
+			for (var i = 0; i < flag_keys.length; i++)
+				setGlobalFlag(flag_keys[i]);
+
+			//Return statement
+			return true;
+		}
+
+		function setGlobalVariable (arg0_variable_key, arg1_value) {
+			//Convert from parameters
+			var variable_key = arg0_variable_key;
+			var value = arg1_value;
+
+			//Set variable
+			main.gamestate.global[variable_key] = value;
+
+			//Return statement
+			return value;
+		}
+
+		function setGlobalVariables (arg0_variable_keys, arg1_value) {
+			//Convert from parameters
+			var variable_keys = getList(arg0_variable_keys);
+			var value = arg1_value;
+
+			//Set global variables
+			for (var i = 0; i < variable_keys.length; i++)
+				setGlobalVariable(variable_keys[i]);
+
+			//Return statement
+			return true;
+		}
+
+		function removeGlobalFlag (arg0_flag_key) {
+			//Convert from parameters
+			var flag_key = arg0_flag_key;
+
+			//Delete flag
+			delete main.gamestate.global[flag_key];
+		}
+
+		function removeGlobalFlags (arg0_flag_keys) {
+			//Convert from parameters
+			var flag_keys = getList(arg0_flag_keys);
+
+			//Delete flags
+			for (var i = 0; i < flag_keys.length; i++)
+				removeGlobalFlag(flag_keys[i]);
+		}
+
+		function removeGlobalVariable (arg0_variable_key) {
+			//Convert from parameters
+			var variable_key = arg0_variable_key;
+
+			//Delete flag
+			delete main.gamestate.global[variable_key];
+		}
+
+		function removeGlobalVariables (arg0_variable_keys) {
+			//Convert from parameters
+			var variable_keys = getList(arg0_variable_keys);
+
+			//Delete flags
+			for (var i = 0; i < variable_keys.length; i++)
+				removeGlobalVariable(variable_keys[i]);
+		}
+	}
+
+	//0.3. Variables - (Province).
+	{
+		function getProvinceFlag (arg0_province, arg1_flag_key) {
+			//Convert from parameters
+			var province = arg0_province;
+			var flag_key = arg1_flag_key;
+
+			//Declare local instance variables
+			var province_id = getProvince(province).getProvinceID();
+			var province_obj = main.gamestate.provinces[province_id];
+
+			//Return statement
+			return province_obj[flag_key];
+		}
+
+		function getProvinceFlags (arg0_provinces, arg1_flag_key) {
+			//Convert from parameters
+			var provinces = getList(arg0_provinces);
+			var flag_key = arg1_flag_key;
+
+			//Declare local instance variables
+			var return_array = [];
+
+			//Iterate over provinces
+			for (var i = 0; i < provinces.length; i++)
+				return_array.push(getProvinceFlag(provinces[i], flag_key));
+
+			//Return statement
+			return return_array;
+		}
+
+		function getProvinceVariable (arg0_province, arg1_variable_key) {
+			//Convert from parameters
+			var province = arg0_province;
+			var variable_key = arg1_variable_key;
+
+			//Declare local instance variables
+			var province_id = getProvince(province).getProvinceID();
+			var province_obj = main.gamestate.provinces[province_id];
+
+			//Return statement
+			return province_obj[variable_key];
+		}
+
+		function getProvinceVariables (arg0_provinces, arg1_variable_key) {
+			//Convert from parameters
+			var provinces = getList(arg0_provinces);
+			var variable_key = arg1_variable_key;
+
+			//Declare local instance variables
+			var return_array = [];
+
+			//Iterate over provinces
+			for (var i = 0; i < provinces.length; i++)
+				return_array.push(getProvinceVariable(provinces[i], variable_key));
+
+			//Return statement
+			return return_array;
+		}
+
+		function removeProvinceFlag (arg0_province, arg1_flag_key) {
+			//Convert from parameters
+			var province = arg0_province;
+			var flag_key = arg1_flag_key;
+
+			//Declare local instance variables
+			var province_id = getProvince(province).getProvinceID();
+			var province_obj = main.gamestate.provinces[province_id];
+
+			//Delete flag
+			delete province_obj[flag_key];
+		}
+
+		function removeProvinceFlags (arg0_provinces, arg1_flag_key) {
+			//Convert from parameters
+			var provinces = getList(arg0_provinces);
+			var flag_key = arg1_flag_key;
+
+			//Delete flags
+			for (var i = 0; i < provinces.length; i++)
+				removeProvinceFlag(provinces[i], flag_key);
+		}
+
+		function removeProvinceVariable (arg0_province, arg1_variable_key) {
+			//Convert from parameters
+			var province = arg0_province;
+			var variable_key = arg1_variable_key;
+
+			//Declare local instance variables
+			var province_id = getProvince(province).getProvinceID();
+			var province_obj = main.gamestate.provinces[province_id];
+
+			//Delete variable
+			delete province_obj[variable_key];
+		}
+
+		function removeProvinceVariables (arg0_provinces, arg1_variable_key) {
+			//Convert from parameters
+			var provinces = getList(arg0_provinces);
+			var variable_key = arg1_variable_key;
+
+			//Delete variables
+			for (var i = 0; i < provinces.length; i++)
+				removeProvinceVariable(provinces[i], variable_key);
+		}
+
+		function setProvinceFlag (arg0_province, arg1_flag_key) {
+			//Convert from parameters
+			var province = arg0_province;
+			var flag_key = arg1_flag_key;
+
+			//Declare local instance variables
+			var province_id = getProvince(province).getProvinceID();
+			var province_obj = main.gamestate.provinces[province_id];
+
+			//Set flag
+			province_obj[flag_key] = true;
+
+			//Return statement
+			return true;
+		}
+
+		function setProvinceFlags (arg0_provinces, arg1_flag_key) {
+			//Convert from parameters
+			var provinces = getList(arg0_provinces);
+			var flag_key = arg1_flag_key;
+
+			//Set province flags
+			for (var i = 0; i < provinces.length; i++)
+				setProvinceFlag(provinces[i], flag_key);
+		}
+
+		function setProvinceVariable (arg0_province, arg1_variable_key, arg2_value) {
+			//Convert from parameters
+			var province = arg0_province;
+			var variable_key = arg1_variable_key;
+			var value = arg2_value;
+
+			//Declare local instance variables
+			var province_id = getProvince(province).getProvinceID();
+			var province_obj = main.gamestate.provinces[province_id];
+
+			//Set variable
+			province_obj[variable_key] = value;
+
+			//Return statement
+			return value;
+		}
+
+		function setProvinceVariables (arg0_provinces, arg1_variable_key, arg2_value) {
+			//Convert from parameters
+			var provinces = getList(arg0_provinces);
+			var variable_key = arg1_variable_key;
+			var value = arg2_value;
+
+			//Iterate over all provinces
+			for (var i = 0; i < provinces.length; i++)
+				setProvinceVariable(provinces[i], variable_key, value);
 		}
 	}
 
