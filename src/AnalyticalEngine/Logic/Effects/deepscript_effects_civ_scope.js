@@ -388,7 +388,7 @@
 
 			//Iterate over options.provinces
 			for (var i = 0; i < options.provinces.length; i++) {
-				var local_province = getProvince(province_armies);
+				var local_province = getProvince(options.provinces[i]);
 				var province_armies = getProvinceArmies(local_province);
 
 				//Iterate over all province_armies
@@ -431,7 +431,7 @@
 
 			//Iterate over options.provinces
 			for (var i = 0; i < options.provinces.length; i++) {
-				var local_province = getProvince(province_armies);
+				var local_province = getProvince(options.provinces[i]);
 				var province_armies = getProvinceArmies(local_province);
 
 				//Iterate over all province_armies
