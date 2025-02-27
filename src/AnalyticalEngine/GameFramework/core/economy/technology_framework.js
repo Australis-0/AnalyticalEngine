@@ -95,11 +95,10 @@
 		return (technology_exists[0]) ? technology_exists[1] : undefined;
 	}
 
-	function instantResearch (arg0_civ_tag, arg1_technology_name, arg2_options) {
+	function instantResearch (arg0_civ_tag, arg1_technology_name) {
 		//Convert from parameters
 		var civ_tag = arg0_civ_tag;
 		var technology_name = arg1_technology_name;
-		var options = (arg2_options) ? arg2_options : {};
 
 		//Declare local instance variables
 		var civ_obj = getCivilisation(civ_tag);

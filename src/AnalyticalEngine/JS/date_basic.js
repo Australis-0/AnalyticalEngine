@@ -31,6 +31,22 @@
 		return days;
 	}
 
+	function daysInTotalMonths (arg0_date_object, arg1_months) {
+		//Convert from parameters
+		var date_obj = (arg0_date_object) ? arg0_date_object : {};
+		var months = returnSafeNumber(arg1_months);
+
+		//Declare local instance variables
+		var total_days = 0;
+
+		//Iterate over months
+		for (var i = date_obj.month; i < months + date_obj.month; i++)
+			total_days += days_in_months[months % 12];
+
+		//Return statement
+		return total_days;
+	}
+
 	/**
 	 * getBlankDate() - Returns a blank date where zero time has elapsed.
 	 *

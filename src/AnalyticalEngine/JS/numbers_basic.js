@@ -148,7 +148,17 @@
 		var random_id = randomNumber(0, 100000000000).toString();
 
 		//Check if input_object is defined
-		if (typeof input_object == "object") {
+		if (Array.isArray(input_object)) {
+			while (true) {
+				var local_id = generateRandomID();
+
+				//Return and break once a true ID is found
+				if (!input_object.includes(local_id)) {
+					return local_id;
+					break;
+				}
+			}
+		} else if (typeof input_object == "object") {
 			while (true) {
 				var local_id = generateRandomID();
 

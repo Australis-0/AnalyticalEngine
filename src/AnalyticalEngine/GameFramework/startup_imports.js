@@ -12,6 +12,7 @@
 	this.Callable = Java.type("java.util.concurrent.Executor");
 	this.CFG = Java.type("aoc.kingdoms.lukasz.jakowski.CFG");
 	this.Civilization = Java.type("aoc.kingdoms.lukasz.map.civilization.Civilization");
+	this.CivilizationBonuses = Java.type("aoc.kingdoms.lukasz.map.civilization.CivilizationBonuses");
 	this.CivilizationRegionsManager = Java.type("aoc.kingdoms.lukasz.map.civilization.CivilizationRegionsManager");
 	this.classLoader = classLoader;
 	this.Color = Java.type("com.badlogic.gdx.graphics.Color");
