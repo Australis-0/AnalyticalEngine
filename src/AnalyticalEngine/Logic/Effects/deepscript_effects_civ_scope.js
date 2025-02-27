@@ -405,5 +405,44 @@
 					}
 			}
 		}
+
+		function civilisationExpandArmy (arg0_civ_tags, arg1_options) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var options = (arg1_options) ? arg1_options : {};
+
+			//Initialise options
+			if (!options.provinces) {
+				options.provinces = getAllProvinces();
+			} else {
+				options.provinces = getList(options.provinces);
+
+				for (var i = 0; i < options.provinces.length; i++)
+					options.provinces[i] = getProvince(options.provinces[i]);
+			}
+			options.value = returnSafeNumber(options.value, 1);
+
+			//Declare local instance variables
+			var civ_ids = [];
+
+			//Iterate over all civ_tags
+			for (var i = 0; i < civ_tags.length; i++)
+				civ_ids.push(getCivilisationID(civ_tags[i]));
+
+			//Iterate over options.provinces
+			for (var i = 0; i < options.provinces.length; i++) {
+				var local_province = getProvince(province_armies);
+				var province_armies = getProvinceArmies(local_province);
+
+				//Iterate over all province_armies
+				for (var x = 0; x < province_armies.length; x++)
+					if (civ_ids.includes(province_armies[x].civID))
+						for (var y = 0; y <  province_armies[x].lArmyRegiment.size(); y++) {
+							var local_army_regiment = province_armies[x].lArmyRegiment.get(y);
+
+							local_army_regiment.num = new Integer(local_army_regiment.num*options.value);
+						}
+			}
+		}
 	}
 }

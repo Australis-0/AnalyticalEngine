@@ -10,11 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09b6f7f8-b868-43e9-b471-ac1dbd15fa3b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/military/units_framework.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/military/generals_framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/military/generals_framework.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/provinces/province_framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/provinces/province_framework.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/startup_imports.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/startup_imports.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/military/military_framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/military/military_framework.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Effects/deepscript_effects_civ_scope.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Effects/deepscript_effects_civ_scope.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
