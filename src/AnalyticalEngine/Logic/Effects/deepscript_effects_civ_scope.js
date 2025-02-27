@@ -238,6 +238,172 @@
 
 	//Military.
 	{
-		
+		function civilisationAddGeneral (arg0_civ_tags, arg1_options) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var options = (arg1_options) ? arg1_options : {};
+
+			//Initialise options
+			options.bonus_attack = returnSafeNumber(options.bonus_attack);
+			options.bonus_defence = returnSafeNumber(options.bonus_defence);
+
+			//Load general from file
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ_id = getCivilisationID(civ_tags[i]);
+				var local_file = options.file.replace(".json", "").replace(".JSON", "");
+
+				CharactersManager.loadGeneral(local_civ_id, local_file, new Integer(options.bonus_attack), new Integer(options.bonus_defence));
+			}
+		}
+
+		function civilisationAddGenerals (arg0_civ_tags, arg1_value) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var value = returnSafeNumber(arg1_value);
+
+			//Iterate over all civ_tags
+			for (var i = 0; i < civ_tags.length; i++) {
+				var local_civ = getCivilisation(civ_tags[i]);
+
+				for (var x = 0; x < value; x++)
+					local_civ.addGeneral(CivilizationGeneralsPool.getGeneral_Random(local_civ.getCivID()));
+			}
+		}
+
+		function civilisationCreateArmy (arg0_civ_tags, arg1_options) { //[WIP] - Finish function body
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var options = (arg1_options) ? arg1_options : {};
+
+			//Declare local instance variables
+			var all_armies = [];
+			var all_options_keys = Object.keys(options);
+			var keywords_dictionary = ["general", "name", "provinces"];
+			var units_obj = getUnitsObject();
+
+			//Instantiate armies belonging to civ_tags
+			if (options.provinces)
+				for (var i = 0; i < options.provinces.length; i++) {
+					var local_province = getProvince(options.provinces[i]);
+					var local_province_id = local_province.getProvinceID();
+
+					for (var x = 0; x < civ_tags.length; x++) {
+						//Create new ArmyDivision
+						var local_civ_id = getCivilisationID(civ_tags[x]);
+						var local_general;
+						var local_regiments = new ArrayList();
+
+						//Populate local_general
+						if (typeof options.general == "string") {
+							local_general = getGeneral(local_general);
+						} else if (typeof options.general == "object") {
+							try {
+								if (!options.general.name) options.general.name = "";
+								options.general.attack = returnSafeNumber(options.general.attack);
+								options.general.defence = returnSafeNumber(options.general.defence);
+								if (!options.general.year_of_birth) options.general.year_of_birth = getCurrentDate().year;
+								options.general.image_file = "";
+								options.general.image_id = returnSafeNumber(options.general.image_id);
+
+								local_general = new ArmyGeneral(
+									options.general.name,
+									options.general.attack,
+									options.general.defence,
+									options.general.year_of_birth,
+
+									options.general.image_file,
+									options.general.image_id
+								);
+							} catch (e) {}
+						}
+
+						//Iterate over all_options_keys to fetch unit types
+						for (var y = 0; y < all_options_keys.length; y++)
+							if (!keywords_dictionary.includes(all_options_keys[y])) {
+								var local_unit_key = getUnit(all_options_keys[y], { return_key: true });
+								var local_unit_index = units_obj[local_unit_key];
+
+								var local_regiment = new ArmyRegiment(local_unit_index[1], local_unit_index[0]);
+
+								//Add local_regiment
+								local_regiments.add(local_regiment);
+							}
+
+						//Create new ArmyDivision
+						var local_army;
+
+						try {
+							if (local_general) {
+								local_army = new ArmyDivision(
+									local_civ_id, //(nCivID)
+									local_province_id, //(nProvinceID)
+									local_regiments, //(nArmyRegiment)
+									local_general //(armyGeneral)
+								);
+							} else {
+								local_army = new ArmyDivision(
+									local_civ_id, //(nCivID)
+									local_province_id, //(nProvinceID)
+									local_regiments //(nArmyRegiment)
+								);
+							}
+						} catch (e) {
+							console.log(e.stack);
+						}
+
+						//Add local_army
+						if (local_army) {
+							local_province.addArmy(local_army);
+							all_armies.push(local_army);
+						}
+					}
+				}
+
+			//Return statement
+			return all_armies;
+		}
+
+		function civilisationDisbandArmy (arg0_civ_tags, arg1_options) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var options = (arg1_options) ? arg1_options : {};
+
+			//Initialise options
+			if (!options.provinces) {
+				options.provinces = getAllProvinces();
+			} else {
+				options.provinces = getList(options.provinces);
+
+				for (var i = 0; i < options.provinces.length; i++)
+					options.provinces[i] = getProvince(options.provinces[i]);
+			}
+			options.value = returnSafeNumber(options.value);
+
+			//Declare local instance variables
+			var civ_ids = [];
+
+			//Iterate over all civ_tags
+			for (var i = 0; i < civ_tags.length; i++)
+				civ_ids.push(getCivilisationID(civ_tags[i]));
+
+			//Iterate over options.provinces
+			for (var i = 0; i < options.provinces.length; i++) {
+				var local_province = getProvince(province_armies);
+				var province_armies = getProvinceArmies(local_province);
+
+				//Iterate over all province_armies
+				for (var x = 0; x < province_armies.length; x++)
+					if (civ_ids.includes(province_armies[x].civID))
+					if (options.value < 1) {
+						var regiments_to_disband = Math.floor(province_armies[x].iArmyRegimentSize*options.value);
+
+						for (var y = 0; y < regiments_to_disband; y++)
+							province_armies[x].removeRegiment(regiments_to_disband[y]);
+					} else {
+						local_province.removeArmy_UnassignGeneral(x);
+						local_province.removeArmy(x);
+					}
+			}
+		}
 	}
 }

@@ -84,6 +84,7 @@
 
 		//Declare local instance variables
 		var province_armies = [];
+		var province_obj = getProvince(province_name);
 
 		//Iterate over all armies in province_obj
 		for (var i = 0; i < province_obj.getArmySize(); i++)

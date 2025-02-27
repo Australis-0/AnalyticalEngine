@@ -8,7 +8,7 @@
 		var all_provinces = getAllProvinces();
 		var general_obj;
 
-		var actual_general_name;
+		var actual_general_name = general_name;
 
 		//Guard clauses if general_name is already an object
 		if (typeof general_name == "object") return general_name;
@@ -25,17 +25,27 @@
 		}
 
 		//Iterate over all_general_keys if actual_general_name exists and return it
-		if (actual_general_name) {
-			var all_general_keys = Object.keys(main.generals);
+		var all_general_keys = Object.keys(main.generals);
+		var general_exists = [false, ""]; //[general_exists, general_obj];
 
-			//Iterate over all_general_keys
-			for (var i = 0; i < all_general_keys.length; i++) {
-				var local_general = main.generals[all_general_keys[i]];
+		//Soft search 1st, hard search 2nd
+		var search_name = actual_general_name.trim().toLowerCase();
 
-				if (local_general.n)
-					return local_general;
-			}
+		for (var i = 0; i < all_general_keys.length; i++) {
+			var local_general = main.generals[all_general_keys[i]];
+
+			if (local_general.n.toLowerCase().indexOf(search_name) != -1)
+				general_exists = [true, local_general];
 		}
+		for (var i = 0; i < all_general_keys.length; i++) {
+			var local_general = main.generals[all_general_keys[i]];
+
+			if (local_general.n.toLowerCase() == search_name)
+				general_exists = [true, local_general];
+		}
+
+		//Return statement
+		return (general_exists[0]) ? general_exists[1] : undefined;
 	}
 
 	function loadGenerals () {
