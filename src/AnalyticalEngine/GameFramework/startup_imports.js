@@ -23,6 +23,7 @@
 	this.classLoader = classLoader;
 	this.Color = Java.type("com.badlogic.gdx.graphics.Color");
 	this.DiplomacyManager = Java.type("aoc.kingdoms.lukasz.map.diplomacy.DiplomacyManager");
+	this.EventOutcome_AddAdvisor = Java.type("aoc.kingdoms.lukasz.events.outcome.EventOutcome_AddAdvisor");
 	this.Executors = Java.type("java.util.concurrent.Executors");
 	this.File = Java.type("java.io.File");
 	this.FileHandle = Java.type("com.badlogic.gdx.files.FileHandle");

@@ -7,9 +7,11 @@ import com.badlogic.gdx.backends.lwjgl3.Lwjgl3ApplicationConfiguration;
 
 import java.awt.*;
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.lang.*;
+import java.net.URISyntaxException;
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
@@ -24,6 +26,18 @@ public class DesktopLauncher {
     public static final ConcurrentLinkedQueue<Runnable> main_thread_tasks = new ConcurrentLinkedQueue<>();
 
     public static void main(String[] arg) {
+        //Pre-instance variables cross compatibility
+        //1. Fix working directory for non-folder starts
+        try {
+            String working_directory = new File(DesktopLauncher.class.getProtectionDomain().getCodeSource().getLocation().toURI()).getParent();
+            System.setProperty("user.dir", working_directory);
+
+            System.out.println("[JAVA] [AnalyticalEngine] Fixed working directory: " + working_directory);
+        } catch (URISyntaxException e) {
+            System.err.println("[JAVA] [AnalyticalEngine] [ERROR] Failed to set working directory: " + e.getMessage());
+        }
+
+        //Declare local instance variables
         Lwjgl3ApplicationConfiguration config = new Lwjgl3ApplicationConfiguration();
         config.setTitle("PROJECT ORION - Age of Civilisations 3 - Dev Version");
         config.setWindowIcon(FileType.Internal, new String[]{"gfx/icon/icon_16x16.png"});

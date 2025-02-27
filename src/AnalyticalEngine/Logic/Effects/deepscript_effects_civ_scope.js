@@ -445,4 +445,49 @@
 			}
 		}
 	}
+
+	//Politics (Internal).
+	{
+		function civilisationAddAdvisor (arg0_civ_tags, arg1_options) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var options = (arg1_options) ? arg1_options : {};
+
+			//Initialise options
+			options.value = returnSafeNumber(options.value);
+
+			//Declare local instance variables
+			var civ_ids = [];
+
+			//Iterate over all civ_tags
+			for (var i = 0; i < civ_tags.length; i++)
+				civ_ids.push(getCivilisationID(civ_tags[i]));
+
+			//Iterate over all civ_ids
+			for (var i = 0; i < civ_ids.length; i++)
+				if (options.file) {
+					var local_file = options.file.replace(".json", "").replace(".JSON", "");
+
+					CharactersManager.loadAdvisor(civ_ids[i], local_file, options.value);
+				} else {
+					var local_outcome = new EventOutcome_AddAdvisor(new Integer(options.value));
+
+					local_outcome.updateCiv(civ_ids[i], 1);
+				}
+		}
+
+		function civilisationChangeGovernment (arg0_civ_tags, arg1_government_name) {
+			//Convert from parameters
+			var civ_tags = getList(arg0_civ_tags);
+			var government_name = arg1_government_name;
+
+			//Iterate over all civ_tags
+			for (var i = 0; i < civ_tags.length; i++)
+				setCivilisationIdeology(civ_tags[i], government_name);
+		}
+
+		function civilisationChangeReligion (arg0_civ_tags, arg1_religion_name) {
+
+		}
+	}
 }
