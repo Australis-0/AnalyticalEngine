@@ -4,3 +4,5 @@ src/jdk/lib/modules
 src/saves
 
 out/artifacts/AOC3_Source_jar
+
+*.log

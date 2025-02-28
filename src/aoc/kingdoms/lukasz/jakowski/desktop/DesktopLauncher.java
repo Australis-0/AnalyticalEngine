@@ -1,5 +1,6 @@
 package aoc.kingdoms.lukasz.jakowski.desktop;
 
+import AnalyticalEngine.Framework.OSCompatibility.SteamworksCompatibility;
 import aoc.kingdoms.lukasz.jakowski.AA_Game;
 import com.badlogic.gdx.Files.FileType;
 import com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application;
@@ -37,6 +38,18 @@ public class DesktopLauncher {
             System.err.println("[JAVA] [AnalyticalEngine] [ERROR] Failed to set working directory: " + e.getMessage());
         }
 
+        //2. Launch Steam if not already launched
+        if (!SteamworksCompatibility.isSteamRunning()) {
+            System.out.println("[JAVA] [AnalyticalEngine] Steamworks is not running. Starting Steam.");
+            SteamworksCompatibility.startSteam();
+            SteamworksCompatibility.waitForSteam();
+        }
+
+        //Initialise game
+        initGame();
+    }
+
+    public static void initGame () {
         //Declare local instance variables
         Lwjgl3ApplicationConfiguration config = new Lwjgl3ApplicationConfiguration();
         config.setTitle("PROJECT ORION - Age of Civilisations 3 - Dev Version");
