@@ -216,7 +216,7 @@ public class AA_Game extends ApplicationAdapter {
                 Touch.setMousePosXY(screenX, screenY);
                 AA_Game.this.touch.actionDown(screenX, screenY, pointer, button);
 
-                System.out.println("[JAVA] [AnalyticalEngine] TouchDown() detected: " + screenX + ", " + screenY + ", " + pointer + ", " + button);
+                //System.out.println("[JAVA] [AnalyticalEngine] TouchDown() detected: " + screenX + ", " + screenY + ", " + pointer + ", " + button);
                 //Send to global.left_mouse_click or global.right_mouse_click
                 try {
                     if (Touch.buttonTouch == 0)

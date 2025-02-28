@@ -2594,10 +2594,1768 @@
             iB: 209
         },
         {
-            sName: "New Region",
+            sName: "Ostlandet",
             iR: 214,
             iG: 163,
             iB: 26
+        },
+        {
+            sName: "Sorlandet",
+            iR: 6,
+            iG: 177,
+            iB: 17
+        },
+        {
+            sName: "Vestlandet",
+            iR: 16,
+            iG: 36,
+            iB: 14
+        },
+        {
+            sName: "Midt-Noreg",
+            iR: 111,
+            iG: 246,
+            iB: 114
+        },
+        {
+            sName: "Nord-Noreg",
+            iR: 232,
+            iG: 133,
+            iB: 252
+        },
+        {
+            sName: "Svalbard and Jan Mayen",
+            iR: 225,
+            iG: 200,
+            iB: 209
+        },
+        {
+            sName: "Gotaland",
+            iR: 9,
+            iG: 207,
+            iB: 36
+        },
+        {
+            sName: "Svealand",
+            iR: 111,
+            iG: 57,
+            iB: 32
+        },
+        {
+            sName: "Norrland",
+            iR: 209,
+            iG: 215,
+            iB: 94
+        },
+        {
+            sName: "Aland Islands",
+            iR: 71,
+            iG: 155,
+            iB: 84
+        },
+        {
+            sName: "Southern Finland",
+            iR: 110,
+            iG: 211,
+            iB: 84
+        },
+        {
+            sName: "Western Finland",
+            iR: 42,
+            iG: 91,
+            iB: 31
+        },
+        {
+            sName: "Eastern Finland",
+            iR: 229,
+            iG: 181,
+            iB: 114
+        },
+        {
+            sName: "Oulu",
+            iR: 91,
+            iG: 242,
+            iB: 226
+        },
+        {
+            sName: "Lappland",
+            iR: 235,
+            iG: 109,
+            iB: 31
+        },
+        {
+            sName: "Kaliningrad",
+            iR: 3,
+            iG: 226,
+            iB: 248
+        },
+        {
+            sName: "Lithuania",
+            iR: 207,
+            iG: 205,
+            iB: 65
+        },
+        {
+            sName: "Latvia",
+            iR: 163,
+            iG: 41,
+            iB: 80
+        },
+        {
+            sName: "Estonia",
+            iR: 108,
+            iG: 196,
+            iB: 234
+        },
+        {
+            sName: "Moldavia",
+            iR: 234,
+            iG: 207,
+            iB: 34
+        },
+        {
+            sName: "Gagauzia",
+            iR: 242,
+            iG: 180,
+            iB: 145
+        },
+        {
+            sName: "Transnistria",
+            iR: 231,
+            iG: 44,
+            iB: 90
+        },
+        {
+            sName: "Zakarpatskaya",
+            iR: 45,
+            iG: 180,
+            iB: 243
+        },
+        {
+            sName: "Lvov",
+            iR: 95,
+            iG: 140,
+            iB: 125
+        },
+        {
+            sName: "Volynskaya",
+            iR: 52,
+            iG: 196,
+            iB: 176
+        },
+        {
+            sName: "Ivano-Frankovsk",
+            iR: 38,
+            iG: 89,
+            iB: 251
+        },
+        {
+            sName: "Chernovtsy",
+            iR: 243,
+            iG: 46,
+            iB: 85
+        },
+        {
+            sName: "Ternopol",
+            iR: 193,
+            iG: 189,
+            iB: 78
+        },
+        {
+            sName: "Rovno",
+            iR: 155,
+            iG: 31,
+            iB: 100
+        },
+        {
+            sName: "Khmel'nitskiy",
+            iR: 243,
+            iG: 163,
+            iB: 245
+        },
+        {
+            sName: "Vinnitsa",
+            iR: 91,
+            iG: 174,
+            iB: 243
+        },
+        {
+            sName: "Zhitomir",
+            iR: 133,
+            iG: 53,
+            iB: 182
+        },
+        {
+            sName: "Kiev",
+            iR: 211,
+            iG: 174,
+            iB: 145
+        },
+        {
+            sName: "Cherkassy",
+            iR: 8,
+            iG: 63,
+            iB: 165
+        },
+        {
+            sName: "Kirovograd",
+            iR: 126,
+            iG: 38,
+            iB: 58
+        },
+        {
+            sName: "Dnepropetrovsk",
+            iR: 67,
+            iG: 154,
+            iB: 80
+        },
+        {
+            sName: "Nikolayev",
+            iR: 151,
+            iG: 178,
+            iB: 128
+        },
+        {
+            sName: "Oddessa",
+            iR: 17,
+            iG: 223,
+            iB: 56
+        },
+        {
+            sName: "Kherson",
+            iR: 86,
+            iG: 69,
+            iB: 62
+        },
+        {
+            sName: "Krymskaya",
+            iR: 119,
+            iG: 20,
+            iB: 31
+        },
+        {
+            sName: "Zaporozh'ye",
+            iR: 124,
+            iG: 225,
+            iB: 100
+        },
+        {
+            sName: "Donetsk",
+            iR: 54,
+            iG: 247,
+            iB: 210
+        },
+        {
+            sName: "Voroshilovgrad",
+            iR: 125,
+            iG: 81,
+            iB: 194
+        },
+        {
+            sName: "Khar'kov",
+            iR: 49,
+            iG: 49,
+            iB: 122
+        },
+        {
+            sName: "Sumy",
+            iR: 208,
+            iG: 7,
+            iB: 236
+        },
+        {
+            sName: "Poltava",
+            iR: 91,
+            iG: 127,
+            iB: 158
+        },
+        {
+            sName: "Chernigov",
+            iR: 51,
+            iG: 149,
+            iB: 126
+        },
+        {
+            sName: "Brest",
+            iR: 19,
+            iG: 163,
+            iB: 93
+        },
+        {
+            sName: "Grodno",
+            iR: 227,
+            iG: 119,
+            iB: 110
+        },
+        {
+            sName: "Minsk",
+            iR: 13,
+            iG: 188,
+            iB: 137
+        },
+        {
+            sName: "Gomel",
+            iR: 31,
+            iG: 9,
+            iB: 61
+        },
+        {
+            sName: "Mogilev",
+            iR: 66,
+            iG: 57,
+            iB: 175
+        },
+        {
+            sName: "Vitebsk",
+            iR: 102,
+            iG: 249,
+            iB: 24
+        },
+        {
+            sName: "Georgia",
+            iR: 133,
+            iG: 153,
+            iB: 49
+        },
+        {
+            sName: "Adzharskaya",
+            iR: 90,
+            iG: 148,
+            iB: 79
+        },
+        {
+            sName: "Yugo-Osetinskaya",
+            iR: 170,
+            iG: 171,
+            iB: 249
+        },
+        {
+            sName: "Abkhazskaya",
+            iR: 55,
+            iG: 150,
+            iB: 183
+        },
+        {
+            sName: "Armenia",
+            iR: 94,
+            iG: 253,
+            iB: 130
+        },
+        {
+            sName: "Nakhichevanskaya",
+            iR: 48,
+            iG: 138,
+            iB: 199
+        },
+        {
+            sName: "Nagorno-Karabakhskaya",
+            iR: 47,
+            iG: 169,
+            iB: 18
+        },
+        {
+            sName: "Azerbaijan",
+            iR: 64,
+            iG: 205,
+            iB: 149
+        },
+        {
+            sName: "Dagestanskaya",
+            iR: 112,
+            iG: 155,
+            iB: 137
+        },
+        {
+            sName: "Checheno-Ingushskaya",
+            iR: 44,
+            iG: 190,
+            iB: 11
+        },
+        {
+            sName: "Severo-Osetinskaya",
+            iR: 181,
+            iG: 216,
+            iB: 180
+        },
+        {
+            sName: "Kabardino-Balkarskaya",
+            iR: 205,
+            iG: 182,
+            iB: 221
+        },
+        {
+            sName: "Karachayevo-Cherkesskaya",
+            iR: 185,
+            iG: 105,
+            iB: 3
+        },
+        {
+            sName: "Adygeyskaya",
+            iR: 224,
+            iG: 205,
+            iB: 55
+        },
+        {
+            sName: "Krasnodarskiy Kray",
+            iR: 6,
+            iG: 86,
+            iB: 247
+        },
+        {
+            sName: "Stavropol'skiy Kray",
+            iR: 230,
+            iG: 139,
+            iB: 23
+        },
+        {
+            sName: "Kalmykskaya",
+            iR: 252,
+            iG: 254,
+            iB: 233
+        },
+        {
+            sName: "Astrakhan",
+            iR: 236,
+            iG: 9,
+            iB: 206
+        },
+        {
+            sName: "Rostov",
+            iR: 179,
+            iG: 220,
+            iB: 250
+        },
+        {
+            sName: "Volgograd",
+            iR: 39,
+            iG: 27,
+            iB: 49
+        },
+        {
+            sName: "Voronezh",
+            iR: 223,
+            iG: 52,
+            iB: 4
+        },
+        {
+            sName: "Belgorod",
+            iR: 203,
+            iG: 144,
+            iB: 69
+        },
+        {
+            sName: "Kursk",
+            iR: 177,
+            iG: 195,
+            iB: 27
+        },
+        {
+            sName: "Bryansk",
+            iR: 153,
+            iG: 163,
+            iB: 162
+        },
+        {
+            sName: "Orel",
+            iR: 191,
+            iG: 151,
+            iB: 92
+        },
+        {
+            sName: "Lipetsk",
+            iR: 224,
+            iG: 17,
+            iB: 202
+        },
+        {
+            sName: "Tambov",
+            iR: 240,
+            iG: 151,
+            iB: 112
+        },
+        {
+            sName: "Saratov",
+            iR: 24,
+            iG: 150,
+            iB: 18
+        },
+        {
+            sName: "Penza",
+            iR: 138,
+            iG: 161,
+            iB: 147
+        },
+        {
+            sName: "Mordovskaya",
+            iR: 63,
+            iG: 172,
+            iB: 249
+        },
+        {
+            sName: "Gor'kiy",
+            iR: 204,
+            iG: 66,
+            iB: 15
+        },
+        {
+            sName: "Chuvashskaya",
+            iR: 163,
+            iG: 201,
+            iB: 21
+        },
+        {
+            sName: "Mariyskaya",
+            iR: 203,
+            iG: 82,
+            iB: 84
+        },
+        {
+            sName: "Tatarskaya",
+            iR: 189,
+            iG: 141,
+            iB: 199
+        },
+        {
+            sName: "Udmortskaya",
+            iR: 94,
+            iG: 29,
+            iB: 76
+        },
+        {
+            sName: "Kirov",
+            iR: 70,
+            iG: 137,
+            iB: 131
+        },
+        {
+            sName: "Ul'yanovsk",
+            iR: 99,
+            iG: 206,
+            iB: 119
+        },
+        {
+            sName: "Kuybyshev",
+            iR: 190,
+            iG: 160,
+            iB: 83
+        },
+        {
+            sName: "Orenburg",
+            iR: 174,
+            iG: 70,
+            iB: 236
+        },
+        {
+            sName: "Bashkirskaya",
+            iR: 241,
+            iG: 28,
+            iB: 212
+        },
+        {
+            sName: "Komi-Permyatskiy",
+            iR: 88,
+            iG: 150,
+            iB: 99
+        },
+        {
+            sName: "Perm",
+            iR: 71,
+            iG: 251,
+            iB: 245
+        },
+        {
+            sName: "Komi",
+            iR: 150,
+            iG: 202,
+            iB: 201
+        },
+        {
+            sName: "Nenetskiy",
+            iR: 222,
+            iG: 38,
+            iB: 15
+        },
+        {
+            sName: "Smolensk",
+            iR: 72,
+            iG: 181,
+            iB: 14
+        },
+        {
+            sName: "Kaluga",
+            iR: 203,
+            iG: 103,
+            iB: 51
+        },
+        {
+            sName: "Tula",
+            iR: 184,
+            iG: 0,
+            iB: 78
+        },
+        {
+            sName: "Ryazan'",
+            iR: 237,
+            iG: 126,
+            iB: 206
+        },
+        {
+            sName: "Moscow",
+            iR: 5,
+            iG: 133,
+            iB: 61
+        },
+        {
+            sName: "Vladimir",
+            iR: 63,
+            iG: 149,
+            iB: 240
+        },
+        {
+            sName: "Ivanovo",
+            iR: 78,
+            iG: 211,
+            iB: 161
+        },
+        {
+            sName: "Yaroslavl'",
+            iR: 138,
+            iG: 232,
+            iB: 213
+        },
+        {
+            sName: "Kostroma",
+            iR: 195,
+            iG: 120,
+            iB: 111
+        },
+        {
+            sName: "Vologda",
+            iR: 234,
+            iG: 130,
+            iB: 133
+        },
+        {
+            sName: "Arkhangel'sk",
+            iR: 229,
+            iG: 50,
+            iB: 119
+        },
+        {
+            sName: "Kalinin",
+            iR: 140,
+            iG: 59,
+            iB: 177
+        },
+        {
+            sName: "Pskov",
+            iR: 121,
+            iG: 101,
+            iB: 249
+        },
+        {
+            sName: "Leningrad",
+            iR: 128,
+            iG: 123,
+            iB: 18
+        },
+        {
+            sName: "Novgorod",
+            iR: 249,
+            iG: 82,
+            iB: 131
+        },
+        {
+            sName: "Karel'skaya",
+            iR: 161,
+            iG: 99,
+            iB: 240
+        },
+        {
+            sName: "Murmansk",
+            iR: 207,
+            iG: 232,
+            iB: 211
+        },
+        {
+            sName: "Chelyabinsk",
+            iR: 235,
+            iG: 79,
+            iB: 175
+        },
+        {
+            sName: "Kurgan",
+            iR: 152,
+            iG: 75,
+            iB: 206
+        },
+        {
+            sName: "Sverdlovsk",
+            iR: 171,
+            iG: 229,
+            iB: 103
+        },
+        {
+            sName: "Tyumen'",
+            iR: 65,
+            iG: 70,
+            iB: 152
+        },
+        {
+            sName: "Khanty-Mansiyskiy",
+            iR: 110,
+            iG: 41,
+            iB: 242
+        },
+        {
+            sName: "Yamalo-Nenetskiy",
+            iR: 196,
+            iG: 101,
+            iB: 126
+        },
+        {
+            sName: "Omsk",
+            iR: 170,
+            iG: 51,
+            iB: 9
+        },
+        {
+            sName: "Novosibirsk",
+            iR: 209,
+            iG: 83,
+            iB: 52
+        },
+        {
+            sName: "Tomsk",
+            iR: 111,
+            iG: 146,
+            iB: 54
+        },
+        {
+            sName: "Altayskiy Kray",
+            iR: 168,
+            iG: 191,
+            iB: 139
+        },
+        {
+            sName: "Gorno-Altayskaya",
+            iR: 162,
+            iG: 119,
+            iB: 206
+        },
+        {
+            sName: "Tuvinskaya",
+            iR: 234,
+            iG: 239,
+            iB: 195
+        },
+        {
+            sName: "Kemerovo",
+            iR: 151,
+            iG: 35,
+            iB: 61
+        },
+        {
+            sName: "Khakasskaya",
+            iR: 58,
+            iG: 183,
+            iB: 236
+        },
+        {
+            sName: "Krasonyarskiy Kray",
+            iR: 6,
+            iG: 70,
+            iB: 50
+        },
+        {
+            sName: "Evenkiyskiy",
+            iR: 217,
+            iG: 131,
+            iB: 40
+        },
+        {
+            sName: "Taymyrskiy",
+            iR: 169,
+            iG: 78,
+            iB: 167
+        },
+        {
+            sName: "Yamalo-Nenetskiy",
+            iR: 177,
+            iG: 159,
+            iB: 172
+        },
+        {
+            sName: "Irkutsk",
+            iR: 27,
+            iG: 180,
+            iB: 182
+        },
+        {
+            sName: "Buryatskaya",
+            iR: 103,
+            iG: 4,
+            iB: 203
+        },
+        {
+            sName: "Chita",
+            iR: 155,
+            iG: 232,
+            iB: 177
+        },
+        {
+            sName: "Yakutskaya",
+            iR: 106,
+            iG: 53,
+            iB: 124
+        },
+        {
+            sName: "Sakhalinskaya",
+            iR: 235,
+            iG: 92,
+            iB: 5
+        },
+        {
+            sName: "Kuril Islands",
+            iR: 31,
+            iG: 11,
+            iB: 16
+        },
+        {
+            sName: "Amurskaya",
+            iR: 111,
+            iG: 202,
+            iB: 201
+        },
+        {
+            sName: "Yevreyskaya",
+            iR: 160,
+            iG: 111,
+            iB: 38
+        },
+        {
+            sName: "Primorskiy Kray",
+            iR: 41,
+            iG: 199,
+            iB: 24
+        },
+        {
+            sName: "Khabarovskiy Kray",
+            iR: 167,
+            iG: 106,
+            iB: 245
+        },
+        {
+            sName: "Magadan",
+            iR: 196,
+            iG: 170,
+            iB: 213
+        },
+        {
+            sName: "Kamohatskaya",
+            iR: 148,
+            iG: 3,
+            iB: 131
+        },
+        {
+            sName: "Koryakskiy",
+            iR: 159,
+            iG: 196,
+            iB: 247
+        },
+        {
+            sName: "Chukotskiy",
+            iR: 194,
+            iG: 208,
+            iB: 112
+        },
+        {
+            sName: "Ural'sk",
+            iR: 118,
+            iG: 238,
+            iB: 2
+        },
+        {
+            sName: "Gur'yev",
+            iR: 133,
+            iG: 66,
+            iB: 85
+        },
+        {
+            sName: "Aktyubinsk",
+            iR: 157,
+            iG: 36,
+            iB: 141
+        },
+        {
+            sName: "Kzyl-Orda",
+            iR: 119,
+            iG: 246,
+            iB: 239
+        },
+        {
+            sName: "Chimkent",
+            iR: 49,
+            iG: 24,
+            iB: 149
+        },
+        {
+            sName: "Ozhambul",
+            iR: 24,
+            iG: 181,
+            iB: 148
+        },
+        {
+            sName: "Alma-Ata",
+            iR: 229,
+            iG: 94,
+            iB: 251
+        },
+        {
+            sName: "Taldy-Kurgan",
+            iR: 200,
+            iG: 209,
+            iB: 150
+        },
+        {
+            sName: "Vostochno-Kazakhstanskaya",
+            iR: 220,
+            iG: 200,
+            iB: 252
+        },
+        {
+            sName: "Semipalatinsk",
+            iR: 154,
+            iG: 14,
+            iB: 179
+        },
+        {
+            sName: "Dzhezkazgan",
+            iR: 157,
+            iG: 165,
+            iB: 20
+        },
+        {
+            sName: "Kustanay",
+            iR: 161,
+            iG: 84,
+            iB: 160
+        },
+        {
+            sName: "Severo-Kazakhstanskaya",
+            iR: 243,
+            iG: 85,
+            iB: 218
+        },
+        {
+            sName: "Kokchetav",
+            iR: 163,
+            iG: 205,
+            iB: 76
+        },
+        {
+            sName: "Tselinograd",
+            iR: 169,
+            iG: 183,
+            iB: 122
+        },
+        {
+            sName: "Karaganda",
+            iR: 86,
+            iG: 47,
+            iB: 125
+        },
+        {
+            sName: "Pavlodar",
+            iR: 242,
+            iG: 99,
+            iB: 158
+        },
+        {
+            sName: "Khorezmskaya",
+            iR: 154,
+            iG: 73,
+            iB: 199
+        },
+        {
+            sName: "Ashkhabad",
+            iR: 123,
+            iG: 241,
+            iB: 254
+        },
+        {
+            sName: "Mary",
+            iR: 74,
+            iG: 41,
+            iB: 29
+        },
+        {
+            sName: "Chardzhou",
+            iR: 125,
+            iG: 165,
+            iB: 206
+        },
+        {
+            sName: "Tashauz",
+            iR: 158,
+            iG: 106,
+            iB: 105
+        },
+        {
+            sName: "Karakalpakskaya",
+            iR: 77,
+            iG: 60,
+            iB: 181
+        },
+        {
+            sName: "Tashauz",
+            iR: 54,
+            iG: 113,
+            iB: 234
+        },
+        {
+            sName: "Samarkand",
+            iR: 60,
+            iG: 212,
+            iB: 39
+        },
+        {
+            sName: "Bukhara",
+            iR: 142,
+            iG: 196,
+            iB: 150
+        },
+        {
+            sName: "Syrdar'inskaya",
+            iR: 201,
+            iG: 25,
+            iB: 52
+        },
+        {
+            sName: "Kashkadar'inskaya",
+            iR: 143,
+            iG: 132,
+            iB: 246
+        },
+        {
+            sName: "Surkhandar'inskaya",
+            iR: 5,
+            iG: 63,
+            iB: 4
+        },
+        {
+            sName: "Tashkent",
+            iR: 220,
+            iG: 70,
+            iB: 24
+        },
+        {
+            sName: "Namangan",
+            iR: 41,
+            iG: 149,
+            iB: 149
+        },
+        {
+            sName: "Andizhan",
+            iR: 145,
+            iG: 20,
+            iB: 213
+        },
+        {
+            sName: "Fergana",
+            iR: 186,
+            iG: 142,
+            iB: 159
+        },
+        {
+            sName: "Osh",
+            iR: 70,
+            iG: 163,
+            iB: 225
+        },
+        {
+            sName: "Talas",
+            iR: 178,
+            iG: 114,
+            iB: 167
+        },
+        {
+            sName: "Frunze",
+            iR: 100,
+            iG: 128,
+            iB: 178
+        },
+        {
+            sName: "Naryn",
+            iR: 119,
+            iG: 50,
+            iB: 163
+        },
+        {
+            sName: "Issyk-Kul'skaya",
+            iR: 139,
+            iG: 239,
+            iB: 138
+        },
+        {
+            sName: "Leninabad",
+            iR: 184,
+            iG: 14,
+            iB: 210
+        },
+        {
+            sName: "Dushanbe",
+            iR: 236,
+            iG: 77,
+            iB: 8
+        },
+        {
+            sName: "Khatlonskaya",
+            iR: 112,
+            iG: 238,
+            iB: 133
+        },
+        {
+            sName: "Gorno-Badakhshanskaya",
+            iR: 21,
+            iG: 250,
+            iB: 64
+        },
+        {
+            sName: "Northern Cyprus",
+            iR: 141,
+            iG: 191,
+            iB: 20
+        },
+        {
+            sName: "Akrotiri and Dhekelia",
+            iR: 178,
+            iG: 47,
+            iB: 149
+        },
+        {
+            sName: "Southern Cyprus",
+            iR: 31,
+            iG: 29,
+            iB: 56
+        },
+        {
+            sName: "Marmara",
+            iR: 91,
+            iG: 61,
+            iB: 200
+        },
+        {
+            sName: "Aegean",
+            iR: 249,
+            iG: 26,
+            iB: 132
+        },
+        {
+            sName: "Mediterranean Coast",
+            iR: 109,
+            iG: 21,
+            iB: 253
+        },
+        {
+            sName: "Southeastern Anatolia",
+            iR: 41,
+            iG: 14,
+            iB: 176
+        },
+        {
+            sName: "Central Anatolia",
+            iR: 33,
+            iG: 146,
+            iB: 167
+        },
+        {
+            sName: "Black Sea Coast",
+            iR: 118,
+            iG: 106,
+            iB: 135
+        },
+        {
+            sName: "Eastern Anatolia",
+            iR: 181,
+            iG: 194,
+            iB: 157
+        },
+        {
+            sName: "Golan Heights",
+            iR: 138,
+            iG: 24,
+            iB: 180
+        },
+        {
+            sName: "Daraa",
+            iR: 245,
+            iG: 9,
+            iB: 193
+        },
+        {
+            sName: "As Suwaydaa",
+            iR: 108,
+            iG: 5,
+            iB: 27
+        },
+        {
+            sName: "Damascus",
+            iR: 79,
+            iG: 110,
+            iB: 11
+        },
+        {
+            sName: "Homs",
+            iR: 127,
+            iG: 208,
+            iB: 130
+        },
+        {
+            sName: "Hama",
+            iR: 219,
+            iG: 170,
+            iB: 217
+        },
+        {
+            sName: "Tartus",
+            iR: 166,
+            iG: 212,
+            iB: 197
+        },
+        {
+            sName: "Latakia",
+            iR: 156,
+            iG: 239,
+            iB: 204
+        },
+        {
+            sName: "Idlib",
+            iR: 177,
+            iG: 233,
+            iB: 193
+        },
+        {
+            sName: "Aleppo",
+            iR: 163,
+            iG: 40,
+            iB: 158
+        },
+        {
+            sName: "Ar Raqqa",
+            iR: 82,
+            iG: 170,
+            iB: 181
+        },
+        {
+            sName: "Deir-ez-Zour",
+            iR: 169,
+            iG: 238,
+            iB: 188
+        },
+        {
+            sName: "Al-Hassakah",
+            iR: 35,
+            iG: 59,
+            iB: 76
+        },
+        {
+            sName: "South Lebanon",
+            iR: 101,
+            iG: 122,
+            iB: 140
+        },
+        {
+            sName: "Bekaa",
+            iR: 65,
+            iG: 211,
+            iB: 114
+        },
+        {
+            sName: "Mount Lebanon",
+            iR: 100,
+            iG: 159,
+            iB: 162
+        },
+        {
+            sName: "North Lebanon",
+            iR: 92,
+            iG: 116,
+            iB: 69
+        },
+        {
+            sName: "Northern",
+            iR: 66,
+            iG: 161,
+            iB: 85
+        },
+        {
+            sName: "Haifa",
+            iR: 31,
+            iG: 120,
+            iB: 192
+        },
+        {
+            sName: "Tel Aviv",
+            iR: 105,
+            iG: 136,
+            iB: 120
+        },
+        {
+            sName: "Central",
+            iR: 93,
+            iG: 250,
+            iB: 252
+        },
+        {
+            sName: "Jerusalem",
+            iR: 190,
+            iG: 28,
+            iB: 41
+        },
+        {
+            sName: "Southern",
+            iR: 119,
+            iG: 56,
+            iB: 28
+        },
+        {
+            sName: "Gaza Strip",
+            iR: 249,
+            iG: 206,
+            iB: 229
+        },
+        {
+            sName: "West Bank",
+            iR: 201,
+            iG: 103,
+            iB: 47
+        },
+        {
+            sName: "Jordan",
+            iR: 110,
+            iG: 42,
+            iB: 123
+        },
+        {
+            sName: "Al-Anbar",
+            iR: 48,
+            iG: 177,
+            iB: 204
+        },
+        {
+            sName: "Karbala",
+            iR: 144,
+            iG: 142,
+            iB: 101
+        },
+        {
+            sName: "Al-Najaf",
+            iR: 219,
+            iG: 59,
+            iB: 8
+        },
+        {
+            sName: "Al-Muthanna",
+            iR: 139,
+            iG: 89,
+            iB: 180
+        },
+        {
+            sName: "Al-Basrah",
+            iR: 18,
+            iG: 120,
+            iB: 10
+        },
+        {
+            sName: "Thi Qar",
+            iR: 149,
+            iG: 186,
+            iB: 162
+        },
+        {
+            sName: "Misan",
+            iR: 149,
+            iG: 47,
+            iB: 130
+        },
+        {
+            sName: "Al-Qadisiyah",
+            iR: 239,
+            iG: 216,
+            iB: 85
+        },
+        {
+            sName: "Babil",
+            iR: 195,
+            iG: 233,
+            iB: 170
+        },
+        {
+            sName: "Wasit",
+            iR: 181,
+            iG: 3,
+            iB: 134
+        },
+        {
+            sName: "Baghdad",
+            iR: 178,
+            iG: 182,
+            iB: 146
+        },
+        {
+            sName: "Diyala",
+            iR: 231,
+            iG: 21,
+            iB: 9
+        },
+        {
+            sName: "Al-Sulaimaniyah",
+            iR: 209,
+            iG: 119,
+            iB: 235
+        },
+        {
+            sName: "Kirkuk",
+            iR: 90,
+            iG: 73,
+            iB: 110
+        },
+        {
+            sName: "Salah al-Din",
+            iR: 221,
+            iG: 38,
+            iB: 160
+        },
+        {
+            sName: "Nineveh",
+            iR: 109,
+            iG: 32,
+            iB: 45
+        },
+        {
+            sName: "Dohuk",
+            iR: 47,
+            iG: 202,
+            iB: 197
+        },
+        {
+            sName: "Erbil",
+            iR: 192,
+            iG: 25,
+            iB: 33
+        },
+        {
+            sName: "Kuwait",
+            iR: 163,
+            iG: 4,
+            iB: 217
+        },
+        {
+            sName: "Tabouk",
+            iR: 62,
+            iG: 96,
+            iB: 68
+        },
+        {
+            sName: "Al-Jouf",
+            iR: 188,
+            iG: 98,
+            iB: 80
+        },
+        {
+            sName: "Hail",
+            iR: 52,
+            iG: 175,
+            iB: 231
+        },
+        {
+            sName: "Northern Borders",
+            iR: 169,
+            iG: 3,
+            iB: 206
+        },
+        {
+            sName: "Al-Qaseem",
+            iR: 88,
+            iG: 8,
+            iB: 224
+        },
+        {
+            sName: "Ar-Riyad",
+            iR: 32,
+            iG: 84,
+            iB: 24
+        },
+        {
+            sName: "Eastern Region",
+            iR: 232,
+            iG: 3,
+            iB: 97
+        },
+        {
+            sName: "Najran",
+            iR: 164,
+            iG: 38,
+            iB: 226
+        },
+        {
+            sName: "Jazan",
+            iR: 81,
+            iG: 214,
+            iB: 122
+        },
+        {
+            sName: "Asir",
+            iR: 188,
+            iG: 212,
+            iB: 92
+        },
+        {
+            sName: "Al-Baha",
+            iR: 246,
+            iG: 91,
+            iB: 125
+        },
+        {
+            sName: "Makkah Al-Mokarramah",
+            iR: 144,
+            iG: 139,
+            iB: 10
+        },
+        {
+            sName: "Al-Madinah Al-Monawarah",
+            iR: 168,
+            iG: 185,
+            iB: 188
+        },
+        {
+            sName: "Qatar",
+            iR: 81,
+            iG: 198,
+            iB: 60
+        },
+        {
+            sName: "Bahrain",
+            iR: 244,
+            iG: 243,
+            iB: 53
+        },
+        {
+            sName: "Abu Zabi",
+            iR: 167,
+            iG: 96,
+            iB: 95
+        },
+        {
+            sName: "Dubayy",
+            iR: 140,
+            iG: 50,
+            iB: 166
+        },
+        {
+            sName: "Ash-Shariqah",
+            iR: 110,
+            iG: 52,
+            iB: 203
+        },
+        {
+            sName: "Ajman",
+            iR: 186,
+            iG: 28,
+            iB: 106
+        },
+        {
+            sName: "Ra's al-Khaymah",
+            iR: 158,
+            iG: 130,
+            iB: 6
+        },
+        {
+            sName: "Al-Fujayrah",
+            iR: 127,
+            iG: 204,
+            iB: 110
+        },
+        {
+            sName: "Umm al-Qaywayn",
+            iR: 138,
+            iG: 213,
+            iB: 27
+        },
+        {
+            sName: "Musandam",
+            iR: 183,
+            iG: 110,
+            iB: 119
+        },
+        {
+            sName: "Al Batinah",
+            iR: 157,
+            iG: 68,
+            iB: 220
+        },
+        {
+            sName: "Muscat",
+            iR: 157,
+            iG: 122,
+            iB: 183
+        },
+        {
+            sName: "Al Sharqiyah",
+            iR: 60,
+            iG: 82,
+            iB: 39
+        },
+        {
+            sName: "A' Dakhliyah",
+            iR: 123,
+            iG: 136,
+            iB: 251
+        },
+        {
+            sName: "A' Dhahirah and Buraima",
+            iR: 124,
+            iG: 219,
+            iB: 129
+        },
+        {
+            sName: "Al Wusta",
+            iR: 114,
+            iG: 23,
+            iB: 147
+        },
+        {
+            sName: "Dhofar",
+            iR: 201,
+            iG: 181,
+            iB: 179
+        },
+        {
+            sName: "Al Mahrah",
+            iR: 205,
+            iG: 202,
+            iB: 75
+        },
+        {
+            sName: "Hadramaut",
+            iR: 191,
+            iG: 255,
+            iB: 41
+        },
+        {
+            sName: "Shabwah",
+            iR: 3,
+            iG: 124,
+            iB: 208
+        },
+        {
+            sName: "Abyan",
+            iR: 179,
+            iG: 78,
+            iB: 62
+        },
+        {
+            sName: "'Adan",
+            iR: 247,
+            iG: 168,
+            iB: 22
+        },
+        {
+            sName: "Lahij",
+            iR: 212,
+            iG: 39,
+            iB: 199
+        },
+        {
+            sName: "Ta'izz",
+            iR: 216,
+            iG: 14,
+            iB: 18
+        },
+        {
+            sName: "Al Hudaydah",
+            iR: 195,
+            iG: 115,
+            iB: 122
+        },
+        {
+            sName: "Raymah",
+            iR: 158,
+            iG: 250,
+            iB: 193
+        },
+        {
+            sName: "Hajjah",
+            iR: 19,
+            iG: 241,
+            iB: 3
+        },
+        {
+            sName: "Al Mahwit",
+            iR: 155,
+            iG: 93,
+            iB: 89
+        },
+        {
+            sName: "Sana'a",
+            iR: 27,
+            iG: 180,
+            iB: 228
+        },
+        {
+            sName: "Al Bayda'",
+            iR: 205,
+            iG: 222,
+            iB: 239
+        },
+        {
+            sName: "Ibb",
+            iR: 250,
+            iG: 67,
+            iB: 129
+        },
+        {
+            sName: "Dhamar",
+            iR: 206,
+            iG: 169,
+            iB: 6
+        },
+        {
+            sName: "Ad Dali'",
+            iR: 197,
+            iG: 241,
+            iB: 223
+        },
+        {
+            sName: "Ma'rib",
+            iR: 150,
+            iG: 154,
+            iB: 185
+        },
+        {
+            sName: "Al Jawf",
+            iR: 51,
+            iG: 119,
+            iB: 0
+        },
+        {
+            sName: "Sa'dah",
+            iR: 114,
+            iG: 250,
+            iB: 145
+        },
+        {
+            sName: "'Amran",
+            iR: 71,
+            iG: 221,
+            iB: 233
+        },
+        {
+            sName: "Socotra",
+            iR: 217,
+            iG: 14,
+            iB: 25
         }
     ]
 }
