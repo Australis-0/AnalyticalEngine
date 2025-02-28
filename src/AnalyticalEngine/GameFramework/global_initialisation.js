@@ -6,15 +6,6 @@ var global = {
 
 //Initialise functions
 {
-	function setGlobalVariable (arg0_key, arg1_value) {
-		//Convert from parameters
-		var key = arg0_key;
-		var value = arg1_value;
-
-		//Set global[key]
-		global[key] = value;
-	}
-
 	function initGlobal () {
 		this.main = {
 			events: {}, //Contains all Event interfaces instantiated via Nashorn in-game.
@@ -105,5 +96,14 @@ var global = {
 			 */
 			provinces: {}
 		};
+	}
+
+	function javaSetGlobalVariable (arg0_key, arg1_value) {
+		//Convert from parameters
+		var key = arg0_key;
+		var value = arg1_value;
+
+		//Set global[key]
+		global[key] = value;
 	}
 }

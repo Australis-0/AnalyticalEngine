@@ -84,13 +84,20 @@
 			console.error("Error reading the file: " + e.message);
 		}
 
-		var fixed_json = fixInvalidJSON(json_string);
-
-		//Return statement
 		try {
-			return JSON.parse(fixed_json);
+			var parsed_json = JSON.parse(json_string);
+
+			//Return statement
+			return parsed_json;
 		} catch (e) {
-			console.error("Error reading the file: " + e.message);
+			var fixed_json = fixInvalidJSON(json_string);
+
+			//Return statement
+			try {
+				return JSON.parse(fixed_json);
+			} catch (e) {
+				console.error("Error reading the file: " + e.message);
+			}
 		}
 	}
 

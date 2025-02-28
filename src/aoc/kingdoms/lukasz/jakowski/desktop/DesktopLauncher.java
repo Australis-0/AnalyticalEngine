@@ -28,14 +28,14 @@ public class DesktopLauncher {
     public static void main(String[] arg) {
         //Pre-instance variables cross compatibility
         //1. Fix working directory for non-folder starts
-        try {
+        /*try {
             String working_directory = new File(DesktopLauncher.class.getProtectionDomain().getCodeSource().getLocation().toURI()).getParent();
             System.setProperty("user.dir", working_directory);
 
             System.out.println("[JAVA] [AnalyticalEngine] Fixed working directory: " + working_directory);
         } catch (URISyntaxException e) {
             System.err.println("[JAVA] [AnalyticalEngine] [ERROR] Failed to set working directory: " + e.getMessage());
-        }
+        }*/
 
         //Declare local instance variables
         Lwjgl3ApplicationConfiguration config = new Lwjgl3ApplicationConfiguration();

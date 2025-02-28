@@ -1719,49 +1719,57 @@
 	 * menuHandler() - Handles onclick events for menus in-game.
 	 */
 	function menuHandler (e) {
-		//Declare local instance variables
-		var all_interface_keys = Object.keys(main.interfaces);
-		var current_view_id = Game.menuManager.viewID;
+		try {
+			//Declare local instance variables
+			var all_interface_keys = Object.keys(main.interfaces);
+			var current_view_id = Game.menuManager.viewID;
 
-		//Iterate over all_interface_keys
-		for (var i = 0; i < all_interface_keys.length; i++) {
-			var local_interface = main.interfaces[all_interface_keys[i]];
-			var local_menu_obj = local_interface.menu_obj;
+			//Iterate over all_interface_keys
+			for (var i = 0; i < all_interface_keys.length; i++) try {
+				var local_interface = main.interfaces[all_interface_keys[i]];
+				var local_menu_obj = local_interface.menu_obj;
 
-			if (local_menu_obj)
-				//Handle local_interface.menu_elements
-				for (var x = 0; x < local_interface.menu_elements.length; x++) {
-					var local_element = local_interface.menu_elements[x];
-					var local_properties = local_interface.menu_properties[x];
+				if (local_menu_obj)
+					//Handle local_interface.menu_elements
+					for (var x = 0; x < local_interface.menu_elements.length; x++) try {
+						var local_element = local_interface.menu_elements[x];
+						var local_properties = local_interface.menu_properties[x];
 
-					//Left click functionality
-					if (e == "left_click")
-						if (local_element.getIsHovered()) {
-							//console.log("Clicked on button: " + local_element.getText());
-							if (local_properties.onclick)
-								local_properties.onclick({
-									element: local_element,
-									interface_obj: local_interface
-								});
-						}
-				}
+						//Left click functionality
+						if (e == "left_click")
+							if (local_element.getIsHovered()) {
+								//console.log("Clicked on button: " + local_element.getText());
+								if (local_properties.onclick)
+									local_properties.onclick({
+										element: local_element,
+										interface_obj: local_interface
+									});
+							}
+					} catch (e) {
+						console.error(e.stack);
+					}
+			} catch (e) {
+				console.error(e.stack);
+			}
+
+			//Draw right-click context menus
+			var hovered_province = getHoveredProvince();
+			if (main.game_loaded && main.in_mod_editor)
+				if (hovered_province != undefined)
+					if (e == "left_click") {
+						closeMapContextMenu(hovered_province.getProvinceID());
+					} else if (e == "right_click") {
+						openMapNavigationMenu(hovered_province.getProvinceID());
+					}
+
+			//Draw current menus
+			Gdx.app.postRunnable(function(){
+				Game.menuManager.update();
+				Game.menuManager.setOrderOfMenu(current_view_id); //This is needed to refresh the menu order
+			});
+		} catch (e) {
+			console.error(e.stack);
 		}
-
-		//Draw right-click context menus
-		var hovered_province = getHoveredProvince();
-		if (main.game_loaded && main.in_mod_editor)
-			if (hovered_province != undefined)
-				if (e == "left_click") {
-					closeMapContextMenu(hovered_province.getProvinceID());
-				} else if (e == "right_click") {
-					openMapNavigationMenu(hovered_province.getProvinceID());
-				}
-
-		//Draw current menus
-		Gdx.app.postRunnable(function(){
-			Game.menuManager.update();
-			Game.menuManager.setOrderOfMenu(current_view_id); //This is needed to refresh the menu order
-		});
 	}
 
 	/**

@@ -160,7 +160,7 @@
 					console.error(file_path + " is not a valid folder.");
 			}
 		} catch (e) {
-			console.error(e.message);
+			console.error(e.stack);
 		}
 	}
 
@@ -201,7 +201,7 @@
 						mod_folder: local_mod_folder
 					});
 			} catch (e) {
-				console.error(e.message);
+				console.error(e.stack);
 			}
 	}
 }

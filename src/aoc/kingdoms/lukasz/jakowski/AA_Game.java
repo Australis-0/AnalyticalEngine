@@ -216,13 +216,15 @@ public class AA_Game extends ApplicationAdapter {
                 Touch.setMousePosXY(screenX, screenY);
                 AA_Game.this.touch.actionDown(screenX, screenY, pointer, button);
 
+                System.out.println("[JAVA] [AnalyticalEngine] TouchDown() detected: " + screenX + ", " + screenY + ", " + pointer + ", " + button);
                 //Send to global.left_mouse_click or global.right_mouse_click
                 try {
                     if (Touch.buttonTouch == 0)
-                        invocable.invokeFunction("setGlobalVariable", "left_mouse_click", true);
+                        invocable.invokeFunction("javaSetGlobalVariable", "left_mouse_click", true);
                     if (Touch.buttonTouch == 1)
-                        invocable.invokeFunction("setGlobalVariable", "right_mouse_click", true);
+                        invocable.invokeFunction("javaSetGlobalVariable", "right_mouse_click", true);
                 } catch (ScriptException | NoSuchMethodException e) {
+                    System.out.println("Error detecting click: " + e.getMessage());
                     e.printStackTrace();
                 }
 
@@ -266,9 +268,9 @@ public class AA_Game extends ApplicationAdapter {
                 //Send to global.left_mouse_release or global.right_mouse_release
                 try {
                     if (Touch.buttonTouch == 0)
-                        invocable.invokeFunction("setGlobalVariable", "left_mouse_release", true);
+                        invocable.invokeFunction("javaSetGlobalVariable", "left_mouse_release", true);
                     if (Touch.buttonTouch == 1)
-                        invocable.invokeFunction("setGlobalVariable", "right_mouse_release", true);
+                        invocable.invokeFunction("javaSetGlobalVariable", "right_mouse_release", true);
                 } catch (ScriptException | NoSuchMethodException e) {
                     e.printStackTrace();
                 }
