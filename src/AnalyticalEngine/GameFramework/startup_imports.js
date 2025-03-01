@@ -16,7 +16,7 @@
 	this.Callable = Java.type("java.util.concurrent.Executor");
 	this.CharactersManager = Java.type("aoc.kingdoms.lukasz.jakowski.CharactersManager");
 	this.CFG = Java.type("aoc.kingdoms.lukasz.jakowski.CFG");
-	//this.City = Java.type("aoc.kingdoms.lukasz.map.map.City");
+	this.City = Java.type("aoc.kingdoms.lukasz.map.map.City");
 	this.Civilization = Java.type("aoc.kingdoms.lukasz.map.civilization.Civilization");
 	this.CivilizationBonuses = Java.type("aoc.kingdoms.lukasz.map.civilization.CivilizationBonuses");
 	this.CivilizationGeneralsPool = Java.type("aoc.kingdoms.lukasz.map.civilization.CivilizationGeneralsPool");

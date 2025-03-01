@@ -1,5 +1,4 @@
 //Initialise functions
-
 {
 	//Economy - (Civilisation).
 	{
