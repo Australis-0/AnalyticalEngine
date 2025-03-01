@@ -19,6 +19,7 @@ var global = {
 
 				//2. Gamestate Scopes (External).
 				on_game_start: {},
+				on_game_startup: {},
 
 				//3. OnAction Scopes.
 				//Game Interactions - Game.

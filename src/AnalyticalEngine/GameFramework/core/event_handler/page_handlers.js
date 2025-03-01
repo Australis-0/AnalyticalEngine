@@ -42,6 +42,15 @@
 
 				initialiseSaveLoad();
 				initialisePostLoadingEventHandlers();
+
+				//Parse onGameStartup()
+				var all_on_game_startup_keys = Object.keys(main.scopes.on_game_startup);
+
+				for (var i = 0; i < all_on_game_startup_keys.length; i++) {
+					var local_function = main.scopes.on_game_startup[all_on_game_startup_keys[i]];
+
+					local_function();
+				}
 			}
 
 			//Load Map Editors

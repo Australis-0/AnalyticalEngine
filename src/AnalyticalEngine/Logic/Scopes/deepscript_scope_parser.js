@@ -123,6 +123,14 @@
 		main.scopes.on_game_start[generateRandomID(main.scopes.on_game_start)] = local_function;
 	}
 
+	function onGameStartup (arg0_function) {
+		//Convert from parameters
+		var local_function = arg0_function;
+
+		//Add local_function to main.scopes.on_game_startup
+		main.scopes.on_game_startup[generateRandomID(main.scopes.on_game_startup)] = local_function;
+	}
+
 	function provinceScope (arg0_provinces, arg1_function) {
 		//Convert from parameters
 		var provinces = getList(arg0_provinces);
