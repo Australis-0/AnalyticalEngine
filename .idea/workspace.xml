@@ -11,7 +11,9 @@
   <component name="ChangeListManager">
     <list default="true" id="09b6f7f8-b868-43e9-b471-ac1dbd15fa3b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/desktop/DesktopLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/desktop/DesktopLauncher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Effects/deepscript_effects_province_scope.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Effects/deepscript_effects_province_scope.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Framework/OSCompatibility/SteamworksCompatibility.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AnalyticalEngine/Framework/OSCompatibility/SteamworksCompatibility.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/jakowski/desktop/DesktopLauncher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/jakowski/desktop/DesktopLauncher.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -227,7 +229,7 @@
       <workItem from="1738769995531" duration="204780000" />
       <workItem from="1740050015199" duration="18824000" />
       <workItem from="1740394083536" duration="5056000" />
-      <workItem from="1740792406744" duration="450000" />
+      <workItem from="1740792406744" duration="2301000" />
     </task>
     <servers />
   </component>
