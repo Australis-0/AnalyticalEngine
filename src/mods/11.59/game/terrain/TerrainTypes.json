@@ -35,7 +35,7 @@
 			Color: [14, 72, 30],
 			BaseEconomy: 0,
 			BasePopulation: 0,
-			BattleOver: 1,
+			BattleOver: 1,``
 			BuildCost: 1.175,
 			Defense: 3,
 			IncreaseGrowthRateCost: 100,
