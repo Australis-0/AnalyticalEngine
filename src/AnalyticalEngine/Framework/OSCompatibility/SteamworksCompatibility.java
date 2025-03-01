@@ -135,7 +135,7 @@ public class SteamworksCompatibility {
             }
         }
 
-        console.log("Steam process detected! Waiting 20 seconds to allow full initialization...");
+        console.log("Steam process detected! Waiting 20 seconds to allow full initialisation.");
 
         //2. Fixed wait time (20 seconds) to ensure Steam initialises fully
         try {
