@@ -16,10 +16,7 @@
 	this.Callable = Java.type("java.util.concurrent.Executor");
 	this.CharactersManager = Java.type("aoc.kingdoms.lukasz.jakowski.CharactersManager");
 	this.CFG = Java.type("aoc.kingdoms.lukasz.jakowski.CFG");
-<<<<<<< HEAD
 	//this.City = Java.type("aoc.kingdoms.lukasz.map.map.City");
-=======
->>>>>>> parent of b1d14bb3c (added province effects)
 	this.Civilization = Java.type("aoc.kingdoms.lukasz.map.civilization.Civilization");
 	this.CivilizationBonuses = Java.type("aoc.kingdoms.lukasz.map.civilization.CivilizationBonuses");
 	this.CivilizationGeneralsPool = Java.type("aoc.kingdoms.lukasz.map.civilization.CivilizationGeneralsPool");
@@ -30,6 +27,7 @@
 	this.EventOutcome_AddAdvisor = Java.type("aoc.kingdoms.lukasz.events.outcome.EventOutcome_AddAdvisor");
 	this.EventOutcome_AddRuler = Java.type("aoc.kingdoms.lukasz.events.outcome.EventOutcome_AddRuler");
 	this.EventOutcome_Explode = Java.type("aoc.kingdoms.lukasz.events.outcome.EventOutcome_Explode");
+	this.EventOutcome_Province_Population = Java.type("aoc.kingdoms.lukasz.events.outcome.province.EventOutcome_Province_Population")
 	this.Executors = Java.type("java.util.concurrent.Executors");
 	this.File = Java.type("java.io.File");
 	this.FileHandle = Java.type("com.badlogic.gdx.files.FileHandle");
