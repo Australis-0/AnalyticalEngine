@@ -52,7 +52,7 @@ public class DesktopLauncher {
     public static void initGame () {
         //Declare local instance variables
         Lwjgl3ApplicationConfiguration config = new Lwjgl3ApplicationConfiguration();
-        config.setTitle("PROJECT ORION - Age of Civilisations 3 - Dev Version");
+        config.setTitle("PROJECT ORION 0.4b - Age of Civilisations 3 - Dev Version");
         config.setWindowIcon(FileType.Internal, new String[]{"gfx/icon/icon_16x16.png"});
         config.setWindowIcon(FileType.Internal, new String[]{"gfx/icon/icon_32x32.png"});
         config.setWindowIcon(FileType.Internal, new String[]{"gfx/icon/icon_128x128.png"});

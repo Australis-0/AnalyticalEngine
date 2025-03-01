@@ -10,8 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09b6f7f8-b868-43e9-b471-ac1dbd15fa3b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Framework/OSCompatibility/SteamworksCompatibility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Framework/OSCompatibility/SteamworksCompatibility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/settings/ModsOff.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/settings/ModsOff.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/desktop/DesktopLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/desktop/DesktopLauncher.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -227,7 +227,7 @@
       <workItem from="1738769995531" duration="204780000" />
       <workItem from="1740050015199" duration="18824000" />
       <workItem from="1740394083536" duration="5056000" />
-      <workItem from="1740792406744" duration="385000" />
+      <workItem from="1740792406744" duration="450000" />
     </task>
     <servers />
   </component>
