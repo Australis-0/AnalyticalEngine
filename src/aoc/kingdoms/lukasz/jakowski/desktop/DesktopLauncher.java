@@ -29,7 +29,7 @@ public class DesktopLauncher {
     public static void main(String[] arg) {
         //Pre-instance variables cross compatibility
         //1. Fix working directory for non-folder starts
-        try {
+        /*try {
             String working_directory = new File(DesktopLauncher.class.getProtectionDomain().getCodeSource().getLocation().toURI()).getParent();
             System.setProperty("user.dir", working_directory);
 
@@ -43,7 +43,7 @@ public class DesktopLauncher {
             System.out.println("[JAVA] [AnalyticalEngine] Steamworks is not running. Starting Steam.");
             SteamworksCompatibility.startSteam();
             SteamworksCompatibility.waitForSteam();
-        }
+        }*/
 
         //Initialise game
         initGame();

@@ -1189,7 +1189,6 @@
 	CivID: 170,
 	PCID: 30,
 	CPID: 2419,
-	TechnologyID: 81,
 	Population: 4950000
 },
 {
@@ -1197,7 +1196,6 @@
 	CivID: 171,
 	PCID: 29,
 	CPID: 2389,
-	TechnologyID: 81,
 	Population: 20800000
 },
 {
