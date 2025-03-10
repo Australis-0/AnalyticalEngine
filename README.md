@@ -7,6 +7,8 @@
   </ul>
 </div>
 
+<img src = "https://i.postimg.cc/hjTYphY2/ctd-light-logo.png" height = "64">
+
 ## Abstract.
 [![Join our community!](https://img.shields.io/discord/548994743925997570?label=Discord&style=for-the-badge)](https://discord.gg/89kQY2KFQz) ![](https://img.shields.io/github/languages/code-size/Confoederatio/AnalyticalEngine?style=for-the-badge) <!--![](https://img.shields.io/github/downloads/Confoederatio/AnalyticalEngine/total?style=for-the-badge)-->
 
