@@ -8,7 +8,7 @@
 </div>
 
 ## Abstract.
-[![Join our community!](https://img.shields.io/discord/548994743925997570?label=Discord&style=for-the-badge)](https://discord.gg/89kQY2KFQz) ![](https://img.shields.io/github/languages/code-size/Australis-0/AnalyticalEngine?style=for-the-badge) <!--![](https://img.shields.io/github/downloads/Australis-0/AnalyticalEngine/total?style=for-the-badge)-->
+[![Join our community!](https://img.shields.io/discord/548994743925997570?label=Discord&style=for-the-badge)](https://discord.gg/89kQY2KFQz) ![](https://img.shields.io/github/languages/code-size/Confoederatio/AnalyticalEngine?style=for-the-badge) <!--![](https://img.shields.io/github/downloads/Confoederatio/AnalyticalEngine/total?style=for-the-badge)-->
 
 > [!WARNING]
 > AnalyticalEngine is currently in **beta.**
@@ -21,7 +21,7 @@ AnalyticalEngine (Project Orion) is a development effort to open-source the core
 Completed builds are available as the current `AOC3-Source.jar` binary in **Releases**.
 
 1. Install [Java SDK 23](https://www.oracle.com/uk/java/technologies/downloads/).
-2. Download the current [`src/AOC3-Source.jar`](https://github.com/Australis-0/AnalyticalEngine/releases/download/beta-0.4.0-perimeter/AOC3-Source.jar), and drop it into any basegame AOC3 directory.
+2. Download the current [`src/AOC3-Source.jar`](https://github.com/Confoederatio/AnalyticalEngine/releases/download/beta-0.4.0-perimeter/AOC3-Source.jar), and drop it into any basegame AOC3 directory.
 3. You may now either run it normally as a Java binary or via the command line in the extracted folder if you wish to access AnalyticalEngine's console: `java -jar src/AOC3-Source.jar`.
 
 ## Contacts.
