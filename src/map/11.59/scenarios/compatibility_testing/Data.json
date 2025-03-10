@@ -1,0 +1,14 @@
+[
+{
+	CivTAG: "UPPERCASETEST",
+	CivID: 1,
+	PCID: 1,
+	CPID: 1109
+},
+{
+	CivTAG: "lowercasetest",
+	CivID: 2,
+	PCID: 2,
+	CPID: 957
+}
+]
