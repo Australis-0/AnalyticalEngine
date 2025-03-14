@@ -9,7 +9,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09b6f7f8-b868-43e9-b471-ac1dbd15fa3b" name="Changes" comment="" />
+    <list default="true" id="09b6f7f8-b868-43e9-b471-ac1dbd15fa3b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_10.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_10.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_11.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_11.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_12.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_12.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_13.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_13.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_2.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_6.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_6.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_7.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_7.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_8.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_8.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_9.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_9.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/4374" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/4374" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/4375" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/4375" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/4376" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/4376" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/9904" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/9904" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/4374" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/4374" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/4375" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/4375" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/4376" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/4376" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/9904" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/9904" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -227,7 +246,7 @@
       <workItem from="1740792406744" duration="11127000" />
       <workItem from="1740913472756" duration="6817000" />
       <workItem from="1741858587915" duration="682000" />
-      <workItem from="1741877354508" duration="16544000" />
+      <workItem from="1741877354508" duration="17244000" />
     </task>
     <servers />
   </component>
