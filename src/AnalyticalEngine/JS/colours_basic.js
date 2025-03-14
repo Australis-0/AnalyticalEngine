@@ -129,6 +129,20 @@
 		return (r << 16) | (g << 8) | b;
 	}
 
+	function decodeRGBAAsNumber (arg0_rgba) {
+		//Convert from parameters
+		var rgba = arg0_rgba;
+
+		//Declare local instance variables
+		var r = rgba[0];
+		var g = rgba[1];
+		var b = rgba[2];
+		var a = rgba[3];
+
+		//Return statement (rebuild 32-bit integer)
+		return ((r << 24) | (g << 16) | (b << 8) | a) >>> 0;
+	}
+
 	/**
 	 * deltaE() - Calculates the deltaE between two RGB values.
 	 * @param {Array<number, number, number>} arg0_rgb_a - The 1st RGB code to pass.
@@ -171,6 +185,20 @@
 		var g = (number >> 8) & 0xFF;
 		var b = number & 0xFF;
 		var a = 255;
+
+		//Return statement
+		return [r, g, b, a];
+	}
+
+	function encodeNumberAsRGBA (arg0_number) {
+		//Convert from parameters
+		var number = returnSafeNumber(Math.round(arg0_number));
+
+		//Declare local instance variables
+		var r = (number >> 24) & 0xFF; //Extract highest 8 bits
+		var g = (number >> 16) & 0xFF; //Extract next 8 bits
+		var b = (number >> 8) & 0xFF;  //Extract next 8 bits
+		var a = number & 0xFF;         //Extract lowest 8 bits
 
 		//Return statement
 		return [r, g, b, a];

@@ -32118,9 +32118,9 @@
         p: 5366
     },
     {
-        Name: "Wafra",
-        x: 11247,
-        y: 3652,
+        Name: "Mina al Ahmadi",
+        x: 11244,
+        y: 3645,
         p: 5302
     },
     {
@@ -59146,5 +59146,161 @@
         x: 3491,
         y: 4758,
         p: 3826
+    },
+    {
+        Name: "Nalut",
+        x: 9425,
+        y: 3480,
+        p: 9904
+    },
+    {
+        Name: "Zillah",
+        x: 9705,
+        y: 3653,
+        p: 9906
+    },
+    {
+        Name: "Bu Sfar",
+        x: 9484,
+        y: 3582,
+        p: 9905
+    },
+    {
+        Name: "Al'Aqabah",
+        x: 11018,
+        y: 3571,
+        p: 9908
+    },
+    {
+        Name: "Al Jumaymah",
+        x: 11061,
+        y: 3607,
+        p: 9909
+    },
+    {
+        Name: "Wafra",
+        x: 11247,
+        y: 3658,
+        p: 9907
+    },
+    {
+        Name: "Ash Shazaf",
+        x: 11256,
+        y: 3680,
+        p: 9919
+    },
+    {
+        Name: "Samah",
+        x: 11112,
+        y: 3646,
+        p: 9911
+    },
+    {
+        Name: "Al Julaydah",
+        x: 11152,
+        y: 3646,
+        p: 9912
+    },
+    {
+        Name: "At Tawal",
+        x: 11134,
+        y: 3628,
+        p: 9910
+    },
+    {
+        Name: "Penjwin",
+        x: 11149,
+        y: 3270,
+        p: 9913
+    },
+    {
+        Name: "Saqqez",
+        x: 11189,
+        y: 3219,
+        p: 9914
+    },
+    {
+        Name: "Qeydar",
+        x: 11280,
+        y: 3231,
+        p: 9915
+    },
+    {
+        Name: "Zarand",
+        x: 11331,
+        y: 3236,
+        p: 9916
+    },
+    {
+        Name: "Torud",
+        x: 11565,
+        y: 3282,
+        p: 9917
+    },
+    {
+        Name: "Neyshabur",
+        x: 11788,
+        y: 3217,
+        p: 9918
+    },
+    {
+        Name: "Rastatt",
+        x: 9284,
+        y: 2462,
+        p: 9894
+    },
+    {
+        Name: "Kachuga",
+        x: 14018,
+        y: 2195,
+        p: 9901
+    },
+    {
+        Name: "Klyuchi",
+        x: 14474,
+        y: 2341,
+        p: 9902
+    },
+    {
+        Name: "Karymskoye",
+        x: 14546,
+        y: 2326,
+        p: 9903
+    },
+    {
+        Name: "Varena",
+        x: 10087,
+        y: 2137,
+        p: 9896
+    },
+    {
+        Name: "Erzhvilkas",
+        x: 10014,
+        y: 2078,
+        p: 9895
+    },
+    {
+        Name: "Dobele",
+        x: 10021,
+        y: 1997,
+        p: 9897
+    },
+    {
+        Name: "Lubana",
+        x: 10201,
+        y: 1967,
+        p: 9898
+    },
+    {
+        Name: "Antsla",
+        x: 10178,
+        y: 1919,
+        p: 9899
+    },
+    {
+        Name: "Baykit",
+        x: 13583,
+        y: 1691,
+        p: 9900
     }
 ]

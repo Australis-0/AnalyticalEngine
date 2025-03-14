@@ -365,6 +365,22 @@
 			});
 	}
 
+	function setProvinceEconomy (arg0_province_name, arg1_value) {
+		//Convert from parameters
+		var province_name = arg0_province_name;
+		var value = Math.round(returnSafeNumber(arg1_value*100));
+
+		//Declare local instance variables
+		var province_obj = getProvince(province_name);
+
+		//Set economy
+		province_obj.BaseDevelopment = value;
+		ProvinceDrawDetails.updateDrawProvinceDetails_Economy(province_obj.getProvinceID());
+
+		//Return statement
+		return value;
+	}
+
 	function setProvinceOwner (arg0_province_name, arg1_civ_name, arg2_options) {
 		//Convert from parameters
 		var province_name = arg0_province_name;

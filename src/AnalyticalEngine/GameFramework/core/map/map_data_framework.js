@@ -29,6 +29,83 @@
 		return map_obj.Data.length;
 	}
 
+	function loadEconomyNumberData (arg0_provinces_file_path, arg1_numbers_file_path, arg2_max_value) {
+		//Convert from parameters
+		var provinces_file_path = arg0_provinces_file_path;
+		var numbers_file_path = arg1_numbers_file_path;
+		var limit_value = returnSafeNumber(arg2_max_value, 1);
+
+		try {
+			//Declare local instance variables
+			var max_value = 1;
+			var provinces_number_obj = loadNumberDataFromImage(provinces_file_path, numbers_file_path);
+
+			//Iterate over all_province_numbers; fetch max_value
+			var all_province_numbers = Object.keys(provinces_number_obj);
+
+			for (var i = 0; i < all_province_numbers.length; i++) {
+				var local_province_id = all_province_numbers[i];
+				var local_value = provinces_number_obj[all_province_numbers[i]];
+
+				max_value = Math.max(max_value, local_value);
+			}
+
+			//Iterate over all_province_numbers; set province population growth rate
+			for (var i = 0; i < all_province_numbers.length; i++) {
+				var local_province_id = all_province_numbers[i];
+				var local_value = provinces_number_obj[all_province_numbers[i]];
+
+				//Set population growth rate
+				setProvinceEconomy(local_province_id, (local_value/max_value)*limit_value);
+			}
+
+			//Return statement
+			return provinces_number_obj;
+		} catch (e) {
+			console.error(e.stack);
+		}
+	}
+
+	function loadNumberDataFromImage (arg0_provinces_file_path, arg1_numbers_file_path) {
+		//Convert from parameters
+		var provinces_file_path = arg0_provinces_file_path;
+		var numbers_file_path = arg1_numbers_file_path;
+
+		//Guard clause; check to make sure both provinces_file_path and numbers_file_path exist
+		if (!fileExists(provinces_file_path)) {
+			console.error("loadNumberDataFromImage() - Provinces File doesn't exist at path " + provinces_file_path);
+			return undefined;
+		}
+		if (!fileExists(numbers_file_path)) {
+			console.error("loadNumberDataFromImage() - Numbers File doesn't exist at path " + numbers_file_path);
+		}
+
+		//Declare local instance variables
+		var province_values = {}; //Stores sum_number per province
+
+		//Read numbers
+		var numbers_image = ImageIO.read(new File(numbers_file_path));
+		var provinces_image = ImageIO.read(new File(provinces_file_path));
+		var provinces_image_height = provinces_image.getHeight();
+		var provinces_image_width = provinces_image.getWidth();
+
+		//Iterate over provinces_image; assign percentage
+		for (var i = 0; i < provinces_image_width; i++)
+			for (var x = 0; x < provinces_image_height; x++) {
+				var local_number_colour = convertIntToRGBA(numbers_image.getRGB(i, x));
+				var local_province_colour = convertIntToRGBA(provinces_image.getRGB(i, x));
+				var local_province_id = decodeRGBAsNumber(local_province_colour);
+				var local_province_value = decodeRGBAAsNumber(local_number_colour);
+
+				//Assign number
+				if (local_province_id > 0)
+					modifyValue(province_values, local_province_id, local_province_value);
+			}
+
+		//Return statement
+		return province_values;
+	}
+
 	function loadPercentageDataFromImage (arg0_provinces_file_path, arg1_percentages_file_path, arg2_max_value) {
 		//Convert from parameters
 		var provinces_file_path = arg0_provinces_file_path;
@@ -68,6 +145,42 @@
 		//console.log("Province values: " + Object.keys(province_values));
 		//Return statement
 		return province_values;
+	}
+
+	function loadPopulationNumberData (arg0_provinces_file_path, arg1_numbers_file_path) {
+		//Convert from parameters
+		var provinces_file_path = arg0_provinces_file_path;
+		var numbers_file_path = arg1_numbers_file_path;
+
+		try {
+			//Declare local instance variables
+			var max_value = 1;
+			var provinces_number_obj = loadNumberDataFromImage(provinces_file_path, numbers_file_path);
+
+			//Iterate over all_province_numbers; fetch max_value
+			var all_province_numbers = Object.keys(provinces_number_obj);
+
+			for (var i = 0; i < all_province_numbers.length; i++) {
+				var local_province_id = all_province_numbers[i];
+				var local_value = provinces_number_obj[all_province_numbers[i]];
+
+				max_value = Math.max(max_value, local_value);
+			}
+
+			//Iterate over all_province_numbers; set province population growth rate
+			for (var i = 0; i < all_province_numbers.length; i++) {
+				var local_province_id = all_province_numbers[i];
+				var local_value = provinces_number_obj[all_province_numbers[i]];
+
+				//Set population growth rate
+				setProvincePopulationGrowthRate(local_province_id, local_value/max_value);
+			}
+
+			//Return statement
+			return provinces_number_obj;
+		} catch (e) {
+			console.error(e.stack);
+		}
 	}
 
 	function loadPopulationPercentageData (arg0_provinces_file_path, arg1_percentages_file_path) {

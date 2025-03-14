@@ -11,6 +11,164 @@
   <component name="ChangeListManager">
     <list default="true" id="09b6f7f8-b868-43e9-b471-ac1dbd15fa3b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/map/map_data_framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/map/map_data_framework.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/provinces/province_framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/core/provinces/province_framework.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/JS/colours_basic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/JS/colours_basic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/Config.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/Config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/Continents.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/Continents.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/GeographicalRegions.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/GeographicalRegions.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/Scenarios.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/Scenarios.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/background/overlays/Overlays.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/background/overlays/Overlays.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/background/overlays/OverlaysSea.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/background/overlays/OverlaysSea.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/cities/cities.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/cities/cities.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/ProvinceDetails.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/ProvinceDetails.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNamePoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNamePoints.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_10.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_10.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_11.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_11.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_12.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_12.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_13.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_13.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_3.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_3.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_4.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_4.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_5.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_5.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_6.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_6.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_7.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_7.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_8.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_8.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_9.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_9.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/ProvincePoints/ProvincePoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/ProvincePoints/ProvincePoints.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/ProvincePoints_Cut/ProvincePoints_Cut.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/ProvincePoints_Cut/ProvincePoints_Cut.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/2419" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/2419" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/2420" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/2420" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/3097" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/3097" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/3098" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/3098" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/3100" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/3100" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/3101" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/3101" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/3111" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/3111" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/3112" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/3112" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/3115" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/3115" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/3116" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/3116" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/3118" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/3118" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/3119" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/3119" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/3120" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/3120" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/3129" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/3129" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/3132" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/3132" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/3582" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/3582" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/3628" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/3628" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/3642" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/3642" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/3648" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/3648" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/3652" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/3652" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/3654" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/3654" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/4361" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/4361" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/4373" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/4373" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/4374" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/4374" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/4375" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/4375" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/4376" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/4376" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/4378" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/4378" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/4382" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/4382" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/4383" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/4383" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/5302" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/5302" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/5309" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/5309" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/5336" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/5336" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/5337" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/5337" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/5338" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/5338" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/5347" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/5347" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/5361" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/5361" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/5366" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/5366" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/5436" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/5436" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/5441" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/5441" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/5444" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/5444" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/5451" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/5451" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/5453" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/5453" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/5455" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/5455" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/5456" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/5456" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/5457" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/5457" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/5458" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/5458" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/5461" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/5461" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/5478" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/5478" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/5480" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/5480" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/5481" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/5481" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/5482" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/5482" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/5483" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/5483" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/5484" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/5484" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/1/5497" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/1/5497" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/2419" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/2419" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/2420" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/2420" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/3097" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/3097" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/3098" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/3098" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/3100" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/3100" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/3101" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/3101" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/3111" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/3111" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/3112" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/3112" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/3115" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/3115" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/3116" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/3116" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/3118" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/3118" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/3119" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/3119" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/3120" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/3120" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/3129" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/3129" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/3132" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/3132" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/3582" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/3582" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/3628" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/3628" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/3642" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/3642" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/3648" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/3648" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/3652" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/3652" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/3654" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/3654" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/4361" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/4361" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/4373" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/4373" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/4374" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/4374" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/4375" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/4375" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/4376" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/4376" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/4378" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/4378" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/4382" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/4382" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/4383" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/4383" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/5302" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/5302" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/5309" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/5309" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/5336" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/5336" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/5337" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/5337" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/5338" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/5338" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/5347" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/5347" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/5361" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/5361" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/5366" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/5366" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/5436" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/5436" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/5441" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/5441" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/5444" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/5444" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/5451" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/5451" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/5453" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/5453" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/5455" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/5455" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/5456" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/5456" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/5457" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/5457" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/5458" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/5458" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/5461" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/5461" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/5478" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/5478" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/5480" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/5480" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/5481" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/5481" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/5482" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/5482" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/5483" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/5483" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/5484" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/5484" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/2/5497" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/2/5497" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/DefinedScales.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/DefinedScales.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/scales/DefinedScales_Low.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/scales/DefinedScales_Low.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/Data.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/Data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/DataProvinces.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/DataProvinces.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/Details.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/Details.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/preview.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/preview.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/scenarios/compatibility_testing/Alliances.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/scenarios/compatibility_testing/AlliancesSpecial.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/scenarios/compatibility_testing/Armies.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/scenarios/compatibility_testing/Buildings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/scenarios/compatibility_testing/Cores.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/scenarios/compatibility_testing/Data.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/scenarios/compatibility_testing/DataProvinces.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/scenarios/compatibility_testing/Defensive.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/scenarios/compatibility_testing/Details.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/scenarios/compatibility_testing/Guarantee.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/scenarios/compatibility_testing/MilitaryAccess.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/scenarios/compatibility_testing/NonAggression.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/scenarios/compatibility_testing/Relations.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/scenarios/compatibility_testing/Religions.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/scenarios/compatibility_testing/Truces.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/scenarios/compatibility_testing/Wasteland.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/scenarios/compatibility_testing/preview.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/Maps.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/Maps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/Settings.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/settings/Settings.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -228,6 +386,8 @@
       <workItem from="1740394083536" duration="5056000" />
       <workItem from="1740792406744" duration="11127000" />
       <workItem from="1740913472756" duration="6817000" />
+      <workItem from="1741858587915" duration="682000" />
+      <workItem from="1741877354508" duration="15668000" />
     </task>
     <servers />
   </component>
