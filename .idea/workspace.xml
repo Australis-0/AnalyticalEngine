@@ -10,15 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09b6f7f8-b868-43e9-b471-ac1dbd15fa3b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Civilizations.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Civilizations.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/map/11.59/Config.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/Config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/Data.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/Data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/DataProvinces.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/DataProvinces.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/Details.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/Details.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/preview.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/preview.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/languages/civilisations/Bundle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/languages/civilisations/Bundle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/GameCivs/game/civilizations/UPPERCASETEST.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_7.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/data/ProvinceNeighboringProvinces/ProvinceNeighboringProvinces_7.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -237,7 +229,7 @@
       <workItem from="1740792406744" duration="11127000" />
       <workItem from="1740913472756" duration="6817000" />
       <workItem from="1741858587915" duration="682000" />
-      <workItem from="1741877354508" duration="19087000" />
+      <workItem from="1741877354508" duration="19498000" />
     </task>
     <servers />
   </component>
