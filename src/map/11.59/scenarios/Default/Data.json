@@ -2798,25 +2798,25 @@
 {
 	CivTAG: "royalnetherlandseastindiesarmy_!",
 	CivID: 400,
-	PCID: 400,
+	PCID: 31,
 	CPID: 7277
 },
 {
 	CivTAG: "southeastasiacommand_!",
 	CivID: 401,
-	PCID: 401,
+	PCID: 29,
 	CPID: 7207
 },
 {
 	CivTAG: "australianarmy_!",
 	CivID: 402,
-	PCID: 402,
+	PCID: 95,
 	CPID: 7244
 },
 {
 	CivTAG: "sovietoccupationofiran_!",
 	CivID: 403,
-	PCID: 403,
+	PCID: 397,
 	CPID: 5438
 },
 {
