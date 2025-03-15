@@ -79,20 +79,50 @@ public class LanguageManager {
         }
     }
 
-    public final void initLoadingBundle(String nTag) {
-        FileHandle fileHandleLoading = FileManager.loadFile("game/languages/loading/Bundle");
-        Locale localeLoading = new Locale(nTag);
-        this.bundleLoading = I18NBundle.createBundle(fileHandleLoading, localeLoading);
+    public final void initLoadingBundle (String arg0_language_id) {
+        //Convert from parameters
+        String language_id = arg0_language_id;
 
-        try {
+        //Declare local instance variables
+        FileHandle file_handle_loading = FileManager.loadFile("game/languages/loading/Bundle");
+        boolean language_file_exists = FileManager.loadFile("game/languages/loaing/Bundle_" + language_id + ".properties").exists();
+
+        //1. Load this.bundleLoading by default
+        if (language_id != null && language_id.length() > 0 && !language_file_exists) {
+            Locale locale_loading = new Locale(language_id);
+            this.bundleLoading = I18NBundle.createBundle(file_handle_loading, locale_loading);
             this.iLoading_NumOfTexts = Integer.parseInt(this.getLoading("NumOfTexts"));
-        } catch (Exception var5) {
-            this.iLoading_NumOfTexts = 0;
+        } else {
+            Locale locale_loading = new Locale(language_id);
+            this.bundleLoading = I18NBundle.createBundle(file_handle_loading, locale_loading);
+            this.iLoading_NumOfTexts = Integer.parseInt(this.getLoading("NumOfTexts"));
         }
 
+        //2. Iterate over all mod folders and override this.bundleLoading if applicable
+        for (int i = 0; i < SteamManager.modsFoldersSize; i++) {
+            FileHandle local_file_handle_loading = FileManager.loadFile((String) SteamManager.modsFolders.get(i) + "languages/loading/Bundle.properties");
+            FileHandle local_locale_file_handle_loading = FileManager.loadFile((String) SteamManager.modsFolders.get(i) + "languages/loading/Bundle_" + language_id + ".properties");
+
+            if (local_file_handle_loading.exists()) {
+                Locale local_locale_loading = new Locale(language_id);
+                FileHandle local_stripped_file_handle_loading = local_file_handle_loading.sibling("Bundle");
+
+                //Set bundleLoading; make sure to strip .properties
+                this.bundleLoading = I18NBundle.createBundle(local_stripped_file_handle_loading, local_locale_loading);
+                this.iLoading_NumOfTexts = Integer.parseInt(this.getLoading("NumOfTexts"));
+            }
+            if (local_locale_file_handle_loading.exists()) {
+                Locale local_locale_loading = new Locale(language_id);
+                FileHandle local_stripped_file_handle_loading = local_file_handle_loading.sibling("Bundle");
+
+                //Set bundleLoading; make sure to strip .properties
+                this.bundleLoading = I18NBundle.createBundle(local_stripped_file_handle_loading, local_locale_loading);
+                this.iLoading_NumOfTexts = Integer.parseInt(this.getLoading("NumOfTexts"));
+            }
+        }
     }
 
-    public void loadModsLanguages(String nTag) {
+    public void loadModsLanguages (String nTag) {
         try {
             this.modsBundles.clear();
             console.log("Called loadModsLanguages() with '" + nTag + "'.");
@@ -116,9 +146,6 @@ public class LanguageManager {
                     this.modsBundles.add(I18NBundle.createBundle(fileHandleCivs, localeCivs));
                 }
             }
-
-            //ANALYTICALENGINE START
-            //ANALYTICALENGINE END
 
             for(int i = 0; i < SteamManager.itemsInstalledSize; ++i) {
                 if (Gdx.files.absolute(((SteamUGC.ItemInstallInfo)SteamManager.itemsInstalled.get(i)).getFolder() + "/" + "languages/Bundle" + "_" + nTag + ".properties").exists()) {
