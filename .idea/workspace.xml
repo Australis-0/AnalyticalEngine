@@ -11,7 +11,7 @@
   <component name="ChangeListManager">
     <list default="true" id="09b6f7f8-b868-43e9-b471-ac1dbd15fa3b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mods/11.59/languages/loading/Bundle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/mods/11.59/languages/loading/Bundle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/Renderer/Renderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/Renderer/Renderer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,7 +230,7 @@
       <workItem from="1740792406744" duration="11127000" />
       <workItem from="1740913472756" duration="6817000" />
       <workItem from="1741858587915" duration="682000" />
-      <workItem from="1741877354508" duration="23493000" />
+      <workItem from="1741877354508" duration="23638000" />
     </task>
     <servers />
   </component>

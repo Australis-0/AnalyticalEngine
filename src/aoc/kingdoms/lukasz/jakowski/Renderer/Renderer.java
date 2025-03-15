@@ -1191,7 +1191,7 @@ public class Renderer {
         int nHeight = ImageManager.getImage(Images.logo).getHeight() + CFG.BUTTON_HEIGHT * 2;
         if (CFG.currentTimeMillis - 4000L > loadingTime) {
             try {
-                sLoadingText = Game.lang.getLoading("L" + Game.oR.nextInt(Game.lang.iLoading_NumOfTexts)) + "..";
+                sLoadingText = Game.lang.getLoading("L" + Game.oR.nextInt(Game.lang.iLoading_NumOfTexts));
                 loadingTime = CFG.currentTimeMillis;
                 GlyphLayout_Game glyphLayout = new GlyphLayout_Game();
                 glyphLayout.setText((BitmapFont)fontMain.get(CFG.FONT_REGULAR), sLoadingText);
