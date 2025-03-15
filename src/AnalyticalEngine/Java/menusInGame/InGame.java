@@ -973,7 +973,7 @@ public class InGame extends Menu {
             public void buildElementHover() {
                 List<MenuElement_HoverElement> nElements = new ArrayList();
                 List<MenuElement_HoverElement_Type> nData = new ArrayList();
-                nData.add(new MenuElement_HoverElement_Type_TextTitle_BG(Game.lang.get(InGame.mapmode_list_displayed ? "HideMapmodes" : "ShowMapmodes"), CFG.FONT_BOLD, Colors.HOVER_GOLD));
+                nData.add(new MenuElement_HoverElement_Type_TextTitle_BG(Game.lang.get((InGame.mapmode_list_displayed) ? "HideMapmodes" : "ShowMapmodes"), CFG.FONT_BOLD, Colors.HOVER_GOLD));
                 nElements.add(new MenuElement_HoverElement(nData));
                 nData.clear();
                 this.menuElementHover = new MenuElement_Hover(nElements, true);
