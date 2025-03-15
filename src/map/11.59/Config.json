@@ -2,7 +2,7 @@
 	Name: "11:59 - Cold War",
 	Author: "Vis Tacitus",
 	
-	NumOfProvinces: 9894,
+	NumOfProvinces: 9920,
 	DefaultMapScale: 2,
 	ExtraMapScale: 4,
 	WorldMap: true,

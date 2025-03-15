@@ -2794,5 +2794,35 @@
 	PCID: 34,
 	CPID: 4452,
 	Population: 150000
+},
+{
+	CivTAG: "royalnetherlandseastindiesarmy_!",
+	CivID: 400,
+	PCID: 400,
+	CPID: 7277
+},
+{
+	CivTAG: "southeastasiacommand_!",
+	CivID: 401,
+	PCID: 401,
+	CPID: 7207
+},
+{
+	CivTAG: "australianarmy_!",
+	CivID: 402,
+	PCID: 402,
+	CPID: 7244
+},
+{
+	CivTAG: "sovietoccupationofiran_!",
+	CivID: 403,
+	PCID: 403,
+	CPID: 5438
+},
+{
+	CivTAG: "militaryterritoryofghadames_!",
+	CivID: 404,
+	PCID: 404,
+	CPID: 4375
 }
 ]
