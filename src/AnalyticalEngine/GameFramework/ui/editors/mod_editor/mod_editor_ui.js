@@ -7,6 +7,7 @@
 			main.interfaces.editor_view_mapmodes = {};
 		var interface_obj = main.interfaces.editor_view_mapmodes;
 
+		//Display Editor mapmodes
 		if (!interface_obj.menu_obj) {
 			var editor_view_mapmodes_menu_obj = {
 				id: "editor_view_mapmodes",

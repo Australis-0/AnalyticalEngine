@@ -10,8 +10,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09b6f7f8-b868-43e9-b471-ac1dbd15fa3b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/ui/game/mapmodes_ui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Java/menusInGame/InGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Java/menusInGame/InGame_MapModes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/global_initialisation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/global_initialisation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/startup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/startup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/ui/editors/mod_editor/mod_editor_ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/GameFramework/ui/editors/mod_editor/mod_editor_ui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Scopes/deepscript_scope_parser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Scopes/deepscript_scope_parser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Scopes/deepscript_scopes_on_actions_map.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnalyticalEngine/Logic/Scopes/deepscript_scopes_on_actions_map.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/Renderer/Renderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/kingdoms/lukasz/jakowski/Renderer/Renderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/DataProvinces.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/DataProvinces.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/preview.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/11.59/scenarios/Default/preview.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/jakowski/Renderer/Renderer$SimpleTaskArmyText.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/jakowski/Renderer/Renderer$SimpleTaskArmyText.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/jakowski/Renderer/Renderer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aoc/kingdoms/lukasz/jakowski/Renderer/Renderer.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +34,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="JavaScript File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -230,7 +242,7 @@
       <workItem from="1740792406744" duration="11127000" />
       <workItem from="1740913472756" duration="6817000" />
       <workItem from="1741858587915" duration="682000" />
-      <workItem from="1741877354508" duration="23638000" />
+      <workItem from="1741877354508" duration="28930000" />
     </task>
     <servers />
   </component>

@@ -8,6 +8,14 @@
 		main.scopes.on_civilisation_click[generateRandomID(main.scopes.on_civilisation_click)] = local_function;
 	}
 
+	function onMapmodeListClick (arg0_function) {
+		//Convert from parameters
+		var local_function = arg0_function;
+
+		//Declare local instance variables
+		main.scopes.on_mapmode_list_click[generateRandomID(main.scopes.on_mapmode_list_click)] = local_function;
+	}
+
 	function onProvinceClick (arg0_function) {
 		//Convert from parameters
 		var local_function = arg0_function;
@@ -46,6 +54,25 @@
 				player_obj: player_obj,
 				player_tag: player_tag
 			});
+		}
+	}
+
+	function parseOnMapmodeListClick (arg0_ui_displayed) {
+		//Convert from parameters
+		var ui_displayed = arg0_ui_displayed;
+
+		//Declare local instance variables
+		var all_on_mapmode_list_click_keys = Object.keys(main.scopes.on_mapmode_list_click);
+
+		//Debug statement
+		if (global.debug.log_scopes_info)
+			console.log("parseOnMapmodeListClick() fired.");
+
+		//Iterate over all_on_mapmode_list_click_keys
+		for (var i = 0; i < all_on_mapmode_list_click_keys.length; i++) {
+			var local_function = main.scopes.on_mapmode_list_click[all_on_mapmode_list_click_keys[i]];
+
+			local_function(ui_displayed);
 		}
 	}
 

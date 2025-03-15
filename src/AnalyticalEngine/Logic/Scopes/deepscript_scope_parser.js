@@ -45,6 +45,36 @@
 		main.scopes.events[options.id] = options;
 	}
 
+	/**
+	 * addMapmode() - Adds a modded in-game mapmode to config.mapmodes.
+	 * @param {Object} [arg0_options]
+	 *  @param {String} [arg0_options.id] - The ID of the mapmode to declare in config.mapmodes. Best practices indicate you should have a dedicated mod ID.
+	 *  @param {String} [arg0_options.name] - The in-game display name for your mapmode.
+	 *
+	 *  @param {boolean} [arg0_options.is_editor_mapmode=false] - Whether this is an editor mapmode.
+	 *  @param {boolean} [arg0_options.is_game_mapmode=false] - Whether this is an in-game mapmode.
+	 *  @param {boolean} [arg0_options.live_update=false] - Whether this is mapmode should update live. Decreases performance at the cost of a live update loop.
+	 *  @param {boolean} [arg0_options.separate_mapmode=false] - Whether this is a fully-fledged mapmode, or a sub-mapmode of the pre-existing applied mapmode.
+	 *
+	 *  @param {Function} [arg0_options.special_function] - Must return an RGBA value for all provinces in array format, [0-255, 0-255, 0-255, 0-1]. Passes (province_obj). Undefined assumes a fully transparent province.
+	 */
+	function addMapmode (arg0_options) {
+		//Convert from parameters
+		var options = (arg0_options) ? arg0_options : {};
+
+		//Declare mapmode
+		config.mapmodes[(options.id) ? options.id : generateRandomID(config.mapmodes)] = {
+			name: (options.name) ? options.name : "Undefined",
+
+			is_editor_mapmode: options.is_editor_mapmode,
+			is_game_mapmode: options.is_game_mapmode,
+			live_update: options.live_update,
+			separate_mapmode: options.separate_mapmode,
+
+			special_function: options.special_function
+		};
+	}
+
 	function allCivilisationsScope (arg0_function) {
 		//Convert from parameters
 		var local_function = arg0_function;

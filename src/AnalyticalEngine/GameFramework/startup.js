@@ -31,6 +31,9 @@ setTimeout(function(){
 		initialiseProvinceResourceEditorEventHandlers();
 		initialiseProvinceTerrainEditorEventHandlers();
 
+		//Initialise Game UI
+		initialiseGameViewMapmodesUI();
+
 		//Initialise Save/Load functionality
 		initialiseGameSaveLoad();
 

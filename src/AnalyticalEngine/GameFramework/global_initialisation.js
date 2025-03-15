@@ -33,6 +33,7 @@ var global = {
 
 				//Game Interactions - Map.
 				on_civilisation_click: {},
+				on_mapmode_list_click: {},
 				on_province_click: {},
 
 				//Game Interactions - Province.
