@@ -11,15 +11,18 @@
 		if (!interface_obj.menu_obj) try {
 			var game_view_mapmodes_menu_obj = {
 				id: "game_view_mapmodes",
-				name: "Mapmodes:",
+				name: "Mapmodes",
 				no_title: false,
 
-				anchor: "top_left",
+				anchor: "bottom_right",
 				can_close: false,
-				height: 400,
+				draggable: false,
+				resizable: false,
+
+				height: Game.mapBG.iMinimapHeight,
 				width: 3*CFG.BUTTON_WIDTH,
-				x: 200,
-				y: 300,
+				x: Game.mapBG.iMinimapWidth + 3*CFG.BUTTON_WIDTH + CFG.PADDING,
+				y: Game.mapBG.iMinimapHeight,
 
 				default: {
 					type: "button",
@@ -78,8 +81,6 @@
 			try {
 				//Convert from parameters
 				var display_game_view_mapmodes = arg0_display_game_view_mapmodes;
-
-				console.log("onMapmodeListClick() clicked!", display_game_view_mapmodes);
 
 				//Declare local instance variables
 				var interface_obj = main.interfaces.game_view_mapmodes;

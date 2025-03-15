@@ -536,7 +536,16 @@ public class InGame_MapModes extends Menu {
             int var10000 = nX + ((MenuElement)menuElements.get(menuElements.size() - 1)).getWidth() + CFG.PADDING;
         }
 
-        this.initMenu((MenuTitle)null, CFG.GAME_WIDTH - Game.mapBG.minimapOfCivilizations.getWidth() - Minimap.getPadding() * 2, 150, Game.mapBG.minimapOfCivilizations.getWidth() + Minimap.getPadding() * 2 - ImageManager.getImage(Images.arrowUpDown).getWidth() - CFG.PADDING * 4, ImageManager.getImage(Images.arrowUpDown).getHeight() + CFG.PADDING * 4 + Images.boxTitleBORDERWIDTH, menuElements, true);
+        //ANALYTICALENGINE START
+        this.initMenu((MenuTitle) null,
+                CFG.GAME_WIDTH - Game.mapBG.minimapOfCivilizations.getWidth() + Minimap.getPadding()*2 + ImageManager.getImage(Images.arrowUpDown).getWidth() + CFG.PADDING*4,
+                150,
+                Game.mapBG.minimapOfCivilizations.getWidth() + Minimap.getPadding() * 2 - ImageManager.getImage(Images.arrowUpDown).getWidth() - CFG.PADDING*4,
+                ImageManager.getImage(Images.arrowUpDown).getHeight() + CFG.PADDING * 4 + Images.boxTitleBORDERWIDTH,
+                menuElements,
+                true);
+        //ANALYTICALENGINE END
+
         this.drawScrollPositionAlways = false;
     }
 

@@ -949,17 +949,17 @@ public class InGame extends Menu {
             }
 
             /**
-             * getFlipY() - Flips the main chevron GFX icon upside down.
+             * getFlipY() - Flips the main chevron GFX icon from side to side.
              *
              * @return boolean
              */
-            public boolean getFlipY() {
+            public boolean getFlipY () {
                 //Return statement
                 return (!InGame.mapmode_list_displayed);
             }
 
             public int getPosX() {
-                return CFG.GAME_WIDTH - this.getWidth() - CFG.PADDING;
+                return CFG.GAME_WIDTH - Game.mapBG.iMinimapWidth /*- this.getWidth()*/ + CFG.PADDING;
             }
 
             public int getPosY() {
