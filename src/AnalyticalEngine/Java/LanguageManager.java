@@ -40,6 +40,10 @@ public class LanguageManager {
         this.updateKeyOutput();
     }
 
+    /**
+     * initCivsBundle() - Initialises civilisation localisation for both mods and the base game. Overwrite method.
+     * @param {String} arg0_language_id
+     */
     public final void initCivsBundle (String arg0_language_id) {
         //Convert from parameters
         String language_id = arg0_language_id;
@@ -79,6 +83,10 @@ public class LanguageManager {
         }
     }
 
+    /**
+     * initLoadingBundle() - Initialises loading tip localisation for both mods and the base game. Overwrite method.
+     * @param {String} arg0_language_id
+     */
     public final void initLoadingBundle (String arg0_language_id) {
         //Convert from parameters
         String language_id = arg0_language_id;
@@ -122,6 +130,10 @@ public class LanguageManager {
         }
     }
 
+    /**
+     * loadModsLanguages() - Loads mod localisation for both mods and the base game. Additive method.
+     * @param {String} nTag
+     */
     public void loadModsLanguages (String nTag) {
         try {
             this.modsBundles.clear();
